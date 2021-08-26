@@ -1,0 +1,84 @@
+---
+permalink: api/reference_element_api_setclusterstructure.html 
+sidebar: sidebar 
+keywords: storage,cluster,configuration,info,restore,set,setting,setclusterstructure 
+summary: 您可以使用 SetClusterStructure 方法从备份中还原存储集群配置信息。调用此方法时，您将传递包含要还原的配置信息的 clusterStructure 对象作为参数。 
+---
+= SetClusterStructure
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetClusterStructure` 方法从备份中还原存储集群配置信息。调用此方法时，您将传递包含要还原的配置信息的 clusterStructure 对象作为参数。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+参数。
+ a| 
+包含当前存储集群配置信息的 JSON 对象。
+ a| 
+xref:reference_element_api_clusterstructure.adoc[集群结构]
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+结果
+ a| 
+异步结果句柄。
+ a| 
+异步处理
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "SetClusterStructure",
+  "params": <insert clusterStructure object here>,
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+	"id": 1,
+	"result" : {
+	"asyncHandle": 1
+	}
+}
+----
+
+
+== 自版本以来的新增功能
+
+10.3

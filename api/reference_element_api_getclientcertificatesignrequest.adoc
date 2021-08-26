@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_getclientcertificatesignrequest.html 
+sidebar: sidebar 
+keywords: client certificate,certificate signing request,creating certificate signing request,CSR,CA 
+summary: 您可以使用 GetClientCertificateSignRequest 方法生成证书签名请求，证书颁发机构可以对该请求进行签名，以便为集群生成客户端证书。要建立与外部服务交互的信任关系，需要使用签名证书。 
+---
+= GetClientCertificateSignRequest
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetClientCertificateSignRequest` 方法生成证书签名请求，证书颁发机构可以对该请求进行签名，以便为集群生成客户端证书。要建立与外部服务交互的信任关系，需要使用签名证书。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+客户端证书 SignRequest
+ a| 
+PEM 格式 Base64 编码 PKCS#10 X.509 客户端证书签名请求。
+ a| 
+string
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "GetClientCertificateSignRequest",
+  "params": {
+  },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "clientCertificateSignRequest": "MIIByjCCATMCAQAwgYkxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybm..."
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.7

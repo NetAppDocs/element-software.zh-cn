@@ -1,0 +1,91 @@
+---
+permalink: api/reference_element_api_volumeaccessgroup.html 
+sidebar: sidebar 
+keywords: object,objects,volumeAccessGroup 
+summary: volumeAccessGroup 对象包含有关特定卷访问组的信息。您可以使用 API 方法 ListVolumeAccessGroups 为所有访问组检索此信息的列表。 
+---
+= 卷访问组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+volumeAccessGroup 对象包含有关特定卷访问组的信息。您可以使用 API 方法 `ListVolumeAccessGroups` 为所有访问组检索此信息的列表。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+
+
+
+ a| 
+已删除卷
+ a| 
+已从卷访问组中删除但尚未从系统中清除的卷的数组。
+ a| 
+整型数组
+
+
+
+ a| 
+启动程序 ID
+ a| 
+映射到卷访问组的启动程序的 ID 列表。
+ a| 
+整型数组
+
+
+
+ a| 
+启动程序
+ a| 
+映射到卷访问组的唯一 IQN/WWPN 启动程序的数组。
+ a| 
+string array
+
+
+
+ a| 
+name
+ a| 
+卷访问组的名称。
+ a| 
+string
+
+
+
+ a| 
+卷访问组 ID
+ a| 
+卷访问组的唯一卷访问组 ID 标识符。
+ a| 
+整型
+
+
+
+ a| 
+volumes
+ a| 
+属于卷访问组的卷 ID 列表。
+ a| 
+整型数组
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listvolumeaccessgroups.adoc[ListVolumeAccessGroups]

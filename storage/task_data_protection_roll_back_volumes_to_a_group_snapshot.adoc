@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_roll_back_volumes_to_a_group_snapshot.html 
+sidebar: sidebar 
+keywords: volumes, rollback, group snapshot, purge 
+summary: 您可以随时将一组卷回滚到组快照。 
+---
+= 将卷回滚到组快照
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以随时将一组卷回滚到组快照。
+
+回滚一组卷时，组中的所有卷都将还原到创建组快照时的状态。回滚还会将卷大小还原为原始快照中记录的大小。如果系统已清除某个卷，则在清除时也会删除该卷的所有快照；系统不会还原任何已删除的卷快照。
+
+. 单击 * 数据保护 * > * 组快照 * 。
+. 单击要用于卷回滚的组快照对应的 "Actions" 图标。
+. 在显示的菜单中，选择 * 将卷回滚到组 Snapshot* 。
+. * 可选 * ：要在回滚到快照之前保存卷的当前状态，请执行以下操作：
++
+.. 在 * 回滚到 Snapshot* 对话框中，选择 * 将卷的当前状态另存为组快照 * 。
+.. 输入新快照的名称。
+
+
+. 单击 * 回滚组 Snapshot* 。
+

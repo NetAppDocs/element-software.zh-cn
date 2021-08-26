@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_protectionschemeresiliency.html 
+sidebar: sidebar 
+keywords: object,objects,protectionSchemeResiliency 
+summary: protectionSchemeResiliency 对象包含有关特定保护方案下的存储集群是否可以在其关联的 protectionDomainType 中自动从一个或多个故障中自行修复的信息。如果某个存储集群能够在任何一个存储节点发生故障时继续读取和写入数据，则会被视为已修复（这种状态称为节点容错）。 
+---
+= 保护架构弹性
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionSchemeResiliency 对象包含有关特定保护方案下的存储集群是否可以在其关联的 protectionDomainType 中自动从一个或多个故障中自行修复的信息。如果存储集群可以在任何一个存储节点发生故障（称为节点容错状态）时继续读取和写入数据，则视为已修复。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+保护方案
+ a| 
+此存储集群的当前保护方案。唯一可能的值是 doubleHelix 。
+ a| 
+string
+
+
+
+ a| 
+sustainableFailuresForBlockData
+ a| 
+在不影响自动修复到节点数据容错状态的情况下可能同时发生的预计故障数。
+ a| 
+整型
+
+
+
+ a| 
+sustainableFailuresForMetadata
+ a| 
+在不丧失自动修复到元数据节点容错状态的情况下可以同时发生的预计故障数。
+ a| 
+整型
+
+|===

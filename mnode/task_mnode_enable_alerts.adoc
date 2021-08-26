@@ -1,0 +1,13 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_enable_alerts.html 
+summary: 您不能配置设置来监控 SolidFire 全闪存存储系统上的警报。 
+keywords: netapp, Element, management node, mnode, ui, alerts, alert monitoring 
+---
+= 配置警报监控
+
+
+[role="lead"]
+已为 NetApp HCI 警报监控配置警报监控工具。这些工具不会配置或用于 SolidFire 全闪存存储。运行这些集群的工具会导致以下 405 错误，在配置下，此错误是预期的： `webUIParseError ：服务器响应无效。405`
+
+有关为 NetApp HCI 配置警报监控的详细信息，请参见 link:https://docs.netapp.com/us-en/hci/docs/task_mnode_enable_alerts.html["配置警报监控"^]

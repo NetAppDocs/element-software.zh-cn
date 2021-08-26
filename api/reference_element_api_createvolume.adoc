@@ -1,0 +1,233 @@
+---
+permalink: api/reference_element_api_createvolume.html 
+sidebar: sidebar 
+keywords: create,volume,volumes,creating,CreateVolume 
+summary: 您可以使用 CreateVolume 方法在集群上创建新的空卷。卷创建完成后，即可通过 iSCSI 连接该卷。 
+---
+= CreateVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CreateVolume` 方法在集群上创建新的空卷。创建卷后，即可通过 iSCSI 连接该卷。
+
+在未指定 QoS 值的情况下创建的卷将使用默认值。您可以使用 `GetDefaultQoS` 方法查看卷的默认值。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+| `访问` | 卷的访问模式。如果包括此参数，则唯一支持的值为 `snapMirrorTarget` 。 | string | 无 | 否 
+
+
+| `帐户 ID` | 拥有此卷的帐户的 ID 。 | 整型 | 无 | 是的。 
+
+
+| `associateWithQoSPolicy`  a| 
+将卷与指定的 QoS 策略相关联。可能值：
+
+* `true` ：将卷与 QoSPolicyID 参数中指定的 QoS 策略关联。
+* `false` ：不要将卷与 QoSPolicyID 参数中指定的 QoS 策略相关联。如果为 false ，则无论是否在 QoSPolicy 参数中指定 QoS 策略，都会删除任何现有策略关联。
+
+| boolean | true | 否 
+
+
+| `属性` | 名称 - 值对列表，采用 JSON 对象格式。属性总大小必须小于 1000 B 或 1 KB ，包括 JSON 格式化字符。 | JSON 对象 | 无 | 否 
+
+
+| `enable512e`  a| 
+启用 512 字节扇区模拟。可能值：
+
+* `true` ：卷提供 512 字节扇区模拟。
+* `false` ：未启用 512e 模拟。
+
+| boolean | 无 | 是的。 
+
+
+| `enableSnapMirrorReplication`  a| 
+确定卷是否可用于 SnapMirror 端点的复制。可能值：
+
+* `true`
+* `false`
+
+| boolean | false | 否 
+
+
+| `五个大小` | 指定卷支持的最大先出（ FIFO ）快照数。请注意， FIFO 快照和非 FIFO 快照都使用卷上相同的可用快照插槽池。使用此选项可限制可用快照插槽的 FIFO 快照消耗量。如果省略，则默认值为 24 。 | 整型 | 24 | 否 
+
+
+| `minFIFO 大小` | 指定卷预留的最小先出（ FIFO ）快照插槽数。这样可以保证，如果在卷上同时使用 FIFO 快照和非 FIFO 快照，则非 FIFO 快照不会意外占用过多的 FIFO 插槽。它还可确保至少有如此多的 FIFO 快照始终可用。由于 FIFO 和非 FIFO 快照共享同一个池，因此， `minFIFO 大小` 可将可能的非 FIFO 快照总数减少相同的量。如果省略此参数，则此值默认为 0 。 | 整型 | 0 | 否 
+
+
+| `名称` | 卷访问组的名称（可以由用户指定）。不需要唯一，但建议使用。长度必须为 1 到 64 个字符。 | string | 无 | 是的。 
+
+
+| `QoS`  a| 
+此卷的初始服务质量设置。如果未指定任何值，则使用默认值。可能值：
+
+* `minIOPS`
+* `maxIOPS`
+* `突发 IOPS`
+
+| QoS 对象 | 无 | 否 
+
+
+| `qosPolicyID` | 应将 QoS 设置应用于指定卷的策略的 ID 。此参数与 `qos` 参数不能共存。 | 整型 | 无 | 否 
+
+
+| `总大小` | 卷的总大小，以字节为单位。大小将向上取整为最接近的 MB 。 | 整型 | 无 | 是的。 
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+volume
+ a| 
+包含新创建卷的相关信息的对象。
+ a| 
+xref:reference_element_api_volume.adoc[volume]
+
+
+
+ a| 
+volumeId
+ a| 
+新创建卷的卷 ID 。
+ a| 
+整型
+
+
+
+ a| 
+曲线
+ a| 
+此曲线是一组键值对。关键字是以字节为单位的 I/O 大小。这些值表示在特定 I/O 大小下执行 IOP 的成本。此曲线是相对于 100 IOPS 下 4096 字节的操作集计算得出的。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "CreateVolume",
+   "params": {
+      "name": "mysqldata",
+      "accountID": 1,
+      "totalSize": 107374182400,
+      "enable512e": false,
+      "attributes": {
+         "name1": "value1",
+         "name2": "value2",
+         "name3": "value3"
+      },
+      "qos": {
+         "minIOPS": 50,
+         "maxIOPS": 500,
+         "burstIOPS": 1500,
+         "burstTime": 60
+      }
+   },
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "curve": {
+            "4096": 100,
+            "8192": 160,
+            "16384": 270,
+            "32768": 500,
+            "65536": 1000,
+            "131072": 1950,
+            "262144": 3900,
+            "524288": 7600,
+            "1048576": 15000
+        },
+        "volume": {
+            "access": "readWrite",
+            "accountID": 1,
+            "attributes": {
+                "name1": "value1",
+                "name2": "value2",
+                "name3": "value3"
+            },
+            "blockSize": 4096,
+            "createTime": "2016-03-31T22:20:22Z",
+            "deleteTime": "",
+            "enable512e": false,
+            "iqn": "iqn.2010-01.com.solidfire:mysqldata.677",
+            "name": "mysqldata",
+            "purgeTime": "",
+            "qos": {
+                "burstIOPS": 1500,
+                "burstTime": 60,
+                "curve": {
+                    "4096": 100,
+                    "8192": 160,
+                    "16384": 270,
+                    "32768": 500,
+                    "65536": 1000,
+                    "131072": 1950,
+                    "262144": 3900,
+                    "524288": 7600,
+                    "1048576": 15000
+                },
+                "maxIOPS": 500,
+                "minIOPS": 50
+            },
+            "scsiEUIDeviceID": "6a796179000002a5f47acc0100000000",
+            "scsiNAADeviceID": "6f47acc1000000006a796179000002a5",
+            "sliceCount": 0,
+            "status": "active",
+            "totalSize": 107374182400,
+            "virtualVolumeID": null,
+            "volumeAccessGroups": [],
+            "volumeID": 677,
+            "volumePairs": []
+        },
+        "volumeID": 677
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS]

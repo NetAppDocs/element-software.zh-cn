@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_deletekeyproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key provider,deleting,delete 
+summary: 您可以使用 DeleteKeyProviderKmip 方法删除指定的非活动密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序。 
+---
+= DeleteKeyProviderKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteKeyProviderKmip` 方法删除指定的非活动密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+密钥提供程序 ID
+ a| 
+要删除的密钥提供程序的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。只要没有错误，删除操作就会视为成功。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "DeleteKeyProviderKmip",
+  "params": {
+    "keyProviderID": "1"
+    },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.7

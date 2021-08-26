@@ -1,0 +1,51 @@
+---
+permalink: setup/task_setup_fc_create_a_new_cluster_with_fibre_channel_nodes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在配置各个光纤通道节点后创建新集群。创建集群时，系统会自动为您创建集群管理员用户帐户。集群管理员有权管理所有集群属性，并可创建其他集群管理员帐户。 
+---
+= 使用光纤通道节点创建新集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在配置各个光纤通道节点后创建新集群。创建集群时，系统会自动为您创建集群管理员用户帐户。集群管理员有权管理所有集群属性，并可创建其他集群管理员帐户。
+
+在新节点配置期间，会为每个节点分配 1 G 或 10 G 管理 IP （ Management IP ， MIP ）地址。您必须使用在配置期间创建的节点 IP 地址之一打开创建新集群页面。您使用的 IP 地址取决于您为集群管理选择的网络。
+
+您已配置各个光纤通道节点。
+
+.步骤
+. 在浏览器窗口中，输入节点 MIP 地址。
+. 在 Create a New Cluster 中，输入以下信息：
++
+** 管理 VIP ： 1GbE 或 10GbE 网络上可路由的虚拟 IP ，用于执行网络管理任务。
+** iSCSI （存储） VIP ： 10GbE 网络上用于存储和 iSCSI 发现的虚拟 IP 。
++
+
+NOTE: 创建集群后，您将无法更改 SVIP 。
+
+** User name ：用于对集群进行身份验证访问的主集群管理员用户名。您必须保存此用户名以供将来参考。
++
+
+NOTE: 您可以使用大写和小写字母，特殊字符和数字作为用户名。
+
+** Password ：用于对集群进行身份验证访问的密码。您必须保存此用户名以供将来参考。默认情况下，双向数据保护处于启用状态。您不能更改此设置。
+
+
+. 阅读最终用户许可协议，然后单击 * 我同意 * 。
+. * 可选 * ：在节点列表中，确保未选中不应包含在集群中的节点对应的复选框。
+. 单击 * 创建集群 * 。
++
+根据集群中的节点数，系统可能需要几分钟的时间来创建集群。在配置正确的网络上，一个包含五个节点的小型集群所需时间应少于一分钟。创建集群后， "Create a New Cluster" 窗口将重定向到集群的 MVIP URL 地址，并显示 Web UI 。
+
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

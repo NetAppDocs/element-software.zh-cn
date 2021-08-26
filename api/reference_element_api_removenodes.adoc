@@ -1,0 +1,99 @@
+---
+permalink: api/reference_element_api_removenodes.html 
+sidebar: sidebar 
+keywords: node,nodes,cluster,remove,removing,removenodes 
+summary: 您可以使用 RemoveNodes 删除不应再加入集群的一个或多个节点。 
+---
+= RemoveNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `RemoveNodes` 删除不应再加入集群的一个或多个节点。
+
+在删除节点之前，必须使用 `RemoveDrives` 方法删除此节点包含的所有驱动器。在 `RemoveDrives` 进程完成且所有数据均已迁移出节点之前，无法删除节点。删除节点后，它会将自身注册为待定节点。您可以重新添加节点或将其关闭（关闭节点会将其从待定节点列表中删除）。
+
+
+
+== 删除集群主节点
+
+如果使用 `RemoveNodes` 删除集群主节点，则该方法可能会在返回响应之前超时。如果方法调用无法删除节点，请重新执行方法调用。请注意，如果要删除集群主节点以及其他节点，则应使用单独的调用来删除集群主节点。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+ignoreEnsembleTholanceChange
+ a| 
+删除节点时，忽略对集合节点容错的更改。
+
+如果存储集群使用的数据保护方案允许发生多个节点故障，并且删除节点会降低集合的节点容错能力，则节点删除通常会失败并显示错误。您可以将此参数设置为 true ，以禁用集合容错检查，以便成功删除节点。
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+nodes
+ a| 
+要删除的节点的节点 ID 列表。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "RemoveNodes",
+   "params": {
+     "nodes"  : [3,4,5]
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1
+  "result" : {},
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

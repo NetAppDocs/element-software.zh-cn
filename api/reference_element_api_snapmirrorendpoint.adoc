@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_snapmirrorendpoint.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorEndpoint 
+summary: snapMirrorEndpoint 对象包含有关与 Element 存储集群通信的远程 SnapMirror 存储系统的信息。您可以使用 ListSnapMirrorEndpoints API 方法检索此信息。 
+---
+= snapMirrorEndpoint
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorEndpoint 对象包含有关与 Element 存储集群通信的远程 SnapMirror 存储系统的信息。您可以使用 ListSnapMirrorEndpoints API 方法检索此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+本地集群中对象的唯一标识符。
+ a| 
+整型
+
+
+
+ a| 
+管理 IP
+ a| 
+端点的集群管理 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+clusterName
+ a| 
+ONTAP 集群名称。此值会自动使用 snapMirrorClusterIdentity 对象中的 "`clustername` " 值填充。
+ a| 
+string
+
+
+
+ a| 
+username
+ a| 
+ONTAP 系统的管理用户名。
+ a| 
+string
+
+
+
+ a| 
+ipAddresses
+ a| 
+集群中所有节点的集群间存储 IP 地址列表。您可以使用 ListSnapMirrorNetworkInterfaces 方法获取这些 IP 地址。
+ a| 
+string array
+
+
+
+ a| 
+已连接
+ a| 
+指向 ONTAP 集群的控制链路的连接状态。
+ a| 
+boolean
+
+|===

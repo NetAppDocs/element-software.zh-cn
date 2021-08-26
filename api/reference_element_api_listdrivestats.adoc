@@ -1,0 +1,135 @@
+---
+permalink: api/reference_element_api_listdrivestats.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,drive,drives,stats,statistics,listdrivestats 
+summary: 您可以使用 ListDriveStats 方法列出集群中多个驱动器的高级别活动测量结果。默认情况下，此方法将返回集群中所有驱动器的统计信息，这些测量值是在将驱动器添加到集群后累积的。此方法返回的某些值特定于块驱动器，而某些值则特定于元数据驱动器。 
+---
+= ListDriveStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListDriveStats` 方法列出集群中多个驱动器的高级别活动测量结果。默认情况下，此方法将返回集群中所有驱动器的统计信息，这些测量值是在将驱动器添加到集群后累积的。此方法返回的某些值特定于块驱动器，而某些值则特定于元数据驱动器。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+驱动器
+ a| 
+要返回驱动器统计信息的驱动器 ID （ driveID ）列表。如果省略此参数，则会返回所有驱动器的测量结果。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+driveStats
+ a| 
+列出每个驱动器的驱动器活动信息。
+ a| 
+xref:reference_element_api_drivestats.adoc[driveStats] 数组
+
+
+
+ a| 
+errors
+ a| 
+此列表包含驱动器 ID 以及关联的错误消息。它始终存在，如果没有错误，则为空。
+ a| 
+JSON 对象数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "ListDriveStats",
+  "params": {
+    "drives":[22,23]
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "driveStats": [
+      {
+        "driveID": 22,
+        "failedDieCount": 0,
+        "lifeRemainingPercent": 84,
+        "lifetimeReadBytes": 30171004403712,
+        "lifetimeWriteBytes": 103464755527680,
+        "powerOnHours": 17736,
+        "readBytes": 14656542,
+         "readOps": 3624,
+        "reallocatedSectors": 0,
+        "reserveCapacityPercent": 100,
+        "timestamp": "2016-03-01T00:19:24.782735Z",
+        "totalCapacity": 300069052416,
+        "usedCapacity": 1783735635,
+        "usedMemory": 879165440,
+        "writeBytes": 2462169894,
+        "writeOps": 608802
+      }
+    ],
+    "errors": [
+      {
+        "driveID": 23,
+        "exception": {
+          "message": "xStatCheckpointDoesNotExist",
+          "name": "xStatCheckpointDoesNotExist"
+        }
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_getdrivestats.adoc[GetDriveStats]

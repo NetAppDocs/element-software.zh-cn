@@ -1,0 +1,118 @@
+---
+permalink: api/reference_element_api_listasyncresults.html 
+sidebar: sidebar 
+keywords: async,asynchronous,result,results,get,list,listing,listasyncresults 
+summary: 您可以使用 ListAsyncResults 列出系统上所有当前正在运行和已完成的异步方法的结果。使用 ListAsyncResults 查询异步结果不会使发生原因已完成的 asyncHandles 过期；您可以使用 GetAsyncResult 查询由 ListAsyncResults 返回的任何 asyncHandles 。 
+---
+= ListAsyncResults
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListAsyncResults` 列出系统上所有当前正在运行和已完成的异步方法的结果。使用 `ListAsyncResults` 查询异步结果不会使发生原因已完成的 asyncHandles 过期；您可以使用 `GetAsyncResult` 查询 `ListAsyncResults` 返回的任何 asyncHandles 。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+asyncResultTypes
+ a| 
+结果类型的可选列表。您可以使用此列表将结果限制为仅包含这些类型的操作。可能值：
+
+* DriveAdd ：涉及系统向集群添加驱动器的操作。
+* BulkVolume ：卷之间的复制操作，例如备份或还原。
+* clone ：卷克隆操作。
+* DriveRemoval ：涉及系统从驱动器复制数据以准备将其从集群中删除的操作。
+* RtfiPendingNode ：涉及系统在将兼容软件添加到集群之前在节点上安装该软件的操作。
+
+ a| 
+string array
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+异步处理
+ a| 
+序列化异步方法结果数组。
+ a| 
+JSON 对象数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListAsyncResults",
+   "params": {
+   },
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "asyncHandles": [
+       {
+         "asyncResultID": 47,
+         "completed": true,
+         "createTime": "2016-01-01T22:29:19Z",
+         "data": {
+           "cloneID": 26,
+           "message": "Clone complete.",
+           "volumeID": 48
+         },
+         "lastUpdateTime": "2016-01-01T22:45:43Z",
+         "resultType": "Clone",
+         "success": true
+      },
+      ...]
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]

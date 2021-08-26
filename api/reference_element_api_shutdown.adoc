@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_shutdown.html 
+sidebar: sidebar 
+keywords: cluster,shutdown,node,shutting,down,shut,restart 
+summary: 您可以使用 Shutdown 方法重新启动或关闭集群中的节点。您可以使用此方法关闭单个节点，多个节点或集群中的所有节点。 
+---
+= 关闭
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `Shutdown` 方法重新启动或关闭集群中的节点。您可以使用此方法关闭单个节点，多个节点或集群中的所有节点。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+nodes
+ a| 
+要重新启动或关闭的节点的节点 ID 列表。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+选项
+ a| 
+对集群采取的操作。可能值：
+
+* restart ：重新启动集群。
+* halt ：执行完全关闭。
+
+ a| 
+string
+ a| 
+重新启动
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "Shutdown",
+   "params": {
+     "nodes": [
+       2,
+       3,
+       4
+     ],
+     "option": "halt"
+   },
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+     "failed": [],
+     "successful": [
+          6
+      [
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

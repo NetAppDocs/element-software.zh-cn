@@ -1,0 +1,44 @@
+---
+permalink: storage/reference_post_deploy_change_default_ssl_certificate.html 
+sidebar: sidebar 
+keywords: ssl certificate, SSL, private key, self-signed, cluster, nodes, user-defined certificate, API, change default certificate, certificate, Element API 
+summary: 您可以使用 NetApp Element API 更改集群中存储节点的默认 SSL 证书和专用密钥。 
+---
+= 更改 Element 软件的默认 SSL 证书
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 NetAppElement API 更改集群中存储节点的默认 SSL 证书和专用密钥。
+
+创建 NetApp Element 软件集群时，集群会创建一个唯一的自签名安全套接字层（ SSL ）证书和专用密钥，用于通过 Element UI ，每节点 UI 或 API 进行所有 HTTPS 通信。Element 软件支持自签名证书以及由可信证书颁发机构（ CA ）颁发和验证的证书。
+
+您可以使用以下 API 方法获取有关默认 SSL 证书的详细信息并进行更改。
+
+有关每种方法的信息，请参见 link:../api/index.html["《 NetApp Element 软件 API 参考》"]。
+
+* * GetSSLCertificate *
++
+您可以使用此方法检索有关当前安装的 SSL 证书的信息，包括所有证书详细信息。
+
+* * 设置 SSLCertificate *
++
+您可以使用此方法将集群和每节点 SSL 证书设置为您提供的证书和专用密钥。系统会验证证书和专用密钥，以防止应用无效证书。
+
+* * 删除 SSLCertificer*
++
+此方法将删除当前安装的 SSL 证书和专用密钥。然后，集群将生成新的自签名证书和专用密钥。
+
+
+
+
+NOTE: 集群 SSL 证书会自动应用于添加到集群中的所有新节点。从集群中删除的任何节点都会还原为自签名证书，并且所有用户定义的证书和密钥信息都会从该节点中删除。
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

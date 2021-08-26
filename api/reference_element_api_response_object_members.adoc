@@ -1,0 +1,53 @@
+---
+permalink: api/reference_element_api_response_object_members.html 
+sidebar: sidebar 
+keywords: response,object,member 
+summary: 每个 Element 软件 API 响应正文都包含以下基本部分： 
+---
+= 响应对象成员
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每个 Element 软件 API 响应正文都包含以下基本部分：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+结果
+ a| 
+方法返回的对象。系统将返回一个对象，其中包含与该方法的已记录返回值对应的已命名成员。如果发生错误，则此成员不存在。
+ a| 
+JSON 对象
+
+
+
+ a| 
+error
+ a| 
+发生错误时返回的对象。只有在发生错误时，此成员才存在。
+ a| 
+对象
+
+
+
+ a| 
+id
+ a| 
+用于将请求与响应匹配的标识符，如请求中所提供。
+ a| 
+字符串或整数
+
+
+
+ a| 
+未使用的参数
+ a| 
+一条警告消息，指出至少有一个不正确的参数已传递到 API 方法，并且尚未使用。
+ a| 
+对象
+
+|===

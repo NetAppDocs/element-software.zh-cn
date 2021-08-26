@@ -1,0 +1,33 @@
+---
+permalink: storage/task_data_manage_vol_access_group_add_multiple_initiators.html 
+sidebar: sidebar 
+keywords: initiator, add to volume access group, access groups, add multiple initiators, create initiator 
+summary: 您可以向现有卷访问组添加多个启动程序，以允许访问卷访问组中的卷，无论是否需要 CHAP 身份验证。 
+---
+= 将多个启动程序添加到卷访问组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以向现有卷访问组添加多个启动程序，以允许访问卷访问组中的卷，无论是否需要 CHAP 身份验证。
+
+将启动程序添加到卷访问组时，启动程序可以访问该卷访问组中的所有卷。
+
+
+TIP: 您可以通过单击操作图标并单击活动卷列表中卷的 * 查看详细信息 * 来查找每个卷的启动程序。
+
+您可以将多个启动程序添加到现有卷访问组中，以便能够访问卷，并为该卷访问组中的每个启动程序分配唯一的 CHAP 凭据。这样，您就可以将此选项应用于已存在的卷访问组。
+
+您可以使用 API 调用来分配基于启动程序的 CHAP 属性。要为每个启动程序添加 CHAP 帐户名称和凭据，必须使用 ModifyInitiator API 调用删除和添加 CHAP 访问和属性。
+
+有关详细信息，请参见 link:../api/index.html["使用 Element API 管理存储"]。
+
+.步骤
+. 单击 * 管理 * > * 启动程序 * 。
+. 选择要添加到访问组的启动程序。
+. 单击 * 批量操作 * 按钮。
+. 单击 * 添加到卷访问组 * 。
+. 在添加到卷访问组对话框中，从 * 卷访问组 * 列表中选择一个访问组。
+. 单击 * 添加 * 。
+

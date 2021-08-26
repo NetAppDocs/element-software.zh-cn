@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_getsnmpacl.html 
+sidebar: sidebar 
+keywords: snmp,acl,get,getting,getsnmpacl 
+summary: 您可以使用 GetSnmpACL 方法获取集群节点上的当前 SNMP 访问权限。 
+---
+= GetSnmpACL
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetSnmpACL` 方法获取对集群节点的当前 SNMP 访问权限。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+网络
+ a| 
+列出网络及其对集群节点上运行的 SNMP 服务器的访问类型。如果禁用 SNMP v3 ，则显示此值。
+ a| 
+xref:reference_element_api_network_snmp.adoc[网络] 数组
+
+
+
+ a| 
+用户
+ a| 
+列出用户及其对集群节点上运行的 SNMP 服务器的访问类型。如果启用了 SNMP v3 ，则会显示此值。
+ a| 
+xref:reference_element_api_usmuser.adoc[usmUser] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method": "GetSnmpACL",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+     "usmUsers"  : [
+       {
+          "name": "jdoe",
+          "access": "rouser",
+          "secLevel": "priv",
+          "password": "mypassword",
+          "passphrase": "mypassphrase",
+       }
+     ]
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

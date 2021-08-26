@@ -1,0 +1,176 @@
+---
+permalink: api/reference_element_api_modifykeyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,modifying,modify,change,edit 
+summary: 您可以使用 ModifyKeyServerKmip 方法将现有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器修改为指定属性。尽管唯一必需的参数是 keyServerID ，但仅包含 keyServerID 的请求不会执行任何操作，也不会返回任何错误。您指定的任何其他参数将使用指定的 keyServerID 替换密钥服务器的现有值。在此操作期间，系统会联系密钥服务器以确保其正常运行。您可以使用 kmipKeyServerHostnames 参数提供多个主机名或 IP 地址，但前提是密钥服务器采用集群配置。 
+---
+= ModifyKeyServerKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `MmodifyKeyServerKmip` 方法将现有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器修改为指定属性。尽管唯一必需的参数是 keyServerID ，但仅包含 keyServerID 的请求不会执行任何操作，也不会返回任何错误。您指定的任何其他参数将使用指定的 keyServerID 替换密钥服务器的现有值。在此操作期间，系统会联系密钥服务器以确保其正常运行。您可以使用 kmipKeyServerHostnames 参数提供多个主机名或 IP 地址，但前提是密钥服务器采用集群配置。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+
+
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+密钥服务器 ID
+ a| 
+要修改的 KMIP 密钥服务器的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+kmipCaCertificate
+ a| 
+外部密钥服务器根 CA 的公有密钥证书。此操作将用于验证 TLS 通信中外部密钥服务器提供的证书。对于各个服务器使用不同 CA 的密钥服务器集群，请提供一个串联字符串，其中包含所有 CA 的根证书。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+kmipClientCertificate
+ a| 
+SolidFire KMIP 客户端使用的 PEM 格式 Base64 编码 PKCS#10 X.509 证书。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+kmipKeyServerHostName
+ a| 
+与此 KMIP 密钥服务器关联的主机名或 IP 地址数组。只有当密钥服务器采用集群配置时，才必须提供多个主机名或 IP 地址。
+ a| 
+string array
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+kmipKeyServerName
+ a| 
+KMIP 密钥服务器的名称。此名称仅用于显示目的，不需要唯一。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+kmipKeyServerPort
+ a| 
+与此 KMIP 密钥服务器关联的端口号（通常为 5696 ）。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+kmipKeyServer
+ a| 
+包含有关新修改的密钥服务器的详细信息的对象。
+ a| 
+link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "ModifyKeyServerKmip",
+  "params": {
+    "keyServerID": 15
+    "kmipCaCertificate": "CPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+    "kmipClientCertificate": "kirWmnWXbj9T/UWZYB2oK0z5...",
+    "kmipKeyServerHostnames" : ["server1.hostname.com", "server2.hostname.com"],
+    "kmipKeyServerName" : "keyserverName",
+    "kmipKeyServerPort" : 5696
+  },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "kmipKeyServer": {
+            "kmipCaCertificate":"CPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+            "kmipKeyServerHostnames":[
+                "server1.hostname.com", "server2.hostname.com"
+            ],
+            "keyProviderID":1,
+            "kmipKeyServerName":"keyserverName",
+            "keyServerID":1
+            "kmipKeyServerPort":1,
+            "kmipClientCertificate":"kirWmnWXbj9T/UWZYB2oK0z5...",
+            "kmipAssignedProviderIsActive":true
+        }
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.7

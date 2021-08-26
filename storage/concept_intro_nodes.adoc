@@ -1,0 +1,13 @@
+---
+permalink: storage/concept_intro_nodes.html 
+sidebar: sidebar 
+keywords: sf-series nodes, nodes, block storage, storage nodes, fibre channel nodes, fc, FC 
+summary: 节点是指分组到集群中并作为块存储访问的各个硬件组件。SolidFire 存储系统中有两种类型的节点：存储节点和光纤通道节点。 
+---
+= 节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+节点是指分组到集群中并作为块存储访问的各个硬件组件。SolidFire 存储系统中有两种类型的节点：存储节点和光纤通道节点。

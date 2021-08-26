@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_listdrivehardware.html 
+sidebar: sidebar 
+keywords: drive,hardware,list,listing,listdrivehardware,drives 
+summary: 您可以使用 ListDriveHardware 方法列出连接到节点的所有驱动器。在单个节点上使用时，此方法将返回驱动器硬件信息。在集群主节点 MVIP 上使用时，此方法将返回所有节点上所有驱动器的信息。 
+---
+= ListDriveHardware
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListDriveHardware` 方法列出连接到节点的所有驱动器。在单个节点上使用时，此方法将返回驱动器硬件信息。在集群主节点 MVIP 上使用时，此方法将返回所有节点上所有驱动器的信息。
+
+
+
+== Parameters
+
+
+NOTE: 方法响应中的 "securitySupported" ： true 行并不表示驱动器能够加密；只能查询安全状态。如果您的节点类型的型号以 "-NE" 结尾，则用于在这些驱动器上启用安全功能的命令将失败。
+
+此方法具有以下参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+【强制】
+ a| 
+设置为 true 可在所有节点上运行此方法。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+驱动器硬件
+ a| 
+返回节点的驱动器硬件信息。
+ a| 
+JSON 对象数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method": "ListDriveHardware",
+"params": {},
+"id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "driveHardware": [
+      {
+        "canonicalName": "sda",
+        "connected": true,
+        "dev": 2048,
+        "devPath": "/dev/slot0",
+        "driveEncryptionCapability": "fips",
+        "driveType": "Slice",
+        "lifeRemainingPercent": 98,
+        "lifetimeReadBytes": 0,
+        "lifetimeWriteBytes": 14012129542144,
+        "name": "scsi-SATA_SAMSUNG_MZ7GE24S1M9NWAG501251",
+        "path": "/dev/sda",
+        "pathLink": "/dev/slot0",
+        "powerOnHours": 15489,
+        "product": "SAMSUNG MZ7GE240HMGR-00003",
+        "reallocatedSectors": 0,
+        "reserveCapacityPercent": 100,
+        "scsiCompatId": "scsi-SATA_SAMSUNG_MZ7GE24S1M9NWAG501251",
+        "scsiState": "Running",
+        "securityAtMaximum": false,
+        "securityEnabled": true,
+        "securityFrozen": false,
+        "securityLocked": false,
+        "securitySupported": true,
+        "serial": "S1M9NWAG501251",
+        "size": 240057409536,
+        "slot": 0,
+        "uncorrectableErrors": 0,
+        "uuid": "789aa05d-e49b-ff4f-f821-f60eed8e43bd",
+        "vendor": "Samsung",
+        "version": "EXT1303Q"
+      }
+   ]
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_enableencryptionatrest.adoc[EnableEncryptionAtRest]

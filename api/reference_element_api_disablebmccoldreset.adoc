@@ -1,0 +1,75 @@
+---
+permalink: api/reference_element_api_disablebmccoldreset.html 
+sidebar: sidebar 
+keywords: BMC cold reset,BMC reset,disable BMC 
+summary: 您可以使用 DisableBmcColdReset 方法禁用后台任务，此任务会定期重置集群中所有节点的基板管理控制器（ Baseboard Management Controller ， BMC\ ）。 
+---
+= DisableBmcColdReset
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DisableBmcColdReset` 方法禁用后台任务，该任务会定期为集群中的所有节点重置基板管理控制器（ Baseboard Management Controller ， BMC ）。
+
+
+NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
+
+
+
+== 参数
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+cBmcResetDurationMinutes
+ a| 
+返回两次重置间隔之间的时间。命令完成后，间隔应始终为 0 。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "DisableBmcColdReset",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "cBmcResetDurationMinutes": 0
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.0

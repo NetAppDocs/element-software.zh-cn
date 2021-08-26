@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_snapmirrorvserver.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVserver 
+summary: snapMirrorVserver 对象包含有关目标 ONTAP 集群上的 Storage Virtual Machine \ （或 Vservers\ ）的信息。 
+---
+= snapMirrorVserver
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVserver 对象包含有关目标 ONTAP 集群上的 Storage Virtual Machine （或 SVM ）的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目标 ONTAP 系统的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+vserverName
+ a| 
+SVM 的名称。
+ a| 
+string
+
+
+
+ a| 
+vserverType
+ a| 
+SVM 的类型。可能值：
+
+* 数据
+* 管理员
+* 系统
+* node
+
+ a| 
+string
+
+
+
+ a| 
+vserverSubtype
+ a| 
+SVM 的子类型。可能值：
+
+* default
+* dp_destination
+* 数据
+* sync_source
+* sync_destination
+
+ a| 
+string
+
+
+
+ a| 
+rootVolume
+ a| 
+SVM 的根卷。
+ a| 
+string
+
+
+
+ a| 
+rootVolumeAggregate
+ a| 
+要创建根卷的聚合。
+ a| 
+string
+
+
+
+ a| 
+vserverAggregateInfo
+ a| 
+snapMirrorVserverAggregateInfo 对象的数组。
+ a| 
+JSON 对象
+
+
+
+ a| 
+管理状态
+ a| 
+SVM 的详细管理状态。可能值：
+
+* 正在运行
+* 已停止
+* 正在启动
+* 正在停止
+* 正在初始化
+* 正在删除
+
+ a| 
+string
+
+
+
+ a| 
+操作状态
+ a| 
+SVM 的基本运行状态。可能值：
+
+* 正在运行
+* 已停止
+
+ a| 
+string
+
+|===

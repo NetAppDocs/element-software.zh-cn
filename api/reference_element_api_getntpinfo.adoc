@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_getntpinfo.html 
+sidebar: sidebar 
+keywords: ntp,info,get,getting,getntpinfo 
+summary: 您可以使用 GetNtpInfo 方法获取当前网络时间协议（ NTP ）配置信息。 
+---
+= GetNtpInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetNtpInfo` 方法获取当前网络时间协议（ NTP ）配置信息。
+
+
+
+== 参数
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+服务器
+ a| 
+NTP 服务器列表。
+ a| 
+string array
+
+
+
+ a| 
+广播客户端
+ a| 
+指示集群中的节点是否正在侦听广播 NTP 消息。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "GetNtpInfo",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+    "broadcastclient" : false,
+    "servers" : [ "us.pool.ntp.org" ]
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

@@ -1,0 +1,115 @@
+---
+permalink: api/reference_element_api_resetdrives.html 
+sidebar: sidebar 
+keywords: drive,drives,remove,removing,data,reset,resetting,resetdrives,erase 
+summary: 您可以使用 ResetDrives 方法主动初始化驱动器并删除当前驻留在驱动器上的所有数据。然后，可以在现有节点中重复使用该驱动器，也可以在升级后的节点中使用该驱动器。 
+---
+= ResetDrives
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ResetDrives` 方法主动初始化驱动器并删除当前驻留在驱动器上的所有数据。然后，可以在现有节点中重复使用该驱动器，也可以在升级后的节点中使用该驱动器。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+驱动器
+ a| 
+要重置的设备名称（非驱动器 ID ）列表。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+【强制】
+ a| 
+设置为 true 可重置驱动器。
+ a| 
+boolean
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+详细信息
+ a| 
+正在重置的驱动器的详细信息。
+ a| 
+JSON 对象数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ResetDrives",
+   "params": {
+      "drives" : "slot3",
+      "force" : true
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+   "details": {
+    "drives": [
+    {
+      "drive": "slot3",
+      "returnCode": 0,
+      "stderr": " * Unlocking /dev/slot9 .[ ok ]\ * Setting master password /dev/slot9 .[ ok ]\ * Secure erasing /dev/slot9 (hdparm) [tries=0/1] ...........................[ ok ]",
+      "stdout": ""
+    }
+   ]
+  },
+  "duration": "00:00:28.501269",
+  "result": "Passed"
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

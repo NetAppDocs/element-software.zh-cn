@@ -1,0 +1,80 @@
+---
+permalink: api/reference_element_api_getloginsessioninfo.html 
+sidebar: sidebar 
+keywords: cluster,get,getting,login,session,info,getloginsessioninfo 
+summary: 您可以使用 GetLoginSessionInfo 方法返回登录身份验证会话对登录 shell 和 TUI 均有效的时间段。 
+---
+= GetLoginSessionInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetLoginSessionInfo` 方法返回登录身份验证会话对登录 Shell 和 TUI 均有效的时间段。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+loginSessionInfo
+ a| 
+包含身份验证到期期限的对象。返回的可能对象：
+
+* 超时
++
+此会话超时并到期的时间（以分钟为单位）。格式化为 H ： mm ： ss例如： 1 ： 30 ： 00 ， 20 ： 00 ， 5 ： 00 。无论输入超时的格式如何，系统都会删除所有前导零和冒号。
+
+
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "GetLoginSessionInfo",
+    "params": {},
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+"id": 1,
+  "result" : {
+    "loginSessionInfo" : {
+      "timeout" : "30:00"
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

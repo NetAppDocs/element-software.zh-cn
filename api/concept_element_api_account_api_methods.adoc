@@ -1,0 +1,30 @@
+---
+permalink: api/concept_element_api_account_api_methods.html 
+sidebar: sidebar 
+keywords: account,method,methods,API,managing,manage 
+summary: 使用帐户方法可以添加，删除，查看和修改帐户和安全信息。 
+---
+= 帐户 API 方法
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用帐户方法可以添加，删除，查看和修改帐户和安全信息。
+
+* xref:reference_element_api_addaccount.adoc[添加帐户]
+* xref:reference_element_api_getaccountbyid.adoc[GetAccountByID]
+* xref:reference_element_api_getaccountbyname.adoc[GetAccountByName]
+* xref:reference_element_api_getaccountefficiency.adoc[GetAccountEfficiency]
+* xref:reference_element_api_listaccounts.adoc[ListAccounts]
+* xref:reference_element_api_modifyaccount.adoc[ModifyAccount]
+* xref:reference_element_api_removeaccount.adoc[RemoveAccount]
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

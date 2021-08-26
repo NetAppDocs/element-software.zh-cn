@@ -1,0 +1,52 @@
+---
+permalink: storage/task_data_manage_vol_access_group_create_an_initiator.html 
+sidebar: sidebar 
+keywords: initiator, create, fc, iscsi, aliases, chap 
+summary: 您可以创建 iSCSI 或光纤通道启动程序，也可以为其分配别名。 
+---
+= 创建启动程序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建 iSCSI 或光纤通道启动程序，也可以为其分配别名。
+
+此外，您还可以使用 API 调用来分配基于启动程序的 CHAP 属性。要为每个启动程序添加 CHAP 帐户名称和凭据，必须使用 `CreateInitiator` API 调用删除和添加 CHAP 访问和属性。通过 `CreateInitiators` 和 `ModfyInitiators` API 调用指定一个或多个 virtualNetworkID ，可以将启动程序访问限制为一个或多个 VLAN 。如果未指定虚拟网络，则启动程序可以访问所有网络。
+
+有关详细信息，请参见 API 参考信息。link:../api/index.html["使用 Element API 管理存储"]
+
+.步骤
+. 单击 * 管理 * > * 启动程序 * 。
+. 单击 * 创建启动程序 * 。
+. 执行以下步骤以创建一个或多个启动程序：
++
+[cols="25,75"]
+|===
+| 选项 | 步骤 
+
+
+ a| 
+创建一个启动程序
+ a| 
+.. 单击 * 创建单个启动程序 * 。
+.. 在 * IQN/WWPN* 字段中输入启动程序的 IQN 或 WWPN 。
+.. 在 * 别名 * 字段中输入启动程序的友好名称。
+.. 单击 * 创建启动程序 * 。
+
+
+
+
+ a| 
+创建多个启动程序
+ a| 
+.. 单击 * 批量创建启动程序 * 。
+.. 在文本框中输入 IQN 或 WWPN 列表。
+.. 单击 * 添加启动程序 * 。
+.. 从生成的列表中选择一个启动程序，然后单击 * 别名 * 列中对应的添加图标，为启动程序添加别名。
+.. 单击复选标记以确认新别名。
+.. 单击 * 创建启动程序 * 。
+
+
+|===
+

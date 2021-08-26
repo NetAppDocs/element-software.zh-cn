@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_protectiondomainresiliency.html 
+sidebar: sidebar 
+keywords: object,objects,protectionDomainResiliency 
+summary: protectionDomainResiliency 对象包含此存储集群的故障恢复能力状态。故障恢复能力表示存储集群能够在其关联保护域类型的单个保护域中自动从一个或多个故障中自行修复。如果某个存储集群能够在任何一个存储节点发生故障时继续读取和写入数据，则会被视为已修复（这种状态称为节点容错）。 
+---
+= 保护域弹性
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomainResiliency 对象包含此存储集群的故障恢复能力状态。故障恢复能力表示存储集群能够在其关联保护域类型的单个保护域中自动从一个或多个故障中自行修复。如果存储集群可以在任何一个存储节点发生故障（称为节点容错状态）时继续读取和写入数据，则视为已修复。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+保护架构弹性
+ a| 
+包含关联类型的保护域的故障恢复能力信息的对象列表（每个保护方案一个对象）。
+ a| 
+xref:reference_element_api_protectionschemeresiliency.adoc[保护架构弹性] 数组
+
+
+
+ a| 
+SingleFailureThresholdBytesForBlockData
+ a| 
+在无法自动修复到节点容错状态之前，可以存储在存储集群上的最大字节数。
+ a| 
+整型
+
+
+
+ a| 
+sustainableFailuresForEnsemble
+ a| 
+在不丧失自动修复到集合仲裁节点容错状态的情况下可以同时发生的预计故障数。
+ a| 
+整型
+
+|===

@@ -1,0 +1,25 @@
+---
+permalink: storage/task_system_manage_virtual_delete_a_virtual_network.html 
+sidebar: sidebar 
+keywords: virtual network delete, remove, object, address blocks, vlan 
+summary: 您可以删除虚拟网络对象。在删除虚拟网络之前，必须将地址块添加到另一个虚拟网络。 
+---
+= 删除虚拟网络
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除虚拟网络对象。在删除虚拟网络之前，必须将地址块添加到另一个虚拟网络。
+
+. 单击 * 集群 * > * 网络 * 。
+. 单击要删除的 VLAN 对应的 "Actions" 图标。
+. 单击 * 删除 * 。
+. 确认消息。
+
+
+
+
+== 了解更多信息
+
+xref:task_system_manage_virtual_edit_a_virtual_network.adoc[编辑虚拟网络]

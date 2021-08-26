@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_getnetworkconfig.html 
+sidebar: sidebar 
+keywords: network,config,configuration,get,getting,getnetworkconfig 
+summary: 您可以使用 GetNetworkConfig 方法显示节点的网络配置信息。 
+---
+= GetNetworkConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetNetworkConfig` 方法显示节点的网络配置信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+网络
+ a| 
+节点的每个网络接口的网络连接类型和当前设置。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[网络（所有接口）]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "GetNetworkConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+由于此响应示例的长度较长，因此它会记录在一个补充主题中。
+
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetworkConfig]

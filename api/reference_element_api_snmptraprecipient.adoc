@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_snmptraprecipient.html 
+sidebar: sidebar 
+keywords: object,objects,snmptraprecipient 
+summary: snmpTrapRecipient 对象包含有关配置为接收存储集群生成的 SNMP 陷阱的主机的信息。您可以使用 GetSnmpTrapInfo API 方法获取配置为接收 SNMP 陷阱的主机列表。 
+---
+= snmpTrapRecipient
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snmpTrapRecipient 对象包含有关配置为接收存储集群生成的 SNMP 陷阱的主机的信息。您可以使用 `GetSnmpTrapInfo` API 方法获取配置为接收 SNMP 陷阱的主机列表。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+host
+ a| 
+目标主机的 IP 地址或主机名。
+ a| 
+string
+
+
+
+ a| 
+port
+ a| 
+应发送陷阱的主机上的 UDP 端口号。有效范围为 1 到 65535 。0 （零）不是有效的端口号。默认端口为 162. 。
+ a| 
+整型
+
+
+
+ a| 
+社区
+ a| 
+SNMP 社区字符串。
+ a| 
+string
+
+|===

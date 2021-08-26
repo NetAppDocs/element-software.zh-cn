@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_multi_vcenter_config.html 
+summary: 您可以使用 REST API UI 将 NetApp Hybrid Cloud Control 配置为使用多个 vCenter 。 
+keywords: netapp, mnode, management node, multi-vcenter, Element 
+---
+= 为多个 vCenter 配置 NetApp Hybrid Cloud Control
+
+
+[role="lead"]
+您可以将 NetApp Hybrid Cloud Control 配置为管理两个或更多未使用链接模式的 vCenter 中的资产。
+
+如果您需要为最近扩展的安装添加资产，或者没有将新资产自动添加到配置中，则应在初始安装后使用此过程。使用这些 API 添加最近添加到安装中的资产。
+
+.您需要什么？ #8217 ；将需要什么
+* 您的集群版本运行的是 NetApp Element 软件 11.3 或更高版本。
+* 您已部署运行 11.3 或更高版本的管理节点。
+
+
+.步骤
+. link:task_mnode_add_assets.html["将新 vCenter 添加为控制器资产"] 管理节点配置。
+. 刷新管理节点上的清单服务 API ：
++
+[listing]
+----
+https://[management node IP]/inventory/1/
+----
++
+
+NOTE: 或者，您也可以等待 2 分钟，以便在 NetApp Hybrid Cloud Control UI 中更新清单。
+
++
+.. 选择 * 授权 * 并完成以下操作：
++
+... 输入集群用户名和密码。
+... 输入客户端 ID `mnode-client` 。
+... 选择 * 授权 * 以开始会话。
+... 关闭窗口。
+
+
+.. 从 REST API UI 中，选择 * 获取​ /Installations * 。
+.. 选择 * 试用 * 。
+.. 选择 * 执行 * 。
+.. 从响应中复制安装资产 ID （` "id"` ）。
+.. 从 REST API UI 中，选择 * 获取 /installations/ ｛ id ｝ * 。
+.. 选择 * 试用 * 。
+.. 将 refresh 设置为 `True` 。
+.. 将安装资产 ID 粘贴到 * id * 字段中。
+.. 选择 * 执行 * 。
+
+
+. 刷新 NetApp Hybrid Cloud Control 浏览器以查看更改。
+
+
+[discrete]
+== 了解更多信息
+
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+

@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_startclusterpairing.html 
+sidebar: sidebar 
+keywords: cluster,pair,pairing,start,starting,startclusterpairing 
+summary: 您可以使用 StartClusterPairing 方法从用于与另一个集群配对的集群创建编码密钥。在此 API 方法中创建的密钥将在 CompleteClusterPairing 方法中用于建立集群配对。您最多可以将一个集群与四个其他集群配对。 
+---
+= 启动集群配对
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `STartClusterPairing` 方法从用于与另一个集群配对的集群创建编码密钥。使用此 API 方法创建的密钥将在 `CompleteClusterPairing` 方法中用于建立集群配对。您最多可以将一个集群与四个其他集群配对。
+
+
+
+== 参数
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+clusterPairingKey
+ a| 
+由使用的字符串 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] API 方法。
+ a| 
+string
+
+
+
+ a| 
+clusterPairID
+ a| 
+集群对的唯一标识符。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "StartClusterPairing",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "clusterPairID": 1,
+     "clusterPairingKey": "7b22636c7573746572506169724944223a312c22636c75737465725061697255554944223a2231636561313336322d346338662d343631612d626537322d373435363661393533643266222c22636c7573746572556e697175654944223a2278736d36222c226d766970223a223139322e3136382e3133392e313232222c226e616d65223a224175746f54657374322d63307552222c2270617373776f7264223a22695e59686f20492d64774d7d4c67614b222c22727063436f6e6e656374696f6e4944223a3931333134323634392c22757365726e616d65223a225f5f53465f706169725f50597a796647704c7246564432444a42227d"
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]

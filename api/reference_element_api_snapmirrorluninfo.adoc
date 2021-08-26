@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_snapmirrorluninfo.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorLunInfo 
+summary: snapMirrorLunInfo 对象包含有关 ONTAP LUN 对象的信息。 
+---
+= snapMirrorLunInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorLunInfo 对象包含有关 ONTAP LUN 对象的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目标 ONTAP 系统的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+creationTimestamp
+ a| 
+LUN 的创建时间。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+LunName
+ a| 
+LUN 的名称。
+ a| 
+string
+
+
+
+ a| 
+path
+ a| 
+LUN 的路径。
+ a| 
+string
+
+
+
+ a| 
+size
+ a| 
+LUN 的大小（以字节为单位）。
+ a| 
+整型
+
+
+
+ a| 
+已使用大小
+ a| 
+LUN 使用的字节数。
+ a| 
+整型
+
+
+
+ a| 
+state
+ a| 
+LUN 的当前访问状态。可能值：
+
+* 联机
+* 脱机
+* 外部 LUN 错误
+* nvfail
+* 空间错误
+
+ a| 
+string
+
+
+
+ a| 
+volume
+ a| 
+包含 LUN 的卷的名称。
+ a| 
+string
+
+
+
+ a| 
+vserver
+ a| 
+包含 LUN 的 SVM 。
+ a| 
+string
+
+|===

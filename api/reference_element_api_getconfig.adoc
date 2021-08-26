@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_getconfig.html 
+sidebar: sidebar 
+keywords: node,get,getting,info,config,configuration,getconfig 
+summary: 您可以使用 getconfig API 方法获取节点的所有配置信息。此 API 方法包含 GetClusterConfig 和 GetNetworkConfig API 方法中提供的相同信息。 
+---
+= getconfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `getconfig` API 方法获取节点的所有配置信息。此 API 方法包含在 `GetClusterConfig` 和 `GetNetworkConfig` API 方法中提供的相同信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+配置
+ a| 
+集群的配置详细信息。此对象包含：
+
+* xref:reference_element_api_cluster.adoc[集群]：集群信息，用于标识存储节点如何与其关联的存储集群进行通信。
+* xref:reference_element_api_network_all_interfaces.adoc[网络（所有接口）]：节点的每个网络接口的网络连接类型和当前设置。
+
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "GetConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+由于此响应示例的长度较长，因此它会记录在一个补充主题中。
+
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getclusterconfig.adoc[GetClusterConfig]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig]
+* xref:reference_element_api_response_example_getconfig.adoc[getconfig]
+

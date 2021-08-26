@@ -1,0 +1,120 @@
+---
+permalink: api/reference_element_api_setconfig.html 
+sidebar: sidebar 
+keywords: config,configuration,set,setting,node,setconfig,network,cluster 
+summary: 您可以使用 SetConfig 方法设置节点的网络和集群信息。此方法在一个 API 方法中包含与使用 SetClusterConfig 和 SetNetworkConfig 方法时相同的设置。此方法只需要包含要更改的字段。 
+---
+= SetConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetConfig` 方法设置节点的网络和集群信息。此方法在一个 API 方法中包含与使用 `SetClusterConfig` 和 `SetNetworkConfig` 方法相同的设置。此方法只需要包含要更改的字段。
+
+
+NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
+
+
+
+== 参数
+
+小心
+
+更改节点上的绑定模式会发生原因导致网络连接暂时断开。
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+集群
+ a| 
+用于标识存储节点与其关联存储集群通信的集群信息。
+ a| 
+xref:reference_element_api_cluster.adoc[集群]
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+网络
+ a| 
+节点的每个网络接口的网络连接类型和当前设置。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[网络（所有接口）]
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+配置
+ a| 
+节点的新配置和当前配置。此对象包含：
+
+* xref:reference_element_api_cluster.adoc[集群]：集群信息，用于标识存储节点如何与其关联的存储集群进行通信。
+* xref:reference_element_api_network_all_interfaces.adoc[网络（所有接口）]：节点的每个网络接口的网络连接类型和当前设置。
+
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+	"method": "SetConfig",
+	"params": {
+		"cluster": {
+			"name": "MyHostname"
+		},
+		"network": {
+			"Bond10G": {
+				"bond-mode": "ALB"
+			}
+		}
+	}
+}
+----
+
+
+== 响应示例
+
+此方法的响应与 getconfig 方法的返回相同。使用 SetConfig 时，将显示对象的所有字段以及更新的值。
+
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_setclusterconfig.adoc[SetClusterConfig]
+* xref:reference_element_api_setnetworkconfig.adoc[SetNetworkConfig]
+* xref:reference_element_api_response_example_getconfig.adoc[getconfig]
+

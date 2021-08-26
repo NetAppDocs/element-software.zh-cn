@@ -1,0 +1,39 @@
+---
+permalink: storage/task_system_manage_virtual_edit_a_virtual_network.html 
+sidebar: sidebar 
+keywords: virtual network, edit, ip address block, vlan attributes 
+summary: 您可以更改 VLAN 属性，例如 VLAN 名称，网络掩码和 IP 地址块大小。无法修改 VLAN 的 VLAN 标记和 SVIP 。对于非 VRF VLAN ，网关属性不是有效参数。 
+---
+= 编辑虚拟网络
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更改 VLAN 属性，例如 VLAN 名称，网络掩码和 IP 地址块大小。无法修改 VLAN 的 VLAN 标记和 SVIP 。对于非 VRF VLAN ，网关属性不是有效参数。
+
+如果存在任何 iSCSI ，远程复制或其他网络会话，则修改可能会失败。
+
+在管理 VLAN IP 地址范围的大小时，应注意以下限制：
+
+* 您只能从创建 VLAN 时分配的初始 IP 地址范围中删除 IP 地址。
+* 您可以删除在初始 IP 地址范围之后添加的 IP 地址块，但不能通过删除 IP 地址来调整 IP 块的大小。
+* 当您尝试从初始 IP 地址范围或 IP 块中删除集群中节点正在使用的 IP 地址时，此操作可能会失败。
+* 您不能将特定的已用 IP 地址重新分配给集群中的其他节点。
+
+
+您可以使用以下操作步骤添加 IP 地址块：
+
+. 选择 * 集群 * > * 网络 * 。
+. 选择要编辑的 VLAN 对应的 "Actions" 图标。
+. 选择 * 编辑 * 。
+. 在 * 编辑 VLAN* 对话框中，输入 VLAN 的新属性。
+. 选择 * 添加块 * 可为虚拟网络添加非连续 IP 地址块。
+. 选择 * 保存更改 * 。
+
+
+链接到知识库文章，以帮助您解决管理 VLAN IP 地址范围的问题。
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["在 Element 集群上的 VLAN 中添加存储节点后出现重复 IP 警告"]
+* link:++https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP's_are_in_use_and_which_nodes_those_IP's_are_assigned_to_in_Element++["如何在 Element 中确定正在使用的 VLAN IP 以及将这些 IP 分配给哪些节点"]
+

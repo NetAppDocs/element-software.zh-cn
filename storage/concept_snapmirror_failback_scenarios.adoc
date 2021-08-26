@@ -1,0 +1,34 @@
+---
+permalink: storage/concept_snapmirror_failback_scenarios.html 
+sidebar: sidebar 
+keywords: failback scenarios, snapmirror, dr, disaster recovery 
+summary: SnapMirror 灾难恢复功能在两种故障恢复情形中进行了说明。这些假设已对原始关系进行故障转移（已断开）。 
+---
+= SnapMirror 故障恢复场景
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 灾难恢复功能在两种故障恢复情形中进行了说明。假定原始关系已进行故障转移（已中断）。
+
+添加了相应过程中的步骤以供参考。
+
+
+NOTE: 在此处的示例中， R1 表示原始关系，其中运行 NetApp Element 软件的集群是原始源卷（ Element ），而 ONTAP 是原始目标卷（ ONTAP ）。R2 和 R3 表示通过反向重新同步操作创建的反向关系。
+
+下图显示了源卷仍存在时的故障恢复场景：
+
+image::../media/snapmirror_element_failback1.gif[SnapMirror Element 故障回退 1]
+
+下图显示了源卷不再存在时的故障恢复场景：
+
+image::../media/snapmirror_element_failback2.png[SnapMirror Element 故障回退 2.]
+
+
+
+== 了解更多信息
+
+* xref:task_snapmirror_perform_failback_when_source_volume_exists.adoc[如果源卷仍存在，请执行故障恢复]
+* xref:task_snapmirror_performing_failback_when_source_volume_no_longer_exists.adoc[源卷不再存在时执行故障恢复]
+

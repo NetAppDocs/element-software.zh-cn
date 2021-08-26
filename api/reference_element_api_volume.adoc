@@ -1,0 +1,302 @@
+---
+permalink: api/reference_element_api_volume.html 
+sidebar: sidebar 
+keywords: object,objects,volume 
+summary: volume 对象包含有关未配对或已配对卷的配置信息。它不包含运行时或使用情况信息，也不包含有关虚拟卷的信息。 
+---
+= volume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+volume 对象包含有关未配对或已配对卷的配置信息。它不包含运行时或使用情况信息，也不包含有关虚拟卷的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+访问
+ a| 
+卷允许的访问类型。可能值：
+
+* `readOnly` ：仅允许执行读取操作。
+* `readWrite` ：允许读取和写入。
+* `locked` ：不允许读取或写入。
+* `ReplicationTarget` ：指定为复制卷对中的目标卷。
+
+ a| 
+string
+
+
+
+ a| 
+accountId
+ a| 
+包含卷的帐户的帐户 ID 。
+ a| 
+整型
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+
+
+
+ a| 
+块大小
+ a| 
+卷上块的大小。
+ a| 
+整型
+
+
+
+ a| 
+CREATETIME
+ a| 
+创建卷时的 UTC+0 格式时间。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+当前保护方案
+ a| 
+用于此卷的保护方案。如果卷从一个保护方案转换为另一个保护方案，则此成员反映卷要转换到的保护方案。
+ a| 
+string
+
+
+
+ a| 
+deleteTime
+ a| 
+删除卷时的 UTC+0 格式时间。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+enable512e
+ a| 
+如果设置为 true ，则卷将提供 512 字节扇区模拟。
+ a| 
+boolean
+
+
+
+ a| 
+启用 SnapMirrorReplication
+ a| 
+卷是否可用于 SnapMirror 端点的复制。
+ a| 
+boolean
+
+
+
+| 五个大小 | 指定使用先出（ First-in-First-out ， FIFO ）快照保留模式时要同时维护的卷快照的最大数量。 | 整型 
+
+
+ a| 
+IQN
+ a| 
+卷的 iSCSI 限定名称。
+ a| 
+string
+
+
+
+ a| 
+最后访问时间
+ a| 
+上次对卷进行任何访问（包括 I/O ）的时间（格式为 UTC+0 ）。如果不知道上次访问时间，则此值为空。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+最后访问时间 IO
+ a| 
+上次对卷执行任何 I/O 的时间（格式化为 UTC+0 ）。如果不知道上次访问时间，则此值为空。
+ a| 
+ISO 8601 字符串
+
+
+
+| 最小大小 | 指定使用先出（ First-in-first-out ， FIFO ）快照保留模式时卷同时预留的最小先出（ First-in-first-out ， FIFO ）快照插槽数。 | 整型 
+
+
+ a| 
+name
+ a| 
+创建时提供的卷名称。
+ a| 
+string
+
+
+
+ a| 
+先前的保护方案
+ a| 
+如果卷从一个保护方案转换为另一个保护方案，则此成员反映卷从中转换的保护方案。在开始转换之前，此成员不会更改。如果从未转换过卷，则此成员为空。
+ a| 
+string
+
+
+
+ a| 
+PurgeTime
+ a| 
+从系统中清除卷的 UTC+0 格式时间。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+QoS
+ a| 
+此卷的服务质量设置。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+
+
+
+ a| 
+qosPolicyID
+ a| 
+与卷关联的 QoS 策略 ID 。如果卷未与策略关联，则此值为空。
+ a| 
+整型
+
+
+
+ a| 
+scsiEUIDeviceID
+ a| 
+卷的全局唯一 SCSI 设备标识符，采用基于 EUI-64 的 16 字节格式。
+ a| 
+string
+
+
+
+ a| 
+scsiNAADeviceID
+ a| 
+采用 NAA IEEE 注册扩展格式的卷的全局唯一 SCSI 设备标识符。
+ a| 
+string
+
+
+
+ a| 
+sliceCount
+ a| 
+卷上的分区数。此值始终为 "1" 。
+ a| 
+整型
+
+
+
+ a| 
+status
+ a| 
+卷的当前状态。可能值：
+
+* init ：正在初始化且尚未准备好进行连接的卷。
+* Active ：活动卷已准备好进行连接。
+* Deleted ：卷已标记为待删除，但尚未清除。
+
+ a| 
+string
+
+
+
+ a| 
+totalSize
+ a| 
+已配置容量的总字节数。
+ a| 
+整型
+
+
+
+ a| 
+virtualVolumeID
+ a| 
+与卷关联的唯一虚拟卷 ID （如果有）。
+ a| 
+UUID
+
+
+
+ a| 
+卷访问组
+ a| 
+卷所属的卷访问组的 ID 列表。如果卷不属于任何卷访问组，则此值为空列表。
+ a| 
+整型数组
+
+
+
+ a| 
+volumeConsistencyGroupUUID
+ a| 
+卷所属的卷一致性组的通用唯一 ID 。
+ a| 
+UUID
+
+
+
+ a| 
+volumeId
+ a| 
+卷的唯一卷 ID 。
+ a| 
+整型
+
+
+
+ a| 
+卷
+ a| 
+有关配对卷的信息。只有在卷已配对时才可见。如果卷未配对，则此值为空列表。
+ a| 
+xref:reference_element_api_volumepair.adoc[卷对] 数组
+
+
+
+ a| 
+卷 UUID
+ a| 
+卷的通用唯一 ID 。
+ a| 
+UUID
+
+|===
+
+
+== 了解更多信息
+
+* xref:reference_element_api_listactivevolumes.adoc[ListActiveVolumes]
+* xref:reference_element_api_listdeletedvolumes.adoc[ListDeletedVolumes]
+* xref:reference_element_api_listvolumes.adoc[ListVolumes]
+* xref:reference_element_api_listvolumesforaccount.adoc[ListVolumesForAccount]
+* xref:reference_element_api_qos.adoc[QoS]
+

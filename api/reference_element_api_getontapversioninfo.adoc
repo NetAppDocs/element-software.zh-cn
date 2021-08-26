@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_getontapversioninfo.html 
+sidebar: sidebar 
+keywords: ontap,version,info,information,get,getting,api,support,getontapversioninfo 
+summary: Element Web UI 使用 GetOntapVersionInfo 从 SnapMirror 关系中的 ONTAP 集群获取有关 API 版本支持的信息。 
+---
+= GetOntapVersionInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI 使用 `GetOntapVersionInfo` 从 SnapMirror 关系中的 ONTAP 集群获取有关 API 版本支持的信息。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+如果提供此参数，则系统将列出具有指定 snapMirrorEndpointID 的端点的版本信息。如果未提供此参数，则系统将列出所有已知 SnapMirror 端点的版本信息。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+ontapVersionInfo
+ a| 
+ONTAP 端点的软件版本信息。
+ a| 
+xref:reference_element_api_ontapversioninfo.adoc[ontapVersionInfo] 数组
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_system_manage_nodes_cluster_capacity_in_a_mixed_node_environment.html 
+sidebar: sidebar 
+keywords: nodes, mixed environment, capacity, cluster capacity, mixed nodes, encrypted, non-encrypted, threshold 
+summary: 您可以在一个集群中混用不同类型的节点。SF 系列 2405 ， 3010 ， 4805 ， 6010 ， 9605 ， 9010 ， 19210 ， 38410 和 H 系列可以同时位于一个集群中。 
+---
+= 混合节点环境中的集群容量
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在一个集群中混用不同类型的节点。SF 系列 2405 ， 3010 ， 4805 ， 6010 ， 9605 ， 9010 ， 19210 ， 38410 和 H 系列可以同时位于一个集群中。
+
+H 系列由 H610S-1 ， H610S-2 ， H610S-4 和 H410S 节点组成。这些节点支持 10GbE 和 25GbE 。
+
+最好不要混用非加密节点和加密节点。在混合节点集群中，任何节点都不能超过集群总容量的 33% 。例如，在具有四个 SF 系列 4805 节点的集群中，可以单独添加的最大节点是 SF 系列 9605 。在这种情况下，集群容量阈值是根据最大节点的潜在损失计算的。
+
+从 Element 12.0 开始，不支持以下 SF 系列存储节点：
+
+* SF3010
+* SF6010
+* SF9010
+
+
+如果将其中一个存储节点升级到 Element 12.0 ，则会看到一条错误，指出 Element 12.0 不支持此节点。

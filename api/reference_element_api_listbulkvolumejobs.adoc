@@ -1,0 +1,97 @@
+---
+permalink: api/reference_element_api_listbulkvolumejobs.html 
+sidebar: sidebar 
+keywords: bulk,volume,job,jobs,volumes,read,write,operation,list,listing,listbulkvolumejobs 
+summary: 您可以使用 ListBulkVolumeJobs 方法获取有关系统中发生的每个批量卷读取或写入操作的信息。 
+---
+= ListBulkVolumeJobs
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListBulkVolumeJobs` 方法获取有关系统中发生的每个批量卷读取或写入操作的信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+bulkVolumeJobs
+ a| 
+每个批量卷作业的信息数组。
+ a| 
+xref:reference_element_api_bulkvolumejob.adoc[bulkVolumeJob] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListBulkVolumeJobs",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "bulkVolumeJobs": [
+        {
+          "attributes": {
+            "blocksPerTransfer": 1024,
+            "firstPendingLba": 216064,
+            "nLbas": 2441472,
+            "nextLba": 226304,
+            "pendingLbas": "[220160, 223232, 221184, 224256, 217088, 225280, 222208, 218112, 219136, 216064]",
+            "percentComplete": 8,
+            "startLba": 0
+          },
+          "bulkVolumeID": 2,
+          "createTime": "2015-05-07T14:52:17Z",
+          "elapsedTime": 44,
+          "format": "native",
+          "key": "eaffb0526d4fb47107061f09bfc9a806",
+          "percentComplete": 8,
+          "remainingTime": 506,
+          "script": "bv_internal.py",
+          "snapshotID": 509,
+          "srcVolumeID": 3,
+          "status": "running",
+          "type": "read"
+       }
+     ]
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

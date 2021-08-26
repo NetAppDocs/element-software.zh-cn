@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_groupsnapshot.html 
+sidebar: sidebar 
+keywords: object,objects,groupSnapshot 
+summary: groupSnapshot 对象包含有关一组卷的快照的信息。您可以使用 ListGroupSnapshots API 方法检索组快照信息。 
+---
+= groupSnapshot
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+groupSnapshot 对象包含有关一组卷的快照的信息。您可以使用 `ListGroupSnapshots` API 方法检索组快照信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+
+
+
+ a| 
+CREATETIME
+ a| 
+UTC+0 格式的创建组快照的日期和时间。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+启用远程复制
+ a| 
+确定是否已为快照启用远程复制。
+ a| 
+boolean
+
+
+
+ a| 
+groupSnapshotID
+ a| 
+组快照的唯一 ID 。
+ a| 
+整型
+
+
+
+ a| 
+groupSnapshotUUID
+ a| 
+组快照的 UUID 。
+ a| 
+string
+
+
+
+ a| 
+成员
+ a| 
+一个对象数组，其中包含有关组快照每个成员的信息。
+ a| 
+xref:reference_element_api_snapshot.adoc[Snapshot] 数组
+
+
+
+ a| 
+name
+ a| 
+组快照的名称，或者如果未提供任何快照，则为创建快照的 UTC 格式日期和时间。
+ a| 
+字符串或 ISO 8601 日期字符串
+
+
+
+ a| 
+remoteStatus
+ a| 
+一个阵列，其中包含目标集群上每个远程快照的通用标识符和复制状态，从源集群中可以看到。
+ a| 
+xref:reference_element_api_remoteclustersnapshotstatus.adoc[remoteClusterSnapshotStatus] 数组
+
+
+
+ a| 
+status
+ a| 
+快照的当前状态。可能值：
+
+* unknown ：获取快照状态时出错。
+* Preparing ：正在准备此快照以供使用，此快照尚未可写入。
+* RemoteSyncing ：正在从远程集群复制此快照。
+* Done ：此快照已完成准备或复制，现在可供使用。
+* Active ：此快照是活动分支。
+* 克隆：此快照涉及 CopyVolume 操作。
+
+ a| 
+string
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listgroupsnapshots.adoc[ListGroupSnapshots]

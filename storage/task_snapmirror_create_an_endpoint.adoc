@@ -1,0 +1,41 @@
+---
+permalink: storage/task_snapmirror_create_an_endpoint.html 
+sidebar: sidebar 
+keywords: endpoints, create, snapmirror, ui 
+summary: 您必须先在 NetAppElement UI 中创建 SnapMirror 端点，然后才能创建关系。 
+---
+= 创建 SnapMirror 端点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须先在 NetAppElement UI 中创建 SnapMirror 端点，然后才能创建关系。
+
+SnapMirror 端点是指用作运行 Element 软件的集群的复制目标的 ONTAP 集群。在创建 SnapMirror 关系之前，请先创建 SnapMirror 端点。
+
+您最多可以在运行 Element 软件的存储集群上创建和管理四个 SnapMirror 端点。
+
+
+NOTE: 如果现有端点最初是使用 API 创建的，但未保存凭据，则可以在 Element UI 中查看此端点并验证其是否存在，但无法使用 Element UI 对其进行管理。然后，只能使用 Element API 管理此端点。
+
+有关 API 方法的详细信息，请参见 link:../api/index.html["使用 Element API 管理存储"]。
+
+.您需要什么？ #8217 ；将需要什么
+* 您应已在 Element UI 中为存储集群启用 SnapMirror 。
+* 您知道端点的 ONTAP 凭据。
+
+
+.步骤
+. 单击 * 数据保护 * > * SnapMirror 端点 * 。
+. 单击 * 创建端点 * 。
+. 在 * 创建新端点 * 对话框中，输入 ONTAP 系统的集群管理 IP 地址。
+. 输入与此端点关联的 ONTAP 管理员凭据。
+. 查看其他详细信息：
++
+** LIF ：列出用于与 Element 通信的 ONTAP 集群间逻辑接口。
+** status ：显示 SnapMirror 端点的当前状态。可能的值包括：已连接，已断开连接和非受管。
+
+
+. 单击 * 创建端点 * 。
+

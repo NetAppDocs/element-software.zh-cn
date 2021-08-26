@@ -1,0 +1,139 @@
+---
+permalink: api/reference_element_api_createsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: SnapMirror,relationship,relationships,create,creating,CreateSnapMirrorRelationship 
+summary: Element Web UI 使用 CreateSnapMirrorRelationship 方法在源端点和目标端点之间创建 SnapMirror 扩展数据保护关系。 
+---
+= CreateSnapMirrorRelationship
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI 使用 `CreateSnapMirrorRelationship` 方法在源端点和目标端点之间创建 SnapMirror 扩展数据保护关系。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+与 Element 存储集群通信的远程 ONTAP 存储系统的端点 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+源卷
+ a| 
+关系中的源卷。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+目标卷
+ a| 
+关系中的目标卷。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+relationshipType
+ a| 
+关系的类型。在运行 Element 软件的存储系统上，此值始终为 "`extended_data_protection` " 。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+policyName
+ a| 
+指定关系的 ONTAP SnapMirror 策略的名称。如果未指定，则默认策略名称为 MirrorLatest 。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+scheduleName
+ a| 
+ONTAP 系统上用于更新 SnapMirror 关系的原有 cron 计划的名称。如果未指定计划，则不会计划 SnapMirror 更新，必须手动更新。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+maxTransferRate
+ a| 
+指定卷之间的最大数据传输速率，以 KB/ 秒为单位。默认值 0 为无限制，允许 SnapMirror 关系充分利用可用网络带宽。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorRelationship
+ a| 
+有关新创建的 SnapMirror 关系的信息。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship]
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

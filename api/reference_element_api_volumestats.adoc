@@ -1,0 +1,405 @@
+---
+permalink: api/reference_element_api_volumestats.html 
+sidebar: sidebar 
+keywords: object,objects,volumeStats 
+summary: volumeStats 对象包含单个卷的统计数据。 
+---
+= volumeStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+volumeStats 对象包含单个卷的统计数据。
+
+
+
+== 对象成员
+
+您可以使用以下方法获取部分或所有卷的 volumeStats 对象：
+
+* xref:reference_element_api_getvolumestats.adoc[GetVolumeStats]
+* xref:reference_element_api_listvolumestatsbyaccount.adoc[ListVolumeStatsByAccount]
+* xref:reference_element_api_listvolumestatsbyvolume.adoc[ListVolumeStatsByVolume]
+* xref:reference_element_api_listvolumestatsbyvolumeaccessgroup.adoc[ListVolumeStatsByVolumeAccessGroup]
+
+
+此对象包含以下成员：
+
+|===
+| Name | Description | 计算 | Type 
+
+
+ a| 
+accountId
+ a| 
+卷所有者帐户的 ID 。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+实际 IOPS
+ a| 
+卷在过去 500 毫秒中的当前实际 IOPS 。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+异步执行
+ a| 
+自卷上次与远程集群同步以来的时间长度。如果卷未配对，则此值为空。* 注意： * 处于活动复制状态的目标卷的 asyncDelay 始终为 0 （零）。目标卷在复制期间可感知系统，并假定 asyncDelay 始终准确无误。
+ a| 
+不适用
+ a| 
+ISO 8601 持续时间字符串或为空
+
+
+
+ a| 
+平均 IOPSize
+ a| 
+过去 500 毫秒内卷的最近 I/O 的平均大小（以字节为单位）。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+burstIOPSCreedit
+ a| 
+用户可用的 IOP 信用值总数。如果卷使用的最大 IOPS 不超过所配置的最大 IOPS ，则会累积额度。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+客户端队列深度
+ a| 
+对卷执行的未完成读取和写入操作的数量。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+集群实用程序
+ a| 
+正在利用的集群容量。
+ a| 
+不适用
+ a| 
+浮点
+
+
+
+ a| 
+需要 MetadataHosts
+ a| 
+在元数据服务之间迁移卷元数据时要迁移到的元数据（分区）服务。"null" 值表示卷未迁移。
+ a| 
+不适用
+ a| 
+JSON 对象
+
+
+
+ a| 
+lateencyUSec
+ a| 
+在过去 500 毫秒内完成卷操作的平均时间（以微秒为单位）。"0" （零）值表示卷没有 I/O 。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+元数据主机
+ a| 
+卷元数据所在的元数据（分区）服务。可能值：
+
+* primary ：托管卷的主元数据服务。
+* liveSecondaries ：当前处于 " 活动 " 状态的二级元数据服务。
+* deadSecondaries ：处于非活动状态的二级元数据服务。
+
+ a| 
+不适用
+ a| 
+JSON 对象
+
+
+
+ a| 
+非零锁定
+ a| 
+上次垃圾收集操作完成后包含数据的 4KiB 块总数。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+读取字节
+ a| 
+自卷创建以来从卷读取的总累积字节数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+readBytesLastSample
+ a| 
+在最后一个采样周期内从卷读取的总字节数。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+readLatencyUSec
+ a| 
+在过去 500 毫秒内完成卷读取操作的平均时间（以微秒为单位）。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+readLatencyUSecTotal
+ a| 
+从卷执行读取操作所用的总时间。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+读取操作
+ a| 
+自卷创建以来卷的总读取操作数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+readOpsLastSample
+ a| 
+上一个采样周期内的读取操作总数。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+samplePeriodMSec
+ a| 
+采样周期的长度，以毫秒为单位。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+限制
+ a| 
+一个介于 0 和 1 之间的浮点值，表示系统由于重新复制数据，瞬时错误和创建快照而将客户端限制在其最大 IOPS 以下的程度。
+ a| 
+不适用
+ a| 
+浮点
+
+
+
+ a| 
+timestamp
+ a| 
+UTC+0 格式的当前时间。
+ a| 
+不适用
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+unalignedReads
+ a| 
+自卷创建以来卷的总累积未对齐读取操作数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+unalignedWries
+ a| 
+自卷创建以来卷的总累积未对齐写入操作数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+卷访问组
+ a| 
+卷所属的卷访问组的 ID 列表。
+ a| 
+不适用
+ a| 
+整型数组
+
+
+
+ a| 
+volumeId
+ a| 
+卷的 ID 。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+卷大小
+ a| 
+总配置容量（以字节为单位）。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+卷已使用
+ a| 
+一个浮点值，用于说明客户端与该卷的 maxIOPS QoS 设置相比如何充分使用该卷的输入 / 输出功能。可能值：
+
+* 0 ：客户端未使用此卷。
+* 0.01-0.99 ：客户端未充分利用卷的 IOPS 功能。
+* 1.00 ：客户端正在充分利用此卷，但不超过 maxIOPS 设置设置设置的 IOPS 限制。
+* > 1.00 ：客户端正在利用的限制超过 maxIOPS 设置的限制。如果 burstIOPS QoS 设置高于 maxIOPS ，则可以执行此操作。例如，如果 maxIOPS 设置为 1000 ， burstIOPS 设置为 2000 ，则如果客户端完全利用卷，则 `volumeUtilization` 值将为 2.00 。
+
+ a| 
+不适用
+ a| 
+浮点
+
+
+
+ a| 
+writeBytes
+ a| 
+自卷创建以来写入卷的总累积字节数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeBytesLastSample
+ a| 
+在最后一个采样周期内写入卷的总字节数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeLatencyUSec
+ a| 
+在过去 500 毫秒内完成卷写入操作的平均时间（以微秒为单位）。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+writeLatencyUSecTotal
+ a| 
+对卷执行写入操作所用的总时间。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeOps
+ a| 
+自卷创建以来卷的总累积写入操作数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeOpsLastSample
+ a| 
+上一个采样周期内写入操作的总数。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+零锁定
+ a| 
+完成最后一轮垃圾收集操作后不含数据的空 4KiB 块的总数。
+ a| 
+时间点
+ a| 
+整型
+
+|===

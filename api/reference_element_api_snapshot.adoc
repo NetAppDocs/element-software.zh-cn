@@ -1,0 +1,222 @@
+---
+permalink: api/reference_element_api_snapshot.html 
+sidebar: sidebar 
+keywords: object,objects,snapshot 
+summary: snapshot 对象包含有关为卷创建的快照的信息。您可以使用 listsnapshots API 方法检索卷或所有卷的快照信息列表。对象包含有关活动快照以及为卷创建的每个快照的信息。 
+---
+= Snapshot
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapshot 对象包含有关为卷创建的快照的信息。您可以使用 `listsnapshots` API 方法检索卷或所有卷的快照信息列表。对象包含有关活动快照以及为卷创建的每个快照的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+
+
+
+ a| 
+校验和
+ a| 
+已存储快照中的数据的一个小字符串表示。此校验和可在稍后用于比较其他快照以检测数据中的错误。
+ a| 
+string
+
+
+
+ a| 
+CREATETIME
+ a| 
+创建快照的 UTC+0 格式时间。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+启用远程复制
+ a| 
+确定是否为远程复制启用了快照。
+ a| 
+boolean
+
+
+
+ a| 
+expirationReason
+ a| 
+指示如何设置快照到期时间。可能值：
+
+* API ：使用 API 设置到期时间。
+* None ：未设置到期时间。
+* Test ：为测试设置到期时间。
+* FIFO ：先出后到期。
+
+ a| 
+string
+
+
+
+ a| 
+到期时间
+ a| 
+此快照将过期并从集群中清除的时间。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+组 ID
+ a| 
+如果快照是组快照的成员，则为组 ID 。
+ a| 
+整型
+
+
+
+ a| 
+groupsnapshotUUID
+ a| 
+包含有关组中每个快照的信息。每个成员都具有一个 UUID 参数，用于表示快照的 UUID 。
+ a| 
+string
+
+
+
+ a| 
+instanceCreateTime
+ a| 
+在本地集群上创建快照的时间。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+instanceSnapshotUUID
+ a| 
+本地集群上快照的通用唯一 ID 。此 ID 不会复制到其他集群。
+ a| 
+string
+
+
+
+ a| 
+name
+ a| 
+分配给快照的唯一名称。如果未指定名称，则此名称是创建快照时的 UTC+0 格式时间戳。
+ a| 
+string
+
+
+
+ a| 
+remoteStatus
+ a| 
+一个阵列，其中包含目标集群上每个远程快照的通用标识符和复制状态，从源集群中可以看到。
+ a| 
+xref:reference_element_api_remoteclustersnapshotstatus.adoc[remoteClusterSnapshotStatus] 数组
+
+
+
+ a| 
+snapMirrorLabel
+ a| 
+SnapMirror 软件用于在 SnapMirror 端点上指定快照保留策略的标签。如果未设置，则此值为 null 。
+ a| 
+string
+
+
+
+ a| 
+snapshotId
+ a| 
+现有快照的唯一 ID 。
+ a| 
+string
+
+
+
+ a| 
+快照 UUID
+ a| 
+现有快照的通用唯一 ID 。在集群间复制快照时，此 ID 会随此 ID 一起复制，并用于在集群间标识快照。
+ a| 
+string
+
+
+
+ a| 
+status
+ a| 
+快照的当前状态。可能值：
+
+* unknown ：获取快照状态时出错。
+* Preparing ：正在准备此快照以供使用，此快照尚未可写入。
+* RemoteSyncing ：正在从远程集群复制此快照。
+* Done ：此快照已完成准备或复制，现在可供使用。
+* Active ：此快照是活动分支。
+* 克隆：此快照涉及 CopyVolume 操作。
+
+ a| 
+string
+
+
+
+ a| 
+totalSize
+ a| 
+快照的总大小（以字节为单位）。
+ a| 
+整型
+
+
+
+ a| 
+virtualVolumeID
+ a| 
+与此快照关联的虚拟卷的 ID 。
+ a| 
+UUID
+
+
+
+ a| 
+volumeId
+ a| 
+从中创建快照的卷的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+volumeName
+ a| 
+创建快照时的卷名称。
+ a| 
+string
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listsnapshots.adoc[列表快照]

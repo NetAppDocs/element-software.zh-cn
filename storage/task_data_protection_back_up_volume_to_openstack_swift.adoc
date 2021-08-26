@@ -1,0 +1,31 @@
+---
+permalink: storage/task_data_protection_back_up_volume_to_openstack_swift.html 
+sidebar: sidebar 
+keywords: volume backup, openstack swift object store 
+summary: 您可以将卷备份到与 OpenStack Swift 兼容的外部对象存储。 
+---
+= 将卷备份到 OpenStack Swift 对象存储
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将卷备份到与 OpenStack Swift 兼容的外部对象存储。
+
+. 单击 * 管理 * > * 卷 * 。
+. 单击要备份的卷对应的 "Actions" 图标。
+. 在显示的菜单中，单击 * 备份至 * 。
+. 在 * 集成备份 * 对话框的 * 备份至 * 下，选择 * Swift* 。
+. 在 * 数据格式 * 下选择一种数据格式：
++
+** * 原生 * ：只有 SolidFire 存储系统可以读取的压缩格式。
+** * 未压缩 * ：与其他系统兼容的未压缩格式。
+
+
+. 在 * URL * 字段中输入用于访问对象存储的 URL 。
+. 在 * 用户名 * 字段中输入帐户的用户名。
+. 在 * 身份验证密钥 * 字段中输入帐户的身份验证密钥。
+. 在 * 容器 * 字段中输入用于存储备份的容器。
+. * 可选 * ：在 * 名称标记 * 字段中输入要附加到前缀的名称标记。
+. 单击 * 开始读取 * 。
+

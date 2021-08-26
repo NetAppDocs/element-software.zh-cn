@@ -1,0 +1,27 @@
+---
+permalink: storage/task_data_protection_use_individual_volume_snapshots.html 
+sidebar: sidebar 
+keywords: individual volume snapshots, use, volume, snapshot 
+summary: 卷快照是卷的时间点副本。您可以使用单个卷，而不是一组卷来创建快照。 
+---
+= 使用单个卷快照进行数据保护
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+卷快照是卷的时间点副本。您可以使用单个卷，而不是一组卷来创建快照。
+
+
+
+== 了解更多信息
+
+* xref:task_data_protection_create_a_volume_snapshot.adoc[创建卷快照]
+* xref:task_data_protection_edit_snapshot_retention.adoc[编辑快照保留]
+* xref:task_data_protection_delete_a_snapshot.adoc[删除快照]
+* xref:task_data_protection_clone_a_volume_from_a_snapshot.adoc[从快照克隆卷]
+* xref:task_data_protection_roll_back_a_volume_to_a_snapshot.adoc[将卷回滚到快照]
+* xref:task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store.adoc[将卷快照备份到 Amazon S3 对象存储]
+* xref:task_data_protection_back_up_a_volume_snapshot_to_openstack_swift.adoc[将卷快照备份到 OpenStack Swift 对象存储]
+* xref:task_data_protection_back_up_volume_snapshot_to_solidfire.adoc[将卷快照备份到 SolidFire 集群]
+

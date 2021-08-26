@@ -1,0 +1,100 @@
+---
+permalink: api/reference_element_api_testdrives.html 
+sidebar: sidebar 
+keywords: drive,drives,test,testing,validating,hardware,testdrives 
+summary: 您可以使用 TestDrives 方法对节点上的所有驱动器运行硬件验证。此方法可检测驱动器上的硬件故障，并在验证测试结果中报告任何故障。 
+---
+= 测试驱动器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `TestDrives` 方法对节点上的所有驱动器运行硬件验证。此方法可检测驱动器上的硬件故障，并在验证测试结果中报告任何故障。
+
+
+
+== Parameters
+
+您只能在集群中非 " 活动 " 节点上使用 `TestDrives` 方法。
+
+
+NOTE: 此测试大约需要 10 分钟。
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+【强制】
+ a| 
+设置为 true 以测试节点上的驱动器。
+ a| 
+boolean
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+minutes
+ a| 
+指定测试运行的分钟数。
+ a| 
+整型
+ a| 
+10
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+详细信息
+ a| 
+有关测试操作成功或失败的信息。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "TestDrives",
+   "params": {
+              "force": true,
+              "minutes" : 10
+             },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法将返回一个表，其中包含节点中每个驱动器的测试结果。
+
+
+
+== 自版本以来的新增功能
+
+9.6

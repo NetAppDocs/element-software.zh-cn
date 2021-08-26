@@ -1,0 +1,115 @@
+---
+permalink: api/reference_element_api_getschedule.html 
+sidebar: sidebar 
+keywords: snapshot,schedule,get,getting,getschedule 
+summary: 您可以使用 GetSchedule 获取有关已计划快照的信息。 
+---
+= GetSchedule
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetSchedule` 获取有关已计划快照的信息。
+
+如果系统中存在多个快照计划，您可以查看有关特定计划的信息。此外，您还可以使用此方法通过在 scheduleID 参数中指定其他 ID 来检索有关多个计划的信息。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+计划 ID
+ a| 
+要显示的计划或多个计划的唯一 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+schedule
+ a| 
+计划属性数组。
+ a| 
+xref:reference_element_api_schedule.adoc[schedule] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method": "GetSchedule",
+  "params": {
+              "scheduleID" : 2
+      },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Time Interval"
+      },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": "2015-03-23T21:25:00Z",
+       "minutes": 2,
+       "monthdays": [],
+       "paused": false,
+       "recurring": true,
+       "runNextInterval": false,
+       "scheduleID": 2,
+       "scheduleInfo": {
+          "name": "MCA2",
+          "volumeID": "3"
+       },
+       "scheduleName": "MCAsnapshot2",
+       "scheduleType": "Snapshot",
+       "startingDate": "2015-03-23T19:28:57Z",
+       "toBeDeleted": false,
+       "weekdays": []
+      }
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

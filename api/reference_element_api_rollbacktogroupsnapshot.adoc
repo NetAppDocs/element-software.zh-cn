@@ -1,0 +1,204 @@
+---
+permalink: api/reference_element_api_rollbacktogroupsnapshot.html 
+sidebar: sidebar 
+keywords: rollbacktogroupsnapshot,snapshot,group,individual,creating,create,roll,back,rollback,roll back,existing 
+summary: 您可以使用 RollbackToGroupSnapshot 将快照组中的所有单个卷回滚到每个卷的单个快照。 
+---
+= RollbackToGroupSnapshot
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `RollbackToGroupSnapshot` 将快照组中的所有卷回滚到每个卷的单个快照。
+
+回滚到组快照会为组快照中的每个卷创建一个临时快照。
+
+
+NOTE: 如果集群填充度处于第 1 ， 2 或 3 阶段，则允许创建快照。当集群填充度处于第 4 或第 5 阶段时，不会创建快照。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+`groupSnapshotID`
+ a| 
+组快照的唯一 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+`属性`
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+`名称`
+ a| 
+如果 `saveCurrentState` 设置为 true ，则创建卷当前状态的组快照的名称。如果不提供名称，则快照（组和单个卷）的名称将设置为回滚发生时间的时间戳。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+`saveCurrentState`
+ a| 
+指定是否保存上一个活动卷映像。有效值：
+
+* `true` ：保留上一个活动卷映像。
+* `false` ：删除上一个活动卷映像。
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+成员
+ a| 
+包含组快照成员的卷 ID 和快照 ID 的数组。值
+
+* checksum ：存储的快照中的数据的一个小字符串表示。此校验和可在稍后用于比较其他快照以检测数据中的错误。string
+* snapshotID ：用于创建新快照的快照的唯一 ID 。快照 ID 必须是给定卷上的快照。整型
+* volumeID ：快照的源卷 ID 。整型
+
+ a| 
+JSON 对象数组
+
+
+
+ a| 
+groupSnapshotID
+ a| 
+如果将 `saveCurrentState` 设置为 false ，则此值为 null 。
+
+如果将 `saveCurrentState` 设置为 true ，则为新创建的组快照的唯一 ID 。
+ a| 
+整型
+
+
+
+ a| 
+groupSnapshot
+ a| 
+如果将 `saveCurrentState` 设置为 false ，则此值为 null 。
+
+如果将 `saveCurrentState` 设置为 true ，则表示一个对象，其中包含有关组快照的信息，此组快照 `RollbackToGroupSnapshot` 刚刚回滚到。
+ a| 
+xref:reference_element_api_groupsnapshot.adoc[groupSnapshot]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 438,
+  "method": "RollbackToGroupSnapshot",
+  "params": {
+    "groupSnapshotID": 1,
+    "name": "grpsnap1",
+    "saveCurrentState": true
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 438,
+  "result": {
+    "groupSnapshot": {
+      "attributes": {},
+      "createTime": "2016-04-06T17:27:17Z",
+      "groupSnapshotID": 1,
+      "groupSnapshotUUID": "468fe181-0002-4b1d-ae7f-8b2a5c171eee",
+      "members": [
+        {
+          "attributes": {},
+          "checksum": "0x0",
+          "createTime": "2016-04-06T17:27:17Z",
+          "enableRemoteReplication": false,
+          "expirationReason": "None",
+          "expirationTime": null,
+          "groupID": 1,
+          "groupSnapshotUUID": "468fe181-0002-4b1d-ae7f-8b2a5c171eee",
+          "name": "2016-04-06T17:27:17Z",
+          "snapshotID": 4,
+          "snapshotUUID": "03563c5e-51c4-4e3b-a256-a4d0e6b7959d",
+          "status": "done",
+          "totalSize": 1000341504,
+          "virtualVolumeID": null,
+          "volumeID": 2
+        }
+      ],
+      "name": "2016-04-06T17:27:17Z",
+      "status": "done"
+    },
+    "groupSnapshotID": 3,
+    "members": [
+      {
+        "checksum": "0x0",
+        "snapshotID": 2,
+        "snapshotUUID": "719b162c-e170-4d80-b4c7-1282ed88f4e1",
+        "volumeID": 2
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

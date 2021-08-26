@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_modifyinitiators.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,initiators,initiator,attribute,attributes,modifyinitiators 
+summary: 您可以使用 ModifyInitiators 方法更改一个或多个现有启动程序的属性。 
+---
+= ModifyInitiators
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ModfyInitiators` 方法更改一个或多个现有启动程序的属性。
+
+您不能更改现有启动程序的名称。如果需要更改启动程序的名称，请先使用将其删除 xref:reference_element_api_deleteinitiators.adoc[DeleteInitiators] 方法并使用创建新的方法 xref:reference_element_api_createinitiators.adoc[CreateInitiators] 方法
+
+如果 ModifyInitiators 无法更改参数中提供的启动程序之一，则该方法将返回错误且不会修改任何启动程序（无法部分完成）。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+
+
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+启动程序
+ a| 
+包含要修改的每个启动程序的特性的对象列表。可能的对象：
+
+* `alias` ：（可选）要分配给启动程序的新友好名称。string
+* `attributes` ：（可选）要分配给启动程序的一组新 JSON 属性。（ JSON 对象）
+* `chapUsername` ：（可选）此启动程序的新唯一 CHAP 用户名。string
+* `forceDuringUpgrade` ：在升级期间完成启动程序修改。
+* `initiatorID` ：（必需）要修改的启动程序的 ID 。整型
+* `initiatorSecret` ：（可选）用于对启动程序进行身份验证的新 CHAP 密钥。string
+* `requireChap` ：（可选）如果此启动程序需要 CHAP ，则为 True 。boolean
+* `targetSecret` ：（可选）用于对目标进行身份验证的新 CHAP 密钥（使用相互 CHAP 身份验证时）。string
+* `virtualNetworkID` ：（可选）与此启动程序关联的虚拟网络标识符的列表。如果定义了一个或多个虚拟网络，则此启动程序只能登录到这些虚拟网络。如果不定义任何虚拟网络，此启动程序可以登录到所有网络。
+* `volumeAccessGroupID` ：（可选）应将启动程序添加到的卷访问组的 ID 。如果启动程序先前位于其他卷访问组中，则会将其从旧卷访问组中删除。如果此密钥存在但为空，则启动程序将从其当前卷访问组中删除，但不会放置在任何新的卷访问组中。整型
+
+ a| 
+JSON 对象数组
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+启动程序
+ a| 
+描述新修改的启动程序的对象列表。
+ a| 
+xref:reference_element_api_initiator.adoc[启动程序] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 6683,
+  "method": "ModifyInitiators",
+  "params": {
+    "initiators": [
+      {
+        "initiatorID": 2,
+        "alias": "alias1",
+        "volumeAccessGroupID": null
+      },
+      {
+        "initiatorID": 3,
+        "alias": "alias2",
+        "volumeAccessGroupID": 1
+      }
+    ]
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 6683,
+  "result": {
+    "initiators": [
+      {
+        "alias": "alias1",
+        "attributes": {},
+        "initiatorID": 2,
+        "initiatorName": "iqn.1993-08.org.debian:01:395543635",
+        "volumeAccessGroups": []
+      },
+      {
+        "alias": "alias2",
+        "attributes": {},
+        "initiatorID": 3,
+        "initiatorName": "iqn.1993-08.org.debian:01:935573135",
+        "volumeAccessGroups": [
+          1
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_createinitiators.adoc[CreateInitiators]
+* xref:reference_element_api_deleteinitiators.adoc[DeleteInitiators]
+

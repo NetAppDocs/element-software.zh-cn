@@ -1,0 +1,167 @@
+---
+permalink: api/reference_element_api_event.html 
+sidebar: sidebar 
+keywords: object,objects,event 
+summary: event 对象包含 API 方法调用期间或系统执行操作期间发生的事件的详细信息。 
+---
+= 事件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+event 对象包含 API 方法调用期间或系统执行操作期间发生的事件的详细信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+详细信息
+ a| 
+有关事件的其他信息。
+ a| 
+JSON 对象
+
+
+
+ a| 
+驱动器 ID
+ a| 
+报告故障的驱动器的驱动器 ID 。如果不适用，则为 0 。
+ a| 
+整型
+
+
+
+ a| 
+驱动器 ID
+ a| 
+报告故障的驱动器的驱动器 ID 列表。如果不适用，则为空列表。
+ a| 
+整型数组
+
+
+
+ a| 
+事件 ID
+ a| 
+与每个事件关联的唯一 ID 。
+ a| 
+整型
+
+
+
+ a| 
+eventInfoType
+ a| 
+故障的类型。
+ a| 
+string
+
+
+
+ a| 
+message
+ a| 
+发生的事件的字符串问题描述。
+ a| 
+string
+
+
+
+ a| 
+节点 ID
+ a| 
+报告故障的节点的节点 ID 。如果不适用，则为 0 。
+ a| 
+整型
+
+
+
+ a| 
+服务 ID
+ a| 
+报告故障的服务的服务 ID 。如果不适用，则为 0 。
+ a| 
+整型
+
+
+
+ a| 
+severity
+ a| 
+事件报告的严重性。
+ a| 
+整型
+
+
+
+ a| 
+timeOfPublish
+ a| 
+集群事件日志收到事件的时间，格式为 UTC+0 。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+timeOfReport
+ a| 
+集群上发生事件的时间，采用 UTC+0 格式。
+ a| 
+ISO 8601 日期字符串
+
+|===
+* 注： * 如果发生事件且无法立即发布，则 timeOfReport 和 timeOfPublish 之间可能稍有不同。
+
+
+
+== 事件类型
+
+以下列表介绍了 eventInfoType 成员可能包含的事件类型：
+
+* apiEvent ：通过 API 或 Web UI 启动的事件，用于修改设置。
+* binAssignmentsEvent ：与向内部容器分配数据相关的事件。
+* binSyncEvent ：与在块服务之间重新分配数据相关的事件。
+* bsCheckEvent ：与块服务检查相关的事件。
+* bsKillEvent ：与块服务终止相关的事件。
+* bulkOpEvent ：在整个卷上运行的事件，例如卷备份，还原，快照或克隆。
+* cloneEvent ：与卷克隆相关的事件。
+* clusterMasterEvent ：集群配置更改事件，例如添加或删除节点。
+* dataEvent ：与读取和写入数据相关的事件。
+* dbEvent ：与集合节点数据库相关的事件。
+* driveEvent ：与驱动器操作相关的事件。
+* encryptionAtRestEvent ：与存储的数据加密相关的事件。
+* ensembleEvent ：与集合大小增加或减少相关的事件。
+* fibreChannelEvent ：与光纤通道节点配置或连接相关的事件。
+* gcEvent ：与垃圾收集相关的事件。这些进程每 60 分钟运行一次，用于回收块驱动器上的存储。
+* ieEvent ：与内部系统错误相关的事件。
+* installEvent ：与在待定存储节点上自动安装软件相关的事件。
+* iSCSIEvent ：与 iSCSI 连接或配置问题相关的事件。
+* limitEvent ：与帐户或集群中接近允许的最大卷数或虚拟卷数相关的事件。
+* networkEvent ：与虚拟网络相关的事件。
+* platformHardwareEvent ：与在硬件设备上检测到的问题相关的事件。
+* remoteClusterEvent ：与远程集群配对相关的事件。
+* scheduleEvent ：与计划快照相关的事件。
+* serviceEvent ：与系统服务状态相关的事件。
+* statEvent ：与系统统计信息相关的事件。
+* sliceEvent ：与元数据存储相关的事件。
+* snmpTrapEvent ：与 SNMP 陷阱相关的事件。
+* tsEvent ：系统传输服务事件。
+* unexpectedException ：与意外错误相关的事件。
+* vasaProviderEvent ：与 VMware VASA Provider 相关的事件。
+
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_listevents.adoc[ListEvents]

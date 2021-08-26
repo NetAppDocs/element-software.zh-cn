@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_abortsnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords:  
+summary: Element 软件 Web UI 使用 AbortSnapMirrorRelationship 方法停止已启动但尚未完成的 SnapMirror 传输。 
+---
+= AbortSnapMirrorRelationship
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `AbortSnapMirrorRelationship` 方法停止已启动但尚未完成的 SnapMirror 传输。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+与 Element 存储集群通信的远程 ONTAP 存储系统的端点 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+目标卷
+ a| 
+SnapMirror 关系中的目标卷。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+清除检查点
+ a| 
+确定是否清除重新启动检查点。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorRelationship
+ a| 
+包含有关已中止的 SnapMirror 关系的信息的对象。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship]
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

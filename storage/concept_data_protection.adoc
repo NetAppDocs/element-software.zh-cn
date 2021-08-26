@@ -1,0 +1,51 @@
+---
+permalink: storage/concept_data_protection.html 
+sidebar: sidebar 
+keywords: data protection, protect your data, snapshots, replication, back up 
+summary: 通过 NetApp Element 软件，您可以通过多种方式保护数据，例如为单个卷或一组卷创建快照，在 Element 上运行的集群和卷之间进行复制以及复制到 ONTAP 系统。 
+---
+= 保护您的数据
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 NetApp Element 软件，您可以通过多种方式保护数据，例如为单个卷或一组卷创建快照，在 Element 上运行的集群和卷之间进行复制以及复制到 ONTAP 系统。
+
+* * 快照 *
++
+仅快照数据保护功能可将特定时间点发生更改的数据复制到远程集群。仅复制在源集群上创建的快照。而源卷的活动写入则不是。
+
++
+xref:task_data_protection_using_volume_snapshots.adoc[使用卷快照进行数据保护]
+
+* * 在 Element 上运行的集群和卷之间进行远程复制 *
++
+您可以从运行在 Element 上的集群对中的任一集群同步或异步复制卷数据，以实现故障转移和故障恢复。
+
++
+xref:task_replication_perform_remote_replication_between_element_clusters.adoc[在运行 NetApp Element 软件的集群之间执行远程复制]
+
+* * 使用 SnapMirror 技术在 Element 和 ONTAP 集群之间进行复制 *
++
+借助 NetApp SnapMirror 技术，您可以将使用 Element 创建的快照复制到 ONTAP 以实现灾难恢复。在 SnapMirror 关系中， Element 是一个端点，而 ONTAP 是另一个端点。
+
++
+xref:task_snapmirror_use_replication_between_element_and_ontap_clusters.adoc[在 Element 和 ONTAP 集群之间使用 SnapMirror 复制]
+
+* * 从 SolidFire ， S3 或 Swift 对象存储备份和还原卷 *
++
+您可以将卷备份和还原到其他 SolidFire 存储以及与 Amazon S3 或 OpenStack Swift 兼容的二级对象存储。
+
++
+xref:task_data_protection_back_up_and_restore_volumes.adoc[将卷备份和还原到 SolidFire ， S3 或 Swift 对象存储]
+
+
+
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

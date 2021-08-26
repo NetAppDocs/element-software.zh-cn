@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_removevolumepair.html 
+sidebar: sidebar 
+keywords: volume,pair,volumes,remove,removing,removevolumepair 
+summary: 您可以使用 RemoveVolumePair 方法删除两个卷之间的远程配对。在配对的源卷和目标卷上使用此方法。删除卷配对信息后，卷中的数据将不再复制。 
+---
+= RemoveVolumePair
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `RemoveVolumePair` 方法删除两个卷之间的远程配对。在配对的源卷和目标卷上使用此方法。删除卷配对信息后，卷中的数据将不再复制。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+volumeId
+ a| 
+要停止复制过程的卷的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "RemoveVolumePair",
+   "params": {
+      "volumeID": 5
+   "id" : 1
+   }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

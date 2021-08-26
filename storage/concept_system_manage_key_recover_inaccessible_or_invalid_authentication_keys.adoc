@@ -1,0 +1,34 @@
+---
+permalink: storage/concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys.html 
+sidebar: sidebar 
+keywords: slice drive error, cluster fault, authentication keys 
+summary: 有时，可能会发生需要用户干预的错误。如果发生错误，将生成集群故障。下面介绍了两种最可能的情况。 
+---
+= 恢复不可访问或无效的身份验证密钥
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+有时，可能会发生需要用户干预的错误。如果发生错误，将生成集群故障（称为集群故障代码）。下面介绍了两种最可能的情况。
+
+
+
+== 由于 KmipServerFault 集群故障，集群无法解锁驱动器。
+
+当集群首次启动，密钥服务器不可访问或所需密钥不可用时，可能会发生这种情况。
+
+. 按照集群故障代码（如果有）中的恢复步骤进行操作。
+
+
+
+
+== 可能会设置 sliceServiceUnhealthy 故障，因为元数据驱动器已标记为 Failed 并置于 "available" 状态。
+
+清除步骤：
+
+. 重新添加驱动器。
+. 3 到 4 分钟后，检查 `sliceServiceUnhealthy` 故障是否已清除。
+
+
+请参见 link:reference_monitor_cluster_fault_codes.html["集群故障代码"] 有关详细信息 ...

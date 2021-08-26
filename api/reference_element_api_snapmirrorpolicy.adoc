@@ -1,0 +1,112 @@
+---
+permalink: api/reference_element_api_snapmirrorpolicy.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorPolicy 
+summary: snapMirrorPolicy 对象包含有关存储在 ONTAP 系统上的 SnapMirror 策略的信息。 
+---
+= snapMirrorPolicy
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorPolicy 对象包含有关存储在 ONTAP 系统上的 SnapMirror 策略的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目标 ONTAP 系统的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+policyName
+ a| 
+分配给策略的唯一名称。
+ a| 
+string
+
+
+
+ a| 
+policyType
+ a| 
+策略的类型。可能值：
+
+* 异步镜像
+* mirror_vault
+
+ a| 
+string
+
+
+
+ a| 
+comment
+ a| 
+与 SnapMirror 策略关联的可供人读取的问题描述。
+ a| 
+string
+
+
+
+ a| 
+transferPriority
+ a| 
+运行 SnapMirror 传输的优先级。可能值：
+
+* normal ：默认优先级。这些传输计划在大多数低优先级传输之前进行。
+* low ：这些传输的优先级最低，并且计划在大多数正常优先级传输之后进行。
+
+ a| 
+string
+
+
+
+ a| 
+策略规则
+ a| 
+描述策略规则的对象列表。
+ a| 
+xref:reference_element_api_snapmirrorpolicyrule.adoc[snapMirrorPolicyRule] 数组
+
+
+
+ a| 
+totalKeepCount
+ a| 
+策略中所有规则的保留总数。
+ a| 
+整型
+
+
+
+ a| 
+totalRules.
+ a| 
+策略中的规则总数。
+ a| 
+整型
+
+
+
+ a| 
+vserverName
+ a| 
+SnapMirror 策略的 SVM 的名称。
+ a| 
+string
+
+|===

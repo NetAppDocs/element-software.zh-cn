@@ -1,0 +1,33 @@
+---
+permalink: storage/task_replication_pair_volumes_using_volume_id_or_pairing_key.html 
+sidebar: sidebar 
+keywords: volume pairings, pairing key, volume id, replication 
+summary: 配对过程涉及使用卷 ID 或配对密钥对两个卷配对。 
+---
+= 使用卷 ID 或配对密钥对卷配对
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配对过程涉及使用卷 ID 或配对密钥对两个卷配对。
+
+. 通过选择以下方法之一对卷配对：
++
+** 使用卷 ID ：如果您对要配对的卷所在的两个集群都拥有集群管理员访问权限，请使用此方法。此方法使用远程集群上卷的卷 ID 启动连接。
+** 使用配对密钥：如果您只对源集群拥有集群管理员访问权限，请使用此方法。此方法将生成一个配对密钥，可在远程集群上使用此密钥完成卷对。
++
+
+NOTE: 卷配对密钥包含经过加密的卷信息，并且可能包含敏感信息。请仅以安全的方式共享此密钥。
+
+
+
+
+
+
+
+== 了解更多信息
+
+* xref:task_replication_pair_volumes_using_a_volume_id.adoc[使用卷 ID 对卷配对]
+* xref:task_replication_pair_volumes_using_a_pairing_key.adoc[使用配对密钥对卷配对]
+

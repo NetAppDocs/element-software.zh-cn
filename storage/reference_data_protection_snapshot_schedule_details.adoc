@@ -1,0 +1,56 @@
+---
+permalink: storage/reference_data_protection_snapshot_schedule_details.html 
+sidebar: sidebar 
+keywords: snapshots, snapshot schedules 
+summary: 在数据保护 \> 计划页面上，您可以在快照计划列表中查看以下信息。 
+---
+= Snapshot 计划详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 "Data Protection">"Schedules" 页面上，您可以在快照计划列表中查看以下信息。
+
+* * ID *
++
+系统为快照生成的 ID 。
+
+* * 类型 *
++
+计划的类型。Snapshot 是当前唯一支持的类型。
+
+* * 名称 *
++
+创建计划时为计划指定的名称。Snapshot 计划名称的长度最多可以包含 223 个字符，并且包含 a-z ， 0-9 和短划线（ - ）字符。
+
+* * 频率 *
++
+运行计划的频率。频率可以设置为小时和分钟，周或月。
+
+* * 重复 *
++
+指示计划是仅运行一次还是定期运行。
+
+* * 手动暂停 *
++
+指示是否已手动暂停计划。
+
+* * 卷 ID*
++
+运行计划时计划要使用的卷的 ID 。
+
+* * 上次运行 *
++
+上次运行计划的时间。
+
+* * 上次运行状态 *
++
+上次执行计划的结果。可能值：
+
++
+** success
+** 失败
+
+
+

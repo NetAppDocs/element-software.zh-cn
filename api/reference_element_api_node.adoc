@@ -1,0 +1,231 @@
+---
+permalink: api/reference_element_api_node.html 
+sidebar: sidebar 
+keywords: object,objects,node 
+summary: node 对象包含有关集群中每个节点的信息。您可以使用 ListActiveNodes 和 ListAllNodes 方法检索此信息。 
+---
+= node
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+node 对象包含有关集群中每个节点的信息。您可以使用 `ListActiveNodes` 和 `ListAllNodes` 方法检索此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+已关联 FServiceID
+ a| 
+节点的光纤通道服务 ID 。如果节点不是光纤通道节点，则为 "0" 。
+ a| 
+整型
+
+
+
+ a| 
+associatedMasterServiceID
+ a| 
+节点的主服务 ID 。
+ a| 
+整型
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+
+
+
+ a| 
+chassisname
+ a| 
+唯一标识机箱；一个机箱中的所有节点都相同。
+ a| 
+string
+
+
+
+ a| 
+CIP
+ a| 
+分配给节点的集群 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+密码
+ a| 
+用于集群通信的网络接口。
+ a| 
+string
+
+
+
+ a| 
+customProtectionDomainName
+ a| 
+唯一标识自定义保护域。此名称对于给定自定义保护域中所有机箱内的所有存储节点均相同。
+ a| 
+string
+
+
+
+ a| 
+fibreChannelTargetPortGroup
+ a| 
+与此节点关联的目标组。如果节点不是光纤通道节点，则为 "null" 。
+ a| 
+整型
+
+
+
+ a| 
+维护模式
+ a| 
+指示节点的维护模式。
+ a| 
+不适用
+
+
+
+ a| 
+MIP
+ a| 
+用于节点管理的 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+MIPI
+ a| 
+用于节点管理的网络接口。
+ a| 
+string
+
+
+
+ a| 
+name
+ a| 
+节点的主机名。
+ a| 
+string
+
+
+
+ a| 
+节点 ID
+ a| 
+此节点的节点 ID 。
+ a| 
+整型
+
+
+
+ a| 
+节点插槽
+ a| 
+对于 HCI 平台，与此节点所处的机箱插槽对应的字母（ "A" ， "B" ， "C" 或 "D" ）。对于存储平台，此值为空。
+ a| 
+string
+
+
+
+ a| 
+platformInfo
+ a| 
+节点的硬件信息。成员
+
+* chassisType ：节点的硬件平台。
+* cpuModel ：硬件平台的 CPU 型号。
+* nodeMemoryGB ：物理平台中安装的内存量，以 GB 为单位。
+* NodeType ：节点型号名称。
+* platformConfigVersion ：为此节点硬件配置的软件版本。
+
+ a| 
+JSON 对象
+
+
+
+ a| 
+role
+ a| 
+节点在集群中的角色。可能值：
+
+* 管理
+* 存储
+* 计算
+* 见证
+
+ a| 
+
+
+
+ a| 
+SIP
+ a| 
+分配给节点的存储 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+和
+ a| 
+用于存储流量的网络接口。
+ a| 
+string
+
+
+
+ a| 
+软件版本
+ a| 
+返回节点上运行的 Element 软件的当前版本。
+ a| 
+string
+
+
+
+ a| 
+UUID
+ a| 
+与此节点关联的通用唯一标识符。
+ a| 
+string
+
+
+
+ a| 
+virtualNetworks
+ a| 
+包含虚拟网络 IP 地址和 ID 的对象。
+ a| 
+xref:reference_element_api_virtualnetwork.adoc[VirtualNetwork] 数组
+
+|===
+
+
+== 了解更多信息
+
+* xref:reference_element_api_listactivenodes.adoc[ListActiveNodes]
+* xref:reference_element_api_listallnodes.adoc[ListAllNodes]
+

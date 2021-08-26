@@ -1,0 +1,131 @@
+---
+permalink: api/reference_element_api_createqospolicy.html 
+sidebar: sidebar 
+keywords: QoS,policy,policies,create,creating 
+summary: 您可以使用 CreateQoSPolicy 方法创建 QoSPolicy 对象，稍后可以在创建或修改卷时将其应用于卷。QoS 策略具有唯一的 ID ，名称和 QoS 设置。 
+---
+= CreateQoSPolicy
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CreateQoSPolicy` 方法创建 QoSPolicy 对象，稍后可以在创建或修改卷时将其应用于卷。QoS 策略具有唯一的 ID ，名称和 QoS 设置。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+name
+ a| 
+QoS 策略的名称；例如 gold ， platinum 或 silver 。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+QoS
+ a| 
+此策略表示的 QoS 设置。
+ a| 
+xref:reference_element_api_qos.adoc[QoS]
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+qosPolicy
+ a| 
+新创建的 QoSPolicy 对象。
+ a| 
+xref:reference_element_api_qospolicy.adoc[QoSPolicy]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 68,
+  "method": "CreateQoSPolicy",
+  "params": {
+    "name": "bronze",
+    "qos": {
+      "minIOPS": 50,
+      "maxIOPS": 15000,
+      "burstIOPS": 15000
+    }
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 68,
+  "result": {
+    "qosPolicy": {
+      "name": "bronze",
+      "qos": {
+        "burstIOPS": 15000,
+        "burstTime": 60,
+        "curve": {
+          "4096": 100,
+          "8192": 160,
+          "16384": 270,
+          "32768": 500,
+          "65536": 1000,
+          "131072": 1950,
+          "262144": 3900,
+          "524288": 7600,
+          "1048576": 15000
+        },
+        "maxIOPS": 15000,
+        "minIOPS": 50
+      },
+      "qosPolicyID": 2,
+      "volumeIDs": []
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+10.0

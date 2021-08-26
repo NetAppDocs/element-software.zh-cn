@@ -1,0 +1,43 @@
+---
+section: esds
+title: 安装和使用 SolidFire 企业 SDS
+url: "/esds/index.html"
+entries:
+- title: 开始使用 SolidFire ESDS
+  url: "/esds/concept_get_started_esds.html"
+- title: 执行安装的前提条件任务
+  url: "/esds/concept_esds_prerequisite_tasks.html"
+  entries:
+  - title: 网络配置注意事项
+    url: "/esds/concept_esds_networking_best_practices.html"
+  - title: 配置主机网络
+    url: "/esds/task_esds_configure_the_interface_config_files.html"
+- title: 安装 SolidFire ESDS
+  url: "/esds/task_esds_install_using_ansible.html"
+- title: 执行安装后任务
+  url: "/esds/task_esds_postinstallation.html"
+- title: 升级集群
+  url: "/esds/task_esds_upgrade_cluster.html"
+- title: 监控集群
+  url: "/esds/concept_esds_monitor_clusters.html"
+- title: 管理 SolidFire ESDS 存储
+  url: "/esds/reference_esds_element_links.html"
+- title: 卸载 SolidFire ESDS
+  url: "/esds/task_esds_uninstall.html"
+- title: 维护 SolidFire ESDS
+  url: "/esds/concept_esds_maintain.html"
+  entries:
+  - title: 获取许可证密钥
+    url: "/esds/task_esds_get_license_key.html"
+  - title: 在 SolidFire ESDS 集群上使用维护模式
+    url: "/esds/reference_esds_use_maintenance_mode.html"
+  - title: 更换 HPE DL360 的驱动器
+    url: "/esds/task_esds_dl360_drive_repl.html"
+  - title: 更换 Dell R640 的驱动器
+    url: "/esds/task_esds_r640_drive_repl.html"
+  - title: 收集容器日志
+    url: "/esds/reference_esds_containerlogs.html"
+  - title: 故障排除知识库文章的链接
+    url: "/esds/reference_esds_troubleshoot_links.html"
+  - title: sf_sSD_config.yaml 文件的内容
+    url: "/esds/reference_esds_sf_sds_config_file.html"

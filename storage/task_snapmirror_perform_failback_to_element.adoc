@@ -1,0 +1,22 @@
+---
+permalink: storage/task_snapmirror_perform_failback_to_element.html 
+sidebar: sidebar 
+keywords: failback, perform a failbacl, Element, snapmirror 
+summary: 缓解主端的问题描述后，您必须重新同步原始源卷并故障恢复到 NetApp Element 软件。根据原始源卷是否仍然存在或是否需要故障恢复到新创建的卷，您执行的步骤会有所不同。 
+---
+= 对 Element 执行故障恢复
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+缓解主端的问题描述后，您必须重新同步原始源卷并故障恢复到 NetApp Element 软件。根据原始源卷是否仍然存在或是否需要故障恢复到新创建的卷，您执行的步骤会有所不同。
+
+
+
+== 了解更多信息
+
+* xref:task_snapmirror_perform_failback_when_source_volume_exists.adoc[如果源卷仍存在，请执行故障恢复]
+* xref:task_snapmirror_performing_failback_when_source_volume_no_longer_exists.adoc[源卷不再存在时执行故障恢复]
+* xref:concept_snapmirror_failback_scenarios.adoc[SnapMirror 故障恢复场景]
+

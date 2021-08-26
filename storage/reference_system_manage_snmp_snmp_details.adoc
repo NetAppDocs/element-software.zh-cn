@@ -1,0 +1,27 @@
+---
+permalink: storage/reference_system_manage_snmp_snmp_details.html 
+sidebar: sidebar 
+keywords: snmp, overview, reference, mib, settings, trap 
+summary: 在集群选项卡的 SNMP 页面上，您可以查看以下信息。 
+---
+= SNMP 详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在集群选项卡的 SNMP 页面上，您可以查看以下信息。
+
+* * SNMP MIB *
++
+可供查看或下载的 MIB 文件。
+
+* * 常规 SNMP 设置 *
++
+您可以启用或禁用 SNMP 。启用 SNMP 后，您可以选择要使用的版本。如果使用版本 2 ，则可以添加请求程序；如果使用版本 3 ，则可以设置 USM 用户。
+
+* * SNMP 陷阱设置 *
++
+您可以确定要捕获的陷阱。您可以为每个陷阱接收方设置主机，端口和社区字符串。
+
+

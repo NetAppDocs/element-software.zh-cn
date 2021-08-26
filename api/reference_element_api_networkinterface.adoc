@@ -1,0 +1,124 @@
+---
+permalink: api/reference_element_api_networkinterface.html 
+sidebar: sidebar 
+keywords: object,objects,networkInterface 
+summary: networkInterface 对象包含存储节点上各个网络接口的配置信息。 
+---
+= 网络接口
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+networkInterface 对象包含存储节点上各个网络接口的配置信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+address
+ a| 
+接口的 IPv4 管理地址。
+ a| 
+string
+
+
+
+ a| 
+地址 V6
+ a| 
+接口的 IPv6 管理地址。
+ a| 
+string
+
+
+
+ a| 
+广播
+ a| 
+接口的广播地址。
+ a| 
+string
+
+
+
+ a| 
+MAC 地址
+ a| 
+接口的 MAC 地址。
+ a| 
+string
+
+
+
+ a| 
+mtu
+ a| 
+接口的最大传输单元（以字节为单位）。
+ a| 
+整型
+
+
+
+ a| 
+name
+ a| 
+接口的名称。
+ a| 
+string
+
+
+
+ a| 
+命名空间
+ a| 
+是否为此接口分配了虚拟网络命名空间。
+ a| 
+boolean
+
+
+
+ a| 
+netmask
+ a| 
+接口的子网掩码。
+ a| 
+string
+
+
+
+ a| 
+status
+ a| 
+接口的运行状态。
+ a| 
+string
+
+
+
+ a| 
+type
+ a| 
+接口的类型（绑定主接口，绑定从属接口等）。
+ a| 
+string
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+分配给虚拟网络上接口的 VLAN ID 。
+ a| 
+整型
+
+|===

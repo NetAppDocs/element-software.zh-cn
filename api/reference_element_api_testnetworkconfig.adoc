@@ -1,0 +1,134 @@
+---
+permalink: api/reference_element_api_testnetworkconfig.html 
+sidebar: sidebar 
+keywords: test,testing,network,config,configuration,testnetworkconfig 
+summary: 您可以使用 TestNetworkConfig 方法测试已配置的网络设置是否与系统上正在使用的网络设置匹配。 
+---
+= TestNetworkConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `TestNetworkConfig` 方法测试已配置的网络设置是否与系统上正在使用的网络设置匹配。
+
+
+
+== Parameters
+
+在 UI 或 TUI 中使用 SetNetworkConfig 方法配置节点时，系统会验证并存储此配置。TestNetworkConfig API 测试使用存储的配置进行验证后逻辑。例如，如果发生断电或网络故障，您可以使用此 API 方法确保节点运行的网络配置为最新存储的网络配置。此操作将验证配置中没有错误，并且当前配置正在使用中。
+
+此测试仅用于在响应输出中显示故障。如果没有错误，则此测试不会返回任何输出。请参见以下响应示例。
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+详细信息
+ a| 
+包含在使用正在运行的网络配置验证当前存储的网络设置时发现的任何错误。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "TestNetworkConfig",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例 1
+
+如果未检测到错误，则不会返回任何响应。
+
+[listing]
+----
+{
+   "id" : 1,
+   "result": {
+   "details": {
+   "network": {...}
+  },
+   "duration": "00:00:00.144514",
+   "result": "Passed"
+  }
+}
+----
+
+
+== 响应示例 2
+
+MTU 不匹配示例。
+
+[listing]
+----
+{
+  "id" : 1,
+  "result":
+  {
+	 "details" :
+	 {
+		"error":
+		{
+		   "message" : "Network configuration mismatch on Bond10G: Incorrect MTU expectedMTU=[1500]  actualMTU=[9600]", name: "xAssertionFailure"
+		}
+	 },
+	 "duration": "0.125213sec",
+	 "result": "Failed"
+  }
+}
+----
+
+
+== 响应示例 3
+
+缺少静态路由的示例。
+
+[listing]
+----
+{
+  "id": 1,
+  "result":
+  {
+	 "details" :
+	 {
+	 "error":
+		{
+		"message" : "Network configuration mismatch on Bond1G: Routing table missing route=[192.168.137.2 via 192.168.159.254 dev Bond1G]", name: "xAssertionFailure"
+		}
+	 },
+	 "duration" : "0.128547sec",
+	 "result" : "Failed"
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_setnetworkconfig.adoc[SetNetworkConfig]

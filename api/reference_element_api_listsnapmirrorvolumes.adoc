@@ -1,0 +1,105 @@
+---
+permalink: api/reference_element_api_listsnapmirrorvolumes.html 
+sidebar: sidebar 
+keywords: snapmirror,volume,list,listing,volumes,listsnapmirrorvolumes,ontap 
+summary: Element 软件 Web UI 使用 ListSnapMirrorVolumes 方法列出远程 ONTAP 系统上可用的所有 SnapMirror 卷。 
+---
+= ListSnapMirrorVolumes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `ListSnapMirrorVolumes` 方法列出远程 ONTAP 系统上可用的所有 SnapMirror 卷。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+仅列出与指定端点 ID 关联的卷。如果未提供端点 ID ，则系统将列出所有已知 SnapMirror 端点中的卷。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+vserver
+ a| 
+列出指定 SVM 上托管的卷。SVM 的类型必须为 "data" 。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+name
+ a| 
+仅列出具有指定名称的 ONTAP 卷。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+type
+ a| 
+仅列出指定类型的 ONTAP 卷。可能值：
+
+* rw ：读写卷
+* ls ：负载共享卷
+* dp ：数据保护卷
+
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorVolumes
+ a| 
+ONTAP 存储系统上可用的 SnapMirror 卷列表。
+ a| 
+xref:reference_element_api_snapmirrorvolume.adoc[snapMirrorVolume] 数组
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

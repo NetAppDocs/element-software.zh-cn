@@ -1,0 +1,161 @@
+---
+permalink: api/reference_element_api_createclustersupportbundle.html 
+sidebar: sidebar 
+keywords: CreateClusterSupportBundle,create,cluster,support,bundle,creating 
+summary: 您可以在管理节点上使用 CreateClusterSupportBundle 从集群中的所有节点收集支持包。创建包时，该包将作为 .tar.gz 文件存储在节点上。此方法只能在管理节点上运行；在存储节点上运行时不起作用。 
+---
+= CreateClusterSupportBundle
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在管理节点上使用 `CreateClusterSupportBundle` 从集群中的所有节点收集支持包。各个节点支持包将压缩为 tar.gz 文件。集群支持包是一个包含节点支持包的 tar 文件。此方法只能在管理节点上运行；在存储节点上运行时不起作用。
+
+
+
+== Parameters
+
+
+NOTE: 您必须对管理节点调用此方法。例如：
+
+[listing]
+----
+https://<management node IP>:442/json-rpc/10.0
+----
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+allowIncomplete
+ a| 
+如果无法从一个或多个节点收集捆绑包，则允许脚本继续运行。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+捆绑包名称
+ a| 
+创建的每个支持包的唯一名称。如果未提供名称，则使用 "supportbundle" 和节点名称作为文件名
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+mvip
+ a| 
+集群的 MVIP 。从集群中的所有节点收集捆绑包。如果未指定 nodes 参数，则需要此参数。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+nodes
+ a| 
+要从中收集捆绑包的节点的 IP 地址。使用节点或 mvip 指定要从中收集捆绑包的节点，但不能同时使用这两者。如果未指定 mvip ，则需要此参数。
+ a| 
+string array
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+password
+ a| 
+集群管理员密码。* 注： * 输入密码时，此密码以文本形式显示。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+username
+ a| 
+集群管理员用户名。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method": "CreateClusterSupportBundle",
+"params": {
+          "bundlename": "clusterbundle",
+          "mvip": "132.119.120.100"
+     }
+   },
+ "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id":1,
+  "result":{
+   "details":{
+      "bundleName":"clusterbundle",
+      "extraArgs":"",
+      "files":[
+          "/tmp/supportbundles/clusterbundle.cl-4SD5.tar"
+      ],
+      "output":"timeout -s KILL 1790s /usr/local/bin/sfclustersupportbundle --quiet --name=\"clusterbundle\" --target-directory=\"/tmp/solidfire-dtemp.MM7f0m\" --user=\"admin\" --pass=\"admin\" --mvip=132.119.120.100"
+       },
+       "duration":"00:00:24.938127",
+       "result":"Passed"
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

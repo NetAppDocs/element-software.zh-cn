@@ -1,0 +1,149 @@
+---
+permalink: api/reference_element_api_clusterconfig.html 
+sidebar: sidebar 
+keywords: objects,object,clusterConfig 
+summary: clusterConfig 对象将返回节点用于与集群通信的信息。 
+---
+= clusterconfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterConfig 对象将返回节点用于与集群通信的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+密码
+ a| 
+用于集群通信的网络接口。
+ a| 
+string
+
+
+
+ a| 
+集群
+ a| 
+集群的唯一名称。
+ a| 
+string
+
+
+
+ a| 
+加密可容量
+ a| 
+指定节点是否支持加密。
+ a| 
+boolean
+
+
+
+ a| 
+集合
+ a| 
+加入集群的节点。
+ a| 
+string array
+
+
+
+ a| 
+fipsDriveConfiguration
+ a| 
+指定节点是否支持 FIPS 140-2 认证驱动器。
+ a| 
+boolean
+
+
+
+ a| 
+具有 LocalAdmin
+ a| 
+指定集群是否具有本地管理员。
+ a| 
+boolean
+
+
+
+ a| 
+MIPI
+ a| 
+用于节点管理的网络接口。
+ a| 
+string
+
+
+
+ a| 
+name
+ a| 
+集群的唯一标识符。
+ a| 
+string
+
+
+
+ a| 
+节点 ID
+ a| 
+节点的唯一标识符。
+ a| 
+整型
+
+
+
+ a| 
+pendingNodeID
+ a| 
+待定节点的唯一标识符。
+ a| 
+整型
+
+
+
+ a| 
+role
+ a| 
+标识节点的角色。
+ a| 
+string
+
+
+
+ a| 
+和
+ a| 
+用于存储的网络接口。
+ a| 
+string
+
+
+
+ a| 
+state
+ a| 
+指示节点的状态。
+ a| 
+string
+
+
+
+ a| 
+version
+ a| 
+指示节点的版本。
+ a| 
+string
+
+|===

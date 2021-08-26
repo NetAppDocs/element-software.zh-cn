@@ -1,0 +1,124 @@
+---
+permalink: api/reference_element_api_addldapclusteradmin.html 
+sidebar: sidebar 
+keywords: LDAP,cluster,admin,add,adding,addldapclusteradmin 
+summary: 您可以使用 AddLdapClusterAdmin 添加新的 LDAP 集群管理员用户。LDAP 集群管理员可以使用 API 和管理工具来管理集群。LDAP 集群管理员帐户是完全独立的，与标准租户帐户无关。 
+---
+= AddLdapClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `AddLdapClusterAdmin` 添加新的 LDAP 集群管理员用户。LDAP 集群管理员可以使用 API 和管理工具来管理集群。LDAP 集群管理员帐户是完全独立的，与标准租户帐户无关。
+
+
+
+== Parameters
+
+您也可以使用此方法添加已在 Active Directory ® 中定义的 LDAP 组。为组提供的访问级别将传递给 LDAP 组中的各个用户。
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+访问
+ a| 
+控制此集群管理员可以使用的方法。
+ a| 
+string array
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+接受 Eula
+ a| 
+接受最终用户许可协议。设置为 true 可向系统添加集群管理员帐户。如果省略或设置为 false ，则方法调用将失败。
+ a| 
+boolean
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+username
+ a| 
+新 LDAP 集群管理员的可分辨用户名。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "AddLdapClusterAdmin",
+  "params": {"username":"cn=mike jones,ou=ptusers,dc=prodtest,dc=solidfire,dc=net",
+    "access": ["administrator", "read"
+    ]
+  },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_app_b_access_control.adoc[访问控制]

@@ -1,0 +1,568 @@
+---
+permalink: storage/reference_prereq_network_port_requirements.html 
+sidebar: sidebar 
+keywords: network port requirements, TCP ports, firewall, utilities, URL, access attempt, ICMP, MIP, SIP, MVIP, SVIP 
+summary: 您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。 
+---
+= 网络端口要求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。
+
+除非另有说明，否则所有端口均为 TCP 端口，并且应允许在 NetApp 支持服务器，管理节点和运行 Element 软件的节点之间进行双向通信。
+
+
+IMPORTANT: NetApp 正在重建联机存储库，该存储库托管支持 NetApp Hybrid Cloud Control 自动升级工作流的软件和固件包下载。 https://kb.netapp.com/Support_Bulletins/Customer_Bulletins/SU474["了解更多信息。"]
+
+[NOTE]
+====
+NetApp Hybrid Cloud Control Web UI 和 API 可从 NetApp 在线软件存储库下载软件包，该存储库使用 JFrog Artifactory Cloud 作为分发中心，并采用 CDN 技术托管文件。因此，根据内容交付网络，某些 URL 或 IP 地址可能会解析为其他 URL 或 IP 地址。如果可能，您应与网络工程师合作，使用以下常规步骤将这些 URL 或 IP 地址添加到防火墙规则中：
+
+.步骤
+. 使用 wget 或 cURL 实用程序访问 URL （例如 repo.netapp.com ）。
+. 无法访问此 URL （与 repo.netapp.com 不同）。
+. 编辑防火墙规则以允许使用新 URL 。
+. 重复上述步骤，直到访问尝试成功为止。
+
+
+====
+
+TIP: 在管理节点，运行 Element 软件的节点和集群 MVIP 之间启用 ICMP 。
+
+下表使用了以下缩写词：
+
+* mip ：管理 IP 地址，每节点地址
+* SIP ：存储 IP 地址，每个节点的地址
+* MVIP ：管理虚拟 IP 地址
+* SVIP ：存储虚拟 IP 地址
+
+
+[cols="25,25,15,35"]
+|===
+| 源 | 目标 | Port | Description 
+
+
+ a| 
+iSCSI 客户端
+ a| 
+存储集群 MVIP
+ a| 
+443.
+ a| 
+（可选） UI 和 API 访问
+
+
+
+ a| 
+iSCSI 客户端
+ a| 
+存储集群 SVIP
+ a| 
+3260
+ a| 
+客户端 iSCSI 通信
+
+
+
+ a| 
+iSCSI 客户端
+ a| 
+存储节点 SIP
+ a| 
+3260
+ a| 
+客户端 iSCSI 通信
+
+
+
+ a| 
+管理节点
+ a| 
+sfsupport.solidfire.com
+ a| 
+22.
+ a| 
+反向 SSH 通道以访问支持
+
+
+
+ a| 
+管理节点
+ a| 
+存储节点 MIP
+ a| 
+22.
+ a| 
+SSH 访问以获得支持
+
+
+
+ a| 
+管理节点
+ a| 
+DNS 服务器
+ a| 
+53 TCP/UDP
+ a| 
+DNS 查找
+
+
+
+ a| 
+管理节点
+ a| 
+存储节点 MIP
+ a| 
+442
+ a| 
+通过 UI 和 API 访问存储节点和 Element 软件升级
+
+
+
+ a| 
+管理节点
+ a| 
+存储集群 MVIP
+ a| 
+442
+ a| 
+通过 UI 和 API 访问存储节点和 Element 软件升级
+
+
+
+ a| 
+管理节点
+ a| 
+联机软件存储库：
+
+* `https://repo.netapp.com/bintray/api/package`
+* `https://repo.netapp.com/downloads`
+* `https://netappdownloads.jfrog.io:443`
+
+ a| 
+443.
+ a| 
+管理节点服务升级
+
+
+
+ a| 
+管理节点
+ a| 
+monitoring.solidfire.com
+ a| 
+443.
+ a| 
+存储集群向 Active IQ 报告
+
+
+
+ a| 
+管理节点
+ a| 
+存储集群 MVIP
+ a| 
+443.
+ a| 
+通过 UI 和 API 访问存储节点和 Element 软件升级
+
+
+
+ a| 
+管理节点
+ a| 
+repo.netapp.com
+ a| 
+443.
+ a| 
+可访问安装 / 更新内部部署所需的组件。
+
+
+
+ a| 
+管理节点
+ a| 
+见证节点
+ a| 
+9442
+ a| 
+每节点配置 API 服务
+
+
+
+ a| 
+管理节点
+ a| 
+vCenter Server
+ a| 
+9443
+ a| 
+vCenter 插件注册。注册完成后，可以关闭此端口。
+
+
+
+ a| 
+SNMP 服务器
+ a| 
+存储集群 MVIP
+ a| 
+161/UDP
+ a| 
+SNMP 轮询
+
+
+
+ a| 
+SNMP 服务器
+ a| 
+存储节点 MIP
+ a| 
+161/UDP
+ a| 
+SNMP 轮询
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+DNS 服务器
+ a| 
+53 TCP/UDP
+ a| 
+DNS 查找
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+管理节点
+ a| 
+80
+ a| 
+Element 软件升级
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+S3/Swift endpoint
+ a| 
+80
+ a| 
+（可选）与 S3/Swift 端点进行 HTTP 通信以实现备份和恢复
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+NTP 服务器
+ a| 
+123/UDP
+ a| 
+NTP
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+管理节点
+ a| 
+162 UDP
+ a| 
+（可选） SNMP 陷阱
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+SNMP 服务器
+ a| 
+162 UDP
+ a| 
+（可选） SNMP 陷阱
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+LDAP 服务器
+ a| 
+389 TCP/UDP
+ a| 
+（可选） LDAP 查找
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+管理节点
+ a| 
+443.
+ a| 
+Element 存储固件升级
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+远程存储集群 MVIP
+ a| 
+443.
+ a| 
+远程复制集群配对通信
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+远程存储节点 MIP
+ a| 
+443.
+ a| 
+远程复制集群配对通信
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+S3/Swift endpoint
+ a| 
+443.
+ a| 
+（可选）与 S3/Swift 端点进行 HTTPS 通信以进行备份和恢复
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+管理节点
+ a| 
+514 TCP/UDP
+
+10514 TCP/UDP
+ a| 
+系统日志转发
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+系统日志服务器
+ a| 
+514 TCP/UDP
+
+10514 TCP/UDP
+ a| 
+系统日志转发
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+LDAPS 服务器
+ a| 
+636 TCP/UDP
+ a| 
+LDAPS 查找
+
+
+
+ a| 
+存储节点 MIP
+ a| 
+远程存储节点 MIP
+ a| 
+2181
+ a| 
+用于远程复制的集群间通信
+
+
+
+ a| 
+存储节点 SIP
+ a| 
+S3/Swift endpoint
+ a| 
+80
+ a| 
+（可选）与 S3/Swift 端点进行 HTTP 通信以实现备份和恢复
+
+
+
+ a| 
+存储节点 SIP
+ a| 
+S3/Swift endpoint
+ a| 
+443.
+ a| 
+（可选）与 S3/Swift 端点进行 HTTPS 通信以进行备份和恢复
+
+
+
+ a| 
+存储节点 SIP
+ a| 
+远程存储节点 SIP
+ a| 
+2181
+ a| 
+用于远程复制的集群间通信
+
+
+
+ a| 
+存储节点 SIP
+ a| 
+存储节点 SIP
+ a| 
+3260
+ a| 
+节点间 iSCSI
+
+
+
+ a| 
+存储节点 SIP
+ a| 
+远程存储节点 SIP
+ a| 
+4000 到 4020
+ a| 
+远程复制节点到节点数据传输
+
+
+
+ a| 
+系统管理员 PC
+ a| 
+管理节点
+ a| 
+442
+ a| 
+对管理节点的 HTTPS UI 访问
+
+
+
+ a| 
+系统管理员 PC
+ a| 
+存储节点 MIP
+ a| 
+442
+ a| 
+对存储节点的 HTTPS UI 和 API 访问
+
+
+
+ a| 
+系统管理员 PC
+ a| 
+管理节点
+ a| 
+443.
+ a| 
+对管理节点的 HTTPS UI 和 API 访问
+
+
+
+ a| 
+系统管理员 PC
+ a| 
+存储集群 MVIP
+ a| 
+443.
+ a| 
+对存储集群的 HTTPS UI 和 API 访问
+
+
+
+ a| 
+系统管理员 PC
+ a| 
+存储节点 MIP
+ a| 
+443.
+ a| 
+HTTPS 存储集群创建，存储集群的部署后 UI 访问
+
+
+
+ a| 
+系统管理员 PC
+ a| 
+见证节点
+ a| 
+8080
+ a| 
+见证节点每节点 Web UI
+
+
+
+ a| 
+vCenter Server
+ a| 
+存储集群 MVIP
+ a| 
+443.
+ a| 
+vCenter 插件 API 访问
+
+
+
+ a| 
+vCenter Server
+ a| 
+管理节点
+ a| 
+8443
+ a| 
+（可选） vCenter 插件 QoSSIOC 服务。
+
+
+
+ a| 
+vCenter Server
+ a| 
+存储集群 MVIP
+ a| 
+8444
+ a| 
+vCenter VASA Provider 访问（仅限 VVol ）
+
+
+
+ a| 
+vCenter Server
+ a| 
+管理节点
+ a| 
+9443
+ a| 
+vCenter 插件注册。注册完成后，可以关闭此端口。
+
+|===
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

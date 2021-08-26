@@ -1,0 +1,150 @@
+---
+permalink: concepts/concept_rn_whats_new_element.html 
+sidebar: sidebar 
+keywords: netapp, solidfire, element, storage 
+summary: NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。 
+---
+= 新增功能 &#8217
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.3 引入了软件空闲加密增强功能，安全性增强功能，存储固件更新，增强的快照功能以及故障驱动器的行为改进功能。
+
+
+
+== NetApp Bug Online 包含已知问题和已解决的问题
+
+从 Element 12.3 开始， NetApp Bug Online 工具现在会列出已知问题和已解决的问题。您可以浏览这些问题中的 Element 和其他产品。
+
+. 转至 https://mysupport.netapp.com/site/products/all/details/solidfire-elementos/bugsonline-tab["NetApp Bug Online"^]。
+. 在 * 按关键字搜索 * 字段中键入产品名称，例如 "element" 。
+. 选择 image:plus_icon.PNG["加号图标"] 图标，选择 * 在版本中修复 * ，然后选择 * 确定 * 。
++
+image:bol_filters.PNG["BOL 筛选器，对齐 \" 中心 \""]
+
+. 要按版本进行筛选，请在 * 版本中的固定版本 * 字段中键入版本。
+
+
+
+
+== 支持 FIFO 快照队列
+
+使用 Element 12.3 ，您可以为卷快照创建先出（ First-in-First-out ， FIFO ）队列。使用 Element API ，您可以指定创建卷时应预留的 FIFO 快照插槽的最小和最大数量。当卷的 FIFO 快照队列已满时，为该卷创建的下一个快照将从系统中删除该卷最旧的快照。FIFO 和非 FIFO 快照都使用卷上相同的可用快照插槽池。
+
+以下 Element API 方法与 FIFO 快照相关（请参见 link:../api/index.html["Element API 文档"] 有关每个 API 方法的详细信息：
+
+* CreateGroupSnapshot
+* CreateSchedule
+* CreateSnapshot
+* CreateVolume
+* ModifyGroupSnapshot
+* ModifySchedule
+* ModifySnapshot
+* ModifyVolume
+* ModifyVolumes
+
+
+
+
+== 支持 Snapshot 序列化
+
+Element 12.3 支持序列化快照创建。使用 Element API 创建新快照时，您可以指定在先前的快照复制仍在进行中时不应创建快照。
+
+以下 Element API 方法与快照序列化相关（请参见 link:../api/index.html["Element API 文档"] 有关每个 API 方法的详细信息：
+
+* CreateGroupSnapshot
+* CreateSchedule
+* CreateSnapshot
+* ModifySchedule
+
+
+
+
+== Snapshot 保留支持
+
+使用 Element 12.3 可以指定快照的保留时间。如果未指定快照的保留时间或到期时间，则它将永久保留。
+
+以下 Element API 方法与快照保留相关（请参见 link:../api/index.html["Element API 文档"] 有关每个 API 方法的详细信息：
+
+* CreateGroupSnapshot
+* CreateSchedule
+* CreateSnapshot
+* ModifyGroupSnapshot
+* ModifySchedule
+* ModifySnapshot
+
+
+
+
+== 软件空闲加密增强功能
+
+对于软件空闲加密功能， Element 12.3 引入了外部密钥管理（ External Key Management ， EKM ）并能够重新设置软件加密主密钥的密钥。您可以在创建存储集群时启用空闲软件加密。创建 SolidFire 企业 SDS 存储集群时，默认情况下会启用空闲软件加密。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。
+
+以下 Element API 方法与空闲软件加密相关（请参见 link:../api/index.html["Element API 文档"] 有关每个 API 方法的详细信息：
+
+* CreateCluster
+* DisableEncryptionAtRest
+* EnableEncryptionAtRest
+* GetSoftwareEncryptionAtRestInfo
+* RekeySoftwareEncryptionAtRestMasterKey
+
+
+
+
+== 存储节点固件更新
+
+Element 12.3 提供了存储节点的固件更新。 link:../concepts/concept_rn_relatedrn_element.html#storage-firmware["了解更多信息。"]。
+
+
+
+== 安全性增强功能
+
+Element 12.3 可解决存储节点和管理节点的安全漏洞。 https://security.netapp.com/["了解更多信息。"] 关于这些安全增强功能。
+
+
+
+== 改进了故障驱动器的行为
+
+Element 12.3 使用 SolidFire 设备驱动器中的 SMART 运行状况数据对这些驱动器定期执行运行状况检查。未通过智能运行状况检查的驱动器可能接近故障。如果某个驱动器未通过智能运行状况检查，则该驱动器将过渡到 * 故障 * 状态，并显示严重严重性集群故障： `d" 驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器运行状况检查失败 " 。要解决此故障，请更换驱动器` 。
+
+
+
+== SolidFire 企业 SDS 中的新增功能
+
+以下是 SolidFire ESDS 中的新增功能：
+
+
+
+=== 新服务器支持
+
+SolidFire ESDS 现在可在 Dell R640 服务器上使用。请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关支持的配置的详细信息。
+
+
+
+=== 新文档
+
+SolidFire ESDS 提供了以下新文档：
+
+* https://docs.netapp.com/us-en/element-software/esds/task_esds_r640_drive_repl.html["更换 Dell R640 的驱动器"^]：提供了更换 Dell R640 服务器中的驱动器的步骤。
+* https://kb.netapp.com/Special:Search?query=solidfire+enterprise+SDS&type=wiki["知识库文章（需要登录）"^]：提供有关对 SolidFire ESDS 系统问题进行故障排除的信息。
+
+
+
+
+=== 已知问题的新位置
+
+现在，您可以在上搜索已知问题 https://mysupport.netapp.com/site/products/all/details/solidfire-enterprise-sds/bugsonline-tab["Bug Online 工具（需要登录）"^]。
+
+[discrete]
+== 了解更多信息
+
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["《 NetApp 混合云控制和管理服务发行说明》"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"^]
+* http://docs.netapp.com/sfe-122/index.jsp["适用于先前版本的 SolidFire 和 Element 软件文档中心"^]
+* https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI 资源页面"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["NetApp HCI 和 NetApp Element 软件的固件和驱动程序版本"^]
+

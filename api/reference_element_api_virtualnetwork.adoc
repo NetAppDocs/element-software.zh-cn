@@ -1,0 +1,105 @@
+---
+permalink: api/reference_element_api_virtualnetwork.html 
+sidebar: sidebar 
+keywords: object,objects,virtualNetwork 
+summary: virtualNetwork 对象包含有关特定虚拟网络的信息。您可以使用 ListVirtualNetworks API 方法为系统中的所有虚拟网络检索此信息的列表。 
+---
+= VirtualNetwork
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+virtualNetwork 对象包含有关特定虚拟网络的信息。您可以使用 `ListVirtualNetworks` API 方法检索系统中所有虚拟网络的此信息列表。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+地址锁定
+ a| 
+当前分配给虚拟网络的地址块的范围。成员
+
+* Available ： "1" 和 "0" 中的二进制字符串"1" 表示 IP 地址可用， "0" 表示 IP 不可用。从右到左读取该字符串，最右端的数字是地址块列表中的第一个 IP 地址。
+* size ：此地址块的大小。
+* start ：块中的第一个 IP 地址。
+
+ a| 
+JSON 对象数组
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+
+
+
+ a| 
+name
+ a| 
+分配给虚拟网络的名称。
+ a| 
+string
+
+
+
+ a| 
+netmask
+ a| 
+虚拟网络的网络掩码的 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+Svip
+ a| 
+虚拟网络的存储 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+网关
+ a| 
+用于虚拟网络的网关。
+ a| 
+string
+
+
+
+ a| 
+virtualNetworkID
+ a| 
+虚拟网络的唯一标识符。
+ a| 
+整型
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+VLAN 标记标识符。
+ a| 
+整型
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listvirtualnetworks.adoc[ListVirtualNetworks]

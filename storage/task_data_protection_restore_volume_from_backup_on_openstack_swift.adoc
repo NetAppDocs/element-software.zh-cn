@@ -1,0 +1,35 @@
+---
+permalink: storage/task_data_protection_restore_volume_from_backup_on_openstack_swift.html 
+sidebar: sidebar 
+keywords: volume restore, openstack swift object store 
+summary: 您可以从 OpenStack Swift 对象存储上的备份还原卷。 
+---
+= 从 OpenStack Swift 对象存储上的备份还原卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从 OpenStack Swift 对象存储上的备份还原卷。
+
+. 单击 * 报告 * > * 事件日志 * 。
+. 找到创建需要还原的备份的备份事件。
+. 在事件的 * 详细信息 * 列中，单击 * 显示详细信息 * 。
+. 将清单信息复制到剪贴板。
+. 单击 * 管理 * > * 卷 * 。
+. 单击要还原的卷对应的 "Actions" 图标。
+. 在显示的菜单中，单击 * 从 * 还原。
+. 在 * 集成还原 * 对话框的 * 还原自 * 下，选择 * Swift* 。
+. 在 * 数据格式 * 下选择与备份匹配的选项：
++
+** * 原生 * ：只有 SolidFire 存储系统可以读取的压缩格式。
+** * 未压缩 * ：与其他系统兼容的未压缩格式。
+
+
+. 在 * URL * 字段中输入用于访问对象存储的 URL 。
+. 在 * 用户名 * 字段中输入帐户的用户名。
+. 在 * 身份验证密钥 * 字段中输入帐户的身份验证密钥。
+. 在 * 容器 * 字段中输入用于存储备份的容器的名称。
+. 将清单信息粘贴到 * 清单 * 字段中。
+. 单击 * 开始写入 * 。
+

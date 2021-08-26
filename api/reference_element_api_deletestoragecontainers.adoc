@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_deletestoragecontainers.html 
+sidebar: sidebar 
+keywords: virtual,volume,storage,container,delete,deleting,vvol,DeleteStorageContainers 
+summary: 您可以使用 DeleteStorageContainers 方法一次从系统中最多删除 2000 个虚拟卷（ VVol\ ）存储容器。您删除的存储容器不能包含任何 VVOL 。 
+---
+= DeleteStorageContainers
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteStorageContainers` 方法一次从系统中删除最多 2000 个虚拟卷（ VVol ）存储容器。您删除的存储容器不能包含任何 VVOL 。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+storageContainerID
+ a| 
+要删除的存储容器的 ID 列表。您最多可以在此列表中指定 2000 个 ID 。
+ a| 
+UUID array
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "DeleteStorageContainers",
+    "params": {
+        "storageContainerIDs" : ["a9ec1138-e386-4a44-90d7-b9acbbc05176"]
+    },
+    "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

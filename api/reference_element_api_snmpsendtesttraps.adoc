@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_snmpsendtesttraps.html 
+sidebar: sidebar 
+keywords: snmp,test,send,trap,testing,sending,snmpsendtesttraps 
+summary: 使用 SnmpSendTestTraps 可以测试集群的 SNMP 功能。此方法指示集群向当前配置的 SNMP 管理器发送测试 SNMP 陷阱。 
+---
+= SnmpSendTestTraps
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 `snmpSendTestTraps` 可以测试集群的 SNMP 功能。此方法指示集群向当前配置的 SNMP 管理器发送测试 SNMP 陷阱。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+status
+ a| 
+测试状态。
+ a| 
+string
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+	"method": "SnmpSendTestTraps",
+    "params": {},
+    "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "status": "complete"
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

@@ -1,0 +1,47 @@
+---
+permalink: api/reference_element_api_deletesnapmirrorendpoints.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoints,endpoint,delete,deleting,DeleteSnapMirrorEndpoints 
+summary: Element Web UI 使用 DeleteSnapMirrorEndpoints 从系统中删除一个或多个 SnapMirror 端点。 
+---
+= DeleteSnapMirrorEndpoints
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element Web UI 使用 `DDeleteSnapMirrorEndpoints` 从系统中删除一个或多个 SnapMirror 端点。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+要删除的 SnapMirror 端点的 ID 数组。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 自版本以来的新增功能
+
+10.0

@@ -1,0 +1,118 @@
+---
+permalink: api/reference_element_api_initiator.html 
+sidebar: sidebar 
+keywords: object,objects,initiator 
+summary: initiator 对象包含有关 iSCSI 或光纤通道启动程序的信息。启动程序对象可以包含 IQN 或 WWPN 标识符。您可以使用 ListInitiators 方法获取系统上已知的所有启动程序的列表。您可以使用启动程序对象配置 SCSI 启动程序通过卷访问组访问一组卷。一个启动程序一次只能是一个卷访问组的成员。您可以通过使用 CreateInitiators 和 ModifyInitiators 方法指定一个或多个 virtualNetworkID 来限制启动程序对一个或多个 VLAN 的访问。如果未指定任何虚拟网络，则启动程序可以访问所有网络。 
+---
+= 启动程序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+initiator 对象包含有关 iSCSI 或光纤通道启动程序的信息。启动程序对象可以包含 IQN 或 WWPN 标识符。您可以使用 `ListInitiators` 方法获取系统上已知的所有启动程序的列表。您可以使用启动程序对象配置 SCSI 启动程序通过卷访问组访问一组卷。一个启动程序一次只能是一个卷访问组的成员。您可以通过使用 `CreateInitiators` 和 `ModfyInitiators` 方法指定一个或多个 virtualNetworkID 来限制启动程序对一个或多个 VLAN 的访问。如果不指定任何虚拟网络，启动程序可以访问所有网络。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+alias
+ a| 
+分配给启动程序的友好名称（如果有）。
+ a| 
+string
+
+
+
+ a| 
+属性
+ a| 
+分配给此启动程序的一组 JSON 属性。如果未分配任何属性，则为空。
+ a| 
+JSON 对象
+
+
+
+ a| 
+用户名
+ a| 
+此启动程序的唯一 CHAP 用户名。
+ a| 
+string
+
+
+
+ a| 
+启动程序 ID
+ a| 
+启动程序的数字标识符。
+ a| 
+整型
+
+
+
+ a| 
+启动程序名称
+ a| 
+启动程序名称，采用 IQN 或 WWPN 格式。
+ a| 
+string
+
+
+
+ a| 
+initiatorSecret
+ a| 
+用于对启动程序进行身份验证的 CHAP 密钥。
+ a| 
+string
+
+
+
+ a| 
+要求映射
+ a| 
+如果此启动程序需要 CHAP ，则为 true 。
+ a| 
+boolean
+
+
+
+ a| 
+targetSecret
+ a| 
+用于对目标进行身份验证的 CHAP 密钥（使用相互 CHAP 身份验证时）。
+ a| 
+string
+
+
+
+ a| 
+virtualNetworkID
+ a| 
+与此启动程序关联的虚拟网络标识符的列表。如果定义了一个或多个，则此启动程序将只能登录到指定的虚拟网络。如果未定义虚拟网络，则此启动程序可以登录到所有网络。
+ a| 
+整型
+
+
+
+ a| 
+卷访问组
+ a| 
+此启动程序所属的卷访问组 ID 列表。
+ a| 
+整型数组
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listinitiators.adoc[ListInitiators]

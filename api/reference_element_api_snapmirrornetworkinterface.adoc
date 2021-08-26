@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_snapmirrornetworkinterface.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorNetworkInterface 
+summary: snapMirrorNetworkInterface 对象包含有关集群间逻辑接口（ LIF\ ）的信息。 
+---
+= snapMirrorNetworkInterface
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorNetworkInterface 对象包含有关集群间逻辑接口（ LIF ）的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+管理状态
+ a| 
+是以管理员方式启用还是禁用逻辑接口（ LIF ）。可能值：
+
+* 已启动
+* 已关闭
+
+ a| 
+string
+
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目标 ONTAP 系统的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+接口名称
+ a| 
+LIF 名称。
+ a| 
+string
+
+
+
+ a| 
+网络地址
+ a| 
+LIF 的 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+网络掩码
+ a| 
+LIF 的网络掩码。
+ a| 
+string
+
+
+
+ a| 
+接口位置
+ a| 
+LIF 的角色。可能值：
+
+* UNDEF
+* 集群
+* 数据
+* 节点管理
+* 集群间
+* 集群管理
+
+ a| 
+string
+
+
+
+ a| 
+操作状态
+ a| 
+LIF 的运行状态（无论它是否已成功建立连接）。如果存在网络问题，导致接口无法正常运行，则此状态可能与管理状态不同。可能值：
+
+* 已启动
+* 已关闭
+
+ a| 
+string
+
+
+
+ a| 
+vserverName
+ a| 
+SVM 的名称。
+ a| 
+string
+
+|===

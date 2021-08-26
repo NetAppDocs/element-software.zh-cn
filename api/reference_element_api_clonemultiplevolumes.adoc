@@ -1,0 +1,205 @@
+---
+permalink: api/reference_element_api_clonemultiplevolumes.html 
+sidebar: sidebar 
+keywords: volume,volumes,clone,cloning,multiple,CloneMultipleVolumes 
+summary: 您可以使用 CloneMultipleVolumes 方法为一组指定卷创建克隆。如果将多个卷同时克隆，则可以为一组卷分配一组一致的特征。 
+---
+= CloneMultipleVolumes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CloneMultipleVolumes` 方法为一组指定卷创建克隆。如果将多个卷同时克隆，则可以为一组卷分配一组一致的特征。
+
+在使用 groupSnapshotID 参数克隆组快照中的卷之前，必须先使用创建组快照 xref:reference_element_api_creategroupsnapshot.adoc[CreateGroupSnapshot] API 方法或 Web UI 。克隆多个卷时，可以选择使用 groupSnapshotID 。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+访问
+ a| 
+新卷的新默认访问方法（如果不被卷阵列中传递的信息覆盖）。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+启用 SnapMirrorReplication
+ a| 
+确定卷是否可用于 SnapMirror 端点的复制。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+groupSnapshotID
+ a| 
+要用作克隆基础的组快照的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+newAccountID
+ a| 
+卷的新帐户 ID ，如果不被在 volumes 数组中传递的信息所覆盖。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+volumes
+ a| 
+为新卷指定的一组成员。成员
+
+* volumeID ：（必需）
+* access ：（可选）可以是 readonly ， readwrite ， locked 或 replicationTarget 之一。
+* attributes ：（可选） JSON 对象格式的名称 - 值对列表。
+* Name ：（可选）克隆的新名称。
+* newAccountID ：（可选）新卷的帐户 ID 。
+* newSize ：（可选）卷的总大小，以字节为单位。大小将向上取整为最接近的 MB 。
+
+
+如果未指定可选成员，则这些值将从源卷继承。
+ a| 
+JSON 对象数组
+ a| 
+无
+ a| 
+是（ volumeID ）
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+异步处理
+ a| 
+从异步方法调用返回的值。
+ a| 
+整型
+
+
+
+ a| 
+groupCloneID
+ a| 
+新组克隆的唯一 ID 。
+ a| 
+整型
+
+
+
+ a| 
+成员
+ a| 
+源卷对和目标卷对的卷 ID 列表。
+ a| 
+JSON 对象数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "CloneMultipleVolumes",
+   "params": {
+       "volumes": [
+           {
+              "volumeID": 5
+              "name":"foxhill",
+              "access":"readOnly"
+              },
+           {
+              "volumeID": 18
+              },
+           {
+             "volumeID": 20
+              }
+     ]
+   },
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "asyncHandle": 12,
+    "groupCloneID": 4,
+    "members": [
+     {
+      "srcVolumeID": 5,
+      "volumeID": 29
+     },
+     {
+      "srcVolumeID": 18,
+      "volumeID": 30
+     },
+     {
+      "srcVolumeID": 20,
+      "volumeID": 31
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

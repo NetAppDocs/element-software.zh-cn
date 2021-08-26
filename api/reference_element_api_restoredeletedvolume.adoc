@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_restoredeletedvolume.html 
+sidebar: sidebar 
+keywords: restore,active,restoring,deleted,volume,volumes,restoredeletedvolume 
+summary: 您可以使用 RestoreDeletedVolume 方法将已删除的卷重新标记为活动。此操作可使卷立即可用于 iSCSI 连接。 
+---
+= RestoreDeletedVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `RestoreDeletedVolume` 方法将已删除的卷重新标记为活动。此操作可使卷立即可用于 iSCSI 连接。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+volumeId
+ a| 
+要还原的已删除卷的卷 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "RestoreDeletedVolume",
+   "params": {
+      "volumeID"  : 5
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

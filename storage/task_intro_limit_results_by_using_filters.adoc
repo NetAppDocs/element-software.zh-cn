@@ -1,0 +1,26 @@
+---
+permalink: storage/task_intro_limit_results_by_using_filters.html 
+sidebar: sidebar 
+keywords: filter, filtering, sorting information, viewing lists, unfiltered list 
+summary: 您可以在 Element UI 中筛选页面上的列表信息。在查看列表（例如卷和快照）时，您可以添加一个或多个筛选器以突出显示信息并使其更易于显示在页面上。 
+---
+= 使用筛选器限制结果
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Element UI 中筛选页面上的列表信息。在查看列表（例如卷和快照）时，您可以添加一个或多个筛选器以突出显示信息并使其更易于显示在页面上。
+
+. 查看列表信息时，单击 * 筛选器 * 。
+. 展开 * 筛选依据 * 字段。
+. 从字段最左侧的元素中选择要用作筛选依据的列。
+. 为列选择一个限制。
+. 输入要用作筛选依据的文本。
+. 单击 * 添加 * 。
++
+系统将对列表中的信息运行新筛选器，并将新筛选器临时存储在 Filter by 字段中。
+
+. 要添加另一个筛选器，请单击 * 添加 * ，然后再次选择该筛选器。
+. 单击 * 全部清除 * 可删除筛选器列表并显示未筛选的列表信息。
+

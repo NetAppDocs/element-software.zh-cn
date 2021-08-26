@@ -1,0 +1,22 @@
+---
+permalink: storage/concept_intro_storage_nodes.html 
+sidebar: sidebar 
+keywords: storage nodes, management nodes, block space, metadata space, data management, storage management, Bond10G, network interface, network, metadata, data storage, storage, drives, network interfaces 
+summary: SolidFire 存储节点是一个服务器，其中包含一组通过绑定 10G 网络接口相互通信的驱动器。节点中的驱动器包含用于数据存储和数据管理的块和元数据空间。 
+---
+= 存储节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire 存储节点是一个服务器，其中包含一组通过绑定 10G 网络接口相互通信的驱动器。节点中的驱动器包含用于数据存储和数据管理的块和元数据空间。
+
+存储节点具有以下特征：
+
+* 每个节点都有一个唯一的名称。如果管理员未指定节点名称，则默认为 SF-XXXX ，其中 XXXX 是系统生成的四个随机字符。
+* 每个节点都有自己的高性能非易失性随机存取存储器（ NVRAM ）写入缓存，可提高整体系统性能并减少写入延迟。
+* 每个节点都连接到两个网络：存储和管理，每个网络都有两个独立的链路，用于实现冗余和性能。每个节点在每个网络上都需要一个 IP 地址。
+* 您可以使用新的存储节点创建集群，也可以向现有集群添加存储节点以提高存储容量和性能。
+* 您可以随时在集群中添加或删除节点，而不会中断服务。
+

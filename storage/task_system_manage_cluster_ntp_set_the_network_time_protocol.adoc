@@ -1,0 +1,18 @@
+---
+permalink: storage/task_system_manage_cluster_ntp_set_the_network_time_protocol.html 
+sidebar: sidebar 
+keywords: set, ntp, broadcasts, query, updates, clocks, synchronize, 
+summary: 可以通过以下两种方式之一设置网络时间协议（ NTP ）：指示集群中的每个节点侦听广播，或指示每个节点查询 NTP 服务器以获取更新。 
+---
+= 设置网络时间协议
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+可以通过以下两种方式之一设置网络时间协议（ NTP ）：指示集群中的每个节点侦听广播，或者指示每个节点查询 NTP 服务器以获取更新。
+
+NTP 用于通过网络同步时钟。在初始集群设置过程中，应连接到内部或外部 NTP 服务器。
+
+
+NOTE: 此功能在 SolidFire 企业 SDS 集群中不可用。

@@ -1,0 +1,73 @@
+---
+permalink: api/reference_element_api_getvirtualvolumecount.html 
+sidebar: sidebar 
+keywords: volume,volumes,virtual,get,getting,count,GetVirtualVolumeCount 
+summary: 您可以使用 GetVirtualVolumeCount 方法检索系统中当前虚拟卷的数量。 
+---
+= GetVirtualVolumeCount
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetVirtualVolumeCount` 方法检索系统中当前虚拟卷的数量。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+count
+ a| 
+系统中当前虚拟卷的数量。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "GetVirtualVolumeCount",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "count": 5
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

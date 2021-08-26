@@ -1,0 +1,28 @@
+---
+permalink: storage/task_data_protection_using_volume_snapshots.html 
+sidebar: sidebar 
+keywords: data protection, volume snapshots, roll back volume, replicate snapshots 
+summary: 卷快照是卷的时间点副本。如果需要将卷回滚到创建快照时的状态，您可以为卷创建快照并稍后使用该快照。 
+---
+= 使用卷快照进行数据保护
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+卷快照是卷的时间点副本。如果需要将卷回滚到创建快照时的状态，您可以为卷创建快照并稍后使用该快照。
+
+快照与卷克隆类似。但是，快照只是卷元数据的副本，因此您无法挂载或向其写入数据。创建卷快照也只需少量系统资源和空间，因此创建快照的速度比克隆快。
+
+您可以为单个卷或一组卷创建快照。
+
+也可以将快照复制到远程集群并将其用作卷的备份副本。这样，您就可以使用复制的快照将卷回滚到特定时间点。或者，您也可以从复制的快照创建卷的克隆。
+
+
+
+== 了解更多信息
+
+* xref:task_data_protection_use_individual_volume_snapshots.adoc[使用单个卷快照进行数据保护]
+* xref:task_data_protection_use_group_snapshots_for_data_protection.adoc[使用组快照执行数据保护任务]
+* xref:task_data_protection_schedule_a_snapshot_task.adoc[计划快照]
+

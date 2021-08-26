@@ -1,0 +1,23 @@
+---
+permalink: storage/task_monitor_iscsi_sessions.html 
+sidebar: sidebar 
+keywords: iscsi sessions, monitor 
+summary: 您可以查看连接到集群的 iSCSI 会话。您可以对信息进行筛选，使其仅包含所需的会话。 
+---
+= 查看 iSCSI 会话
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看连接到集群的 iSCSI 会话。您可以对信息进行筛选，使其仅包含所需的会话。
+
+. 在 Element UI 中，选择 * 报告 * > * iSCSI 会话 * 。
+. 要查看筛选条件字段，请单击 * 筛选器 * 。
+
+
+
+
+== 了解更多信息
+
+xref:reference_monitor_iscsi_session_details.adoc[iSCSI 会话详细信息]

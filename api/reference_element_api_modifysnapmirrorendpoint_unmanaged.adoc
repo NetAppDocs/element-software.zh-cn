@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_modifysnapmirrorendpoint_unmanaged.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapmirror,endpoint,modifysnapmirrorendpoint 
+summary: Element 软件使用此版本的 ModifySnapMirrorEndpoint 方法修改非受管 SnapMirror 端点的存储集群名称或 IP 地址属性。不能使用 Element SnapMirror API 管理非受管端点。它们必须使用 ONTAP 管理软件或 API 进行管理。 
+---
+= ModifySnapMirrorEndpoint （非受管）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件使用此版本的 `MmodifySnapMirrorEndpoint` 方法修改非受管 SnapMirror 端点的存储集群名称或 IP 地址属性。不能使用 Element SnapMirror API 管理非受管端点。它们必须使用 ONTAP 管理软件或 API 进行管理。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+
+
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+SnapMirrorEndpointID
+ a| 
+要修改的 SnapMirror 端点。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+clusterName
+ a| 
+端点的新名称。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+ipAddresses
+ a| 
+应与此 Element 存储集群通信的 ONTAP 存储系统集群的新 IP 地址列表。
+ a| 
+string array
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpoint
+ a| 
+有关已修改的 SnapMirror 端点的信息。
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint]
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.3

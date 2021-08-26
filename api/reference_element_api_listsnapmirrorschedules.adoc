@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_listsnapmirrorschedules.html 
+sidebar: sidebar 
+keywords: snapmirror,schedule,schedules,list,listing,listsnapmirrorschedules,ontap 
+summary: Element 软件 Web UI 使用 ListSnapMirrorSchedules 方法获取远程 ONTAP 集群上可用的计划列表。 
+---
+= ListSnapMirrorSchedules
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `ListSnapMirrorSchedules` 方法获取远程 ONTAP 集群上可用的计划列表。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+如果提供，则系统将列出具有指定 SnapMirror 端点 ID 的端点的计划。如果未提供此参数，则系统将列出所有已知 SnapMirror 端点的计划。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorSchedules
+ a| 
+远程 ONTAP 集群上的 SnapMirror 计划列表。
+ a| 
+xref:reference_element_api_snapmirrorjobschedulecroninfo.adoc[snapMirrorJobScheduleCronInfo] 数组
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

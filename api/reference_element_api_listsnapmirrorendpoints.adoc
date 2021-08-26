@@ -1,0 +1,61 @@
+---
+permalink: api/reference_element_api_listsnapmirrorendpoints.html 
+sidebar: sidebar 
+keywords: snapmirror,endpoint,endpoints,list,listing,listsnapmirrorendpoints 
+summary: Element 软件 Web UI 使用 ListSnapMirrorEndpoints 方法列出 Element 存储集群正在与其通信的所有 SnapMirror 端点。 
+---
+= ListSnapMirrorEndpoints
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `ListSnapMirrorEndpoints` 方法列出 Element 存储集群正在与其通信的所有 SnapMirror 端点。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+仅返回与这些 ID 关联的对象。如果未提供 ID 或阵列为空，则该方法将返回所有 SnapMirror 端点 ID 。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpoints
+ a| 
+现有 SnapMirror 端点的列表。
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint] 数组
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.0

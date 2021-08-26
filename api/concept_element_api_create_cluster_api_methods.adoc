@@ -1,0 +1,26 @@
+---
+permalink: api/concept_element_api_create_cluster_api_methods.html 
+sidebar: sidebar 
+keywords: API,methods,cluster,create,creation 
+summary: 您可以使用这些 API 方法创建存储集群。需要对单个节点上的 API 端点使用所有这些方法。 
+---
+= 集群创建 API 方法
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用这些 API 方法创建存储集群。需要对单个节点上的 API 端点使用所有这些方法。
+
+* xref:reference_element_api_checkproposedcluster.adoc[CheckProposedCluster]
+* xref:reference_element_api_createcluster.adoc[CreateCluster]
+* xref:reference_element_api_getbootstrapconfig.adoc[GetBootstrapConfig]
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

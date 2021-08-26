@@ -1,0 +1,71 @@
+---
+permalink: api/reference_element_api_network_snmp.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: SNMP network 对象包含有关集群节点的 SNMP v3 配置的信息。 
+---
+= 网络（ SNMP ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SNMP network 对象包含有关集群节点的 SNMP v3 配置的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+访问
+ a| 
+SNMP 信息请求允许的访问类型。可能值：
+
+* ro ：只读访问。
+* rw ：读写访问。
+* rosys ：对一组受限系统信息的只读访问权限。
+
+ a| 
+string
+
+
+
+ a| 
+cidr
+ a| 
+CIDR 网络掩码。此网络掩码必须为大于或等于 0 且小于或等于 32 的整数。它也不能等于 31 。
+ a| 
+整型
+
+
+
+ a| 
+社区
+ a| 
+SNMP 社区字符串。
+ a| 
+string
+
+
+
+ a| 
+网络
+ a| 
+此成员与 CIDR 成员一起控制访问和社区字符串应用到的网络。特殊值 "default" 用于指定适用场景所有网络的条目。如果此成员为主机名或 " 默认 " ，则会忽略 CIDR 掩码。
+ a| 
+string
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_getsnmpinfo.adoc[GetSnmpInfo]

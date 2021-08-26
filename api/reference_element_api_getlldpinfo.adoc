@@ -1,0 +1,68 @@
+---
+permalink: api/reference_element_api_getlldpinfo.html 
+sidebar: sidebar 
+keywords: lldp,info,get,getting,getlldpinfo,storage 
+summary: 您可以使用 GetLldpInfo 方法获取存储集群中每个节点或单个存储节点的链路层发现协议（ Link Layer Discovery Protocol ， LLDP ）配置。 
+---
+= GetLldpInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetLldpInfo` 方法获取存储集群中每个节点或单个存储节点的链路层发现协议（ Link Layer Discovery Protocol ， LLDP ）配置。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+lldpInfo
+ a| 
+有关存储集群中每个节点的机箱，接口和邻居 LLDP 设置的信息。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "GetLldpInfo",
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+由于此响应示例的长度较长，因此它会记录在一个补充主题中。
+
+
+
+== 自版本以来的新增功能
+
+11.0
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_response_example_getlldpinfo.adoc[GetLldpInfo]

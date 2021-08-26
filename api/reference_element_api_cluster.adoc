@@ -1,0 +1,294 @@
+---
+permalink: api/reference_element_api_cluster.html 
+sidebar: sidebar 
+keywords: objects,object,cluster 
+summary: cluster 对象包含节点用于与集群通信的信息。您可以使用 GetClusterConfig API 方法检索此信息。 
+---
+= 集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+cluster 对象包含节点用于与集群通信的信息。您可以使用 GetClusterConfig API 方法检索此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+密码
+ a| 
+用于集群通信的网络接口。
+ a| 
+string
+
+
+
+ a| 
+集群
+ a| 
+唯一集群名称。
+ a| 
+string
+
+
+
+ a| 
+加密可容量
+ a| 
+指示节点是否支持驱动器加密。
+ a| 
+boolean
+
+
+
+ a| 
+集合
+ a| 
+参与集群的节点。
+ a| 
+string array
+
+
+
+ a| 
+fipsDriveConfiguration
+ a| 
+指示节点是否支持 FIPS 140-2 认证驱动器。
+ a| 
+boolean
+
+
+
+ a| 
+MIPI
+ a| 
+用于节点管理的网络接口。
+ a| 
+string
+
+
+
+ a| 
+name
+ a| 
+集群名称。
+ a| 
+string
+
+
+
+ a| 
+节点 ID
+ a| 
+集群中节点的节点 ID 。
+ a| 
+string
+
+
+
+ a| 
+pendingNodeID
+ a| 
+集群中待定节点的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+role
+ a| 
+标识节点的角色。
+ a| 
+整型
+
+
+
+ a| 
+和
+ a| 
+用于存储流量的网络接口。
+ a| 
+string
+
+
+
+ a| 
+state
+ a| 
+节点的当前状态。可能值：
+
+* Available ：节点尚未配置集群名称。
+* Pending ：节点正在等待特定命名集群的使用，可以添加。
+* Active ：节点是集群的活动成员，无法添加到其他集群。
+* PendingActive ：节点当前正在返回出厂软件映像，并且尚未成为集群的活动成员。完成后，它将过渡到 "Active" 状态。
+
+ a| 
+string
+
+
+
+ a| 
+version
+ a| 
+节点上运行的软件版本。
+ a| 
+string
+
+|===
+
+
+== 成员可修改性和节点状态
+
+此表指示是否可以在每个可能的节点状态下修改对象参数。
+
+|===
+
+
+| 参数名称 | 可用状态 | 待定状态 | 活动状态 
+
+
+ a| 
+密码
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+集群
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+否
+
+
+
+ a| 
+加密可容量
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+集合
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+MIPI
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+否
+
+
+
+ a| 
+name
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+节点 ID
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+pendingNodeID
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+role
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+和
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+state
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+version
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_getclusterconfig.adoc[GetClusterConfig]

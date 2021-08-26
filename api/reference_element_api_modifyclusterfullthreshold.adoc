@@ -1,0 +1,342 @@
+---
+permalink: api/reference_element_api_modifyclusterfullthreshold.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,cluster,full,fullness,threshold,modifyclusterfullthreshold 
+summary: 您可以使用 ModifyClusterFullThreshold 方法更改存储集群接近特定容量利用率时系统生成事件的级别。在系统生成警告之前，您可以使用阈值设置指示可接受的已利用块存储量。 
+---
+= ModifyClusterFullThreshold
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ModfyClusterFullThreshold` 方法更改存储集群接近特定容量利用率时系统生成事件的级别。在系统生成警告之前，您可以使用阈值设置指示可接受的已利用块存储量。
+
+例如，如果您希望在系统达到 "Error" 级别块存储利用率以下 3% 时收到警报，请为 stage3BlockThresholdPercent 参数输入值 "3" 。如果达到此级别，系统会向集群管理控制台中的事件日志发送警报。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+
+NOTE: 必须至少选择一个参数。
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+maxMetadataOverProvisionFactor
+ a| 
+一个值，表示元数据空间相对于可用空间量可以过度配置的次数。例如，如果有足够的元数据空间来存储 100 TiB 的卷，并且此数字设置为 5 ，则可以创建 500 TiB 的卷。
+ a| 
+整型
+ a| 
+5.
+ a| 
+否
+
+
+
+ a| 
+stage2AwareThreshold
+ a| 
+在系统触发容量通知之前集群中剩余容量的节点数。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+stage3BlockThresholdPercent
+ a| 
+块存储利用率低于 " 错误 " 阈值的百分比，此阈值会导致系统触发集群 " 警告 " 警报。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+stage3MetadataThresholdPercent
+ a| 
+元数据存储利用率低于 "`Error` " 阈值的百分比，此阈值会导致系统触发集群 "`Warning` " 警报。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+块性
+ a| 
+当前计算得出的集群块填充度级别。
+
+* stage1Happy ：无警报或错误情况。对应于 Web UI 中的 * 运行状况 * 。
+* stage2Aware ：无警报或错误情况。对应于 Web UI 中的 * 运行状况 * 。
+* stage3Low ：系统无法针对两个非同步节点故障提供冗余数据保护。对应于 Web UI 中的 * 警告 * 状态。您可以在 Web UI 中配置此级别（默认情况下，系统会在容量比错误状态低 3% 时触发此警报）。
+* stage4Critical ：系统无法针对单节点故障提供冗余数据保护。无法创建新卷或克隆。对应于 Element UI 中的 * 错误 * 状态。
+* stage5CompletelyConsumed ：已完全使用。此集群为只读，并保持 iSCSI 连接，但所有写入操作均会暂停。对应于 Element UI 中的 * 严重 * 状态。
+
+ a| 
+string
+
+
+
+ a| 
+全满
+ a| 
+反映 "blockFullness" 和 "metadataFullness" 之间的最高填充度级别。
+ a| 
+string
+
+
+
+ a| 
+maxMetadataOverProvisionFactor
+ a| 
+一个值，表示元数据空间相对于可用空间量可以过度配置的次数。例如，如果有足够的元数据空间来存储 100 TiB 的卷，并且此数字设置为 5 ，则可以创建 500 TiB 的卷。
+ a| 
+整型
+
+
+
+ a| 
+元数据全满
+ a| 
+当前计算得出的集群元数据填充度级别。
+
+* stage1Happy ：无警报或错误情况。对应于 Web UI 中的 * 运行状况 * 。
+* stage2Aware ：无警报或错误情况。对应于 Web UI 中的 * 运行状况 * 。
+* stage3Low ：系统无法针对两个非同步节点故障提供冗余数据保护。对应于 Web UI 中的 * 警告 * 状态。您可以在 Web UI 中配置此级别（默认情况下，系统会在容量比错误状态低 3% 时触发此警报）。
+* stage4Critical ：系统无法针对单节点故障提供冗余数据保护。无法创建新卷或克隆。对应于 Element UI 中的 * 错误 * 状态。
+* stage5CompletelyConsumed ：已完全使用。此集群为只读，并保持 iSCSI 连接，但所有写入操作均会暂停。对应于 Element UI 中的 * 严重 * 状态。
+
+ a| 
+string
+
+
+
+ a| 
+sliceReserveUsedThresholdPct
+ a| 
+错误情况。如果预留的分区利用率大于返回的 sliceReserveUsedThresholdPct 值，则会触发系统警报。
+ a| 
+整型
+
+
+
+ a| 
+stage2AwareThreshold
+ a| 
+感知条件。为 " 第 2 阶段 " 集群阈值级别设置的值。
+ a| 
+整型
+
+
+
+ a| 
+stage2BlockThresholdBytes
+ a| 
+存在第 2 阶段填充度条件的集群所使用的字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage2MetadataThresholdBytes
+ a| 
+存在第 2 阶段填充度条件的集群所使用的元数据字节数。
+ a| 
+
+
+
+ a| 
+stage3BlockThresholdBytes
+ a| 
+存在第 3 阶段填充度条件的集群所使用的存储字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage3BlockThresholdPercent
+ a| 
+为阶段 3 设置的百分比值。达到此百分比时，警报日志中会发布一条警告。
+ a| 
+整型
+
+
+
+ a| 
+stage3LowThreshold
+ a| 
+错误情况。由于集群容量不足而创建系统警报的阈值。
+ a| 
+整型
+
+
+
+ a| 
+stage3MetadataThresholdBytes
+ a| 
+存在第 3 阶段填充度条件的集群使用的元数据字节数。
+ a| 
+
+
+
+ a| 
+stage4BlockThresholdBytes
+ a| 
+存在第 4 阶段填充度条件的集群所使用的存储字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage4CriticalThreshold
+ a| 
+错误情况。创建系统警报以警告集群容量严重不足的阈值。
+ a| 
+整型
+
+
+
+ a| 
+stage4MetadataThresholdBytes
+ a| 
+存在第 4 阶段填充度条件的集群使用的元数据字节数。
+ a| 
+
+
+
+ a| 
+stage5BlockThresholdBytes
+ a| 
+存在第 5 阶段填充度条件的集群使用的存储字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage5MetadataThresholdBytes
+ a| 
+存在第 5 阶段填充度条件的集群使用的元数据字节数。
+ a| 
+
+
+
+ a| 
+总和集群字节
+ a| 
+集群的物理容量，以字节为单位。
+ a| 
+整型
+
+
+
+ a| 
+sumTotalMetadataClusterBytes
+ a| 
+可用于存储元数据的总空间量。
+ a| 
+整型
+
+
+
+ a| 
+sumUsedClusterBytes
+ a| 
+集群上使用的存储字节数。
+ a| 
+整型
+
+
+
+ a| 
+sumUsedMetadataClusterBytes
+ a| 
+卷驱动器上用于存储元数据的空间量。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method" : "ModifyClusterFullThreshold",
+   "params" : {
+              "stage3BlockThresholdPercent" : 3
+              },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "blockFullness": "stage1Happy",
+    "fullness": "stage3Low",
+    "maxMetadataOverProvisionFactor": 5,
+    "metadataFullness": "stage3Low",
+    "sliceReserveUsedThresholdPct": 5,
+    "stage2AwareThreshold": 3,
+    "stage2BlockThresholdBytes": 2640607661261,
+    "stage3BlockThresholdBytes": 8281905846682,
+    "stage3BlockThresholdPercent": 3,
+    "stage3LowThreshold": 2,
+    "stage4BlockThresholdBytes": 8641988709581,
+    "stage4CriticalThreshold": 1,
+    "stage5BlockThresholdBytes": 12002762096640,
+    "sumTotalClusterBytes": 12002762096640,
+    "sumTotalMetadataClusterBytes": 404849531289,
+    "sumUsedClusterBytes": 45553617581,
+    "sumUsedMetadataClusterBytes": 31703113728
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

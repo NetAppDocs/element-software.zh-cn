@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_deleteqospolicy.html 
+sidebar: sidebar 
+keywords: QoS,policy,policies,delete,deleting,DeleteQoSPolicy 
+summary: 您可以使用 DeleteQoSPolicy 方法从系统中删除 QoS 策略。使用此策略创建或修改的所有卷的 QoS 设置不受影响。 
+---
+= DeleteQoSPolicy
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteQoSPolicy` 方法从系统中删除 QoS 策略。使用此策略创建或修改的所有卷的 QoS 设置不受影响。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+qosPolicyID
+ a| 
+要删除的 QoS 策略的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 663,
+  "method": "DeleteQoSPolicy",
+  "params": {
+    "qosPolicyID": 4
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 663,
+  "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

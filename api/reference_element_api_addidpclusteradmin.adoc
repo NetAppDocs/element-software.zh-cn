@@ -1,0 +1,131 @@
+---
+permalink: api/reference_element_api_addidpclusteradmin.html 
+sidebar: sidebar 
+keywords: IdP,idp,cluster,admin,add,adding,addIdpclusteradmin 
+summary: 您可以使用 AddIpdClusterAdmin 方法添加经过第三方身份提供程序 \ （ IdP ）身份验证的集群管理员用户。IdP 集群管理员帐户是根据 IdP 与用户关联的 SAML 断言中提供的 SAML 属性值信息进行配置的。如果用户成功通过 IdP 身份验证，并且 SAML 断言中的 SAML 属性语句与多个 IdP 集群管理员帐户匹配，则用户将具有这些匹配的 IdP 集群管理员帐户的组合访问级别。 
+---
+= AddIdpClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `AddIpdClusterAdmin` 方法添加经过第三方身份提供程序（ IdP ）身份验证的集群管理员用户。IdP 集群管理员帐户是根据 IdP 与用户关联的 SAML 断言中提供的 SAML 属性值信息进行配置的。如果用户成功通过 IdP 身份验证，并且 SAML 断言中的 SAML 属性语句与多个 IdP 集群管理员帐户匹配，则用户将具有这些匹配的 IdP 集群管理员帐户的组合访问级别。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+访问
+ a| 
+控制此 IdP 集群管理员可以使用的方法。
+ a| 
+string array
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+接受 Eula
+ a| 
+接受最终用户许可协议。设置为 true 可向系统添加集群管理员帐户。如果省略或设置为 false ，则方法调用将失败。
+ a| 
+boolean
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+username
+ a| 
+映射到 IdP 集群管理员的 SAML 属性值（例如， EMail=test@example.com ）。这可以使用使用 `NameID` 的特定 SAML 主题进行定义，也可以作为 SAML 属性语句中的条目进行定义，例如 `eduPersonAffinor` 。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+clusterAdminID
+ a| 
+新创建的集群管理员的唯一标识符。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+    "method": "AddIdpClusterAdmin",
+    "params": {
+        "username": "email=test@example.com",
+        "acceptEula": true,
+        "access": ["administrator"]
+    }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "result": {
+        "clusterAdminID": 13
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.0

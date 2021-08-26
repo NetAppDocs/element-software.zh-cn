@@ -1,0 +1,221 @@
+---
+permalink: api/reference_element_api_createcluster.html 
+sidebar: sidebar 
+keywords: CreateCluster,cluster,create,creating,initialize,initializing 
+summary: '您可以使用 CreateCluster 方法初始化拥有 "mvip" 和 "svip" 地址的集群中的节点。每个新集群都会使用集群中第一个节点的管理 IP （ MIP ）进行初始化。此方法还会自动将要配置的所有节点添加到集群中。每次初始化新集群时，您只需要使用此方法一次。' 
+---
+= CreateCluster
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CreateCluster` 方法初始化拥有 "mvip" 和 "svip" 地址的集群中的节点。每个新集群都会使用集群中第一个节点的管理 IP （ MIP ）进行初始化。此方法还会自动将要配置的所有节点添加到集群中。每次初始化新集群时，您只需要使用此方法一次。
+
+
+NOTE: 登录到集群的主节点并运行后 xref:reference_element_api_getbootstrapconfig.adoc[GetBootStrapConfig] 方法要获取要包括在集群中的其余节点的 IP 地址，可以对集群的主节点运行 CreateCluster 方法。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+接受 Eula
+ a| 
+指示您在创建此集群时接受最终用户许可协议。要接受 EULA ，请将此参数设置为 true 。
+ a| 
+boolean
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+enableSoftwareEncryptionAtRest
+ a| 
+启用此参数可使用基于软件的空闲加密。在 SolidFire 企业 SDS 集群上默认为 true 。在所有其他集群上，默认为 false 。启用空闲软件加密后，无法在集群上禁用它。
+ a| 
+boolean
+ a| 
+true
+ a| 
+否
+
+
+
+ a| 
+mvip
+ a| 
+管理网络上集群的浮动（虚拟） IP 地址。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+nodes
+ a| 
+构成集群的一组初始节点的 CIP/SIP 地址。此节点的 IP 必须位于列表中。
+ a| 
+string array
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+订单编号
+ a| 
+字母数字销售订单号。在基于软件的平台上需要。
+ a| 
+string
+ a| 
+无
+ a| 
+否（基于硬件的平台）
+
+是（基于软件的平台）
+
+
+
+ a| 
+password
+ a| 
+集群管理员帐户的初始密码。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+serialNumber
+ a| 
+九位字母数字序列号。在基于软件的平台上可能需要。
+ a| 
+string
+ a| 
+无
+ a| 
+否（基于硬件的平台）
+
+是（基于软件的平台）
+
+
+
+ a| 
+Svip
+ a| 
+存储（ iSCSI ）网络上集群的浮动（虚拟） IP 地址。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+username
+ a| 
+集群管理员的用户名。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "CreateCluster",
+  "params": {
+    "acceptEula": true,
+    "mvip": "10.0.3.1",
+    "svip": "10.0.4.1",
+    "username": "Admin1",
+    "password": "9R7ka4rEPa2uREtE",
+    "attributes": {
+      "clusteraccountnumber": "axdf323456"
+    },
+    "nodes": [
+      "10.0.2.1",
+      "10.0.2.2",
+      "10.0.2.3",
+      "10.0.2.4"
+    ]
+  },
+  "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+"id" : 1,
+"result" : {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+[discrete]
+== 了解更多信息
+
+* link:reference_element_api_getbootstrapconfig.html["GetBootstrapConfig"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

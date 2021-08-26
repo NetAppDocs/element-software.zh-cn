@@ -1,0 +1,146 @@
+---
+permalink: api/reference_element_api_listvolumestats.html 
+sidebar: sidebar 
+keywords: volumes,volume,stats,list,listing,listvolumestats,activity 
+summary: 您可以使用 ListVolumeStats 方法获取单个卷，卷列表或所有卷的高级别活动测量结果 \ （如果省略 volumeIDs 参数 \ ）。测量值是在创建卷时累积的。 
+---
+= ListVolumeStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListVolumeStats` 方法获取单个卷，卷列表或所有卷的高级别活动测量结果（如果省略 volumeIDs 参数）。测量值是在创建卷时累积的。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+包括 VirtualVolumes
+ a| 
+默认情况下，响应中包含虚拟卷。要排除虚拟卷，请设置为 false 。
+ a| 
+boolean
+ a| 
+true
+ a| 
+否
+
+
+
+ a| 
+volumeIds
+ a| 
+要从中检索活动信息的卷列表。
+ a| 
+整型数组
+ a| 
+否
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+volumeStats
+ a| 
+卷活动信息列表。
+ a| 
+xref:reference_element_api_volumestats.adoc[volumeStats] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "ListVolumeStats",
+    "params": {
+        "volumeIDs": [1]
+    },
+    "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeStats": [
+      {
+        "accountID": 1,
+        "actualIOPS": 0,
+        "asyncDelay": null,
+        "averageIOPSize": 0,
+        "burstIOPSCredit": 30000,
+        "clientQueueDepth": 0,
+        "desiredMetadataHosts": null,
+        "latencyUSec": 0,
+        "metadataHosts": {
+          "deadSecondaries": [],
+          "liveSecondaries": [
+            47
+          ],
+          "primary": 33
+        },
+        "nonZeroBlocks": 22080699,
+        "readBytes": 657262370816,
+        "readBytesLastSample": 0,
+        "readLatencyUSec": 0,
+        "readOps": 160464446,
+        "readOpsLastSample": 0,
+        "samplePeriodMSec": 500,
+        "throttle": 0,
+        "timestamp": "2016-03-09T19:39:15.771697Z",
+        "unalignedReads": 0,
+        "unalignedWrites": 0,
+        "volumeAccessGroups": [
+          1
+        ],
+        "volumeID": 1,
+        "volumeSize": 107374182400,
+        "volumeUtilization": 0,
+        "writeBytes": 219117547520,
+        "writeBytesLastSample": 0,
+        "writeLatencyUSec": 0,
+        "writeOps": 53495495,
+        "writeOpsLastSample": 0,
+        "zeroBlocks": 4133701
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

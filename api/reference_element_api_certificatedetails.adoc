@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_certificatedetails.html 
+sidebar: sidebar 
+keywords: security,certificate,SSL,get,getting,certificateDetails,object,objects 
+summary: certificateDetails 对象包含有关安全证书的解码信息。 
+---
+= 证书详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+certificateDetails 对象包含有关安全证书的解码信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+颁发者
+ a| 
+颁发者的名称。
+ a| 
+string
+
+
+
+ a| 
+模数
+ a| 
+公有密钥的模量。
+ a| 
+string
+
+
+
+ a| 
+注释之后
+ a| 
+证书的到期日期。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+目前尚未完成
+ a| 
+证书的开始日期。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+串行
+ a| 
+证书序列号。
+ a| 
+string
+
+
+
+ a| 
+sha1 指纹
+ a| 
+经过 DER 编码的证书版本的摘要。
+ a| 
+string
+
+
+
+ a| 
+主题
+ a| 
+主题名称。
+ a| 
+string
+
+|===

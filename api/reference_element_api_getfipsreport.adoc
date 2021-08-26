@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_getfipsreport.html 
+sidebar: sidebar 
+keywords: fips,report,get,getting,getfipsreport,feature,support 
+summary: 您可以使用 GetFipsReport 方法检查存储集群中所有节点的 FIPS 140-2 加密功能支持状态。 
+---
+= GetFipsReport
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetFipsReport` 方法检查存储集群中所有节点的 FIPS 140-2 加密功能支持状态。
+
+
+
+== 参数
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+结果
+ a| 
+一个 JSON 对象，其中包含每个节点的 FIPS 140-2 功能支持状态以及未响应查询的每个节点的错误信息。
+ a| 
+xref:reference_element_api_fipsreport.adoc[fipsReport]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "GetFipsReport",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+    "nodes": [
+        {
+           "nodeID": 1,
+		   "fipsDrives": "None",
+           "httpsEnabled": true
+        },
+        {
+           "nodeID": 3,
+		   "fipsDrives": "None",
+           "httpsEnabled": true
+        }
+    ],
+    "errorNodes": [
+        {
+           "nodeID": 2,
+           "error": {
+               "message": "The RPC timed out.",
+               "name": "xRpcTimeout"
+               }
+        }
+    ]
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+10.3

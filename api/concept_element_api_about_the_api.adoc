@@ -1,0 +1,39 @@
+---
+permalink: api/concept_element_api_about_the_api.html 
+sidebar: sidebar 
+keywords: SolidFire,API,overview,about,Element 
+summary: Element API 基于 HTTPS 上的 JSON-RPC 协议。JSON-RPC 是一种基于轻型 JSON 数据交换格式的简单文本 RPC 协议。客户端库可用于所有主要编程语言。 
+---
+= 关于 Element 软件 API
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element API 基于 HTTPS 上的 JSON-RPC 协议。JSON-RPC 是一种基于轻型 JSON 数据交换格式的简单文本 RPC 协议。客户端库可用于所有主要编程语言。
+
+您可以通过 HTTPS POST 请求向 API 端点发出 API 请求。POST 请求的正文是一个 JSON-RPC 请求对象。API 当前不支持批处理请求（在一个 POST 中包含多个请求对象）。在提交 API 请求时，必须使用 "application/json-rpc" 作为请求的内容类型，并确保正文未进行格式编码。
+
+
+NOTE: Element Web UI 会使用本文档中所述的 API 方法。您可以通过启用 API 日志来监控 UI 中的 API 操作；这样，您可以查看向系统发出的方法。您可以同时启用请求和响应，以查看系统如何对发出的方法做出响应。
+
+除非另有说明，否则 API 响应中的所有日期字符串均采用 UTC+0 格式。
+
+
+NOTE: 如果存储集群负载过重，或者您连续提交多个 API 请求而没有中间延迟，则某个方法可能会失败并返回错误 "xDBVersionMismatch" 。如果发生这种情况，请重试方法调用。
+
+* xref:reference_element_api_request_object_members.adoc[请求对象成员]
+* xref:reference_element_api_response_object_members.adoc[响应对象成员]
+* xref:concept_element_api_request_endpoints.adoc[请求端点]
+* xref:concept_element_api_authentication.adoc[API 身份验证]
+* xref:concept_element_api_asynchronous_methods.adoc[异步方法]
+* xref:reference_element_api_attributes.adoc[属性]
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

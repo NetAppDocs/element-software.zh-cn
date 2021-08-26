@@ -1,0 +1,106 @@
+---
+permalink: api/reference_element_api_deleteauthsession.html 
+sidebar: sidebar 
+keywords: authentication sessions,delete 
+summary: 您可以使用 DeleteAuthSession 方法删除单个身份验证会话。如果调用用户不在 ClusterAdmins/Administrator AccessGroup 中，则只能删除属于调用用户的身份验证会话。 
+---
+= DeleteAuthSession
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteAuthSession` 方法删除单个用户身份验证会话。如果调用用户不在 ClusterAdmins/Administrator AccessGroup 中，则只能删除属于调用用户的身份验证会话。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+会话 ID
+ a| 
+要删除的身份验证会话的唯一标识符。
+ a| 
+UUID
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+会话
+ a| 
+删除身份验证会话的会话信息。
+ a| 
+link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["authSessionInfo"]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+    "method": "DeleteAuthSession",
+    "params": {
+        "sessionID": "a862a8bb-2c5b-4774-a592-2148e2304713"
+    },
+    "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "session": {
+            "accessGroupList": [
+                "administrator"
+            ],
+            "authMethod": "Cluster",
+            "clusterAdminIDs": [
+                1
+            ],
+            "finalTimeout": "2020-04-09T17:51:30Z",
+            "idpConfigVersion": 0,
+            "lastAccessTimeout": "2020-04-06T18:21:33Z",
+            "sessionCreationTime": "2020-04-06T17:51:30Z",
+            "sessionID": "a862a8bb-2c5b-4774-a592-2148e2304713",
+            "username": "admin"
+        }
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.0

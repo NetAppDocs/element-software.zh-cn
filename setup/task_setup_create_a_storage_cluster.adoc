@@ -1,0 +1,71 @@
+---
+permalink: setup/task_setup_create_a_storage_cluster.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在配置完所有单个节点后创建存储集群。创建集群时，系统会自动为您创建集群管理员用户帐户。集群管理员有权管理所有集群属性，并可创建其他集群管理员帐户。 
+---
+= 创建存储集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在配置完所有单个节点后创建存储集群。创建集群时，系统会自动为您创建集群管理员用户帐户。集群管理员有权管理所有集群属性，并可创建其他集群管理员帐户。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已安装管理节点。
+* 您已配置所有单个节点。
+
+
+在新节点配置期间，会为每个节点分配 1 G 或 10 G 管理 IP （ Management IP ， MIP ）地址。您必须使用在配置期间创建的节点 IP 地址之一打开创建新集群页面。您使用的 IP 地址取决于您为集群管理选择的网络。
+
+
+IMPORTANT: 如果要启用集群范围的 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["空闲软件加密"]，您必须使用创建集群  而是 API 方法，并将 enableSoftwareEncryptionAtRest 参数更改为 `true` 。启用空闲软件加密后，无法在集群上禁用它。默认情况下， SolidFire ESDS 集群会启用空闲软件加密。基于硬件的空闲加密可以是  创建集群后。
+
+[NOTE]
+====
+创建新集群时，请考虑以下事项：
+
+* 如果您使用的存储节点位于共享机箱中，则可能需要考虑使用保护域功能设计机箱级别的故障保护。
+* 如果未使用共享机箱，您可以定义自定义保护域布局。
+
+
+====
+.步骤
+. 在浏览器窗口中，输入节点 MIP 地址。
+. 在 Create a New Cluster 中，输入以下信息：
++
+** 管理 VIP ： 1GbE 或 10GbE 网络上可路由的虚拟 IP ，用于执行网络管理任务。
++
+
+NOTE: 您可以使用 IPv4 或 IPv6 地址创建新集群。
+
+** iSCSI （存储） VIP ： 10GbE 网络上用于存储和 iSCSI 发现的虚拟 IP 。
++
+
+NOTE: 创建集群后，您无法更改 MVIP ， SVIP 或集群名称。
+
+** User name ：用于对集群进行身份验证访问的主集群管理员用户名。您必须保存此用户名以供将来参考。
++
+
+NOTE: 用户名和密码可以使用大写和小写字母，特殊字符和数字。
+
+** Password ：用于对集群进行身份验证访问的密码。您必须保存密码以供将来参考。默认情况下，双向数据保护处于启用状态。您不能更改此设置。
+
+
+. 阅读最终用户许可协议，然后单击 * 我同意 * 。
+. * 可选 * ：在节点列表中，确保未选中不应包含在集群中的节点对应的复选框。
+. 单击 * 创建集群 * 。
++
+根据集群中的节点数，系统可能需要几分钟的时间来创建集群。在配置正确的网络上，一个包含五个节点的小型集群所需时间应少于一分钟。创建集群后， "Create a New Cluster" 窗口将重定向到集群的 MVIP URL 地址，并显示 Element UI 。
+
+
+
+
+
+== 有关详细信息 ...
+
+* link:../api/index.html["使用 Element API 管理存储"]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

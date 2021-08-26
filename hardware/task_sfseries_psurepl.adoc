@@ -1,0 +1,62 @@
+---
+permalink: hardware/task_sfseries_psurepl.html 
+sidebar: sidebar 
+keywords: solidfire chassis, power supply replacement, sf-series nodes 
+summary: 每个 SolidFire 机箱都包含两个电源设备，用于实现电源冗余。如果某个电源设备发生故障，您应尽快更换它，以确保机箱具有冗余电源。 
+---
+= 更换电源设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每个 SolidFire 机箱都包含两个电源设备，用于实现电源冗余。如果某个电源设备发生故障，您应尽快更换它，以确保机箱具有冗余电源。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已确定需要更换电源设备。
+* 您有一个替代电源设备。
+* 您已确认第二个电源设备正在运行。
+* 您已佩戴静电释放（ ESD ）腕带，或者已采取其他防静电预防措施。
+
+
+如果您的单机架单元（ 1U ）机箱具有以下任一节点，则需遵循这些说明：
+
+* SF2405
+* SF3010
+* SF4805
+* SF6010
+* SF9605
+* SF9608
+* SF9010
+* SF19210
+* SF38410
+* SF-FCN-01
+* FC0025
+
+
+.步骤
+. 从要更换的电源设备上拔下电源线。
+. 按下释放按钮，将电源设备滑出机箱。
++
+
+IMPORTANT: 确保用双手支撑电源设备的重量。
+
+. 用双手将替代电源设备的边缘与机箱中的开口对齐，然后将此设备轻轻推入机箱。
++
+
+IMPORTANT: 将电源设备滑入机箱时，请勿用力过大，以免损坏硬件。
+
+. 插入电源线。
+. 按照您收到的包装箱中的说明将故障设备退回 NetApp 。
++
+您可以联系 NetApp 支持部门以获得有关更换操作步骤的帮助。
+
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

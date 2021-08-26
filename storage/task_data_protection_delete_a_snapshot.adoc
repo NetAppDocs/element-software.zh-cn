@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_protection_delete_a_snapshot.html 
+sidebar: sidebar 
+keywords: snapshot, delete, volume snapshot, storage cluster, remove snapshot 
+summary: 您可以从运行 Element 软件的存储集群中删除卷快照。删除快照时，系统会立即将其删除。 
+---
+= 删除快照
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从运行 Element 软件的存储集群中删除卷快照。删除快照时，系统会立即将其删除。
+
+您可以删除正在从源集群复制的快照。如果删除快照时快照正在同步到目标集群，则同步复制将完成，快照将从源集群中删除。快照不会从目标集群中删除。
+
+您还可以从目标集群中删除已复制到目标的快照。已删除的快照将保留在目标上已删除的快照列表中，直到系统检测到您已删除源集群上的快照为止。当目标检测到您已删除源快照时，目标将停止复制该快照。
+
+从源集群中删除快照时，目标集群快照不受影响（反之亦然）。
+
+. 单击 * 数据保护 * > * 快照 * 。
+. 单击要删除的快照对应的 * 操作 * 图标。
+. 在显示的菜单中，选择 * 删除 * 。
+. 确认操作。
+

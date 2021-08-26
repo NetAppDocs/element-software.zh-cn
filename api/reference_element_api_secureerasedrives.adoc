@@ -1,0 +1,98 @@
+---
+permalink: api/reference_element_api_secureerasedrives.html 
+sidebar: sidebar 
+keywords: drive,drives,secure,erase,reset,resetting,encryption,key,secureerasedrives 
+summary: '您可以使用 SecureEraseDrives 方法从状态为 " 可用 " 的驱动器中删除任何残留数据。在更换服务寿命即将结束且包含敏感数据的驱动器时，您可以使用此方法。此方法使用 Security Erase Unit 命令向驱动器写入预先确定的模式，并重置驱动器上的加密密钥。此异步方法可能需要几分钟才能完成。' 
+---
+= SecureEraseDrives
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SecureEraseDrives` 方法从状态为 "available" 的驱动器中删除任何残留数据。在更换服务寿命即将结束且包含敏感数据的驱动器时，您可以使用此方法。此方法使用 Security Erase Unit 命令向驱动器写入预先确定的模式，并重置驱动器上的加密密钥。此异步方法可能需要几分钟才能完成。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+驱动器
+ a| 
+要安全擦除的驱动器 ID 列表。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+异步处理
+ a| 
+用于获取操作结果的句柄值。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "SecureEraseDrives",
+   "params": {
+     "drives"  : [3, 4, 5]
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id" : 1
+   "result" : {
+     "asyncHandle" : 1
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listdrives.adoc[ListDrives]
+

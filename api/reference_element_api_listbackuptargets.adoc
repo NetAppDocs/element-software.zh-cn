@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_listbackuptargets.html 
+sidebar: sidebar 
+keywords: backup,target,targets,info,list,listing,listbackuptargets 
+summary: 您可以使用 ListBackupTargets 方法获取有关已创建的所有备份目标的信息。 
+---
+= ListBackupTargets
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListBackupTargets` 方法获取有关已创建的所有备份目标的信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+备份目标
+ a| 
+为每个备份目标返回的对象。包含的对象：
+
+* attributes ：名称 - 值对的列表，采用 JSON 对象格式。（ JSON 对象）
+* backupTargetID ：分配给备份目标的唯一标识符。整型
+* name ：备份目标的名称。string
+
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListBackupTargets",
+   "params": {},
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+     "backupTargets": [
+       {
+        "attributes" : {},
+        "backupTargetID" : 1,
+        "name" : "mytargetbackup"
+       }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

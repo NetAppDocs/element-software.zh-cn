@@ -1,0 +1,27 @@
+---
+permalink: api/reference_element_api_getrawstats.html 
+sidebar: sidebar 
+keywords:  
+summary: NetApp 工程人员使用 GetRawStats API 方法测试新功能。从 GetRawStats 返回的数据不会进行记录，并且会频繁更改，并且无法保证其准确性。您不应使用 GetRawStats 收集性能数据或与运行 Element 软件的存储集群进行任何其他管理集成。 
+---
+= GetRawStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 工程人员使用 `GetRawStats` API 方法测试新功能。从 `GetRawStats` 返回的数据不会进行记录，并且会频繁更改，并且无法保证其准确性。您不应使用 `GetRawStats` 来收集性能数据或与运行 Element 软件的存储集群进行任何其他管理集成。
+
+使用以下受支持的 API 方法检索统计信息：
+
+* xref:reference_element_api_getvolumestats.adoc[GetVolumeStats]
+* xref:reference_element_api_getclusterstats.adoc[GetClusterStats]
+* xref:reference_element_api_getnodestats.adoc[GetNodeStats]
+* xref:reference_element_api_getdrivestats.adoc[GetDriveStats]
+
+
+
+
+== 自版本以来的新增功能
+
+9.6

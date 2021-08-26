@@ -1,0 +1,17 @@
+---
+permalink: storage/concept_data_manage_vvol_protocol_endpoints.html 
+sidebar: sidebar 
+keywords: protocol endpoint, access, cluster, storage node, iscsi supported 
+summary: 协议端点是指主机用来对运行 NetApp Element 软件的集群上的存储进行寻址的访问点。协议端点不能由用户删除或修改，不与帐户关联，也不能添加到卷访问组。 
+---
+= 协议端点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+协议端点是指主机用来对运行 NetApp Element 软件的集群上的存储进行寻址的访问点。协议端点不能由用户删除或修改，不与帐户关联，也不能添加到卷访问组。
+
+运行 Element 软件的集群会自动为集群中的每个存储节点创建一个协议端点。例如，一个六节点存储集群具有六个协议端点，这些协议端点映射到每个 ESXi 主机。协议端点由 Element 软件动态管理，并可根据需要创建，移动或删除，而无需任何干预。协议端点是多路径的目标，并充当附属 LUN 的 I/O 代理。每个协议端点都使用一个可用的 SCSI 地址，就像标准 iSCSI 目标一样。协议端点在 vSphere 客户端中显示为单块（ 512 字节）存储设备，但此存储设备不可格式化或用作存储。
+
+iSCSI 是唯一受支持的协议。不支持光纤通道协议。

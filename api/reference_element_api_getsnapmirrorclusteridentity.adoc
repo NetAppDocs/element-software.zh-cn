@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_getsnapmirrorclusteridentity.html 
+sidebar: sidebar 
+keywords: get,getting,SnapMirror,cluster,identity,GetSnapMirrorClusterIdentity 
+summary: Element 软件 Web UI 使用 GetSnapMirrorClusterIdentity 获取有关 ONTAP 集群的身份信息。 
+---
+= GetSnapMirrorClusterIdentity
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `GetSnapMirrorClusterIdentity` 来获取有关 ONTAP 集群的身份信息。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+如果提供此参数，则系统将列出具有指定 snapMirrorEndpointID 的端点的集群标识。如果未提供此参数，则系统将列出所有已知 SnapMirror 端点的集群标识。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorClusterIdentity
+ a| 
+SnapMirror 端点的集群标识列表。
+ a| 
+xref:reference_element_api_snapmirrorclusteridentity.adoc[snapMirrorClusterIdentity] 数组
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

@@ -1,0 +1,123 @@
+---
+permalink: api/reference_element_api_deleteauthsessionsbyusername.html 
+sidebar: sidebar 
+keywords: auth sessions,username,delete,authentication sessions 
+summary: 您可以使用 DeleteAuthSessionsByUsername 方法删除给定用户的所有身份验证会话。不在访问组集群管理员 / 管理员中的调用方只能删除自己的会话。具有 ClusterAdmins/Administrator 权限的调用程序可以删除属于任何用户的会话。要查看可删除的会话列表，请使用具有相同参数的 ListAuthSessionsByUsername 。要查看可能删除的会话列表，请使用具有相同参数的 ListAuthSessionsByUsername 方法。 
+---
+= DeleteAuthSessionsByUsername
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteAuthSessionsByUsername` 方法删除给定用户的所有身份验证会话。不在访问组集群管理员 / 管理员中的调用方只能删除自己的会话。具有 ClusterAdmins/Administrator 权限的调用程序可以删除属于任何用户的会话。要查看可删除的会话列表，请使用具有相同参数的 `ListAuthSessionsByUsername` 。要查看可能删除的会话列表，请使用具有相同参数的 `ListAuthSessionsByUsername` 方法。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+authMethod
+ a| 
+要删除的用户会话的身份验证方法。只有 ClusterAdmins/Administrator AccessGroup 中的调用程序才能提供此参数。可能值包括：
+
+* * authMethod=Cluster* 指定 ClusterAdmin 用户名。
+* * authMethod=ldap* 用于指定用户的 LDAP DN 。
+* * authMethod=Idp* 指定用户的 IdP UUID 或 NameID 。如果 IdP 未配置为返回任一选项，则此选项将指定创建会话时发出的随机 UUID 。
+
+ a| 
+authMethod
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+username
+ a| 
+用户的唯一标识符。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+会话
+ a| 
+已删除身份验证会话的会话信息。
+ a| 
+link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["authSessionInfo"]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "DeleteAuthSessionsByUsername",
+  "params": {
+    "authMethod": "Cluster",
+    "username": "admin"
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+"sessions": [
+      {
+        "accessGroupList": [
+          "administrator"
+        ],
+        "authMethod": "Cluster",
+        "clusterAdminIDs": [
+          1
+        ],
+        "finalTimeout": "2020-03-14T19:21:24Z",
+        "idpConfigVersion": 0,
+        "lastAccessTimeout": "2020-03-11T19:51:24Z",
+        "sessionCreationTime": "2020-03-11T19:21:24Z",
+        "sessionID": "b12bfc64-f233-44df-8b9f-6fb6c011abf7",
+        "username": "admin"
+      }
+    ]
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.0

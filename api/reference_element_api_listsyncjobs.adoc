@@ -1,0 +1,115 @@
+---
+permalink: api/reference_element_api_listsyncjobs.html 
+sidebar: sidebar 
+keywords: sync,synchronization,job,jobs,list,get,listing,getting,listsyncjobs 
+summary: 您可以使用 ListSyncJobs 方法获取有关在 Element 存储集群上运行的同步作业的信息。此方法将返回有关分区，克隆，块和远程同步作业的信息。 
+---
+= ListSyncJobs
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListSyncJobs` 方法获取有关 Element 存储集群上运行的同步作业的信息。此方法将返回有关分区，克隆，块和远程同步作业的信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+syncJobs
+ a| 
+描述系统中当前正在运行的同步进程的对象列表。
+ a| 
+xref:reference_element_api_syncjob.adoc[syncJob] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListSyncJobs",
+   "params": { },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id":1,
+    "result":{
+      "syncJobs":[
+        {
+           "bytesPerSecond":275314.8834458956,
+           "currentBytes":178257920,
+           "dstServiceID":36,
+           "elapsedTime":289.4568382049871,
+           "percentComplete":8.900523560209423,
+           "remainingTime":2962.675921065957,
+           "sliceID":5,
+           "srcServiceID":16,
+           "stage":"whole",
+           "totalBytes":200278016remote0,
+           "type":"slice"
+       },
+       {
+           "bytesPerSecond":305461.3198607744,
+           "cloneID":1,
+           "currentBytes":81788928,
+           "dstServiceID":16,
+           "dstVolumeID":6,
+           "elapsedTime":291.7847648200743,
+           "nodeID":1,
+           "percentComplete":8.167539267015707,
+           "remainingTime":3280.708270981153,
+           "sliceID":6,
+           "srcServiceID":16,
+           "srcVolumeID":5,
+           "stage":"whole",
+           "totalBytes":1001390080,
+           "type":"clone"
+        },
+        {
+           "blocksPerSecond":0,
+           "branchType": "snapshot",
+           "dstServiceID":8,
+           "dstVolumeID":2,
+           "elapsedTime":0,
+           "percentComplete":0,
+           "remainingTime":0,
+           "sliceID":2,
+           "stage":"metadata",
+           "type":"remote"
+       }
+     ]
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

@@ -1,0 +1,22 @@
+---
+permalink: storage/task_replication_manage_volume_relationships.html 
+sidebar: sidebar 
+keywords: volume pairing reversal, volume pair, replication 
+summary: 您可以通过多种方式管理卷关系，例如暂停复制，反转卷配对，更改复制模式，删除卷对或删除集群对。 
+---
+= 管理卷关系
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过多种方式管理卷关系，例如暂停复制，反转卷配对，更改复制模式，删除卷对或删除集群对。
+
+
+
+== 了解更多信息
+
+* xref:task_replication_pause_replication.adoc[暂停复制]
+* xref:task_replication_change_the_mode.adoc[更改复制模式]
+* xref:task_replication_delete_volume_pairs.adoc[删除卷对]
+

@@ -1,0 +1,131 @@
+---
+permalink: api/reference_element_api_ldapconfiguration.html 
+sidebar: sidebar 
+keywords: object,objects,ldapConfiguration 
+summary: ldapConfiguration 对象包含有关存储系统上的 LDAP 配置的信息。您可以使用 GetLdapConfiguration API 方法检索 LDAP 信息。 
+---
+= ldapConfiguration
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ldapConfiguration 对象包含有关存储系统上的 LDAP 配置的信息。您可以使用 `GetLdapConfiguration` API 方法检索 LDAP 信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+AuthType
+ a| 
+标识要使用的用户身份验证方法。可能值：
+
+* DirectBind
+* SearchAndBind
+
+ a| 
+string
+
+
+
+ a| 
+enabled
+ a| 
+标识是否为系统配置了 LDAP 。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+
+
+
+ a| 
+groupSearchBaseDN
+ a| 
+用于开始组搜索的树的基础 DN （系统将从此处执行子树搜索）。
+ a| 
+string
+
+
+
+ a| 
+groupSearchCustomFilter
+ a| 
+使用的自定义搜索筛选器。
+ a| 
+string
+
+
+
+ a| 
+groupSearchType
+ a| 
+控制使用的默认组搜索筛选器。可能值：
+
+* NoGroups ：无组支持。
+* ActiveDirectory ：用户的所有 AD 组的嵌套成员资格。
+* MemberDN ： MemberDN 样式的组（单层）。
+
+ a| 
+string
+
+
+
+ a| 
+searchBindDN
+ a| 
+用于登录以对用户执行 LDAP 搜索的完全限定 DN （需要对 LDAP 目录具有读取访问权限）。
+ a| 
+string
+
+
+
+ a| 
+服务器 URI
+ a| 
+LDAP 服务器 URI 的逗号分隔列表（例如， `ldap ： //1.2.3.4` 和 `ldaps ： //1.2.3.4 ： 123` 。）
+ a| 
+string
+
+
+
+ a| 
+userDNTemplate
+ a| 
+用于构成完全限定用户 DN 的字符串。
+ a| 
+string
+
+
+
+ a| 
+userSearchBaseDN
+ a| 
+用于开始搜索的树的基础 DN （将从此处执行子树搜索）。
+ a| 
+string
+
+
+
+ a| 
+userSearchFilter
+ a| 
+使用的 LDAP 筛选器。
+ a| 
+string
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration]

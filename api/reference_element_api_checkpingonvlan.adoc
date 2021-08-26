@@ -1,0 +1,247 @@
+---
+permalink: api/reference_element_api_checkpingonvlan.html 
+sidebar: sidebar 
+keywords: VLAN,pre-deployment,network,validation,validate,validating,check,checking,CheckPingOnVlan 
+summary: 在执行部署前网络验证时，您可以使用 CheckPingOnVlan 方法测试临时 VLAN 上的网络连接。CheckPingOnVlan 会创建一个临时 VLAN 接口，并使用 VLAN 接口将 ICMP 数据包发送到存储集群中的所有节点，然后删除该接口。 
+---
+= CheckPingOnVlan
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在执行部署前网络验证时，您可以使用 `CheckPingOnVlan` 方法测试临时 VLAN 上的网络连接。`CheckPingOnVlan` 创建临时 VLAN 接口，使用 VLAN 接口将 ICMP 数据包发送到存储集群中的所有节点，然后删除该接口。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+尝试次数
+ a| 
+指定系统应重复执行测试 ping 的次数。
+ a| 
+整型
+ a| 
+5.
+ a| 
+否
+
+
+
+ a| 
+主机
+ a| 
+指定要 ping 的设备的地址或主机名列表，以逗号分隔。
+ a| 
+string
+ a| 
+集群中的节点
+ a| 
+否
+
+
+
+ a| 
+接口
+ a| 
+应从中发送 ping 的现有（基本）接口。可能值：
+
+* Bond10G ：从绑定 10G 接口发送 ping 。
+* Bond1G ：从绑定 1G 接口发送 ping 。
+
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+packetSize
+ a| 
+指定要在发送到每个 IP 的 ICMP 数据包中发送的字节数。字节数必须小于网络配置中指定的最大 MTU 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+PingTimeoutMsec
+ a| 
+指定等待每个 ping 响应的毫秒数。
+ a| 
+整型
+ a| 
+500 毫秒
+ a| 
+否
+
+
+
+ a| 
+禁止分段
+ a| 
+为 ICMP 数据包启用 DF （ Do not Fragment ）标志。
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+sourceAddressV4
+ a| 
+要在 ICMP ping 数据包中使用的源 IPv4 地址。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+sourceAddressV6
+ a| 
+要在 ICMP ping 数据包中使用的源 IPv6 地址。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+总计超时秒
+ a| 
+指定在发出下一次 ping 尝试或结束此过程之前 ping 应等待系统响应的时间（以秒为单位）。
+ a| 
+整型
+ a| 
+5.
+ a| 
+否
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+发送 ping 数据包时要使用的 VLAN ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+详细信息
+ a| 
+列出节点能够与之通信的每个 IP 以及 ping 响应统计信息。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+    "method": "CheckPingOnVlan",
+    "params": {
+        "interface": "Bond10G",
+        "virtualNetworkTag": 4001,
+        "sourceAddressV4": "192.168.41.4",
+        "hosts": "192.168.41.2"
+},
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "details": {
+      "192.168.41.2": {
+        "individualResponseCodes": [
+          "Success",
+          "Success",
+          "Success",
+          "Success",
+          "Success"
+        ],
+        "individualResponseTimes": [
+          "00:00:00.000373",
+          "00:00:00.000098",
+          "00:00:00.000097",
+          "00:00:00.000074",
+          "00:00:00.000075"
+        ],
+        "individualStatus": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "interface": "Bond10G",
+        "responseTime": "00:00:00.000143",
+        "sourceAddressV4": "192.168.41.4",
+        "successful": true,
+        "virtualNetworkTag": 4001
+      }
+    },
+    "duration": "00:00:00.244379",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.1

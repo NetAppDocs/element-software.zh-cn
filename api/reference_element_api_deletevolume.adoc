@@ -1,0 +1,159 @@
+---
+permalink: api/reference_element_api_deletevolume.html 
+sidebar: sidebar 
+keywords: volume,volumes,delete,deleting,DeleteVolume 
+summary: 您可以使用 DeleteVolume 方法将活动卷标记为待删除。标记后，此卷将在清理间隔过后被清除（永久删除）。 
+---
+= DeleteVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteVolume` 方法将活动卷标记为待删除。标记后，卷将在清理间隔过后被清除（永久删除）。
+
+请求删除卷后，与卷的任何活动 iSCSI 连接将立即终止，并且在卷处于此状态时，不允许再进行任何连接。标记的卷不会在目标发现请求中返回。
+
+已标记为删除的卷的任何快照不受影响。快照会一直保留，直到从系统中清除卷为止。如果卷标记为删除，并且正在执行批量卷读取或批量卷写入操作，则批量卷读取或写入操作将停止。
+
+如果您删除的卷与某个卷配对，则配对卷之间的复制将暂停，并且处于已删除状态的卷不会传输任何数据。与已删除卷配对的远程卷将进入 PausedMisconfigured 状态，并且不再向其发送数据，也不再从已删除的卷发送数据。在清除已删除的卷之前，可以将其还原并恢复数据传输。如果从系统中清除已删除的卷，则与其配对的卷将进入 StoppedMisconfigured 状态，并且卷配对状态将被删除。已清除的卷将永久不可用。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+volumeId
+ a| 
+要删除的卷的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+volume
+ a| 
+包含已删除卷的相关信息的对象。
+ a| 
+xref:reference_element_api_volume.adoc[volume]
+
+
+
+ a| 
+volumeId
+ a| 
+已删除卷的卷 ID 。
+ a| 
+整型
+
+
+
+ a| 
+曲线
+ a| 
+此曲线是一组键值对。关键字是以字节为单位的 I/O 大小。这些值表示在特定 I/O 大小下执行 IOP 的成本。此曲线是相对于 100 IOPS 下 4096 字节的操作集计算得出的。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "DeleteVolume",
+   "params": {
+      "volumeID"  : 5
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volume": {
+      "access": "readWrite",
+      "accountID": 1,
+      "attributes": {
+        "name1": "value1",
+        "name2": "value2",
+        "name3": "value3"
+      },
+      "blockSize": 4096,
+      "createTime": "2016-03-28T16:16:13Z",
+      "deleteTime": "2016-03-31T22:59:42Z",
+      "enable512e": true,
+      "iqn": "iqn.2010-01.com.solidfire:jyay.1459181777648.5",
+      "name": "1459181777648",
+      "purgeTime": "2016-04-01T06:59:42Z",
+      "qos": {
+        "burstIOPS": 150,
+        "burstTime": 60,
+        "curve": {
+          "4096": 100,
+          "8192": 160,
+          "16384": 270,
+          "32768": 500,
+          "65536": 1000,
+          "131072": 1950,
+          "262144": 3900,
+          "524288": 7600,
+          "1048576": 15000
+        },
+        "maxIOPS": 100,
+        "minIOPS": 60
+      },
+      "scsiEUIDeviceID": "6a79617900000005f47acc0100000000",
+      "scsiNAADeviceID": "6f47acc1000000006a79617900000005",
+      "sliceCount": 1,
+      "status": "deleted",
+      "totalSize": 1000341504,
+      "virtualVolumeID": null,
+      "volumeAccessGroups": [
+        1
+      ],
+      "volumeID": 5,
+      "volumePairs": []
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

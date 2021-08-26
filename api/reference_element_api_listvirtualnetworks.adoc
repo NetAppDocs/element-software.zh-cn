@@ -1,0 +1,183 @@
+---
+permalink: api/reference_element_api_listvirtualnetworks.html 
+sidebar: sidebar 
+keywords: virtual,network,networks,listing,list,listvirtualnetworks 
+summary: 您可以使用 ListVirtualNetworks 方法列出为集群配置的所有虚拟网络。 
+---
+= ListVirtualNetworks
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListVirtualNetworks` 方法列出为集群配置的所有虚拟网络。
+
+您可以使用此方法验证集群中的虚拟网络设置。此方法没有必需的参数。但是，要筛选结果，您可以传递一个或多个 virtualNetworkID 或 virtualNetworkTag 值。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+virtualNetworkID
+ a| 
+用于筛选单个虚拟网络列表的网络 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+用于筛选单个虚拟网络列表的网络标记。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+virtualNetworkID
+ a| 
+要包含在列表中的网络 ID 。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+virtualNetworkTags
+ a| 
+要包括在列表中的网络标记。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+virtualNetworks
+ a| 
+包含虚拟网络 IP 地址的对象。
+ a| 
+xref:reference_element_api_virtualnetwork.adoc[VirtualNetwork]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "ListVirtualNetworks",
+  "params": {
+     "virtualNetworkIDs": [5,6]
+   },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "virtualNetworks": [
+   {
+    "addressBlocks": [
+   {
+    "available": "11000000",
+    "size": 8,
+    "start": "10.26.250.207"
+   }
+ ],
+    "attributes": null,
+    "gateway": "10.26.250.254",
+    "name": "2250",
+    "namespace": false,
+    "netmask": "255.255.255.0",
+    "svip": "10.26.250.200",
+    "virtualNetworkID": 2250
+   },
+   {
+     "addressBlocks": [
+   {
+     "available": "11000000",
+     "size": 8,
+     "start": "10.26.241.207"
+   }
+  ],
+     "attributes": null,
+     "gateway": "10.26.241.254",
+     "name": "2241",
+     "namespace": false,
+     "netmask": "255.255.255.0",
+     "svip": "10.26.241.200",
+     "virtualNetworkID": 2241
+   },
+  {
+     "addressBlocks": [
+  {
+     "available": "11000000",
+     "size": 8,
+     "start": "10.26.240.207"
+   }
+  ],
+     "attributes": null,
+     "gateway": "10.26.240.254",
+     "name": "2240",
+     "namespace": false,
+     "netmask": "255.255.255.0",
+     "svip": "10.26.240.200",
+     "virtualNetworkID": 2240
+    },
+   {
+  }
+ ]
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

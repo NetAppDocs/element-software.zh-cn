@@ -1,0 +1,45 @@
+---
+permalink: storage/reference_data_manage_vvol_bindings_details.html 
+sidebar: sidebar 
+keywords: bindings details, vvols, for each virtual volume, endpoints, 
+summary: '"VVols" 选项卡上的 "Bindings" 页面提供了有关每个虚拟卷的绑定信息。' 
+---
+= 绑定详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"VVols" 选项卡上的 "Bindings" 页面提供了有关每个虚拟卷的绑定信息。
+
+此时将显示以下信息：
+
+* * 主机 ID*
++
+托管虚拟卷且为集群所知的 ESXi 主机的 UUID 。
+
+* * 协议端点 ID*
++
+与 SolidFire 集群中的每个节点对应的协议端点 ID 。
+
+* * 带内协议端点 ID*
++
+协议端点的 SCSI NAA 设备 ID 。
+
+* * 协议端点类型 *
++
+协议端点类型。
+
+* * VVol 绑定 ID*
++
+虚拟卷的绑定 UUID 。
+
+* * VVol ID*
++
+虚拟卷的通用唯一标识符（ UUID ）。
+
+* * VVol 二级 ID*
++
+虚拟卷的二级 ID ，即 SCSI 二级 LUN ID 。
+
+

@@ -1,0 +1,18 @@
+---
+permalink: api/reference_element_api_supported_modes_of_replication.html 
+sidebar: sidebar 
+keywords: supported,replication,modes,clusters,paired,pair,pairs 
+summary: 配对集群支持以下复制模式： 
+---
+= 配对集群支持的复制模式
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配对集群支持以下复制模式：
+
+* 数据的异步复制：发送到复制目标卷的数据将异步发送。在写入数据之前，系统不会等待发送确认。
+* 数据的同步复制：发送到复制目标卷的数据会同步发送。当系统确认从主机发送的 I/O 操作后，系统确认将发送回主机，并将数据发送到复制目标卷。
+* 数据的仅快照复制：仅将卷快照复制到目标集群。
+

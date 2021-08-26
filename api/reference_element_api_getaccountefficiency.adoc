@@ -1,0 +1,130 @@
+---
+permalink: api/reference_element_api_getaccountefficiency.html 
+sidebar: sidebar 
+keywords: accounts,account,efficiency,get,getting,GetAccountEfficiency 
+summary: 您可以使用 GetAccountEfficiency 获取有关卷帐户的效率统计信息。此方法仅返回作为参数提供的帐户的效率信息。 
+---
+= GetAccountEfficiency
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetAccountEfficiency` 来获取有关卷帐户的效率统计信息。此方法仅返回作为参数提供的帐户的效率信息。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+accountId
+ a| 
+指定为其返回效率统计信息的卷帐户。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+compression
+ a| 
+通过数据压缩为帐户中的所有卷节省的空间量。以比率表示，其中值 "1" 表示数据已在未压缩的情况下存储。
+ a| 
+浮点
+
+
+
+ a| 
+deduplication
+ a| 
+通过不复制帐户中所有卷的数据而节省的空间量。以比率表示。
+ a| 
+浮点
+
+
+
+ a| 
+卷单错误
+ a| 
+无法查询效率数据的卷。卷缺失的原因可能是垃圾收集（ GC ）周期不到一小时，网络连接暂时断开或服务在 GC 周期之后重新启动。
+ a| 
+整型数组
+
+
+
+ a| 
+thinProvisioning
+ a| 
+已用空间与已分配用于存储数据的空间量之比。以比率表示。
+ a| 
+浮点
+
+
+
+ a| 
+timestamp
+ a| 
+垃圾收集（ Garbage Collection ， GC ）后最后一次收集效率数据的时间，采用 UTC+0 格式。
+ a| 
+ISO 8601 日期字符串
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "GetAccountEfficiency",
+   "params": {
+     "accountID": 3
+   },
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+       "compression": 2.020468042933262,
+       "deduplication": 2.042488619119879,
+       "missingVolumes": [],
+       "thinProvisioning": 1.010087163391013,
+       "timestamp": "2014-03-10T14:06:02Z"
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

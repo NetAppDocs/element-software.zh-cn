@@ -1,0 +1,104 @@
+---
+permalink: api/reference_element_api_storagecontainer.html 
+sidebar: sidebar 
+keywords: object,objects,storagecontainer 
+summary: storageContainer 对象包含虚拟卷存储容器的属性。您可以使用 ListStorageContainers API 方法检索集群中每个存储容器的此信息。 
+---
+= 存储容器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+storageContainer 对象包含虚拟卷存储容器的属性。您可以使用 `ListStorageContainers` API 方法检索集群中每个存储容器的此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+accountId
+ a| 
+与存储容器关联的存储系统帐户的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+initiatorSecret
+ a| 
+与存储容器关联的启动程序的 CHAP 身份验证密钥。
+ a| 
+string
+
+
+
+ a| 
+name
+ a| 
+存储容器的名称。
+ a| 
+string
+
+
+
+ a| 
+protocolEndpointType
+ a| 
+存储容器的协议端点类型。SCSI 是唯一有效的值。
+ a| 
+string
+
+
+
+ a| 
+status
+ a| 
+存储容器的状态。可能值：
+
+* Active ：存储容器正在使用中。
+* locked ：存储容器已锁定。
+
+ a| 
+string
+
+
+
+ a| 
+storageContainerID
+ a| 
+存储容器的唯一 ID 。
+ a| 
+UUID
+
+
+
+ a| 
+targetSecret
+ a| 
+与存储容器关联的目标的 CHAP 身份验证密钥。
+ a| 
+string
+
+
+
+ a| 
+virtualVolumes
+ a| 
+与存储容器关联的虚拟卷的 ID 列表。
+ a| 
+UUID array
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_liststoragecontainers.adoc[ListStorageContainers]

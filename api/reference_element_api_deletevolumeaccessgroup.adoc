@@ -1,0 +1,111 @@
+---
+permalink: api/reference_element_api_deletevolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,access,group,groups,delete,deleting,DeleteVolumeAccessGroup 
+summary: 您可以使用 DeleteVolumeAccessGroup 删除卷访问组。 
+---
+= DeleteVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteVolumeAccessGroup` 删除卷访问组。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+卷访问组 ID
+ a| 
+要删除的卷访问组的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+deleteOrphanInitiators
+ a| 
+指定是否删除启动程序对象。可能值：
+
+* true ：从卷访问组中删除启动程序对象后，将其删除。
+* false ：从卷访问组中删除启动程序对象后，不要删除这些对象。这是默认值。
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+【强制】
+ a| 
+添加此标志将强制删除卷访问组，即使其具有虚拟网络 ID 或标记也是如此。可能值：
+
+* true ：将删除卷访问组。
+* false ：默认值。如果卷访问组具有虚拟网络 ID 或标记，请勿将其删除。
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "DeleteVolumeAccessGroup",
+   "params": {
+          "force": true,
+	  "volumeAccessGroupID"  : 3
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

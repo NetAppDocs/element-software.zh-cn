@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_getldapconfiguration.html 
+sidebar: sidebar 
+keywords: ldap,config,configuration,get,getting,getldapconfiguration 
+summary: 您可以使用 GetLdapConfiguration 方法获取集群上当前活动的 LDAP 配置。 
+---
+= GetLdapConfiguration
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetLdapConfiguration` 方法获取集群上当前活动的 LDAP 配置。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值。
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+ldapConfiguration
+ a| 
+列出当前 LDAP 配置设置。此 API 调用不会返回搜索帐户密码的纯文本。* 注： * 如果 LDAP 身份验证当前已禁用，则返回的所有设置均为空，但 "authType" 和 "groupSearchType" 除外，这两个设置分别设置为 "SearchAndBind" 和 "ActiveDirectory" 。
+ a| 
+xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "GetLdapConfiguration",
+  "params": {},
+  "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "ldapConfiguration": {
+        "authType": "SearchAndBind",
+        "enabled": true,
+        "groupSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+        "groupSearchCustomFilter": "",
+        "groupSearchType": "ActiveDirectory",
+        "searchBindDN": "SFReadOnly@prodtest.solidfire.net",
+        "serverURIs": [
+           "ldaps://111.22.333.444",
+           "ldap://555.66.777.888"
+            ],
+        "userDNTemplate": "",
+        "userSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+        "userSearchFilter": "(&(objectClass=person)(sAMAccountName=%USERNAME%))"
+     }
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

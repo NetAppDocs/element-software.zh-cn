@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_disableencryptionatrest.html 
+sidebar: sidebar 
+keywords: element, api, encryption, disable, disabling, at rest, rest, DisableEncryptionAtRest 
+summary: 您可以使用 DisableEncryptionAtRest 方法删除先前使用 EnableEncryptionAtRest 方法应用于集群的加密。此禁用方法是异步的，会在禁用加密之前返回响应。您可以使用 GetClusterInfo 方法轮询系统以查看此过程何时完成。 
+---
+= DisableEncryptionAtRest
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DisableEncryptionAtRest` 方法删除先前使用 `EnableEncryptionAtRest` 方法应用于集群的加密。此禁用方法是异步的，会在禁用加密之前返回响应。您可以使用 `GetClusterInfo` 方法轮询系统以查看此过程何时完成。
+
+
+NOTE: 您不能使用此方法禁用空闲软件加密。要禁用空闲软件加密，您需要 link:reference_element_api_createcluster.html["创建新集群："] 禁用空闲软件加密。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "DisableEncryptionAtRest",
+   "params": {},
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+[discrete]
+== 了解更多信息
+
+* link:api/reference_element_api_getclusterinfo.html["GetClusterInfo"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

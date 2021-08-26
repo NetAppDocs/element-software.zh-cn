@@ -1,0 +1,27 @@
+---
+permalink: storage/concept_system_manage_system_management.html 
+sidebar: sidebar 
+keywords: element, cluster, fips, cluster, multi-factor authentication, authentication 
+summary: 您可以在 Element UI 中管理系统。其中包括启用多因素身份验证，管理集群设置，支持联邦信息处理标准（ FIPS ）以及使用外部密钥管理。 
+---
+= 管理您的系统
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Element UI 中管理系统。其中包括启用多因素身份验证，管理集群设置，支持联邦信息处理标准（ FIPS ）以及使用外部密钥管理。
+
+* link:concept_system_manage_mfa_enable_multi_factor_authentication.html["启用多因素身份验证"]
+* link:concept_system_manage_cluster_configure_cluster_settings.html["配置集群设置"]
+* link:task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["创建支持 FIPS 驱动器的集群"]
+* link:concept_system_manage_key_get_started_with_external_key_management.html["开始使用外部密钥管理"]
+
+
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

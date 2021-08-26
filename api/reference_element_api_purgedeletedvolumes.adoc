@@ -1,0 +1,85 @@
+---
+permalink: api/reference_element_api_purgedeletedvolumes.html 
+sidebar: sidebar 
+keywords: volume,volumes,purge,purging,multiple,deleted,purgedeletedvolumes 
+summary: 您可以使用 PurgeDeletedVolumes 方法立即永久清除已删除的卷；您可以使用此方法一次最多清除 500 个卷。 
+---
+= PurgeDeletedVolumes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `PurgeDeletedVolumes` 方法立即永久清除已删除的卷；您可以使用此方法一次最多清除 500 个卷。
+
+您必须先使用 `DDeleteVolumes` 删除卷，然后才能清除这些卷。卷会在一段时间后自动清除，因此通常不需要使用此方法。
+
+
+NOTE: 如果一次清除大量卷，或者清除的每个卷都有许多关联的快照，则此方法可能会失败并返回错误 "xDBConnectionLoss" 。如果发生这种情况，请使用较少的卷重新尝试方法调用。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+| volumeIds | 要从系统中清除的卷的卷 ID 列表。 | 整型数组 | 否 | 否 
+
+
+| 帐户 ID | 帐户 ID 列表。所有指定帐户中的所有卷都会从系统中清除。 | 整型数组 | 否 | 否 
+
+
+| 卷访问组 ID | 卷访问组 ID 列表。所有指定卷访问组中的所有卷都会从系统中清除。 | 整型数组 | 否 | 否 
+|===
+* 注： * 每个方法调用只能指定上述参数之一。如果指定多个或无，则会导致出现错误。
+
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "PurgeDeletedVolumes",
+   "params": {
+      "accountIDs" : [1, 2, 3]
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_deletevolumes.adoc[DeleteVolumes]

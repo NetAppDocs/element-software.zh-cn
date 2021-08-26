@@ -1,0 +1,54 @@
+---
+permalink: concepts/concept_intro_product_overview.html 
+sidebar: sidebar 
+keywords:  
+summary: SolidFire 全闪存存储系统由分散的硬件组件（驱动器和节点）组成，这些组件组合成一个存储资源池。此统一集群可作为一个存储系统提供给外部客户端使用，并使用 NetApp Element 软件进行管理。 
+---
+= 产品概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire 全闪存存储系统由分散的硬件组件（驱动器和节点）组成，这些组件组合到一个存储资源池中。此统一集群可作为一个存储系统提供给外部客户端使用，并使用 NetApp Element 软件进行管理。
+
+您可以使用 Element 接口， API 或其他管理工具监控 SolidFire 集群存储容量和性能，并管理多租户基础架构中的存储活动。
+
+
+
+== SolidFire 功能
+
+SolidFire 系统可提供以下功能：
+
+* 为大规模私有云基础架构提供高性能存储
+* 提供灵活的扩展能力，可满足不断变化的存储需求
+* 使用 API 驱动的存储管理元素软件界面
+* 使用服务质量策略保证性能
+* 包括集群中所有节点之间的自动负载平衡
+* 添加或减去节点后，会自动重新平衡集群
+
+
+
+
+== SolidFire 部署选项
+
+SolidFire 提供了不同的部署选项：
+
+* 使用 NetApp 提供并与 NetApp Element 软件集成的存储节点
++
+link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html["SolidFire 全闪存存储架构概述"]
+
+* 使用容器化 SolidFire 企业 SDS 使用您自己的服务器运行 Element 软件
++
+link:../esds/concept_get_started_esds.html["开始使用 NetApp SolidFire 企业版 SDS"]
+
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/["SolidFire 全闪存存储概述"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

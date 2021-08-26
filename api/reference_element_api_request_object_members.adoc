@@ -1,0 +1,56 @@
+---
+permalink: api/reference_element_api_request_object_members.html 
+sidebar: sidebar 
+keywords: request,object,members 
+summary: 每个 Element 软件 API 请求都包含以下基本部分： 
+---
+= 请求对象成员
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每个 Element 软件 API 请求都包含以下基本部分：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+方法
+ a| 
+要调用的方法的名称。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+parameters
+ a| 
+包含要调用的方法的参数的对象。需要指定参数。不允许使用定位参数（作为数组传递）。
+ a| 
+JSON 对象
+ a| 
+｛ ｝
+ a| 
+否
+
+
+
+ a| 
+id
+ a| 
+用于将请求与响应匹配的标识符，在结果中返回。
+ a| 
+字符串或整数
+ a| 
+｛ ｝
+ a| 
+否
+
+|===

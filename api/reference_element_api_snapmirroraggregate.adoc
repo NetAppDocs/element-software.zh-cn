@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_snapmirroraggregate.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorAggregate 
+summary: snapMirrorAggregate 对象包含有关可用 ONTAP 聚合的信息，这些聚合是可供卷用作存储的磁盘的集合。您可以使用 ListSnapMirrorAggregates API 方法获取此信息。 
+---
+= snapMirrorAggregate
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorAggregate 对象包含有关可用 ONTAP 聚合的信息，这些聚合是可供卷用作存储的磁盘的集合。您可以使用 ListSnapMirrorAggregates API 方法获取此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目标 ONTAP 系统的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+aggregateName
+ a| 
+聚合的名称。
+ a| 
+string
+
+
+
+ a| 
+nodeName
+ a| 
+拥有此聚合的 ONTAP 节点的名称。
+ a| 
+string
+
+
+
+ a| 
+可用空间大小
+ a| 
+聚合中剩余的可用字节数。
+ a| 
+整型
+
+
+
+ a| 
+大小总计
+ a| 
+聚合的总大小（以字节为单位）。
+ a| 
+整型
+
+
+
+ a| 
+已用容量百分比
+ a| 
+当前正在使用的磁盘空间百分比。
+ a| 
+整型
+
+
+
+ a| 
+卷计数
+ a| 
+聚合中的卷数。
+ a| 
+整型
+
+|===

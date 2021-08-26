@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_protection_use_group_snapshots_for_data_protection.html 
+sidebar: sidebar 
+keywords: group snapshots, data protection, set of volumes, backup, rollback 
+summary: 您可以为一组相关卷创建组快照，以便为每个卷保留元数据的时间点副本。您可以将来使用组快照作为备份或回滚，将卷组的状态还原到先前的状态。 
+---
+= 使用组快照执行数据保护任务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以为一组相关卷创建组快照，以便为每个卷保留元数据的时间点副本。您可以将来使用组快照作为备份或回滚，将卷组的状态还原到先前的状态。
+
+
+
+== 了解更多信息
+
+* xref:task_data_protection_create_a_group_snapshot.adoc[创建组快照]
+* xref:task_data_protection_edit_group_snapshots.adoc[编辑组快照]
+* xref:task_data_protection_edit_members_of_group_snapshot.adoc[编辑组快照的成员]
+* xref:task_data_protection_delete_a_group_snapshot.adoc[删除组快照]
+* xref:task_data_protection_roll_back_volumes_to_a_group_snapshot.adoc[将卷回滚到组快照]
+* xref:task_data_protection_clone_multiple_volumes.adoc[克隆多个卷]
+* xref:task_data_protection_clone_multiple_volumes_from_a_group_snapshot.adoc[从组快照克隆多个卷]
+

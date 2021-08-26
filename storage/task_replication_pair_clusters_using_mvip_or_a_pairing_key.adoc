@@ -1,0 +1,29 @@
+---
+permalink: storage/task_replication_pair_clusters_using_mvip_or_a_pairing_key.html 
+sidebar: sidebar 
+keywords: pair cluster, mvip, pairing key, cluster pairing 
+summary: 如果对源集群和目标集群都具有集群管理员访问权限，则可以使用目标集群的 MVIP 对这两个集群进行配对。如果集群管理员只能访问集群对中的一个集群，则可以在目标集群上使用配对密钥来完成集群配对。 
+---
+= 使用 MVIP 或配对密钥对集群配对
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果对源集群和目标集群都具有集群管理员访问权限，则可以使用目标集群的 MVIP 对这两个集群进行配对。如果集群管理员只能访问集群对中的一个集群，则可以在目标集群上使用配对密钥来完成集群配对。
+
+. 选择以下方法之一对集群配对：
++
+** 使用 MVIP 对集群配对：如果对两个集群都具有集群管理员访问权限，请使用此方法。此方法使用远程集群的 MVIP 对两个集群配对。
+** 使用配对密钥对集群配对：如果集群管理员只能访问其中一个集群，请使用此方法。此方法将生成一个配对密钥，可在目标集群上使用此密钥完成集群配对。
+
+
+
+
+
+
+== 了解更多信息
+
+* xref:task_replication_pair_cluster_using_mvip.adoc[使用 MVIP 对集群配对]
+* xref:task_replication_pair_cluster_using_pairing_key.adoc[使用配对密钥对集群配对]
+

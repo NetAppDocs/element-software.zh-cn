@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_listsnapmirrornodes.html 
+sidebar: sidebar 
+keywords: snapmirror,node,nodes,list,listing,listsnapmirrornodes 
+summary: Element 软件 Web UI 使用 ListSnapMirrorNodes 方法获取远程 ONTAP 集群中的节点列表。 
+---
+= ListSnapMirrorNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `ListSnapMirrorNodes` 方法获取远程 ONTAP 集群中的节点列表。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+如果提供此参数，则系统将列出具有指定 snapMirrorEndpointID 的端点节点。如果未提供，则系统将列出所有已知 SnapMirror 端点的节点。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorNodes
+ a| 
+ONTAP 集群上的节点列表。
+ a| 
+xref:reference_element_api_snapmirrornode.adoc[snapMirrorNode] 数组
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

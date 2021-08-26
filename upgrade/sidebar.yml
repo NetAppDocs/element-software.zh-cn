@@ -1,0 +1,26 @@
+---
+section: upgrade
+title: 升级 SolidFire 系统
+entries:
+- title: 升级概述
+  url: "/upgrade/concept_element_upgrade_overview.html"
+- title: 升级适用于 Element 12.3 的 NetApp SolidFire 全闪存存储系统
+  url: "/upgrade/task_sf_upgrade_all.html"
+- title: 系统升级过程
+  entries:
+  - title: 更新管理服务
+    url: "/upgrade/task_hcc_update_management_services.html"
+  - title: 升级到最新的 HealthTools
+    url: "/upgrade/task_upgrade_element_latest_healthtools.html"
+  - title: 在升级存储之前，请运行 Element 存储运行状况检查
+    url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
+  - title: 升级 Element 软件
+    url: "/upgrade/task_hcc_upgrade_element_software.html"
+  - title: 升级存储固件
+    url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
+  - title: 升级管理节点
+    url: "/upgrade/task_hcc_upgrade_management_node.html"
+  - title: 升级适用于 vCenter Server 的 Element 插件
+    url: "/upgrade/task_vcp_upgrade_plugin.html"
+- title: 使用适用于 vCenter Server 的 Element 插件升级适用于 NetApp SolidFire 存储系统的 vSphere 组件
+  url: "/upgrade/task_sf_upgrade_all_vsphere.html"

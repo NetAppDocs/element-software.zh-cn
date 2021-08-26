@@ -1,0 +1,183 @@
+---
+permalink: api/reference_element_api_updatebulkvolumestatus.html 
+sidebar: sidebar 
+keywords: updatebulkvolumestatus,update,updating,bulk,volume,status,job 
+summary: 您可以使用 UpdateBulkVolumeStatus 方法更新使用 StartBulkVolumeRead 或 StartBulkVolumeWrite 方法启动的批量卷作业的状态。 
+---
+= UpdateBulkVolumeStatus
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `UpdateBulkVolumeStatus` 方法更新使用 `STartBulkVolumeRead` 或 `STartBulkVolumeWrite` 方法启动的批量卷作业的状态。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+key
+ a| 
+初始化期间分配的密钥 xref:reference_element_api_startbulkvolumeread.adoc[StartBulkVolumeRead] 或 xref:reference_element_api_startbulkvolumewrite.adoc[StartBulkVolumeWrite] 会话。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+status
+ a| 
+系统将设置给定批量卷作业的状态。可能值：
+
+* Running ：仍处于活动状态的作业。
+* complete ：已完成的作业。
+* failed ：作业已失败。
+
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+完成百分比
+ a| 
+批量卷作业的已完成进度，以百分比表示。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+message
+ a| 
+返回批量卷作业完成后的状态。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+属性
+ a| 
+JSON 属性；更新批量卷作业上的内容。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+status
+ a| 
+请求的会话的状态。返回的状态：
+
+* 正在准备
+* 活动
+* 完成
+* 失败
+
+ a| 
+string
+
+
+
+ a| 
+属性
+ a| 
+返回在方法调用中指定的属性。无论值是否已更改，都会返回值。
+ a| 
+string
+
+
+
+ a| 
+url
+ a| 
+用于访问节点 Web 服务器的 URL ；仅在会话仍处于活动状态时提供。
+ a| 
+string
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "UpdateBulkVolumeStatus",
+   "params": {
+          "key": "0b2f532123225febda2625f55dcb0448",
+	      "status": "running"
+      },
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result": {
+	  "status" : "running",
+	  "url" : "https://10.10.23.47:8443/"
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_startbulkvolumeread.adoc[StartBulkVolumeRead]
+* xref:reference_element_api_startbulkvolumewrite.adoc[StartBulkVolumeWrite]
+

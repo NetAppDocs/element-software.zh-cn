@@ -1,0 +1,88 @@
+---
+permalink: api/reference_element_api_getloginbanner.html 
+sidebar: sidebar 
+keywords: terms,use,banner,get,getting,getloginbanner,login 
+summary: 您可以使用 GetLoginBanner 方法获取用户在登录到 Element Web 界面时看到的当前活动使用条款横幅。 
+---
+= GetLoginBanner
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetLoginBanner` 方法获取用户在登录到 Element Web 界面时看到的当前活动使用条款横幅。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+横幅
+ a| 
+" 使用条款 " 横幅的当前文本。即使禁用了横幅，此值也可以包含文本。
+ a| 
+string
+
+
+
+ a| 
+enabled
+ a| 
+" 使用条款 " 横幅的状态。可能值：
+
+* true ：登录 Web 界面时会显示 " 使用条款 " 横幅。
+* false ：登录 Web 界面时不显示 " 使用条款 " 横幅。
+
+ a| 
+boolean
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 3411,
+  "method": "GetLoginBanner",
+  "params": {}
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 3411,
+  "result": {
+    "loginBanner": {
+      "banner": "Welcome to NetApp!",
+      "enabled": false
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+10.0

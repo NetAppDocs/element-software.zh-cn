@@ -1,0 +1,81 @@
+---
+permalink: api/reference_element_api_listclusterinterfacepreferences.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过 ListClusterInterfacePreference 方法，与运行 Element 软件的存储集群集成的系统可以列出存储在系统上的现有集群接口首选项。此方法供内部使用。 
+---
+= ListClusterInterfacePreferences
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 `ListClusterInterfacePreference` 方法，与运行 Element 软件的存储集群集成的系统可以列出存储在系统上的现有集群接口首选项。此方法供内部使用。
+
+
+NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+首选项
+ a| 
+当前存储在存储集群上的集群接口对象列表，每个对象都包含首选项的名称和值。
+ a| 
+JSON 对象数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+	"method": "ListClusterInterfacePreferences",
+    "params": {
+    },
+    "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"preferences": [
+			{
+				"name": "prefname",
+				"value": "testvalue"
+			}
+		]
+	}
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.0

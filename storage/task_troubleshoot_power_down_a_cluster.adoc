@@ -1,0 +1,25 @@
+---
+permalink: storage/task_troubleshoot_power_down_a_cluster.html 
+sidebar: sidebar 
+keywords: cluster, power down, mvip 
+summary: 您可以在联系 NetApp 支持部门并完成初始步骤后关闭整个集群。 
+---
+= 关闭集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在联系 NetApp 支持部门并完成初始步骤后关闭整个集群。
+
+执行以下操作，为集群做好关闭准备：
+
+* 停止所有 I/O
+* 断开所有 iSCSI 会话的连接。
++
+.. 导航到集群上的管理虚拟 IP （ MVIP ）地址以打开 Element UI 。
+.. 记下节点列表中列出的节点。
+.. 使用集群中每个节点 ID 上指定的 halt 选项运行 Shutdown API 方法。
+
+
+

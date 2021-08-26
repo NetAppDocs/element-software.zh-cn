@@ -1,0 +1,128 @@
+---
+permalink: api/reference_element_api_listsnapshots.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,list,listing,attributes,listsnapshots 
+summary: 您可以使用 Listsnapshots 返回在卷上创建的每个快照的属性。 
+---
+= 列表快照
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `listsnapshots` 返回在卷上创建的每个快照的属性。
+
+从源集群调用此方法时，有关驻留在目标集群上的快照的信息将显示在源集群上。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+volumeId
+ a| 
+检索卷的快照。如果未提供 volumeID ，则会返回所有卷的所有快照。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+snapshotId
+ a| 
+检索单个快照 ID 的信息。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapshots
+ a| 
+有关每个卷的每个快照的信息。如果未提供 volumeID ，则会返回所有卷的所有快照。返回组中的快照时会使用组 ID 。
+ a| 
+xref:reference_element_api_snapshot.adoc[Snapshot] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListSnapshots",
+   "params": {
+             "volumeID": "1"
+       },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "snapshots": [
+        {
+          "attributes": {},
+          "checksum": "0x0",
+          "createTime": "2015-05-08T13:15:00Z",
+          "enableRemoteReplication": true,
+          "expirationReason": "None",
+          "expirationTime": "2015-05-08T21:15:00Z",
+          "groupID": 0,
+          "groupSnapshotUUID": "00000000-0000-0000-0000-000000000000",
+          "name": "Hourly",
+          "remoteStatuses": [
+              {
+                "remoteStatus": "Present",
+                "volumePairUUID": "237e1cf9-fb4a-49de-a089-a6a9a1f0361e"
+              }
+         ],
+          "snapshotID": 572,
+          "snapshotUUID": "efa98e40-cb36-4c20-a090-a36c48296c14",
+          "status": "done",
+          "totalSize": 10000269312,
+          "volumeID": 1
+        }
+      ]
+    }
+  }
+----
+
+
+== 自版本以来的新增功能
+
+9.6

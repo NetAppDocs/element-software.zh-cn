@@ -1,0 +1,119 @@
+---
+permalink: api/reference_element_api_listallnodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,node,nodes,all,listallnodes 
+summary: 您可以使用 ListAllNodes 方法列出集群中的活动节点和待定节点。 
+---
+= ListAllNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListAllNodes` 方法列出集群中的活动节点和待定节点。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+nodes
+ a| 
+描述集群中活动节点的对象列表。
+ a| 
+xref:reference_element_api_node.adoc[node]
+
+
+
+ a| 
+待定 ActiveNodes
+ a| 
+描述集群中待定活动节点的对象列表。
+ a| 
+xref:reference_element_api_pendingactivenode.adoc[pendingActiveNode] 数组
+
+
+
+ a| 
+待定节点
+ a| 
+描述集群中待定节点的对象列表。
+ a| 
+xref:reference_element_api_pendingnode.adoc[pendingNode] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListAllNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"nodes": [
+			{
+				"associatedFServiceID": 0,
+				"associatedMasterServiceID": 1,
+				"attributes": {},
+				"chassisName": "CT5TV12",
+				"cip": "10.1.1.1",
+				"cipi": "Bond10G",
+				"fibreChannelTargetPortGroup": null,
+				"mip": "10.1.1.1",
+				"mipi": "Bond1G",
+				"name": "NLABP0704",
+				"nodeID": 1,
+				"nodeSlot": "",
+				"platformInfo": {
+					"chassisType": "R620",
+					"cpuModel": "Intel",
+					"nodeMemoryGB": 72,
+					"nodeType": "SF3010",
+					"platformConfigVersion": "0.0.0.0"
+				},
+				"sip": "10.1.1.1",
+				"sipi": "Bond10G",
+				"softwareVersion": "11.0",
+				"uuid": "4C4C4544-0054",
+				"virtualNetworks": []
+			}
+		],
+		"pendingActiveNodes": [],
+		"pendingNodes": []
+	}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

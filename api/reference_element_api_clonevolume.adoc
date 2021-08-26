@@ -1,0 +1,298 @@
+---
+permalink: api/reference_element_api_clonevolume.html 
+sidebar: sidebar 
+keywords: volumes,volume,cloning,clone,CloneVolume 
+summary: 您可以使用 CloneVolume 方法创建卷的副本。此方法是异步方法，可能需要不同的时间才能完成。 
+---
+= 克隆卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CloneVolume` 方法创建卷的副本。此方法是异步方法，可能需要不同的时间才能完成。
+
+发出 `CloneVolume` 请求后，克隆过程将立即开始，并在发出 API 方法时代表卷的状态。您可以使用 xref:reference_element_api_getasyncresult.adoc[GetAsyncResult] 确定克隆过程何时完成以及新卷何时可用于连接的方法。您可以使用 xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs] 以查看创建克隆的进度。卷的初始属性和服务质量设置将从要克隆的卷继承。您可以使用更改这些设置 xref:reference_element_api_modifyvolume.adoc[ModifyVolume]。
+
+
+NOTE: 克隆的卷不会从源卷继承卷访问组成员资格。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+访问
+ a| 
+允许对新卷进行访问。如果未指定值，则访问值不会更改。可能值：
+
+* `readOnly` ：（可选）仅允许执行读取操作。
+* `readWrite` ：（可选）允许读取和写入。
+* `locked` ：（可选）不允许读取或写入。如果未指定，则会使用要克隆的卷的访问值。
+* `replicationTarget` ：（可选）将卷标识为一组配对卷的目标卷。如果卷未配对，则访问状态为 locked 。
+
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+enable512e
+ a| 
+指定新卷是否应使用 512 字节扇区模拟。如果未指定，则会使用要克隆的卷的设置。
+ a| 
+boolean
+ a| 
+设置原始卷
+ a| 
+否
+
+
+
+ a| 
+启用 SnapMirrorReplication
+ a| 
+确定卷是否可用于 SnapMirror 端点的复制。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+name
+ a| 
+新克隆卷的名称；长度必须为 1 到 64 个字符。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+newAccountID
+ a| 
+新卷所有者的帐户 ID 。如果未指定，则会使用要克隆的卷的所有者的帐户 ID 。
+ a| 
+整型
+ a| 
+原始卷所有者的帐户 ID
+ a| 
+否
+
+
+
+ a| 
+新大小
+ a| 
+卷的新大小，以字节为单位。可能大于或小于要克隆的卷的大小。如果未指定，则不会更改卷大小。大小将向上取整为最接近的 1 MB 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+snapshotId
+ a| 
+用作克隆源的快照的 ID 。如果未提供 ID ，则会使用当前活动卷。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+volumeId
+ a| 
+要克隆的卷的卷 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+异步处理
+ a| 
+用于获取操作结果的句柄值。
+ a| 
+整型
+
+
+
+ a| 
+cloneID
+ a| 
+新克隆卷的克隆 ID 。
+ a| 
+整型
+
+
+
+ a| 
+曲线
+ a| 
+应用于克隆的 QoS 曲线值。
+ a| 
+JSON 对象
+
+
+
+ a| 
+volume
+ a| 
+包含有关新克隆卷的信息的对象。
+ a| 
+xref:reference_element_api_volume.adoc[volume]
+
+
+
+ a| 
+volumeId
+ a| 
+新克隆卷的卷 ID 。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "CloneVolume",
+   "params": {
+      "volumeID" : 5,
+      "name"  : "mysqldata-snapshot1",
+      "access" : "readOnly"
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+      "asyncHandle": 42,
+      "cloneID": 37,
+      "volume": {
+          "access": "readOnly",
+          "accountID": 1,
+          "attributes": {},
+          "blockSize": 4096,
+          "createTime": "2016-03-31T22:26:03Z",
+          "deleteTime": "",
+          "enable512e": true,
+          "iqn": "iqn.2010-01.com.solidfire:jyay.mysqldata-snapshot1.680",
+          "name": "mysqldata-snapshot1",
+          "purgeTime": "",
+          "qos": {
+              "burstIOPS": 100,
+              "burstTime": 60,
+              "curve": {
+                  "4096": 100,
+                  "8192": 160,
+                  "16384": 270,
+                  "32768": 500,
+                  "65536": 1000,
+                  "131072": 1950,
+                  "262144": 3900,
+                  "524288": 7600,
+                  "1048576": 15000
+              },
+              "maxIOPS": 100,
+              "minIOPS": 50
+          },
+          "scsiEUIDeviceID": "6a796179000002a8f47acc0100000000",
+          "scsiNAADeviceID": "6f47acc1000000006a796179000002a8",
+          "sliceCount": 0,
+          "status": "init",
+          "totalSize": 1000341504,
+          "virtualVolumeID": null,
+          "volumeAccessGroups": [],
+          "volumeID": 680,
+          "volumePairs": []
+      },
+      "volumeID": 680
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs]
+* xref:reference_element_api_modifyvolume.adoc[ModifyVolume]
+

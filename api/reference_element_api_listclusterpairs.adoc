@@ -1,0 +1,93 @@
+---
+permalink: api/reference_element_api_listclusterpairs.html 
+sidebar: sidebar 
+keywords: cluster,pair,pairs,paired,list,listing,listclusterpairs 
+summary: 您可以使用 ListClusterPairs 方法列出与当前集群配对的所有集群。此方法将返回有关活动和待定集群配对的信息，例如有关当前配对以及集群配对的连接和延迟的统计信息。 
+---
+= ListClusterPairs
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListClusterPairs` 方法列出与当前集群配对的所有集群。此方法将返回有关活动和待定集群配对的信息，例如有关当前配对以及集群配对的连接和延迟（以毫秒为单位）的统计信息。
+
+
+
+== 参数
+
+此方法没有输入参数：
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+clusterPairs
+ a| 
+有关每个配对集群的信息。
+ a| 
+xref:reference_element_api_clusterpair.adoc[clusterPair] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListClusterPairs",
+   "params": {
+      },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+ "id": 1,
+ "result": {
+   "clusterPairs": [
+     {
+      "clusterName": "cluster2",
+      "clusterPairID": 3,
+      "clusterPairUUID": "9866fbeb-c2f8-4df3-beb9-58a5c4e49c9b",
+      "clusterUUID": 5487,
+      "latency": 1,
+      "mvip": "172.1.1.5",
+      "status": "Connected"
+      "version": "8.0.0.1361"
+     },
+     {
+      "clusterName": "cluster3",
+      "clusterPairID": 2,
+      "clusterPairUUID": "8132a699-ce82-41e0-b406-fb914f976042",
+      "clusterUUID": 1383,
+      "latency": 1,
+      "mvip": "172.1.1.6",
+      "status": "Connected"
+      "version": "8.0.0.1361"
+     }
+   ]
+ }
+----
+
+
+== 自版本以来的新增功能
+
+9.6

@@ -1,0 +1,18 @@
+---
+permalink: storage/concept_mnode_work_with_the_management_node.html 
+sidebar: sidebar 
+keywords: management node,mNode 
+summary: 您可以使用管理节点 \ （ mNode\ ）升级系统服务，管理集群资产和设置，运行系统测试和实用程序，配置 Active IQ 以进行系统监控以及启用 NetApp 支持访问以进行故障排除。 
+---
+= 使用管理节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用管理节点（ mNode ）升级系统服务，管理集群资产和设置，运行系统测试和实用程序，配置 Active IQ 以进行系统监控以及启用 NetApp 支持访问以进行故障排除。
+
+
+NOTE: 最佳实践是，仅将一个管理节点与一个 VMware vCenter 实例相关联，并避免在多个管理节点中定义相同的存储和计算资源或 vCenter 实例。
+
+请参见 link:../mnode/task_mnode_work_overview.html["管理节点文档"] 有关详细信息 ...

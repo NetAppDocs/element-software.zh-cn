@@ -1,0 +1,82 @@
+---
+permalink: api/reference_element_api_clearclusterfaults.html 
+sidebar: sidebar 
+keywords: cluster,clear,clearing,fault,faults,support bundles,ClearClusterFaults 
+summary: 您可以使用 ClearClusterFaults 方法清除有关当前和先前检测到的故障的信息。可以清除已解决和未解决的故障。 
+---
+= ClearClusterFaults
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ClearClusterFaults` 方法清除有关当前和先前检测到的故障的信息。可以清除已解决和未解决的故障。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+故障类型
+ a| 
+确定要清除的故障类型。可能值：
+
+* current
++
+当前检测到但尚未解决的故障。
+
+* resolved ：以前检测到并已解决的故障。
+* all ：当前故障和已解决故障。故障状态可通过故障对象的 `re已解决` 字段确定。
+
+ a| 
+string
+ a| 
+已解决
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ClearClusterFaults",
+   "params": {},
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_listsnapmirrornetworkinterfaces.html 
+sidebar: sidebar 
+keywords: snapmirror,interface,interfaces,list,listing,listsnapmirrornetworkinterfaces,ontap 
+summary: Element 软件 Web UI 使用 ListSnapMirrorNetworkInterfaces 方法列出远程 ONTAP 系统上的所有可用 SnapMirror 接口。 
+---
+= ListSnapMirrorNetworkInterfaces
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `ListSnapMirrorNetworkInterfaces` 方法列出远程 ONTAP 系统上的所有可用 SnapMirror 接口。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+仅返回与指定端点 ID 关联的网络接口。如果未提供端点 ID ，则系统将列出所有已知 SnapMirror 端点的接口。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+接口位置
+ a| 
+仅列出为指定角色提供服务的网络接口。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorNetworkInterfaces
+ a| 
+远程 ONTAP 存储系统上可用的 SnapMirror 网络接口列表。
+ a| 
+xref:reference_element_api_snapmirrornetworkinterface.adoc[snapMirrornetworkInterface] 数组
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

@@ -1,0 +1,78 @@
+---
+permalink: storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html 
+sidebar: sidebar 
+keywords: transfer, perform, source volume, snapmirror, dr, disaster recovery, one-time migration 
+summary: 通常，在使用 SnapMirror 从运行 NetApp Element 软件的 SolidFire 存储集群到 ONTAP 软件进行灾难恢复时， Element 是源，而 ONTAP 是目标。但是，在某些情况下， ONTAP 存储系统可以用作源，而 Element 可以用作目标。 
+---
+= 执行从 ONTAP 到 Element 的传输或一次性迁移
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通常，在使用 SnapMirror 从运行 NetApp Element 软件的 SolidFire 存储集群到 ONTAP 软件进行灾难恢复时， Element 是源，而 ONTAP 是目标。但是，在某些情况下， ONTAP 存储系统可以用作源，而 Element 可以用作目标。
+
+* 存在两种情形：
++
+** 先前不存在灾难恢复关系。按照此操作步骤中的所有步骤进行操作。
+** 先前存在灾难恢复关系，但用于此缓解的卷之间不存在此关系。在这种情况下，请仅执行下面的步骤 3 和 4 。
+
+
+
+
+.您需要什么？ #8217 ；将需要什么
+* Element 目标节点必须可供 ONTAP 访问。
+* 必须已为 Element 卷启用 SnapMirror 复制。
+
+
+您必须以 hostip ： /lun/<id_number> 的形式指定 Element 目标路径，其中 lun 是实际字符串 "`lun` " ， id_number 是 Element 卷的 ID 。
+
+.步骤
+. 使用 ONTAP 创建与 Element 集群的关系：
++
+[listing]
+----
+snapmirror create -source-path SVM:volume|cluster://SVM/volume
+-destination-path hostip:/lun/name -type XDP -schedule schedule -policy
+    policy
+----
++
+[listing]
+----
+cluster_dst::> snapmirror create -source-path svm_1:volA_dst
+-destination-path 10.0.0.11:/lun/0005 -type XDP -schedule my_daily -policy MirrorLatest
+----
+. 使用 snapmirror show 命令验证是否已创建 ONTAP 关系。
++
+请参见 ONTAP 文档中有关创建复制关系的信息，有关完整的命令语法，请参见 ONTAP 手册页。
+
+. 使用 `ElementCreateVolume` API 创建目标卷并将目标卷访问模式设置为 SnapMirror ：
++
+使用 Element API 创建 Element 卷
+
++
+[listing]
+----
+{
+   "method": "CreateVolume",
+   "params": {
+        "name": "SMTargetVolumeTest2",
+        "accountID": 1,
+        "totalSize": 100000000000,
+        "enable512e": true,
+        "attributes": {},
+        "qosPolicyID": 1,
+        "enableSnapMirrorReplication": true,
+        "access": "snapMirrorTarget"
+    },
+    "id": 1
+}
+----
+. 使用 ONTAP `snapmirror initialize` 命令初始化复制关系：
++
+[listing]
+----
+snapmirror initialize -source-path hostip:/lun/name
+-destination-path SVM:volume|cluster://SVM/volume
+----
+

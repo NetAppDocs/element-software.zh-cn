@@ -1,0 +1,45 @@
+---
+permalink: api/reference_element_api_protectiondomain.html 
+sidebar: sidebar 
+keywords: object,objects,protection domains 
+summary: protectionDomain 对象包含保护域的名称和类型详细信息。 
+---
+= 保护域
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomain 对象包含保护域的名称和类型详细信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+protectionDomainName
+ a| 
+保护域的名称。
+ a| 
+string
+
+
+
+ a| 
+保护域类型
+ a| 
+保护域的类型。可能值：
+
+* chassis ：一个机箱中的所有存储节点。
+* 自定义：一个客户定义的保护域中的所有存储节点。
+
+ a| 
+string
+
+|===

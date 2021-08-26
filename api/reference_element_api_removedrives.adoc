@@ -1,0 +1,104 @@
+---
+permalink: api/reference_element_api_removedrives.html 
+sidebar: sidebar 
+keywords: cluster,drive,drives,remove,removing,removedrives 
+summary: 您可以使用 RemoveDrives 方法主动删除集群中的驱动器。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。在将驱动器从集群中删除之前，驱动器上的所有数据都会被删除并迁移到集群中的其他驱动器。 
+---
+= RemoveDrives
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `RemoveDrives` 方法主动删除集群中的驱动器。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。在将驱动器从集群中删除之前，驱动器上的所有数据都会被删除并迁移到集群中的其他驱动器。
+
+`RemoveDrives` 是一种异步方法。根据要删除的驱动器的总容量，迁移所有数据可能需要几分钟的时间。
+
+删除多个驱动器时，请使用一个 `RemoveDrives` 方法调用，而不是使用多个单独的方法，每个方法使用一个驱动器。这样可以减少为均匀稳定集群上的存储负载而必须进行的数据平衡量。
+
+您也可以使用 `RemoveDrives` 删除状态为 "Failed" 的驱动器。删除状态为 " 故障 " 的驱动器时，该驱动器不会返回到 " 可用 " 或 "`活动` " 状态。此驱动器不可在集群中使用。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+驱动器
+ a| 
+要从集群中删除的驱动器 ID 列表。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+异步处理
+ a| 
+用于获取操作结果的句柄值。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "RemoveDrives",
+   "params": {
+      "drives"  : [3, 4, 5]
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result" : {
+     "asyncHandle": 1
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listdrives.adoc[ListDrives]
+

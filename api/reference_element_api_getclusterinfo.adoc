@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_getclusterinfo.html 
+sidebar: sidebar 
+keywords: cluster,get,info,getting,getclusterinfo 
+summary: 您可以使用 GetClusterInfo 方法返回有关集群的配置信息。 
+---
+= GetClusterInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetClusterInfo` 方法返回有关集群的配置信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+ClusterInfo
+ a| 
+集群信息
+ a| 
+xref:reference_element_api_clusterinfo.adoc[ClusterInfo]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "GetClusterInfo",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterInfo": {
+      "attributes": {},
+      "encryptionAtRestState": "disabled",
+      "ensemble": [
+        "10.10.21.23",
+        "10.10.21.24",
+        "10.10.21.25"
+      ],
+      "mvip": "10.10.1.57",
+      "mvipInterface": "Bond1G",
+      "mvipNodeID": 2,
+      "mvipVlanTag": "120",
+      "name": "Hulk",
+      "repCount": 2,
+      "svip": "10.10.21.57",
+      "svipInterface": "Bond10G",
+      "svipNodeID": 2,
+      "svipVlanTag": "0",
+      "uniqueID": "17nx",
+      "uuid": "8d385a91-9acf-4371-8939-b29e085191fd"
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

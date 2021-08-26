@@ -1,0 +1,608 @@
+---
+permalink: api/reference_element_api_network_bonded_interfaces.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: network \ （ bonded interfaces\ ）对象包含存储节点上绑定网络接口的配置信息。您可以使用 getconfig 和 GetNetworkConfig 方法为存储节点获取此信息。 
+---
+= 网络（绑定接口）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+network （ bonded interfaces ）对象包含存储节点上绑定网络接口的配置信息。您可以使用 `getconfig` 和 `GetNetworkConfig` 方法来获取存储节点的此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+address
+ a| 
+节点上分配给此接口的 IPv4 地址。
+ a| 
+string
+
+
+
+ a| 
+地址 V6
+ a| 
+分配给节点上绑定 1G 接口的 IPv6 管理地址。
+ a| 
+string
+
+
+
+ a| 
+绑定降级延迟
+ a| 
+检测到链路故障后，在禁用从属服务器之前等待的时间。
+ a| 
+string
+
+
+
+ a| 
+bond-fail_over_mac
+ a| 
+网络接口的 MAC 地址配置。
+ a| 
+string
+
+
+
+ a| 
+bond-miimon
+ a| 
+检查 MII 链路状态是否存在链路故障的频率。
+ a| 
+整型
+
+
+
+ a| 
+绑定模式
+ a| 
+绑定模式。可能值：
+
+* ActivePassive （默认）
+* ALB
+* LACP （建议）
+
+ a| 
+string
+
+
+
+ a| 
+bond-primary_reselect
+ a| 
+指定何时选择主绑定从属节点作为活动从属节点。可能值：
+
+* 始终
+* 更好
+* 失败
+
+ a| 
+string
+
+
+
+ a| 
+绑定从属节点
+ a| 
+绑定的从属接口列表。
+ a| 
+string
+
+
+
+ a| 
+bond-lacp_rate
+ a| 
+如果绑定模式为 LACP ，则此速率可能会更改为以下值之一：
+
+* LACP Fast （默认）
+* LACP 速度较慢
+
+ a| 
+整型
+
+
+
+ a| 
+绑定启动延迟
+ a| 
+检测到链路后，在启用从属服务器之前等待的时间。
+ a| 
+整型
+
+
+
+ a| 
+DNS 名称服务器
+ a| 
+用于域名服务的地址列表，以逗号或空格分隔。
+ a| 
+string
+
+
+
+ a| 
+DNS 搜索
+ a| 
+以空格或逗号分隔的 DNS 搜索域列表。
+ a| 
+string
+
+
+
+ a| 
+系列
+ a| 
+接口配置为使用的地址系列。目前支持 IPv4 的 "inet" 。
+ a| 
+string
+
+
+
+ a| 
+网关
+ a| 
+用于从本地网络发送流量的 IPv4 路由器网络地址。
+ a| 
+string
+
+
+
+ a| 
+GatewayV6
+ a| 
+用于从本地绑定 1G 网络发送流量的 IPv6 路由器网络地址。
+ a| 
+string
+
+
+
+ a| 
+ipV6PrefixLength
+ a| 
+绑定 1G 网络上 IPv6 流量中类型为 "net" 的静态路由的子网前缀长度。
+ a| 
+string
+
+
+
+ a| 
+MAC 地址
+ a| 
+分配给接口并由网络观察到的实际 MAC 地址。
+ a| 
+string
+
+
+
+ a| 
+macAddress永久
+ a| 
+制造商为接口分配的不可变 MAC 地址。
+ a| 
+string
+
+
+
+ a| 
+方法
+ a| 
+用于配置接口的方法。可能值：
+
+* loopback ：用于定义 IPv4 环回接口。
+* manual ：用于定义未自动配置的接口。
+* dhcp ：可用于通过 DHCP 获取 IP 地址。
+* static ：用于使用静态分配的 IPv4 地址定义以太网接口。
+
+ a| 
+string
+
+
+
+ a| 
+mtu
+ a| 
+接口可以传输的最大数据包大小（以字节为单位）。必须大于或等于 1500 ；最多支持 9000 。
+ a| 
+string
+
+
+
+ a| 
+netmask
+ a| 
+用于指定接口子网的位掩码。
+ a| 
+string
+
+
+
+ a| 
+网络
+ a| 
+根据网络掩码指示 IP 地址范围的开始位置。
+ a| 
+string
+
+
+
+ a| 
+路由
+ a| 
+要应用于路由表的路由字符串数组，以逗号分隔。
+ a| 
+string array
+
+
+
+ a| 
+status
+ a| 
+接口的状态。可能值：
+
+* down ：接口处于非活动状态。
+* up ：接口已准备就绪，但没有链路。
+* UpAndRunning ：接口已准备就绪，已建立链路。
+
+ a| 
+string
+
+
+
+ a| 
+symmetricRouteRules.
+ a| 
+在节点上配置的对称路由规则。
+ a| 
+string array
+
+
+
+ a| 
+正常运行
+ a| 
+指示接口是否已准备就绪且具有链路。
+ a| 
+boolean
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+接口的虚拟网络标识符（ VLAN 标记）。
+ a| 
+string
+
+|===
+
+
+== 成员可修改性和节点状态
+
+此表指示是否可以在每个可能的节点状态下修改对象参数。
+
+|===
+
+
+| 成员名称 | 可用状态 | 待定状态 | 活动状态 
+
+
+ a| 
+address
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+否
+
+
+
+ a| 
+地址 V6
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+否
+
+
+
+ a| 
+绑定降级延迟
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+bond-fail_over_mac
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+bond-miimon
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+绑定模式
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+bond-primary_reselect
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+绑定从属节点
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+bond-lacp_rate
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+绑定启动延迟
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+DNS 名称服务器
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+DNS 搜索
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+系列
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+网关
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+GatewayV6
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+ipV6PrefixLength
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+MAC 地址
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+macAddress永久
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+方法
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+mtu
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+netmask
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+网络
+ a| 
+否
+ a| 
+否
+ a| 
+否
+
+
+
+ a| 
+路由
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+status
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+
+
+ a| 
+symmetricRouteRules.
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+正常运行
+ a| 
+由系统配置
+ a| 
+不适用
+ a| 
+不适用
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+是的。
+ a| 
+是的。
+ a| 
+是的。
+
+|===
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getconfig.adoc[getconfig]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig]
+

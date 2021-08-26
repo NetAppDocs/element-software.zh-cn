@@ -1,0 +1,29 @@
+---
+permalink: storage/task_post_deploy_configure_system_options.html 
+sidebar: sidebar 
+keywords: deployment, post deployment options, credentials, components, FIPS security, passwords, MFA, multifactor authentication, mutli-factor authentication, security, EKM, key management, external key management, FIPS 
+summary: 设置 SolidFire 系统后，您可能需要执行一些可选任务。此外，您还可以配置多因素身份验证，外部密钥管理和联邦信息处理标准 \ （ FIPS\ ）安全性的设置。 
+---
+= 在部署后配置 SolidFire 系统选项
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+设置 SolidFire 系统后，您可能需要执行一些可选任务。
+
+如果更改系统中的凭据，您可能希望了解对其他组件的影响。
+
+此外，您还可以配置多因素身份验证，外部密钥管理和联邦信息处理标准（ FIPS ）安全性的设置。您还应根据需要查看更新密码。
+
+
+
+== 了解更多信息
+
+* link:task_post_deploy_credentials.html["在 NetApp HCI 和 NetApp SolidFire 中更改凭据"]
+* link:reference_post_deploy_change_default_ssl_certificate.html["更改 Element 软件的默认 SSL 证书"]
+* link:task_post_deploy_credential_change_ipmi_password.html["更改节点的 IPMI 密码"]
+* link:concept_system_manage_mfa_enable_multi_factor_authentication.html["启用多因素身份验证"]
+* link:concept_system_manage_key_get_started_with_external_key_management.html["开始使用外部密钥管理"]
+* link:task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["创建支持 FIPS 驱动器的集群"]
+

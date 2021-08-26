@@ -1,0 +1,42 @@
+---
+permalink: setup/task_setup_create_a_volume_access_group_for_fibre_channel_clients.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过卷访问组，可以在光纤通道客户端和 SolidFire 存储系统上的卷之间进行通信。将光纤通道客户端启动程序（ WWPN ）映射到卷访问组中的卷可以在光纤通道网络和 SolidFire 卷之间实现安全的数据 I/O 。 
+---
+= 为光纤通道客户端创建卷访问组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过卷访问组，可以在光纤通道客户端和 SolidFire 存储系统上的卷之间进行通信。将光纤通道客户端启动程序（ WWPN ）映射到卷访问组中的卷可以在光纤通道网络和 SolidFire 卷之间实现安全的数据 I/O 。
+
+您还可以将 iSCSI 启动程序添加到卷访问组；这样，启动程序就可以访问卷访问组中的相同卷。
+
+.步骤
+. 单击 * 管理 * > * 访问组 * 。
+. 单击 * 创建访问组 * 。
+. 在 * 名称 * 字段中输入卷访问组的名称。
+. 从 * 未绑定光纤通道启动程序 * 列表中选择并添加光纤通道启动程序。
++
+
+NOTE: 您可以稍后添加或删除启动程序。
+
+. * 可选： * 从 * 启动程序 * 列表中选择并添加 iSCSI 启动程序。
+. 要将卷附加到访问组，请执行以下步骤：
++
+.. 从 * 卷 * 列表中选择一个卷。
+.. 单击 * 附加卷 * 。
+
+
+. 单击 * 创建访问组 * 。
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

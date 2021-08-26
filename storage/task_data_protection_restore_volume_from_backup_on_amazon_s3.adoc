@@ -1,0 +1,35 @@
+---
+permalink: storage/task_data_protection_restore_volume_from_backup_on_amazon_s3.html 
+sidebar: sidebar 
+keywords: volume restore, amazon s3 object store 
+summary: 您可以从 Amazon S3 对象存储上的备份还原卷。 
+---
+= 从 Amazon S3 对象存储上的备份还原卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从 Amazon S3 对象存储上的备份还原卷。
+
+. 单击 * 报告 * > * 事件日志 * 。
+. 找到创建需要还原的备份的备份事件。
+. 在事件的 * 详细信息 * 列中，单击 * 显示详细信息 * 。
+. 将清单信息复制到剪贴板。
+. 单击 * 管理 * > * 卷 * 。
+. 单击要还原的卷对应的 "Actions" 图标。
+. 在显示的菜单中，单击 * 从 * 还原。
+. 在 * 集成还原 * 对话框中的 * 从 * 还原下，选择 * S3* 。
+. 在 * 数据格式 * 下选择与备份匹配的选项：
++
+** * 原生 * ：只有 SolidFire 存储系统可以读取的压缩格式。
+** * 未压缩 * ：与其他系统兼容的未压缩格式。
+
+
+. 在 * 主机名 * 字段中输入用于访问对象存储的主机名。
+. 在 * 访问密钥 ID* 字段中输入帐户的访问密钥 ID 。
+. 在 * 机密访问密钥 * 字段中输入帐户的机密访问密钥。
+. 在 * S3 Bucket* 字段中输入用于存储备份的 S3 存储分段。
+. 将清单信息粘贴到 * 清单 * 字段中。
+. 单击 * 开始写入 * 。
+

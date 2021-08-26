@@ -1,0 +1,76 @@
+---
+permalink: api/reference_element_api_cancelclone.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用 CancelClone 方法停止正在进行的卷克隆或卷复制过程。取消组克隆操作后，系统将完成并删除该操作的关联 asyncHandle 。 
+---
+= 正在取消克隆
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CancelClone` 方法停止正在进行的卷克隆或卷复制过程。取消组克隆操作后，系统将完成并删除该操作的关联 asyncHandle 。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+cloneID
+ a| 
+正在进行的克隆进程的克隆 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "CancelClone",
+   "params": {
+      "cloneID" : 5,
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

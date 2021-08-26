@@ -1,0 +1,26 @@
+---
+permalink: storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html 
+sidebar: sidebar 
+keywords: volume to snapshot roll back, snapshot roll back, revert changes 
+summary: 您可以随时将卷回滚到上一个快照。此操作将还原自创建快照以来对卷所做的任何更改。 
+---
+= 将卷回滚到快照
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以随时将卷回滚到上一个快照。此操作将还原自创建快照以来对卷所做的任何更改。
+
+.步骤
+. 单击 * 数据保护 * > * 快照 * 。
+. 单击要用于卷回滚的快照的 * 操作 * 图标。
+. 在显示的菜单中，选择 * 将卷回滚到 Snapshot* 。
+. * 可选： * 要在回滚到快照之前保存卷的当前状态，请执行以下操作：
++
+.. 在 * 回滚到 Snapshot* 对话框中，选择 * 将卷的当前状态另存为 Snapshot* 。
+.. 输入新快照的名称。
+
+
+. 单击 * 回滚 Snapshot* 。
+

@@ -1,0 +1,35 @@
+---
+permalink: api/concept_element_api_replication_api_methods.html 
+sidebar: sidebar 
+keywords: replication,api,methods 
+summary: 通过复制 API 方法，您可以连接两个集群以实现持续数据保护 \ （ CDPS\ ）。连接两个集群时，可以将集群中的活动卷持续复制到另一个集群，以提供数据恢复。通过将卷配对以进行复制，您可以保护数据免受可能导致其无法访问的事件的影响。 
+---
+= 复制 API 方法
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过复制 API 方法，您可以连接两个集群以实现持续数据保护（ Continuous Data Protection ， CDP ）。连接两个集群时，可以将集群中的活动卷持续复制到另一个集群，以提供数据恢复。通过将卷配对以进行复制，您可以保护数据免受可能导致其无法访问的事件的影响。
+
+* xref:reference_element_api_cluster_pairing_order_of_operations.adoc[集群配对操作顺序]
+* xref:reference_element_api_volume_pairing_order_of_operations.adoc[卷配对操作顺序]
+* xref:reference_element_api_supported_modes_of_replication.adoc[配对集群支持的复制模式]
+* xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]
+* xref:reference_element_api_completevolumepairing.adoc[CompleteVolumePairing]
+* xref:reference_element_api_listclusterpairs.adoc[ListClusterPairs]
+* xref:reference_element_api_listactivepairedvolumes.adoc[ListActivePairedVolumes]
+* xref:reference_element_api_modifyvolumepair.adoc[ModifyVolumePair]
+* xref:reference_element_api_removeclusterpair.adoc[RemoveClusterPair]
+* xref:reference_element_api_removevolumepair.adoc[RemoveVolumePair]
+* xref:reference_element_api_startclusterpairing.adoc[启动集群配对]
+* xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing]
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

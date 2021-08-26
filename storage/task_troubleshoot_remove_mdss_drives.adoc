@@ -1,0 +1,23 @@
+---
+permalink: storage/task_troubleshoot_remove_mdss_drives.html 
+sidebar: sidebar 
+keywords: mdss, remove, multi-drive slice service 
+summary: 您可以删除多驱动器分区服务（ MDS\ ）驱动器。只有当节点具有多个分区驱动器时，此操作步骤才适用。 
+---
+= 删除 MDSS 驱动器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除多驱动器分区服务（ MDSS ）驱动器。只有当节点具有多个分区驱动器时，此操作步骤才适用。
+
+
+NOTE: 如果系统分区驱动器和插槽 2 驱动器发生故障，系统将关闭分区服务并删除这些驱动器。如果未发生故障，并且您删除了这些驱动器，则必须同时删除这两个驱动器。
+
+. 单击 * 集群 * > * 驱动器 * 。
+. 在 * 可用 * 驱动器选项卡中，单击要删除的分区驱动器对应的复选框。
+. 单击 * 批量操作 * 。
+. 单击 * 删除 * 。
+. 确认操作。
+

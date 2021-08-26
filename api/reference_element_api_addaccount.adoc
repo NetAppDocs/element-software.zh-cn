@@ -1,0 +1,171 @@
+---
+permalink: api/reference_element_api_addaccount.html 
+sidebar: sidebar 
+keywords: addaccount,add,adding,account,accounts 
+summary: 您可以使用 AddAccount 向系统添加新帐户。您也可以使用此方法在创建帐户时在新帐户下创建新卷。为帐户指定的质询握手身份验证协议（ Challenge-Handshake Authentication Protocol ）设置将应用于该帐户拥有的所有卷。 
+---
+= 添加帐户
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `AddAccount` 向系统添加新帐户。您也可以使用此方法在创建帐户时在新帐户下创建新卷。为帐户指定的质询握手身份验证协议（ Challenge-Handshake Authentication Protocol ， CHAP ）设置将应用于该帐户拥有的所有卷。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+`属性`
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+`enableChap`
+ a| 
+指定启动程序是否可以使用 CHAP 帐户凭据来访问卷。
+ a| 
+boolean
+ a| 
+true
+ a| 
+否
+
+
+
+ a| 
+`initiatorSecret`
+ a| 
+用于启动程序的 CHAP 密钥。此密钥的长度必须为 12 到 16 个字符，并且不可破解。启动程序 CHAP 密钥必须唯一，并且不能与目标 CHAP 密钥相同。如果未指定，则会创建随机密钥。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+`targetSecret`
+ a| 
+用于目标的 CHAP 密钥（相互 CHAP 身份验证）。此密钥的长度必须为 12 到 16 个字符，并且不可破解。目标 CHAP 密钥必须唯一，并且不能与启动程序 CHAP 密钥相同。如果未指定，则会创建随机密钥。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+`用户名`
+ a| 
+此帐户的唯一用户名。（长度必须为 1 到 64 个字符）。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+account
+ a| 
+包含有关新创建帐户的信息的对象。
+ a| 
+xref:reference_element_api_account.adoc[account]
+
+
+
+ a| 
+accountId
+ a| 
+新创建的帐户对象的 ID 。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+	"method": "AddAccount",
+    "params": {
+     "username"  : "bobsmith",
+     "initiatorSecret" : "168[#5A757ru268)",
+     "targetSecret" : "tlt&lt;,8TUYa7bC",
+     "attributes" : {
+       "billingcode" : 2345
+     }
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "account": {
+      "accountID": 90,
+      "attributes": {
+        "billingcode": 2345
+      },
+      "initiatorSecret": "168[#5A757ru268)",
+      "status": "active",
+      "storageContainerID": "00000000-0000-0000-0000-000000000000",
+      "targetSecret": "tlt&lt;,8TUYa7bC",
+      "username": "bobsmith",
+      "volumes": [],
+      "enableChap": true
+    },
+    "accountID": 90
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

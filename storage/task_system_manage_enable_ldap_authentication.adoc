@@ -1,0 +1,65 @@
+---
+permalink: storage/task_system_manage_enable_ldap_authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以配置存储系统与现有 LDAP 服务器的集成。这样， LDAP 管理员就可以集中管理用户的存储系统访问权限。 
+---
+= 使用 Element 用户界面启用 LDAP 身份验证
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以配置存储系统与现有 LDAP 服务器的集成。这样， LDAP 管理员就可以集中管理用户的存储系统访问权限。
+
+您可以使用 Element 用户界面或 Element API 配置 LDAP 。此操作步骤介绍了如何使用 Element UI 配置 LDAP 。
+
+此示例显示了如何在 SolidFire 上配置 LDAP 身份验证，并使用 `SearchAndBind` 作为身份验证类型。此示例使用一个 Windows Server 2012 R2 Active Directory 服务器。
+
+. 单击 * 集群 * > * LDAP * 。
+. 单击 * 是 * 以启用 LDAP 身份验证。
+. 单击 * 添加服务器 * 。
+. 输入 * 主机名 /IP 地址 * 。
++
+
+NOTE: 也可以输入可选的自定义端口号。
+
++
+例如，要添加自定义端口号，请输入 < 主机名或 IP 地址 > ： < 端口号 >
+
+. 选择 * 使用 LDAPS 协议 * 。
+. 在 * 常规设置 * 中输入所需信息。
++
+link:reference_system_manage_ldap_details.md#["LDAP 详细信息"]
+
++
+image::../media/element_new_ldap_servers.jpg[添加新的 LDAP 服务器]
+
+. 单击 * 启用 LDAP* 。
+. 如果要测试用户的服务器访问权限，请单击 * 测试用户身份验证 * 。
+. 复制显示的可分辨名称和用户组信息，以供日后创建集群管理员时使用。
+. 单击 * 保存更改 * 以保存任何新设置。
+. 要在此组中创建用户以便任何人都可以登录，请完成以下操作：
++
+.. 单击 * 用户 * > * 查看 * 。
++
+image::../media/element_new_cluster_admin.jpg[Element 新集群管理员]
+
+.. 对于新用户，单击 "User Type" （用户类型）中的 "* ldap* " ，然后将您复制的组粘贴到 "Distinguished Name" （可分辨名称）字段中。
+.. 选择权限，通常为所有权限。
+.. 向下滚动到最终用户许可协议，然后单击 * 我接受 * 。
+.. 单击 * 创建集群管理员 * 。
++
+现在，您的用户具有 Active Directory 组的值。
+
+
+
+
+
+要对此进行测试，请从 Element UI 中注销，然后以该组中的用户身份重新登录。
+
+* 相关信息 *
+
+xref:task_system_manage_create_a_cluster_administrator_account.adoc[创建集群管理员帐户]
+
+xref:reference_system_manage_ldap_details.adoc[LDAP 详细信息]

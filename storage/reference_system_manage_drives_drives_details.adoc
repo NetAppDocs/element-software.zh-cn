@@ -1,0 +1,54 @@
+---
+permalink: storage/reference_system_manage_drives_drives_details.html 
+sidebar: sidebar 
+keywords: drives, details, manage, filter, cluster 
+summary: '"Cluster" 选项卡上的 "Drives" 页面提供了集群中活动驱动器的列表。您可以通过从 "Active" ， "Available" ， "Removing" ， "Erasing" 和 "Failed" 选项卡中选择来筛选页面。' 
+---
+= 驱动器详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"Cluster" 选项卡上的 "Drives" 页面提供了集群中活动驱动器的列表。您可以通过从 "Active" ， "Available" ， "Removing" ， "Erasing" 和 "Failed" 选项卡中选择来筛选页面。
+
+首次初始化集群时，活动驱动器列表为空。创建新的 SolidFire 集群后，您可以添加未分配给集群并在 " 可用 " 选项卡中列出的驱动器。
+
+以下元素将显示在活动驱动器列表中。
+
+* * 驱动器 ID*
++
+分配给驱动器的序列号。
+
+* * 节点 ID*
++
+将节点添加到集群时分配的节点编号。
+
+* * 节点名称 *
++
+托管驱动器的节点的名称。
+
+* * 插槽 *
++
+驱动器实际所在的插槽编号。
+
+* * 容量 *
++
+驱动器的大小，以 GB 为单位。
+
+* * 串行 *
++
+驱动器的序列号。
+
+* * 剩余耗损 *
++
+损耗级别指示器。
+
++
+存储系统会报告每个固态驱动器（ SSD ）上可用于写入和擦除数据的近似耗损量。如果某个驱动器消耗了 5% 的设计写入和擦除周期，则会报告剩余耗损率为 95% 。系统不会自动刷新驱动器损耗信息；您可以刷新或关闭并重新加载此页面以刷新此信息。
+
+* * 类型 *
++
+驱动器的类型。类型可以是块或元数据。
+
+

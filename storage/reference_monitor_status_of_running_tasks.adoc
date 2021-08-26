@@ -1,0 +1,18 @@
+---
+permalink: storage/reference_monitor_status_of_running_tasks.html 
+sidebar: sidebar 
+keywords: running tasks, view progress of 
+summary: 您可以在 Web UI 中查看由 ListSyncJobs 和 ListBulkVolumeJobs API 方法报告的正在运行的任务的进度和完成状态。您可以从 Element UI 的 Reporting 选项卡访问 Running Tasks 页面。 
+---
+= 查看正在运行的任务的状态
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Web UI 中查看由 ListSyncJobs 和 ListBulkVolumeJobs API 方法报告的正在运行的任务的进度和完成状态。您可以从 Element UI 的 Reporting 选项卡访问 Running Tasks 页面。
+
+如果任务数量很多，系统可能会将其排入队列并分批运行。"Running Tasks" 页面将显示当前正在同步的服务。任务完成后，它将被替换为下一个已排队的同步任务。同步任务可能会继续显示在 "Running Tasks" 页面上，直到没有其他任务可完成为止。
+
+
+NOTE: 您可以在包含目标卷的集群的 "Running Tasks" 页面上查看正在进行复制的卷的复制同步数据。

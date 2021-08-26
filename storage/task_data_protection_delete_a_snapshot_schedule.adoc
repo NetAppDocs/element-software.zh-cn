@@ -1,0 +1,19 @@
+---
+permalink: storage/task_data_protection_delete_a_snapshot_schedule.html 
+sidebar: sidebar 
+keywords: snapshot schedule, delete 
+summary: 您可以删除快照计划。删除此计划后，它将不会运行任何将来计划的快照。计划创建的所有快照都将保留在存储系统上。 
+---
+= 删除快照计划
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除快照计划。删除此计划后，它将不会运行任何将来计划的快照。计划创建的所有快照都将保留在存储系统上。
+
+. 单击 * 数据保护 * > * 计划 * 。
+. 单击要删除的计划对应的 * 操作 * 图标。
+. 在显示的菜单中，单击 * 删除 * 。
+. 确认操作。
+

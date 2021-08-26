@@ -1,0 +1,34 @@
+---
+permalink: api/concept_element_api_vvols_api_methods.html 
+sidebar: sidebar 
+keywords: virtual,volume,vvol,API,method 
+summary: 您可以通过 Element 软件虚拟卷 API 方法管理虚拟卷（ VVols\ ）。您可以使用这些 API 方法查看现有 VVOL ，以及创建，修改和删除虚拟卷存储容器。虽然您无法使用这些方法对普通卷执行操作，但可以使用普通卷 API 方法列出有关 VVOL 的信息。 
+---
+= 虚拟卷 API 方法
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过 Element 软件虚拟卷 API 方法管理虚拟卷（ VVOL ）。您可以使用这些 API 方法查看现有 VVOL ，以及创建，修改和删除虚拟卷存储容器。虽然您无法使用这些方法对普通卷执行操作，但可以使用普通卷 API 方法列出有关 VVOL 的信息。
+
+* xref:reference_element_api_createstoragecontainer.adoc[CreateStorageContainer]
+* xref:reference_element_api_deletestoragecontainers.adoc[DeleteStorageContainers]
+* xref:reference_element_api_getstoragecontainerefficiency.adoc[GetStorageContainerEfficiency]
+* xref:reference_element_api_getvirtualvolumecount.adoc[GetVirtualVolumeCount]
+* xref:reference_element_api_listprotocolendpoints.adoc[ListProtocolEndpoints]
+* xref:reference_element_api_liststoragecontainers.adoc[ListStorageContainers]
+* xref:reference_element_api_listvirtualvolumebindings.adoc[ListVirtualVolumeBindings]
+* xref:reference_element_api_listvirtualvolumehosts.adoc[ListVirtualVolumeHosts]
+* xref:reference_element_api_listvirtualvolumes.adoc[ListVirtualVolumes]
+* xref:reference_element_api_listvirtualvolumetasks.adoc[ListVirtualVolumeTasks]
+* xref:reference_element_api_modifystoragecontainer.adoc[ModifyStorageContainer]
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

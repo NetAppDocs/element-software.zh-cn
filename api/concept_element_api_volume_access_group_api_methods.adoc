@@ -1,0 +1,32 @@
+---
+permalink: api/concept_element_api_volume_access_group_api_methods.html 
+sidebar: sidebar 
+keywords: volume,access,group,method,methods,API,managing,manage 
+summary: 通过卷访问组方法，您可以添加，删除，查看和修改卷访问组，这些卷访问组是用户可以使用 iSCSI 或光纤通道启动程序访问的卷的集合。 
+---
+= 卷访问组 API 方法
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过卷访问组方法，您可以添加，删除，查看和修改卷访问组，这些卷访问组是用户可以使用 iSCSI 或光纤通道启动程序访问的卷的集合。
+
+* xref:reference_element_api_addinitiatorstovolumeaccessgroup.adoc[AddInitiatorsToVolumeAccessGroup]
+* xref:reference_element_api_addvolumestovolumeaccessgroup.adoc[AddVolumesToVolumeAccessGroup]
+* xref:reference_element_api_createvolumeaccessgroup.adoc[CreateVolumeAccessGroup]
+* xref:reference_element_api_deletevolumeaccessgroup.adoc[DeleteVolumeAccessGroup]
+* xref:reference_element_api_listvolumeaccessgroups.adoc[ListVolumeAccessGroups]
+* xref:reference_element_api_removevolumesfromvolumeaccessgroup.adoc[RemoveVolumeVolumesFromVolumeAccessGroup]
+* xref:reference_element_api_removeinitiatorsfromvolumeaccessgroup.adoc[RemoveInitiatorsFromVolumeAccessGroup]
+* xref:reference_element_api_modifyvolumeaccessgroup.adoc[ModifyVolumeAccessGroup]
+* xref:reference_element_api_getvolumeaccessgroupefficiency.adoc[GetVolumeAccessGroupEfficiency]
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

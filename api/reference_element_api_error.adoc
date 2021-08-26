@@ -1,0 +1,50 @@
+---
+permalink: api/reference_element_api_error.html 
+sidebar: sidebar 
+keywords: objects,object,error 
+summary: 如果在方法调用期间发生错误，则错误对象包含错误代码和消息。系统生成的所有错误的错误代码均为 500 。 
+---
+= error
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果在方法调用期间发生错误，则错误对象包含错误代码和消息。系统生成的所有错误的错误代码均为 500 。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+code
+ a| 
+用于标识错误的数字代码。系统生成的所有错误都会返回代码 500 。
+ a| 
+整型
+
+
+
+ a| 
+name
+ a| 
+发生的特定错误的唯一标识符。每种方法都会返回一组已记录的错误，但您也应准备好处理无法识别的错误。
+ a| 
+string
+
+
+
+ a| 
+message
+ a| 
+错误的问题描述，可能还包含其他详细信息。
+ a| 
+string
+
+|===

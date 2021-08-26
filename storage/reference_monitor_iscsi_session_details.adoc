@@ -1,0 +1,61 @@
+---
+permalink: storage/reference_monitor_iscsi_session_details.html 
+sidebar: sidebar 
+keywords: iscsi sessions, monitor 
+summary: 您可以查看有关连接到集群的 iSCSI 会话的信息。 
+---
+= iSCSI 会话详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看有关连接到集群的 iSCSI 会话的信息。
+
+以下列表介绍了有关 iSCSI 会话的信息：
+
+* * 节点 *
++
+托管卷的主元数据分区的节点。
+
+* * 帐户 *
++
+拥有卷的帐户的名称。如果值为空，则会显示一个短划线（ - ）。
+
+* * 卷 *
++
+节点上标识的卷名称。
+
+* * 卷 ID*
++
+与目标 IQN 关联的卷的 ID 。
+
+* * 启动程序 ID*
++
+系统为启动程序生成的 ID 。
+
+* * 启动程序别名 *
++
+启动程序的一个可选名称，在长列表中更容易找到启动程序。
+
+* * 启动程序 IP*
++
+启动会话的端点的 IP 地址。
+
+* * 启动程序 IQN*
++
+启动会话的端点的 IQN 。
+
+* * 目标 IP*
++
+托管卷的节点的 IP 地址。
+
+* * 目标 IQN*
++
+卷的 IQN 。
+
+* * 创建于 *
++
+建立会话的日期。
+
+

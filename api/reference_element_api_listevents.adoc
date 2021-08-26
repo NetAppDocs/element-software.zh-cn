@@ -1,0 +1,260 @@
+---
+permalink: api/reference_element_api_listevents.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,event,events,listevents 
+summary: 您可以使用 ListEvents 方法列出在集群上检测到的事件，按从旧到最新的顺序进行排序。 
+---
+= ListEvents
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListEvents` 方法列出在集群上检测到的事件，按从旧到最新的顺序进行排序。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+驱动器 ID
+ a| 
+指定仅返回具有此驱动器 ID 的事件。
+ a| 
+整型
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+endEventID
+ a| 
+标识要返回的事件 ID 范围的结尾。
+ a| 
+整型
+ a| 
+无限制
+ a| 
+否
+
+
+
+ a| 
+endPublicTime
+ a| 
+指定仅返回早于此时间发布的事件。
+ a| 
+string
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+endReportTime
+ a| 
+指定仅返回早于此时间报告的事件。
+ a| 
+string
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+EventType
+ a| 
+指定要返回的事件类型。请参见 xref:reference_element_api_event.adoc[事件] 可能的事件类型。
+ a| 
+string
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+最大通风数
+ a| 
+指定要返回的最大事件数。
+ a| 
+整型
+ a| 
+无限制
+ a| 
+否
+
+
+
+ a| 
+节点 ID
+ a| 
+指定仅返回具有此节点 ID 的事件。
+ a| 
+整型
+ a| 
+ a| 
+
+
+
+ a| 
+服务 ID
+ a| 
+指定仅返回具有此服务 ID 的事件。
+ a| 
+ a| 
+ a| 
+
+
+
+ a| 
+startEventID
+ a| 
+标识要返回的事件范围的起始位置。
+ a| 
+整型
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+startPublishTime
+ a| 
+指定仅返回在此时间之后发布的事件。
+ a| 
+string
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+startReportTime
+ a| 
+指定仅返回在此时间之后报告的事件。
+ a| 
+string
+ a| 
+0
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+事件
+ a| 
+事件列表。
+ a| 
+xref:reference_element_api_event.adoc[事件] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListEvents",
+   "params": {
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id":1,
+  "result":{
+    "events":[
+       {
+          "details":
+            {
+              "paramGCGeneration":1431550800,
+              "paramServiceID":2
+            },
+          "driveID":0,
+          "eventID":2131,
+          "eventInfoType":"gcEvent",
+          "message":"GC Cluster Coordination Complete",
+          "nodeID":0,
+          "serviceID":2,
+          "severity":0,
+          "timeOfPublish":"2015-05-13T21:00:02.361354Z",
+          "timeOfReport":"2015-05-13T21:00:02.361269Z"
+       },{
+          "details":
+               {
+                  "eligibleBS":[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,24,25,26,27,28,29,30,31,40,41,42,43,44,45,46,47,52,53,54,55,56,57,58,59,60],
+                  "generation":1431550800,
+                  "participatingSS":[23,35,39,51]
+               },
+          "driveID":0,
+          "eventID":2130,
+          "eventInfoType":"gcEvent",
+          "message":"GCStarted",
+          "nodeID":0,
+          "serviceID":2,
+          "severity":0,
+          "timeOfPublish":"2015-05-13T21:00:02.354128Z",
+          "timeOfReport":"2015-05-13T21:00:02.353894Z"
+       },{
+          "details":"",
+          "driveID":0,
+          "eventID":2129,
+          "eventInfoType":"tSEvent",
+          "message":"return code:2 t:41286 tt:41286 qcc:1 qd:1 qc:1 vrc:1 tt:2 ct:Write etl:524288",
+          "nodeID":0,
+          "serviceID":0,
+          "severity":0,
+          "timeOfPublish":"2015-05-13T20:45:21.586483Z",
+          "timeOfReport":"2015-05-13T20:45:21.586311Z"
+       }
+     ]
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

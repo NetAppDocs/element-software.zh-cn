@@ -1,0 +1,31 @@
+---
+permalink: storage/task_data_protection_back_up_volume_to_amazon_s3.html 
+sidebar: sidebar 
+keywords: volume backup, amazon s3 object store 
+summary: 您可以将卷备份到与 Amazon S3 兼容的外部对象存储。 
+---
+= 将卷备份到 Amazon S3 对象存储
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将卷备份到与 Amazon S3 兼容的外部对象存储。
+
+. 单击 * 管理 * > * 卷 * 。
+. 单击要备份的卷对应的 "Actions" 图标。
+. 在显示的菜单中，单击 * 备份至 * 。
+. 在 * 集成备份 * 对话框的 * 备份至 * 下，选择 * S3* 。
+. 在 * 数据格式 * 下选择一个选项：
++
+** * 原生 * ：只有 SolidFire 存储系统可以读取的压缩格式。
+** * 未压缩 * ：与其他系统兼容的未压缩格式。
+
+
+. 在 * 主机名 * 字段中输入用于访问对象存储的主机名。
+. 在 * 访问密钥 ID* 字段中输入帐户的访问密钥 ID 。
+. 在 * 机密访问密钥 * 字段中输入帐户的机密访问密钥。
+. 在 * S3 Bucket* 字段中输入用于存储备份的 S3 存储分段。
+. 在 * 名称标记 * 字段中输入要附加到前缀的名称标记。
+. 单击 * 开始读取 * 。
+

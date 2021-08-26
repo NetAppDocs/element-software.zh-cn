@@ -1,0 +1,11 @@
+---
+permalink: storage/generic_machine_translation_disclaimer.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 机器翻译
+:icons: font
+:imagesdir: ../media/
+
+

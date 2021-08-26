@@ -1,0 +1,80 @@
+---
+permalink: storage/task_snapmirror_create_snapmirror_relationship.html 
+sidebar: sidebar 
+keywords: relationships, create, snapmirror, ui 
+summary: 您必须在 NetAppElement UI 中创建 SnapMirror 关系。 
+---
+= 创建 SnapMirror 关系
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须在 NetAppElement UI 中创建 SnapMirror 关系。
+
+
+NOTE: 如果某个卷尚未启用 SnapMirror ，而您选择从 Element UI 创建关系，则该卷会自动启用 SnapMirror 。
+
+已在卷上启用 SnapMirror 。
+
+.步骤
+. 单击 * 管理 * > * 卷 * 。
+. 单击要加入此关系的卷的 * 操作 * 图标。
+. 单击 * 创建 SnapMirror 关系 * 。
+. 在 * 创建 SnapMirror 关系 * 对话框中，从 * 端点 * 列表中选择一个端点。
+. 选择是使用新的 ONTAP 卷还是现有 ONTAP 卷创建关系。
+. 要在 Element UI 中创建新的 ONTAP 卷，请单击 * 创建新卷 * 。
++
+.. 为此关系选择 * Storage Virtual Machine* 。
+.. 从下拉列表中选择 * 聚合 * 。
+.. 在 * 卷名称后缀 * 字段中，输入后缀。
++
+
+NOTE: 系统会检测源卷名称并将其复制到 * 卷名称 * 字段。输入的后缀将附加名称。
+
+.. 单击 * 创建目标卷 * 。
+
+
+. 要使用现有 ONTAP 卷，请单击 * 使用现有卷 * 。
++
+.. 为此关系选择 * Storage Virtual Machine* 。
+.. 选择此新关系的目标卷。
+
+
+. 在 * 关系详细信息 * 部分中，选择一个策略。如果选定策略具有保留规则，则 " 规则 " 表将显示规则和关联标签。
+. * 可选 * ：选择一个计划。
++
+这将确定此关系创建副本的频率。
+
+. * 可选 * ：在 * 将带宽限制为 * 字段中，输入与此关系关联的数据传输可占用的最大带宽量。
+. 查看其他详细信息：
++
+** * 状态 * ：目标卷的当前关系状态。可能值包括：
++
+*** Uninitialized ：目标卷尚未初始化。
+*** snapmirrored ：目标卷已初始化并准备好接收 SnapMirror 更新。
+*** Broken-off ：目标卷为读 / 写卷，并且存在快照。
+
+
+** * 状态 * ：关系的当前状态。可能值包括 idle ， transferring ， checking ， quiescing ， quiesced ， 已排队，正在准备，正在完成，正在中止和正在中断。
+** * 滞后时间 * ：目标系统滞后于源系统的时间量，以秒为单位。滞后时间不能超过传输计划间隔。
+** * 带宽限制 * ：与此关系关联的数据传输可占用的最大带宽量。
+** * 上次传输 * ：上次传输快照的时间戳。单击以了解更多信息。
+** * 策略名称 * ：关系的 ONTAP SnapMirror 策略的名称。
+** * 策略类型 * ：为关系选择的 ONTAP SnapMirror 策略的类型。可能值包括：
++
+*** 异步镜像
+*** mirror_vault
+
+
+** * 计划名称 * ：为此关系选择的 ONTAP 系统上原有计划的名称。
+
+
+. 要此时不初始化，请确保未选中 * 初始化 * 复选框。
++
+
+NOTE: 初始化可能非常耗时。您可能希望在非高峰时段运行此操作。初始化会执行基线传输；它会创建源卷的快照副本，然后将该副本及其引用的所有数据块传输到目标卷。您可以手动初始化，也可以使用计划根据计划启动初始化过程（以及后续更新）。
+
+. 单击 * 创建关系 * 。
+. 单击 * 数据保护 * > * SnapMirror 关系 * 以查看此新的 SnapMirror 关系。
+

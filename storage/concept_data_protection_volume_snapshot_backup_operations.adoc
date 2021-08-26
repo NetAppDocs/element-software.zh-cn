@@ -1,0 +1,18 @@
+---
+permalink: storage/concept_data_protection_volume_snapshot_backup_operations.html 
+sidebar: sidebar 
+keywords: volume snapshot, backup operations, back up volume snapshot, cluster, object store 
+summary: 您可以使用集成备份功能备份卷快照。您可以将快照从 SolidFire 集群备份到外部对象存储或另一个 SolidFire 集群。将快照备份到外部对象存储时，必须与允许读 / 写操作的对象存储建立连接。 
+---
+= 卷快照备份操作
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用集成备份功能备份卷快照。您可以将快照从 SolidFire 集群备份到外部对象存储或另一个 SolidFire 集群。将快照备份到外部对象存储时，必须与允许读 / 写操作的对象存储建立连接。
+
+* link:task_data_protection_back_up_a_volume_snapshot_to_an_amazon_s3_object_store["将卷快照备份到 Amazon S3 对象存储"]
+* link:task_data_protection_back_up_a_volume_snapshot_to_openstack_swift["将卷快照备份到 OpenStack Swift 对象存储"]
+* link:task_data_protection_back_up_volume_to_solidfire["将卷快照备份到 SolidFire 集群"]
+

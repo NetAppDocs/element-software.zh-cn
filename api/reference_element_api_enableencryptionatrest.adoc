@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_enableencryptionatrest.html 
+sidebar: sidebar 
+keywords: encryption,enable,enabling,EnableEncryptionAtRest 
+summary: 您可以使用 EnableEncryptionAtRest 方法在集群上启用高级加密标准 \ （ AES\ ） 256 位空闲加密，以便集群可以管理用于每个节点上的驱动器的加密密钥。默认情况下，不会启用此功能。 
+---
+= EnableEncryptionAtRest
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `EnableEncryptionAtRest` 方法在集群上启用高级加密标准（ Advanced Encryption Standard ， AES ） 256 位空闲加密，以便集群可以管理用于每个节点上的驱动器的加密密钥。默认情况下，不会启用此功能。
+
+
+NOTE: 此方法不会启用空闲软件加密。只能使用完成此操作 link:../api/reference_element_api_createcluster.html["创建集群方法"] 使用 `enableSoftwareEncryptionAtRest` 设置为 `true` 。
+
+启用空闲加密后，集群会自动在内部管理集群中每个节点上的驱动器的加密密钥。
+
+如果指定了 keyProviderID ，则会根据密钥提供程序的类型生成和检索密码。对于 KMIP 密钥提供程序，通常使用密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器来完成此操作。执行此操作后，指定的提供程序将被视为活动提供程序，并且无法删除，直到使用 `DisableEncryptionAtRest` 方法禁用空闲加密为止。
+
+
+NOTE: 如果您的节点类型的型号以 "-NE" 结尾，则 `EnableEncryptionAtRest` 方法调用将失败，并显示响应 " 不允许加密 " 。集群检测到不可加密的节点 " 。
+
+
+NOTE: 只有当集群正在运行且运行状况良好时，才应启用或禁用加密。您可以根据需要自由选择启用或禁用加密。
+
+
+NOTE: 此过程是异步的，在启用加密之前返回响应。您可以使用 GetClusterInfo 方法轮询系统以查看此过程何时完成。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+密钥提供程序 ID
+ a| 
+要使用的 KMIP 密钥提供程序的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "EnableEncryptionAtRest",
+   "params": {},
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回与 EnableEncryptionAtRest 方法中的以下示例类似的响应。没有可报告的结果。
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+在集群上启用空闲加密时， GetClusterInfo 将返回一个结果，其中将空闲加密状态（ "encryptionAtRestState" ）描述为 "enableing" 。完全启用空闲加密后，返回的状态将更改为 "enabled" 。
+
+[listing]
+----
+{
+   "id": 1,
+      "result": {
+         "clusterInfo": {
+            "attributes": { },
+               "encryptionAtRestState": "enabling",
+            "ensemble": [
+               "10.10.5.94",
+               "10.10.5.107",
+               "10.10.5.108"
+            ],
+            "mvip": "192.168.138.209",
+            "mvipNodeID": 1,
+            "name": "Marshall",
+            "repCount": 2,
+            "svip": "10.10.7.209",
+            "svipNodeID": 1,
+            "uniqueID": "91dt"
+      }
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+[discrete]
+== 了解更多信息
+
+* link:reference_element_api_secureerasedrives.html["SecureEraseDrives"]
+* link:reference_element_api_getclusterinfo.html["GetClusterInfo"]
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

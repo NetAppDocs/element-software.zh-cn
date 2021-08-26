@@ -1,0 +1,55 @@
+---
+permalink: storage/reference_replication_volume_pairing_warnings.html 
+sidebar: sidebar 
+keywords: volume warnings, messages, replication, data protection 
+summary: '在对卷配对后， "Data Protection" 选项卡上的 "Volume Pairs" 页面会提供这些消息。这些消息可以在复制卷列表视图中显示在卷对的源端和目标端 \ （除非另有说明）。' 
+---
+= 卷配对警告
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在对卷配对后， "Data Protection" 选项卡上的 "Volume Pairs" 页面将提供这些消息。这些消息可以在复制卷列表视图中显示在卷对的源端和目标端（除非另有说明）。
+
+* * PausedClusterFull*
++
+由于目标集群已满，因此无法继续进行源复制和批量数据传输。此消息仅显示在对的源端。
+
+* * PausedExceededMaxSnapshotCount*
++
+目标卷已具有最大快照数，无法复制其他快照。
+
+* * PausedManual*
++
+本地卷已手动暂停。必须先取消暂停，然后复制才能恢复。
+
+* * PausedManualRemote*
++
+远程卷处于手动暂停模式。在复制恢复之前，需要手动干预以取消暂停远程卷。
+
+* * PausedMisconfigure*
++
+正在等待活动源和目标。恢复复制需要手动干预。
+
+* * PausedQoS"
++
+目标 QoS 无法维持传入 IO 。复制将自动恢复。此消息仅显示在对的源端。
+
+* * PausedSlowLink*
++
+检测到链路速度较慢并停止复制。复制将自动恢复。此消息仅显示在对的源端。
+
+* * PausedVolumeSizeMismatch*
++
+目标卷的大小与源卷不同。
+
+* * PausedXCopy"
++
+正在对源卷发出 SCSI XCOPY 命令。必须先完成命令，然后才能恢复复制。此消息仅显示在对的源端。
+
+* * StoppedMisconfigure*
++
+检测到永久配置错误。远程卷已清除或取消配对。无法执行更正操作；必须建立新的配对。
+
+

@@ -1,0 +1,194 @@
+---
+permalink: api/reference_element_api_getipmiinfo.html 
+sidebar: sidebar 
+keywords: hardware,sensor,info,ipmi,report,get,getting,getipmiinfo 
+summary: 您可以使用 GetIpmiInfo 方法显示系统监控的节点风扇，进气和排气温度以及电源的传感器 \ （对象 \ ）的详细报告。 
+---
+= GetIpmiInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetIpmiInfo` 方法显示系统监控的节点风扇，进气和排气温度以及电源的传感器（对象）的详细报告。
+
+
+NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+传感器
+ a| 
+节点中每个传感器的详细信息。
+ a| 
+JSON 对象数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "GetIpmiInfo",
+  "params": {},
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+由于此 API 方法返回的响应较长，因此本文档特意删除了部分响应。其中包括系统为确保节点以最佳性能运行而监控的部分硬件信息。
+
+[listing]
+----
+{
+  "id": 1,
+    "result": {
+      "ipmiInfo": {
+          "sensors": [
+            {
+              "entityID": "7.1 (System Board)",
+              "sensorID": "0x72",
+              "sensorName": "SEL",
+              "sensorType": "Event Logging Disabled",
+              "uniqueSensorID": "7.1:0x72"
+            },
+            {
+              "assertionsEnabled": [ "General Chassis intrusion" ],
+              "deassertionsEnabled": [ "General Chassis intrusion" ],
+              "entityID": "7.1 (System Board)", "sensorID": "0x73",
+              "sensorName": "Intrusion",
+              "sensorType": "Physical Security",
+              "uniqueSensorID": "7.1:0x73"
+            },
+            {THIS ENTIRE SECTION IS REPEATED FOR EACH FAN IN THE SYSTEM
+              "assertionEvents": [],
+              "assertionsEnabled": [],
+              "deassertionsEnabled": [],
+              "entityID": "7.1 (System Board)",
+              "eventMessageControl": "Per-threshold",
+              "lowerCritical": "720.000",
+              "lowerNonCritical": "840.000",
+              "maximumSensorRange": "Unspecified",
+              "minimumSensorRange": "Unspecified",
+              "negativeHysteresis": "600.000",
+              "nominalReading": "10080.000",
+              "normalMaximum": "23640.000",
+              "normalMinimum": "16680.000",
+              "positiveHysteresis": "600.000",
+              "readableThresholds": "lcr lnc",
+              "sensorID": "0x30",
+              "sensorName": "Fan1A RPM",
+              "sensorReading": "4440 (+/- 120) RPM",
+              "sensorType": "Fan",
+              "settableThresholds": "",
+              "status": "ok",
+              "thresholdReadMask": "lcr lnc",
+              "uniqueSensorID": "7.1:0x30"
+            },
+            .
+            .
+            .
+            {THIS ENTIRE SECTION IS REPEATED FOR THE EXHAUST TEMPERATURE OF EACH NODE
+              "assertionEvents": [],
+              "assertionsEnabled": [],
+              "entityID": "7.1 (System Board)",
+              "eventMessageControl": "Per-threshold",
+              "lowerCritical": "3.000",
+              "lowerNonCritical": "8.000",
+              "maximumSensorRange": "Unspecified",
+              "minimumSensorRange": "Unspecified",
+              "negativeHysteresis": "1.000",
+              "nominalReading": "23.000",
+              "normalMaximum": "69.000",
+              "normalMinimum": "11.000",
+              "positiveHysteresis": "1.000",
+              "readableThresholds": "lcr lnc unc ucr",
+              "sensorID": "0x1",
+              "sensorName": "Exhaust Temp",
+              "sensorReading": "44 (+/- 1) degrees C",
+              "sensorType": "Temperature",
+              "settableThresholds": "",
+              "status": "ok",
+              "uniqueSensorID": "7.1:0x1",
+              "upperCritical": "75.000",
+              "upperNonCritical": "70.000"
+            },
+            {THIS ENTIRE SECTION IS REPEATED FOR THE INLET TEMPERATURE OF EACH NODE
+              "assertionEvents": [],
+              "assertionsEnabled": [],
+              "deassertionsEnabled": [],
+              "entityID": "7.1 (System Board)",
+              "eventMessageControl": "Per-threshold",
+              "lowerCritical": "-7.000",
+              "lowerNonCritical": "3.000",
+              "maximumSensorRange": "Unspecified",
+              "minimumSensorRange": "Unspecified",
+              "negativeHysteresis": "1.000",
+              "nominalReading": "23.000",
+              "normalMaximum": "69.000",
+              "normalMinimum": "11.000",
+              "positiveHysteresis": "1.000",
+              "readableThresholds": "lcr lnc unc ucr",
+              "sensorID": "0x4",
+              "sensorName": "Inlet Temp",
+              "sensorReading": "20 (+/- 1) degrees C",
+              "sensorType": "Temperature",
+              "settableThresholds": "lcr lnc unc ucr",
+              "status": "ok",
+              "thresholdReadMask": "lcr lnc unc ucr",
+              "uniqueSensorID": "7.1:0x4",
+              "upperCritical": "47.000",
+              "upperNonCritical": "42.000"
+            },
+            {THIS ENTIRE SECTION IS REPEATED FOR EACH POWER SUPPLY ON EACH NODE
+              "assertionEvents": [],
+              "assertionsEnabled": [],
+              "entityID": "10.2 (Power Supply)",
+              "eventMessageControl": "Per-threshold", "maximumSensorRange": "Unspecified",
+              "minimumSensorRange": "Unspecified",
+              "negativeHysteresis": "Unspecified",
+              "nominalReading": "0.000",
+              "normalMaximum": "0.000",
+              "positiveHysteresis": "Unspecified",
+              "readableThresholds": "No Thresholds",
+              "sensorID": "0x6d",
+              "sensorName": "Voltage 2",
+              "sensorReading": "118 (+/- 0) Volts",
+              "sensorType": "Voltage",
+              "settableThresholds": "No Thresholds", "status": "ok", "uniqueSensorID": "10.2:0x6d"
+            },
+              .
+              .
+              .
+            }
+          ]
+        }
+      }
+    }
+----
+
+
+== 自版本以来的新增功能
+
+9.6

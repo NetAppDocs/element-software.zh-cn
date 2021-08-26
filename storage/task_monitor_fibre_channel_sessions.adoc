@@ -1,0 +1,23 @@
+---
+permalink: storage/task_monitor_fibre_channel_sessions.html 
+sidebar: sidebar 
+keywords: fibre channel sessions, fc, FC, sessions 
+summary: 您可以查看连接到集群的光纤通道 \ （ FC\ ）会话。您可以对信息进行筛选，以便仅包括要在窗口中显示的连接。 
+---
+= 查看光纤通道会话
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看连接到集群的光纤通道（ FC ）会话。您可以对信息进行筛选，以便仅包括要在窗口中显示的连接。
+
+. 在 Element UI 中，选择 * 报告 * > * FC 会话 * 。
+. 要查看筛选条件字段，请单击 * 筛选器 * 。
+
+
+
+
+== 了解更多信息
+
+xref:reference_monitor_fibre_channel_session_details.adoc[光纤通道会话详细信息]

@@ -1,0 +1,25 @@
+---
+permalink: storage/task_replication_perform_remote_replication_between_element_clusters.html 
+sidebar: sidebar 
+keywords: remote replication, clusters, Element software, failover, failback 
+summary: 对于运行 Element 软件的集群，通过实时复制可以快速创建卷数据的远程副本。您可以将一个存储集群与最多四个其他存储集群配对。您可以从集群对中的任一集群同步或异步复制卷数据，以实现故障转移和故障恢复。 
+---
+= 在运行 NetApp Element 软件的集群之间执行远程复制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于运行 Element 软件的集群，通过实时复制可以快速创建卷数据的远程副本。您可以将一个存储集群与最多四个其他存储集群配对。您可以从集群对中的任一集群同步或异步复制卷数据，以实现故障转移和故障恢复。
+
+复制过程包括以下步骤：
+
+image::../media/replication_element_clusters_workflow.gif[复制工作流示意图]
+
+* link:task_replication_plan_cluster_and_volume_pairing.html["规划集群和卷配对以实现实时复制"]
+* link:task_replication_pair_clusters.html["对集群进行配对以进行复制"]
+* link:task_replication_pair_volumes.html["对卷配对"]
+* link:task_replication_validate_volume_replication.html["验证卷复制"]
+* link:task_replication_delete_volume_relationship_after_replication.html["复制后删除卷关系"]
+* link:task_replication_manage_volume_relationships.html["管理卷关系"]
+

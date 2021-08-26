@@ -1,0 +1,115 @@
+---
+permalink: api/reference_element_api_modifysnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapmirror,relationship,modifysnapmirrorrelationship 
+summary: 您可以使用 ModifySnapMirrorRelationship 更改计划快照的执行间隔。您也可以使用此方法删除或暂停计划。 
+---
+= ModifySnapMirrorRelationship
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ModfySnapMirrorRelationship` 更改计划快照的执行间隔。您也可以使用此方法删除或暂停计划。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+
+
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+目标卷
+ a| 
+SnapMirror 关系中的目标卷。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeinfo]
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+maxTransferRate
+ a| 
+指定卷之间的最大数据传输速率，以 KB/ 秒为单位。默认值 0 为无限制，允许 SnapMirror 关系充分利用可用网络带宽。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+policyName
+ a| 
+指定关系的 ONTAP SnapMirror 策略的名称。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+scheduleName
+ a| 
+ONTAP 系统上用于更新 SnapMirror 关系的原有 cron 计划的名称。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+与 Element 存储集群通信的远程 ONTAP 存储系统的端点 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorRelationship
+ a| 
+包含已修改的 SnapMirror 关系属性的对象。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship]
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

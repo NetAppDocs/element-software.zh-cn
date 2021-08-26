@@ -1,0 +1,118 @@
+---
+permalink: api/reference_element_api_getsnmptrapinfo.html 
+sidebar: sidebar 
+keywords: snmp,trap,get,getting,info,getsnmptrapinfo 
+summary: 您可以使用 GetSnmpTrapInfo 方法获取当前 SNMP 陷阱配置信息。 
+---
+= GetSnmpTrapInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetSnmpTrapInfo` 方法获取当前 SNMP 陷阱配置信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+陷阱 Recipients
+ a| 
+要接收集群生成的陷阱的主机列表。
+ a| 
+xref:reference_element_api_snmptraprecipient.adoc[snmpTrapRecipient] 数组
+
+
+
+ a| 
+已启用 clusterFaultTrapsEnabled
+ a| 
+值 true 表示 solidFireClusterFaultNotification 配置为在记录集群故障时发送到陷阱接收方列表。
+ a| 
+boolean
+
+
+
+ a| 
+clusterFaultResolvedTrapsEnabled
+ a| 
+值 true 表示 solidFireClusterFaultResolvedNotification 配置为在解决集群故障后发送到陷阱接收方列表。
+ a| 
+boolean
+
+
+
+ a| 
+clusterEventTrapsEnabled
+ a| 
+值 true 表示 solidFireClusterEventNotification 配置为在记录集群事件时发送到陷阱接收方列表。
+ a| 
+boolean
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method":"GetSnmpTrapInfo"
+   "params":{},
+   "id":1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "clusterEventTrapsEnabled": true,
+    "clusterFaultResolvedTrapsEnabled": true,
+    "clusterFaultTrapsEnabled": true,
+    "trapRecipients": [
+     {
+      "community": "public",
+      "host": "192.168.151.60",
+      "port": 162
+     },
+     {
+      "community": "solidfireAlerts",
+      "host": "NetworkMonitor",
+      "port": 162
+     },
+     {
+      "community": "wakeup",
+      "host": "PhoneHomeAlerter",
+      "port": 1008
+     }
+   ]
+ }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

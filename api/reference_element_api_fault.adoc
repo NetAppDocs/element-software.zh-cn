@@ -1,0 +1,173 @@
+---
+permalink: api/reference_element_api_fault.html 
+sidebar: sidebar 
+keywords: object,objects,fault 
+summary: fault 对象包含有关在集群中检测到的故障的信息。ListClusterFaults 方法将返回集群故障信息。 
+---
+= 故障
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+fault 对象包含有关在集群中检测到的故障的信息。`ListClusterFaults` 方法将返回集群故障信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+clusterFaultID
+ a| 
+与每个集群故障关联的唯一 ID 。
+ a| 
+整型
+
+
+
+ a| 
+code
+ a| 
+检测到的特定故障的故障代码。有关更多详细信息，请参见集群故障代码。
+ a| 
+string
+
+
+
+ a| 
+数据
+ a| 
+其他特定于故障的信息。
+ a| 
+JSON 对象
+
+
+
+ a| 
+date
+ a| 
+UTC+0 格式的当前时间。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+详细信息
+ a| 
+故障的问题描述以及其他详细信息。
+ a| 
+string
+
+
+
+ a| 
+驱动器 ID
+ a| 
+驱动器 ID 列表中的第一个驱动器 ID 。如果驱动器 ID 列表为空（表示未返回任何与驱动器相关的故障），则此值为 0 。
+ a| 
+整型
+
+
+
+ a| 
+驱动器 ID
+ a| 
+此故障所引用的驱动器的驱动器 ID 值列表。包含在与驱动器有关的故障中。如果没有，则此数组为空。
+ a| 
+整型数组
+
+
+
+ a| 
+nodeHardwareFaultID
+ a| 
+分配给集群上的硬件故障的标识符。
+ a| 
+整型
+
+
+
+ a| 
+节点 ID
+ a| 
+此故障所引用节点的节点 ID 。节点和驱动器故障包含此参数，否则设置为 0 。
+ a| 
+整型
+
+
+
+ a| 
+已解决
+ a| 
+故障的已解决状态。可能值：
+
+* true ：不再检测到故障。
+* false ：故障仍然存在。
+
+ a| 
+boolean
+
+
+
+ a| 
+ResolvedDate
+ a| 
+解决故障的日期和时间。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+服务 ID
+ a| 
+与故障关联的服务。如果故障不与服务关联，则此值为 "0" （零）。
+ a| 
+整型
+
+
+
+ a| 
+severity
+ a| 
+故障的严重性。可能值：
+
+* 警告：次要问题描述。集群正在运行，在此严重性级别允许升级。
+* 错误：通常不会影响服务的故障（可能会降低性能或丢失 HA 除外）。某些功能可能已禁用。
+* 严重：影响服务的严重故障。系统无法处理 API 请求或客户端 I/O ，并面临数据丢失的风险。
+* 最佳实践：由次优系统配置触发的故障。
+
+ a| 
+string
+
+
+
+ a| 
+type
+ a| 
+故障的类型。可能值：
+
+* node ：影响整个节点的故障。
+* drive ：影响单个驱动器的故障。
+* cluster ：影响整个集群的故障。
+* service ：影响集群上某个服务的故障。
+* volume ：影响单个卷的故障。
+
+ a| 
+string
+
+|===
+
+
+== 了解更多信息
+
+* xref:reference_element_api_listclusterfaults.adoc[ListClusterFaults]
+* xref:reference_element_api_app_a_cluster_fault_codes.adoc[集群故障代码]
+

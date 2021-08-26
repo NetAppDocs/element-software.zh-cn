@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_createsnapmirrorendpoint_unmanaged.html 
+sidebar: sidebar 
+keywords: SnapMirror,endpoint,unmanaged,create,creating,CreateSnapMirrorEndpointUnmanaged 
+summary: Element 软件存储系统使用 CreateSnapMirrorEndpointUnmanaged 方法使远程非受管 SnapMirror 端点能够与 Element 存储集群进行通信。不能使用 Element SnapMirror API 管理非受管端点。它们必须使用 ONTAP 管理软件或 API 进行管理。 
+---
+= CreateSnapMirrorEndpointUnmanaged
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件存储系统使用 `CreateSnapMirrorEndpointUnmanaged` 方法使远程非受管 SnapMirror 端点能够与 Element 存储集群进行通信。不能使用 Element SnapMirror API 管理非受管端点。它们必须使用 ONTAP 管理软件或 API 进行管理。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+clusterName
+ a| 
+端点的名称。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+ipAddresses
+ a| 
+应与此 Element 存储集群通信的 ONTAP 存储系统集群的 IP 地址列表。
+ a| 
+string array
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpoint
+ a| 
+新创建的 SnapMirror 端点。
+ a| 
+xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint]
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.3

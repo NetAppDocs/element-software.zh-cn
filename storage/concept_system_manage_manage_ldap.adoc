@@ -1,0 +1,351 @@
+---
+permalink: storage/concept_system_manage_manage_ldap.html 
+sidebar: sidebar 
+keywords: element, solidfire, ldap, enable, disable, test, config, addresses, pre-configuration steps, authentication, element api, view ldap details 
+summary: 您可以设置轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ），以便为 SolidFire 存储启用基于目录的安全登录功能。您可以在集群级别配置 LDAP 并授权 LDAP 用户和组。 
+---
+= 管理 LDAP
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以设置轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ），以便为 SolidFire 存储启用基于目录的安全登录功能。您可以在集群级别配置 LDAP 并授权 LDAP 用户和组。
+
+管理 LDAP 涉及使用现有 Microsoft Active Directory 环境为 SolidFire 集群设置 LDAP 身份验证并测试配置。
+
+
+NOTE: 您可以同时使用 IPv4 和 IPv6 地址。
+
+启用 LDAP 涉及以下高级步骤，详细说明如下：
+
+. * 完成 LDAP 支持的预配置步骤 * 。验证您是否具有配置 LDAP 身份验证所需的所有详细信息。
+. * 启用 LDAP 身份验证 * 。使用 Element UI 或 Element API 。
+. * 验证 LDAP 配置 * 。或者，也可以通过运行 GetLdapConfiguration API 方法或使用 Element UI 检查 LCAP 配置来检查集群是否配置了正确的值。
+. * 测试 LDAP 身份验证 * （使用 `readonly` 用户）。通过运行 TestLdapAuthentication API 方法或使用 Element UI 测试 LDAP 配置是否正确。在此初始测试中，请使用 `readonly` 用户的用户名 `sAMAccountName` 。这将验证您的集群是否已正确配置 LDAP 身份验证，并验证 `readonly` 凭据和访问是否正确。如果此步骤失败，请重复步骤 1 到 3 。
+. * 测试 LDAP 身份验证 * （使用要添加的用户帐户）。使用要添加为 Element 集群管理员的用户帐户重复 setp 4 。复制 `d名称` （ DN ）或用户（或组）。此 DN 将在步骤 6 中使用。
+. * 添加 LDAP 集群管理 * （复制并粘贴测试 LDAP 身份验证步骤中的 DN ）。使用 Element UI 或 AddLdapClusterAdmin API 方法，创建具有适当访问级别的新集群管理员用户。对于用户名，请粘贴您在步骤 5 中复制的完整 DN 。这样可以确保 DN 格式正确。
+. * 测试集群管理员访问权限 * 。使用新创建的 LDAP 集群管理员用户登录到集群。如果添加了 LDAP 组，则可以以该组中的任何用户身份登录。
+
+
+
+
+== 完成 LDAP 支持的预配置步骤
+
+在 Element 中启用 LDAP 支持之前，您应先设置 Windows Active Directory 服务器并执行其他预配置任务。
+
+.步骤
+. 设置 Windows Active Directory 服务器。
+. * 可选： * 启用 LDAPS 支持。
+. 创建用户和组。
+. 创建一个只读服务帐户（例如 `sfreadonly` ），用于搜索 LDAP 目录。
+
+
+
+
+== 使用 Element 用户界面启用 LDAP 身份验证
+
+您可以配置存储系统与现有 LDAP 服务器的集成。这样， LDAP 管理员就可以集中管理用户的存储系统访问权限。
+
+您可以使用 Element 用户界面或 Element API 配置 LDAP 。此操作步骤介绍了如何使用 Element UI 配置 LDAP 。
+
+此示例显示了如何在 SolidFire 上配置 LDAP 身份验证，并使用 `SearchAndBind` 作为身份验证类型。此示例使用一个 Windows Server 2012 R2 Active Directory 服务器。
+
+.步骤
+. 单击 * 集群 * > * LDAP * 。
+. 单击 * 是 * 以启用 LDAP 身份验证。
+. 单击 * 添加服务器 * 。
+. 输入 * 主机名 /IP 地址 * 。
++
+
+NOTE: 也可以输入可选的自定义端口号。
+
++
+例如，要添加自定义端口号，请输入 < 主机名或 IP 地址 > ： < 端口号 >
+
+. * 可选： * 选择 * 使用 LDAPS 协议 * 。
+. 在 * 常规设置 * 中输入所需信息。
++
+image::../media/element_new_ldap_servers.jpg[添加新的 LDAP 服务器]
+
+. 单击 * 启用 LDAP* 。
+. 如果要测试用户的服务器访问权限，请单击 * 测试用户身份验证 * 。
+. 复制显示的可分辨名称和用户组信息，以供日后创建集群管理员时使用。
+. 单击 * 保存更改 * 以保存任何新设置。
+. 要在此组中创建用户以便任何人都可以登录，请完成以下操作：
++
+.. 单击 * 用户 * > * 查看 * 。
++
+image::../media/element_new_cluster_admin.jpg[Element 新集群管理员]
+
+.. 对于新用户，单击 "User Type" （用户类型）中的 "* ldap* " ，然后将您复制的组粘贴到 "Distinguished Name" （可分辨名称）字段中。
+.. 选择权限，通常为所有权限。
+.. 向下滚动到最终用户许可协议，然后单击 * 我接受 * 。
+.. 单击 * 创建集群管理员 * 。
++
+现在，您的用户具有 Active Directory 组的值。
+
+
+
+
+
+要对此进行测试，请从 Element UI 中注销，然后以该组中的用户身份重新登录。
+
+
+
+== 使用 Element API 启用 LDAP 身份验证
+
+您可以配置存储系统与现有 LDAP 服务器的集成。这样， LDAP 管理员就可以集中管理用户的存储系统访问权限。
+
+您可以使用 Element 用户界面或 Element API 配置 LDAP 。此操作步骤介绍了如何使用 Element API 配置 LDAP 。
+
+要在 SolidFire 集群上利用 LDAP 身份验证，请首先使用 `EnableLdapAuthentication` API 方法在集群上启用 LDAP 身份验证。
+
+.步骤
+. 首先使用 `EnableLdapAuthentication` API 方法在集群上启用 LDAP 身份验证。
+. 输入所需信息。
++
+[listing]
+----
+{
+     "method":"EnableLdapAuthentication",
+     "params":{
+          "authType": "SearchAndBind",
+          "groupSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+          "groupSearchType": "ActiveDirectory",
+          "searchBindDN": "SFReadOnly@prodtest.solidfire.net",
+          "searchBindPassword": "ReadOnlyPW",
+          "userSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net ",
+          "userSearchFilter": "(&(objectClass=person)(sAMAccountName=%USERNAME%))"
+          "serverURIs": [
+               "ldap://172.27.1.189",
+          [
+     },
+  "id":"1"
+}
+----
+. 更改以下参数的值：
++
+[cols="2*"]
+|===
+| 使用的参数 | Description 
+
+
+ a| 
+AuthType ： SearchAndBind
+ a| 
+指示集群将使用只读服务帐户首先搜索要进行身份验证的用户，然后在发现并经过身份验证后绑定该用户。
+
+
+
+ a| 
+groupSearchBaseDN ： DC=prodtest ， dc=solidfire ， dc=net
+ a| 
+指定 LDAP 树中开始搜索组的位置。在本示例中，我们使用了树的根。如果 LDAP 树非常大，您可能需要将其设置为更精细的子树以减少搜索时间。
+
+
+
+ a| 
+userSearchBaseDN ： DC=prodtest ， dc=solidfire ， dc=net
+ a| 
+指定 LDAP 树中开始搜索用户的位置。在本示例中，我们使用了树的根。如果 LDAP 树非常大，您可能需要将其设置为更精细的子树以减少搜索时间。
+
+
+
+ a| 
+groupSearchType ： ActiveDirectory
+ a| 
+使用 Windows Active Directory 服务器作为 LDAP 服务器。
+
+
+
+ a| 
+[listing]
+----
+userSearchFilter:
+“(&(objectClass=person)(sAMAccountName=%USERNAME%))”
+----
+要使用 userPrincipalName （用于登录的电子邮件地址），您可以将 userSearchFilter 更改为：
+
+[listing]
+----
+“(&(objectClass=person)(userPrincipalName=%USERNAME%))”
+----
+或者，要同时搜索 userPrincipalName 和 sAMAccountName ，您可以使用以下 userSearchFilter ：
+
+[listing]
+----
+“(&(objectClass=person)(
+----| （ sAMAccountName=%USERNAME% ）（ userPrincipalName=%USERNAME% ）） " —— 
+
+
+ a| 
+利用 sAMAccountName 作为我们登录到 SolidFire 集群的用户名。这些设置会指示 LDAP 在 sAMAccountName 属性中搜索登录期间指定的用户名，并将搜索限制为在 objectClass 属性中使用 "`person` " 作为值的条目。
+ a| 
+searchBindDN
+
+
+
+ a| 
+这是将用于搜索 LDAP 目录的只读用户的可分辨名称。对于 Active Directory ，通常最容易为用户使用 userPrincipalName （电子邮件地址格式）。
+ a| 
+searchBindPassword
+
+|===
+
+
+要对此进行测试，请从 Element UI 中注销，然后以该组中的用户身份重新登录。
+
+
+
+== 查看 LDAP 详细信息
+
+在 "Cluster" 选项卡上的 "LDAP" 页面上查看 LDAP 信息。
+
+
+NOTE: 要查看这些 LDAP 配置设置，必须启用 LDAP 。
+
+. 要使用 Element UI 查看 LDAP 详细信息，请单击 * 集群 * > * LDAP * 。
++
+** * 主机名 /IP 地址 * ： LDAP 或 LDAPS 目录服务器的地址。
+** * 身份验证类型 * ：用户身份验证方法。可能值：
++
+*** 直接绑定
+*** 搜索并绑定
+
+
+** * 搜索绑定 DN* ：用于登录以对用户执行 LDAP 搜索的完全限定 DN （需要对 LDAP 目录具有绑定级别访问权限）。
+** * 搜索绑定密码 * ：用于对 LDAP 服务器访问进行身份验证的密码。
+** * 用户搜索基础 DN* ：用于开始用户搜索的树的基础 DN 。系统将从指定位置搜索子树。
+** * 用户搜索筛选器 * ：使用您的域名输入以下内容：
++
+` （ & （ objectClass=person ）（ = （ sAMAccountName=%USERNAME% ）（ userPrincipalName=%USERNAME% ）））`
+
+** * 组搜索类型 * ：用于控制使用的默认组搜索筛选器的搜索类型。可能值：
++
+*** Active Directory ：用户的所有 LDAP 组的嵌套成员资格。
+*** 无组：无组支持。
+*** Member DN ：成员 DN 样式的组（单层）。
+
+
+** * 组搜索基础 DN* ：用于开始组搜索的树的基础 DN 。系统将从指定位置搜索子树。
+** * 测试用户身份验证 * ：配置 LDAP 后，使用此选项测试 LDAP 服务器的用户名和密码身份验证。输入已存在的帐户以测试此问题。此时将显示可分辨名称和用户组信息，您可以复制这些信息以供日后创建集群管理员时使用。
+
+
+
+
+
+
+== 测试 LDAP 配置
+
+配置 LDAP 后，您应使用 Element UI 或 Element API `TestLdapAuthentication` 方法对其进行测试。
+
+.步骤
+. 要使用 Element UI 测试 LDAP 配置，请执行以下操作：
++
+.. 单击 * 集群 * > * LDAP * 。
+.. 单击 * 测试 LDAP 身份验证 * 。
+.. 使用下表中的信息解决任何问题：
++
+[cols="2*"]
+|===
+| 错误消息 | Description 
+
+
+ a| 
+ xLDAPUserNotFound a| 
+*** 在已配置的 `userSearchBaseDN` 子树中未找到要测试的用户。
+*** `userSearchFilter` 配置不正确。
+
+
+
+
+ a| 
+ xLDAPBindFailed (Error: Invalid credentials) a| 
+*** 要测试的用户名是有效的 LDAP 用户，但提供的密码不正确。
+*** 要测试的用户名是有效的 LDAP 用户，但此帐户当前已禁用。
+
+
+
+
+ a| 
+ xLDAPSearchBindFailed (Error: Can't contact LDAP server) a| 
+LDAP 服务器 URI 不正确。
+
+
+
+ a| 
+ xLDAPSearchBindFailed (Error: Invalid credentials) a| 
+只读用户名或密码配置不正确。
+
+
+
+ a| 
+ xLDAPSearchFailed (Error: No such object) a| 
+`userSearchBaseDN` 不是 LDAP 树中的有效位置。
+
+
+
+ a| 
+ xLDAPSearchFailed (Error: Referral) a| 
+*** `userSearchBaseDN` 不是 LDAP 树中的有效位置。
+*** `userSearchBaseDN` 和 `groupSearchBaseDN` 位于嵌套的 OU 中。这可能会引发发生原因权限问题。临时解决策将在用户和组基本 DN 条目中包含 OU （例如： `ou=storage ， cn=company ， cn=com` ）
+
+
+|===
+
+
+. 要使用 Element API 测试 LDAP 配置，请执行以下操作：
++
+.. 调用 TestLdapAuthentication 方法。
++
+[listing]
+----
+{
+  "method":"TestLdapAuthentication",
+     "params":{
+        "username":"admin1",
+        "password":"admin1PASS
+      },
+      "id": 1
+}
+----
+.. 查看结果。如果 API 调用成功，结果将包括指定用户的可分辨名称以及用户所属的组列表。
++
+[listing]
+----
+{
+"id": 1
+     "result": {
+         "groups": [
+              "CN=StorageMgmt,OU=PTUsers,DC=prodtest,DC=solidfire,DC=net"
+         ],
+         "userDN": "CN=Admin1 Jones,OU=PTUsers,DC=prodtest,DC=solidfire,DC=net"
+     }
+}
+----
+
+
+
+
+
+
+== 禁用 LDAP
+
+您可以使用 Element UI 禁用 LDAP 集成。
+
+开始之前，您应记下所有配置设置，因为禁用 LDAP 会擦除所有设置。
+
+.步骤
+. 单击 * 集群 * > * LDAP * 。
+. 单击 * 否 * 。
+. 单击 * 禁用 LDAP* 。
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

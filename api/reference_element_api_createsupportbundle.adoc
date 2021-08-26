@@ -1,0 +1,157 @@
+---
+permalink: api/reference_element_api_createsupportbundle.html 
+sidebar: sidebar 
+keywords: create,creating,support,bundle,CreateSupportBundle 
+summary: 您可以使用 CreateSupportBundle 在节点的目录下创建支持包文件。创建后，此捆绑包将以 tar.gz 文件的形式存储在节点上。 
+---
+= CreateSupportBundle
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CreateSupportBundle` 在节点的目录下创建支持包文件。创建后，该捆绑包将以 tar 文件的形式存储在节点上（可以通过 extraArgs 参数使用 gz 压缩选项。）
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+捆绑包名称
+ a| 
+支持包的唯一名称。如果未提供名称，则使用 "supportbundle" 和节点名称作为文件名。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+非凡的 Args
+ a| 
+使用 "-compress gz" 将支持包创建为 tar.gz 文件。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+超时秒
+ a| 
+支持包脚本运行的秒数。
+ a| 
+整型
+ a| 
+1500
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+详细信息
+ a| 
+支持包的详细信息。可能值：
+
+* bundleName ：在 CreateSupportBundleAPI 方法中指定的名称。如果未指定名称，则使用 "supportbundle" 。
+* extraArgs ：使用此方法传递的参数。
+* files ：系统创建的支持包文件的列表。
+* output ：创建支持包的脚本的命令行输出。
+* timeoutSec ：支持包脚本在停止之前运行的秒数。
+* url ：指向创建的支持包的 URL 。
+
+ a| 
+JSON 对象
+
+
+
+ a| 
+Duration
+ a| 
+创建支持包所用的时间，格式为 HH ： MM ： SS.ssssss 。
+ a| 
+string
+
+
+
+ a| 
+结果
+ a| 
+支持包操作的成功或失败。
+ a| 
+string
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+ "method": "CreateSupportBundle",
+"params": {
+  "extraArgs": "--compress gz"
+ },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+  "details": {
+    "bundleName": "supportbundle",
+    "extraArgs": "--compress gz",
+    "files": [
+         "supportbundle.nodehostname.tar.gz"
+     ],
+     "output": "timeout -s KILL 1500s /sf/scripts/sfsupportbundle --quiet --compress gz /tmp/solidfire-dtemp.1L6bdX/supportbundle<br><br>Moved '/tmp/solidfire-dtemp.1L6bdX/supportbundle.nodehostname.tar.gz' to /tmp/supportbundles",
+      "timeoutSec": 1500,
+      "url": [
+          "https://nodeIP:442/config/supportbundles/supportbundle.nodehostname.tar.gz"
+      ]
+    },
+    "duration": "00:00:43.101627",
+    "result": "Passed"
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

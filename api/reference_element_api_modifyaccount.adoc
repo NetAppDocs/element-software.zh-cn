@@ -1,0 +1,187 @@
+---
+permalink: api/reference_element_api_modifyaccount.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,accounts,settings,modifyaccount 
+summary: 您可以使用 ModifyAccount 方法修改现有帐户。 
+---
+= ModifyAccount
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `MmodifyAccount` 方法修改现有帐户。
+
+锁定某个帐户后，来自该帐户的任何现有连接将立即终止。更改帐户的 CHAP 设置后，任何现有连接将保持活动状态，并且后续连接或重新连接将使用新的 CHAP 设置。要清除帐户的属性，请为 attributes 参数指定 ｛ ｝ 。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+accountId
+ a| 
+要修改的帐户的帐户 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+enableChap
+ a| 
+指定启动程序是否可以使用 CHAP 帐户凭据来访问卷。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+initiatorSecret
+ a| 
+用于启动程序的 CHAP 密钥。此密钥的长度必须为 12-16 个字符，并且不可破解。启动程序 CHAP 密钥必须唯一，并且不能与目标 CHAP 密钥相同。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+status
+ a| 
+帐户的状态。可能值：
+
+* Active ：帐户处于活动状态，允许连接。
+* locked ：帐户已锁定，连接被拒绝。
+
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+targetSecret
+ a| 
+用于目标的 CHAP 密钥（相互 CHAP 身份验证）。此密钥的长度必须为 12-16 个字符，并且不可破解。目标 CHAP 密钥必须唯一，并且不能与启动程序 CHAP 密钥相同。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+username
+ a| 
+用于更改与帐户关联的用户名。（长度必须为 1 到 64 个字符）。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+account
+ a| 
+包含已修改帐户的相关信息的对象。
+ a| 
+xref:reference_element_api_account.adoc[account]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例。在此示例中，通过为属性指定 ｛ ｝ 将其清除：
+
+[listing]
+----
+{
+   "method": "ModifyAccount",
+   "params": {
+     "accountID"  : 25,
+     "status"   : "locked",
+     "attributes" : {}
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "account": {
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "username": "user1",
+        "accountID": 1,
+        "volumes": [
+        ],
+        "enableChap": true,
+        "initiatorSecret": "txz123456q890",
+        "attributes": {
+        },
+        "status": active",
+        "targetSecret": "rxe123b567890"
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

@@ -1,0 +1,145 @@
+---
+permalink: storage/reference_system_manage_fips_ssl_cipher_changes.html 
+sidebar: sidebar 
+keywords: fips, ssl ciphers, 140-2, encryption algorithms 
+summary: SSL 密码是主机用来建立安全通信的加密算法。Element 软件支持标准密码，而启用 FIPS 140-2 模式时则支持非标准密码。 
+---
+= SSL 密码
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SSL 密码是主机用来建立安全通信的加密算法。Element 软件支持标准密码，而启用 FIPS 140-2 模式时则支持非标准密码。
+
+以下列表提供了 Element 软件支持的标准安全套接字层（ SSL ）密码以及启用 FIPS 140-2 模式时支持的 SSL 密码：
+
+* 已禁用 * FIPS 140-2 *
++
+tls_DHE_RSA_WIT_AES_128_CBC_SHA256 （ DH 2048 ） - A
+
++
+tls_DHE_RSA_WIT_AES_128_GCM_SHA256 （ DH 2048 ） - A
+
++
+tls_DHE_RSA_WIT_AES_256_CBC_SHA256 （ DH 2048 ） - A
+
++
+tls_DHE_RSA_WIT_AES_256_GCM_SHA384 （ DH 2048 ）— A
+
++
+tls_ECDHE_RSA_WIT_AES_128_CBC_SHA256 （ secp256r1 ）— A
+
++
+tls_ECDHE_RSA_WIT_AES_128_GCM_SHA256 （ secp256r1 ）— A
+
++
+tls_ECDHE_RSA_WITE_AES_256_CBC_SHA384 （ secp256r1 ）— A
+
++
+tls_ECDHE_RSA_WIT_AES_256_GCM_SHA384 （ secp256r1 ）— A
+
++
+tls_rsa_and_3DES_EDE_CBC_SHA （ RSA 2048 ） - C
+
++
+tls_rsa_and_aes_128_cbc_sha （ RSA 2048 ）— A
+
++
+tls_rsa_and_aes_128_cbc_SHA256 （ RSA 2048 ） - A
+
++
+tls_rsa_and_aes_128_gcm_SHA256 （ RSA 2048 ）— A
+
++
+tls_rsa_and_aes_256_cbc_sha （ RSA 2048 ）— A
+
++
+tls_rsa_and_aes_256_cbc_SHA256 （ RSA 2048 ） - A
+
++
+tls_rsa_and_aes_256_gcm_SHA384 （ RSA 2048 ）— A
+
++
+tls_rsa_and_Camellia_128_CBC_SHA （ RSA 2048 ）— A
+
++
+tls_rsa_and_Camellia_256_CBC_SHA （ RSA 2048 ）— A
+
++
+tls_rsa_and_ide_cbc_sha （ RSA 2048 ）— A
+
++
+tls_rsa_and_rc4_128_md5 （ RSA 2048 ） - C
+
++
+tls_rsa_and_rc4_128_sha （ RSA 2048 ） - C
+
++
+tls_rsa_and_seed_cbc_sha （ RSA 2048 ）— A
+
+* 已启用 * FIPS 140-2
++
+tls_DHE_RSA_WIT_AES_128_CBC_SHA256 （ DH 2048 ） - A
+
++
+tls_DHE_RSA_WIT_AES_128_GCM_SHA256 （ DH 2048 ） - A
+
++
+tls_DHE_RSA_WIT_AES_256_CBC_SHA256 （ DH 2048 ） - A
+
++
+tls_DHE_RSA_WIT_AES_256_GCM_SHA384 （ DH 2048 ）— A
+
++
+tls_ECDHE_RSA_WITE_AES_128_CBC_SHA256 （ sect571r1 ）— A
+
++
+tls_ECDHE_RSA_WIT_AES_128_CBC_SHA256 （ secp256r1 ）— A
+
++
+tls_ECDHE_RSA_WIT_AES_128_GCM_SHA256 （ secp256r1 ）— A
+
++
+tls_ECDHE_RSA_WIT_AES_128_GCM_SHA256 （ sect571r1 ）— A
+
++
+tls_ECDHE_RSA_WITE_AES_256_CBC_SHA384 （ sect571r1 ）— A
+
++
+tls_ECDHE_RSA_WITE_AES_256_CBC_SHA384 （ secp256r1 ）— A
+
++
+tls_ECDHE_RSA_WIT_AES_256_GCM_SHA384 （ secp256r1 ）— A
+
++
+tls_ECDHE_RSA_WIT_AES_256_GCM_SHA384 （ sect571r1 ）— A
+
++
+tls_rsa_and_3DES_EDE_CBC_SHA （ RSA 2048 ） - C
+
++
+tls_rsa_and_aes_128_cbc_sha （ RSA 2048 ）— A
+
++
+tls_rsa_and_aes_128_cbc_SHA256 （ RSA 2048 ） - A
+
++
+tls_rsa_and_aes_128_gcm_SHA256 （ RSA 2048 ）— A
+
++
+tls_rsa_and_aes_256_cbc_sha （ RSA 2048 ）— A
+
++
+tls_rsa_and_aes_256_cbc_SHA256 （ RSA 2048 ） - A
+
++
+tls_rsa_and_aes_256_gcm_SHA384 （ RSA 2048 ）— A
+
+
+
+
+
+== 了解更多信息
+
+xref:task_system_manage_fips_enable_fips_140_2_for_https.adoc[在集群上为 HTTPS 启用 FIPS 140-2]

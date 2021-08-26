@@ -1,0 +1,24 @@
+---
+permalink: storage/task_data_manage_vol_access_group_remove_initiators_from_an_access_group.html 
+sidebar: sidebar 
+keywords: initiator, remove from volume access group, access groups, remove initiator 
+summary: 从访问组中删除启动程序后，它将无法再访问该卷访问组中的卷。对卷的正常帐户访问不会中断。 
+---
+= 从访问组中删除启动程序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+从访问组中删除启动程序后，它将无法再访问该卷访问组中的卷。对卷的正常帐户访问不会中断。
+
+修改帐户中的 CHAP 设置或从访问组中删除启动程序或卷可能会使发生原因启动程序意外丢失对卷的访问权限。要验证卷访问不会意外丢失，请始终注销将受帐户或访问组更改影响的 iSCSI 会话，并验证启动程序是否可以在完成启动程序设置和集群设置的任何更改后重新连接到卷。
+
+.步骤
+. 单击 * 管理 * > * 访问组 * 。
+. 单击要删除的访问组的 * 操作 * 图标。
+. 在显示的菜单中，选择 * 编辑 * 。
+. 在 * 编辑卷访问组 * 对话框的添加启动程序下，单击 * 启动程序 * 列表上的箭头。
+. 为要从访问组中删除的每个启动程序选择 x 图标。
+. 单击 * 保存更改 * 。
+

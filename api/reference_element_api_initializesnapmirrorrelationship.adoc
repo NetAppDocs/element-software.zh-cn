@@ -1,0 +1,85 @@
+---
+permalink: api/reference_element_api_initializesnapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: snapmirror,relationship,relationships,initialize,initializing,initializesnapmirrorrelationship 
+summary: Element 软件 Web UI 可使用 InitializeSnapMirrorRelationship 方法通过在集群之间执行初始基线传输来初始化 SnapMirror 关系中的目标卷。 
+---
+= InitializeSnapMirrorRelationship
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `InitializeSnapMirrorRelationship` 方法通过在集群之间执行初始基线传输来初始化 SnapMirror 关系中的目标卷。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+远程 ONTAP 系统的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+目标卷
+ a| 
+SnapMirror 关系中的目标卷。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+maxTransferRate
+ a| 
+指定卷之间的最大数据传输速率，以 KB/ 秒为单位。默认值 0 为无限制，允许 SnapMirror 关系充分利用可用网络带宽。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorRelationship
+ a| 
+有关已初始化的 SnapMirror 关系的信息。
+ a| 
+xref:reference_element_api_snapmirrorrelationship.adoc[snapMirrorRelationship]
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

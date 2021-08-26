@@ -1,0 +1,98 @@
+---
+permalink: api/reference_element_api_completeclusterpairing.html 
+sidebar: sidebar 
+keywords: CompleteClusterPairing,cluster,pair,pairing,complete,completing 
+summary: CompleteClusterPairing 方法是集群配对过程的第二步。将此方法与从 StartClusterPairing 方法收到的编码密钥结合使用，以完成集群配对过程。 
+---
+= CompleteClusterPairing
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+`CompleteClusterPairing` 方法是集群配对过程的第二步。将此方法与从 `STartClusterPairing` 方法收到的编码密钥结合使用，以完成集群配对过程。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+clusterPairingKey
+ a| 
+从返回的字符串 xref:reference_element_api_startclusterpairing.adoc[启动集群配对] API 方法。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+clusterPairID
+ a| 
+集群对的唯一标识符。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "CompleteClusterPairing",
+   "params": {
+        "clusterPairingKey" : "7b22636c7573746572506169724944223a312c22636c75737465725061697255554944223a2231636561313336322d346338662d343631612d626537322d373435363661393533643266222c22636c7573746572556e697175654944223a2278736d36222c226d766970223a223139322e3136382e3133392e313232222c226e616d65223a224175746f54657374322d63307552222c2270617373776f7264223a22695e59686f20492d64774d7d4c67614b222c22727063436f6e6e656374696f6e4944223a3931333134323634392c22757365726e616d65223a225f5f53465f706169725f50597a796647704c7246564432444a42227d"
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" : {
+       "clusterPairID" : 1
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_startclusterpairing.adoc[启动集群配对]

@@ -1,0 +1,79 @@
+---
+permalink: api/reference_element_api_getcurrentclusteradmin.html 
+sidebar: sidebar 
+keywords: cluster,admin,get,getting,current,getcurrentclusteradmin 
+summary: 您可以使用 GetCurrentClusterAdmin 方法返回当前主集群管理员的信息主集群管理员是在创建集群时创建的。 
+---
+= GetCurrentClusterAdmin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetCurrentClusterAdmin` 方法返回当前主集群管理员的信息主集群管理员是在创建集群时创建的。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+clusterAdmin
+ a| 
+有关集群管理员的信息。
+ a| 
+xref:reference_element_api_clusteradmin.adoc[clusterAdmin]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method": "GetCurrentClusterAdmin",
+"id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+    "clusterAdmin":
+        "access": [
+           "administrator"
+        ],
+         "attributes": null,
+         "authMethod": "Cluster"
+         "clusterAdminID": 1,
+         "username": "admin"
+     }
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+10.0

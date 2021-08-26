@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_listactivenodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,active,node,nodes,listactivenodes 
+summary: 您可以使用 ListActiveNodes 方法返回集群中当前活动节点的列表。 
+---
+= ListActiveNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListActiveNodes` 方法返回集群中当前活动节点的列表。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+nodes
+ a| 
+集群中的活动节点列表。
+ a| 
+xref:reference_element_api_node.adoc[node] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListActiveNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+由于此响应示例的长度较长，因此它会记录在一个补充主题中。
+
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_response_example_listactivenodes.adoc[ListActiveNodes]

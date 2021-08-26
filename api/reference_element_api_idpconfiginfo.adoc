@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_idpconfiginfo.html 
+sidebar: sidebar 
+keywords: objects,object,idpConfigInfo 
+summary: idpConfigInfo 对象包含有关第三方身份提供程序 \ （ IdP ）的配置和集成详细信息。 
+---
+= idpConfigInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+idpConfigInfo 对象包含有关第三方身份提供程序（ IdP ）的配置和集成详细信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+enabled
+ a| 
+指定是否启用此第三方 IdP 配置。
+ a| 
+boolean
+
+
+
+ a| 
+idpConfigurationID
+ a| 
+第三方 IdP 配置的 UUID 。
+ a| 
+UUID
+
+
+
+ a| 
+idpMetadata
+ a| 
+用于 SAML 2.0 单点登录配置和集成详细信息的元数据。
+ a| 
+string
+
+
+
+ a| 
+idpName
+ a| 
+用于检索 SAML 2.0 单点登录的 IdP 提供程序的名称。
+ a| 
+string
+
+
+
+ a| 
+serviceProviderCertificate
+ a| 
+PEM 格式的 Base64 编码 PKCS#10 X.509 证书，用于与此 IdP 进行通信。
+ a| 
+string
+
+
+
+ a| 
+spMetadataUrl
+ a| 
+用于从集群中检索服务提供商（ Service Provider ， SP ）元数据以提供给 IdP 以建立信任关系的 URL 。
+ a| 
+string
+
+|===

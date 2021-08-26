@@ -1,0 +1,55 @@
+---
+permalink: api/reference_element_api_protectiondomainlevel.html 
+sidebar: sidebar 
+keywords: object,objects,protectionDomainLevel 
+summary: protectionDomainLevel 对象包含有关存储集群当前容错和故障恢复能力级别的信息。容错级别表示集群在发生故障时能够继续读取和写入数据，而故障恢复能力级别则表示集群能够在其相关类型的保护域中自动从一个或多个故障中自行恢复。 
+---
+= 保护域级别
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+protectionDomainLevel 对象包含有关存储集群当前容错和故障恢复能力级别的信息。容错级别表示集群在发生故障时能够继续读取和写入数据，而故障恢复能力级别则表示集群能够在其相关类型的保护域中自动从一个或多个故障中自行恢复。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+保护域类型
+ a| 
+具有关联容错和故障恢复能力的保护域的类型。可能值：
+
+* node ：任何单个节点。
+* chassis ：一个机箱中的任何单个节点或所有存储节点。
+* 自定义：一个客户定义的保护域中的所有存储节点。
+
+ a| 
+string
+
+
+
+ a| 
+故障恢复能力
+ a| 
+从此保护域类型的角度来看，此集群的当前故障恢复能力。
+ a| 
+xref:reference_element_api_protectiondomainresiliency.adoc[保护域弹性]
+
+
+
+ a| 
+容错
+ a| 
+从此保护域类型的角度来看，此集群的当前容错能力。
+ a| 
+xref:reference_element_api_protectiondomaintolerance.adoc[protectionDomainTolerance]
+
+|===

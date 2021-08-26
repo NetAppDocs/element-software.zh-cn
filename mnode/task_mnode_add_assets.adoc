@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_add_assets.html 
+summary: 您可以使用 REST API UI 将控制器资产添加到管理节点配置中。 
+keywords: netapp, mnode, management node, rest api, Element 
+---
+= 向管理节点添加控制器资产
+
+
+[role="lead"]
+您可以使用 REST API UI 将控制器资产添加到管理节点配置中。
+
+如果您最近扩展了安装，而新资产未自动添加到配置中，则可能需要添加资产。使用这些 API 添加最近添加到安装中的资产。
+
+.您需要什么？ #8217 ；将需要什么
+* 您的集群版本运行的是 NetApp Element 软件 11.3 或更高版本。
+* 您已部署运行 11.3 或更高版本的管理节点。
+* 您已在 vCenter 中创建新的 NetApp HCC 角色，以将管理节点服务视图限制为纯 NetApp 资产。请参见 link:task_mnode_create_netapp_hcc_role_vcenter.html["在 vCenter 中创建 NetApp HCC 角色"]
+
+
+.步骤
+. 获取安装的基本资产 ID ：
++
+.. 在管理节点上打开清单服务 REST API UI ：
++
+[listing]
+----
+https://[management node IP]/inventory/1/
+----
+.. 选择 * 授权 * 并完成以下操作：
++
+... 输入集群用户名和密码。
+... 输入客户端 ID `mnode-client` 。
+... 选择 * 授权 * 以开始会话。
+... 关闭窗口。
+
+
+.. 从 REST API UI 中，选择 * 获取​ /Installations * 。
+.. 选择 * 试用 * 。
+.. 选择 * 执行 * 。
+.. 从代码 200 响应正文中，复制安装的 `id` 。
++
+[listing, subs="+quotes"]
+----
+{
+  "installations": [
+    {
+      "_links": {
+        "collection": "https://10.111.211.111/inventory/1/installations",
+        "self": "https://10.111.217.111/inventory/1/installations/abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"
+      },
+      *"id": "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x",*
+----
++
+
+NOTE: 您的安装具有在安装或升级期间创建的基本资产配置。
+
+.. 从 REST API UI 中，选择 * 获取 /installations/ ｛ id ｝ * 。
+.. 选择 * 试用 * 。
+.. 将安装资产 ID 粘贴到 * id * 字段中。
+.. 选择 * 执行 * 。
+.. 在响应中，复制并保存集群控制器 ID （` "controllerId"` ），以供后续步骤使用。
+
+
+. 要将控制器子资产添加到现有基础资产，请选择：
++
+[listing]
+----
+POST /assets/{asset_id}/controllers
+----
++
+.. 在管理节点上打开 mNode 服务 REST API UI ：
++
+[listing]
+----
+https://[management node IP]/mnode
+----
+.. 选择 * 授权 * 并完成以下操作：
++
+... 输入集群用户名和密码。
+... 输入客户端 ID `mnode-client` 。
+... 选择 * 授权 * 以开始会话。
+... 关闭窗口。
+
+
+.. 选择 * POST /assets/ ｛ asset_id ｝ /controllers* 。
+.. 选择 * 试用 * 。
+.. 在 * asset_id* 字段中输入父基础资产 ID 。
+.. 将所需值添加到有效负载。
+.. 选择 * 执行 * 。
+
+
+
+
+[discrete]
+== 了解更多信息
+
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+

@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_addkeyservertoproviderkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,assigning to key provider,assign,addkeyservertoproviderkmip 
+summary: 您可以使用 AddKeyServerToProviderKmip 方法将密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器分配给指定的密钥提供程序。分配期间，系统会联系服务器以验证功能。如果指定的密钥服务器已分配给指定的密钥提供程序，则不会执行任何操作，也不会返回任何错误。您可以使用 RemoveKeyServerFromProviderKmip 方法删除此分配。 
+---
+= AddKeyServerToProviderKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `AddKeyServerToProviderKmip` 方法将密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器分配给指定的密钥提供程序。分配期间，系统会联系服务器以验证功能。如果指定的密钥服务器已分配给指定的密钥提供程序，则不会执行任何操作，也不会返回任何错误。您可以使用 `RemoveKeyServerFromProviderKmip` 方法删除此分配。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+密钥提供程序 ID
+ a| 
+要将密钥服务器分配到的密钥提供程序的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+密钥服务器 ID
+ a| 
+要分配的密钥服务器的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。只要不返回错误，此分配就会视为成功。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "AddKeyServerToProviderKmip",
+  "params": {
+    "keyProviderID": 1,
+    "keyServerID": 15
+    },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.7

@@ -1,0 +1,216 @@
+---
+permalink: api/reference_element_api_syncjob.html 
+sidebar: sidebar 
+keywords: object,objects,syncjob 
+summary: syncJob 对象包含有关正在集群上运行的克隆，远程复制或分区同步作业的信息。 
+---
+= syncJob
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+syncJob 对象包含有关正在集群上运行的克隆，远程复制或分区同步作业的信息。
+
+您可以使用 `ListSyncJobs` API 方法检索同步信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+块 PerSecond
+ a| 
+每秒从源集群传输到目标集群的数据块数。只有当 type 成员设置为 remote 时才存在。
+ a| 
+浮点
+
+
+
+ a| 
+分支类型
+ a| 
+仅为远程复制同步作业返回。可能值：
+
+* Snapshot
+* volume
+
+ a| 
+string
+
+
+
+ a| 
+字节 PerSecond
+ a| 
+克隆每秒处理的字节数。只有当 type 成员设置为 clone 或 slice 时才存在。
+ a| 
+浮点
+
+
+
+ a| 
+cloneID
+ a| 
+正在进行的克隆操作的标识符。只有当 type 成员设置为 clone 时才存在。
+ a| 
+整型
+
+
+
+ a| 
+当前字节
+ a| 
+克隆已在源卷中处理的字节数。只有当 type 成员设置为 clone 或 slice 时才存在。
+ a| 
+整型
+
+
+
+ a| 
+dstServiceID
+ a| 
+托管卷的主副本的服务标识符。只有当 type 成员设置为 remote 时才存在。
+ a| 
+整型
+
+
+
+ a| 
+dstVolumeID
+ a| 
+目标卷 ID 。只有当 type 成员设置为 clone 或 remote 时才存在。
+ a| 
+整型
+
+
+
+ a| 
+已过时间
+ a| 
+自同步作业启动以来经过的时间（以秒为单位）。
+ a| 
+浮点
+
+
+
+ a| 
+groupCloneID
+ a| 
+正在进行的组克隆操作的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+节点 ID
+ a| 
+指定发生克隆的节点。只有当 type 成员设置为 clone 时才存在。
+ a| 
+整型
+
+
+
+ a| 
+完成百分比
+ a| 
+同步作业完成百分比。
+ a| 
+整型
+
+
+
+ a| 
+余时间
+ a| 
+完成此操作的估计时间（以秒为单位）。
+ a| 
+整型
+
+
+
+ a| 
+切片 ID
+ a| 
+要同步的分区驱动器的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+阶段
+ a| 
+只有当 type 成员设置为 remote 或 clone 时才存在。可能值：
+
+* 元数据：复制正在确定需要将哪些数据传输到远程集群。复制过程的此阶段不会报告状态。
+* 数据：复制正在将大量数据传输到远程集群。
+* whole ：表示分区同步作业的分区向后兼容性。
+
+ a| 
+string
+
+
+
+ a| 
+snapshotId
+ a| 
+从中创建克隆的快照的 ID 。只有当 type 成员设置为 clone 时才存在。
+ a| 
+整型
+
+
+
+ a| 
+srcServiceID
+ a| 
+源服务 ID 。
+ a| 
+整型
+
+
+
+ a| 
+srcVolumeID
+ a| 
+源卷 ID 。
+ a| 
+整型
+
+
+
+ a| 
+totalBytes
+ a| 
+克隆的总字节数。只有当 type 成员设置为 clone 或 slice 时才存在。
+ a| 
+整型
+
+
+
+ a| 
+type
+ a| 
+同步操作的类型。可能值：
+
+* clone
+* 分区
+* 块
+* 远程
+
+ a| 
+string
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs]

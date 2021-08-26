@@ -1,0 +1,71 @@
+---
+permalink: storage/concept_system_manage_cluster_terms_manage_the_terms_of_use_banner.html 
+sidebar: sidebar 
+keywords: element, terms of use, banner, config, edit, terms of use, disable, enable 
+summary: 您可以启用，编辑或配置包含用户消息的横幅。 
+---
+= 管理使用条款横幅
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以启用，编辑或配置包含用户消息的横幅。
+
+<<Enable the Terms of Use banner>>
+<<Edit the Terms of Use banner>>
+<<Disable the Terms of Use banner>>
+
+
+
+== 启用使用条款横幅
+
+您可以启用在用户登录到 Element UI 时显示的 " 使用条款 " 横幅。当用户单击此横幅时，将显示一个文本对话框，其中包含您为集群配置的消息。可以随时取消此横幅。
+
+要启用使用条款功能，您必须具有集群管理员权限。
+
+. 单击 * 用户 * > * 使用条款 * 。
+. 在 * 使用条款 * 表单中，输入要在使用条款对话框中显示的文本。
++
+
+NOTE: 请勿超过 4096 个字符。
+
+. 单击 * 启用 * 。
+
+
+
+
+== 编辑使用条款横幅
+
+您可以编辑用户在选择使用条款登录横幅时看到的文本。
+
+.您需要什么？ #8217 ；将需要什么
+* 要配置使用条款，您必须具有集群管理员权限。
+* 确保已启用使用条款功能。
+
+
+.步骤
+. 单击 * 用户 * > * 使用条款 * 。
+. 在 * 使用条款 * 对话框中，编辑要显示的文本。
++
+
+NOTE: 请勿超过 4096 个字符。
+
+. 单击 * 保存更改 * 。
+
+
+
+
+== 禁用使用条款横幅
+
+您可以禁用使用条款横幅。禁用此横幅后，用户在使用 Element UI 时不再需要接受使用条款。
+
+.您需要什么？ #8217 ；将需要什么
+* 要配置使用条款，您必须具有集群管理员权限。
+* 确保已启用使用条款。
+
+
+.步骤
+. 单击 * 用户 * > * 使用条款 * 。
+. 单击 * 禁用 * 。
+

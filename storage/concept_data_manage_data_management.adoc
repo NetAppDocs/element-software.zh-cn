@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_data_manage_data_management.html 
+sidebar: sidebar 
+keywords: virtual volumes, volumes, manage 
+summary: 您可以从 Element UI 中的 Management 选项卡管理运行 Element 软件的集群中的数据。可用的集群管理功能包括创建和管理数据卷，用户帐户，卷访问组，启动程序和服务质量（ QoS ）策略。 
+---
+= 管理卷和虚拟卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从 Element UI 中的 Management 选项卡管理运行 Element 软件的集群中的数据。可用的集群管理功能包括创建和管理数据卷，卷访问组，启动程序和服务质量（ QoS ）策略。
+
+* link:task_data_manage_volumes_work_with_volumes_task.html["使用卷"]
+* link:concept_data_manage_vvol_work_virtual_volumes.html["使用虚拟卷"]
+* link:concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用卷访问组和启动程序"]
+
+
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

@@ -1,0 +1,97 @@
+---
+permalink: concepts/concept_solidfire_concepts_nodes.html 
+sidebar: sidebar 
+keywords: what is, node, management node, storage node, fibre channel, state, pending, active 
+summary: 节点是指分组到集群中以块存储或计算资源形式访问的硬件。 
+---
+= 节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+节点是指分组到集群中以提供块存储和计算功能的硬件或虚拟资源。
+
+NetApp Element 软件为集群定义了各种节点角色。节点角色的类型如下：
+
+* <<Management node>>
+* <<Storage node>>
+* <<Fibre Channel node>>
+
+
+<<Node states of operation,节点状态>> 因集群关联而异。
+
+
+
+== 管理节点
+
+管理节点是一个虚拟机，用于升级和提供系统服务，包括监控和遥测，管理集群资产和设置，运行系统测试和实用程序以及启用 NetApp 支持访问以进行故障排除。link:../concepts/concept_intro_management_node.html["了解更多信息。"]
+
+
+
+== 存储节点
+
+SolidFire 存储节点是一个服务器，其中包含一组通过绑定 10G 网络接口相互通信的驱动器。节点中的驱动器包含用于数据存储和数据管理的块和元数据空间。每个节点都包含 NetApp Element 软件的出厂映像。
+
+存储节点具有以下特征：
+
+* 每个节点都有一个唯一的名称。如果管理员未指定节点名称，则默认为 SF-XXXX ，其中 XXXX 是系统生成的四个随机字符。
+* 每个节点都有自己的高性能非易失性随机存取存储器（ NVRAM ）写入缓存，可提高整体系统性能并减少写入延迟。
+* 每个节点都连接到两个网络：存储和管理，每个网络都有两个独立的链路，用于实现冗余和性能。每个节点在每个网络上都需要一个 IP 地址。
+* 您可以使用新的存储节点创建集群，也可以向现有集群添加存储节点以提高存储容量和性能。
+* 您可以随时在集群中添加或删除节点，而不会中断服务。
+
+
+
+
+== 光纤通道节点
+
+SolidFire 光纤通道节点可提供与光纤通道交换机的连接，您可以将光纤通道交换机连接到光纤通道客户端。光纤通道节点充当光纤通道和 iSCSI 协议之间的协议转换器；这样，您就可以向任何新的或现有的 SolidFire 集群添加光纤通道连接。
+
+光纤通道节点具有以下特征：
+
+* 光纤通道交换机可管理网络结构的状态，从而实现优化的互连。
+* 两个端口之间的流量仅流经交换机；不会传输到任何其他端口。
+* 端口故障将被隔离，不会影响其他端口的运行。
+* 多对端口可以在一个网络结构中同时进行通信。
+
+
+
+
+== 节点运行状态
+
+[role="lead"]
+根据配置级别的不同，节点可以处于多种状态之一。
+
+* * 可用 *
++
+此节点没有关联的集群名称，并且尚未加入集群。
+
+* * 待定 *
++
+节点已配置完毕，可以添加到指定集群中。
+
++
+访问节点不需要身份验证。
+
+* * 待定活动 *
++
+系统正在节点上安装兼容的 Element 软件。完成后，节点将变为 "Active" 状态。
+
+* * 活动 *
++
+节点正在加入集群。
+
++
+要修改节点，需要进行身份验证。
+
+
+
+在上述每种状态下，某些字段均为只读字段。
+
+[discrete]
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

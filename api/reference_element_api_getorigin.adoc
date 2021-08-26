@@ -1,0 +1,70 @@
+---
+permalink: api/reference_element_api_getorigin.html 
+sidebar: sidebar 
+keywords: origin,get,getting,getorigin,certificate 
+summary: 您可以使用 GetOrigin 方法获取构建节点的源证书。 
+---
+= GetOrigin
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetOrigin` 方法获取构建节点的源证书。
+
+
+
+== Parameters
+
+
+NOTE: 如果没有源证书，则此方法将返回 "null" 。
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法将返回供应商原始认证信息。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+ "method": "GetOrigin",
+ "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "integrator": "SolidFire",
+  "<signature>": {
+    "pubkey": [public key info],
+    "version": 1,
+    "data": [signature info]
+  },
+   "contract-id": "none",
+   "location": "Boulder, CO",
+   "organization": "Engineering",
+   "type": "element-x"
+  }
+ ]
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

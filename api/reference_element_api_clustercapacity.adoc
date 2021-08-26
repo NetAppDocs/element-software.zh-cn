@@ -1,0 +1,226 @@
+---
+permalink: api/reference_element_api_clustercapacity.html 
+sidebar: sidebar 
+keywords: objects,object,clusterCapacity 
+summary: clusterCapacity 对象包含集群的高级别容量测量结果。您可以使用 GetClusterCapacity API 方法获取集群容量信息。对象成员中的空间测量值以字节为单位计算。 
+---
+= 集群容量
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterCapacity 对象包含集群的高级别容量测量结果。您可以使用 GetClusterCapacity API 方法获取集群容量信息。对象成员中的空间测量值以字节为单位计算。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+活动块空间
+ a| 
+块驱动器上的空间量。这包括元数据条目等追加信息以及可清理的空间。
+ a| 
+整型
+
+
+
+ a| 
+活动会话
+ a| 
+与集群通信的活动 iSCSI 会话数。
+ a| 
+整型
+
+
+
+ a| 
+平均 IOPS
+ a| 
+自午夜协调世界时（ UTC ）以来集群的平均 IOPS 。
+ a| 
+整型
+
+
+
+ a| 
+clusterRecentIOSize
+ a| 
+集群中所有卷的 IOPS 平均大小。
+ a| 
+整型
+
+
+
+ a| 
+当前 IOPS
+ a| 
+过去 5 秒内集群中所有卷的平均 IOPS 。
+ a| 
+整型
+
+
+
+ a| 
+maxIops
+ a| 
+当前集群的估计最大 IOPS 功能。
+ a| 
+整型
+
+
+
+ a| 
+maxOverProvisionableSpace
+ a| 
+最大可配置空间量。这是一个计算值。如果当前已配置空间加上新卷大小将超过此数字，则无法创建新卷。该值的计算方法如下： `maxOverProvisionableSpace = maxProvisionedSpace * maxMetadataOverProvisionFactor`
+ a| 
+整型
+
+
+
+ a| 
+最大已配置空间
+ a| 
+所有卷均已 100% 填充时可配置的总空间量（无精简配置元数据）。
+ a| 
+整型
+
+
+
+ a| 
+最大 UsedMetadataSpace
+ a| 
+卷驱动器上用于存储元数据的字节数。
+ a| 
+整型
+
+
+
+ a| 
+最大已用空间
+ a| 
+所有活动块驱动器上的总空间量。
+ a| 
+整型
+
+
+
+ a| 
+非 ZeroBlock
+ a| 
+上次垃圾收集操作完成后包含数据的 4KiB 块总数。
+ a| 
+整型
+
+
+
+ a| 
+对等 ActiveSessions
+ a| 
+自午夜 UTC 以来的 iSCSI 连接峰值数量。
+ a| 
+整型
+
+
+
+ a| 
+对等 IOPS
+ a| 
+自午夜 UTC 以来的最大当前 IOPS 值。
+ a| 
+整型
+
+
+
+ a| 
+已配置空间
+ a| 
+集群上所有卷中配置的总空间量。
+ a| 
+整型
+
+
+
+ a| 
+timestamp
+ a| 
+采集此集群容量样本的日期和时间，采用 UTC+0 格式。
+ a| 
+ISO 8601 字符串
+
+
+
+ a| 
+totalOps
+ a| 
+在集群的整个生命周期内执行的 I/O 操作总数。
+ a| 
+整型
+
+
+
+ a| 
+uniqueBlocks
+ a| 
+存储在块驱动器上的块总数。该值包括复制的块。
+ a| 
+整型
+
+
+
+ a| 
+uniqueBlocksUsedSpace
+ a| 
+uniqueBlocks 在块驱动器上占用的总数据量。有关此数字与 uniqueBlocks 值之间关系的信息，请参见 GetclusterCapacity 方法。
+ a| 
+整型
+
+
+
+ a| 
+usedMetadataSpace
+ a| 
+卷驱动器上用于存储元数据的总字节数。
+ a| 
+整型
+
+
+
+ a| 
+已使用 MetadataSpaceInSnapshots
+ a| 
+卷驱动器上用于在快照中存储唯一数据的字节数。此数字用于估计删除系统上的所有快照将重新获得多少元数据空间。
+ a| 
+整型
+
+
+
+ a| 
+已用空间
+ a| 
+系统中所有块驱动器使用的总空间量。
+ a| 
+整型
+
+
+
+ a| 
+零锁定
+ a| 
+完成最后一轮垃圾收集操作后不含数据的空 4KiB 块的总数。
+ a| 
+整型
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity]

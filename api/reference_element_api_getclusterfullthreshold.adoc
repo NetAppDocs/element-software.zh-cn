@@ -1,0 +1,299 @@
+---
+permalink: api/reference_element_api_getclusterfullthreshold.html 
+sidebar: sidebar 
+keywords: cluster,get,getting,full,threshold,level,fullness,storage,capacity,getclusterfullthreshold 
+summary: 您可以使用 GetClusterFullThreshold 方法查看为集群填充度级别设置的阶段。此方法将返回集群的所有填充度指标。 
+---
+= GetClusterFullThreshold
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetClusterFullThreshold` 方法查看为集群填充度级别设置的阶段。此方法将返回集群的所有填充度指标。
+
+
+NOTE: 当集群达到块集群填充度的 " 错误 " 阶段时，随着集群接近 " 关键 " 阶段，所有卷上的最大 IOPS 都会线性降低到卷的最小 IOPS 。这有助于防止集群达到块集群填充度的关键阶段。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+块性
+ a| 
+当前计算得出的集群块填充度级别。
+
+* stage1Happy ：无警报或错误情况。对应于 Web UI 中的 * 运行状况 * 。
+* stage2Aware ：无警报或错误情况。对应于 Web UI 中的 * 运行状况 * 。
+* stage3Low ：系统无法针对两个非同步节点故障提供冗余数据保护。对应于 Web UI 中的 * 警告 * 状态。您可以在 Web UI 中配置此级别（默认情况下，系统会在容量比错误状态低 3% 时触发此警报）。
+* stage4Critical ：系统无法针对单节点故障提供冗余数据保护。无法创建新卷或克隆。对应于 Element UI 中的 * 错误 * 状态。
+* stage5CompletelyConsumed ：已完全使用。此集群为只读，并保持 iSCSI 连接，但所有写入操作均会暂停。对应于 Element UI 中的 * 严重 * 状态。
+
+ a| 
+string
+
+
+
+ a| 
+全满
+ a| 
+反映 "blockFullness" 和 "metadataFullness" 之间的最高填充度级别。
+ a| 
+string
+
+
+
+ a| 
+maxMetadataOverProvisionFactor
+ a| 
+一个值，表示元数据空间相对于可用空间量可以过度配置的次数。例如，如果有足够的元数据空间来存储 100 TiB 的卷，并且此数字设置为 5 ，则可以创建 500 TiB 的卷。
+ a| 
+整型
+
+
+
+ a| 
+元数据全满
+ a| 
+当前计算得出的集群元数据填充度级别。
+
+* stage1Happy ：无警报或错误情况。对应于 Web UI 中的 * 运行状况 * 。
+* stage2Aware ：无警报或错误情况。对应于 Web UI 中的 * 运行状况 * 。
+* stage3Low ：系统无法针对两个非同步节点故障提供冗余数据保护。对应于 Web UI 中的 * 警告 * 状态。您可以在 Web UI 中配置此级别（默认情况下，系统会在容量比错误状态低 3% 时触发此警报）。
+* stage4Critical ：系统无法针对单节点故障提供冗余数据保护。无法创建新卷或克隆。对应于 Element UI 中的 * 错误 * 状态。
+* stage5CompletelyConsumed ：已完全使用。此集群为只读，并保持 iSCSI 连接，但所有写入操作均会暂停。对应于 Element UI 中的 * 严重 * 状态。
+
+ a| 
+string
+
+
+
+ a| 
+sliceReserveUsedThresholdPct
+ a| 
+错误情况。如果预留的分区利用率大于此值，则会触发系统警报。
+ a| 
+整型
+
+
+
+ a| 
+stage2AwareThreshold
+ a| 
+感知条件。为阶段 2 集群阈值级别设置的值。
+ a| 
+整型
+
+
+
+ a| 
+stage2BlockThresholdBytes
+ a| 
+存在第 2 阶段条件的集群所使用的字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage2MetadataThresholdBytes
+ a| 
+存在第 2 阶段填充度条件的集群所使用的元数据字节数。
+ a| 
+
+
+
+ a| 
+stage3BlockThresholdBytes
+ a| 
+存在第 3 阶段填充度条件的集群所使用的存储字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage3BlockThresholdPercent
+ a| 
+为阶段 3 设置的百分比值。达到此百分比时，警报日志中会发布一条警告。
+ a| 
+整型
+
+
+
+ a| 
+stage3LowThreshold
+ a| 
+错误情况。由于集群容量不足而创建系统警报的阈值。
+ a| 
+整型
+
+
+
+ a| 
+stage3MetadataThresholdBytes
+ a| 
+存在第 3 阶段填充度条件的集群使用的元数据字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage3MetadataThresholdPercent
+ a| 
+为 stage3 设置的元数据填充度百分比值。达到此百分比时，警报日志中将发布警告。
+ a| 
+整型
+
+
+
+ a| 
+stage4BlockThresholdBytes
+ a| 
+存在第 4 阶段填充度条件的集群所使用的存储字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage4CriticalThreshold
+ a| 
+错误情况。创建系统警报以警告集群容量严重不足的阈值。
+ a| 
+整型
+
+
+
+ a| 
+stage4MetadataThresholdBytes
+ a| 
+存在第 4 阶段填充度条件的集群使用的元数据字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage5BlockThresholdBytes
+ a| 
+存在第 5 阶段填充度条件的集群使用的存储字节数。
+ a| 
+整型
+
+
+
+ a| 
+stage5MetadataThresholdBytes
+ a| 
+存在第 5 阶段填充度条件的集群使用的元数据字节数。
+ a| 
+整型
+
+
+
+ a| 
+总和集群字节
+ a| 
+集群的物理容量，以字节为单位。
+ a| 
+整型
+
+
+
+ a| 
+sumTotalMetadataClusterBytes
+ a| 
+可用于存储元数据的总空间量。
+ a| 
+整型
+
+
+
+ a| 
+sumUsedClusterBytes
+ a| 
+集群上使用的存储字节数。
+ a| 
+整型
+
+
+
+ a| 
+sumUsedMetadataClusterBytes
+ a| 
+卷驱动器上用于存储元数据的空间量。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method" : "GetClusterFullThreshold",
+   "params" : {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id":1,
+  "result":{
+    "blockFullness":"stage1Happy",
+    "fullness":"stage3Low",
+    "maxMetadataOverProvisionFactor":5,
+    "metadataFullness":"stage3Low",
+    "sliceReserveUsedThresholdPct":5,
+    "stage2AwareThreshold":3,
+    "stage2BlockThresholdBytes":2640607661261,
+    "stage3BlockThresholdBytes":8281905846682,
+    "stage3BlockThresholdPercent":5,
+    "stage3LowThreshold":2,
+    "stage4BlockThresholdBytes":8641988709581,
+    "stage4CriticalThreshold":1,
+    "stage5BlockThresholdBytes":12002762096640,
+    "sumTotalClusterBytes":12002762096640,
+    "sumTotalMetadataClusterBytes":404849531289,
+    "sumUsedClusterBytes":45553617581,
+    "sumUsedMetadataClusterBytes":31703113728
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_modifyclusterfullthreshold.adoc[ModifyClusterFullThreshold]

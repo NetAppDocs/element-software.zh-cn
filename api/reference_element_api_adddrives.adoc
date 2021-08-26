@@ -1,0 +1,125 @@
+---
+permalink: api/reference_element_api_adddrives.html 
+sidebar: sidebar 
+keywords: drives,adding,cluster,drive,add,adddrives 
+summary: 您可以使用 AddDrives 方法向集群添加一个或多个可用驱动器，从而使这些驱动器能够托管集群的部分数据。 
+---
+= 添加驱动器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `AddDrives` 方法向集群添加一个或多个可用驱动器，从而使这些驱动器能够托管集群的部分数据。
+
+向集群添加存储节点或在现有节点中安装新驱动器时，新驱动器将标记为可用，必须先通过 AddDrives 添加这些驱动器，然后才能使用它们。使用 xref:reference_element_api_listdrives.adoc[ListDrives] 显示可添加的驱动器的方法。添加驱动器时，系统会自动确定驱动器的类型。
+
+此方法是异步方法，一旦启动集群中驱动器的重新平衡过程，此方法就会返回。但是，使用新添加的驱动器重新平衡集群中的数据可能需要较长时间；即使 AddDrives 方法调用完成，重新平衡也会继续进行。您可以使用 xref:reference_element_api_getasyncresult.adoc[GetAsyncResult] 查询方法返回的 asyncHandle 的方法。AddDrives 方法返回后，您可以使用 xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs] 查看使用新驱动器重新平衡数据的进度的方法。
+
+
+NOTE: 添加多个驱动器时，在一个 AddDrives 方法调用中添加这些驱动器比使用多个单独的方法（每个方法具有一个驱动器）更高效。这样可以减少为稳定集群上的存储负载而必须进行的数据平衡量。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+驱动器
+ a| 
+要添加到集群的每个驱动器的相关信息。可能值：
+
+* driveID ：要添加的驱动器的 ID （整型）。
+* type ：要添加的驱动器的类型（字符串）。有效值为 "slice" ， "block" 或 "volume" 。如果省略，则系统会分配正确的类型。
+
+ a| 
+JSON 对象数组
+ a| 
+无
+ a| 
+是（ type 为可选）
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+异步处理
+ a| 
+用于获取操作结果的句柄值。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 1,
+  "method": "AddDrives",
+  "params": {
+    "drives": [
+      {
+        "driveID": 1,
+        "type": "slice"
+      },
+      {
+        "driveID": 2,
+        "type": "block"
+      },
+      {
+        "driveID": 3,
+        "type": "block"
+      }
+    ]
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result" : {
+    "asyncHandle": 1
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listdrives.adoc[ListDrives]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs]
+

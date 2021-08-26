@@ -1,0 +1,25 @@
+---
+permalink: storage/reference_element_rn_find_product_docs.html 
+sidebar: sidebar 
+keywords: HCI documentation, SolidFire documentation 
+summary: 您可以从这两种产品的文档中心和资源页面中提供的资源了解有关使用和管理 NetApp HCI 和 SolidFire 全闪存存储的更多信息。 
+---
+= 从何处查找产品文档和其他信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从这两种产品的文档中心和资源页面中提供的资源了解有关使用和管理 NetApp HCI 和 SolidFire 全闪存存储的更多信息。
+
+在文档中心中，您还可以找到有关硬件安装和维护的信息，其他可用内容资源，已知问题和已解决问题的链接以及最新发行说明。在资源页面上，您可以找到指向数据表，技术报告，白皮书和视频的链接。
+
+* https://docs.netapp.com/us-en/hci/["NetApp HCI 文档"^]
+* https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI 资源页面"^]
+* http://docs.netapp.com/sfe-122/index.jsp["SolidFire 和 Element 12.2 文档中心"^]
+* http://docs.netapp.com/sfe-120/index.jsp["SolidFire 和 Element 12.0 文档中心"^]
+* http://docs.netapp.com/sfe-118/index.jsp["SolidFire 和 Element 11.8 文档中心"^]
+* http://docs.netapp.com/sfe-117/index.jsp["SolidFire 和 Element 11.7 文档中心"^]
+* http://docs.netapp.com/sfe-115/index.jsp["SolidFire 和 Element 11.5 文档中心"^]
+* https://www.netapp.com/us/documentation/solidfire.aspx["SolidFire 资源页面"^]
+

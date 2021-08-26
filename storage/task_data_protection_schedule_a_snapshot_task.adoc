@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_protection_schedule_a_snapshot_task.html 
+sidebar: sidebar 
+keywords: snapshot, schedule, volume snapshots, group snapshots 
+summary: 您可以通过计划按指定间隔执行卷快照来保护卷或一组卷上的数据。您可以计划自动运行单个卷快照或组快照。 
+---
+= 计划快照
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过计划按指定间隔执行卷快照来保护卷或一组卷上的数据。您可以计划自动运行单个卷快照或组快照。
+
+在配置快照计划时，您可以从基于一周中某天或一个月中某天的时间间隔中进行选择。您还可以指定下一个快照发生前的天数，小时数和分钟数。如果要复制卷，您可以将生成的快照存储在远程存储系统上。
+
+
+
+== 了解更多信息
+
+* xref:task_data_protection_create_a_snapshot_schedule.adoc[创建快照计划]
+* xref:task_data_protection_edit_a_snapshot_schedule.adoc[编辑快照计划]
+* xref:task_data_protection_delete_a_snapshot_schedule.adoc[删除快照计划]
+* xref:task_data_protection_copy_a_snapshot_schedule.adoc[复制快照计划]
+

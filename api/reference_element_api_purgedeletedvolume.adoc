@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_purgedeletedvolume.html 
+sidebar: sidebar 
+keywords: volume,volumes,purging,purge,deleted,purgedeletedvolume 
+summary: 您可以使用 PurgeDeletedVolume 方法立即永久清除已删除的卷。必须先使用 DeleteVolume 删除卷，然后才能清除该卷。 
+---
+= PurgeDeletedVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `PurgeDeletedVolume` 方法立即永久清除已删除的卷。您必须先使用 `DDeleteVolume` 删除卷，然后才能将其清除。
+
+卷会在一段时间后自动清除，因此通常不需要使用此方法。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+| volumeId | 要清除的卷的卷 ID 。 | 整型 | 否 | 是的。 
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "PurgeDeletedVolume",
+   "params": {
+      "volumeID"  : 5
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_deletevolume.adoc[DeleteVolume]

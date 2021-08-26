@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_modifyclusterinterfacepreference.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,cluster,interface,preference,modifyclusterinterfacepreference 
+summary: 使用 ModifyClusterInterfacePreference 方法，与运行 Element 软件的存储集群集成的系统可以更改现有集群接口首选项。此方法供内部使用。 
+---
+= ModifyClusterInterfacePreference
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 `ModfyClusterInterfacePreference` 方法，与运行 Element 软件的存储集群集成的系统可以更改现有集群接口首选项。此方法供内部使用。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+
+
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+name
+ a| 
+要修改的集群接口首选项的名称。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+value
+ a| 
+集群接口首选项的新值。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+	"method": "ModifyClusterInterfacePreference",
+	"params": {
+	"name": "testname",
+	"value": "newvalue"
+},
+	"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.0

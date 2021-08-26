@@ -1,0 +1,292 @@
+---
+permalink: api/reference_element_api_clusterstats.html 
+sidebar: sidebar 
+keywords: objects,clusterStats 
+summary: clusterStats 对象包含集群的统计数据。对象中包含的许多与卷相关的统计信息都是针对集群中所有卷的平均值。您可以使用 GetClusterStats 方法检索集群的此信息。 
+---
+= clusterStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterStats 对象包含集群的统计数据。对象中包含的许多与卷相关的统计信息都是针对集群中所有卷的平均值。您可以使用 GetClusterStats 方法检索集群的此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | 计算 | Type 
+
+
+ a| 
+实际 IOPS
+ a| 
+整个集群在过去 500 毫秒内的当前实际 IOPS 。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+平均 IOPSize
+ a| 
+过去 500 毫秒内集群的最近 I/O 的平均大小（以字节为单位）。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+客户端队列深度
+ a| 
+对集群未完成的读取和写入操作的数量。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+集群实用程序
+ a| 
+当前正在利用的集群最大 IOPS 的百分比。此值计算为 clusterUtilization = noralizedIOPS/maxIOPS （来自 GetClusterCapacity ）。
+ a| 
+不适用
+ a| 
+浮点
+
+
+
+ a| 
+lateencyUSec
+ a| 
+在过去 500 毫秒内完成集群操作的平均时间（以微秒为单位）。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+标准化 IOPS
+ a| 
+整个集群在过去 500 毫秒内的平均 IOPS 数。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+读取字节
+ a| 
+自集群创建以来从集群读取的总累积字节数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+readBytesLastSample
+ a| 
+在最后一个采样周期内从集群读取的总字节数。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+readLatencyUSec
+ a| 
+在过去 500 毫秒内完成对集群的读取操作的平均时间（以微秒为单位）。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+readLatencyUSecTotal
+ a| 
+自集群创建以来执行读取操作所用的总时间。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+读取操作
+ a| 
+自集群创建以来集群的总累积读取操作数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+readOpsLastSample
+ a| 
+上一个采样周期内的读取操作总数。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+samplePeriodMSec
+ a| 
+采样周期的长度，以毫秒为单位。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+服务计数
+ a| 
+集群上运行的服务数量。如果等于 servicesTotal ，则表示已从所有节点收集有效的统计信息。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+服务总计
+ a| 
+集群上运行的预期服务总数。
+ a| 
+不适用
+ a| 
+整型
+
+
+
+ a| 
+timestamp
+ a| 
+UTC+0 格式的当前时间。
+ a| 
+不适用
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+unalignedReads
+ a| 
+自集群创建以来集群的总累积未对齐读取操作数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+unalignedWries
+ a| 
+自集群创建以来集群的未对齐写入操作总数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeBytes
+ a| 
+自集群创建以来写入集群的总累积字节数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeBytesLastSample
+ a| 
+在最后一个采样周期内写入集群的总字节数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeLatencyUSec
+ a| 
+在过去 500 毫秒内完成对集群的写入操作的平均时间（以微秒为单位）。
+ a| 
+时间点
+ a| 
+整型
+
+
+
+ a| 
+writeLatencyUSecTotal
+ a| 
+自集群创建以来执行写入操作所用的总时间。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeOps
+ a| 
+自集群创建以来集群的总累积写入操作数。
+ a| 
+单调递增
+ a| 
+整型
+
+
+
+ a| 
+writeOpsLastSample
+ a| 
+上一个采样周期内写入操作的总数。
+ a| 
+时间点
+ a| 
+整型
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_getclusterstats.adoc[GetClusterStats]

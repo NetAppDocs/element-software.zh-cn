@@ -1,0 +1,144 @@
+---
+permalink: api/reference_element_api_listvolumesforaccount.html 
+sidebar: sidebar 
+keywords: volume,volumes,list,listing,account,active,pending,deleted,listvolumesforaccount 
+summary: 您可以使用 ListVolumesForAccount 方法列出帐户的活动卷和 \ （待定）已删除卷。 
+---
+= ListVolumesForAccount
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListVolumesForAccount` 方法列出帐户的活动卷和（待定）已删除卷。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+包括 VirtualVolumes
+ a| 
+默认情况下，响应中包含虚拟卷。要排除虚拟卷，请设置为 false 。
+ a| 
+boolean
+ a| 
+true
+ a| 
+否
+
+
+
+ a| 
+accountId
+ a| 
+返回此帐户 ID 拥有的所有卷。
+ a| 
+整型
+ a| 
+否
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+volumes
+ a| 
+卷信息列表。
+ a| 
+xref:reference_element_api_volume.adoc[volume] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListVolumesForAccount",
+   "params": {
+      "accountID"  : 1
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法的响应类似于以下示例：
+
+[listing]
+----
+{
+    "id": 1,
+    "result": {
+        "volumes": [
+            {
+                "access": "readWrite",
+                "accountID": 1,
+                "attributes": {},
+                "blockSize": 4096,
+                "createTime": "2018-07-22T16:15:25Z",
+                "deleteTime": "",
+                "enable512e": false,
+                "iqn": "iqn.2010-01.com.solidfire:0oto.test1.25",
+                "name": "test1",
+                "purgeTime": "",
+                "qos": {
+                    "burstIOPS": 15000,
+                    "burstTime": 60,
+                    "curve": {
+                        "4096": 100,
+                        "8192": 160,
+                        "16384": 270,
+                        "32768": 500,
+                        "65536": 1000,
+                        "131072": 1950,
+                        "262144": 3900,
+                        "524288": 7600,
+                        "1048576": 15000
+                    },
+                    "maxIOPS": 15000,
+                    "minIOPS": 50
+                },
+                "scsiEUIDeviceID": "306f746f00000019f47acc0100000000",
+                "scsiNAADeviceID": "6f47acc100000000306f746f00000019",
+                "sliceCount": 1,
+                "status": "active",
+                "totalSize": 1000341504,
+                "virtualVolumeID": null,
+                "volumeAccessGroups": [],
+                "volumeID": 25,
+                "volumePairs": []
+            }
+        ]
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

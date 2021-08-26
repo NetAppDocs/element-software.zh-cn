@@ -1,0 +1,58 @@
+---
+permalink: api/reference_element_api_disableldapauthentication.html 
+sidebar: sidebar 
+keywords: LDAP,authentication,auth,disable,disabling,DisableLdapAuthentication 
+summary: 您可以使用 DisableLdapAuthentication 方法禁用 LDAP 身份验证并删除所有 LDAP 配置设置。此方法不会删除为用户或组配置的任何集群管理员帐户。禁用 LDAP 身份验证后，配置为使用 LDAP 身份验证的集群管理员将无法再访问集群。 
+---
+= DisableLdapAuthentication
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DisableLdapAuthentication` 方法禁用 LDAP 身份验证并删除所有 LDAP 配置设置。此方法不会删除为用户或组配置的任何集群管理员帐户。禁用 LDAP 身份验证后，配置为使用 LDAP 身份验证的集群管理员将无法再访问集群。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "DisableLdapAuthentication",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+"id": 1,
+"result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

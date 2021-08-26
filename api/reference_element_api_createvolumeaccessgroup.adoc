@@ -1,0 +1,177 @@
+---
+permalink: api/reference_element_api_createvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,access,groups,group,create,creating,CreateVolumeAccessGroup 
+summary: 您可以使用 CreateVolumeAccessGroup 创建新的卷访问组。创建卷访问组时，需要为其指定一个名称，您也可以输入启动程序和卷。 
+---
+= CreateVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CreateVolumeAccessGroup` 创建新的卷访问组。创建卷访问组时，需要为其指定一个名称，您也可以输入启动程序和卷。
+
+添加到卷访问组中的任何启动程序 IQN 均可访问组中的任何卷，而无需 CHAP 身份验证。
+
+
+NOTE: 克隆的卷不会从源卷继承卷访问组成员资格。
+
+创建卷访问组时，请考虑以下事项：
+
+* 一个卷访问组最多可以包含 64 个启动程序 IQN 。
+* 一个启动程序只能属于一个卷访问组。
+* 一个卷访问组最多可以包含 2000 个卷。
+* 每个卷访问组最多可以属于四个其他卷访问组。
+
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+启动程序
+ a| 
+要包括在卷访问组中的启动程序 ID 或名称（ IQN 和 WWPN ）的列表。如果传递启动程序名称列表，则会创建不存在的启动程序。如果传递启动程序 ID 列表，则如果任何启动程序尚不存在，则该方法将返回错误。传递启动程序名称已弃用；应尽可能使用启动程序 ID 。
+ a| 
+整型数组或字符串数组（已弃用）
+ a| 
+ a| 
+否
+
+
+
+ a| 
+name
+ a| 
+卷访问组的名称。不需要唯一，但建议使用。长度必须为 1 到 64 个字符。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+volumes
+ a| 
+要包括在卷访问组中的卷 ID 列表。
+ a| 
+整型数组
+ a| 
+ a| 
+否
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+｛ ｝
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+卷访问组
+ a| 
+一个对象，其中包含有关新创建的卷访问组的信息。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[卷访问组]
+
+
+
+ a| 
+卷访问组 ID
+ a| 
+新创建的卷访问组的 ID 。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "CreateVolumeAccessGroup",
+   "params": {
+      "name": "myaccessgroup",
+      "initiators": ["iqn.1993-08.org.debian: 01: a31b1d799d5c"],
+      "volumes": [327],
+      "attributes": {}
+   }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [],
+      "initiatorIDs": [
+        95
+      ],
+      "initiators": [
+        "iqn.1993-08.org.debian: 01: a31b1d799d5c"
+      ],
+      "name": "myaccessgroup",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        327
+      ]
+    },
+    "volumeAccessGroupID": 96
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]
+* xref:reference_element_api_listsyncjobs.adoc[ListSyncJobs]
+* xref:reference_element_api_modifyvolume.adoc[ModifyVolume]
+

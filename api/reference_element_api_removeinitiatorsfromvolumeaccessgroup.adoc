@@ -1,0 +1,133 @@
+---
+permalink: api/reference_element_api_removeinitiatorsfromvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: initiators,initiator,volume,access,group,remove,removing,removeinitiatorsfromvolumeaccessgroup 
+summary: 您可以使用 RemoveInitiatorsFromVolumeAccessGroup 方法从指定的卷访问组中删除启动程序。 
+---
+= RemoveInitiatorsFromVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `RemoveInitiatorsFromVolumeAccessGroup` 方法从指定卷访问组中删除启动程序。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+卷访问组 ID
+ a| 
+从中删除启动程序的卷访问组的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+启动程序
+ a| 
+要包括在卷访问组中的启动程序 ID 或名称（ IQN 和 WWPN ）的列表。如果传递启动程序名称列表，则会创建不存在的启动程序。如果传递启动程序 ID 列表，则如果任何启动程序尚不存在，则该方法将返回错误。传递启动程序名称已弃用；应尽可能使用启动程序 ID 。
+ a| 
+整型数组（建议）或字符串数组（已弃用）
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+deleteOrphanInitiators
+ a| 
+指定是否在启动程序对象从卷访问组中删除后删除这些对象。可能值：
+
+* true ：从卷访问组中删除启动程序对象后，将其删除。
+* false ：从卷访问组中删除启动程序对象后，不要删除这些对象。这是默认值。
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+卷访问组
+ a| 
+包含有关新修改的卷访问组的信息的对象。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[卷访问组]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 13171,
+  "method": "RemoveInitiatorsFromVolumeAccessGroup",
+  "params": {
+    "initiators": [114,115],
+    "volumeAccessGroupID": 96
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 13171,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [
+        327
+      ],
+      "initiatorIDs": [],
+      "initiators": [],
+      "name": "test",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        346
+      ]
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

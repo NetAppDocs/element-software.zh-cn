@@ -1,0 +1,154 @@
+---
+permalink: api/reference_element_api_bulkvolumejob.html 
+sidebar: sidebar 
+keywords: bulkVolumeJob,object,objects,read,write,clones,snapshots,clone,snapshot 
+summary: bulkVolumeJob 对象包含有关批量卷读取或写入操作的信息，例如克隆或创建快照。 
+---
+= bulkVolumeJob
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+bulkVolumeJob 对象包含有关批量卷读取或写入操作的信息，例如克隆或创建快照。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+属性
+ a| 
+批量卷作业的 JSON 属性。
+ a| 
+JSON 对象
+
+
+
+ a| 
+bulkVolumeID
+ a| 
+内部批量卷作业 ID 。
+ a| 
+整型
+
+
+
+ a| 
+CREATETIME
+ a| 
+为 UTC+0 格式的批量卷作业创建的时间戳。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+已过时间
+ a| 
+自作业开始以来的秒数。
+ a| 
+string
+
+
+
+ a| 
+格式。
+ a| 
+批量卷操作的格式。可能值：
+
+* 已压缩
+* 原生
+
+ a| 
+string
+
+
+
+ a| 
+key
+ a| 
+批量卷会话创建的唯一密钥。
+ a| 
+string
+
+
+
+ a| 
+完成百分比
+ a| 
+操作报告的已完成百分比。
+ a| 
+整型
+
+
+
+ a| 
+余时间
+ a| 
+估计剩余时间，以秒为单位。
+ a| 
+整型
+
+
+
+ a| 
+srcVolumeID
+ a| 
+源卷 ID 。
+ a| 
+整型
+
+
+
+ a| 
+status
+ a| 
+操作的状态。可能值：
+
+* 正在准备
+* 活动
+* 完成
+* 失败
+
+ a| 
+string
+
+
+
+ a| 
+脚本
+ a| 
+脚本的名称（如果提供）。
+ a| 
+string
+
+
+
+ a| 
+snapshotId
+ a| 
+如果快照位于批量卷作业的源中，则为快照的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+type
+ a| 
+批量操作的类型。可能值：
+
+* 读取
+* 写入
+
+ a| 
+string
+
+|===

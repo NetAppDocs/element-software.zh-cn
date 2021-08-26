@@ -1,0 +1,43 @@
+---
+permalink: storage/reference_replication_volume_pairing_messages.html 
+sidebar: sidebar 
+keywords: volume pairing, messages, replication, data protection 
+summary: '在初始配对过程中，您可以从 "Data Protection" 选项卡下的 "Volume Pairs" 页面查看卷配对消息。在复制卷列表视图中，此对的源端和目标端都可以显示这些消息。' 
+---
+= 卷配对消息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在初始配对过程中，您可以从 "Data Protection" 选项卡下的 "Volume Pairs" 页面查看卷配对消息。在复制卷列表视图中，此对的源端和目标端都可以显示这些消息。
+
+* * 已禁用已断开连接 *
++
+源复制或同步 RPC 超时。与远程集群的连接已断开。检查与集群的网络连接。
+
+* * 正在重新同步连接 *
++
+此时，远程复制同步处于活动状态。开始同步过程并等待数据。
+
+* * 正在重新同步 RRSync*
++
+正在为配对集群创建卷元数据的单个 Helix 副本。
+
+* * 正在重新同步 LocalSync*
++
+正在为配对集群创建卷元数据的双 Helix 副本。
+
+* * 正在重新同步数据传输 *
++
+数据传输已恢复。
+
+* * 活动 *
++
+卷已配对，正在将数据从源卷发送到目标卷，并且数据处于同步状态。
+
+* * 闲置 *
++
+未发生复制活动。
+
+

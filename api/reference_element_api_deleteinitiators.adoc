@@ -1,0 +1,99 @@
+---
+permalink: api/reference_element_api_deleteinitiators.html 
+sidebar: sidebar 
+keywords: delete,deleting,initiator,initiators,DeleteInitiators 
+summary: 您可以使用 DeleteInitiators 从系统中删除一个或多个启动程序（以及从任何关联的卷或卷访问组中删除）。 
+---
+= DeleteInitiators
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteInitiators` 从系统（以及任何关联的卷或卷访问组）中删除一个或多个启动程序。
+
+如果 `DDeleteInitiators` 无法删除参数中提供的启动程序之一，则系统将返回错误且不会删除任何启动程序（无法部分完成）。
+
+
+
+== 参数
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+启动程序
+ a| 
+要删除的启动程序的 ID 数组。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== error
+
+此方法可能会返回以下错误：
+
+|===
+
+
+| Name | Description 
+
+
+ a| 
+xInitiatorDoesNotExist
+ a| 
+如果您选择的启动程序名称不存在，则返回此消息。
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 5101,
+  "method": "DeleteInitiators",
+  "params": {
+    "initiators": [
+      145,
+      147
+    ]
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 5101,
+  "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

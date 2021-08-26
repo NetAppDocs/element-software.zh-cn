@@ -1,0 +1,49 @@
+---
+permalink: storage/reference_monitor_fibre_channel_session_details.html 
+sidebar: sidebar 
+keywords: fibre channel sessions, fc, FC, sessions 
+summary: 您可以找到有关连接到集群的活动光纤通道 \ （ FC\ ）会话的信息。 
+---
+= 光纤通道会话详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以找到有关连接到集群的活动光纤通道（ FC ）会话的信息。
+
+以下列表介绍了有关连接到集群的 FC 会话的信息：
+
+* * 节点 ID*
++
+托管连接会话的节点。
+
+* * 节点名称 *
++
+系统生成的节点名称。
+
+* * 启动程序 ID*
++
+系统为启动程序生成的 ID 。
+
+* * 启动程序 WWPN *
++
+发起全球通用端口名称。
+
+* * 启动程序别名 *
++
+启动程序的一个可选名称，在长列表中更容易找到启动程序。
+
+* * 目标 WWPN *
++
+目标全球通用端口名称。
+
+* * 卷访问组 *
++
+会话所属的卷访问组的名称。
+
+* * 卷访问组 ID*
++
+系统为访问组生成的 ID 。
+
+

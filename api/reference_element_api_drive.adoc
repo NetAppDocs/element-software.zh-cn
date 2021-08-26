@@ -1,0 +1,175 @@
+---
+permalink: api/reference_element_api_drive.html 
+sidebar: sidebar 
+keywords: objects,object,drive 
+summary: drive 对象包含有关集群活动节点中各个驱动器的信息。此对象包含有关已添加为卷元数据或块驱动器的驱动器以及尚未添加且可用的驱动器的详细信息。您可以使用 ListDrives API 方法检索此信息。 
+---
+= 驱动器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+drive 对象包含有关集群活动节点中各个驱动器的信息。此对象包含有关已添加为卷元数据或块驱动器的驱动器以及尚未添加且可用的驱动器的详细信息。您可以使用 `ListDrives` API 方法检索此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。此对象始终为空，不可修改。
+ a| 
+JSON 对象
+
+
+
+ a| 
+Capacity
+ a| 
+驱动器的总容量，以字节为单位。
+ a| 
+整型
+
+
+
+ a| 
+机箱插槽
+ a| 
+对于 HCI 平台，此值是此驱动器所在服务器机箱中的节点字母和插槽编号。对于存储平台，插槽编号是 "slot" 整数的字符串表示。
+ a| 
+string
+
+
+
+ a| 
+driveFailureDetail
+ a| 
+如果驱动器的状态为 "failed" ，则此字段将提供有关驱动器为何标记为 failed 的更多详细信息。
+ a| 
+string
+
+
+
+ a| 
+驱动器 ID
+ a| 
+此驱动器的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+driveSecurityFaultReason
+ a| 
+如果启用或禁用驱动器安全失败，则说明其失败的原因。如果值为 "none" ，则表示未出现故障。
+ a| 
+string
+
+
+
+ a| 
+keyId
+ a| 
+密钥提供程序用于获取用于解锁此驱动器的身份验证密钥的密钥 ID 。
+ a| 
+UUID
+
+
+
+ a| 
+密钥提供程序 ID
+ a| 
+标识用于解锁此驱动器的身份验证密钥提供程序。
+ a| 
+整型
+
+
+
+ a| 
+节点 ID
+ a| 
+包含此驱动器的节点的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+segmentFileSize
+ a| 
+驱动器的分段文件大小，以字节为单位。
+ a| 
+整型
+
+
+
+ a| 
+串行
+ a| 
+驱动器序列号。
+ a| 
+string
+
+
+
+ a| 
+插槽
+ a| 
+此驱动器所在的服务器机箱中的插槽编号，或者如果使用了内部元数据驱动器的 SATADIM 设备，则为 -1 。
+ a| 
+整型
+
+
+
+ a| 
+status
+ a| 
+驱动器的状态。可能值：
+
+* Available ：可用驱动器。
+* active ：活动驱动器。
+* erasing ：正在安全擦除驱动器。该驱动器上的所有数据将被永久删除。
+* failed ：驱动器出现故障。先前在该驱动器上的任何数据均已迁移到集群中的其他驱动器。
+* removing ：正在删除驱动器。先前驱动器上的任何数据都将迁移到集群中的其他驱动器。
+
+ a| 
+string
+
+
+
+ a| 
+type
+ a| 
+驱动器的类型。可能值：
+
+* volume ：存储卷元数据。
+* block ：存储块数据。
+* unknown ：驱动器类型尚未处于活动状态，尚未确定。
+
+ a| 
+string
+
+
+
+ a| 
+可用容量
+ a| 
+驱动器的可用容量，以字节为单位。
+ a| 
+整型
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listdrives.adoc[ListDrives]

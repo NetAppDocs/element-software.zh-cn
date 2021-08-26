@@ -1,0 +1,73 @@
+---
+permalink: api/reference_element_api_qos.html 
+sidebar: sidebar 
+keywords: object,objects,QoS 
+summary: qos 对象包含有关卷的服务质量 \ （ qos\ ）设置的信息。在未指定 QoS 值的情况下创建的卷将使用默认值创建。您可以使用 GetDefaultQoS 方法查找默认值。 
+---
+= QoS
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+QoS 对象包含有关卷的服务质量（ QoS ）设置的信息。在未指定 QoS 值的情况下创建的卷将使用默认值创建。您可以使用 `GetDefaultQoS` 方法查找默认值。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+突发 IOPS
+ a| 
+允许短时间内的最大 " 峰值 "4 KB IOPS 。允许 I/O 活动在正常最大 IOPS 值范围内突发。
+ a| 
+整型
+
+
+
+ a| 
+突发时间
+ a| 
+允许 burstIOPS 的时间长度。返回的值以秒为单位表示。此值由系统根据为 QoS 设置的 IOPS 计算得出。
+ a| 
+整型
+
+
+
+ a| 
+曲线
+ a| 
+此曲线是一组键值对。这些密钥是以字节为单位的 I/O 大小。这些值表示在特定 I/O 大小下执行一个 IOP 的成本。此曲线是相对于 100 IOPS 下 4096 字节的操作集计算得出的。
+ a| 
+JSON 对象
+
+
+
+ a| 
+maxIops
+ a| 
+在较长时间内允许的所需最大 4 KB IOPS 。
+ a| 
+整型
+
+
+
+ a| 
+最小 IOPS
+ a| 
+要保证的所需最小 4 KB IOPS 。只有当所有卷均已上限设置为其 minIOPS 值且性能容量仍然不足时，允许的 IOPS 才会降至此级别以下。
+ a| 
+整型
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS]

@@ -1,0 +1,126 @@
+---
+permalink: api/reference_element_api_listkeyproviderskmip.html 
+sidebar: sidebar 
+keywords: KMIP,key providers,key,provider,retrieving,listing,list,retrieve,listkeyproviderskmip 
+summary: 您可以使用 ListKeyProvidersKmip 方法检索所有现有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序的列表。您可以通过指定其他参数来筛选此列表。 
+---
+= ListKeyProvidersKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListKeyProvidersKmip` 方法检索所有现有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序的列表。您可以通过指定其他参数来筛选此列表。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+密钥提供程序 IsActive
+ a| 
+根据返回的 KMIP 密钥服务器对象是否处于活动状态对其进行筛选。可能值：
+
+* true ：仅返回处于活动状态的 KMIP 密钥提供程序（提供当前正在使用的密钥）。
+* false ：仅返回处于非活动状态的 KMIP 密钥提供程序（未提供任何密钥且可删除）。
+
+
+如果省略此参数，则不会根据返回的 KMIP 密钥提供程序是否处于活动状态对其进行筛选。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+kmipKeyProviderHasServerAssigned
+ a| 
+根据是否已分配 KMIP 密钥服务器筛选返回的 KMIP 密钥提供程序。可能值：
+
+* true ：仅返回已分配 KMIP 密钥服务器的 KMIP 密钥提供程序。
+* false ：仅返回未分配 KMIP 密钥服务器的 KMIP 密钥提供程序。
+
+
+如果省略此参数，则不会根据是否已分配 KMIP 密钥服务器对返回的 KMIP 密钥提供程序进行筛选。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+kmipKeyProviders
+ a| 
+已创建的 KMIP 密钥提供程序的列表。
+ a| 
+link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "ListKeyProvidersKmip",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+    {
+    "kmipKeyProviders": [
+        {
+            "keyProviderID": 15,
+            "kmipCapabilities": "SSL",
+            "keyProviderIsActive": true,
+            "keyServerIDs": [
+                1
+            ],
+            "keyProviderName": "KeyProvider1"
+        }
+    ]
+}
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.7

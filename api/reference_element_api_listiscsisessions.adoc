@@ -1,0 +1,97 @@
+---
+permalink: api/reference_element_api_listiscsisessions.html 
+sidebar: sidebar 
+keywords: iscsi,connection,list,listing,session,info,cluster,listiscsisessions 
+summary: 您可以使用 ListISCSISessions 方法列出集群中卷的 iSCSI 连接信息。 
+---
+= ListISCSISessions
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListISCSISessions` 方法列出集群中卷的 iSCSI 连接信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+会话
+ a| 
+有关每个 iSCSI 会话的信息。
+ a| 
+xref:reference_element_api_session_iscsi.adoc[会话]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListISCSISessions",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+ {
+  "id": 1,
+  "result": {
+    "sessions": [
+      {
+        "accountID": 1,
+        "accountName": "account1",
+        "createTime": "2017-04-11T03:39:32.030291Z",
+        "driveID": 23,
+        "driveIDs": [23],
+        "initiator": null,
+        "initiatorIP": "10.1.1.1:37138",
+        "initiatorName": "iqn.2010-01.net.solidfire.eng:c",
+        "initiatorPortName": "iqn.2010-01.net.solidfire.eng:c,i,0x23d860000",
+        "initiatorSessionID": 9622126592,
+        "msSinceLastIscsiPDU": 243,
+        "msSinceLastScsiCommand": 141535021,
+        "nodeID": 3,
+        "serviceID": 6,
+        "sessionID": 25769804943,
+        "targetIP": "10.1.1.2:3260",
+        "targetName": "iqn.2010-01.com.solidfire:a7sd.3",
+        "targetPortName": "iqn.2010-01.com.solidfire:a7sd.3,t,0x1",
+        "virtualNetworkID": 0,
+        "volumeID": 3,
+        "volumeInstance": 140327214758656
+      }
+     ...
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

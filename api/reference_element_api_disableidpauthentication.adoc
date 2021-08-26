@@ -1,0 +1,56 @@
+---
+permalink: api/reference_element_api_disableidpauthentication.html 
+sidebar: sidebar 
+keywords: IdP,idp,authentication,disable 
+summary: 您可以使用 DisableIdpAuthentication 方法禁用对集群使用第三方 IdP 进行身份验证的支持。禁用后，经过第三方 IdP 身份验证的用户将无法再访问集群，并且任何经过身份验证的活动会话都将失效 / 断开连接。LDAP 和集群管理员可以通过支持的 UI 访问集群。 
+---
+= DisableIdpAuthentication
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DisableIdpAuthentication` 方法禁用对集群使用第三方 IdP 进行身份验证的支持。禁用后，经过第三方 IdP 身份验证的用户将无法再访问集群，并且任何经过身份验证的活动会话都将失效 / 断开连接。LDAP 和集群管理员可以通过支持的 UI 访问集群。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "DisableIdpAuthentication",
+  "params": {}
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+"result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.0

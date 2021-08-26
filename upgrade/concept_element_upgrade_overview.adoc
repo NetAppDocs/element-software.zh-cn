@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: upgrade/concept_element_upgrade_overview.html 
+summary: 本节的内容介绍了 NetApp SolidFire 全闪存存储系统中组件的建议升级顺序。 
+keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgrade 
+---
+= 升级概述
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:keywords: solidfire, cloud, onprem, documentation, help
+
+
+[role="lead"]
+本节的内容介绍了 NetApp SolidFire 全闪存存储系统中组件的建议升级顺序。 ​
+
+
+
+== 系统升级顺序
+
+系统升级顺序内容介绍了完成 SolidFire 全闪存存储系统升级所需的任务。理想情况下，这些过程是在较大的升级序列中执行的，而不是孤立执行的。如果需要基于组件的升级或更新，请参见操作步骤前提条件以确保解决其他复杂问题。
+
+按照以下顺序升级适用于 Element 12.3 的 NetApp SolidFire 全闪存存储系统：
+
+* link:task_sf_upgrade_all.html["升级适用于 Element 12.3 的 NetApp SolidFire 全闪存存储系统"]。
+
+
+
+
+== vSphere 升级顺序，包括适用于 vCenter Server 的 Element 插件
+
+vSphere 升级顺序（包括适用于 vCenter Server 的 Element 插件）内容介绍了重新安装适用于 vCenter Server 的 Element 插件所需的其他升级前和升级后步骤。
+
+按照以下顺序使用适用于 vCenter Server 的 Element 插件升级 NetApp SolidFire 全闪存存储系统中的 vSphere 组件：
+
+* link:task_sf_upgrade_all_vsphere.html["使用适用于 vCenter Server 的 Element 插件升级适用于 NetApp SolidFire 存储系统的 vSphere 组件"]。
+
+
+[discrete]
+== 了解更多信息
+
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+

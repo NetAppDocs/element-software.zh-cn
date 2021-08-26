@@ -1,0 +1,205 @@
+---
+permalink: api/reference_element_api_addvirtualnetwork.html 
+sidebar: sidebar 
+keywords: addvirtualnetwork,cluster,add,adding,virtual,network 
+summary: 您可以使用 AddVirtualNetwork 方法将新的虚拟网络添加到集群配置中。 
+---
+= 添加虚拟网络
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `AddVirtualNetwork` 方法将新的虚拟网络添加到集群配置中。
+
+添加虚拟网络时，系统会为每个节点创建一个接口，并且每个接口都需要一个虚拟网络 IP 地址。为此 API 方法指定的参数 IP 地址数必须等于或大于集群中的节点数。系统会批量配置虚拟网络地址并自动将其分配给各个节点。您无需手动为节点分配虚拟网络地址。
+
+
+NOTE: AddVirtualNetwork 方法仅用于创建新的虚拟网络。如果要更改现有虚拟网络，请使用 xref:reference_element_api_modifyvirtualnetwork.adoc[ModifyVirtualNetwork] 方法
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+地址锁定
+ a| 
+要包含在虚拟网络中的唯一 IP 地址范围。对象所需的成员：
+
+* start ： IP 地址范围的起始值。string
+* size ：要包含在块中的 IP 地址数。整型
+
+ a| 
+JSON 对象数组
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+网关
+ a| 
+虚拟网络的网关的 IP 地址。只有当 namespace 参数设置为 true 时，此参数才有效。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+name
+ a| 
+用户为新虚拟网络定义的名称。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+命名空间
+ a| 
+如果设置为 true ，则会通过创建和配置命名空间及其所含虚拟网络来启用可路由存储 VLAN 功能。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+netmask
+ a| 
+要创建的虚拟网络的唯一网络掩码。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+Svip
+ a| 
+要创建的虚拟网络的唯一存储 IP 地址。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+唯一的虚拟网络（ VLAN ）标记。支持的值为 1 到 4094 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+* 注： * 将命名空间设置为 false 时，虚拟网络参数对于每个虚拟网络必须是唯一的。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+virtualNetworkID
+ a| 
+新虚拟网络的虚拟网络 ID 。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "AddVirtualNetwork",
+  "params": {
+    "virtualNetworkTag": 2010,
+    "name": "network1",
+    "addressBlocks" : [
+        { "start": "192.86.5.1", "size": 10 },
+        { "start": "192.86.5.50", "size": 20 }
+    ],
+    "netmask" : "255.255.192.0",
+    "gateway" : "10.0.1.254",
+    "svip" : "192.86.5.200",
+    "attributes" : {}
+    "namespace" : true
+  },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "virtualNetworkID": 5
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

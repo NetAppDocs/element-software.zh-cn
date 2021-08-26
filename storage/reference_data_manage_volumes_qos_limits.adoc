@@ -1,0 +1,103 @@
+---
+permalink: storage/reference_data_manage_volumes_qos_limits.html 
+sidebar: sidebar 
+keywords: qos, value limits 
+summary: 您可以找到有关服务质量 \ （ QoS\ ）的可能最小值和最大值的信息。 
+---
+= QoS 值限制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以找到有关服务质量（ QoS ）的可能最小值和最大值的信息。
+
+|===
+
+
+|  | I/O 大小最大值 
+
+
+| Parameters | 最小值 
+
+
+| Default | 4 KB 
+
+
+| 8 KB | 16 KB 
+
+
+| 262 KB  a| 
+最小 IOPS
+
+
+
+ a| 
+50
+ a| 
+50
+
+
+
+ a| 
+15,000
+ a| 
+9 ， 375 *
+
+
+
+ a| 
+5556*
+ a| 
+385*
+
+
+
+ a| 
+最大 IOPS
+ a| 
+100
+
+
+
+ a| 
+15,000
+ a| 
+20 万 *
+
+
+
+ a| 
+125,000
+ a| 
+74,074
+
+
+
+ a| 
+5128
+ a| 
+突发 IOPS
+
+
+
+ a| 
+100
+ a| 
+15,000
+
+
+
+ a| 
+20 万 *
+ a| 
+125,000
+
+
+
+ a| 
+74,074
+ a| 
+5128
+
+|===

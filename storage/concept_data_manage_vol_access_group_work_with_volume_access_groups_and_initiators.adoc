@@ -1,0 +1,50 @@
+---
+permalink: storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html 
+sidebar: sidebar 
+keywords: volume access groups, initiators, working with, chap, fc, iscsi 
+summary: 您可以使用 iSCSI 启动程序或光纤通道启动程序访问卷访问组中定义的卷。 
+---
+= 使用卷访问组和启动程序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 iSCSI 启动程序或光纤通道启动程序访问卷访问组中定义的卷。
+
+您可以通过在一组卷中映射 iSCSI 启动程序 IQN 或光纤通道 WWPN 来创建访问组。添加到访问组的每个 IQN 都可以访问组中的每个卷，而无需 CHAP 身份验证。
+
+CHAP 身份验证方法有两种：
+
+* 帐户级别的 CHAP 身份验证：您可以为帐户分配 CHAP 身份验证。
+* 启动程序级别的 CHAP 身份验证：您可以为特定启动程序分配唯一的 CHAP 目标和密钥，而无需在单个帐户中绑定到单个 CHAP 。此 CHAP 级别身份验证将取代帐户级别的凭据。
+
+
+您也可以选择使用按启动程序 CHAP 强制执行启动程序授权和按启动程序 CHAP 身份验证。这些选项可以按启动程序定义，访问组可以包含具有不同选项的混合启动程序。
+
+添加到访问组的每个 WWPN 都允许通过光纤通道网络访问此访问组中的卷。
+
+
+NOTE: 卷访问组具有以下限制：
+
+* 一个访问组最多允许 64 个 IQN 或 WWPN 。
+* 一个访问组最多可由 2000 个卷组成。
+* IQN 或 WWPN 只能属于一个访问组。
+* 一个卷最多可属于四个访问组。
+
+
+
+
+== 了解更多信息
+
+* xref:task_data_manage_vol_access_group_create_a_volume_access_group.adoc[创建卷访问组]
+* xref:task_data_manage_vol_access_group_add_volumes.adoc[将卷添加到访问组]
+* xref:task_data_manage_vol_access_group_remove_volumes.adoc[从访问组中删除卷]
+* xref:task_data_manage_vol_access_group_create_an_initiator.adoc[创建启动程序]
+* xref:task_data_manage_vol_access_group_edit_an_initiator.adoc[编辑启动程序]
+* xref:task_data_manage_vol_access_group_add_a_single_initiator.adoc[将单个启动程序添加到卷访问组]
+* xref:task_data_manage_vol_access_group_add_multiple_initiators.adoc[将多个启动程序添加到卷访问组]
+* xref:task_data_manage_vol_access_group_remove_initiators_from_an_access_group.adoc[从访问组中删除启动程序]
+* xref:task_data_manage_vol_access_group_delete.adoc[删除访问组]
+* xref:task_data_manage_vol_access_group_delete_an_initiator.adoc[删除启动程序]
+

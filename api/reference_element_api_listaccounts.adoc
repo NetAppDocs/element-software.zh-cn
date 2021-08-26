@@ -1,0 +1,141 @@
+---
+permalink: api/reference_element_api_listaccounts.html 
+sidebar: sidebar 
+keywords: account,accounts,list,listing,all,listaccounts 
+summary: 您可以使用 ListAccounts 获取整个存储租户帐户列表，并可选择分页支持。通过 Element 帐户可以访问卷。 
+---
+= ListAccounts
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListAccounts` 获取存储租户帐户的完整列表，并可选择分页支持。通过 Element 帐户可以访问卷。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+包括 StorageContainers
+ a| 
+默认情况下，响应中包括虚拟卷存储容器。要排除存储容器，请设置为 false 。
+ a| 
+boolean
+ a| 
+true
+ a| 
+否
+
+
+
+ a| 
+startAccountID
+ a| 
+要返回的起始帐户 ID 。如果不存在具有此帐户 ID 的帐户，则按帐户 ID 顺序排列的下一个帐户将用作列表的开头。要逐页浏览此列表，请传递上一个响应中最后一个帐户的帐户 ID + 1 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+limit
+ a| 
+要返回的帐户对象的最大数量。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+—帐户
+ a| 
+帐户列表。
+ a| 
+xref:reference_element_api_account.adoc[account] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListAccounts",
+   "params": {
+     "startAccountID"  : 0,
+     "limit" : 1000
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "result" : {
+    "accounts": [
+	{
+        "attributes": {},
+        "username": "jamesw",
+        "targetSecret": "168#5A757ru268)",
+        "volumes": [],
+        "enableChap": false,
+        "status": "active",
+        "accountID": 16,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "168#5A757ru268)"
+    },
+    {
+        "attributes": {},
+        "username": "jimmyd",
+        "targetSecret": "targetsecret",
+        "volumes": [],
+        "enableChap": true,
+        "status": "active",
+        "accountID": 5,
+        "storageContainerID": "abcdef01-1234-5678-90ab-cdef01234567",
+        "initiatorSecret": "initiatorsecret"
+    }
+  ]
+}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

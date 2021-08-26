@@ -1,0 +1,74 @@
+---
+permalink: api/concept_element_api_node_api_methods.html 
+sidebar: sidebar 
+keywords: node,api,methods 
+summary: 您可以使用节点 API 方法配置单个节点。这些方法可在需要配置，已配置但尚未加入集群或正在积极加入集群的单个节点上运行。通过节点 API 方法，您可以查看和修改各个节点以及用于与节点通信的集群网络的设置。您必须对单个节点运行这些方法；不能对集群地址运行每个节点 API 方法。 
+---
+= 节点 API 方法
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用节点 API 方法配置单个节点。这些方法可在需要配置，已配置但尚未加入集群或正在积极加入集群的单个节点上运行。通过节点 API 方法，您可以查看和修改各个节点以及用于与节点通信的集群网络的设置。您必须对单个节点运行这些方法；不能对集群地址运行每个节点 API 方法。
+
+* xref:reference_element_api_checkpingonvlan.adoc[CheckPingOnVlan]
+* xref:reference_element_api_checkproposednodeadditions.adoc[CheckProposedNodeAdditions]
+* xref:reference_element_api_createclustersupportbundle.adoc[CreateClusterSupportBundle]
+* xref:reference_element_api_createsupportbundle.adoc[CreateSupportBundle]
+* xref:reference_element_api_deleteallsupportbundles.adoc[DeleteAllSupportBundles]
+* xref:reference_element_api_disablemaintenancemode.adoc[禁用维护模式]
+* xref:reference_element_api_disablessh.adoc[DisableSsh]
+* xref:reference_element_api_enablemaintenancemode.adoc[EnableMaintenanceMode]
+* xref:reference_element_api_enablessh.adoc[EnableSsh]
+* xref:reference_element_api_getclusterconfig.adoc[GetClusterConfig]
+* xref:reference_element_api_getclusterstate.adoc[GetClusterState]
+* xref:reference_element_api_getconfig.adoc[getconfig]
+* xref:reference_element_api_getdriveconfig.adoc[GetDriveConfig]
+* xref:reference_element_api_gethardwareconfig.adoc[GetHardwareConfig]
+* xref:reference_element_api_gethardwareinfo.adoc[GetHardwareInfo]
+* xref:reference_element_api_getipmiconfig.adoc[GetIpmiConfig]
+* xref:reference_element_api_getipmiinfo.adoc[GetIpmiInfo]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig]
+* xref:reference_element_api_getnetworkinterface.adoc[GetNetworkInterface]
+* xref:reference_element_api_getnodeactivetlsciphers.adoc[GetNodeActiveTlsCiphers]
+* xref:reference_element_api_getnodefipsdrivesreport.adoc[GetNodeFipsDrivesReport]
+* xref:reference_element_api_getnodesslcertificate.adoc[GetNodeSSLCertificate]
+* xref:reference_element_api_getnodesupportedtlsciphers.adoc[GetNodeSupportedTlsCiphers]
+* xref:reference_element_api_getpendingoperation.adoc[GetPendingOperation]
+* xref:reference_element_api_getsshinfo.adoc[GetSshInfo]
+* xref:reference_element_api_listdrivehardware.adoc[ListDriveHardware]
+* xref:reference_element_api_listnetworkinterfaces.adoc[ListNetworkInterfaces]
+* xref:reference_element_api_listtests.adoc[ListTests]
+* xref:reference_element_api_listutilities.adoc[ListUtilities]
+* xref:reference_element_api_removenodesslcertificate.adoc[RemoveNodeSSLCertificate]
+* xref:reference_element_api_resetdrives.adoc[ResetDrives]
+* xref:reference_element_api_resetnode.adoc[ResetNode]
+* xref:reference_element_api_resetnodesupplementaltlsciphers.adoc[ResetNodeSupplementalTlsCiphers]
+* xref:reference_element_api_restartnetworking.adoc[RestartNetworking]
+* xref:reference_element_api_restartservices.adoc[RestartServices]
+* xref:reference_element_api_setclusterconfig.adoc[SetClusterConfig]
+* xref:reference_element_api_setconfig.adoc[SetConfig]
+* xref:reference_element_api_setnetworkconfig.adoc[SetNetworkConfig]
+* xref:reference_element_api_setnodesslcertificate.adoc[SetNodeSSLCertificate]
+* xref:reference_element_api_setnodesupplementaltlsciphers.adoc[SetNodeSupplementalTlsCiphers]
+* xref:reference_element_api_shutdown.adoc[关闭]
+* xref:reference_element_api_testconnectensemble.adoc[TestConnectEnsemble]
+* xref:reference_element_api_testconnectmvip.adoc[TestConnectMvip]
+* xref:reference_element_api_testconnectsvip.adoc[TestConnectSvip]
+* xref:reference_element_api_testdrives.adoc[测试驱动器]
+* xref:reference_element_api_testhardwareconfig.adoc[TestHardwareConfig]
+* xref:reference_element_api_testlocatecluster.adoc[TestLocateCluster]
+* xref:reference_element_api_testlocalconnectivity.adoc[测试本地连接]
+* xref:reference_element_api_testnetworkconfig.adoc[TestNetworkConfig]
+* xref:reference_element_api_testping.adoc[TestPing]
+* xref:reference_element_api_testremoteconnectivity.adoc[测试远程连接]
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

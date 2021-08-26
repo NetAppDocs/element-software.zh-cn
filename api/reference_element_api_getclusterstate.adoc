@@ -1,0 +1,84 @@
+---
+permalink: api/reference_element_api_getclusterstate.html 
+sidebar: sidebar 
+keywords: cluster,state,getting,get,getclusterstate 
+summary: 您可以使用 GetClusterState API 方法指示节点是否属于集群。 
+---
+= GetClusterState
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetClusterState` API 方法指示节点是否属于集群。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+集群
+ a| 
+集群的名称。
+ a| 
+string
+
+
+
+ a| 
+state
+ a| 
+* Available ：节点尚未配置集群名称。
+* Pending ：节点正在等待特定命名集群的使用，可以添加。
+* Active ：节点是集群的活动成员，不能添加到其他集群。
+
+ a| 
+string
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "GetClusterState",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id" : 1,
+   "result" :
+      "cluster" :  "Cluster101"
+      "state" : "Active"
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

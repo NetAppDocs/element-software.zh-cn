@@ -1,0 +1,58 @@
+---
+permalink: storage/reference_data_protection_group_snapshot_details.html 
+sidebar: sidebar 
+keywords: snapshots, group snapshots, volumes, replication 
+summary: '" 数据保护 " 选项卡上的 " 组快照 " 页面提供了有关组快照的信息。' 
+---
+= 组快照详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+" 数据保护 " 选项卡上的 " 组快照 " 页面提供了有关组快照的信息。
+
+* * ID *
++
+系统为组快照生成的 ID 。
+
+* * UUID *
++
+组快照的唯一 ID 。
+
+* * 名称 *
++
+用户定义的组快照名称。
+
+* * 创建时间 *
++
+创建组快照的时间。
+
+* * 状态 *
++
+快照的当前状态。可能值：
+
++
+** Preparing ：正在准备快照以供使用，该快照尚不可写入。
+** Done ：此快照已完成准备，现在可供使用。
+** Active ：快照是活动分支。
+
+
+* * 卷数 *
++
+组中的卷数。
+
+* * 保留至 *
++
+删除快照的日期和时间。
+
+* * 远程复制 *
++
+指示是否已启用快照以复制到远程 SolidFire 集群。可能值：
+
++
+** Enabled ：已为快照启用远程复制。
+** Disabled ：未为快照启用远程复制。
+
+
+

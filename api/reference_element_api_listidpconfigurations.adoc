@@ -1,0 +1,129 @@
+---
+permalink: api/reference_element_api_listidpconfigurations.html 
+sidebar: sidebar 
+keywords: configs configurations,idp configs,list 
+summary: 您可以使用 ListIdpConfigurations 方法列出第三方 IdP 的配置。或者，您也可以提供 enabledOnly 标志来检索当前已启用的 IdP 配置，或者提供 IdP 元数据 UUID 或 IdP 名称来查询特定 IdP 配置的信息。 
+---
+= ListIdpConfigurations
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListIdpConfigurations` 方法列出第三方 IdP 的配置。或者，您也可以提供 `enabledOnly` 标志来检索当前启用的 IdP 配置，或者提供 IdP 元数据 UUID 或 IdP 名称来查询特定 IdP 配置的信息。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+enabledOnly
+ a| 
+筛选结果以返回当前已启用的 IdP 配置。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+idpConfigurationID
+ a| 
+第三方 IdP 配置的 UUID 。
+ a| 
+UUID
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+idpName
+ a| 
+检索特定 IdP 名称的 IdP 配置信息。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+idpConfigInfo
+ a| 
+有关第三方 IdP 配置的信息。
+ a| 
+link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "ListIdpConfigurations",
+  "params": {}
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "result": {
+        "idpConfigInfo": {
+        "enabled": true,
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "idpMetadata": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n
+        <EntityDescriptor xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\"\r\n
+        xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"\r\n
+        xmlns:shibmd=\"urn:mace:shibboleth:metadata:1.0\"\r\n
+        xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\r\n
+        ...</Organization>\r\n
+        </EntityDescriptor>",
+        "idpName": "https://privider.name.url.com",
+        "serviceProviderCertificate": "-----BEGIN CERTIFICATE-----\n
+        MI...BHi\n
+        -----END CERTIFICATE-----\n",
+        "spMetadataUrl": "https://10.193.100.100/auth/ui/saml2"
+        }
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.0

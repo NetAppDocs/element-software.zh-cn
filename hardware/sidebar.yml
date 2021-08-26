@@ -1,0 +1,27 @@
+---
+section: hardware
+title: 安装和维护硬件
+url: "/hardware/index.html"
+entries:
+- title: H410S 和 H610S 硬件信息
+  url: "/hardware/concept_h410s_h610s_info.html"
+  entries:
+  - title: 安装 H410S 和 H610S 节点
+    url: "/hardware/task_h410s_h610s_install.html"
+  - title: 更换 H410S 节点
+    url: "/hardware/task_h410s_repl.html"
+  - title: 更换 H610S 节点
+    url: "/hardware/task_h610s_repl.html"
+  - title: 更换驱动器
+    url: "/hardware/task_hseries_driverepl.html"
+  - title: 更换电源设备
+    url: "/hardware/task_psu_repl.html"
+- title: SF 系列硬件信息
+  url: "/hardware/concept_sfseries_info.html"
+  entries:
+  - title: 更换机箱
+    url: "/hardware/task_sfseries_chassisrepl.html"
+  - title: 更换驱动器
+    url: "/hardware/task_sfseries_driverepl.html"
+  - title: 更换电源设备
+    url: "/hardware/task_sfseries_psurepl.html"

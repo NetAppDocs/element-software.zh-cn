@@ -1,0 +1,30 @@
+---
+permalink: storage/task_snapmirror_add_labels_to_snapshots.html 
+sidebar: sidebar 
+keywords: snapmirror labels, add labels to snapshots, specify retention policies, group snapshots 
+summary: SnapMirror 标签用于指定 SnapMirror 端点上的快照保留策略。您可以为快照和组快照添加标签。 
+---
+= 向快照添加 SnapMirror 标签
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 标签用于指定 SnapMirror 端点上的快照保留策略。您可以为快照和组快照添加标签。
+
+您可以从现有 SnapMirror 关系对话框或 NetApp ONTAP 系统管理器中查看可用标签。
+
+
+IMPORTANT: 向组快照添加标签时，各个快照的任何现有标签将被覆盖。
+
+.您需要什么？ #8217 ；将需要什么
+* 已在集群上启用 SnapMirror 。
+* 要添加的标签已存在于 ONTAP 中。
+
+
+.步骤
+. 单击 * 数据保护 * > * 快照 * 或 * 组快照 * 页面。
+. 单击要添加 SnapMirror 标签的快照或组快照的 * 操作 * 图标。
+. 在 * 编辑 Snapshot* 对话框的 * SnapMirror 标签 * 字段中输入文本。此标签必须与应用于 SnapMirror 关系的策略中的规则标签匹配。
+. 单击 * 保存更改 * 。
+

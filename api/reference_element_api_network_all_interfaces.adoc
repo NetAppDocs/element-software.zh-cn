@@ -1,0 +1,68 @@
+---
+permalink: api/reference_element_api_network_all_interfaces.html 
+sidebar: sidebar 
+keywords: object,objects,network 
+summary: network \ （所有接口 \ ）对象收集有关存储节点的网络接口配置的信息。您可以使用 getconfig 和 GetNetworkConfig 方法为存储节点获取此信息。 
+---
+= 网络（所有接口）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+network （ all interfaces ）对象收集有关存储节点的网络接口配置的信息。您可以使用 `getconfig` 和 `GetNetworkConfig` 方法来获取存储节点的此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+绑定 10G
+ a| 
+绑定 10G 绑定接口的配置信息。
+ a| 
+xref:reference_element_api_network_bonded_interfaces.adoc[网络（绑定接口）]
+
+
+
+ a| 
+绑定 1 G
+ a| 
+绑定 1G 绑定接口的配置信息。
+ a| 
+xref:reference_element_api_network_bonded_interfaces.adoc[网络（绑定接口）]
+
+
+
+ a| 
+eth0-5
+ a| 
+存储节点中的每个以太网接口对应一个对象，用于描述该接口的配置信息。这些对象的编号为 0 到 5 ，与接口名称匹配。
+ a| 
+xref:reference_element_api_network_ethernet_interfaces.adoc[网络（以太网接口）]
+
+
+
+ a| 
+低
+ a| 
+环回接口的配置信息。
+ a| 
+xref:reference_element_api_network_local_interfaces.adoc[网络（本地接口）]
+
+|===
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getconfig.adoc[getconfig]
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig]
+

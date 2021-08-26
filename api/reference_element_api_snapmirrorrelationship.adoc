@@ -1,0 +1,242 @@
+---
+permalink: api/reference_element_api_snapmirrorrelationship.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorRelationship 
+summary: snapMirrorRelationship 对象包含有关 Element 卷与 ONTAP 卷之间的 SnapMirror 关系的信息。 
+---
+= snapMirrorRelationship
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorRelationship 对象包含有关 Element 卷与 ONTAP 卷之间的 SnapMirror 关系的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目标 ONTAP 系统的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+snapMirrorRelationshipID
+ a| 
+在 ListSnapMirrorRelationships 中返回的数组中每个 snapMirrorRelationship 对象的唯一标识符。此 UUID 是在 ONTAP 系统中创建并返回的。
+ a| 
+string
+
+
+
+ a| 
+源卷
+ a| 
+描述源卷的对象。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+
+
+
+ a| 
+目标卷
+ a| 
+描述目标卷的对象。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+
+
+
+ a| 
+当前最大传输速率
+ a| 
+源卷与目标卷之间的当前最大传输速率，以 KB/ 秒为单位。
+ a| 
+整型
+
+
+
+ a| 
+isHealthy
+ a| 
+关系是否运行正常。可能值：
+
+* true ：关系运行状况良好。
+* false ：此关系运行不正常。这可能是由于手动或计划更新失败或中止，或者上次计划更新延迟所致。
+
+ a| 
+boolean
+
+
+
+ a| 
+lagTime
+ a| 
+目标卷上的数据滞后于源卷上的数据所经过的时间（以秒为单位）。
+ a| 
+整型
+
+
+
+ a| 
+lastTransferDuration
+ a| 
+上次传输完成所需的时间（以秒为单位）。
+ a| 
+整型
+
+
+
+ a| 
+lastTransferError
+ a| 
+描述上次传输失败的发生原因的消息。
+ a| 
+string
+
+
+
+ a| 
+lastTransferSize
+ a| 
+上次传输期间传输的总字节数。
+ a| 
+整型
+
+
+
+ a| 
+lastTransferEndTimestamp
+ a| 
+上次传输结束的时间戳。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+lastTransferType
+ a| 
+关系中上次传输的类型。
+ a| 
+string
+
+
+
+ a| 
+maxTransferRate
+ a| 
+指定卷之间的最大数据传输速率，以 KB/ 秒为单位。默认值 0 为无限制，允许 SnapMirror 关系充分利用可用网络带宽。
+ a| 
+整型
+
+
+
+ a| 
+mirrorState
+ a| 
+SnapMirror 关系的镜像状态。可能值：
+
+* Uninitialized ：目标卷尚未初始化。
+* snapmirrored ：目标卷已初始化并准备好接收 SnapMirror 更新。
+* Broken-off ：目标卷为读写卷，并且存在快照。
+
+ a| 
+string
+
+
+
+ a| 
+newestSnapshot
+ a| 
+目标卷上最新 Snapshot 副本的名称。
+ a| 
+string
+
+
+
+ a| 
+policyName
+ a| 
+指定关系的 ONTAP SnapMirror 策略的名称。可以使用 ListSnapMirrorPolicies 检索可用策略列表。示例值为 `MirrorLatest` 和 `MirrorAndVault` 。
+ a| 
+string
+
+
+
+ a| 
+policyType
+ a| 
+关系的 ONTAP SnapMirror 策略类型。请参见 ListSnapMirrorPolicies 。例如： "`async_mirror` " 或 `mirror_vault` 。
+ a| 
+string
+
+
+
+ a| 
+relationshipProgress
+ a| 
+迄今为止在关系状态中返回的关系的当前活动中已处理的总字节数。只有当 "relationshipStatus" 成员指示正在进行活动时，才会设置此值。
+ a| 
+整型
+
+
+
+ a| 
+relationshipStatus
+ a| 
+SnapMirror 关系的状态。可能值：
+
+* 空闲
+* 正在传输
+* 正在检查
+* 正在暂停
+* 已暂停
+* 已排队
+* 正在准备
+* 正在完成
+* 正在中止
+* 正在中断
+
+ a| 
+string
+
+
+
+ a| 
+relationshipType
+ a| 
+SnapMirror 关系的类型。在运行 Element 软件的存储集群上，此值始终为 "`extended_data_protection` " 。
+ a| 
+string
+
+
+
+ a| 
+scheduleName
+ a| 
+ONTAP 系统上用于更新 SnapMirror 关系的原有 cron 计划的名称。可以使用 ListSnapMirrorSchedules 检索可用计划的列表。
+ a| 
+string
+
+
+
+ a| 
+unhealthyReason
+ a| 
+关系运行不正常的原因。
+ a| 
+string
+
+|===

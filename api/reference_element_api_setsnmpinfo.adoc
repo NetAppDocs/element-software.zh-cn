@@ -1,0 +1,153 @@
+---
+permalink: api/reference_element_api_setsnmpinfo.html 
+sidebar: sidebar 
+keywords: snmp,info,setting,set,setsnmpinfo 
+summary: 您可以使用 SetSnmpInfo 方法在集群节点上配置 SNMP 版本 2 和版本 3 。使用此接口设置的值将应用于集群中的所有节点，传递的值将替换先前任何 SetSnmpInfo 调用中设置的所有值。 
+---
+= SetSnmpInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetSnmpInfo` 方法在集群节点上配置 SNMP 版本 2 和版本 3 。使用此接口设置的值将应用于集群中的所有节点，传递的值将替换先前对 `SetSnmpInfo` 的任何调用中设置的所有值。
+
+
+
+== Parameters
+
+
+NOTE: 对于 Element 6.0 及更高版本， SetSnmpInfo 已弃用。使用 xref:reference_element_api_enablesnmp.adoc[EnableSnmp] 和 xref:reference_element_api_setsnmpacl.adoc[SetSnmpACL] 方法。
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+网络
+ a| 
+列出网络及其对集群节点上运行的 SNMP 服务器的访问类型。请参见 SNMP xref:reference_element_api_network_snmp.adoc[网络] 可能值的对象。仅 SNMP v2 需要此参数。
+ a| 
+xref:reference_element_api_network_snmp.adoc[网络] 数组
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+enabled
+ a| 
+如果设置为 true ，则会在集群中的每个节点上启用 SNMP 。
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+已启用 SnmpV3Enabled
+ a| 
+如果设置为 true ，则会在集群中的每个节点上启用 SNMP v3 。
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+用户
+ a| 
+如果启用了 SNMP v3 ，则必须传递此值来替代 networks.仅 SNMP v3 需要此参数。
+ a| 
+xref:reference_element_api_usmuser.adoc[usmUser]
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 启用 SNMP v3 的请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method":"SetSnmpInfo",
+"params":{
+    "enabled":true,
+    "snmpV3Enabled":true,
+    "usmUsers":[
+      {
+        "name":"user1",
+        "access":"rouser",
+        "secLevel":"auth",
+        "password":"namex1",
+        "passphrase":"yourpassphrase"
+      }
+    ]
+  },
+ "id":1
+}
+----
+
+
+== 启用 SNMP v2 的请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method":"SetSnmpInfo",
+"params":{
+    "enabled":true,
+    "snmpV3Enabled":false,
+    "networks":[
+      {
+        "community":"public",
+        "access":"ro",
+        "network":"localhost",
+      }
+    ]
+  },
+  "id":1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1
+  "result" :{
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

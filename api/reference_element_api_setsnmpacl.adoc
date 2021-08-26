@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_setsnmpacl.html 
+sidebar: sidebar 
+keywords: setsnmpACL,set,setting,snmp,acl,permissions,access,control,list 
+summary: 您可以使用 SetSnmpACL 方法在集群节点上配置 SNMP 访问权限。使用此接口设置的值将应用于集群中的所有节点，传递的值将替换先前任何 SetSnmpACL 调用中设置的所有值。另请注意，使用此接口设置的值将替换使用 SetSnmpInfo 设置的所有 network 或 usmUsers 值。 
+---
+= SetSnmpACL
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetSnmpACL` 方法在集群节点上配置 SNMP 访问权限。使用此接口设置的值将应用于集群中的所有节点，传递的值将替换先前对 `SetSnmpACL` 的任何调用中设置的所有值。另请注意，使用此接口设置的值将替换使用 `SetSnmpInfo` 方法设置的所有 network 或 usmUsers 值。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+网络
+ a| 
+列出网络及其对集群节点上运行的 SNMP 服务器的访问类型。有关可能的网络值，请参见 SNMP network 对象。如果禁用 SNMP v3 ，则需要此参数。
+ a| 
+xref:reference_element_api_network_snmp.adoc[网络]
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+用户
+ a| 
+列出用户及其对集群节点上运行的 SNMP 服务器的访问类型。如果启用了 SNMP v3 ，则需要此参数。
+ a| 
+xref:reference_element_api_usmuser.adoc[usmUser]
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "SetSnmpACL",
+  "params": {
+    "usmUsers"  : [
+      {
+         "name": "jdoe",
+         "access": "rouser",
+         "secLevel": "priv",
+         "password": "mypassword",
+         "passphrase": "mypassphrase",
+      }
+    ]
+  },
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_setsnmpinfo.adoc[SetSnmpInfo]

@@ -1,0 +1,31 @@
+---
+permalink: storage/concept_system_manage_nodes_node_versioning_and_compatibility.html 
+sidebar: sidebar 
+keywords: compatibility, node version, clusters, software version, compatible versions, major, minor, micro 
+summary: 节点兼容性取决于节点上安装的 Element 软件版本。如果节点和集群的版本不兼容，则基于 Element 软件的存储集群会根据集群上的 Element 软件版本自动创建节点映像。 
+---
+= 节点版本控制和兼容性
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+节点兼容性取决于节点上安装的 Element 软件版本。如果节点和集群的版本不兼容，则基于 Element 软件的存储集群会根据集群上的 Element 软件版本自动创建节点映像。
+
+以下列表介绍了构成 Element 软件版本号的软件版本重要性级别：
+
+* * 主要 *
++
+第一个数字用于指定软件版本。不能将具有一个主要组件编号的节点添加到包含具有不同主要修补程序编号的节点的集群中，也不能使用具有混合主要版本的节点创建集群。
+
+* * 次要 *
++
+第二个数字用于指定已添加到主要版本的现有软件功能的较小软件功能或增强功能。此组件会在主要版本组件中递增，以表示此增量版本与具有其他次要组件的任何其他 Element 软件增量版本不兼容。例如， 11.0 与 11.1 不兼容， 11.1 与 11.2 不兼容。
+
+* * 微 *
++
+第三个数字用于指定与主 .minor 组件表示的 Element 软件版本兼容的修补程序（增量版本）。例如， 11.0.1 与 11.0.2 兼容， 11.0.2 与 11.0.3 兼容。
+
+
+
+主要版本号和次要版本号必须匹配才能兼容。微型数字不必匹配即可实现兼容性。

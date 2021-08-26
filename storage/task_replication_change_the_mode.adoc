@@ -1,0 +1,26 @@
+---
+permalink: storage/task_replication_change_the_mode.html 
+sidebar: sidebar 
+keywords: volume pairings, replication mode, change, volume pair properties 
+summary: 您可以编辑卷对属性以更改卷对关系的复制模式。 
+---
+= 更改复制模式
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑卷对属性以更改卷对关系的复制模式。
+
+. 选择 * 数据保护 * > * 卷对 * 。
+. 单击卷对对应的 "Actions" 图标。
+. 单击 * 编辑 * 。
+. 在 * 编辑卷对 * 窗格中，选择新的复制模式：
++
+** * 实时（异步） * ：在源集群上提交写入后，将向客户端确认这些写入。
+** * 实时（同步） * ：在源集群和目标集群上提交写入后，将向客户端确认写入。
+** * 仅限 Snapshot * ：仅复制在源集群上创建的快照。不会复制源卷中的活动写入。* 注意： * 更改复制模式会立即更改此模式。请确保您已在两个站点协调这些更改。
+
+
+. 单击 * 保存更改 * 。
+

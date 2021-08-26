@@ -1,0 +1,36 @@
+---
+permalink: storage/concept_intro_solidfire_system_overview.html 
+sidebar: sidebar 
+keywords: drives, nodes, unified cluster, nodes, storage nodes, Fibre Channel nodes, FC, cluster, management, Active IQ, system components, components, hardware, storage resources, storage, Element UI, Element software, Element 
+summary: SolidFire 全闪存存储系统由独立的硬件组件（驱动器和节点）组成，这些组件通过在每个节点上独立运行的 NetApp Element 软件组合到一个存储资源池中。此统一集群可作为一个存储系统提供给外部客户端使用，并通过 Element 软件 UI ， API 和其他管理工具作为一个实体进行管理。 
+---
+= SolidFire 存储系统
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire 全闪存存储系统由独立的硬件组件（驱动器和节点）组成，这些组件通过在每个节点上独立运行的 NetApp Element 软件组合到一个存储资源池中。此统一集群可作为一个存储系统提供给外部客户端使用，并通过 Element 软件 UI ， API 和其他管理工具作为一个实体进行管理。
+
+您可以使用 NetApp Element 软件用户界面设置和监控 SolidFire 集群存储容量和性能，并管理多租户基础架构中的存储活动。
+
+image::../media/solidfire_concepts_architecture_image.gif[Element 软件架构图]
+
+SolidFire 全闪存存储系统包括以下组件：
+
+* 节点：为集群提供存储资源的物理硬件。节点有两种类型：
++
+** 存储节点：包含一组驱动器的服务器。
+** 光纤通道（ FC ）节点：用于通过光纤通道交换机连接 FC 客户端。
+
+
+* 集群： SolidFire 存储系统的中心，至少包含四个节点。
+* 管理节点：用于升级和提供系统服务，包括监控和遥测，管理集群资产和设置，运行系统测试和实用程序，以及提供 NetApp 支持访问以进行故障排除。管理节点（ mNode ）是与基于 Element 软件的存储集群同步运行的虚拟机。
+* Active IQ ：一种基于 Web 的工具，可提供持续更新的集群范围数据历史视图。您可以为特定事件，阈值或指标设置警报。通过 Active IQ ，您可以监控系统性能和容量，并随时了解集群运行状况。
+* 驱动器用于存储节点并存储集群的数据。存储节点包含两种类型的驱动器：
++
+** 卷元数据驱动器用于存储定义集群中的卷和其他对象的信息。
+** 块驱动器用于存储应用程序卷的数据块。
+
+
+

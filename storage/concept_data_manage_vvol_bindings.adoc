@@ -1,0 +1,15 @@
+---
+permalink: storage/concept_data_manage_vvol_bindings.html 
+sidebar: sidebar 
+keywords: bindings, vvols, bound virtual volumes 
+summary: 要对虚拟卷执行 I/O 操作， ESXi 主机必须先绑定虚拟卷。 
+---
+= 绑定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要对虚拟卷执行 I/O 操作， ESXi 主机必须先绑定虚拟卷。
+
+SolidFire 集群会选择最佳协议端点，创建将 ESXi 主机和虚拟卷与协议端点关联的绑定，并将此绑定返回到 ESXi 主机。绑定后， ESXi 主机可以对绑定的虚拟卷执行 I/O 操作。

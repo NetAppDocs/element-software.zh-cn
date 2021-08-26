@@ -1,0 +1,23 @@
+---
+permalink: storage/task_data_protection_copy_a_snapshot_schedule.html 
+sidebar: sidebar 
+keywords: snapshot schedule, copy, maintain, schedule attributes 
+summary: 您可以复制计划并维护其当前属性。 
+---
+= 复制快照计划
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以复制计划并维护其当前属性。
+
+. 单击 * 数据保护 * > * 计划 * 。
+. 单击要复制的计划对应的 "Actions" 图标。
+. 在显示的菜单中，单击 * 创建副本 * 。
++
+此时将显示 * 创建计划 * 对话框，其中填充了计划的当前属性。
+
+. * 可选： * 输入新计划的名称和更新属性。
+. 单击 * 创建计划 * 。
+

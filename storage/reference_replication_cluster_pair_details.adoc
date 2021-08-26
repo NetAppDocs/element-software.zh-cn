@@ -1,0 +1,39 @@
+---
+permalink: storage/reference_replication_cluster_pair_details.html 
+sidebar: sidebar 
+keywords: cluster pairs, replication, data protection 
+summary: '"Data Protection" 选项卡上的 "Cluster Pairs" 页面提供了有关已配对或正在配对的集群的信息。系统将在状态列中显示配对和进度消息。' 
+---
+= 集群对详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"Data Protection" 选项卡上的 "Cluster Pairs" 页面提供了有关已配对或正在配对的集群的信息。系统将在状态列中显示配对和进度消息。
+
+* * ID *
++
+系统为每个集群对生成的 ID 。
+
+* * 远程集群名称 *
++
+对中另一个集群的名称。
+
+* * 远程 MVIP*
++
+对中另一个集群的管理虚拟 IP 地址。
+
+* * 状态 *
++
+远程集群的复制状态
+
+* * 复制卷 *
++
+集群中已配对进行复制的卷数。
+
+* * UUID *
++
+为对中的每个集群指定的唯一 ID 。
+
+

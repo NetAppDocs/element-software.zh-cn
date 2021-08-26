@@ -1,0 +1,103 @@
+---
+permalink: api/reference_element_api_liststoragecontainers.html 
+sidebar: sidebar 
+keywords: virtual,volume,storage,container,containers,list,listing,liststoragecontainers 
+summary: 您可以使用 ListStorageContainers 方法检索有关系统已知的所有虚拟卷存储容器的信息。 
+---
+= ListStorageContainers
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListStorageContainers` 方法检索有关系统已知的所有虚拟卷存储容器的信息。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+storageContainerID
+ a| 
+要检索其信息的存储容器 ID 列表。如果省略此参数，则该方法将返回有关系统中所有存储容器的信息。
+ a| 
+UUID array
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+存储容器
+ a| 
+包含系统中所有存储容器的相关信息的对象列表。
+ a| 
+xref:reference_element_api_storagecontainer.adoc[存储容器] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListStorageContainers",
+   "params": {
+      "storageContainerIDs": ["efda8307-b916-4424-979e-658a3f16894d"]
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 6395,
+  "result": {
+    "storageContainers": [
+      {
+        "accountID": 64,
+        "initiatorSecret": "EJ:08An1MyNQmL!7",
+        "name": "VvolContainer",
+        "protocolEndpointType": "SCSI",
+        "status": "active",
+        "storageContainerID": "efda8307-b916-4424-979e-658a3f16894d",
+        "targetSecret": "g38}zWBK%206jQr~",
+        "virtualVolumes": []
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

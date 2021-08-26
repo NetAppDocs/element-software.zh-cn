@@ -1,0 +1,36 @@
+---
+permalink: storage/task_data_manage_vol_access_group_view_individual_access_group_details.html 
+sidebar: sidebar 
+keywords: access group details, view, view details, initiators 
+summary: 您可以通过图形格式查看单个访问组的详细信息，例如连接的卷和启动程序。 
+---
+= 查看单个访问组详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过图形格式查看单个访问组的详细信息，例如连接的卷和启动程序。
+
+. 单击 * 管理 * > * 访问组 * 。
+. 单击访问组对应的 "Actions" 图标。
+. 单击 * 查看详细信息 * 。
+
+
+
+
+== 卷访问组详细信息
+
+" 管理 " 选项卡上的 " 访问组 " 页面提供了有关卷访问组的信息。
+
+此时将显示以下信息：
+
+* * ID * ：系统为访问组生成的 ID 。
+* * 名称 * ：创建访问组时为其指定的名称。
+* * 活动卷 * ：访问组中活动卷的数量。
+* * 压缩 * ：访问组的压缩效率得分。
+* * 重复数据删除 * ：访问组的重复数据删除效率得分。
+* * 精简配置 * ：访问组的精简配置效率得分。
+* * 整体效率 * ：访问组的整体效率得分。
+* * 启动程序 * ：连接到访问组的启动程序数量。
+

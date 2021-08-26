@@ -1,0 +1,70 @@
+---
+permalink: storage/reference_replication_volume_pair_details.html 
+sidebar: sidebar 
+keywords: volume pairs, replication, data protection 
+summary: '"Data Protection" 选项卡上的 "Volume Pairs" 页面提供了有关已配对或正在配对的卷的信息。系统会在卷状态列中显示配对和进度消息。' 
+---
+= 卷对详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"Data Protection" 选项卡上的 "Volume Pairs" 页面提供了有关已配对或正在配对的卷的信息。系统会在卷状态列中显示配对和进度消息。
+
+* * ID *
++
+系统为卷生成的 ID 。
+
+* * 名称 *
++
+创建卷时为卷指定的名称。卷名称最多可以包含 223 个字符，并且包含 a-z ， 0-9 和短划线（ - ）。
+
+* * 帐户 *
++
+分配给卷的帐户的名称。
+
+* * 卷状态 *
++
+卷的复制状态
+
+* * 快照状态 *
++
+快照卷的状态。
+
+* * 模式 *
++
+客户端写入复制方法。可能值如下：
+
++
+** 异步
+** 仅 Snapshot
+** 同步
+
+
+* * 方向 *
++
+卷数据的方向：
+
++
+** 源卷图标（image:../media/source_icon_for_volume_pairs.png["表示正在将数据写入目标外集群"]）表示正在将数据写入集群外的目标。
+** 目标卷图标（image:../media/target_icon_for_volume_pairs.png["此图标表示正在从外部源向本地卷写入数据"]）表示正在从外部源向本地卷写入数据。
+
+
+* * 异步延迟 *
++
+自卷上次与远程集群同步以来的时间长度。如果卷未配对，则此值为 null 。
+
+* * 远程集群 *
++
+卷所在远程集群的名称。
+
+* * 远程卷 ID*
++
+远程集群上卷的卷 ID 。
+
+* * 远程卷名称 *
++
+创建远程卷时为其指定的名称。
+
+

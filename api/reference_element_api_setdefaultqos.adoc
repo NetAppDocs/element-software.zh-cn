@@ -1,0 +1,138 @@
+---
+permalink: api/reference_element_api_setdefaultqos.html 
+sidebar: sidebar 
+keywords: qos,value,configure,configuring,default,set,setting,setdefaultqos 
+summary: 您可以使用 SetDefaultQoS 方法配置卷的默认服务质量值（ QoS ） \ （以每秒输入和输出数或 IOPS\ 为单位）。 
+---
+= 设置 DefaultQoS
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetDefaultQoS` 方法配置卷的默认服务质量（ QoS ）值（以每秒输入输出数或 IOPS 为单位）。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+最小 IOPS
+ a| 
+集群为卷提供的最小可持续 IOPS 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+maxIops
+ a| 
+集群为卷提供的最大可持续 IOPS 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+突发 IOPS
+ a| 
+在短时突发情形下允许的最大 IOPS 数。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+最小 IOPS
+ a| 
+集群为卷提供的最小可持续 IOPS 。
+ a| 
+整型
+
+
+
+ a| 
+maxIops
+ a| 
+集群为卷提供的最大可持续 IOPS 。
+ a| 
+整型
+
+
+
+ a| 
+突发 IOPS
+ a| 
+在短时突发情形下允许的最大 IOPS 数。
+ a| 
+整型
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "SetDefaultQoS",
+    "params": {
+        "burstIOPS":8000,
+        "maxIOPS":1000,
+        "minIOPS":200
+    },
+    "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id":1,
+    "result": {
+        "burstIOPS":8000,
+        "maxIOPS":1000,
+        "minIOPS":200
+    ​}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

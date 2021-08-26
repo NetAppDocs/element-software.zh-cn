@@ -1,0 +1,33 @@
+---
+permalink: storage/task_replication_plan_cluster_and_volume_pairing.html 
+sidebar: sidebar 
+keywords: cluster, volume pairing, plan for, real-time replication 
+summary: 实时远程复制要求您对运行 Element 软件的两个存储集群配对，对每个集群上的卷配对并验证复制。复制完成后，应删除卷关系。 
+---
+= 规划集群和卷配对以实现实时复制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+实时远程复制要求您对运行 Element 软件的两个存储集群配对，对每个集群上的卷配对并验证复制。复制完成后，应删除卷关系。
+
+.您需要什么？ #8217 ；将需要什么
+* 您必须对要配对的一个或两个集群拥有集群管理员权限。
+* 配对集群的管理网络和存储网络上的所有节点 IP 地址将相互路由。
+* 所有配对节点的 MTU 必须相同，并且在集群之间端到端都支持 MTU 。
+* 两个存储集群都应具有唯一的集群名称， MVIP ， SVIP 和所有节点 IP 地址。
+* 集群上的 Element 软件版本之间的差异不超过一个主要版本。如果差异较大，则必须升级其中一个集群才能执行数据复制。
+
+
+
+NOTE: WAN 加速器设备尚未获得 NetApp 认证，无法在复制数据时使用。如果部署在复制数据的两个集群之间，则这些设备可能会干扰数据压缩和重复数据删除。在生产环境中部署任何 WAN 加速器设备之前，请务必对其影响进行全面的评估。
+
+
+
+== 了解更多信息
+
+* xref:task_replication_pair_clusters.adoc[对集群进行配对以进行复制]
+* xref:task_replication_pair_volumes.adoc[对卷配对]
+* xref:task_replication_assign_replication_source_and_target_to_paired_volumes.adoc[为配对卷分配复制源和目标]
+

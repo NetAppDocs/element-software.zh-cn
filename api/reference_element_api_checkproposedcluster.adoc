@@ -1,0 +1,124 @@
+---
+permalink: api/reference_element_api_checkproposedcluster.html 
+sidebar: sidebar 
+keywords: cluster,creation,check,proposed,checking,nodes,node,before,CheckProposedCluster 
+summary: 您可以使用 CheckProposedCluster 方法在创建存储集群之前测试一组存储节点，以确定尝试可能发生的错误或故障，例如混合节点功能不平衡或双节点存储集群不支持的节点类型。 
+---
+= CheckProposedCluster
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CheckProposedCluster` 方法在创建存储集群之前测试一组存储节点，以确定尝试可能发生的错误或故障，例如混合节点功能不平衡或双节点存储集群不支持的节点类型。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+nodes
+ a| 
+构成存储集群的一组初始存储节点的存储 IP 地址列表。
+ a| 
+string array
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+【强制】
+ a| 
+设置为 true 可在存储集群中的所有存储节点上运行。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+建议的 ClusterValid
+ a| 
+指示建议的存储节点是否构成有效的存储集群。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+
+
+
+ a| 
+PropostedClusterErrors
+ a| 
+如果使用建议的存储节点创建存储集群，则会发生错误。
+ a| 
+string array
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+	"method": "CheckProposedCluster",
+	"params": {
+	"nodes": [
+		"192.168.1.11",
+		"192.168.1.12",
+		"192.168.1.13",
+		"192.168.1.14"
+	]
+},
+	"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+	"id": 1,
+	"result": {
+		"proposedClusterValid": true,
+		"proposedClusterErrors": [ ]
+	}
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.0

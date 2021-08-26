@@ -1,0 +1,159 @@
+---
+permalink: api/reference_element_api_pendingnode.html 
+sidebar: sidebar 
+keywords: object,objects,pendingNode 
+summary: pendingNode 对象包含可添加到集群中的节点的相关信息。使用 ListPendingNodes API 方法返回所有待定节点的此信息列表。您可以使用 addnodes API 方法将列出的任何节点添加到集群中。 
+---
+= pendingNode
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+pendingNode 对象包含可添加到集群中的节点的相关信息。使用 `ListPendingNodes` API 方法返回所有待定节点的此信息列表。您可以使用 `addnodes` API 方法将列出的任何节点添加到集群中。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+密码
+ a| 
+分配给节点的集群 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+activeNodeKey
+ a| 
+一种唯一密钥，允许节点在成功安装软件后自动加入集群。
+ a| 
+string
+
+
+
+ a| 
+asigneedNodeID
+ a| 
+为节点分配的节点 ID 。
+ a| 
+string
+
+
+
+ a| 
+异步处理
+ a| 
+可用于查询操作状态的异步方法句柄。
+ a| 
+整型
+
+
+
+ a| 
+chassisname
+ a| 
+唯一标识机箱；一个机箱中的所有节点都相同。
+ a| 
+string
+
+
+
+ a| 
+CIP
+ a| 
+分配给节点的集群 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+MIP
+ a| 
+分配给节点的管理 IP 地址。
+ a| 
+string
+
+
+
+ a| 
+节点插槽
+ a| 
+对于 HCI 平台，与此节点所处的机箱插槽对应的字母（ "A" ， "B" ， "C" 或 "D" ）。对于存储平台，此值为空。
+ a| 
+string
+
+
+
+ a| 
+pendingActiveNodeID
+ a| 
+节点的待定节点 ID 。
+ a| 
+整型
+
+
+
+ a| 
+platformInfo
+ a| 
+节点的硬件信息。成员
+
+* chassisType ：节点的硬件平台。
+* cpuModel ：硬件平台的 CPU 型号。
+* nodeMemoryGB ：物理平台中安装的内存量，以 GB 为单位。
+* NodeType ：节点型号名称。
+* platformConfigVersion ：为此节点硬件配置的软件版本。
+
+ a| 
+JSON 对象
+
+
+
+ a| 
+role
+ a| 
+节点在集群中的角色。可能值：
+
+* 管理
+* 存储
+* 计算
+* 见证
+
+ a| 
+
+
+
+ a| 
+SIP
+ a| 
+分配给节点的存储（ iSCSI ） IP 地址。
+ a| 
+string
+
+
+
+ a| 
+软件版本
+ a| 
+节点上运行的 Element 软件的当前版本。
+ a| 
+string
+
+|===
+
+
+== 了解更多信息
+
+* xref:reference_element_api_addnodes.adoc[添加节点]
+* xref:reference_element_api_listpendingnodes.adoc[ListPendingNodes]
+

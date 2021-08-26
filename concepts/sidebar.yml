@@ -1,0 +1,40 @@
+---
+section: concepts
+title: 概念
+url: "/concepts/index.html"
+entries:
+- title: 产品概述
+  url: "/concepts/concept_intro_product_overview.html"
+- title: 架构和组件
+  url: "/concepts/concept_solidfire_concepts_solidfire_architecture_overview.html"
+  entries:
+  - title: SolidFire 软件界面
+    url: "/concepts/concept_intro_solidfire_software_interfaces.html"
+  - title: SolidFire Active IQ
+    url: "/concepts/concept_intro_solidfire_active_iq.html"
+  - title: Element 软件的管理节点
+    url: "/concepts/concept_intro_management_node.html"
+  - title: 适用于 SolidFire 全闪存存储的管理服务
+    url: "/concepts/concept_intro_management_services_for_afa.html"
+- title: 节点
+  url: "/concepts/concept_solidfire_concepts_nodes.html"
+- title: 集群
+  url: "/concepts/concept_intro_clusters.html"
+- title: 安全性
+  url: "/concepts/concept_solidfire_concepts_security.html"
+- title: 帐户和权限
+  url: "/concepts/concept_solidfire_concepts_accounts_and_permissions.html"
+- title: 存储
+  entries:
+  - title: Volumes
+    url: "/concepts/concept_solidfire_concepts_volumes.html"
+  - title: 虚拟卷（ VVOL ）
+    url: "/concepts/concept_solidfire_concepts_vvols.html"
+  - title: 卷访问组
+    url: "/concepts/concept_solidfire_concepts_volume_access_groups.html"
+  - title: 启动程序
+    url: "/concepts/concept_solidfire_concepts_initiators.html"
+- title: 数据保护
+  url: "/concepts/concept_solidfire_concepts_data_protection.html"
+- title: 性能和服务质量
+  url: "/concepts/concept_data_manage_volumes_solidfire_quality_of_service.html"

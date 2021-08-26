@@ -1,0 +1,106 @@
+---
+permalink: api/reference_element_api_snapmirrorvolume.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorVolume 
+summary: snapMirrorVolume 对象包含有关 ONTAP 卷的信息。 
+---
+= snapMirrorVolume
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorVolume 对象包含有关 ONTAP 卷的信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目标 ONTAP 系统的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+name
+ a| 
+卷的名称。
+ a| 
+string
+
+
+
+ a| 
+type
+ a| 
+卷的类型。可能值：
+
+* rw ：读写卷
+* ls ：负载共享卷
+* dp ：数据保护卷
+
+ a| 
+string
+
+
+
+ a| 
+vserver
+ a| 
+拥有此卷的 SVM 的名称。
+ a| 
+string
+
+
+
+ a| 
+aggrName
+ a| 
+包含的聚合名称。
+ a| 
+string
+
+
+
+ a| 
+state
+ a| 
+卷的状态。可能值：
+
+* 联机
+* 受限
+* 脱机
+* 混合
+
+ a| 
+string
+
+
+
+ a| 
+size
+ a| 
+卷的总文件系统大小（以字节为单位）。
+ a| 
+string
+
+
+
+ a| 
+可用大小
+ a| 
+卷中可用空间的大小（以字节为单位）。
+ a| 
+string
+
+|===

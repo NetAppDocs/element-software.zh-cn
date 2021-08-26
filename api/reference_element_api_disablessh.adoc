@@ -1,0 +1,69 @@
+---
+permalink: api/reference_element_api_disablessh.html 
+sidebar: sidebar 
+keywords: SSH,disable,disabling,node,DisableSsh 
+summary: 您可以使用 DisableSsh 方法为单个存储节点禁用 SSH 服务。此方法不会影响集群范围的 SSH 服务超时持续时间。 
+---
+= DisableSsh
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DisableSsh` 方法为单个存储节点禁用 SSH 服务。此方法不会影响集群范围的 SSH 服务超时持续时间。
+
+
+NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
+
+
+
+== 参数
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+enabled
+ a| 
+此节点的 SSH 服务状态。
+ a| 
+boolean
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "DisableSsh",
+  "params": {
+      },
+  "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {"enabled": false}
+}
+----

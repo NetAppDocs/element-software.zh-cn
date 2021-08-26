@@ -1,0 +1,21 @@
+---
+permalink: storage/concept_system_manage_drives_managing_drives.html 
+sidebar: sidebar 
+keywords: drives, manage, cluster, element ui, remove drives 
+summary: 每个节点都包含一个或多个物理驱动器，用于存储集群的部分数据。成功将驱动器添加到集群后，集群将利用驱动器的容量和性能。您可以使用 Element UI 管理驱动器。 
+---
+= 管理驱动器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每个节点都包含一个或多个物理驱动器，用于存储集群的部分数据。成功将驱动器添加到集群后，集群将利用驱动器的容量和性能。您可以使用 Element UI 管理驱动器。
+
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

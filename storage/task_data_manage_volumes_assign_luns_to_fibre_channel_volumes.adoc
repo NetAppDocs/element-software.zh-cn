@@ -1,0 +1,23 @@
+---
+permalink: storage/task_data_manage_volumes_assign_luns_to_fibre_channel_volumes.html 
+sidebar: sidebar 
+keywords: volumes, fc, luns, access group, assign 
+summary: 您可以更改卷访问组中光纤通道卷的 LUN 分配。您还可以在创建卷访问组时分配光纤通道卷 LUN 。 
+---
+= 将 LUN 分配给光纤通道卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更改卷访问组中光纤通道卷的 LUN 分配。您还可以在创建卷访问组时分配光纤通道卷 LUN 。
+
+分配新的光纤通道 LUN 是一项高级功能，可能会对连接的主机产生未知后果。例如，可能不会在主机上自动发现新的 LUN ID ，并且主机可能需要重新扫描才能发现新的 LUN ID 。
+
+. 选择 * 管理 * > * 访问组 * 。
+. 单击要编辑的访问组对应的 "Actions" 图标。
+. 在显示的菜单中，选择 "* 编辑 " 。
+. 在 * 编辑卷访问组 * 对话框的 * 分配 LUN ID* 下，单击 * LUN 分配 * 列表上的箭头。
+. 对于列表中要将 LUN 分配给的每个卷，请在相应的 * LUN * 字段中输入一个新值。
+. 单击 * 保存更改 * 。
+

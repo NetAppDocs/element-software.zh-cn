@@ -1,0 +1,67 @@
+---
+permalink: api/reference_element_api_getidpauthenticationstate.html 
+sidebar: sidebar 
+keywords: IdP,idp,authentication,retrieve get,idp state 
+summary: 您可以使用 GetIdpAuthenticationState 方法返回有关使用第三方 IdP 进行身份验证的状态的信息。 
+---
+= GetIdpAuthenticationState
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetIdpAuthenticationState` 方法返回有关使用第三方 IdP 的身份验证状态的信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+enabled
+ a| 
+指示是否已启用第三方 IdP 身份验证。
+ a| 
+boolean
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "GetIdpAuthenticationState"
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "result": {"enabled": true}
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.0

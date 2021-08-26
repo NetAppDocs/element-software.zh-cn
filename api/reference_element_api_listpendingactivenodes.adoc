@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_listpendingactivenodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,pending,active,node,nodes,listpendingactivenodes 
+summary: 您可以使用 ListPendingActiveNodes 方法列出集群中处于 PendingActive 状态，处于待定状态和活动状态之间的节点。处于此状态的节点将返回到出厂映像。 
+---
+= ListPendingActiveNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListPendingActiveNodes` 方法列出集群中处于 PendingActive 状态，处于待定状态和活动状态的节点。处于此状态的节点将返回到出厂映像。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+待定 ActiveNodes
+ a| 
+详细介绍系统中所有 PendingActive 节点信息的对象列表。
+ a| 
+xref:reference_element_api_pendingactivenode.adoc[pendingActiveNode] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListPendingActiveNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  id: null,
+  result: {
+    pendingActiveNodes: [
+    {
+      activeNodeKey: "5rPHP3lTAO",
+      assignedNodeID: 5,
+      asyncHandle: 2,
+      cip: "10.10.5.106",
+      mip: "192.168.133.106",
+      pendingNodeID: 1,
+      platformInfo: {
+        chassisType: "R620",
+        cpuModel: "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+        nodeMemoryGB: 72,
+        nodeType: "SF3010"
+      },
+     sip: "10.10.5.106",
+     softwareVersion: "9.0.0.1077"
+    }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

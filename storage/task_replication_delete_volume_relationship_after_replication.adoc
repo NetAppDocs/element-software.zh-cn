@@ -1,0 +1,19 @@
+---
+permalink: storage/task_replication_delete_volume_relationship_after_replication.html 
+sidebar: sidebar 
+keywords: volume pair, delete, replication 
+summary: 复制完成后，如果您不再需要此卷对关系，则可以删除此卷关系。 
+---
+= 复制后删除卷关系
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+复制完成后，如果您不再需要此卷对关系，则可以删除此卷关系。
+
+. 选择 * 数据保护 * > * 卷对 * 。
+. 单击要删除的卷对对应的 * 操作 * 图标。
+. 单击 * 删除 * 。
+. 确认消息。
+

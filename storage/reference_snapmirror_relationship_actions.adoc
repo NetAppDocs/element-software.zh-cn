@@ -1,0 +1,25 @@
+---
+permalink: storage/reference_snapmirror_relationship_actions.html 
+sidebar: sidebar 
+keywords: relationships, snapmirror, actions, configure relationships 
+summary: '您可以从数据保护选项卡的 SnapMirror 关系页面配置关系。此处介绍了 "Actions" 图标中的选项。' 
+---
+= SnapMirror 关系操作
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从数据保护选项卡的 SnapMirror 关系页面配置关系。此处介绍了 "Actions" 图标中的选项。
+
+* * 编辑 * ：编辑关系使用的策略或计划。
+* * 删除 * ：删除 SnapMirror 关系。此功能不会删除目标卷。
+* * 初始化 * ：执行第一次初始基线数据传输以建立新关系。
+* * 更新 * ：对关系执行按需更新，将自上次更新以来包含的所有新数据和 Snapshot 副本复制到目标。
+* * 暂停 * ：阻止对关系进行任何进一步更新。
+* * 恢复 * ：恢复已暂停的关系。
+* * 中断 * ：将目标卷设为读写卷，并停止当前和未来的所有传输。确定客户端未使用原始源卷，因为反向重新同步操作会使原始源卷变为只读。
+* * 重新同步 * ：在中断发生之前按相同方向重新建立已中断的关系。
+* * 反向重新同步 * ：自动执行必要的步骤，以反向创建和初始化新关系。只有当现有关系处于断开状态时，才能执行此操作。此操作不会删除当前关系。原始源卷将还原为最新的通用 Snapshot 副本，并与目标重新同步。自上次成功更新 SnapMirror 以来对原始源卷所做的任何更改都将丢失。对当前目标卷所做的任何更改或写入当前目标卷的新数据将发送回原始源卷。
+* * 中止 * ：取消当前正在进行的传输。如果为已中止的关系发出 SnapMirror 更新，则此关系将从中止之前创建的最后一个重新启动检查点继续进行上次传输。
+

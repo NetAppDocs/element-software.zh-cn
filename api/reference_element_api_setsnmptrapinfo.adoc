@@ -1,0 +1,108 @@
+---
+permalink: api/reference_element_api_setsnmptrapinfo.html 
+sidebar: sidebar 
+keywords: snmp,trap,information,info,setting,set,setsnmptrapinfo 
+summary: 您可以使用 SetSnmpTrapInfo 方法启用和禁用集群 SNMP 通知（陷阱）的生成，并指定一组接收通知的主机。在每次 SetSnmpTrapInfo 方法调用中传递的值将替换先前调用中设置的所有值。 
+---
+= SetSnmpTrapInfo
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetSnmpTrapInfo` 方法启用和禁用集群 SNMP 通知（陷阱）的生成，并指定一组接收通知的主机。每次调用 `SetSnmpTrapInfo` 方法时传递的值将替换先前调用中设置的所有值。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+陷阱 Recipients
+ a| 
+要接收存储集群生成的陷阱的主机列表。如果启用了任一陷阱类型，则至少需要一个对象。只有当任何布尔参数设置为 true 时，才需要此参数。（无默认值。不需要
+ a| 
+xref:reference_element_api_snmptraprecipient.adoc[snmpTrapRecipient] 数组
+
+
+
+ a| 
+已启用 clusterFaultTrapsEnabled
+ a| 
+如果设置为 true ，则在记录集群故障时，系统会向已配置的陷阱接收方列表发送相应的集群故障通知。默认值： false不需要
+ a| 
+boolean
+
+
+
+ a| 
+clusterFaultResolvedTrapsEnabled
+ a| 
+如果设置为 true ，则在解决集群故障后，系统会向已配置的一系列陷阱接收方发送相应的集群故障已解决通知。默认值： false不需要
+ a| 
+boolean
+
+
+
+ a| 
+clusterEventTrapsEnabled
+ a| 
+如果设置为 true ，则在记录集群事件时，系统会向已配置的陷阱接收方列表发送相应的集群事件通知。默认值： false不需要
+ a| 
+boolean
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method":"SetSnmpTrapInfo",
+"params":{
+    "clusterFaultTrapsEnabled":true,
+    "clusterFaultResolvedTrapsEnabled":true,
+    "clusterEventTrapsEnabled":true,
+    "trapRecipients":[
+    {
+      "host":"192.30.0.10",
+      "port":162,
+      "community":"public"
+    }
+   ]
+  },
+  "id":1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "id" : 1,
+    "result" : {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

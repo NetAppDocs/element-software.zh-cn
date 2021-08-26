@@ -1,0 +1,46 @@
+---
+permalink: storage/task_system_manage_fips_identify_nodes_ready_for_fips_drives.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2 
+summary: 您应使用 NetApp Element 软件 GetFipsReport API 方法检查存储集群中的所有节点是否均已准备好支持 FIPS 驱动器。 
+---
+= 确定节点是否已准备好使用 FIPS 驱动器功能
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应使用 NetApp Element 软件 GetFipsReport API 方法检查存储集群中的所有节点是否均已准备好支持 FIPS 驱动器。
+
+生成的报告将显示以下状态之一：
+
+* None ：节点不支持 FIPS 驱动器功能。
+* Partial ：节点支持 FIPS ，但并非所有驱动器都是 FIPS 驱动器。
+* Ready ：节点支持 FIPS ，并且所有驱动器均为 FIPS 驱动器或不存在任何驱动器。
+
+
+.步骤
+. 使用 Element API 输入以下命令，检查存储集群中的节点和驱动器是否支持 FIPS 驱动器：
++
+`GetFipsReport`
+
+. 查看结果，记下未显示 Ready 状态的任何节点。
+. 对于未显示 Ready 状态的任何节点，请检查此驱动器是否支持 FIPS 驱动器功能：
++
+** 使用 Element API 输入： `GetHardwareList`
+** 请注意 * 驱动器加密容量类型 * 的值。如果为 FIPS ，则硬件可以支持 FIPS 驱动器功能。
++
+请参见中有关 `GetFipsReport` 或 `ListDriveHardware` 的详细信息 link:../api/index.html["Element API 参考"]。
+
+
+
+. 如果驱动器不支持 FIPS 驱动器功能，请将硬件更换为 FIPS 硬件（节点或驱动器）。
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

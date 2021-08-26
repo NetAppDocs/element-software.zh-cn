@@ -1,0 +1,86 @@
+---
+permalink: api/reference_element_api_getremotelogginghosts.html 
+sidebar: sidebar 
+keywords: remote,logging,hosts,host,get,getting,getremotelogginghosts 
+summary: 您可以使用 GetRemoteLoggingHosts 方法获取日志服务器的当前列表。 
+---
+= GetRemoteLoggingHosts
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `GetRemoteLoggingHosts` 方法获取日志服务器的当前列表。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+远程主机
+ a| 
+有关配置为接收转发的日志记录信息的主机的 IP 地址和端口信息列表。
+ a| 
+xref:reference_element_api_loggingserver.adoc[日志记录服务器] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "id": 3386609,
+   "method": "GetRemoteLoggingHosts",
+   "params": {}
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 3386609,
+   "result": {
+      "remoteHosts": [
+         {
+           "host": "172.16.1.20",
+           "port": 10514
+         },
+         {
+           "host": "172.16.1.25"
+         }
+      ]
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_setremotelogginghosts.adoc[SetRemoteLoggingHosts]

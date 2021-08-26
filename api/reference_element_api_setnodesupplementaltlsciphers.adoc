@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_setnodesupplementaltlsciphers.html 
+sidebar: sidebar 
+keywords: tls,cipher,set,setting,list,supplemental,setnodesupplementaltlsciphers,node 
+summary: 您可以使用 SetNodeSupplementalTlsCiphers 方法指定补充 TLS 密码列表。您可以在管理节点上使用此命令。 
+---
+= SetNodeSupplementalTlsCiphers
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetNodeSupplementalTlsCiphers` 方法指定补充 TLS 密码列表。您可以在管理节点上使用此命令。
+
+
+
+== 参数
+
+
+NOTE: 您必须对管理节点调用此方法。例如：
+
+[listing]
+----
+https://<management node IP>:442/json-rpc/10.0
+----
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+补充密码
+ a| 
+使用 OpenSSL 命名方案的补充密码套件名称。使用密码套件名称不区分大小写。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+MandatoryCiphers
+ a| 
+节点的必需 TLS 密码套件列表。这些密码在节点上始终处于活动状态。
+ a| 
+string
+
+
+
+ a| 
+补充密码
+ a| 
+节点的补充 TLS 密码套件列表。
+ a| 
+string
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "SetNodeSupplementalTlsCiphers",
+   "params": {
+        "supplementalCiphers": [
+            "DHE-RSA-AES128-SHA256",
+            "DHE-RSA-AES128-GCM-SHA256",
+            "ECDHE-RSA-AES128-SHA256",
+            "ECDHE-RSA-AES128-GCM-SHA256"
+        ]
+   },
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id" : 1,
+  "result" : {
+        "mandatoryCiphers": [
+            "DHE-RSA-AES256-SHA256",
+            "DHE-RSA-AES256-GCM-SHA384",
+            "ECDHE-RSA-AES256-SHA384",
+            "ECDHE-RSA-AES256-GCM-SHA384"
+        ],
+        "supplementalCiphers": [
+            "DHE-RSA-AES128-SHA256",
+            "DHE-RSA-AES128-GCM-SHA256",
+            "ECDHE-RSA-AES128-SHA256",
+            "ECDHE-RSA-AES128-GCM-SHA256"
+        ]
+    }
+}
+----

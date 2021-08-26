@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_attributes.html 
+sidebar: sidebar 
+keywords: QoS,object,Quality,Service 
+summary: 许多 API 请求和响应都使用对象以及简单类型。对象是键值对的集合，其中值为简单类型或可能为其他对象。属性是自定义名称 - 值对，用户可以在 JSON 对象中设置这些属性。通过某些方法，您可以在创建或修改对象时添加属性。 
+---
+= 属性
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+许多 API 请求和响应都使用对象以及简单类型。对象是键值对的集合，其中值为简单类型或可能为其他对象。属性是自定义名称 - 值对，用户可以在 JSON 对象中设置这些属性。通过某些方法，您可以在创建或修改对象时添加属性。
+
+编码属性对象的大小限制为 1000 字节。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+以下请求示例使用 AddClusterAdmin 方法：
+
+[listing]
+----
+{
+   "method": "AddClusterAdmin",
+   "params": {
+      "username": "joeadmin",
+      "password": "68!5Aru268)$",
+      "access": [
+         "volume",
+         "reporting"
+      ],
+      "attributes": {
+         "name1": "value1",
+         "name2": "value2",
+         "name3": "value3"
+      }
+   }
+}
+----

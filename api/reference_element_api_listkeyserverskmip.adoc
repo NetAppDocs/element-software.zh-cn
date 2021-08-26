@@ -1,0 +1,138 @@
+---
+permalink: api/reference_element_api_listkeyserverskmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,key,server,listing,list,listkeyserverskmip 
+summary: 您可以使用 ListKeyServersKmip 方法列出已创建的所有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。您可以通过指定其他参数来筛选结果。 
+---
+= ListKeyServersKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListKeyServersKmip` 方法列出已创建的所有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。您可以通过指定其他参数来筛选结果。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+密钥提供程序 ID
+ a| 
+指定后，方法仅返回分配给指定 KMIP 密钥提供程序的 KMIP 密钥服务器。如果省略此参数，则不会根据是否已将返回的 KMIP 密钥服务器分配给指定的 KMIP 密钥提供程序对其进行筛选。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+kmipAssignedProviderIsActive
+ a| 
+根据返回的 KMIP 密钥服务器对象是否处于活动状态对其进行筛选。可能值：
+
+* true ：仅返回处于活动状态的 KMIP 密钥服务器（提供当前正在使用的密钥）。
+* false ：仅返回处于非活动状态的 KMIP 密钥服务器（未提供任何密钥且可删除）。
+
+
+如果省略此参数，则不会根据返回的 KMIP 密钥服务器是否处于活动状态对其进行筛选。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+kmipHasProviderAssigned
+ a| 
+根据是否已分配 KMIP 密钥提供程序对返回的 KMIP 密钥服务器进行筛选。可能值：
+
+* true ：仅返回已分配 KMIP 密钥提供程序的 KMIP 密钥服务器。
+* false ：仅返回未分配 KMIP 密钥提供程序的 KMIP 密钥服务器。
+
+
+如果省略此参数，则不会根据是否已分配 KMIP 密钥提供程序对返回的 KMIP 密钥服务器进行筛选。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+kmipKeyServer
+ a| 
+已创建的 KMIP 密钥服务器的完整列表。
+ a| 
+link:reference_element_api_keyserverkmip.md#["KeyServerKmip"] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "ListKeyServersKmip",
+  "params": {},
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "kmipKeyServers": [
+        {
+            "kmipKeyServerName": "keyserverName",
+            "kmipClientCertificate": "dKkkirWmnWXbj9T/UWZYB2oK0z5...",
+            "keyServerID": 15,
+            "kmipAssignedProviderIsActive": true,
+            "kmipKeyServerPort": 5696,
+            "kmipCaCertificate": "MIICPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+            "kmipKeyServerHostnames": [
+                "server1.hostname.com", "server2.hostname.com"
+            ],
+            "keyProviderID": 1
+        }
+    ]
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.7

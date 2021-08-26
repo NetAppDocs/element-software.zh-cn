@@ -1,0 +1,77 @@
+---
+permalink: api/reference_element_api_testkeyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,testing,test 
+summary: 您可以使用 TestKeyServerKmip 方法测试指定的密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器是否可访问且运行正常。 
+---
+= TestKeyServerKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `TestKeyServerKmip` 方法测试指定的密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器是否可访问且运行正常。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+密钥服务器 ID
+ a| 
+要测试的 KMIP 密钥服务器的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。如果未返回任何错误，则此测试将视为成功。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "TestKeyServerKmip",
+  "params": {
+    "keyServerID": 15
+  },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {}
+    }
+----
+
+
+== 自版本以来的新增功能
+
+11.7

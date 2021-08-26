@@ -1,0 +1,160 @@
+---
+permalink: api/reference_element_api_createkeyserverkmip.html 
+sidebar: sidebar 
+keywords: KMIP,key server,creating,create 
+summary: 您可以使用 CreateKeyServerKmip 方法创建具有指定属性的密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。创建期间，不会联系服务器；使用此方法之前，不需要存在此服务器。对于集群模式密钥服务器配置，必须在 kmipKeyServerHostnames 参数中提供所有服务器节点的主机名或 IP 地址。您可以使用 TestKeyServerKmip 方法测试密钥服务器。 
+---
+= CreateKeyServerKmip
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `CreateKeyServerKmip` 方法创建具有指定属性的密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。创建期间，不会联系服务器；使用此方法之前，不需要存在此服务器。对于集群模式密钥服务器配置，必须在 kmipKeyServerHostnames 参数中提供所有服务器节点的主机名或 IP 地址。您可以使用 `TestKeyServerKmip` 方法测试密钥服务器。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+kmipCaCertificate
+ a| 
+外部密钥服务器根 CA 的公有密钥证书。此操作将用于验证 TLS 通信中外部密钥服务器提供的证书。对于各个服务器使用不同 CA 的密钥服务器集群，请提供一个串联字符串，其中包含所有 CA 的根证书。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+kmipClientCertificate
+ a| 
+SolidFire KMIP 客户端使用的 PEM 格式 Base64 编码 PKCS#10 X.509 证书。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+kmipKeyServerHostName
+ a| 
+与此 KMIP 密钥服务器关联的主机名或 IP 地址数组。只有当密钥服务器采用集群配置时，才必须提供多个主机名或 IP 地址。
+ a| 
+string array
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+kmipKeyServerName
+ a| 
+KMIP 密钥服务器的名称。此名称仅用于显示目的，不需要唯一。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+kmipKeyServerPort
+ a| 
+与此 KMIP 密钥服务器关联的端口号（通常为 5696 ）。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+kmipKeyServer
+ a| 
+一个对象，其中包含有关新创建的密钥服务器的详细信息。
+ a| 
+link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "CreateKeyServerKmip",
+  "params": {
+    "kmipCaCertificate": "MIICPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+    "kmipClientCertificate": "dKkkirWmnWXbj9T/UWZYB2oK0z5...",
+    "kmipKeyServerHostnames" : ["server1.hostname.com", "server2.hostname.com"],
+    "kmipKeyServerName" : "keyserverName",
+    "kmipKeyServerPort" : 5696
+  },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "kmipKeyServer": {
+            "kmipCaCertificate":"MIICPDCCAaUCEDyRMcsf9tAbDpq40ES/E...",
+            "kmipKeyServerHostnames":[
+                "server1.hostname.com", "server2.hostname.com"
+            ],
+            "keyProviderID":1,
+            "kmipKeyServerName":"keyserverName",
+            "keyServerID":1
+            "kmipKeyServerPort":1,
+            "kmipClientCertificate":"dKkkirWmnWXbj9T/UWZYB2oK0z5...",
+            "kmipAssignedProviderIsActive":true
+        }
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+11.7

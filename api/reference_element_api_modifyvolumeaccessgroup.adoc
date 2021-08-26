@@ -1,0 +1,200 @@
+---
+permalink: api/reference_element_api_modifyvolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: volume,access,group,modify,modifying,updating,changing,change,update,edit,editing,modifyvolumeaccessgroup 
+summary: 您可以使用 ModifyVolumeAccessGroup 方法更新启动程序以及在卷访问组中添加或删除卷。 
+---
+= ModifyVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ModfyVolumeAccessGroup` 方法更新启动程序以及在卷访问组中添加或删除卷。
+
+如果指定的启动程序或卷与当前存在的启动程序或卷重复，则卷访问组将保持不变。如果未指定卷或启动程序的值，则当前启动程序和卷列表不会更改。
+
+您还可以将虚拟网络与卷访问组相关联。此关联会对卷访问组中的所有卷进行适用场景。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+
+
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+卷访问组 ID
+ a| 
+要修改的卷访问组的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+name
+ a| 
+此卷访问组的新名称。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+启动程序
+ a| 
+要包括在卷访问组中的启动程序 ID 或名称（ IQN 和 WWPN ）的列表。如果传递启动程序名称列表，则会创建不存在的启动程序。如果传递启动程序 ID 列表，则如果任何启动程序尚不存在，则该方法将返回错误。传递启动程序名称已弃用；应尽可能使用启动程序 ID 。
+ a| 
+整型数组（建议）或字符串数组（已弃用）
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+deleteOrphanInitiators
+ a| 
+指定是否在启动程序对象从卷访问组中删除后删除这些对象。可能值：
+
+* true ：从卷访问组中删除启动程序对象后，将其删除。
+* false ：从卷访问组中删除启动程序对象后，不要删除这些对象。这是默认值。
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+volumes
+ a| 
+要修改的卷的卷 ID 列表。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[卷访问组]
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+卷访问组
+ a| 
+包含有关新修改的卷访问组的信息的对象。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[卷访问组]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ModifyVolumeAccessGroup",
+   "params": {
+      "volumeAccessGroupID": 96,
+      "name": "accessgrouptest",
+      "initiators": [115,114],
+      "volumes": [
+         346
+    ],
+      "attributes": {}
+   }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [
+        327
+      ],
+      "initiatorIDs": [
+        114,
+        115
+      ],
+      "initiators": [
+        "iqn.1998-01.com.vmware:desk1-esx1-577b283a",
+        "iqn.1998-01.com.vmware:donesq-esx1-421b281b"
+      ],
+      "name": "accessgrouptest",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        346
+      ]
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_addinitiatorstovolumeaccessgroup.adoc[AddInitiatorsToVolumeAccessGroup]
+* xref:reference_element_api_addvolumestovolumeaccessgroup.adoc[AddVolumesToVolumeAccessGroup]
+* xref:reference_element_api_removeinitiatorsfromvolumeaccessgroup.adoc[RemoveInitiatorsFromVolumeAccessGroup]
+* xref:reference_element_api_removevolumesfromvolumeaccessgroup.adoc[RemoveVolumeVolumesFromVolumeAccessGroup]
+

@@ -1,0 +1,79 @@
+---
+permalink: api/reference_element_api_removeclusterpair.html 
+sidebar: sidebar 
+keywords: cluster,clusters,pair,remove,removing,removeclusterpair 
+summary: 您可以使用 RemoveClusterPair 方法关闭两个配对集群之间打开的连接。 
+---
+= RemoveClusterPair
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `RemoveClusterPair` 方法关闭两个配对集群之间打开的连接。
+
+
+
+== 参数
+
+
+NOTE: 在删除集群对之前，必须先使用 RemoveVolumePair API 方法删除与集群的所有卷配对。
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+clusterPairID
+ a| 
+用于对两个集群配对的唯一标识符。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "RemoveClusterPair",
+   "params": {
+              "clusterPairID": 1
+      },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {}
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

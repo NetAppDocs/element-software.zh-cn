@@ -1,0 +1,82 @@
+---
+permalink: concepts/concept_intro_clusters.html 
+sidebar: sidebar 
+keywords: element, solidfire, cluster, what is, authoritative  cluster, rule of thirds, stranded capacity, storage efficiency, storage cluster quorum 
+summary: 集群是 SolidFire 存储系统的中心，由一组节点组成。要实现 SolidFire 存储效率，集群中必须至少有四个节点。集群在网络上显示为一个逻辑组，然后可作为块存储访问。 
+---
+= 集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+集群是 SolidFire 存储系统的中心，由一组节点组成。要实现 SolidFire 存储效率，集群中必须至少有四个节点。集群在网络上显示为一个逻辑组，然后可作为块存储访问。
+
+创建新集群会将节点初始化为集群的通信所有者，并为集群中的每个节点建立网络通信。此过程仅对每个新集群执行一次。您可以使用 Element UI 或 API 创建集群。
+
+您可以通过添加其他节点横向扩展集群。添加新节点时，服务不会中断，集群会自动使用新节点的性能和容量。
+
+管理员和主机可以使用虚拟 IP 地址访问集群。集群中的任何节点都可以托管虚拟 IP 地址。管理虚拟 IP （ Management Virtual IP ， MVIP ）支持通过 1GbE 连接进行集群管理，而存储虚拟 IP （ Storage Virtual IP ， SVIP ）则支持主机通过 10GbE 连接访问存储。无论 SolidFire 集群的大小或构成如何，这些虚拟 IP 地址都可以实现一致的连接。如果托管虚拟 IP 地址的节点发生故障，则集群中的另一个节点将开始托管虚拟 IP 地址。
+
+
+NOTE: 从 Element 11.0 开始，可以为节点的管理网络配置 IPv4 ， IPv6 或这两个地址。此适用场景同时用于存储节点和管理节点，但不支持 IPv6 的管理节点 11.3 及更高版本除外。创建集群时， MVIP 只能使用一个 IPv4 或 IPv6 地址，并且必须在所有节点上配置相应的地址类型。
+
+.有关集群的更多信息
+* <<Authoritative storage clusters>>
+* <<Rule of thirds>>
+* <<Stranded capacity>>
+* <<Storage efficiency>>
+* <<Storage cluster quorum>>
+
+
+
+
+== 权威存储集群
+
+权威存储集群是 NetApp Hybrid Cloud Control 用于对用户进行身份验证的存储集群。
+
+如果您的管理节点只有一个存储集群，则它是权威集群。如果您的管理节点有两个或更多存储集群，其中一个集群将被分配为权威集群，只有该集群中的用户才能登录到 NetApp Hybrid Cloud Control 。要了解哪个集群是权威集群，您可以使用 `get /mnode/about` API 。在响应中， `token_url` 字段中的 IP 地址是权威存储集群的管理虚拟 IP 地址（ MVIP ）。如果您尝试以非权威集群上的用户身份登录到 NetApp Hybrid Cloud Control ，则登录尝试将失败。
+
+许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。在继续管理多个存储集群之前，您应确保在权威集群上定义的用户已在具有相同权限的所有其他存储集群上定义。
+
+在继续管理多个存储集群之前，您应确保在权威集群上定义的用户已在具有相同权限的所有其他存储集群上定义。您可以从管理用户 link:../storage/concept_system_manage_manage_cluster_administrator_users.html["Element 软件用户界面"]。
+
+请参见 link:../mnode/task_mnode_manage_storage_cluster_assets.html["创建和管理存储集群资产"] 有关使用管理节点存储集群资产的详细信息，请参见。
+
+
+
+== 第 3 条规则
+
+如果在 NetApp SolidFire 存储集群中混用存储节点类型，则任何一个存储节点都不能包含超过存储集群总容量的 33% 。
+
+
+
+== 孤立容量
+
+如果新添加的节点占用的集群总容量超过 50% ，则此节点的某些容量将变为不可用（ " 孤立 " ），以使其符合容量规则。在添加更多存储容量之前，情况始终如此。如果添加的节点非常大，并且也不遵守容量规则，则先前的孤立节点将不再处于孤立状态，而新添加的节点将变为孤立状态。应始终成对添加容量，以免发生这种情况。当节点变为孤立时，会引发相应的集群故障。
+
+
+
+== 存储效率
+
+NetApp SolidFire 存储集群可利用重复数据删除，数据压缩和精简配置来减少存储卷所需的物理存储量。
+
+* * 数据压缩 *
++
+数据压缩通过将数据块组合到数据压缩组中来减少卷所需的物理存储量，每个数据块都存储为一个块。
+
+* * 重复数据删除 *
++
+重复数据删除可通过丢弃重复的数据块来减少卷所需的物理存储量。
+
+* * 精简配置 *
++
+精简配置的卷或 LUN 是指未预先预留存储的卷或 LUN 。而是根据需要动态分配存储。删除卷或 LUN 中的数据后，可用空间将释放回存储系统
+
+
+
+
+
+== 存储集群仲裁
+
+Element 软件会从选定节点创建存储集群，从而维护已复制的集群配置数据库。要保持集群故障恢复能力所需的仲裁，至少需要三个节点才能加入集群集合。

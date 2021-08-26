@@ -1,0 +1,137 @@
+---
+permalink: api/reference_element_api_addinitiatorstovolumeaccessgroup.html 
+sidebar: sidebar 
+keywords: addinitiatorstovolumeaccessgroup,add,adding,initiators,initiator,volume,access,group 
+summary: 您可以使用 AddInitiatorsToVolumeAccessGroup 方法将启动程序添加到指定的卷访问组。 
+---
+= AddInitiatorsToVolumeAccessGroup
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `AddInitiatorsToVolumeAccessGroup` 方法将启动程序添加到指定的卷访问组。
+
+可接受的启动程序 IQN 格式为 iqn.yyyy-mm ，其中 y 和 m 是数字，后跟文本，文本必须仅包含数字，小写字母字符，句点（ . ），冒号（：）或短划线（ - ）。请参见以下示例：
+
+[listing]
+----
+iqn.2010-01.com.solidfire:17oi.solidfire-0.1
+----
+可接受的光纤通道启动程序 WWPN 格式为 Aa ： bB ： CC ： dd ： 11 ： 22 ： 33 ： 44 或 AabBCCdd11223344 。请参见以下示例：
+
+[listing]
+----
+21:00:00:0e:1e:11:f1:81
+----
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+启动程序
+ a| 
+要包括在卷访问组中的启动程序 ID 或名称（ IQN 和 WWPN ）的列表。如果传递启动程序名称列表，则会创建不存在的启动程序。如果传递启动程序 ID 列表，则如果任何启动程序尚不存在，则该方法将返回错误。
+
+传递启动程序名称已弃用；应尽可能使用启动程序 ID 。
+ a| 
+整型数组或字符串数组（已弃用）
+ a| 
+ a| 
+是的。
+
+
+
+ a| 
+卷访问组 ID
+ a| 
+要添加启动程序的卷访问组的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+卷访问组
+ a| 
+包含有关新修改的卷访问组的信息的对象。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[卷访问组]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 13171,
+  "method": "AddInitiatorsToVolumeAccessGroup",
+  "params": {
+    "initiators": [116,117],
+    "volumeAccessGroupID": 96
+  }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 13171,
+  "result": {
+    "volumeAccessGroup": {
+      "attributes": {},
+      "deletedVolumes": [
+        327
+      ],
+      "initiatorIDs": [
+        116,
+        117
+      ],
+      "initiators": [
+        "iqn.1993-08.org.debian:01:181324777",
+        "iqn.1993-08.org.debian:01:181324888"
+      ],
+      "name": "northbanktest",
+      "volumeAccessGroupID": 96,
+      "volumes": [
+        346
+      ]
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

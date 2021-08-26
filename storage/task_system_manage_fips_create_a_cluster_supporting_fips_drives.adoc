@@ -1,0 +1,21 @@
+---
+permalink: storage/task_system_manage_fips_create_a_cluster_supporting_fips_drives.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2, cluster, create 
+summary: 在许多客户环境中部署解决方案时，安全性变得越来越重要。联邦信息处理标准（ FIPS ）是计算机安全性和互操作性的标准。经 FIPS 140-2 认证的空闲数据加密是整体安全解决方案的一个组成部分。 
+---
+= 创建支持 FIPS 驱动器的集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在许多客户环境中部署解决方案时，安全性变得越来越重要。联邦信息处理标准（ FIPS ）是计算机安全和互操作性的标准。经 FIPS 140-2 认证的空闲数据加密是整体安全解决方案的一个组成部分。
+
+* link:task_system_manage_fips_avoid_mixing_nodes_for_fips_drives.html["避免为 FIPS 驱动器混用节点"]
+* link:task_system_manage_fips_enable_encryption_at_rest.html["启用空闲加密"]
+* link:task_system_manage_fips_identify_nodes_ready_for_fips_drives["确定节点是否已准备好使用 FIPS 驱动器功能"]
+* link:task_system_manage_fips_enable_the_fips_drives_feature.html["启用 FIPS 驱动器功能"]
+* link:task_system_manage_fips_check_the_fips_drive_status.html["检查 FIPS 驱动器状态"]
+* link:task_system_manage_fips_troubleshoot_the_fips_drive_feature["对 FIPS 驱动器功能进行故障排除"]
+

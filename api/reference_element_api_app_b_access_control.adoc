@@ -1,0 +1,1109 @@
+---
+permalink: api/reference_element_api_app_b_access_control.html 
+sidebar: sidebar 
+keywords: access,control,type 
+summary: 根据您设置的访问类型，可用的 Element API 方法会有所不同。 
+---
+= 访问控制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根据您设置的访问类型，可用的 Element API 方法会有所不同。
+
+
+
+== —帐户
+
+以下方法可用于帐户访问类型：
+
+|===
+
+
+ a| 
+添加帐户
+
+
+
+ a| 
+GetAccountByID
+
+
+
+ a| 
+ModifyAccount
+
+
+
+ a| 
+GetAccountByName
+
+
+
+ a| 
+ListAccounts
+
+
+
+ a| 
+GetAccountEfficiency
+
+
+
+ a| 
+RemoveAccount
+
+|===
+
+
+== 管理员
+
+所有方法均可用于管理员访问类型。
+
+
+
+== clusterAdmin
+
+以下方法可用于集群管理员访问类型：
+
+|===
+
+
+ a| 
+添加 ClusterAdmin
+
+
+
+ a| 
+ListBackupTargets
+
+
+
+ a| 
+AddInitiatorsToVolumeAccessGroup
+
+
+
+ a| 
+ListBulkVolumeJobs
+
+
+
+ a| 
+AddLdapClusterAdmin
+
+
+
+ a| 
+ListClusterAdmins
+
+
+
+ a| 
+添加虚拟网络
+
+
+
+ a| 
+ListClusterPairs
+
+
+
+ a| 
+添加虚拟网络
+
+
+
+ a| 
+ListNodeFibreChannelPortInfo
+
+
+
+ a| 
+AddVolumeAccessGroup
+
+
+
+ a| 
+ListBackupTargets
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+ListDriveHardware
+
+
+
+ a| 
+CompleteClusterPairing
+
+
+
+ a| 
+ListFibreChannelSessions
+
+
+
+ a| 
+CompleteVolumePairing
+
+
+
+ a| 
+ListFibreChannelPortInfo
+
+
+
+ a| 
+CreateBackupTarget
+
+
+
+ a| 
+ListGroupSnapshots
+
+
+
+ a| 
+CreateSchedule
+
+
+
+ a| 
+ListActivePairedVolumes
+
+
+
+ a| 
+CreateSnapshot
+
+
+
+ a| 
+ModifyBackupTarget
+
+
+
+ a| 
+CreateSupportBundle
+
+
+
+ a| 
+ModifyClusterAdmin
+
+
+
+ a| 
+CreateClusterSupportBundle
+
+
+
+ a| 
+ModifyGroupSnapshot
+
+
+
+ a| 
+CreateGroupSnapshot
+
+
+
+ a| 
+ModifyClusterFullThreshold
+
+
+
+ a| 
+CreateVolumeAccessGroup
+
+
+
+ a| 
+ModifyVolumeAccessGroup
+
+
+
+ a| 
+DeleteAllSupportBundles
+
+
+
+ a| 
+ModifyVolumeAccessGroupLunAssignments
+
+
+
+ a| 
+DeleteSnapshot
+
+
+
+ a| 
+ModifyVolumePair
+
+
+
+ a| 
+DeleteGroupSnapshot
+
+
+
+ a| 
+ModifyVirtualNetwork
+
+
+
+ a| 
+DeleteVolumeAccessGroup
+
+
+
+ a| 
+RemoveClusterAdmin
+
+
+
+ a| 
+DisableEncryptionAtRest
+
+
+
+ a| 
+RemoveVolumePair
+
+
+
+ a| 
+DisableLdapAuthentication
+
+
+
+ a| 
+RemoveVirtualNetwork
+
+
+
+ a| 
+DisableSnmp
+
+
+
+ a| 
+RemoveVolumeVolumesFromVolumeAccessGroup
+
+
+
+ a| 
+EnableEncryptionAtRest
+
+
+
+ a| 
+RemoveInitiatorsFromVolumeAccessGroup
+
+
+
+ a| 
+EnableLdapAuthentication
+
+
+
+ a| 
+RollbackToSnapshot
+
+
+
+ a| 
+EnableSnmp
+
+
+
+ a| 
+RollbackToGroupSnapshot
+
+
+
+ a| 
+GetBackupTarget
+
+
+
+ a| 
+SetLoginSessionInfo
+
+
+
+ a| 
+GetClusterFullThreshold
+
+
+
+ a| 
+SetNtpInfo
+
+
+
+ a| 
+GetClusterMasterNodeID
+
+
+
+ a| 
+SetSnmpACL
+
+
+
+ a| 
+GetHardwareConfig
+
+
+
+ a| 
+SetSnmpInfo
+
+
+
+ a| 
+GetLdapConfiguration
+
+
+
+ a| 
+SetSnmpTrapInfo
+
+
+
+ a| 
+GetLoginSessionInfo
+
+
+
+ a| 
+SetRemoteLoggingHosts
+
+
+
+ a| 
+GetNtpInfo
+
+
+
+ a| 
+关闭
+
+
+
+ a| 
+GetNvramInfo
+
+
+
+ a| 
+StartBulkVolumeRead
+
+
+
+ a| 
+GetRawStats
+
+
+
+ a| 
+StartBulkVolumeWrite
+
+
+
+ a| 
+GetSnmpACL
+
+
+
+ a| 
+启动集群配对
+
+
+
+ a| 
+GetVolumeAccessGroupEfficiency
+
+
+
+ a| 
+StartVolumePairing
+
+
+
+ a| 
+GetVolumeAccessLunAssignments
+
+
+
+ a| 
+TestLdapAuthentication
+
+
+
+ a| 
+GetVirtualNetwork
+
+
+
+ a| 
+
+|===
+
+
+== 驱动器
+
+以下方法可用于驱动器访问类型：
+
+|===
+
+
+ a| 
+ListDrives
+
+
+
+ a| 
+RemoveDrives
+
+
+
+ a| 
+添加驱动器
+
+
+
+ a| 
+SecureEraseDrives
+
+|===
+
+
+== nodes
+
+以下方法可用于节点访问类型：
+
+|===
+
+
+ a| 
+添加节点
+
+
+
+ a| 
+ListPendingNodes
+
+
+
+ a| 
+ListActiveNodes
+
+
+
+ a| 
+RemoveNodes
+
+|===
+
+
+== 读取
+
+以下方法可用于读取访问类型：
+
+|===
+
+
+ a| 
+GetAccountByID
+
+
+
+ a| 
+ListCloneJobs
+
+
+
+ a| 
+GetAccountByName
+
+
+
+ a| 
+ListDeletedVolumes
+
+
+
+ a| 
+GetAsyncResult
+
+
+
+ a| 
+ListDriveHardware
+
+
+
+ a| 
+GetClusterCapacity
+
+
+
+ a| 
+ListDrives
+
+
+
+ a| 
+GetDefaultQoS
+
+
+
+ a| 
+ListEvents
+
+
+
+ a| 
+GetDriveStats
+
+
+
+ a| 
+ListISCSISessions
+
+
+
+ a| 
+GetSoftwareUpgrade
+
+
+
+ a| 
+ListPendingNodes
+
+
+
+ a| 
+GetVolumeStats
+
+
+
+ a| 
+ListSyncJobs
+
+
+
+ a| 
+ListAccounts
+
+
+
+ a| 
+ListVolumeAccessGroups
+
+
+
+ a| 
+ListActiveNodes
+
+
+
+ a| 
+ListVolumeStatsByAccount
+
+
+
+ a| 
+ListActiveNodes
+
+
+
+ a| 
+ListVolumeStatsByVolume
+
+
+
+ a| 
+ListActiveVolumes
+
+
+
+ a| 
+ListVolumeStatsByVolumeAccessGroup
+
+
+
+ a| 
+ListAllNodes
+
+
+
+ a| 
+ListVolumesForAccount
+
+
+
+ a| 
+ListBackupTargets
+
+|===
+
+
+== 报告
+
+以下方法可用于报告访问类型：
+
+|===
+
+
+ a| 
+ClearClusterFaults
+
+
+
+ a| 
+GetVolumeEfficiency
+
+
+
+ a| 
+GetAccountEfficiency
+
+
+
+ a| 
+GetVolumeStats
+
+
+
+ a| 
+GetClusterCapacity
+
+
+
+ a| 
+ListCloneJobs
+
+
+
+ a| 
+GetClusterHardwareInfo
+
+
+
+ a| 
+ListClusterFaults
+
+
+
+ a| 
+GetClusterInfo
+
+
+
+ a| 
+ListClusterPairs
+
+
+
+ a| 
+GetClusterMasterNodeID
+
+
+
+ a| 
+ListDriveHardware
+
+
+
+ a| 
+GetClusterStats
+
+
+
+ a| 
+ListEvents
+
+
+
+ a| 
+GetDriveHardwareInfo
+
+
+
+ a| 
+ListISCSISessions
+
+
+
+ a| 
+GetDriveStats
+
+
+
+ a| 
+ListSchedules
+
+
+
+ a| 
+GetNetworkConfig
+
+
+
+ a| 
+ListServices
+
+
+
+ a| 
+GetNodeHardwareInfo
+
+
+
+ a| 
+ListSyncJobs
+
+
+
+ a| 
+GetNodeStats
+
+
+
+ a| 
+ListVirtualNetworks
+
+
+
+ a| 
+GetSnmpInfo
+
+
+
+ a| 
+ListVolumeStatsByAccount
+
+
+
+ a| 
+GetSnmpTrapInfo
+
+
+
+ a| 
+ListVolumeStatsByVolume
+
+
+
+ a| 
+GetVolumeAccessGroupEfficiency
+
+
+
+ a| 
+ListVolumeStatsByVolumeAccessGroup
+
+|===
+
+
+== 存储库
+
+ListAllNodes 方法可用于存储库访问类型。
+
+
+
+== volumes
+
+以下方法可用于卷访问类型：
+
+|===
+
+
+ a| 
+CreateVolume
+
+
+
+ a| 
+DeleteVolume
+
+
+
+ a| 
+ModifyBackupTarget
+
+
+
+ a| 
+克隆卷
+
+
+
+ a| 
+DeleteVolumePairing
+
+
+
+ a| 
+ModifyVolumes
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+GetBackupTarget
+
+
+
+ a| 
+ModifyVolumePair
+
+
+
+ a| 
+CreateBackupTarget
+
+
+
+ a| 
+GetDefaultQoS
+
+
+
+ a| 
+PurgeDeletedVolume
+
+
+
+ a| 
+CreateSnapshot
+
+
+
+ a| 
+ListActiveVolumes
+
+
+
+ a| 
+RemoveBackupTarget
+
+
+
+ a| 
+CreateGroupSnapshot
+
+
+
+ a| 
+ListBackupTarget
+
+
+
+ a| 
+RemoveVolumePair
+
+
+
+ a| 
+CompleteVolumePairing
+
+
+
+ a| 
+ListGroupSnapshots
+
+
+
+ a| 
+RestoreDeletedVolume
+
+
+
+ a| 
+CloneMultipleVolumes
+
+
+
+ a| 
+ListVolumesForAccount
+
+
+
+ a| 
+RollbackToGroupSnapshot
+
+
+
+ a| 
+DeleteGroupSnapshot
+
+
+
+ a| 
+ListDeletedVolumes
+
+
+
+ a| 
+RollbackToSnapshot
+
+
+
+ a| 
+DeleteSnapshot
+
+
+
+ a| 
+ListGroupSnapshots
+
+
+
+ a| 
+StartBulkVolumeRead
+
+
+
+ a| 
+StartBulkVolumeWrite
+
+
+
+ a| 
+StartVolumePairing
+
+
+
+ a| 
+UpdateBulkVolumeStatus
+
+|===
+
+
+== 写入
+
+以下方法可用于写入访问类型：
+
+|===
+
+
+ a| 
+添加驱动器
+
+
+
+ a| 
+RemoveNodes
+
+
+
+ a| 
+添加节点
+
+
+
+ a| 
+RemoveAccount
+
+
+
+ a| 
+添加帐户
+
+
+
+ a| 
+RemoveVolumeVolumesFromVolumeAccessGroup
+
+
+
+ a| 
+AddVolumeToVolumeAccessGroup
+
+
+
+ a| 
+RemoveInitiatorsFromVolumeAccessGroup
+
+
+
+ a| 
+AddInitiatorsToVolumeAccessGroup
+
+
+
+ a| 
+DeleteVolumeAccessGroup
+
+
+
+ a| 
+CreateVolumeAccessGroup
+
+
+
+ a| 
+DeleteVolume
+
+
+
+ a| 
+ModifyVolumeAccessGroup
+
+
+
+ a| 
+RestoreDeletedVolume
+
+
+
+ a| 
+ModifyAccount
+
+
+
+ a| 
+PurgeDeletedVolume
+
+
+
+ a| 
+CreateVolume
+
+
+
+ a| 
+ModifyVolume
+
+
+
+ a| 
+克隆卷
+
+
+
+ a| 
+GetAsyncResult
+
+
+
+ a| 
+RemoveDrives
+
+|===

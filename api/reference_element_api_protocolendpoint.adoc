@@ -1,0 +1,92 @@
+---
+permalink: api/reference_element_api_protocolendpoint.html 
+sidebar: sidebar 
+keywords: object,objects,protocolEndpoint 
+summary: ProtocolEndpoint 对象包含协议端点的属性。您可以使用 ListProtocolEndpoints API 方法检索集群中所有协议端点的此信息。 
+---
+= ProtocolEndpoint
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ProtocolEndpoint 对象包含协议端点的属性。您可以使用 `ListProtocolEndpoints` API 方法检索集群中所有协议端点的此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+主配置程序 ID
+ a| 
+协议端点的主协议端点提供程序对象的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+protocolEndpointID
+ a| 
+协议端点的唯一 ID 。
+ a| 
+UUID
+
+
+
+ a| 
+protocolEndpointState
+ a| 
+协议端点的状态。可能值：
+
+* Active ：协议端点正在使用中。
+* start ：协议端点正在启动。
+* failover ：协议端点已进行故障转移。
+* Reserved ：已保留协议端点。
+
+ a| 
+string
+
+
+
+ a| 
+ProviderType
+ a| 
+协议端点提供程序的类型。可能值：
+
+* 主卷
+* 二级
+
+ a| 
+string
+
+
+
+ a| 
+scsiNAADeviceID
+ a| 
+NAA IEEE 注册扩展格式中协议端点的全局唯一 SCSI 设备标识符。
+ a| 
+string
+
+
+
+ a| 
+二级 ProviderID
+ a| 
+协议端点的二级协议端点提供程序对象的 ID 。
+ a| 
+整型
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listprotocolendpoints.adoc[ListProtocolEndpoints]

@@ -1,0 +1,192 @@
+---
+permalink: api/reference_element_api_nodestats.html 
+sidebar: sidebar 
+keywords: object,objects,nodestats 
+summary: nodeStats 对象包含节点的高级别活动测量结果。您可以使用 GetNodeStats 和 ListNodeStats API 方法获取部分或全部 nodeStats 对象。 
+---
+= NodeStats
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+nodeStats 对象包含节点的高级别活动测量结果。您可以使用 `GetNodeStats` 和 `ListNodeStats` API 方法来获取部分或全部 nodeStats 对象。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+count
+ a| 
+nodeStats 对象中的样本总数。
+ a| 
+整型
+
+
+
+ a| 
+CPU
+ a| 
+CPU 利用率，以 % 为单位。
+ a| 
+整型
+
+
+
+ a| 
+cpuTotal
+ a| 
+CPU 利用率的单调递增值。
+ a| 
+整型
+
+
+
+ a| 
+cBytesIn
+ a| 
+集群接口上的字节。
+ a| 
+整型
+
+
+
+ a| 
+cBytesOut
+ a| 
+在集群接口上传出的字节。
+ a| 
+整型
+
+
+
+ a| 
+sBytesIn
+ a| 
+存储接口上的字节。
+ a| 
+整型
+
+
+
+ a| 
+sBytesOut
+ a| 
+存储接口上的字节。
+ a| 
+整型
+
+
+
+ a| 
+mBytesIn
+ a| 
+管理接口上的字节。
+ a| 
+整型
+
+
+
+ a| 
+mBytesOut
+ a| 
+管理接口上的字节。
+ a| 
+整型
+
+
+
+ a| 
+networkUtilizationCluster
+ a| 
+集群网络接口的网络接口利用率（以 % 为单位）。
+ a| 
+整型
+
+
+
+ a| 
+网络实用程序存储
+ a| 
+存储网络接口的网络接口利用率（以 % 为单位）。
+ a| 
+整型
+
+
+
+ a| 
+readLatencyUSecTotal
+ a| 
+对节点执行读取操作所用总时间的单调递增值。
+ a| 
+整型
+
+
+
+ a| 
+读取操作
+ a| 
+对节点执行的总读取操作的单调递增值。
+ a| 
+整型
+
+
+
+ a| 
+ssLoadHistogram
+ a| 
+显示一段时间内的分区服务负载的直方图数据。
+ a| 
+JSON 对象
+
+
+
+ a| 
+timestamp
+ a| 
+UTC+0 格式的当前时间。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+已用内存
+ a| 
+总内存使用量（以字节为单位）。
+ a| 
+整型
+
+
+
+ a| 
+writeLatencyUSecTotal
+ a| 
+对节点执行写入操作所用总时间的单调递增值。
+ a| 
+整型
+
+
+
+ a| 
+writeOps
+ a| 
+对节点的总写入操作的单调递增值。
+ a| 
+整型
+
+|===
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getnodestats.adoc[GetNodeStats]
+* xref:reference_element_api_listnodestats.adoc[ListNodeStats]
+

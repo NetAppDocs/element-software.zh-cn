@@ -1,0 +1,47 @@
+---
+permalink: api/reference_element_api_clusterstructure.html 
+sidebar: sidebar 
+keywords: objects,cluster,structure,clusterStructure,object 
+summary: clusterStructure 对象保存由 GetClusterStructure 方法创建的集群配置备份信息。您可以使用 SetClusterStructure 方法将此信息还原到要重建的存储集群。 
+---
+= 集群结构
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+clusterStructure 对象保存由 GetClusterStructure 方法创建的集群配置备份信息。您可以使用 SetClusterStructure 方法将此信息还原到要重建的存储集群。
+
+
+
+== 对象成员
+
+此对象包含以下方法的合并返回信息：
+
+* xref:reference_element_api_getclusterinfo.adoc[GetClusterInfo]
+* xref:reference_element_api_listaccounts.adoc[ListAccounts]
+* xref:reference_element_api_listinitiators.adoc[ListInitiators]
+* xref:reference_element_api_listvolumes.adoc[ListVolumes] （带有 includeVirtualVolumes=false ）
+* xref:reference_element_api_listvolumeaccessgroups.adoc[ListVolumeAccessGroups]
+* xref:reference_element_api_liststoragecontainers.adoc[ListStorageContainers]
+* xref:reference_element_api_listqospolicies.adoc[ListQoSPolicies]
+* xref:reference_element_api_getsnmpinfo.adoc[GetSnmpInfo]
+* xref:reference_element_api_getntpinfo.adoc[GetNtpInfo]
+* xref:reference_element_api_listvirtualnetworks.adoc[ListVirtualNetworks]
+* xref:reference_element_api_listclusteradmins.adoc[ListClusterAdmins]
+* xref:reference_element_api_listschedules.adoc[ListSchedules]
+* xref:reference_element_api_listsnapmirrorendpoints.adoc[ListSnapMirrorEndpoints]
+* xref:reference_element_api_getfeaturestatus.adoc[GetFeatureStatus]
+* xref:reference_element_api_getldapconfiguration.adoc[GetLdapConfiguration]
+* xref:reference_element_api_getremotelogginghosts.adoc[GetRemoteLoggingHosts]
+* xref:reference_element_api_getdefaultqos.adoc[GetDefaultQoS]
+* xref:reference_element_api_getvolumeaccessgrouplunassignments.adoc[GetVolumeAccessGroupLunAssignments]
+
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getclusterstructure.adoc[GetClusterStructure]
+* xref:reference_element_api_setclusterstructure.adoc[SetClusterStructure]
+

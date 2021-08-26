@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_system_manage_solidfire_storage_cluster_administrator_account_types.html 
+sidebar: sidebar 
+keywords: user types, account, cluster, access active nodes, per-node UI 
+summary: 运行 NetApp Element 软件的存储集群中可以存在两种类型的管理员帐户：主集群管理员帐户和集群管理员帐户。 
+---
+= 存储集群管理员帐户类型
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+运行 NetApp Element 软件的存储集群中可以存在两种类型的管理员帐户：主集群管理员帐户和集群管理员帐户。
+
+* * 主集群管理员帐户 *
++
+此管理员帐户是在创建集群时创建的。此帐户是对集群具有最高访问级别的主管理帐户。此帐户类似于 Linux 系统中的 root 用户。您可以更改此管理员帐户的密码。
+
+* * 集群管理员帐户 *
++
+您可以为集群管理员帐户授予有限的管理访问权限，以便在集群中执行特定任务。分配给每个集群管理员帐户的凭据用于对存储系统中的 API 和 Element UI 请求进行身份验证。
+
+
+
+
+NOTE: 要通过每节点 UI 访问集群中的活动节点，需要使用本地（非 LDAP ）集群管理员帐户。访问尚未加入集群的节点不需要帐户凭据。

@@ -1,0 +1,164 @@
+---
+permalink: api/reference_element_api_deletevolumes.html 
+sidebar: sidebar 
+keywords: volumes,volume,delete,deleting,multiple,DeleteVolumes 
+summary: 您可以使用 DeleteVolumes 方法将多个 \ （最多 500 个）活动卷标记为待删除。标记后，此卷将在清理间隔过后被清除（永久删除）。 
+---
+= DeleteVolumes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `DDeleteVolumes` 方法将多个（最多 500 个）活动卷标记为待删除。标记后，卷将在清理间隔过后被清除（永久删除）。
+
+请求删除卷后，与卷的任何活动 iSCSI 连接将立即终止，并且在卷处于此状态时，不允许再进行任何连接。标记的卷不会在目标发现请求中返回。
+
+已标记为删除的卷的任何快照不受影响。快照会一直保留，直到从系统中清除卷为止。如果卷标记为删除，并且正在执行批量卷读取或批量卷写入操作，则批量卷读取或写入操作将停止。
+
+如果您删除的卷与某个卷配对，则配对卷之间的复制将暂停，并且处于已删除状态的卷不会向其传输任何数据。与已删除卷配对的远程卷将进入 PausedMisconfigured 状态，并且不再向其发送数据，也不再从已删除的卷发送数据。在清除已删除的卷之前，可以还原这些卷，并恢复数据传输。如果从系统中清除已删除的卷，则与其配对的卷将进入 StoppedMisconfigured 状态，并且卷配对状态将被删除。已清除的卷将永久不可用。
+
+
+
+== Parameters
+
+此方法具有以下输入参数。
+
+
+NOTE: 至少需要以下参数之一，并且您只能使用其中一个参数（它们彼此互斥）。
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+volumeIds
+ a| 
+要从系统中删除的卷的 ID 列表。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+请参见注释。
+
+
+
+ a| 
+卷访问组 ID
+ a| 
+卷访问组 ID 列表。您在此列表中指定的所有卷访问组中的所有卷都会从系统中删除。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+请参见注释。
+
+
+
+ a| 
+帐户 ID
+ a| 
+帐户 ID 列表。这些帐户中的所有卷都会从系统中删除。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+请参见注释。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+volumes
+ a| 
+有关新删除的卷的信息。
+ a| 
+xref:reference_element_api_volume.adoc[volume]
+
+
+
+ a| 
+曲线
+ a| 
+此曲线是一组键值对。关键字是以字节为单位的 I/O 大小。这些值表示在特定 I/O 大小下执行 IOP 的成本。此曲线是相对于 100 IOPS 下 4096 字节的操作集计算得出的。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "DeleteVolumes",
+   "params": {
+      "accountIDs" : [1, 2, 3]
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+
+{
+  "id" : 1,
+  "result": {
+    "volumes" : [ {
+      "access": "readWrite",
+      "accountID": 1,
+      "attributes": {},
+      "blockSize": 4096,
+      "createTime": "2015-03-06T18:50:56Z",
+      "deleteTime": "",
+      "enable512e": False,
+      "iqn": "iqn.2010-01.com.solidfire:pzsr.vclient-030-v00001.1",
+      "name": "vclient-030-v00001",
+      "qos": {
+        "burstIOPS": 15000,
+        "burstTime": 60,
+        "curve": {},
+        "maxIOPS": 15000,
+        "minIOPS": 100
+      },
+      "purgeTime": "",
+      "sliceCount": 1,
+      "scsiEUIDeviceID": "707a737200000001f47acc0100000000",
+      "scsiNAADeviceID": "6f47acc100000000707a737200000001",
+      "status": "active",
+      "totalSize": 10000003072,
+      "virtualVolumeID": 5,
+      "volumeAccessGroups": [],
+      "volumePairs": [],
+      "volumeID": 1
+    } ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

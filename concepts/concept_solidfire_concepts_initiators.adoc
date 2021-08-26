@@ -1,0 +1,13 @@
+---
+permalink: concepts/concept_solidfire_concepts_initiators.html 
+sidebar: sidebar 
+keywords: netapp, element, initiator, storage volume, element volume, access group 
+summary: 了解启动程序以及如何使用它们允许访问卷访问组中的存储。 
+---
+= 启动程序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过启动程序，外部客户端可以访问集群中的卷，从而充当客户端和卷之间通信的入口点。您可以使用启动程序对存储卷进行基于 CHAP 的访问，而不是基于帐户的访问。添加到卷访问组时，单个启动程序允许卷访问组成员访问添加到组中的所有存储卷，而无需身份验证。一个启动程序只能属于一个访问组。

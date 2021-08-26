@@ -1,0 +1,20 @@
+---
+permalink: storage/task_system_manage_virtual_edit_vrf_vlans.html 
+sidebar: sidebar 
+keywords: vrf vlans edit, vrf vlan attributes, change 
+summary: 您可以更改 VRF VLAN 属性，例如 VLAN 名称，网络掩码，网关和 IP 地址块。 
+---
+= 编辑 VRF VLAN
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更改 VRF VLAN 属性，例如 VLAN 名称，网络掩码，网关和 IP 地址块。
+
+. 单击 * 集群 * > * 网络 * 。
+. 单击要编辑的 VLAN 对应的 "Actions" 图标。
+. 单击 * 编辑 * 。
+. 在 * 编辑 VLAN* 对话框中输入 VRF VLAN 的新属性。
+. 单击 * 保存更改 * 。
+

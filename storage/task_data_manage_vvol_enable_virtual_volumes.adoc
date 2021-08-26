@@ -1,0 +1,54 @@
+---
+permalink: storage/task_data_manage_vvol_enable_virtual_volumes.html 
+sidebar: sidebar 
+keywords: virtual volumes, enable, functionality on the cluster, vvols 
+summary: 您必须通过 NetApp Element 软件手动启用 vSphere 虚拟卷（ VVols ）功能。默认情况下， Element 软件系统随附的 VVol 功能处于禁用状态，它不会在新安装或升级过程中自动启用。启用 VVol 功能是一次性配置任务。 
+---
+= 启用虚拟卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须通过 NetApp Element 软件手动启用 vSphere 虚拟卷（ VVol ）功能。默认情况下， Element 软件系统随附的 VVol 功能处于禁用状态，它不会在新安装或升级过程中自动启用。启用 VVol 功能是一次性配置任务。
+
+.您需要什么？ #8217 ；将需要什么
+* 集群必须运行 Element 9.0 或更高版本。
+* 集群必须连接到与 VVol 兼容的 ESXi 6.0 或更高版本环境。
+* 如果您使用的是 Element 11.3 或更高版本，则集群必须连接到 ESXi 6.0 Update 3 或更高版本的环境。
+
+
+
+IMPORTANT: 启用 vSphere 虚拟卷功能会永久更改 Element 软件配置。只有当集群连接到与 VMware ESXi VVol 兼容的环境时，才应启用 VVol 功能。您只能通过将集群恢复为出厂映像来禁用 VVol 功能并还原默认设置，此映像将删除系统上的所有数据。
+
+.步骤
+. 选择 * 集群 * > * 设置 * 。
+. 查找虚拟卷的集群专用设置。
+. 单击 * 启用虚拟卷 * 。
+. 单击 * 是 * 确认虚拟卷配置更改。
++
+Element UI 中将显示 * VVols* 选项卡。
+
++
+
+NOTE: 启用 VVol 功能后， SolidFire 集群将启动 VASA Provider ，为 VASA 流量打开端口 8444 ，并创建可由 vCenter 和所有 ESXi 主机发现的协议端点。
+
+. 从 * 集群 * > * 设置 * 中的虚拟卷（ VVol ）设置复制 VASA Provider URL 。您将使用此 URL 在 vCenter 中注册 VASA Provider 。
+. 在 * VVols* > * 存储容器 * 中创建存储容器。
++
+
+NOTE: 您必须至少创建一个存储容器，才能将 VM 配置到 VVol 数据存储库。
+
+. 选择 * VVols* > * 协议端点 * 。
+. 验证是否已为集群中的每个节点创建协议端点。
++
+
+NOTE: vSphere 中还需要执行其他配置任务。要在 vCenter 中注册 VASA Provider ，创建和管理 VVOL 数据存储库以及根据策略管理存储，请参见 _VMware vSphere 适用于 SolidFire 存储的虚拟卷配置指南。
+
+
+
+
+
+== 了解更多信息
+
+https://www.netapp.com/us/media/tr-4642.pdf["《适用于 SolidFire 存储的 VMware vSphere 虚拟卷配置指南》"]

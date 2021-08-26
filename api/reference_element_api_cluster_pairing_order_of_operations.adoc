@@ -1,0 +1,37 @@
+---
+permalink: api/reference_element_api_cluster_pairing_order_of_operations.html 
+sidebar: sidebar 
+keywords: cluster,pairing,pair,order,operations,clusters 
+summary: 您必须在运行 Element 软件的一对存储集群之间建立连接，然后才能使用远程复制。 
+---
+= 集群配对操作顺序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须在运行 Element 软件的一对存储集群之间建立连接，然后才能使用远程复制。
+
+使用以下一组 API 方法建立集群连接：
+
+* xref:reference_element_api_startclusterpairing.adoc[启动集群配对]：
++
+此 API 方法将创建并返回用于建立集群对的配对密钥。密钥已编码，其中包含用于在集群之间建立通信的信息。一个集群最多可与四个其他集群配对。但是，必须为每个集群配对生成一个新密钥。。 xref:reference_element_api_startclusterpairing.adoc[启动集群配对] 方法每次调用时都会生成一个新密钥。将每个唯一密钥与结合使用 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] 一种方法，用于对其他每个集群进行配对。
+
++
+
+NOTE: 出于安全原因，不应通过电子邮件将配对密钥发送给其他用户。此密钥包含用户名和密码。
+
+* xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]：
++
+此方法使用通过创建的配对密钥 xref:reference_element_api_startclusterpairing.adoc[启动集群配对] 用于创建集群对的 API 方法。问题描述 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing] 具有 clusterPairingKey 参数的 API 方法。源集群是创建密钥的集群。
+
+
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_startclusterpairing.adoc[启动集群配对]
+* xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]
+

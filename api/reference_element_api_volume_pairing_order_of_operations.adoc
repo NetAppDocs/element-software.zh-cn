@@ -1,0 +1,36 @@
+---
+permalink: api/reference_element_api_volume_pairing_order_of_operations.html 
+sidebar: sidebar 
+keywords: volume,pairing,order,operations,volumes,pairing,pair,pairs 
+summary: 必须先在两个相应集群之间创建一个集群对，然后才能对卷进行配对。 
+---
+= 卷配对操作顺序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+必须先在两个相应集群之间创建一个集群对，然后才能对卷进行配对。
+
+使用以下一组 API 方法建立集群连接：
+
+* xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing]：
++
+此 API 方法将创建并返回用于创建卷对的卷配对密钥。该密钥包含用于在卷之间建立通信的信息。
+
+* xref:reference_element_api_completevolumepairing.adoc[CompleteVolumePairing]：
++
+此方法使用通过创建的配对密钥 xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing] 用于创建卷对的 API 方法。问题描述 xref:reference_element_api_completevolumepairing.adoc[CompleteVolumePairing] 包含 volumeID 和 volumePairingKey 参数的 API 方法。
+
+
+
+只能将其中一个配对卷标识为复制目标卷。使用 xref:reference_element_api_modifyvolumepair.adoc[ModifyVolumePair] API 方法，用于通过确定目标卷来确定卷的数据复制方向。数据将从源卷复制到目标卷。
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing]
+* xref:reference_element_api_completevolumepairing.adoc[CompleteVolumePairing]
+* xref:reference_element_api_modifyvolumepair.adoc[ModifyVolumePair]
+

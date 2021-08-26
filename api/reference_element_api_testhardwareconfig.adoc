@@ -1,0 +1,107 @@
+---
+permalink: api/reference_element_api_testhardwareconfig.html 
+sidebar: sidebar 
+keywords: node,test,testing,hardware,config,configuration,testhardwareconfig 
+summary: 您可以使用 TestHardwareConfig 方法对节点执行硬件测试。测试选项包括验证硬件配置，固件版本以及所有驱动器是否都存在。 
+---
+= TestHardwareConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `TestHardwareConfig` 方法在节点上执行硬件测试。测试选项包括验证硬件配置，固件版本以及所有驱动器是否都存在。
+
+
+
+== Parameters
+
+
+NOTE: 这些测试不用于检测硬件故障。
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+清理
+ a| 
+使用干净的缓存启动硬件配置测试。可能值：
+
+* true ：删除缓存的测试结果文件并重新运行测试。
+* false ：检索缓存的测试结果。
+
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+【强制】
+ a| 
+要成功重置节点，此方法必须包含 force 参数。
+ a| 
+boolean
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+详细信息
+ a| 
+硬件配置详细信息。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "TestHardwareConfig",
+   "params": {
+      "force": true
+     },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+由于此响应示例的长度较长，因此它会记录在一个补充主题中。
+
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_response_example_testhardwareconfig.adoc[TestHardwareConfig]

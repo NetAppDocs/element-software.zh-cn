@@ -1,0 +1,219 @@
+---
+permalink: api/reference_element_api_schedule.html 
+sidebar: sidebar 
+keywords: object,objects,schedule 
+summary: schedule 对象包含有关为自主创建卷快照而创建的计划的信息。您可以使用 ListSchedules API 方法检索所有计划的计划信息。 
+---
+= schedule
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+schedule 对象包含有关为自主创建卷快照而创建的计划的信息。您可以使用 `ListSchedules` API 方法检索所有计划的计划信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+属性
+ a| 
+指示计划的发生频率。可能值：
+
+* 星期几
+* 日期
+* 时间间隔
+
+ a| 
+JSON 对象
+
+
+
+ a| 
+HasError
+ a| 
+指示计划是否存在错误。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+
+
+
+ a| 
+hours
+ a| 
+显示创建下一个快照之前经过的小时数。可能值为 0 到 24 。
+ a| 
+整型
+
+
+
+ a| 
+lastRunStatus
+ a| 
+指示上次计划快照的状态。可能值：
+
+* success
+* 失败
+
+ a| 
+string
+
+
+
+ a| 
+lastRunTimeStart
+ a| 
+指示计划的上次启动时间。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+minutes
+ a| 
+显示创建下一个快照之前经过的分钟数。可能值为 0 到 59 。
+ a| 
+整型
+
+
+
+ a| 
+月
+ a| 
+指示将在一个月中的哪几天创建快照。
+ a| 
+数组
+
+
+
+ a| 
+已暂停
+ a| 
+指示计划是否已暂停。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+
+
+
+ a| 
+重复
+ a| 
+指示计划是否重复执行。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+
+
+
+ a| 
+runNextInterval
+ a| 
+指示计划是否将在计划程序下次处于活动状态时运行。如果为 true ，则计划将在计划程序下次处于活动状态时运行，然后此值将设置回 false 。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+
+
+
+ a| 
+计划 ID
+ a| 
+计划的唯一 ID 。
+ a| 
+整型
+
+
+
+ a| 
+scheduleInfo
+ a| 
+包括为计划指定的唯一名称，所创建快照的保留期限以及从中创建快照的卷的卷 ID 。
+ a| 
+JSON 对象
+
+
+
+ a| 
+scheduleName
+ a| 
+分配给计划的唯一名称。
+ a| 
+string
+
+
+
+ a| 
+scheduleType
+ a| 
+目前仅支持计划类型的快照。
+ a| 
+string
+
+
+
+ a| 
+snapMirrorLabel
+ a| 
+要应用于已创建的 Snapshot 或组 Snapshot 的 snapMirrorLabel ，包含在 scheduleInfo 中。如果未设置，则此值为 null 。
+ a| 
+string
+
+
+
+ a| 
+启动日期
+ a| 
+指示计划首次开始或开始的日期；采用 UTC 时间格式。
+ a| 
+ISO 8601 日期字符串
+
+
+
+ a| 
+已删除
+ a| 
+指示是否已将计划标记为删除。可能值：
+
+* true
+* false
+
+ a| 
+boolean
+
+
+
+ a| 
+weekDays
+ a| 
+指示将在一周中的哪几天创建快照。
+ a| 
+数组
+
+|===
+
+
+== 了解更多信息
+
+xref:reference_element_api_listschedules.adoc[ListSchedules]

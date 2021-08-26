@@ -1,0 +1,137 @@
+---
+permalink: api/reference_element_api_listvolumeaccessgroups.html 
+sidebar: sidebar 
+keywords: volume,access,group,groups,list,listing,listvolumeaccessgroups 
+summary: 您可以使用 ListVolumeAccessGroups 方法获取有关系统中当前卷访问组的信息。 
+---
+= ListVolumeAccessGroups
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListVolumeAccessGroups` 方法获取有关系统中当前卷访问组的信息。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+limit
+ a| 
+要返回的 volumeAccessGroup 对象的最大数量。与 volumeAccessGroups 参数不能共存。
+ a| 
+整型
+ a| 
+无限制
+ a| 
+否
+
+
+
+ a| 
+startVolumeAccessGroupID
+ a| 
+列表开头处的卷访问组 ID 。与 volumeAccessGroups 参数不能共存。
+ a| 
+整型
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+卷访问组
+ a| 
+要检索的卷访问组 ID 值列表。与 startVolumeAccessGroupID 和 limit 参数不能共存。
+ a| 
+整型数组
+ a| 
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+卷访问组
+ a| 
+描述每个卷访问组的对象列表。
+ a| 
+xref:reference_element_api_volumeaccessgroup.adoc[卷访问组] 数组
+
+
+
+ a| 
+卷访问组未绕
+ a| 
+系统未找到的卷访问组列表。如果您使用了 volumeAccessGroups 参数，但系统找不到您指定的一个或多个卷访问组，则显示此参数。
+ a| 
+整型数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListVolumeAccessGroups",
+   "params": {
+      "startVolumeAccessGroupID": 3,
+      "limit"   : 1
+   },
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "volumeAccessGroups": [
+      {
+        "attributes": {},
+        "deletedVolumes": [],
+        "initiatorIDs": [],
+        "initiators": [],
+        "name": "example1",
+        "volumeAccessGroupID": 3,
+        "volumes": []
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

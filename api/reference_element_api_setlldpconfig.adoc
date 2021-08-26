@@ -1,0 +1,117 @@
+---
+permalink: api/reference_element_api_setlldpconfig.html 
+sidebar: sidebar 
+keywords: lldp,config,configure,set,setting,setlldpconfig 
+summary: 您可以使用 SetLldpConfig 方法为存储集群配置链路层发现协议（ Link Layer Discovery Protocol ， LLDP ）设置。 
+---
+= SetLldpConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetLldpConfig` 方法为存储集群配置链路层发现协议（ Link Layer Discovery Protocol ， LLDP ）设置。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+启用其他协议
+ a| 
+启用自动使用其他发现协议— CDP ， FDP ， EDP 和 SONMP 。
+ a| 
+boolean
+ a| 
+true
+ a| 
+否
+
+
+
+ a| 
+启用 Med
+ a| 
+启用介质端点发现（ LLDP-MED ）。
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+enableLldp
+ a| 
+启用或禁用 LLDP
+ a| 
+boolean
+ a| 
+true
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+lldpConfig
+ a| 
+有关当前存储集群 LLDP 配置的信息，包括新更改的设置。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "id": 3920,
+  "method":"SetLldpConfig",
+    "params": {
+        "lldpConfig": {
+            "enableMed": true
+        }
+    }
+  }
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 3920,
+  "result": {
+    "lldpConfig": {
+        "enableLldp": true,
+        "enableMed": true,
+        "enableOtherProtocols": true
+     }
+  }
+}
+----

@@ -1,0 +1,127 @@
+---
+permalink: api/reference_element_api_listschedules.html 
+sidebar: sidebar 
+keywords: snapshot,snapshots,list,listing,information,schedule,schedules,listschedules 
+summary: 您可以使用 ListSchedules 获取有关已创建的所有计划快照的信息。 
+---
+= ListSchedules
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListSchedules` 获取有关已创建的所有计划快照的信息。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+schedules
+ a| 
+集群上当前计划的列表。
+ a| 
+xref:reference_element_api_schedule.adoc[schedule] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "ListSchedules",
+    "params": {},
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedules": [
+      {
+       "attributes": {
+         "frequency": "Days Of Week"
+       },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": null,
+       "minutes": 1,
+       "monthdays": [],
+       "paused": false,
+       "recurring": false,
+       "runNextInterval": false,
+       "scheduleID": 3,
+       "scheduleInfo": {
+            "name": "Wednesday Schedule",
+            "retention": "00:02:00",
+            "volumeID": "2"
+      },
+      "scheduleName": "Vol2Schedule",
+      "scheduleType": "Snapshot",
+      "startingDate": "2015-03-23T20:08:33Z",
+      "toBeDeleted": false,
+      "weekdays": [
+          {
+            "day": 3,
+            "offset": 1
+          }
+     ]
+   },
+   {
+      "attributes": {
+          "frequency": "Time Interval"
+      },
+       "hasError": false,
+       "hours": 0,
+       "lastRunStatus": "Success",
+       "lastRunTimeStarted": "2015-03-23T21:40:00Z",
+       "minutes": 2,
+       "monthdays": [],
+       "paused": false,
+       "recurring": true,
+       "runNextInterval": false,
+       "scheduleID": 2,
+       "scheduleInfo": {
+            "name": "MCA2",
+            "volumeID": "3"
+       },
+       "scheduleName": "MCAsnapshot2",
+       "scheduleType": "Snapshot",
+       "startingDate": "2015-03-23T19:28:57Z",
+       "toBeDeleted": false,
+       "weekdays": []
+       }
+     ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

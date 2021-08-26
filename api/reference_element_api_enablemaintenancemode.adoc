@@ -1,0 +1,175 @@
+---
+permalink: api/reference_element_api_enablemaintenancemode.html 
+sidebar: sidebar 
+keywords: maintenance,enable,mode 
+summary: 您可以使用 EnableMaintenanceMode 方法准备要维护的存储节点。维护情形包括需要关闭或重新启动节点的任何任务。 
+---
+= EnableMaintenanceMode
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `EnableMaintenanceMode` 方法准备要维护的存储节点。维护情形包括需要关闭或重新启动节点的任何任务。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+forceWithUnresolvedFaults
+ a| 
+强制为此节点启用维护模式，即使存在阻止集群故障也是如此。
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+nodes
+ a| 
+要置于维护模式的节点 ID 列表。一次仅支持一个节点。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+perMinutePrimarySwapLimit
+ a| 
+每分钟要交换的主分区数。如果未指定，则会一次性交换所有主分区。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+超时
+ a| 
+指定维护模式在自动禁用之前应保持启用多长时间。格式化为时间字符串（例如 HH ： mm ： ss ）。如果未指定，维护模式将保持启用状态，直到显式禁用为止。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+异步处理
+ a| 
+您可以使用 GetAsyncResult 方法检索此 asyncHandle 并确定维护模式过渡完成的时间。
+ a| 
+整型
+
+
+
+ a| 
+当前模式
+ a| 
+节点的当前维护模式状态。可能值：
+
+* Disabled ：尚未请求任何维护。
+* FailedToRecover ：节点无法从维护模式恢复。
+* RecoveringFromMaintenance ：节点正在从维护模式恢复。
+* PreparingForMaintenance ：正在执行操作以准备节点以执行维护。
+* ReadyForMaintenance ：节点已准备好执行维护。
+
+ a| 
+维护模式（字符串）
+
+
+
+ a| 
+重新要求模式
+ a| 
+节点请求的维护模式状态。可能值：
+
+* Disabled ：尚未请求任何维护。
+* FailedToRecover ：节点无法从维护模式恢复。
+* RecoveringFromMaintenance ：节点正在从维护模式恢复。
+* PreparingForMaintenance ：正在执行操作以准备节点以执行维护。
+* ReadyForMaintenance ：节点已准备好执行维护。
+
+ a| 
+维护模式（字符串）
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "EnableMaintenanceMode",
+  "params": {
+    "forceWithUnresolvedFaults": False,
+    "nodes": [6],
+    "perMinutePrimarySwapLimit" : 40,
+    "timeout" : "01:00:05"
+  },
+"id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result":
+      {
+        "requestedMode": "ReadyForMaintenance",
+        "asyncHandle": 1,
+        "currentMode": "Disabled"
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.2
+
+
+
+== 了解更多信息
+
+http://docs.netapp.com/us-en/hci/docs/concept_hci_storage_maintenance_mode.html["NetApp HCI 存储维护模式概念"^]

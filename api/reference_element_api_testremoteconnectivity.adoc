@@ -1,0 +1,154 @@
+---
+permalink: api/reference_element_api_testremoteconnectivity.html 
+sidebar: sidebar 
+keywords: remote,connectivity,test,testing,testremoteconnectivity 
+summary: 您可以使用 TestRemoteConnectivity 方法对远程集群的每个节点执行 ping 操作并检查远程集合数据库连接。要使用此方法返回有用的结果，必须对集群配对。如果远程数据库连接失败，系统的响应将列出例外情况。 
+---
+= 测试远程连接
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `TestRemoteConnectivity` 方法对远程集群的每个节点执行 ping 操作并检查远程集合数据库连接。要使用此方法返回有用的结果，必须对集群配对。如果远程数据库连接失败，系统的响应将列出例外情况。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+详细信息
+ a| 
+每个节点的单个 ping 响应时间。
+ a| 
+JSON 对象
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "TestRemoteConnectivity",
+    "params": {
+      "force": "true"
+    },
+    "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": null,
+  "result": {
+    "details": {
+      "1": {
+        "details": {
+          "10.26.86.17": {
+            "individualResponseTimes": [
+              "00:00:00.006868",
+              "00:00:00.005933",
+              "00:00:00.006655",
+              "00:00:00.006584",
+              "00:00:00.006334"
+            ],
+            "individualStatus": [
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            "responseTime": "00:00:00.006475",
+            "successful": true
+          },
+          "10.26.86.18": {
+            "individualResponseTimes": [
+              "00:00:00.006201",
+              "00:00:00.006187",
+              "00:00:00.005990",
+              "00:00:00.006029",
+              "00:00:00.005917"
+            ],
+            "individualStatus": [
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            "responseTime": "00:00:00.006065",
+            "successful": true
+          },
+          "10.26.86.19": {
+            "individualResponseTimes": [
+              "00:00:00.005988",
+              "00:00:00.006948",
+              "00:00:00.005981",
+              "00:00:00.005964",
+              "00:00:00.005942"
+            ],
+            "individualStatus": [
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            "responseTime": "00:00:00.006165",
+            "successful": true,
+          },
+          "10.26.86.20": {
+            "individualResponseTimes": [
+              "00:00:00.005926",
+              "00:00:00.006072",
+              "00:00:00.005675",
+              "00:00:00.009904",
+              "00:00:00.006225"
+            ],
+            "individualStatus": [
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            "responseTime": "00:00:00.006760",
+            "successful": true
+          }
+        },
+          "successful": true
+      }
+    },
+  "duration": "00:00:00.595982",
+  "result": "Passed"
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

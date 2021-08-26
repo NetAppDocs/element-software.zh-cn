@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_manage_vvol_delete_a_virtual_volume.html 
+sidebar: sidebar 
+keywords: virtual volume, delete, vvols, use Element UI to delete a vvol 
+summary: 尽管应始终从 VMware 管理层删除虚拟卷，但您可以从 Element UI 中删除虚拟卷。只有在绝对必要时，才应从 Element UI 中删除虚拟卷，例如 vSphere 无法清理 SolidFire 存储上的虚拟卷时。 
+---
+= 删除虚拟卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+尽管应始终从 VMware 管理层删除虚拟卷，但您可以从 Element UI 中删除虚拟卷。只有在绝对必要时，才应从 Element UI 中删除虚拟卷，例如 vSphere 无法清理 SolidFire 存储上的虚拟卷时。
+
+. 选择 * VVols* > * 虚拟卷 * 。
+. 单击要删除的虚拟卷对应的 "Actions" 图标。
+. 在显示的菜单中，选择 * 删除 * 。
++
+
+IMPORTANT: 您应从 VMware 管理层删除虚拟卷，以确保在删除之前正确解除虚拟卷的绑定。只有在绝对必要时，才应从 Element UI 中删除虚拟卷，例如 vSphere 无法清理 SolidFire 存储上的虚拟卷时。如果从 Element UI 中删除虚拟卷，则此卷将立即清除。
+
+. 确认操作。
+. 刷新虚拟卷列表以确认虚拟卷已被删除。
+. * 可选 * ：选择 * 报告 * > * 事件日志 * 以确认清除已成功。
+

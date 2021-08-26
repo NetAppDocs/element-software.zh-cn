@@ -1,0 +1,211 @@
+---
+permalink: api/reference_element_api_modifyvirtualnetwork.html 
+sidebar: sidebar 
+keywords: virtual,network,modify,modifying,change,changing,edit,editing,modifyvirtualnetwork 
+summary: 您可以使用 ModifyVirtualNetwork 方法更改现有虚拟网络的属性。 
+---
+= ModifyVirtualNetwork
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ModfyVirtualNetwork` 方法更改现有虚拟网络的属性。
+
+使用此方法可以添加或删除地址块，更改网络掩码或修改虚拟网络的名称或问题描述。您还可以使用它来启用或禁用命名空间，以及在虚拟网络上启用命名空间时添加或删除网关。
+
+
+NOTE: 此方法需要使用 virtualNetworkID 或 virtualNetworkTag 作为参数，但不能同时使用这两者。
+
+小心
+
+通过更改命名空间参数为现有虚拟网络启用或禁用可路由存储 VLAN 功能会中断虚拟网络处理的任何流量。最好在计划维护窗口期间更改命名空间参数。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+
+
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+virtualNetworkID
+ a| 
+要修改的虚拟网络的唯一标识符。这是集群分配的虚拟网络 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+virtualNetworkTag
+ a| 
+标识要修改的虚拟网络的网络标记。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+地址锁定
+ a| 
+要为此虚拟网络设置的新地址块。这可能包括要添加到现有对象的新地址块，也可能会省略需要删除的未使用地址块。或者，您也可以扩展或减小现有地址块的大小。您只能增加虚拟网络对象的起始地址块的大小，而不能减小它。此对象所需的成员：
+
+* start ： IP 地址范围的起始值。string
+* size ：要包含在块中的 IP 地址数。整型
+
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+网关
+ a| 
+虚拟网络的网关的 IP 地址。只有当 namespace 参数设置为 true 时，此参数才有效。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+属性
+ a| 
+名称 - 值对列表，采用 JSON 对象格式。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+name
+ a| 
+虚拟网络的新名称。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+命名空间
+ a| 
+如果设置为 true ，则通过重新创建虚拟网络并配置包含该虚拟网络的命名空间来启用可路由存储 VLAN 功能。如果设置为 false ，则会禁用虚拟网络的 VRF 功能。更改此值会中断通过此虚拟网络运行的流量。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+netmask
+ a| 
+此虚拟网络的新网络掩码。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+Svip
+ a| 
+此虚拟网络的存储虚拟 IP 地址。无法更改虚拟网络的 SVIP 。您必须创建新的虚拟网络才能使用其他 SVIP 地址。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "ModifyVirtualNetwork",
+  "params": {
+    "virtualNetworkID": 2,
+    "name": "ESX-VLAN-3112",
+    "addressBlocks": [
+     {
+      "start": "10.1.112.1",
+      "size": 20
+     },
+     {
+      "start": "10.1.112.100",
+      "size": 20
+     }
+   ],
+    "netmask": "255.255.255.0",
+    "gateway": "10.0.1.254",
+    "svip": "10.1.112.200",
+    "attributes": {}
+  },
+  "id":1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

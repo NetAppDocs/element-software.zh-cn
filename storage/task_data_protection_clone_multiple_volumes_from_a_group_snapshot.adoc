@@ -1,0 +1,33 @@
+---
+permalink: storage/task_data_protection_clone_multiple_volumes_from_a_group_snapshot.html 
+sidebar: sidebar 
+keywords: multiple volumes, group snapshot, clone, create, data protection 
+summary: 您可以从时间点组快照克隆一组卷。此操作要求卷的组快照已存在，因为组快照用作创建卷的基础。创建卷后，您可以像系统中的任何其他卷一样使用这些卷。 
+---
+= 从组快照克隆多个卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从时间点组快照克隆一组卷。此操作要求卷的组快照已存在，因为组快照用作创建卷的基础。创建卷后，您可以像系统中的任何其他卷一样使用这些卷。
+
+卷大小和当前集群负载会影响完成克隆操作所需的时间。
+
+. 单击 * 数据保护 * > * 组快照 * 。
+. 单击要用于卷克隆的组快照对应的 "Actions" 图标。
+. 在显示的菜单中，选择 * 从组 Snapshot 克隆卷 * 。
+. 在 * 从组 Snapshot 克隆卷 * 对话框中输入 * 新卷名称前缀 * 。
++
+前缀将应用于从组快照创建的所有卷。
+
+. * 可选： * 选择克隆所属的其他帐户。
++
+如果不选择帐户，系统会将新卷分配给当前卷帐户。
+
+. * 可选： * 为克隆中的卷选择不同的访问方法。
++
+如果不选择访问方法，系统将使用当前卷访问。
+
+. 单击 * 开始克隆 * 。
+

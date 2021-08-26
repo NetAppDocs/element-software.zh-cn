@@ -1,0 +1,89 @@
+---
+permalink: api/reference_element_api_testconnectensemble.html 
+sidebar: sidebar 
+keywords: test,testing,connectivity,ensemble,testconnectensemble 
+summary: 您可以使用 TestConnectEnsemble 方法验证与指定数据库集合的连接。默认情况下，它会对与节点关联的集群使用集合。或者，您也可以提供其他集合来测试连接。 
+---
+= TestConnectEnsemble
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `TestConnectEnsemble` 方法验证与指定数据库集合的连接。默认情况下，它会对与节点关联的集群使用集合。或者，您也可以提供其他集合来测试连接。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+| 集合 | 用于连接测试的集合节点集群 IP 地址列表，以英文逗号分隔。 | string | 无 | 否 
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+| 详细信息  a| 
+返回的对象：
+
+* `nodes` ：（对象）列出测试中的每个集合节点以及测试结果。
+* `duration` ：（字符串）运行测试所需的时间。
+* `result` ：（字符串）整个测试的结果。
+
+| JSON 对象 
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "TestConnectEnsemble",
+  "params": {},
+  "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+   "id": 1,
+   "result": {
+      "details": {
+         "nodes":  {
+            "1:10.10.20.70": "Passed",
+            "2:10.10.20.71": "Passed",
+            "3:10.10.20.72": "Passed",
+            "4:10.10.20.73": "Passed",
+            "5:10.10.20.74": "Passed"
+        }
+      },
+        "duration": "00:00:00:756072",
+        "result": "Passed"
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

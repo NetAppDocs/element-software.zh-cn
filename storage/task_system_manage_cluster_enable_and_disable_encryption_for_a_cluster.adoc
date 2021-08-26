@@ -1,0 +1,65 @@
+---
+permalink: storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html 
+sidebar: sidebar 
+keywords: enable, disable, encryption at rest, cluster, sed, hardware-based, encryption settings, software-based 
+summary: 对于 SolidFire 集群，您可以使用空闲时基于软件或硬件的加密对存储在集群上的所有数据进行加密。 
+---
+= 为集群启用和禁用空闲加密
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 SolidFire 集群，您可以对存储在集群驱动器上的所有空闲数据进行加密。您可以使用任一方法在集群范围内对自加密驱动器（ SED ）启用保护 link:../concepts/concept_solidfire_concepts_security.html["基于硬件或软件的空闲加密"]。
+
+您可以使用 Element UI 或 API 启用空闲硬件加密。启用空闲硬件加密功能不会影响集群的性能或效率。您只能使用 Element API 启用空闲软件加密。
+
+默认情况下，在创建集群期间不会启用基于硬件的空闲加密，您可以从 Element UI 中启用和禁用此加密。必须在创建集群期间启用空闲软件加密，并且在创建集群后无法禁用该加密。
+
+.您需要什么？ #8217 ；将需要什么
+* 您拥有启用或更改加密设置的集群管理员权限。
+* 对于基于硬件的空闲加密，在更改加密设置之前，您已确保集群处于运行状况良好的状态。
+* 如果要禁用加密，则集群中必须有两个节点，才能访问密钥以禁用驱动器上的加密。
+
+
+.选项
+* <<Enable hardware-based encryption at rest>>
+* <<Enable software-based encryption at rest>>
+* <<Disable hardware-based encryption at rest>>
+
+
+
+
+== 启用基于硬件的空闲加密
+
+
+NOTE: 要使用外部密钥管理配置启用空闲加密，必须通过启用空闲加密 link:../api/reference_element_api_enableencryptionatrest.html["API"]。使用现有 Element UI 按钮启用将还原为使用内部生成的密钥。
+
+. 从 Element UI 中，选择 * 集群 * > * 设置 * 。
+. 选择 * 启用空闲加密 * 。
+
+
+
+
+== 启用基于软件的空闲加密
+
+
+NOTE: 在集群上启用空闲软件加密后，无法禁用此功能。
+
+. 在创建集群期间，运行 link:../api/reference_element_api_createcluster.html["创建集群方法"] 使用 `enableSoftwareEncryptionAtRest` 设置为 `true` 。
+
+
+
+
+== 禁用基于硬件的空闲加密
+
+. 从 Element UI 中，选择 * 集群 * > * 设置 * 。
+. 选择 * 禁用空闲加密 * 。
+
+
+[discrete]
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

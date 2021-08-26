@@ -1,0 +1,214 @@
+---
+permalink: api/reference_element_api_enableldapauthentication.html 
+sidebar: sidebar 
+keywords: LDAP,auth,authentication,enable,enabling,EnableLdapAuthentication 
+summary: 您可以使用 EnableLdapAuthentication 方法配置 LDAP 目录连接，以便向集群进行 LDAP 身份验证。然后， LDAP 目录的成员用户可以使用其 LDAP 凭据登录到存储系统。 
+---
+= EnableLdapAuthentication
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `EnableLdapAuthentication` 方法配置 LDAP 目录连接，以便对集群进行 LDAP 身份验证。然后， LDAP 目录的成员用户可以使用其 LDAP 凭据登录到存储系统。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+AuthType
+ a| 
+标识要使用的用户身份验证方法。可能值：
+
+* `directBind`
+* `searchAndBind`
+
+ a| 
+string
+ a| 
+SearchAndBind
+ a| 
+否
+
+
+
+ a| 
+groupSearchBaseDN
+ a| 
+用于开始组子树搜索的树的基础 DN 。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+groupSearchType
+ a| 
+控制使用的默认组搜索筛选器。可能值：
+
+* NoGroups ：无组支持。
+* ActiveDirectory ：用户的所有 Active Directory 组的嵌套成员资格。
+* MemberDN ： MemberDN 样式的组（单层）。
+
+ a| 
+string
+ a| 
+ActiveDirectory
+ a| 
+否
+
+
+
+ a| 
+服务器 URI
+ a| 
+LDAP 或 LDAPS 服务器 URI 的逗号分隔列表。您可以使用冒号后跟端口号将自定义端口添加到 LDAP 或 LDAPS URI 的末尾。例如， URI "ldap ： //1.2.3.4" 使用默认端口，而 URI "ldaps ： //1.2.3.4 ： 123" 使用自定义端口 123 。
+ a| 
+string array
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+userSearchBaseDN
+ a| 
+用于启动子树搜索的树的基础 DN 。使用 AuthType SearchAndBind 时需要此参数。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+searchBindDN
+ a| 
+用于登录以对用户执行 LDAP 搜索的完全限定 DN 。此 DN 需要对 LDAP 目录具有读取访问权限。使用 AuthType SearchAndBind 时需要此参数。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+searchBindPassword
+ a| 
+用于搜索的 searchBindDN 帐户的密码。使用 AuthType SearchAndBind 时需要此参数。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+userSearchFilter
+ a| 
+查询 LDAP 服务器时要使用的 LDAP 搜索筛选器。此字符串应包含占位符文本 "%username%" ，并将其替换为身份验证用户的用户名。例如，（ & （ objectClass=person ）（ sAMAccountName=%username% ））将使用 Active Directory 中的 sAMAccountName 字段匹配在集群登录时输入的用户名。使用 AuthType SearchAndBind 时需要此参数。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+userDNTemplate
+ a| 
+一种字符串模板，用于定义构建完整用户可分辨名称（ DN ）的模式。此字符串应包含占位符文本 "%username%" ，并将其替换为身份验证用户的用户名。使用 AuthType DirectBind 时需要此参数。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+groupSearchCustomFilter
+ a| 
+用于 CustomFilter 搜索类型的 LDAP 筛选器，用于返回用户组的 DNS 。该字符串可以根据需要将占位符文本 %USERNAME% 和 %USERDN% 替换为其用户名和完整用户 DN 。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法没有返回值。
+
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+  "method": "EnableLdapAuthentication",
+  "params": {
+     "authType": "SearchAndBind",
+     "groupSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+     "groupSearchType": "ActiveDirectory",
+     "searchBindDN": "SFReadOnly@prodtest.solidfire.net",
+     "searchBindPassword": "zsw@#edcASD12",
+     "sslCert": "",
+     "userSearchBaseDN": "dc=prodtest,dc=solidfire,dc=net",
+     "userSearchFilter": "(&(objectClass=person)(sAMAccountName=%USERNAME%))",
+     "serverURIs":[
+           "ldaps://111.22.333.444",
+           "ldap://555.66.777.888"
+           ]
+       },
+  "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+"id": 1,
+"result": {
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

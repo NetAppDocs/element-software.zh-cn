@@ -1,0 +1,144 @@
+---
+permalink: api/reference_element_api_listinitiators.html 
+sidebar: sidebar 
+keywords: initiators,initiator,list,listing,listinitiators,iqn,wwpn,iqns,wwpns 
+summary: 您可以使用 ListInitiators 方法获取启动程序 IQN 或全球通用端口名称（ WWPN\ ）的列表。 
+---
+= ListInitiators
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListInitiators` 方法获取启动程序 IQN 或全球通用端口名称（ World Wide Port Name ， WWPN ）的列表。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+启动程序
+ a| 
+要检索的启动程序 ID 列表。您可以提供此参数或 startInitiatorID 参数，但不能同时提供这两者。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+startInitiatorID
+ a| 
+列表开头处的启动程序 ID 。您可以提供此参数或 initiators 参数，但不能同时提供这两者。
+ a| 
+整型
+ a| 
+0
+ a| 
+否
+
+
+
+ a| 
+limit
+ a| 
+要返回的启动程序对象的最大数量。
+ a| 
+整型
+ a| 
+无限制
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+启动程序
+ a| 
+启动程序信息列表。
+ a| 
+xref:reference_element_api_initiator.adoc[启动程序] 数组
+
+|===
+
+
+== 例外情况
+
+此方法可能存在以下异常：
+
+|===
+
+
+| Name | Description 
+
+
+ a| 
+xInvalidParameter
+ a| 
+如果在同一方法调用中同时包含 startInitiatorID 和 initiators 参数，则抛出。
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListInitiators",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "initiators": [
+      {
+        "alias": "",
+        "attributes": {},
+        "initiatorID": 2,
+        "initiatorName": "iqn.1993-08.org.debian:01:c84ffd71216",
+        "volumeAccessGroups": [
+          1
+        ]
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

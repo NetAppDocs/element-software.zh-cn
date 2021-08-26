@@ -1,0 +1,158 @@
+---
+permalink: api/reference_element_api_updateidpconfiguration.html 
+sidebar: sidebar 
+keywords: IdP,idp,configuration,update 
+summary: 您可以使用 UpdateIdpConfiguration 方法使用集群的第三方 IdP 更新现有配置。 
+---
+= UpdateIdpConfiguration
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `UpdateIdpConfiguration` 方法使用集群的第三方 IdP 更新现有配置。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+生成 NewCertificate
+ a| 
+如果指定为 true ，则会生成新的 SAML 密钥和证书并替换现有对。注意：替换现有证书将中断集群与 IdP 之间建立的信任，直到在 IdP 处重新加载集群的服务提供商元数据为止。如果未提供 SAML 证书和密钥或将其设置为 false ，则 SAML 证书和密钥保持不变。
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+idpConfigurationID
+ a| 
+第三方 IdP 配置的 UUID 。
+ a| 
+UUID
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+idpMetadata
+ a| 
+用于获取 SAML 2.0 单点登录配置和集成详细信息的 IdP 元数据。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+idpName
+ a| 
+用于标识和检索 SAML 2.0 单点登录的 IdP 提供程序的名称。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+newIdpName
+ a| 
+如果指定此名称，则此名称将替换旧的 IdP 名称。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+idpConfigInfo
+ a| 
+有关第三方 IdP 配置的信息。
+ a| 
+link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+"method": "UpdateIdpConfiguration",
+"params": {
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "generateNewCertificate": true
+    }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "result": {
+        "idpConfigInfo": {
+        "enabled": true,
+        "idpConfigurationID": "f983c602-12f9-4c67-b214-bf505185cfed",
+        "idpMetadata": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n
+        <EntityDescriptor xmlns=\"urn:oasis:names:tc:SAML:2.0:metadata\"\r\n
+        xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"\r\n
+        xmlns:shibmd=\"urn:mace:shibboleth:metadata:1.0\"\r\n
+        xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\r\n
+        ...</Organization>\r\n
+        </EntityDescriptor>",
+        "idpName": "https://privider.name.url.com",
+        "serviceProviderCertificate": "-----BEGIN CERTIFICATE-----\n
+        MI...BHi\n
+        -----END CERTIFICATE-----\n",
+        "spMetadataUrl": "https://10.193.100.100/auth/ui/saml2"
+        }
+    }
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.0

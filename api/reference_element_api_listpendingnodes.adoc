@@ -1,0 +1,105 @@
+---
+permalink: api/reference_element_api_listpendingnodes.html 
+sidebar: sidebar 
+keywords: cluster,list,listing,pending,nodes,node,listpendingnodes 
+summary: 您可以使用 ListPendingNodes 方法列出系统中的待定存储节点。待定节点是指正在运行并配置为加入存储集群但尚未使用 Addnodes API 方法添加的存储节点。 
+---
+= ListPendingNodes
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ListPendingNodes` 方法列出系统中的待定存储节点。待定节点是指正在运行并配置为加入存储集群但尚未使用 Addnodes API 方法添加的存储节点。
+
+
+
+== IPv4 和 IPv6 管理地址
+
+请注意， `ListPendingNodes` 不会列出管理 IP 地址（ MIP ）和管理虚拟 IP 地址（ MVIP ）的地址类型不同的待定节点。例如，如果待定节点具有 IPv6 MVIP 和 IPv4 MIP ，则 `ListPendingNodes` 将不会在结果中包含此节点。
+
+
+
+== Parameters
+
+此方法没有输入参数。
+
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+待定节点
+ a| 
+集群中待定节点的列表。
+ a| 
+xref:reference_element_api_pendingnode.adoc[pendingNode] 数组
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "ListPendingNodes",
+   "params": {},
+   "id" : 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+  "id": 3,
+  "result": {
+    "pendingNodes": [
+      {
+        "assignedNodeID": 0,
+        "cip": "10.26.65.101",
+        "cipi": "Bond10G",
+        "compatible": true,
+        "mip": "172.26.65.101",
+        "mipi": "Bond1G",
+        "name": "VWC-EN101",
+        "pendingNodeID": 1,
+        "platformInfo": {
+          "chassisType": "R620",
+          "cpuModel": "Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz",
+          "nodeMemoryGB": 72,
+          "nodeType": "SF3010"
+        },
+        "sip": "10.26.65.101",
+        "sipi": "Bond10G",
+        "softwareVersion": "9.0.0.1554",
+        "uuid": "4C4C4544-0048-4410-8056-C7C04F395931"
+      }
+    ]
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+xref:reference_element_api_addnodes.adoc[添加节点]

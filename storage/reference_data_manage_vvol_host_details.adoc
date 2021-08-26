@@ -1,0 +1,41 @@
+---
+permalink: storage/reference_data_manage_vvol_host_details.html 
+sidebar: sidebar 
+keywords: host details, vvols, ESXi host details, virtual volumes, bindings, endpoints 
+summary: '"VVols" 选项卡上的 "Hosts" 页面提供了有关托管虚拟卷的 VMware ESXi 主机的信息。' 
+---
+= 主机详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"VVols" 选项卡上的 "Hosts" 页面提供了有关托管虚拟卷的 VMware ESXi 主机的信息。
+
+此时将显示以下信息：
+
+* * 主机 ID*
++
+托管虚拟卷且为集群所知的 ESXi 主机的 UUID 。
+
+* * 主机地址 *
++
+ESXi 主机的 IP 地址或 DNS 名称。
+
+* * 绑定 *
++
+ESXi 主机绑定的所有虚拟卷的绑定 ID 。
+
+* * ESX 集群 ID*
++
+vSphere 主机集群 ID 或 vCenter GUID 。
+
+* * 启动程序 IQN*
++
+虚拟卷主机的启动程序 IQN 。
+
+* * SolidFire 协议端点 ID*
++
+当前对 ESXi 主机可见的协议端点。
+
+

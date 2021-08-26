@@ -1,0 +1,190 @@
+---
+permalink: api/reference_element_api_startbulkvolumeread.html 
+sidebar: sidebar 
+keywords: volume,read,session,start,starting,bulk,startbulkvolumeread 
+summary: 您可以使用 StartBulkVolumeRead 方法在指定卷上启动批量卷读取会话。 
+---
+= StartBulkVolumeRead
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `STartBulkVolumeRead` 方法在指定卷上启动批量卷读取会话。
+
+一个卷上只能同时运行两个批量卷进程。初始化会话时，系统会从 SolidFire 存储卷中读取要存储在外部备份源上的数据。外部数据由运行在 Element 存储节点上的 Web 服务器访问。用于外部数据访问的服务器交互信息由存储系统上运行的脚本传递。
+
+在批量卷读取操作开始时，将创建卷的快照，并在读取完成后删除该快照。您也可以通过输入快照 ID 作为参数来读取卷的快照。读取上一个快照时，系统不会为卷创建新快照，也不会在读取完成后删除上一个快照。
+
+
+NOTE: 如果未提供现有快照的 ID ，则此过程将创建新快照。如果集群填充度处于第 2 或第 3 阶段，则可以创建快照。当集群填充度处于第 4 或第 5 阶段时，不会创建快照。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+格式。
+ a| 
+卷数据的格式。可以是：
+
+* `uncompressed` ：返回卷的每个字节而不进行任何压缩。
+* `原生` ：返回较小的不透明数据，并在后续的批量卷写入操作中更高效地存储和写入不透明数据。
+
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+volumeId
+ a| 
+要读取的卷的 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+snapshotId
+ a| 
+先前创建的用于批量卷读取的快照的 ID 。如果未输入 ID ，则会创建当前活动卷映像的快照。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+脚本
+ a| 
+可执行脚本的名称。如果未指定脚本名称，则需要使用密钥和 URL 来访问 Element 存储节点。脚本将在主节点上运行，并且密钥和 URL 将返回到脚本中，以便可以联系本地 Web 服务器。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+脚本参数
+ a| 
+要传递到脚本的 JSON 参数。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+属性
+ a| 
+批量卷作业的 JSON 属性。
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+异步处理
+ a| 
+要检查其完成情况的异步进程的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+key
+ a| 
+唯一标识会话的不透明密钥。
+ a| 
+string
+
+
+
+ a| 
+url
+ a| 
+用于访问节点 Web 服务器的 URL 。
+ a| 
+string
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+   "method": "StartBulkVolumeRead",
+   "params": {
+      "volumeID" : 5,
+      "format"  : "native",
+      "snapshotID" : 2
+   },
+   "id": 1
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+      "id" : 1,
+   "result" : {
+      "asyncHandle" : 1,
+      "key" : "11eed8f086539205beeaadd981aad130",
+      "url" : "https://127.0.0.1:44000/"
+   }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

@@ -1,0 +1,46 @@
+---
+permalink: setup/task_post_deploy_access_the_element_software_user_interface.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用主集群节点的管理虚拟 IP （ MVIP ）地址访问 Element UI 。 
+---
+= 访问 Element 软件用户界面
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用主集群节点的管理虚拟 IP （ MVIP ）地址访问 Element UI 。
+
+您必须确保在浏览器中禁用弹出窗口阻止程序和 NoScript 设置。
+
+根据集群创建期间的配置，您可以使用 IPv4 或 IPv6 地址访问此 UI 。
+
+.步骤
+. 选择以下选项之一：
++
+** IPv6 ：输入 `https://[IPv6_MVIP_address]` 。例如：
++
+[listing]
+----
+https://[fd20:8b1e:b256:45a::1234]/
+----
+** IPv4 ：输入 `https://[IPv4 MVIP address]` 。例如：
++
+[listing]
+----
+https://10.123.456.789/
+----
+
+
+. 对于 DNS ，输入主机名。
+. 单击任何身份验证证书消息。
+
+
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

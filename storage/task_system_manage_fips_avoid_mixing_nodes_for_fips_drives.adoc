@@ -1,0 +1,21 @@
+---
+permalink: storage/task_system_manage_fips_avoid_mixing_nodes_for_fips_drives.html 
+sidebar: sidebar 
+keywords: fips, security, federal information processing standards, 140-2, nodes, drives, ear 
+summary: 要准备启用 FIPS 驱动器功能，您应避免混用某些支持 FIPS 驱动器而另一些不支持 FIPS 驱动器的节点。 
+---
+= 避免为 FIPS 驱动器混用节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要准备启用 FIPS 驱动器功能，您应避免混用某些支持 FIPS 驱动器而另一些不支持 FIPS 驱动器的节点。
+
+根据以下条件，集群被视为符合 FIPS 驱动器：
+
+* 所有驱动器均已认证为 FIPS 驱动器。
+* 所有节点均为 FIPS 驱动器节点。
+* 已启用空闲加密（ EAR ）。
+* 已启用 FIPS 驱动器功能。所有驱动器和节点都必须支持 FIPS ，并且必须启用空闲加密才能启用 FIPS 驱动器功能。
+

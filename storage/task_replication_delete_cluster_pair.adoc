@@ -1,0 +1,20 @@
+---
+permalink: storage/task_replication_delete_cluster_pair.html 
+sidebar: sidebar 
+keywords: cluster pairs, delete 
+summary: 您可以从集群对中任一集群的 Element UI 中删除集群对。 
+---
+= 删除集群对
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从集群对中任一集群的 Element UI 中删除集群对。
+
+. 单击 * 数据保护 * > * 集群对 * 。
+. 单击集群对对应的 "Actions" 图标。
+. 在显示的菜单中，单击 * 删除 * 。
+. 确认操作。
+. 从集群配对中的第二个集群重新执行这些步骤。
+

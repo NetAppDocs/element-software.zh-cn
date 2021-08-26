@@ -1,0 +1,348 @@
+---
+permalink: api/reference_element_api_modifyschedule.html 
+sidebar: sidebar 
+keywords: modify,modifying,edit,editing,change,changing,snapshot,schedule,scheduled,delete,pause,modifyschedule 
+summary: 您可以使用 ModifySchedule 更改计划快照的执行间隔。您也可以使用此方法删除或暂停计划。 
+---
+= ModifySchedule
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `ModfySchedule` 更改执行计划快照的间隔。您也可以使用此方法删除或暂停计划。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+
+
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+属性
+ a| 
+用于更改快照发生频率。可能值：
+
+* 每周的日期 `d`
+* `d月之日`
+* `时间间隔`
+
+ a| 
+JSON 对象
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+hours
+ a| 
+两个快照之间的小时数，或者在 Days of Week 或 Days of Month 模式下创建快照的小时数。有效值为 0 到 24 。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+name
+ a| 
+快照的名称。如果未输入任何名称，则会使用创建组快照的日期和时间。允许的最大名称长度为 244 个字符。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+minutes
+ a| 
+两个快照之间的分钟数或在 Days of Week 或 Days of Month 模式下创建快照的分钟值。有效值为 0 到 59 。
+ a| 
+整型
+ a| 
+无
+ a| 
+否
+
+
+
+| lastRunStatus | 上次计划快照创建的结果或状态。 | string | 无 | 否 
+
+
+ a| 
+已暂停
+ a| 
+指示是否应暂停计划。有效值：
+
+* `true`
+* `false`
+
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+重复
+ a| 
+指示计划是否重复。有效值为：
+
+* `true`
+* `false`
+
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+runNextInterval
+ a| 
+用于选择是否在计划程序下次处于活动状态时运行快照。有效值：
+
+* `true`
+* `false`
+
+
+如果设置为 true ，则计划快照会在计划程序下次处于活动状态时运行，然后重置为 false 。
+ a| 
+boolean
+ a| 
+false
+ a| 
+否
+
+
+
+ a| 
+计划 ID
+ a| 
+计划的唯一 ID 。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+scheduleName
+ a| 
+计划的唯一名称。允许的最大计划名称长度为 244 个字符。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+scheduleType
+ a| 
+指示要创建的计划的类型。唯一支持的值为 `snapshot` 。
+ a| 
+string
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+`scheduleInfo`
+ a| 
+为计划指定的唯一名称，创建的快照的保留期限以及从中创建快照的卷的卷 ID 。有效值：
+
+* `volumeID` ：要包括在快照中的卷的 ID 。整型
+* `volumes` ：要包含在组快照中的卷 ID 列表。（整型数组）
+* `name` ：要使用的快照名称。string
+* `enableRemoteReplication` ：指示是否应将快照包括在远程复制中。boolean
+* `retention` ：快照的保留时间，以 HH ： mm ： ss 表示如果为空，则快照将永久保留。string
+* `ifo` ：快照按先出（ FIFO ）原则保留。string
+* `ensureSerialCreation` ：指定在执行先前的快照复制时是否应允许创建新的快照。boolean
+
+ a| 
+link:reference_element_api_schedule.html["schedule"^]
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+snapMirrorLabel
+ a| 
+SnapMirror 软件用于在 SnapMirror 端点上指定快照保留策略的标签。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+已删除
+ a| 
+指示是否已将计划标记为删除。有效值：
+
+* `true`
+* `false`
+
+ a| 
+boolean
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+启动日期
+ a| 
+指示首次开始或开始计划的日期。
+ a| 
+ISO 8601 日期字符串
+ a| 
+无
+ a| 
+否
+
+
+
+ a| 
+月
+ a| 
+一个月中将创建快照的天数。有效值为 1 到 31 。
+ a| 
+整型数组
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+weekDays
+ a| 
+要创建快照的星期几。一周中的某一天从星期日开始，其值为 0 ，偏移量为 1 。
+ a| 
+string
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+
+
+| Name | Description | Type 
+
+
+ a| 
+schedule
+ a| 
+包含已修改计划属性的对象。
+ a| 
+xref:reference_element_api_schedule.adoc[schedule]
+
+|===
+
+
+== 请求示例
+
+[listing]
+----
+{
+  "method": "ModifySchedule",
+  "params": {
+    "scheduleName" : "Chicago",
+    "scheduleID" : 3
+    },
+  "id": 1
+}
+----
+
+
+== 响应示例
+
+[listing]
+----
+{
+  "id": 1,
+  "result": {
+    "schedule": {
+      "attributes": {
+        "frequency": "Days Of Week"
+            },
+      "hasError": false,
+      "hours": 5,
+      "lastRunStatus": "Success",
+      "lastRunTimeStarted": null,
+      "minutes": 0,
+      "monthdays": [],
+      "paused": false,
+      "recurring": true,
+      "runNextInterval": false,
+      "scheduleID": 3,
+      "scheduleInfo": {
+        "volumeID": "2"
+            },
+      "scheduleName": "Chicago",
+      "scheduleType": "Snapshot",
+      "startingDate": null,
+      "toBeDeleted": false,
+      "weekdays": [
+        {
+          "day": 2,
+          "offset": 1
+      }
+      ]
+    }
+  }
+}
+----
+
+
+== 自版本以来的新增功能
+
+9.6

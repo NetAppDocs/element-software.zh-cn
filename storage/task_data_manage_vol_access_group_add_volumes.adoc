@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_manage_vol_access_group_add_volumes.html 
+sidebar: sidebar 
+keywords: access group, add volumes to 
+summary: '您可以将卷添加到卷访问组。每个卷可以属于多个卷访问组；您可以在 "Active Volumes" 页面上查看每个卷所属的组。' 
+---
+= 将卷添加到访问组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将卷添加到卷访问组。每个卷可以属于多个卷访问组；您可以在 * 活动 * 卷页面上查看每个卷所属的组。
+
+您也可以使用此操作步骤向光纤通道卷访问组添加卷。
+
+. 单击 * 管理 * > * 访问组 * 。
+. 单击要将卷添加到的访问组对应的 "Actions" 图标。
+. 单击 * 编辑 * 按钮。
+. 在添加卷下，从 * 卷 * 列表中选择一个卷。
++
+您可以重复此步骤来添加更多卷。
+
+. 单击 * 保存更改 * 。
+

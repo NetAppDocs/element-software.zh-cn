@@ -1,0 +1,72 @@
+---
+permalink: api/reference_element_api_listsnapmirrorluns.html 
+sidebar: sidebar 
+keywords: snapmirror,lun,luns,list,listing,listsnapmirrorluns 
+summary: Element 软件 Web UI 使用 ListSnapMirrorLuns 方法列出远程 ONTAP 集群中 SnapMirror 关系的 LUN 信息。 
+---
+= ListSnapMirrorLuns
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Element 软件 Web UI 使用 `ListSnapMirrorLuns` 方法列出远程 ONTAP 集群中 SnapMirror 关系的 LUN 信息。
+
+
+
+== Parameters
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+仅列出与指定端点 ID 关联的 LUN 信息。
+ a| 
+整型
+ a| 
+无
+ a| 
+是的。
+
+
+
+ a| 
+目标卷
+ a| 
+SnapMirror 关系中的目标卷。
+ a| 
+xref:reference_element_api_snapmirrorvolumeinfo.adoc[snapMirrorVolumeInfo]
+ a| 
+无
+ a| 
+是的。
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorLunInfos
+ a| 
+包含有关 SnapMirror LUN 的信息的对象列表。
+ a| 
+xref:reference_element_api_snapmirrorluninfo.adoc[snapMirrorLunInfo] 数组
+
+|===
+
+
+== 自版本以来的新增功能
+
+10.1

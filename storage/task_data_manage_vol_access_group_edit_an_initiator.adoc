@@ -1,0 +1,25 @@
+---
+permalink: storage/task_data_manage_vol_access_group_edit_an_initiator.html 
+sidebar: sidebar 
+keywords: initiator, edit, change alias, chap, credentials 
+summary: 您可以更改现有启动程序的别名，也可以添加别名（如果尚不存在）。 
+---
+= 编辑启动程序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更改现有启动程序的别名，也可以添加别名（如果尚不存在）。
+
+要为每个启动程序添加 CHAP 帐户名称和凭据，您必须使用 `ModfyInitiator` API 调用来删除和添加 CHAP 访问和属性。
+
+请参见 link:../api/index.html["使用 Element API 管理存储"]。
+
+.步骤
+. 单击 * 管理 * > * 启动程序 * 。
+. 单击要编辑的启动程序对应的 "Actions" 图标。
+. 单击 * 编辑 * 。
+. 在 * 别名 * 字段中输入启动程序的新别名。
+. 单击 * 保存更改 * 。
+

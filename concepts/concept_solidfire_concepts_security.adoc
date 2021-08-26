@@ -1,0 +1,78 @@
+---
+permalink: concepts/concept_solidfire_concepts_security.html 
+sidebar: sidebar 
+keywords: solidfire security, element security, encryption at rest, software encryption at rest, external key management, fips 140-2, mfa 
+summary: 使用 NetApp Element 软件时，您的数据会受到行业标准安全协议的保护。 
+---
+= 安全性
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 SolidFire 全闪存存储系统时，您的数据将受到行业标准安全协议的保护。
+
+
+
+== 空闲加密（硬件）
+
+存储节点中的所有驱动器均可在驱动器级别使用 AES 256 位加密进行加密。每个驱动器都有自己的加密密钥，该密钥是在首次初始化驱动器时创建的。启用加密功能后，系统将创建一个集群范围的密码，然后将该密码区块分发到集群中的所有节点。没有一个节点存储整个密码。然后，使用此密码对所有驱动器访问进行密码保护。解锁驱动器需要密码，因此，除非从驱动器中断电或驱动器锁定，否则不需要密码。
+
+link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["启用硬件空闲加密功能"] 不会影响集群的性能或效率。如果使用 Element API 或 Element UI 从集群配置中删除启用了加密的驱动器或节点，则这些驱动器将禁用空闲加密。删除驱动器后，可以使用 `SecureEraseDrives` API 方法安全擦除驱动器。如果强制删除物理驱动器或节点，则数据仍受集群范围密码和驱动器的各个加密密钥的保护。
+
+
+
+== 空闲加密（软件）
+
+另一种类型的空闲加密，即软件空闲加密，可以对写入存储集群中 SSD 的所有数据进行加密。 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["启用后"]，它会对写入的所有数据进行加密，并对软件中自动读取的所有数据进行解密。软件空闲加密可在硬件中镜像自加密驱动器（ SED ）实施，以便在没有 SED 的情况下提供数据安全性。
+
+默认情况下，所有 SolidFire 企业 SDS 节点均可使用空闲软件加密。空闲软件加密可在不包括自加密驱动器（ SED ）的 SolidFire 企业 SDS 节点中提供一个主软件数据安全加密层。
+
+基于软件和基于硬件的空闲加密均可单独使用，也可以相互结合使用。
+
+
+
+== 外部密钥管理
+
+您可以将 Element 软件配置为使用符合 KMIP 的第三方密钥管理服务（ Key Management Service ， KMS ）来管理存储集群加密密钥。启用此功能后，存储集群的集群范围驱动器访问密码加密密钥将由您指定的 KMS 管理。
+
+Element 可以使用以下密钥管理服务：
+
+* Gemalto SafeNet KeySecure
+* KeySecure 上的 SafeNet
+* HyTrust KeyControl
+* Vormetric Data Security Manager
+* IBM 安全密钥生命周期管理器
+
+
+有关配置外部密钥管理的详细信息，请参见 link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["外部密钥管理入门"] 文档。
+
+
+
+== 多因素身份验证
+
+通过多因素身份验证（ Multi-Factor Authentication ， MFA ），您可以要求用户在登录时提供多种类型的证据，以便通过 NetApp Element Web UI 或存储节点 UI 进行身份验证。您可以将 Element 配置为仅接受与现有用户管理系统和身份提供程序集成的登录的多因素身份验证。您可以将 Element 配置为与现有 SAML 2.0 身份提供程序集成，此身份提供程序可强制实施多种身份验证方案，例如密码和文本消息，密码和电子邮件消息或其他方法。
+
+您可以将多因素身份验证与通用 SAML 2.0 兼容身份提供程序（ IdP ）配对，例如 Microsoft Active Directory 联合身份验证服务（ Active Directory Federation Services ， ADFS ）和 Shibboleth 。
+
+要配置 MFA ，请参见 link:../storage/concept_system_manage_mfa_enable_multi_factor_authentication.html["启用多因素身份验证"] 文档。
+
+
+
+== 用于 HTTPS 和空闲数据加密的 FIPS 140-2
+
+NetApp SolidFire 存储集群支持符合联邦信息处理标准（ FIPS ） 140-2 加密模块要求的加密。您可以在 SolidFire 集群上为 HTTPS 通信和驱动器加密启用 FIPS 140-2 合规性。
+
+在集群上启用 FIPS 140-2 操作模式后，集群将激活 NetApp 加密安全模块（ NetApp Cryptographic Security Module ， NCSM ），并利用 FIPS 140-2 1 级认证加密通过 HTTPS 与 NetApp Element UI 和 API 进行所有通信。您可以将 `EnableFeature` Element API 与 `FIPS` 参数结合使用，以启用 FIPS 140-2 HTTPS 加密。在具有 FIPS 兼容硬件的存储集群上，您还可以使用 `EnableFeature` Element API 和 `FipsDrives` 参数为空闲数据启用 FIPS 驱动器加密。
+
+有关为 FIPS 140-2 加密准备新存储集群的详细信息，请参见 link:../storage/task_system_manage_fips_create_a_cluster_supporting_fips_drives.html["创建支持 FIPS 驱动器的集群"]。
+
+有关在已准备好的现有集群上启用 FIPS 140-2 的详细信息，请参见 link:../api/reference_element_api_enablefeature.html["EnableFeature Element API"]。
+
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

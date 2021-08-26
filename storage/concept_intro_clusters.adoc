@@ -1,0 +1,22 @@
+---
+permalink: storage/concept_intro_clusters.html 
+sidebar: sidebar 
+keywords: clusters, about clusters, collection of nodes, nodes in a cluster, block storage, logical group, add nodes, access cluster 
+summary: 集群是 SolidFire 存储系统的中心，由一组节点组成。要实现 SolidFire 存储效率，集群中必须至少有四个节点。集群在网络上显示为一个逻辑组，然后可作为块存储访问。 
+---
+= 集群
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+集群是 SolidFire 存储系统的中心，由一组节点组成。要实现 SolidFire 存储效率，集群中必须至少有四个节点。集群在网络上显示为一个逻辑组，然后可作为块存储访问。
+
+创建新集群会将节点初始化为集群的通信所有者，并为集群中的每个节点建立网络通信。此过程仅对每个新集群执行一次。您可以使用 Element UI 或 API 创建集群。
+
+您可以通过添加其他节点横向扩展集群。添加新节点时，服务不会中断，集群会自动使用新节点的性能和容量。
+
+管理员和主机可以使用虚拟 IP 地址访问集群。集群中的任何节点都可以托管虚拟 IP 地址。管理虚拟 IP （ Management Virtual IP ， MVIP ）支持通过 1GbE 连接进行集群管理，而存储虚拟 IP （ Storage Virtual IP ， SVIP ）则支持主机通过 10GbE 连接访问存储。无论 SolidFire 集群的大小或构成如何，这些虚拟 IP 地址都可以实现一致的连接。如果托管虚拟 IP 地址的节点发生故障，则集群中的另一个节点将开始托管虚拟 IP 地址。
+
+
+NOTE: 从 Element 11.0 开始，可以为节点的管理网络配置 IPv4 ， IPv6 或这两个地址。此适用场景同时用于存储节点和管理节点，但不支持 IPv6 的管理节点 11.3 及更高版本除外。创建集群时， MVIP 只能使用一个 IPv4 或 IPv6 地址，并且必须在所有节点上配置相应的地址类型。

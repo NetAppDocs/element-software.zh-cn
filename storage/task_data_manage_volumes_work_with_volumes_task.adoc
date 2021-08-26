@@ -1,0 +1,30 @@
+---
+permalink: storage/task_data_manage_volumes_work_with_volumes_task.html 
+sidebar: sidebar 
+keywords: volumes, work, storage, iscsi, fc, cluster data management, overview of functions 
+summary: 'SolidFire 系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。从 "Management" 选项卡上的 "Volumes" 页面中，您可以在节点上创建，修改，克隆和删除卷。您还可以查看有关卷带宽和 I/O 使用情况的统计信息。' 
+---
+= 使用卷
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SolidFire 系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。从 "Management" 选项卡上的 "Volumes" 页面中，您可以在节点上创建，修改，克隆和删除卷。您还可以查看有关卷带宽和 I/O 使用情况的统计信息。
+
+
+
+== 了解更多信息
+
+* link:concept_data_manage_volumes_quality_of_service_policies.html["管理服务质量策略"]
+* link:task_data_manage_volumes.html#create-a-volume["创建卷"]
+* link:task_data_manage_volumes.html#view-volume-details["查看单个卷的性能详细信息"]
+* link:task_data_manage_volumes.html#edit-active-volumes["编辑活动卷"]
+* link:task_data_manage_volumes.html#delete-a-volume["删除卷"]
+* link:task_data_manage_volumes.html#restore-a-deleted-volume["还原已删除的卷"]
+* link:task_data_manage_volumes.html#purge-a-volume["清除卷"]
+* link:task_data_manage_volumes.html#clone-a-volume["克隆卷"]
+* link:task_data_manage_volumes_assign_luns_to_fibre_channel_volumes.html["将 LUN 分配给光纤通道卷"]
+* link:task_data_manage_volumes_apply_a_qos_policy.html["将 QoS 策略应用于卷"]
+* link:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.html["删除卷的 QoS 策略关联"]
+

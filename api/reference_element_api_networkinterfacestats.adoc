@@ -1,0 +1,74 @@
+---
+permalink: api/reference_element_api_networkinterfacestats.html 
+sidebar: sidebar 
+keywords: object,objects,stats,statistics,networkInterfacestats 
+summary: networkInterfaceStats 对象包含存储节点上各个网络接口的网络统计信息和错误信息。 
+---
+= 网络接口统计信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+networkInterfaceStats 对象包含网络统计信息，已传输和已接收的数据包总数以及存储节点上各个网络接口的错误信息。您可以使用 `ListNetworkInterfaceStats` API 方法列出存储节点上网络接口的此信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+| 冲突 | 检测到的冲突数。 | 整型 
+
+
+| name | 网络接口的名称。 | string 
+
+
+| rxBytes | 接收的总字节数。 | 整型 
+
+
+| rxCrcErrors | 收到的 CRC 错误数据包的数量。 | 整型 
+
+
+| 已执行 rxDrop | 已丢弃的已接收数据包数。 | 整型 
+
+
+| rxErrors | 收到的错误或格式错误的数据包数。 | 整型 
+
+
+| rxFIFO 错误 | 收到的数据中的 FIFO 溢出错误数。 | 整型 
+
+
+| rxFrameErrors | 收到的帧对齐错误数据包的数量。 | 整型 
+
+
+| rxLengthErrors | 收到的长度错误数据包的数量。 | 整型 
+
+
+| rxMissedErrors | 接收器未命中的数据包数。 | 整型 
+
+
+| rxOverErrors | 此接口的接收器环缓冲区溢出错误数。 | 整型 
+
+
+| rxPacets | 接收的数据包总数。 | 整型 
+
+
+| TtxBytes | 传输的总字节数。 | 整型 
+
+
+| TtxCarrierErrors | 传输端的托架错误数。 | 整型 
+
+
+| TtxErrors | 数据包传输错误的数量。 | 整型 
+
+
+| TX2 错误 | 传输端的 FIFO 溢出错误数。 | 整型 
+
+
+| TtxPackets | 传输的数据包总数。 | 整型 
+|===

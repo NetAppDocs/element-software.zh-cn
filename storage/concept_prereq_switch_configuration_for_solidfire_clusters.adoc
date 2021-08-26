@@ -1,0 +1,39 @@
+---
+permalink: storage/concept_prereq_switch_configuration_for_solidfire_clusters.html 
+sidebar: sidebar 
+keywords: cluster switch configuration, best practices for switch configuration, optimal storage performance, node hardware, traffic, cluster, Element software, best practices, switches, switch requirements, storage, performance, storage performance 
+summary: NetApp Element 软件系统具有某些交换机要求和最佳实践，可实现最佳存储性能。 
+---
+= 运行 Element 软件的集群的交换机配置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element 软件系统具有某些交换机要求和最佳实践，可实现最佳存储性能。
+
+存储节点需要 10 或 25GbE 以太网交换机，具体取决于特定节点硬件，用于 iSCSI 存储服务和节点集群内服务通信。1GbE 交换机可用于以下类型的流量：
+
+* 管理集群和节点
+* 节点之间的集群内管理流量
+* 集群节点与管理节点虚拟机之间的流量
+
+
+|===
+
+
+ a| 
+* 最佳实践： * 在为集群流量配置以太网交换机时，应实施以下最佳实践：
+
+* 对于集群中的非存储流量，请部署一对 1GbE 交换机以提供高可用性和负载共享。
+* 在存储网络交换机上，成对部署交换机并配置和使用巨型帧（ MTU 大小为 9216 字节）。这样可以确保安装成功，并消除因数据包碎片化而导致的存储网络错误。
+
+
+|===
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

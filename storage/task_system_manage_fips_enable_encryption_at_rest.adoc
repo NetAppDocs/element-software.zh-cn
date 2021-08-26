@@ -1,0 +1,26 @@
+---
+permalink: storage/task_system_manage_fips_enable_encryption_at_rest.html 
+sidebar: sidebar 
+keywords: fips, security, encryption at rest, enable, disable, drives 
+summary: 您可以启用和禁用集群范围的空闲加密。默认情况下，不会启用此功能。要支持 FIPS 驱动器，必须启用空闲加密。 
+---
+= 启用空闲加密
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以启用和禁用集群范围的空闲加密。默认情况下，不会启用此功能。要支持 FIPS 驱动器，必须启用空闲加密。
+
+. 在 NetApp Element 软件 UI 中，单击 * 集群 * > * 设置 * 。
+. 单击 * 启用空闲加密 * 。
+
+
+
+
+== 了解更多信息
+
+* xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[为集群启用和禁用加密]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+

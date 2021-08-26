@@ -1,0 +1,29 @@
+---
+permalink: storage/task_per_node_access_settings.html 
+sidebar: sidebar 
+keywords: nodes, accessing node settings, accessing node settings with per-node UI 
+summary: 输入管理节点 IP 并进行身份验证后，您可以在每节点用户界面中访问网络设置，集群设置以及系统测试和实用程序。 
+---
+= 使用每节点 UI 访问每个节点的设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+输入管理节点 IP 并进行身份验证后，您可以在每节点用户界面中访问网络设置，集群设置以及系统测试和实用程序。
+
+如果要修改集群中处于活动状态的节点的设置，必须以集群管理员用户身份登录。
+
+
+TIP: 您应一次配置或修改一个节点。在修改其他节点之前，应确保指定的网络设置具有预期效果，并且网络稳定且性能良好。
+
+. 使用以下方法之一打开每节点 UI ：
++
+** 在浏览器窗口中输入管理 IP 地址并后跟： 442 ，然后使用管理员用户名和密码登录。
+** 在 Element UI 中，选择 * 集群 * > * 节点 * ，然后单击要配置或修改的节点的管理 IP 地址链接。在打开的浏览器窗口中，您可以编辑节点的设置。
+
+
++
+image::../media/per_node_ui_hcc_skin.png[每个节点的 UI 网络设置页面]
+
+

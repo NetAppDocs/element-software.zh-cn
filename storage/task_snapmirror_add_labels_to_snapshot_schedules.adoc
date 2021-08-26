@@ -1,0 +1,54 @@
+---
+permalink: storage/task_snapmirror_add_labels_to_snapshot_schedules.html 
+sidebar: sidebar 
+keywords: snapmirror labels, add labels to snapshot schedules, snapmirror policies 
+summary: 您可以向快照计划添加 SnapMirror 标签，以确保应用 SnapMirror 策略。您可以从现有 SnapMirror 关系对话框或 NetAppONTAP System Manager 中查看可用标签。 
+---
+= 将 SnapMirror 标签添加到快照计划中
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以向快照计划添加 SnapMirror 标签，以确保应用 SnapMirror 策略。您可以从现有 SnapMirror 关系对话框或 NetAppONTAP System Manager 中查看可用标签。
+
+.您需要什么？ #8217 ；将需要什么
+* 必须在集群级别启用 SnapMirror 。
+* 要添加的标签已存在于 ONTAP 中。
+
+
+.步骤
+. 单击 * 数据保护 * > * 计划 * 。
+. 通过以下方式之一将 SnapMirror 标签添加到计划中：
++
+[cols="25,75"]
+|===
+| 选项 | 步骤 
+
+
+ a| 
+创建新计划
+ a| 
+.. 选择 * 创建计划 * 。
+.. 输入所有其他相关详细信息。
+.. 选择 * 创建计划 * 。
+
+
+
+
+ a| 
+修改现有计划
+ a| 
+.. 单击要添加标签的计划的 * 操作 * 图标，然后选择 * 编辑 * 。
+.. 在显示的对话框中，在 * SnapMirror Label* 字段中输入文本。
+.. 选择 * 保存更改 * 。
+
+
+|===
+
+
+
+
+== 了解更多信息
+
+xref:task_data_protection_create_a_snapshot_schedule.adoc[创建快照计划]

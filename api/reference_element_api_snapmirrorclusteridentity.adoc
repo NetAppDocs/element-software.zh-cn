@@ -1,0 +1,59 @@
+---
+permalink: api/reference_element_api_snapmirrorclusteridentity.html 
+sidebar: sidebar 
+keywords: object,objects,snapMirrorClusterIdentity 
+summary: snapMirrorClusterIdentity 对象包含有关 SnapMirror 关系中远程 ONTAP 集群的标识信息。 
+---
+= snapMirrorClusterIdentity
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+snapMirrorClusterIdentity 对象包含有关 SnapMirror 关系中远程 ONTAP 集群的标识信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+snapMirrorEndpointID
+ a| 
+目标 ONTAP 系统的 ID 。
+ a| 
+整型
+
+
+
+ a| 
+clusterName
+ a| 
+目标 ONTAP 集群的名称。
+ a| 
+string
+
+
+
+ a| 
+clusterUuid
+ a| 
+目标 ONTAP 集群的 128 位通用唯一标识符。
+ a| 
+string
+
+
+
+ a| 
+clusterSerialNumber
+ a| 
+目标 ONTAP 集群的序列号。
+ a| 
+string
+
+|===

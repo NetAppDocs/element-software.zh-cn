@@ -1,0 +1,83 @@
+---
+permalink: api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html 
+sidebar: sidebar 
+keywords: system, api, element, security, rekey, software encryption at rest 
+summary: 您可以使用 RekeySoftwareEncryptionAtRestMasterKey 方法重新设置用于加密磁盘（数据加密密钥）的软件空闲加密主密钥的密钥。 
+---
+= RekeySoftwareEncryptionAtRestMasterKey
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `RekeySoftwareEncryptionAtRestMasterKey` 方法重新设置用于加密磁盘（数据加密密钥）的软件空闲加密主密钥的密钥。在创建集群期间，系统会将空闲软件加密配置为使用内部密钥管理（ InInternal Key Management ， KKM ）。创建集群后，可以使用此重新设置密钥方法来使用 IKM 或外部密钥管理（ External Key Management ， EKM ）。
+
+
+
+== Parameters
+
+此方法具有以下输入参数。如果未指定 `keyManagementType` 参数，则使用现有密钥管理配置执行重新设置密钥操作。如果指定了 `keyManagementType` ，并且密钥提供程序是外部的，则还必须使用 `keyProviderID` 参数。
+
+[cols="4*"]
+|===
+| 参数 | Description | Type | 可选 
+
+
+| KeyManagementType | 用于管理主密钥的密钥管理类型。可能值包括： `Internal` ：使用内部密钥管理重新设置密钥。`外部` ：使用外部密钥管理重新设置密钥。如果未指定此参数，则使用现有密钥管理配置执行重新设置密钥操作。 | string | true 
+
+
+| 密钥提供程序 ID | 要使用的密钥提供程序的 ID 。这是作为 `CreateKeyProvider` 方法之一返回的唯一值。只有当 `keyManagementType` 为 `External` 且在其他情况下无效时，才需要此 ID 。 | 整型 | true 
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+[cols="4*"]
+|===
+| 参数 | Description | Type | 可选 
+
+
+| 异步处理 | 使用 `asyncHandle` 值 with `GetAsyncResult` 确定重新设置密钥操作的状态。`GetAsyncResult` 输出将包含一个 `newkey` 字段，其中包含有关新主密钥的信息，另一个 `keyToDecommission` 字段则包含有关旧密钥的信息。 | 整型 | false 
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+ "method": "rekeysoftwareencryptionatrestmasterkey",
+ "params": {
+   "keyManagementType": "external",
+   "keyProviderID": "<ID number>"
+ }
+}
+----
+
+
+== 响应示例
+
+此方法返回类似于以下示例的响应：
+
+[listing]
+----
+{
+    "asyncHandle": 1
+}
+----
+
+
+== 自版本以来的新增功能
+
+12.3
+
+[discrete]
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

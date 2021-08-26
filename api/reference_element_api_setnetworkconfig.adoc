@@ -1,0 +1,108 @@
+---
+permalink: api/reference_element_api_setnetworkconfig.html 
+sidebar: sidebar 
+keywords: network,config,configuration,set,setting,node,setnetworkconfig 
+summary: 您可以使用 SetNetworkConfig 方法设置节点的网络配置。要显示节点的当前网络设置，请运行 GetNetworkConfig API 方法。 
+---
+= SetNetworkConfig
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `SetNetworkConfig` 方法设置节点的网络配置。要显示节点的当前网络设置，请运行 `GetNetworkConfig` API 方法。
+
+
+NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
+
+
+
+== 参数
+
+小心
+
+更改节点上的绑定模式会发生原因导致网络连接暂时断开。
+
+此方法具有以下输入参数：
+
+|===
+| Name | Description | Type | 默认值 | Required 
+
+
+ a| 
+网络
+ a| 
+包含要修改的节点网络设置的对象。您只需在此参数中将要更改的字段作为属性添加到此方法中。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[网络（所有接口）]
+ a| 
+无
+ a| 
+否
+
+|===
+
+
+== 返回值
+
+此方法具有以下返回值：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+网络
+ a| 
+节点的新网络配置和当前网络配置。
+ a| 
+xref:reference_element_api_network_all_interfaces.adoc[网络（所有接口）]
+
+|===
+
+
+== 请求示例
+
+此方法的请求类似于以下示例：
+
+[listing]
+----
+{
+	"method": "SetNetworkConfig",
+		"params": {
+			"network": {
+				"Bond10G": {
+					"bond-mode": "ALB"
+				},
+				"Bond1G": {
+					"netmask": "255.255.224.0"
+				},
+				"eth0": {
+					"method": "bond"
+				},
+				"lo": {
+					"method": "loopback"
+				}
+			}
+		}
+}
+----
+
+
+== 响应示例
+
+此方法的响应与 GetNetworkConfig 方法的响应相同。该方法将显示每个对象的所有成员，并包括任何已更改成员的新值。
+
+
+
+== 自版本以来的新增功能
+
+9.6
+
+
+
+== 了解更多信息
+
+* xref:reference_element_api_getnetworkconfig.adoc[GetNetworkConfig]
+* xref:reference_element_api_response_example_getnetworkconfig.adoc[GetNetworkConfig]
+
