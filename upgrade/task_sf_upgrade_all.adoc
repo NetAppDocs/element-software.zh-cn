@@ -4,7 +4,7 @@ permalink: upgrade/task_sf_upgrade_all.html
 summary: 您可以升级 NetApp SolidFire 全闪存存储系统及其所有组件。 
 keywords: netapp, solidfire, cluster, upgrade, element 
 ---
-= 升级适用于 Element 12.3 的 NetApp SolidFire 全闪存存储系统
+= 升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统
 
 
 [role="lead"]

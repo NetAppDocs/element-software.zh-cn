@@ -31,6 +31,8 @@ entries:
     url: "/esds/task_esds_get_license_key.html"
   - title: 在 SolidFire ESDS 集群上使用维护模式
     url: "/esds/reference_esds_use_maintenance_mode.html"
+  - title: 更换 HPE DL380 的驱动器
+    url: "/esds/task_esds_dl380_drive_repl.html"
   - title: 更换 HPE DL360 的驱动器
     url: "/esds/task_esds_dl360_drive_repl.html"
   - title: 更换 Dell R640 的驱动器

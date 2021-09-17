@@ -150,6 +150,8 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 保护域是指一个节点或一组已分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。
 
+您可以使用适用于 vCenter Server 的 NetApp Element 插件中的 NetApp Element 配置扩展点手动启用保护域监控。您可以根据节点或机箱域选择保护域阈值。您还可以使用 Element API 或 Web UI 启用保护域监控。
+
 保护域布局会将每个节点分配给特定的保护域。
 
 支持两种不同的保护域布局，称为保护域级别。
@@ -163,11 +165,9 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 
 
-您可以使用适用于 vCenter Server 的 NetApp Element 插件中的 NetApp Element 配置扩展点手动启用保护域监控。您可以根据节点或机箱域选择保护域阈值。
-
 创建新集群时，如果您使用的存储节点位于共享机箱中，则可能需要考虑使用保护域功能设计机箱级别的故障保护。
 
-您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到相同的默认自定义保护域。有关详细信息，请参见 link:../storage/concept_intro_custom_protection_domains.html["保护域文档"]。
+您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到相同的默认自定义保护域。有关详细信息，请参见 link:../storage/concept_intro_custom_protection_domains.html["自定义保护域文档"]。
 
 
 

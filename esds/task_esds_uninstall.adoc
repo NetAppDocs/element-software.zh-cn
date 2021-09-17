@@ -21,7 +21,7 @@ NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_sd
 这会导致系统将数据从节点的驱动器迁移到集群中的其他驱动器。此过程所需时间取决于必须迁移的数据量。
 
 . 使用 Element UI 或从集群中删除节点 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["`RemoveNodes`"^] API 方法。
-. 对清单文件中定义的主机（节点）执行 Ping 操作，以验证 Ansible 是否可以与其通信。
+. 使用 SSH 连接到从集群中删除的节点。
 . 按如下所示从节点中删除 SolidFire ESDS ：
 +
 [listing]

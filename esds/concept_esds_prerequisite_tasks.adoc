@@ -26,6 +26,9 @@ summary: 在安装 SolidFire ESDS 之前，请确保执行必要的检查并验�
 NOTE: 默认情况下， RHEL 会选择 `xfs` 作为您手动创建的分区的默认文件系统。您应将其更改为 `ext4` ，但 ` /boot` 和 `sWAP` 分区除外。您的 ` /boot` 分区应使用 `ext2` 。
 
 +
+如果您的 SATA 磁盘为 250 GB ，请按照下面建议的分区进行操作。如果 SATA 磁盘具有更多空间，则可以增加 /opt 和 /var 分区大小。
+
++
 [cols="2*"]
 |===
 | 分区 | Size 
@@ -67,38 +70,16 @@ NOTE: 默认情况下， RHEL 会选择 `xfs` 作为您手动创建的分区的�
 
 
  a| 
-/ 和 /usr
- a| 
-拆分剩余空间
-
-|===
-+
-所需的最小分区布局如下：
-
-+
-[cols="2*"]
-|===
-| 分区 | Size 
-
-
- a| 
-/opt
- a| 
-40 GB
-
-
-
- a| 
-/var
- a| 
-40 GB
-
-
-
- a| 
 /
  a| 
-10 Gb （ RedHat 建议）
+最小 10 GB
+
+
+
+ a| 
+/usr
+ a| 
+最小 10 GB
 
 |===
 +
@@ -125,7 +106,11 @@ rhel-7-server-extras-rpms
 
 
 .<Strong> 安装所需软件 </Strong>
-* 安装 Ansible ， Git 和 Python 3.0 。
+* 安装 Ansible ， Git ， Podman 和 Python 3.0 。
++
+
+NOTE: 对于 Element 12.3 ，支持的 Podman 版本为 1.0.4 。
+
 
 
 .<Strong> 验证您的配置是否符合 NetApp&#8217 安装 SolidFire ESDS</Strong> 的要求
@@ -159,12 +144,12 @@ NOTE: 确保您始终下载最新版本的角色。
 +
 [listing]
 ----
- $ ansible-galaxy role list
- # ~/.ansible/roles
  - nar_solidfire_sds_install, (unknown version)
  - nar_solidfire_sds_upgrade, (unknown version)
  - ansible, (unknown version)
  - nar_solidfire_sds_compliance, (unknown version)
+ - nar_solidfire_cluster_config, (unknown version)
+ - nar_solidfire_sds_uninstall, (unknown version)
 ----
 .. 创建用于合规性检查的攻略手册。
 .. 运行合规性检查攻略手册，如以下示例所示：
@@ -355,7 +340,7 @@ monitoring.solidfire.com
 
 
  a| 
-SolidFire eSDSsfapp
+SolidFire ESDS sfapp
  a| 
 按节点 UI 和 API 访问以创建集群
  a| 
@@ -390,7 +375,7 @@ iSCSI 客户端
  a| 
 SOAP 服务器
  a| 
-SolidFire eSDSsfapp
+SolidFire ESDS sfapp
  a| 
 7627 TCP
  a| 

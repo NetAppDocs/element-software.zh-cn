@@ -1,7 +1,7 @@
 ---
 permalink: concepts/concept_rn_relatedrn_element.html 
 sidebar: sidebar 
-keywords:  
+keywords: release information,previous,current,updates 
 summary: 您可以通过链接访问 Element 存储环境中各个组件的最新和早期发行说明。 
 ---
 = 当前版本和先前版本信息
@@ -19,7 +19,8 @@ NOTE: 系统将提示您使用 NetApp 支持凭据登录。
 
 == NetApp Element 软件
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876498["《 NetApp Element 软件 12.3 发行说明》"] _new ！ _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2878089["《 NetApp Element 软件 12.3.1 发行说明》"] _new ！ _
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2876498["《 NetApp Element 软件 12.3 发行说明》"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2877210["《 NetApp Element 软件 12.2.1 发行说明》"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2873789["《 NetApp Element 软件 12.2 发行说明》"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2877208["《 NetApp Element 软件 12.0.1 发行说明》"]

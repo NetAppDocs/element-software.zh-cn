@@ -22,9 +22,9 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 系统升级顺序内容介绍了完成 SolidFire 全闪存存储系统升级所需的任务。理想情况下，这些过程是在较大的升级序列中执行的，而不是孤立执行的。如果需要基于组件的升级或更新，请参见操作步骤前提条件以确保解决其他复杂问题。
 
-按照以下顺序升级适用于 Element 12.3 的 NetApp SolidFire 全闪存存储系统：
+按照以下顺序升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统：
 
-* link:task_sf_upgrade_all.html["升级适用于 Element 12.3 的 NetApp SolidFire 全闪存存储系统"]。
+* link:task_sf_upgrade_all.html["升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统"]。
 
 
 

@@ -2,13 +2,13 @@
 sidebar: sidebar 
 permalink: upgrade/task_hcc_upgrade_management_node.html 
 summary: 在 NetApp SolidFire 存储系统升级过程中，您需要升级管理节点。 
-keywords: netapp, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3 
+keywords: netapp, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1 
 ---
 = 升级管理节点
 
 
 [role="lead"]
-您可以将管理节点从 11.0 或更高版本升级到管理节点 12.3 版。
+您可以将管理节点从 11.0 或更高版本升级到管理节点 12.3.1 或 12.3 版。
 
 升级存储集群上的 Element 软件不再需要升级管理节点操作系统。如果管理节点为 11.3 或更高版本，您只需将管理服务升级到最新版本，即可使用 NetApp Hybrid Cloud Control 执行 Element 升级。如果您希望出于安全修复等其他原因升级管理节点操作系统，请按照适用于您的方案的管理节点升级操作步骤进行操作。
 
@@ -17,10 +17,13 @@ NOTE: vCenter 插件 4.4 或更高版本需要使用模块化架构创建的管�
 
 选择以下管理节点升级选项之一：
 
-* 如果要从管理节点 12.2 升级：<<Upgrade a management node to version 12.3 from 12.2>>
-* 如果要从管理节点 12.0 升级：<<Upgrade a management node to version 12.3 from 12.0>>
-* 如果要从管理节点 11.3 ， 11.5 ， 11.7 或 11.8 升级：<<Upgrade a management node to version 12.3 from 11.3 through 11.8>>
-* 如果要从管理节点 11.0 或 11.1 升级：<<Upgrade a management node to version 12.3 from 11.1 or 11.0>>
+
+NOTE: 管理节点 12.3.1 中没有其他功能更改或错误修复。如果您已运行管理节点 12.3 ，则无需将其升级到 12.3.1 。
+
+* 如果要从管理节点 12.2 升级：<<Upgrade a management node to version 12.3.x from 12.2>>
+* 如果要从管理节点 12.0 升级：<<Upgrade a management node to version 12.3.x from 12.0>>
+* 如果要从管理节点 11.3 ， 11.5 ， 11.7 或 11.8 升级：<<Upgrade a management node to version 12.3.x from 11.3 through 11.8>>
+* 如果要从管理节点 11.0 或 11.1 升级：<<Upgrade a management node to version 12.3.x from 11.1 or 11.0>>
 * 如果要从管理节点 10.x 版升级：<<Migrating from management node version 10.x to 11.x>>
 
 
@@ -34,22 +37,22 @@ NOTE: 如果您未依次更新管理服务和 Element 存储，则无法使用�
 
 
 
-== 将管理节点从 12.2 升级到版本 12.3
+== 将管理节点从 12.2 升级到 12.3.x 版
 
-您可以将管理节点从 12.2 版原位升级到 12.3 版，而无需配置新的管理节点虚拟机。
+您可以将管理节点从 12.2 版原位升级到 12.3.x 版，而无需配置新的管理节点虚拟机。
 
 
-NOTE: Element 12.3 管理节点是一种可选升级。现有部署不需要此功能。
+NOTE: Element 12.3.x 管理节点是一种可选升级。现有部署不需要此功能。
 
 .您需要什么？ #8217 ；将需要什么
 * 管理节点 VM 的 RAM 为 24 GB 。
-* 您要升级的管理节点为 12.0 版，并使用 IPv4 网络。管理节点 12.3 版不支持 IPv6 。
+* 您要升级的管理节点为 12.0 版，并使用 IPv4 网络。管理节点版本 12.3.x 不支持 IPv6 。
 +
 
 TIP: 要检查管理节点的版本，请登录到管理节点并在登录横幅中查看 Element 版本号。
 
 * 您已使用 NetApp Hybrid Cloud Control （ HCC ）将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 HCC ： ` \https://<ManagementNodeIP>`
-* 如果要将管理节点更新到版本 12.3 ，则需要使用管理服务 2.14.60 或更高版本继续操作。
+* 如果要将管理节点更新到 12.3.x 版，则需要使用管理服务 2.14.60 或更高版本继续操作。
 * 您已按照中的说明配置了一个额外的网络适配器（如果需要） link:../mnode/task_mnode_install_add_storage_NIC.html["配置其他存储 NIC"]。
 +
 
@@ -127,21 +130,21 @@ IMPORTANT: 如果先前已在管理节点上禁用 SSH 功能，则需要 link:.
 
 
 
-== 将管理节点从 12.0 升级到版本 12.3
+== 将管理节点从 12.0 升级到 12.3.x 版
 
-您可以将管理节点从 12.0 版原位升级到 12.3 版，而无需配置新的管理节点虚拟机。
+您可以将管理节点从 12.0 版原位升级到 12.3.x 版，而无需配置新的管理节点虚拟机。
 
 
-NOTE: Element 12.3 管理节点是一种可选升级。现有部署不需要此功能。
+NOTE: Element 12.3.x 管理节点是一种可选升级。现有部署不需要此功能。
 
 .您需要什么？ #8217 ；将需要什么
-* 您要升级的管理节点为 12.0 版，并使用 IPv4 网络。管理节点 12.3 版不支持 IPv6 。
+* 您要升级的管理节点为 12.0 版，并使用 IPv4 网络。管理节点版本 12.3.x 不支持 IPv6 。
 +
 
 TIP: 要检查管理节点的版本，请登录到管理节点并在登录横幅中查看 Element 版本号。
 
 * 您已使用 NetApp Hybrid Cloud Control （ HCC ）将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 HCC ： ` \https://<ManagementNodeIP>`
-* 如果要将管理节点更新到版本 12.3 ，则需要使用管理服务 2.14.60 或更高版本继续操作。
+* 如果要将管理节点更新到 12.3.x 版，则需要使用管理服务 2.14.60 或更高版本继续操作。
 * 您已按照中的说明配置了一个额外的网络适配器（如果需要） link:../mnode/task_mnode_install_add_storage_NIC.html["配置其他存储 NIC"]。
 +
 
@@ -226,21 +229,21 @@ IMPORTANT: 提供的 SSH 功能 link:../mnode/task_mnode_enable_remote_support_c
 
 
 
-== 将管理节点从 11.3 升级到 11.8
+== 将管理节点从 11.3 升级到 11.3.x 版
 
-您可以将管理节点从 11.3 ， 11.5 ， 11.7 或 11.8 原位升级到 12.3 版，而无需配置新的管理节点虚拟机。
+您可以将管理节点从 11.3 ， 11.5 ， 11.7 或 11.8 原位升级到 12.3.x 版，而无需配置新的管理节点虚拟机。
 
 
-NOTE: Element 12.3 管理节点是一种可选升级。现有部署不需要此功能。
+NOTE: Element 12.3.x 管理节点是一种可选升级。现有部署不需要此功能。
 
 .您需要什么？ #8217 ；将需要什么
-* 您要升级的管理节点为 11.3 ， 11.5 ， 11.7 或 11.8 版，并使用 IPv4 网络。管理节点 12.3 版不支持 IPv6 。
+* 您要升级的管理节点为 11.3 ， 11.5 ， 11.7 或 11.8 版，并使用 IPv4 网络。管理节点版本 12.3.x 不支持 IPv6 。
 +
 
 TIP: 要检查管理节点的版本，请登录到管理节点并在登录横幅中查看 Element 版本号。
 
 * 您已使用 NetApp Hybrid Cloud Control （ HCC ）将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 HCC ： ` \https://<ManagementNodeIP>`
-* 如果要将管理节点更新到版本 12.3 ，则需要使用管理服务 2.14.60 或更高版本继续操作。
+* 如果要将管理节点更新到 12.3.x 版，则需要使用管理服务 2.14.60 或更高版本继续操作。
 * 您已按照中的说明配置了一个额外的网络适配器（如果需要） link:../mnode/task_mnode_install_add_storage_NIC.html["配置其他存储 NIC"]。
 +
 
@@ -325,9 +328,9 @@ IMPORTANT: 提供的 SSH 功能 link:../mnode/task_mnode_enable_remote_support_c
 
 
 
-== 将管理节点从 11.1 或 11.0 升级到版本 12.3
+== 将管理节点从 11.1 或 11.0 升级到 12.3.x 版
 
-您可以将管理节点从 11.0 或 11.1 原位升级到版本 12.3 ，而无需配置新的管理节点虚拟机。
+您可以将管理节点从 11.0 或 11.1 原位升级到 12.3.x 版，而无需配置新的管理节点虚拟机。
 
 .您需要什么？ #8217 ；将需要什么
 * 存储节点正在运行 Element 11.3 或更高版本。
@@ -335,7 +338,7 @@ IMPORTANT: 提供的 SSH 功能 link:../mnode/task_mnode_enable_remote_support_c
 
 NOTE: 使用最新的 HealthTools 升级 Element 软件。
 
-* 您要升级的管理节点为 11.0 或 11.1 版，并使用 IPv4 网络。管理节点 12.3 版不支持 IPv6 。
+* 您要升级的管理节点为 11.0 或 11.1 版，并使用 IPv4 网络。管理节点版本 12.3.x 不支持 IPv6 。
 +
 
 TIP: 要检查管理节点的版本，请登录到管理节点并在登录横幅中查看 Element 版本号。
@@ -425,7 +428,7 @@ NOTE: 运行此步骤中所述的 sudo 命令后， SSH 会话将被终止。要
 
 
 
-. 在 12.3 管理节点上，运行 `upgrade-mnode` 脚本以保留先前的配置设置。
+. 在 12.3.x 管理节点上，运行 `upgrade-mnode` 脚本以保留先前的配置设置。
 +
 
 NOTE: 如果要从 11.0 或 11.1 管理节点迁移，此脚本会将 Active IQ 收集器复制到新的配置格式。
@@ -457,7 +460,7 @@ sudo /sf/packages/mnode/upgrade-mnode -mu <mnode user> -pvm <mvip for persistent
 ----
 
 
-. （对于使用适用于 vCenter Server 的 NetApp Element 插件安装的所有 NetApp SolidFire 全闪存存储）按照中的步骤更新 12.3 管理节点上的 vCenter 插件 link:task_vcp_upgrade_plugin.html["升级适用于 vCenter Server 的 Element 插件"] 主题。
+. （对于使用适用于 vCenter Server 的 NetApp Element 插件安装的所有 NetApp SolidFire 全闪存存储）按照中的步骤更新 12.3.x 管理节点上的 vCenter 插件 link:task_vcp_upgrade_plugin.html["升级适用于 vCenter Server 的 Element 插件"] 主题。
 . 使用管理节点 API 查找安装的资产 ID ：
 +
 .. 从浏览器登录到管理节点 REST API UI ：

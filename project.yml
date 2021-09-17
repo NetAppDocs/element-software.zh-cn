@@ -1,7 +1,7 @@
 ---
 sidebar:
   entries:
-  - title: SolidFire 和 Element 软件 12.3 文档
+  - title: SolidFire 和 Element 软件 12.3.x 文档
     url: "/index.html"
   - title: 发行说明
     url: "/concepts/concept_rn_relatedrn_element.html"
@@ -31,7 +31,7 @@ sidebar:
   - title: 早期版本
     url: "/element-earlierversions.html"
   - title: 法律声明
-    url: "/element-legal.html"
+    url: "/legal-notices.html"
 homepage:
   tiles:
   - title: 入门

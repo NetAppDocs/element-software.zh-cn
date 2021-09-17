@@ -11,7 +11,7 @@ keywords: netapp, healthTools upgrade, sfupdate-healthtools, element
 在从 11.1 或更早版本开始 Element 存储升级之前，您应先升级 HealthTools 套件。只有在运行的管理节点和 Element 软件为 11.1 或更早版本时，才需要升级 HealthTools 。不需要 HealthTools link:task_hcc_upgrade_element_software.html["使用 NetApp Hybrid Cloud Control 执行 Element 升级"]。
 
 
-IMPORTANT: Element 软件 12.3 是可使用 NetApp HealthTools 升级到的最终版本。如果您运行的是 Element 软件 11.3 或更高版本，则应使用 NetApp Hybrid Cloud Control 升级 Element 软件。您可以使用 NetApp HealthTools 升级 Element 11.1 或更早版本。
+IMPORTANT: Element 软件 12.3.1 是可使用 NetApp HealthTools 升级到的最终版本。如果您运行的是 Element 软件 11.3 或更高版本，则应使用 NetApp Hybrid Cloud Control 升级 Element 软件。您可以使用 NetApp HealthTools 升级 Element 11.1 或更早版本。
 
 .您需要什么？ #8217 ；将需要什么
 * 您正在运行管理节点 11.0 ， 11.1 或更高版本。

@@ -1,7 +1,7 @@
 ---
 permalink: concepts/concept_rn_whats_new_element.html 
 sidebar: sidebar 
-keywords: netapp, solidfire, element, storage 
+keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。 
 ---
 = 新增功能 &#8217
@@ -29,7 +29,43 @@ image:bol_filters.PNG["BOL 筛选器，对齐 \" 中心 \""]
 
 
 
-== 支持 FIFO 快照队列
+== Element 12.3.1
+
+详细了解 Element 12.3.1 中的新增功能。
+
+
+
+=== 存储固件包 2.99.2
+
+Element 12.3.1 版包含存储固件包版本 2.99.2 。如果存储集群已安装 Element 12.3 ，您可以选择只安装新的 2.99.2 固件包。
+
+
+
+=== SolidFire 企业 SDS 的动态节点评级
+
+动态节点额定值可以根据平台上的核心数量扩展性能。对于 12.3.1 版，如果核心数大于 16 ，则 IOPS 上限为 100 ， 000 。
+
+
+
+=== 支持 SolidFire ESDS 的单绑定网络配置
+
+现在，您可以将主机的单个绑定网络配置与 SolidFire ESDS 结合使用。
+
+
+
+=== SolidFire 企业 SDS 提供了新的服务器支持
+
+SolidFire ESDS 现在可在 HPE DL380 服务器上使用。请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关支持的配置的详细信息。
+
+
+
+== 要素 12.3
+
+详细了解 Element 12.3 中的新增功能。
+
+
+
+=== 支持 FIFO 快照队列
 
 使用 Element 12.3 ，您可以为卷快照创建先出（ First-in-First-out ， FIFO ）队列。使用 Element API ，您可以指定创建卷时应预留的 FIFO 快照插槽的最小和最大数量。当卷的 FIFO 快照队列已满时，为该卷创建的下一个快照将从系统中删除该卷最旧的快照。FIFO 和非 FIFO 快照都使用卷上相同的可用快照插槽池。
 
@@ -48,7 +84,7 @@ image:bol_filters.PNG["BOL 筛选器，对齐 \" 中心 \""]
 
 
 
-== 支持 Snapshot 序列化
+=== 支持 Snapshot 序列化
 
 Element 12.3 支持序列化快照创建。使用 Element API 创建新快照时，您可以指定在先前的快照复制仍在进行中时不应创建快照。
 
@@ -62,7 +98,7 @@ Element 12.3 支持序列化快照创建。使用 Element API 创建新快照时
 
 
 
-== Snapshot 保留支持
+=== Snapshot 保留支持
 
 使用 Element 12.3 可以指定快照的保留时间。如果未指定快照的保留时间或到期时间，则它将永久保留。
 
@@ -78,7 +114,7 @@ Element 12.3 支持序列化快照创建。使用 Element API 创建新快照时
 
 
 
-== 软件空闲加密增强功能
+=== 软件空闲加密增强功能
 
 对于软件空闲加密功能， Element 12.3 引入了外部密钥管理（ External Key Management ， EKM ）并能够重新设置软件加密主密钥的密钥。您可以在创建存储集群时启用空闲软件加密。创建 SolidFire 企业 SDS 存储集群时，默认情况下会启用空闲软件加密。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。
 
@@ -93,37 +129,31 @@ Element 12.3 支持序列化快照创建。使用 Element API 创建新快照时
 
 
 
-== 存储节点固件更新
+=== 存储节点固件更新
 
 Element 12.3 提供了存储节点的固件更新。 link:../concepts/concept_rn_relatedrn_element.html#storage-firmware["了解更多信息。"]。
 
 
 
-== 安全性增强功能
+=== 安全性增强功能
 
 Element 12.3 可解决存储节点和管理节点的安全漏洞。 https://security.netapp.com/["了解更多信息。"] 关于这些安全增强功能。
 
 
 
-== 改进了故障驱动器的行为
+=== 改进了故障驱动器的行为
 
-Element 12.3 使用 SolidFire 设备驱动器中的 SMART 运行状况数据对这些驱动器定期执行运行状况检查。未通过智能运行状况检查的驱动器可能接近故障。如果某个驱动器未通过智能运行状况检查，则该驱动器将过渡到 * 故障 * 状态，并显示严重严重性集群故障： `d" 驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器运行状况检查失败 " 。要解决此故障，请更换驱动器` 。
-
-
-
-== SolidFire 企业 SDS 中的新增功能
-
-以下是 SolidFire ESDS 中的新增功能：
+Element 12.3 使用 SolidFire 设备驱动器中的 SMART 运行状况数据对这些驱动器定期执行运行状况检查。未通过智能运行状况检查的驱动器可能接近故障。如果某个驱动器未通过智能运行状况检查，则该驱动器将过渡到 * 故障 * 状态，并显示严重严重性集群故障： `d" 驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器运行状况检查失败 " 。要解决此故障，请更换驱动器。`
 
 
 
-=== 新服务器支持
+=== SolidFire 企业 SDS 提供了新的服务器支持
 
 SolidFire ESDS 现在可在 Dell R640 服务器上使用。请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU&src=IMT["NetApp 互操作性表工具（ IMT ）"^] 有关支持的配置的详细信息。
 
 
 
-=== 新文档
+=== SolidFire ESDS 的新文档
 
 SolidFire ESDS 提供了以下新文档：
 
@@ -133,7 +163,7 @@ SolidFire ESDS 提供了以下新文档：
 
 
 
-=== 已知问题的新位置
+=== SolidFire ESDS 已知问题的新位置
 
 现在，您可以在上搜索已知问题 https://mysupport.netapp.com/site/products/all/details/solidfire-enterprise-sds/bugsonline-tab["Bug Online 工具（需要登录）"^]。
 

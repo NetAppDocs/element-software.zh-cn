@@ -14,11 +14,12 @@ summary: 查找有关使用维护模式和更换 SolidFire ESDS 集群中的驱�
 
 * link:task_esds_get_license_key.html["获取许可证密钥"^]
 * link:reference_esds_use_maintenance_mode.html["在 SolidFire ESDS 集群上使用维护模式"^]
+* link:task_esds_dl380_drive_repl.html["更换 HPE DL380 的驱动器"^]
 * link:task_esds_dl360_drive_repl.html["更换 HPE DL360 的驱动器"^]
 * link:task_esds_r640_drive_repl.html["更换 Dell R640 的驱动器"^]
 * link:reference_esds_containerlogs.html["收集容器日志"^]
 * link:reference_esds_troubleshoot_links.html["故障排除知识库文章的链接"^]
-* link:reference_esds_sf_sds_config_file.html["sf_sSD_config.yaml 文件的内容"^]*
+* link:reference_esds_sf_sds_config_file.html["sf_sSD_config.yaml 文件的内容"^]
 
 
 

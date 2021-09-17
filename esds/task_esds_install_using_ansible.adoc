@@ -58,6 +58,8 @@ NOTE: 确保您始终下载最新版本的角色。
  - nar_solidfire_sds_upgrade, (unknown version)
  - ansible, (unknown version)
  - nar_solidfire_sds_compliance, (unknown version)
+ - nar_solidfire_cluster_config, (unknown version)
+ - nar_solidfire_sds_uninstall, (unknown version)
 ----
 +
 
