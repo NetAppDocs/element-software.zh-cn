@@ -10,7 +10,7 @@ summary: Element 演示节点是一个 VMware 虚拟机版本的 Element 软件�
 
 
 [role="lead"]
-Element 演示节点是一个 VMware 虚拟机（ VM ）版本的 Element 软件，可通过它轻松演示 NetApp HCI 和 SolidFire 产品的许多关键存储功能。开发人员可以通过演示节点根据 Element API 编写代码，而无需使用物理硬件。它会打包为 OVA 文件，以便于 VMware 部署。
+https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element 演示节点"^] 是 Element 软件的 VMware 虚拟机（ VM ）版本，可轻松演示 NetApp HCI 和 SolidFire 产品的许多关键存储功能。开发人员可以通过演示节点根据 Element API 编写代码，而无需使用物理硬件。它会打包为 OVA 文件，以便于 VMware 部署。
 
 
 
@@ -132,4 +132,5 @@ Element 演示节点以尽力服务为基础提供。要获得支持，请将您
 == 了解更多信息
 
 * https://www.netapp.com/data-storage/solidfire/documentation/["SolidFire 全闪存存储资源页面"^]
+* https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element 演示节点下载页面（需要登录）"^]
 
