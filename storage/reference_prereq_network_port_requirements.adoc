@@ -398,28 +398,6 @@ LDAPS 查找
  a| 
 存储节点 SIP
  a| 
-S3/Swift endpoint
- a| 
-80
- a| 
-（可选）与 S3/Swift 端点进行 HTTP 通信以实现备份和恢复
-
-
-
- a| 
-存储节点 SIP
- a| 
-S3/Swift endpoint
- a| 
-443.
- a| 
-（可选）与 S3/Swift 端点进行 HTTPS 通信以进行备份和恢复
-
-
-
- a| 
-存储节点 SIP
- a| 
 远程存储节点 SIP
  a| 
 2181
