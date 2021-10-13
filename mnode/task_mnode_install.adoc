@@ -118,18 +118,22 @@ NOTE: 如果需要使用额外的 NIC 来隔离存储流量，请参见有关配
 == 配置时间同步
 
 . 确保使用 NTP 在管理节点和存储集群之间同步时间：
-+
-.. 使用 SSH 或虚拟机管理程序提供的控制台登录到管理节点。
-.. 停止 NTPD ：
+
+
+
+NOTE: 从 Element 12.3.1 开始，系统会自动执行子步骤（ a ）到（ e ）。对于管理节点 12.3.1 ，请继续执行 <<substep_f_install_config_time_sync,子步骤（ f ）>> 以完成时间同步配置。
+
+. 使用 SSH 或虚拟机管理程序提供的控制台登录到管理节点。
+. 停止 NTPD ：
 +
 [listing]
 ----
 sudo service ntpd stop
 ----
-.. 编辑 NTP 配置文件 ` /etc/ntp.conf` ：
+. 编辑 NTP 配置文件 ` /etc/ntp.conf` ：
 +
-... 通过在每个服务器前面添加一个 ` #` 来注释掉默认服务器（ `s服务器 0.gentoo.pool.ntp.org` ）。
-... 为要添加的每个默认时间服务器添加一个新行。默认时间服务器必须与要在中使用的存储集群上使用的 NTP 服务器相同 link:task_mnode_install.html#set-up-the-management-node["后续步骤"]。
+.. 通过在每个服务器前面添加一个 ` #` 来注释掉默认服务器（ `s服务器 0.gentoo.pool.ntp.org` ）。
+.. 为要添加的每个默认时间服务器添加一个新行。默认时间服务器必须与要在中使用的存储集群上使用的 NTP 服务器相同 link:task_mnode_install.html#set-up-the-management-node["后续步骤"]。
 +
 [listing]
 ----
@@ -141,48 +145,50 @@ vi /etc/ntp.conf
 #server 3.gentoo.pool.ntp.org
 server <insert the hostname or IP address of the default time server>
 ----
-... 完成后保存配置文件。
+.. 完成后保存配置文件。
 
 
-.. 强制与新添加的服务器进行 NTP 同步。
+. 强制与新添加的服务器进行 NTP 同步。
 +
 [listing]
 ----
 sudo ntpd -gq
 ----
-.. 重新启动 NTPD 。
+. 重新启动 NTPD 。
 +
 [listing]
 ----
 sudo service ntpd start
 ----
-.. 通过虚拟机管理程序禁用与主机的时间同步（以下是 VMware 示例）：
+. 【 substed_f_install_config_time_sync]] 通过虚拟机管理程序禁用与主机的时间同步（以下是 VMware 示例）：
 +
 
 NOTE: 如果您在 VMware 以外的虚拟机管理程序环境中部署 mNode ，例如在 OpenStack 环境中从 .ISO 映像部署，请参见虚拟机管理程序文档以了解等效命令。
 
 +
-... 禁用定期时间同步：
+.. 禁用定期时间同步：
 +
 [listing]
 ----
 vmware-toolbox-cmd timesync disable
 ----
-... 显示并确认服务的当前状态：
+.. 显示并确认服务的当前状态：
 +
 [listing]
 ----
 vmware-toolbox-cmd timesync status
 ----
-... 在 vSphere 中，验证 VM 选项中的 `S将子系统时间与主机同步` 框是否未选中。
-
-
-
-
-
-
+.. 在 vSphere 中，验证 VM 选项中的 `S将子系统时间与主机同步` 框是否未选中。
++
 
 NOTE: 如果您将来对虚拟机进行更改，请勿启用此选项。
+
+
+
+
+
+
+NOTE: 完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时影响 NTP link:task_mnode_install.html#set-up-the-management-node["设置命令"] 在管理节点上。
 
 
 
