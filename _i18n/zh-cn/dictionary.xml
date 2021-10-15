@@ -988,22 +988,16 @@
   <block id="87043baf81d739284bd0146e19728ce7" category="inline-link">《 NetApp Element 软件 11.3P1 发行说明》</block>
   <block id="7489b0d15edbdfa5b0e6ec6795aba52c" category="list-text"><block ref="7489b0d15edbdfa5b0e6ec6795aba52c" category="inline-link-rx"></block></block>
   <block id="6b85e8fee9865d4ab62dcfcd4f941582" category="inline-link">管理服务发行说明</block>
-  <block id="c229f444eeb73b82bdd6f90d47b7addb" category="list-text"><block ref="c229f444eeb73b82bdd6f90d47b7addb" category="inline-link-rx"></block></block>
   <block id="8cf0a7fd902364db0eaa5ec60ad654f3" category="inline-link">vCenter 插件 4.7 发行说明</block>
   <block id="c9973d0a1ee56161c6330507362f4803" category="list-text"><block ref="c9973d0a1ee56161c6330507362f4803" category="inline-link-rx"></block></block>
   <block id="433d4496073903d35ad99448cf921f95" category="inline-link">vCenter 插件 4.6 发行说明</block>
-  <block id="46e9f8c5e971e16b17c94df1888921c9" category="list-text"><block ref="46e9f8c5e971e16b17c94df1888921c9" category="inline-link-rx"></block></block>
   <block id="94b0602cd5f2851627f6bfecb97b96e6" category="inline-link">vCenter 插件 4.5 发行说明</block>
-  <block id="4f1efa9f69add9f0c71e4963ae747950" category="list-text"><block ref="4f1efa9f69add9f0c71e4963ae747950" category="inline-link-rx"></block></block>
   <block id="578c07c950972d7b078fc954eef38508" category="inline-link">vCenter 插件 4.4 发行说明</block>
-  <block id="566ef7cda3b398c844389fe77c144fca" category="list-text"><block ref="566ef7cda3b398c844389fe77c144fca" category="inline-link-rx"></block></block>
   <block id="e6f04bc267aa8b790e8358fbcafd13da" category="inline-link">vCenter 插件 4.3 发行说明</block>
-  <block id="f94aef7fdb1d34c6764ffb66c5feda58" category="list-text"><block ref="f94aef7fdb1d34c6764ffb66c5feda58" category="inline-link-rx"></block></block>
   <block id="002e74c06881f6eef90f201bb310bbfa" category="section-title">存储固件</block>
   <block id="e2b165ab46734aee4acaaada05a4c247" category="inline-link">存储固件包 2.99.2 发行说明（最新）</block>
   <block id="f1de80703dd5c9a1cd53931752c56274" category="list-text"><block ref="f1de80703dd5c9a1cd53931752c56274" category="inline-link-rx"></block></block>
   <block id="826ed2a2fd875eeb127f73e48856de14" category="inline-link">存储固件包 2.76 发行说明</block>
-  <block id="f445236a4780b4c2e901a3b37fda9c5e" category="list-text"><block ref="f445236a4780b4c2e901a3b37fda9c5e" category="inline-link-rx"></block></block>
   <block id="7c4a6e26b432f1ad131564bc6dc6e32d" category="inline-link">存储固件包 2.27 发行说明</block>
   <block id="a0b768ade98ef6cf3df956008c966806" category="list-text"><block ref="a0b768ade98ef6cf3df956008c966806" category="inline-link-rx"></block></block>
   <block id="af149d844cc5e37dba5faa0cc28a9285" category="inline-link-macro">H610S BMC 3.84.07 发行说明</block>
@@ -5351,11 +5345,8 @@
   <block id="03efd38b0802e06b31537f557cd0421f" category="paragraph">对于已注册适用于 vCenter Server 的 NetApp Element 插件（ VCP ）的现有 vSphere 环境，您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
   <block id="e6c04958395a323ddbc02c929b4dfdf0" category="paragraph">您可以使用注册实用程序在 vCenter Server 虚拟设备（ vCSA ）或 Windows 上更新插件注册。您必须在需要使用 vCenter 插件的每个 vCenter Server 上更改此插件的注册。</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">此升级操作步骤包括以下升级情形：</block>
-  <block id="82dc7b5ec9eb57183dbaa5e4c571a1d4" category="list-text">您要升级到 VCP 4.7 ， 4.6 ， 4.5 或 4.4 。</block>
   <block id="a6a18366932bfeffc2341cc7aa5fe09d" category="list-text">您要升级到 7.0 ， 6.7 或 6.5 HTML5 vSphere Web Client 。</block>
-  <block id="5b6d9704f325d32d3d101a44b2042d60" category="list-text">您要升级到 6.7 或 6.5 Flash vSphere Web Client 。</block>
   <block id="26f2f1d140c70238a07a5f09e846fd82" category="inline-link">您的插件版本</block>
-  <block id="7f943040514a282ac3afd634a6f2d742" category="admonition">此插件与 vSphere Web Client 6.7 U2 for Flash ， 6.7 U3 （ Flash 和 HTML5 ）和 7.0 U1 兼容。此插件与 HTML5 vSphere Web Client 6.7 U2 版不兼容。有关受支持的 vSphere 版本的详细信息，请参见的发行说明<block ref="52a3661120ba33cd100cafc9c9d568e0" category="inline-link-rx"></block>。</block>
   <block id="d7be3f2367f28daeaac07c2967977074" category="list-text">* 管理员权限 * ：您具有 vCenter 管理员角色权限来安装插件。</block>
   <block id="7df6c84beb4c7f9c0109ea10accef1ed" category="list-text">* vSphere 升级 * ：在升级适用于 vCenter Server 的 NetApp Element 插件之前，您已执行任何所需的 vCenter 升级。此操作步骤假定 vCenter 升级已完成。</block>
   <block id="c60238cb58d95b456566853e62db1d18" category="list-text">* vCenter Server* ：您的 vCenter 插件 4.x 版已注册到 vCenter Server 。从注册实用程序（`https://[management node IP] ： 9443` ）中，选择 * 注册状态 * ，填写必要字段，然后选择 * 检查状态 * 以验证 vCenter 插件是否已注册以及当前安装的版本号。</block>
@@ -5363,7 +5354,6 @@
   <block id="4c02ebe342ea429a0d2a2a23be2ddd19" category="inline-link-macro">已升级</block>
   <block id="27c25a67c147529824177fc694e7fd19" category="list-text">* 管理节点升级 * ：您正在运行的管理节点已 <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> 到 11.3 或更高版本。vCenter 插件 4.4 或更高版本要求使用 11.3 或更高版本的管理节点，该节点采用可提供单个服务的模块化架构。必须打开管理节点的电源，并配置其 IP 地址或 DHCP 地址。</block>
   <block id="7d3b6b8e2540bf5435b3b6984ad1f702" category="list-text">* Element 存储升级 * ：您的集群运行的是 NetApp Element 软件 11.3 或更高版本。</block>
-  <block id="87bf19c91a33b243a6cbe84fbed9d33b" category="list-text">* vSphere Web Client* ：对于 vSphere 6.5 和 6.7 ，在开始任何插件升级之前，您已从 vSphere Web Client 中注销。如果不注销，这些版本的 Web 客户端将无法识别在此过程中对插件所做的更新。对于 vSphere 7.0 ，您无需从 Web 客户端注销。</block>
   <block id="c13fa68b55894aaf612067aa7455ac53" category="list-text">在浏览器中输入管理节点的 IP 地址，包括要注册的 TCP 端口： `https://[management node IP] ： 9443` 注册实用程序 UI 将打开至该插件的 * 管理 QoSSIOC 服务凭据 * 页面。</block>
   <block id="26fc450c5cd9b7f28b10cff7659b479d" category="image-alt">描绘了此插件的注册实用程序 UI</block>
   <block id="0bd0c7dc69df55cee394b64eebcd27ab" category="list-text">选择 * vCenter 插件注册 * 。</block>
@@ -5377,12 +5367,10 @@
   <block id="daa4768416116e6634bf75e379507244" category="admonition">如果您使用的是 HTTP 或 HTTPS 服务器（非公开站点）或修改了 ZIP 文件名或网络设置，则可以选择 * 自定义 URL* 自定义 URL 。有关自定义 URL 的其他配置步骤，请参见适用于 vCenter Server 的 Element 插件文档，了解有关修改内部（非公开站点） HTTP 服务器的 vCenter 属性的信息。</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">选择 * 更新 * 。</block>
   <block id="14b68e07a69ae90b19c2bd823797ff21" category="paragraph">注册成功后，注册实用程序 UI 中将显示一个横幅。</block>
-  <block id="5ae25e6c6213c07c6bff7afd727100dd" category="list-text">（对于 vSphere 6.5 和 6.7 用户）以 vCenter 管理员身份登录到 vSphere Web Client 。</block>
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">此操作将创建一个新数据库并在 vSphere Web Client 中完成安装。</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">在 vSphere Web Client 中，请在任务监控器中查找以下已完成的任务，以确保安装已完成： `download plug-in` 和 `DeDeploy plug-in` 。</block>
   <block id="c4676996d8b51da422f5ab619c54ae01" category="list-text">验证 NetApp Element 配置和管理扩展点是否显示在 vSphere Web Client 的 * 快捷方式 * 选项卡以及侧面板中。</block>
   <block id="342171073fda0fd2cec612dc41323bdb" category="image-alt">描述了成功升级或安装后的插件扩展点</block>
-  <block id="1b2f3dab0786bdecf8b964c824625843" category="admonition">如果未显示 vCenter 插件图标，请参见适用于 vCenter Server 的 Element 插件文档，了解如何对插件进行故障排除。</block>
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">在插件的 * NetApp Element Configuration* 扩展点中的 * 关于 * 选项卡中验证版本更改。</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">您应看到以下版本详细信息或较新版本的详细信息：</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter 插件包含联机帮助内容。要确保帮助包含最新内容，请在升级插件后清除浏览器缓存。</block>
@@ -9027,7 +9015,6 @@
   <block id="98adf771bd3157bdd04e3f1978841819" category="summary">您可以使用 ModifyVolumeAccessGroup 方法更新启动程序以及在卷访问组中添加或删除卷。</block>
   <block id="3320206590de3f064fed7744a569234a" category="paragraph">您可以使用 `ModfyVolumeAccessGroup` 方法更新启动程序以及在卷访问组中添加或删除卷。</block>
   <block id="7dd365ea588afbcc68b92a986ecab63e" category="paragraph">如果指定的启动程序或卷与当前存在的启动程序或卷重复，则卷访问组将保持不变。如果未指定卷或启动程序的值，则当前启动程序和卷列表不会更改。</block>
-  <block id="24c20f7cf517768167b671de982cf860" category="paragraph">您还可以将虚拟网络与卷访问组相关联。此关联会对卷访问组中的所有卷进行适用场景。</block>
   <block id="917d2a878442a3f03fe637c1d26d9213" category="paragraph">要修改的卷访问组的 ID 。</block>
   <block id="cd5cbac0deed04944581bcd4eedf92d2" category="paragraph">此卷访问组的新名称。</block>
   <block id="ae6458dd661ed45d8d5540c11eaafff9" category="paragraph">要修改的卷的卷 ID 列表。</block>
@@ -11542,10 +11529,7 @@
   <block id="1d6434e72af827d0e2579d4135db7976" category="summary">您可以在需要更多存储时或在创建集群期间向集群添加光纤通道节点。首次启动光纤通道节点时，需要对其进行初始配置。配置节点后，它将显示在待定节点列表中，您可以将其添加到集群中。</block>
   <block id="ba27cf991d8ba0a2e1f9025c73487b29" category="paragraph">集群中每个光纤通道节点上的软件版本必须兼容。将光纤通道节点添加到集群时，集群会根据需要在新节点上安装集群版本的 Element 。</block>
   <block id="0ea901d7b93f28d47c82fed86571582f" category="admonition">如果要添加的节点的 Element 版本与集群上运行的版本不同，则集群会异步将此节点更新为集群主节点上运行的 Element 版本。更新节点后，它会自动将自己添加到集群中。在此异步过程中，节点将处于 pendingActive 状态。</block>
-  <block id="c391dcd392e5ebad4ef80e28bc812433" category="summary">使用安装了 NetApp Element 软件 12.2 或更高版本的 NetApp HCI ，您可以使用完全限定域名 \ （ FQDN\ ）访问存储集群 Web 界面。如果要使用 FQDN 访问 Web 用户界面，例如 Element Web UI ，每节点 UI 或管理节点 UI ，则必须先添加存储集群设置以确定集群使用的 FQDN 。</block>
-  <block id="c5fbf87d9c25b39cfdb5b8463af2d089" category="paragraph">使用 NetApp Element 软件 12.2 或更高版本的 NetApp HCI ，您可以使用完全限定域名（ FQDN ）访问存储集群 Web 界面。如果要使用 FQDN 访问 Web 用户界面，例如 Element Web UI ，每节点 UI 或管理节点 UI ，则必须先添加存储集群设置以确定集群使用的 FQDN 。</block>
   <block id="f3543d67082450a361031983a82f89a9" category="paragraph">通过此过程，集群可以正确重定向登录会话，并改进与外部服务的集成，例如用于多因素身份验证的密钥管理器和身份提供程序。</block>
-  <block id="f6508635f3756abd14bc9da2e61edac3" category="list-text">此功能需要 Element 12.2 或更高版本以及管理服务版本 2.14 或更高版本。</block>
   <block id="41ecc6e699ee0ce770ba47374acb53d6" category="list-text">要使用 REST API ，必须已部署运行 11.5 或更高版本的管理节点。</block>
   <block id="e1cba8b911318c24680ce3a7164e3734" category="list-text">确保为网络环境正确配置了 Element 存储节点和 mNode 的 DNS ，以便可以解析环境中的 FQDN 。要设置 DNS ，请转到存储节点的每节点 UI 和管理节点，然后选择 * 网络设置 * &gt; * 管理网络 * 。</block>
   <block id="8066f3268908f1500f8292ad17cf16c4" category="list-text">存储节点的每节点 UI ： `https://&lt;storage_node_management_IP&gt;:442`</block>
@@ -11831,4 +11815,74 @@
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">【 substed_f_install_config_time_sync]] 通过虚拟机管理程序禁用与主机的时间同步（以下是 VMware 示例）：</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">设置命令</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时影响 NTP <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> 在管理节点上。</block>
+  <block id="394e1ee42fe49c664653cce821c59bc2" category="inline-link-macro">管理服务通知 2.19</block>
+  <block id="54bd6026e83ef252dbfce1e3b805d9c1" category="list-text"><block ref="54bd6026e83ef252dbfce1e3b805d9c1" category="inline-link-macro-rx"></block></block>
+  <block id="3b79e75f8bb7342984eec3a3fd95ccf6" category="list-text"><block ref="3b79e75f8bb7342984eec3a3fd95ccf6" category="inline-link-rx"></block></block>
+  <block id="3b34803433d83528840d8e729af0e8bc" category="inline-link">vCenter 插件 4.8 发行说明</block>
+  <block id="c561b7d92736e6c451a661a0a5da7586" category="list-text"><block ref="c561b7d92736e6c451a661a0a5da7586" category="inline-link-rx"></block></block>
+  <block id="6323ff2aac002ae06fc68e7a1a709554" category="list-text"><block ref="6323ff2aac002ae06fc68e7a1a709554" category="inline-link-rx"></block></block>
+  <block id="82bb8287cc89bff9a860feb380d60b2b" category="list-text"><block ref="82bb8287cc89bff9a860feb380d60b2b" category="inline-link-rx"></block></block>
+  <block id="05276a54c5c5ace9b292548354112919" category="list-text"><block ref="05276a54c5c5ace9b292548354112919" category="inline-link-rx"></block></block>
+  <block id="b2a1b69fb08bccdb5677884b0a061505" category="list-text"><block ref="b2a1b69fb08bccdb5677884b0a061505" category="inline-link-rx"></block></block>
+  <block id="c8de9bc8a027f0e5864fb603489b44fd" category="list-text"><block ref="c8de9bc8a027f0e5864fb603489b44fd" category="inline-link-rx"></block></block>
+  <block id="4c0d90c9ada6ab81f16f3446180ab3a1" category="inline-link-macro">vCenter 链接模式</block>
+  <block id="03474279d3fc9d2a56fdc80404029d49" category="admonition">使用适用于 vCenter Server 的 NetApp Element 插件从其他 vCenter Server 管理集群资源 <block ref="7b02ca43ff4544fd4c29159c11bae6d5" category="inline-link-macro-rx"></block> 仅限于本地存储集群。</block>
+  <block id="4c671b547a1a811f45797247ec5747c3" category="list-text">您要升级到 VCP 4.8 ， 4.7 ， 4.6 ， 4.5 或 4.4 。</block>
+  <block id="10d52a77bc99042d3e815ba24e48132b" category="admonition">此插件与适用于 VCP 4.7 及更高版本的 VMware vCenter Server 6.5 不兼容。</block>
+  <block id="f171584692be059c88cbbda35827f299" category="list-text">您要升级到 6.7 Flash vSphere Web Client 。</block>
+  <block id="2acbddec1a60b854691b264d7efa1855" category="admonition">此插件与 vSphere Web Client 6.7 U2 for Flash ， 6.7 U3 （ Flash 和 HTML5 ）和 7.0 U1 兼容。此插件与 HTML5 vSphere Web Client 的 6.7 U2 内部版本 13007421 以及更新 2a （内部版本 13643870 ）之前发布的其他 6.7 U2 内部版本不兼容。有关受支持的 vSphere 版本的详细信息，请参见的发行说明<block ref="52a3661120ba33cd100cafc9c9d568e0" category="inline-link-rx"></block>。</block>
+  <block id="12a6ece51476e2d3feae5dff01704e58" category="list-text">* vSphere Web Client* ：在开始任何插件升级之前，您已从 vSphere Web Client 中注销。如果您未注销， Web 客户端将无法识别在此过程中对插件所做的更新。</block>
+  <block id="2bfb7d51aea637d48bf5bca4afcb46a1" category="list-text">以 vCenter 管理员身份登录到 vSphere Web Client 。如果您已登录到 vSphere Web Client ，则必须先注销，等待两到三分钟，然后重新登录。</block>
+  <block id="a0abd6db969f497b63a29f8fbd1771df" category="inline-link-macro">适用于 vCenter Server 的 Element 插件</block>
+  <block id="3cc243a697de25c61818bc316cea4e98" category="paragraph">如果不显示 vCenter 插件图标，请参见 <block ref="f9851c8aa620f0cd00ac6d51cd4290b1" category="inline-link-macro-rx"></block> 有关插件故障排除的文档。</block>
+  <block id="65dc103da0aa4a7822d43218290b7b8d" category="paragraph">在使用 VMware vCenter Server 6.7U1 升级到 VCP 4.8 后，如果 NetApp Element 配置的 * 集群 * 和 * QoSSIOC 设置 * 部分未列出存储集群或显示服务器错误，请参见 <block ref="107c2c097bec52fadb44d9536d1a3a46" category="inline-link-macro-rx"></block> 有关对这些错误进行故障排除的文档。</block>
+  <block id="95044d6cb92a8dcd9435a8d6518710be" category="inline-link">Element 11.7 文档</block>
+  <block id="ef4ff55196c56aee6ea12eb45472f816" category="list-text"><block ref="ef4ff55196c56aee6ea12eb45472f816" category="inline-link-rx"></block></block>
+  <block id="be03f79fc587170366cede6d4134dfb1" category="summary">了解如何配置系统 FQDN Web UI 访问并对其进行故障排除。</block>
+  <block id="5e5ab1bde060e7f97b5535a714ffa948" category="paragraph">使用 NetApp Element 软件 12.2 或更高版本的 SolidFire 全闪存存储，您可以使用完全限定域名（ FQDN ）访问存储集群 Web 界面。如果要使用 FQDN 访问 Web 用户界面，例如 Element Web UI ，每节点 UI 或管理节点 UI ，则必须先添加存储集群设置以确定集群使用的 FQDN 。</block>
+  <block id="42a05652b1d8f46c5d7ec916a7236c03" category="list-text">此功能需要 Element 12.2 或更高版本。</block>
+  <block id="8dce7fd8c170fdeedc532a5b2c311924" category="list-text">使用 NetApp Hybrid Cloud Control REST API 配置此功能需要使用管理服务 215 或更高版本。</block>
+  <block id="e74f594376d0584776f0477e752d0b7e" category="list-text">使用 NetApp Hybrid Cloud Control UI 配置此功能需要管理服务 2.19 或更高版本。</block>
+  <block id="5b0c57013cf9f92572d48550d25f086a" category="list-text">您需要管理节点和每个存储集群的完全限定域名，这些域名可以正确解析为管理节点 IP 地址和每个存储集群 IP 地址。</block>
+  <block id="e4a8be6aa5d097088c93be7ecd84f03d" category="paragraph">您可以使用 NetApp Hybrid Cloud Control 和 REST API 配置或删除 FQDN Web UI 访问。您还可以对配置不正确的 FQDN 进行故障排除。</block>
+  <block id="6164fb23c4ed373eb19472cc46b29353" category="list-text"><block ref="913dc194dc282bfdc5ad8649f0ac6f96" category="inline-xref-macro-rx"></block></block>
+  <block id="12ec86af0ca7bcb30dd18a25192db8d9" category="list-text"><block ref="214ba53f3aeb43360fee77bd88315260" category="inline-xref-macro-rx"></block></block>
+  <block id="6c1944e9fc1c36aabd8da07192af83ee" category="list-text"><block ref="dabfc5098b7a62ae79139f381e66effe" category="inline-xref-macro-rx"></block></block>
+  <block id="fcdb7833c38a0e654bbabf60efed0034" category="list-text"><block ref="a79218900f77de904e0cf4c3bd095bed" category="inline-xref-macro-rx"></block></block>
+  <block id="8dd1e649c7d67d09651573366bf71c6a" category="list-text"><block ref="b8d6197b9bef06ed2b702fdbca989df8" category="inline-xref-macro-rx"></block></block>
+  <block id="a869d99c04861ce28cc308ce663f7b3c" category="section-title">使用 NetApp Hybrid Cloud Control 配置 FQDN Web UI 访问</block>
+  <block id="0bde0c3d1eee962104c26a4017e0cd26" category="list-text">选择页面右上角的菜单图标。</block>
+  <block id="c4eb224b20c8201b8b2872700d6ecb90" category="list-text">选择 * 配置 * 。</block>
+  <block id="fa7ae89343ce5a342938ec19c45b4268" category="list-text">在 * 完全限定域名 * 窗格中，选择 * 设置 * 。</block>
+  <block id="ff8c1f10230075662fcb18fb31c8ddc4" category="list-text">在显示的窗口中，输入管理节点和每个存储集群的 FQDN 。</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">选择 * 保存 * 。</block>
+  <block id="17427b98119362b81a678fe79a4229bd" category="paragraph">"* 完全限定域名 * " 窗格列出了每个存储集群及其关联的 MVIP 和 FQDN 。</block>
+  <block id="c476be111c63e1d8d9e3035c635c3a5b" category="admonition">只有设置了 FQDN 的已连接存储集群才会在 * 完全限定域名 * 窗格中列出。</block>
+  <block id="243306bdc7845f244f8f471abc69bb30" category="section-title">使用 REST API 配置 FQDN Web UI 访问</block>
+  <block id="2e04039ce2a497a8b570505a4afe0e89" category="list-text">使用 Element API 更改存储集群设置。</block>
+  <block id="3c32d87ef0c6c7f990553ba657e19ecf" category="section-title">使用 NetApp Hybrid Cloud Control 删除 FQDN Web UI 访问</block>
+  <block id="f00e56e7d7364746a65aa316c2ee3573" category="paragraph">您可以使用此操作步骤删除管理节点和存储集群的 FQDN Web 访问。</block>
+  <block id="7a6f8a9a343f0db394dc3c6cb7d404c9" category="list-text">在 * 完全限定域名 * 窗格中，选择 * 编辑 * 。</block>
+  <block id="a72a7630c332682f1cc96507b7d29cfd" category="list-text">在显示的窗口中，删除 * FQDN * 文本字段中的内容。</block>
+  <block id="4a38cac861e52a17da7da9aa6ecfd847" category="paragraph">此窗口将关闭，并且 FQDN 不再列在 * 完全限定域名 * 窗格中。</block>
+  <block id="529997f479def01864b30e17b4a4f774" category="section-title">使用 REST API 删除 FQDN Web UI 访问</block>
+  <block id="0dbd41855131f120c306733f9557b3db" category="list-text">使用 `DDeleteClusterInterfacePreference` API 方法访问 Element API 并删除以下集群接口首选项：</block>
+  <block id="5b5cf5322dfd97da05c0d560ee29c72e" category="list-text">输入管理节点 IP 地址并后跟 ` /mnode/2/` ，以访问管理节点的 REST API UI例如：</block>
+  <block id="ccc0cb81c193c9775f8a7736de44f514" category="list-text">选择 * 授权 * 或任何锁定图标，然后输入 Element 集群用户名和密码。</block>
+  <block id="c89467915fdcfb342110da355f0d1639" category="list-text">在请求正文区域中，请勿为 `mnode_fqdn` 参数输入值。此外，还应指定是否应使用代理（`true` 或 `false` ）作为 `use_proxy` 参数。</block>
+  <block id="231cf4c70d866b616c21baddaeed0696" category="section-title">故障排除</block>
+  <block id="7e8bbdf6c43ca3e9bb8d4526cad81894" category="paragraph">如果 FQDN 配置不正确，则在访问管理节点，存储集群或同时访问这两者时可能会出现问题。请使用以下信息帮助对问题描述进行故障排除。</block>
+  <block id="642facf67e0ad311eee88b3ab8381590" category="cell">问题描述</block>
+  <block id="50fc9b91746bb8d34fa385d9324741ed" category="cell">发生原因</block>
+  <block id="d61ffac7c9885fafd30b4c875bacc49e" category="list-text">尝试使用 FQDN 访问管理节点或存储集群时，出现浏览器错误。</block>
+  <block id="390c9209df4a10276a0d5f79ba599662" category="list-text">您不能使用 IP 地址登录到管理节点或存储集群。</block>
+  <block id="96b59a42afc40a22e7a4d6dbd1c66255" category="cell">管理节点 FQDN 和存储集群 FQDN 配置不正确。</block>
+  <block id="170d5a0e964822a8e8b59c8af1e2e1da" category="cell">按照此页面上的 REST API 说明删除管理节点和存储集群 FQDN 设置并重新配置它们。</block>
+  <block id="04aa39fcf2e8f115c9ab94074614c632" category="list-text">尝试访问存储集群 FQDN 时出现浏览器错误。</block>
+  <block id="dddc5470633c825730c12f220c6436f5" category="cell">已正确配置管理节点 FQDN ，但存储集群 FQDN 配置不正确。</block>
+  <block id="84135c8bcbce9830fcc18e8a7c1e62b3" category="cell">按照此页面上的 REST API 说明删除存储集群 FQDN 设置并重新配置它们</block>
+  <block id="9c0870aaeab2e4c318ef933b99e6de63" category="list-text">尝试访问管理节点 FQDN 时出现浏览器错误。</block>
+  <block id="ac770607cee2fa35e51afff28368f6b1" category="list-text">您可以使用 IP 地址登录到管理节点和存储集群。</block>
+  <block id="6edb83a92e7e3bdd1f85b71efde5fd92" category="cell">管理节点 FQDN 配置不正确，但存储集群 FQDN 配置正确。</block>
+  <block id="5ce6d31ea955677457253f18be8d07b1" category="cell">登录到 NetApp Hybrid Cloud Control 以更正 UI 中的管理节点 FQDN 设置，或者使用此页面上的 REST API 说明更正设置。</block>
 </blocks>
