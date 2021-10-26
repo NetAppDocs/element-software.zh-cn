@@ -19,7 +19,6 @@ summary: 了解使用存储节点设置集群的顺序。
 . link:task_setup_add_drives_to_a_cluster.html["向集群添加驱动器"]
 . link:task_setup_determine_which_solidfire_components_to_install.html["确定要安装的 SolidFire 组件"]
 . link:task_setup_gh_redirect_set_up_a_management_node.html["设置管理节点"]
-. link:task_setup_configure_fqdn_web_ui_access.html["配置完全限定域名 Web UI 访问"]
 
 
 

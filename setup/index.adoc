@@ -33,7 +33,6 @@ summary: 了解如何为您的环境设置存储系统。
 
 ** xref:task_setup_determine_which_solidfire_components_to_install.adoc[确定要安装的 SolidFire 组件]
 ** xref:/task_setup_gh_redirect_set_up_a_management_node.adoc[设置管理节点]
-** xref:task_setup_configure_fqdn_web_ui_access.adoc[配置完全限定域名 Web UI 访问]
 ** xref:concept_setup_whats_next.adoc[下一步是什么？]
 
 

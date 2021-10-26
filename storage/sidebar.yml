@@ -438,5 +438,3 @@ entries:
       url: "/storage/concept_mnode_work_with_the_management_node.html"
   - title: 了解集群填充度级别
     url: "/storage/concept_monitor_understand_cluster_fullness_levels.html"
-- title: 使用 NetApp Hybrid Cloud Control 管理存储
-  url: "/storage/task_intro_manage_storage_hcc.html"

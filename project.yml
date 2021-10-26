@@ -1,4 +1,12 @@
 ---
+settings:
+  name: Element Software
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: zh-cn,us-en,ja-jp
 sidebar:
   entries:
   - title: SolidFire 和 Element 软件 12.3.x 文档
@@ -23,6 +31,7 @@ sidebar:
   - section: esds
   - section: setup
   - section: storage
+  - section: hccstorage
   - section: api
   - title: 使用适用于 vCenter Server 的 Element 插件管理存储（链接）
     url: https://docs.netapp.com/us-en/vcp/
@@ -56,6 +65,8 @@ homepage:
     links:
     - title: 使用 Element 软件 UI
       url: "/storage/index.html"
+    - title: 使用 NetApp Hybrid Cloud Control
+      url: "/hccstorage/index.html"
     - title: 使用 Element 软件 API
       url: "/api/index.html"
     - title: 使用适用于 vCenter Server 的 Element 插件

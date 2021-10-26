@@ -1,0 +1,29 @@
+---
+section: hccstorage
+title: 使用 NetApp Hybrid Cloud Control 管理和监控存储
+url: "/hccstorage/index.html"
+entries:
+- title: 使用 NetApp Hybrid Cloud Control 添加和管理存储集群
+  url: "/hccstorage/task-hcc-manage-storage-clusters.html"
+- title: 配置完全限定域名 Web UI 访问
+  url: "/hccstorage/task-setup-configure-fqdn-web-ui-access.html"
+- title: 使用 NetApp Hybrid Cloud Control 创建和管理用户帐户
+  url: "/hccstorage/task-hcc-manage-accounts.html"
+- title: 使用 NetApp Hybrid Cloud Control 创建和管理卷
+  url: "/hccstorage/task-hcc-manage-vol-management.html"
+- title: 创建和管理卷访问组
+  url: "/hccstorage/task-hcc-manage-vol-access-groups.html"
+- title: 创建和管理启动程序
+  url: "/hccstorage/task-hcc-manage-initiators.html"
+- title: 创建和管理卷 QoS 策略
+  url: "/hccstorage/task-hcc-qos-policies.html"
+- title: 使用 NetApp 混合云控制监控您的 SolidFire 系统
+  entries:
+  - title: 在混合云控制信息板上监控存储资源
+    url: "/hccstorage/task-hcc-dashboard.html"
+  - title: 在 NetApp Hybrid Cloud Control 的 Nodes 页面上查看您的清单
+    url: "/hccstorage/task-hcc-nodes.html"
+  - title: 使用 NetApp Hybrid Cloud Control 监控存储集群上的卷
+    url: "/hccstorage/task-hcc-volumes.html"
+  - title: 收集日志以进行故障排除
+    url: "/hccstorage/task-hcc-collectlogs.html"

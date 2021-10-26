@@ -14,9 +14,8 @@ summary: '您可以使用 SolidFire 混合云控制 UI 监控 ESDS 集群的性�
 
 以下是有关在 NetApp Hybrid Cloud Control UI 中监控集群的信息的链接：
 
-* https://docs.netapp.com/us-en/hci/docs/task_hcc_nodes.html["在节点页面上查看清单"^]
-* https://docs.netapp.com/us-en/hci/docs/task_hcc_volumes.html["监控存储集群上的卷"^]
-* https://docs.netapp.com/us-en/hci/docs/task_hcc_activeiq.html["使用 SolidFire Active IQ 监控性能，容量和集群运行状况"^]
+* link:hccstorage/task-hcc-nodes.html["在节点页面上查看清单"]
+* link:hccstorage/task-hcc-volumes.html["监控存储集群上的卷"]
 
 
 

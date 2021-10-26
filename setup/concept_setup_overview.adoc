@@ -25,7 +25,6 @@ image::../media/sf_and_element_workflow_for_setup_shorter_workflow.png[设置工
 
 . link:../setup/task_setup_determine_which_solidfire_components_to_install.html["确定要安装的 SolidFire 组件"]
 . link:../setup/task_setup_gh_redirect_set_up_a_management_node.html["设置管理节点并启用 Active IQ 遥测"]
-. link:../setup/task_setup_configure_fqdn_web_ui_access.html["配置完全限定域名 Web UI 访问"]
 
 
 

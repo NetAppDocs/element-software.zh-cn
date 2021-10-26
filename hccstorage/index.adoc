@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: hccstorage/index.html 
+summary: 借助 NetApp SolidFire 全闪存存储，您可以使用 NetApp 混合云控制来管理和监控存储资产。 
+keywords: netapp, element, cluster, element, account, user, volume, hybrid cloud control, hcc 
+---
+= 使用 NetApp Hybrid Cloud Control 管理和监控存储
+
+
+[role="lead"]
+借助 NetApp SolidFire 全闪存存储，您可以使用 NetApp 混合云控制管理和监控存储资产并配置存储系统中的组件。
+
+* link:task-hcc-manage-storage-clusters.html["添加和管理存储集群"]
+* link:task-setup-configure-fqdn-web-ui-access.html["配置完全限定域名 Web UI 访问"]
+* link:task-hcc-manage-accounts.html["创建和管理用户帐户"]
+* link:task-hcc-manage-vol-management.html["创建和管理卷"]
+* link:task-hcc-manage-vol-access-groups.html["创建和管理卷访问组"]
+* link:task-hcc-manage-initiators.html["创建和管理启动程序"]
+* link:task-hcc-qos-policies.html["创建和管理卷 QoS 策略"]
+* link:task-hcc-dashboard.html["使用 NetApp 混合云控制监控您的 SolidFire 系统"]
+
+
+[discrete]
+== 了解更多信息
+
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+
