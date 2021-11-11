@@ -29,7 +29,7 @@ IMPORTANT: 此插件与 vSphere Web Client 6.7 U2 for Flash ， 6.7 U3 （ Flash
 .您需要什么？ #8217 ；将需要什么
 * * 管理员权限 * ：您具有 vCenter 管理员角色权限来安装插件。
 * * vSphere 升级 * ：在升级适用于 vCenter Server 的 NetApp Element 插件之前，您已执行任何所需的 vCenter 升级。此操作步骤假定 vCenter 升级已完成。
-* * vCenter Server* ：您的 vCenter 插件 4.x 版已注册到 vCenter Server 。从注册实用程序（`https://[management node IP] ： 9443` ）中，选择 * 注册状态 * ，填写必要字段，然后选择 * 检查状态 * 以验证 vCenter 插件是否已注册以及当前安装的版本号。
+* * vCenter Server* ：您的 vCenter 插件 4.x 版已注册到 vCenter Server 。从注册实用程序（`https://<ManagementNodeIP>:9443` ）中，选择 * 注册状态 * ，填写必要字段，然后选择 * 检查状态 * 以验证 vCenter 插件是否已注册以及当前安装的版本号。
 * * 管理服务更新 * ：您已更新 https://mysupport.netapp.com/site/products/all/details/mgmtservices/downloads-tab["管理服务包"^] 到最新版本。vCenter 插件的更新通过管理服务更新进行分发，这些更新是在 NetApp SolidFire 全闪存存储的主要产品版本之外发布的。
 * * 管理节点升级 * ：您正在运行的管理节点已 link:task_hcc_upgrade_management_node.html["已升级"] 到 11.3 或更高版本。vCenter 插件 4.4 或更高版本要求使用 11.3 或更高版本的管理节点，该节点采用可提供单个服务的模块化架构。必须打开管理节点的电源，并配置其 IP 地址或 DHCP 地址。
 * * Element 存储升级 * ：您的集群运行的是 NetApp Element 软件 11.3 或更高版本。
@@ -37,7 +37,7 @@ IMPORTANT: 此插件与 vSphere Web Client 6.7 U2 for Flash ， 6.7 U3 （ Flash
 
 
 .步骤
-. 在浏览器中输入管理节点的 IP 地址，包括要注册的 TCP 端口： `https://[management node IP] ： 9443` 注册实用程序 UI 将打开至该插件的 * 管理 QoSSIOC 服务凭据 * 页面。
+. 在浏览器中输入管理节点的 IP 地址，包括用于注册的 TCP 端口： `https://<ManagementNodeIP>:9443` 注册实用程序 UI 将打开至该插件的 * 管理 QoSSIOC 服务凭据 * 页面。
 +
 image::vcp_registration_utility_ui_qossioc.png[描绘了此插件的注册实用程序 UI]
 

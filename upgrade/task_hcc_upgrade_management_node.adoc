@@ -472,7 +472,7 @@ sudo /sf/packages/mnode/upgrade-mnode -mu <mnode user> -pvm <mvip for persistent
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +
@@ -620,7 +620,7 @@ sudo systemctl restart sfcollector
 +
 [listing]
 ----
-https://[management node IP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 . 选择 * 授权 * 并完成以下操作：
 +

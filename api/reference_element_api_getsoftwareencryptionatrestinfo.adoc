@@ -61,14 +61,15 @@ summary: 您可以使用 GetSoftwareEncryptionAtRestInfo 方法获取集群用�
 [listing]
 ----
 {
-    "rekeyMasterKeyAsyncResultID": 1,
-    "state": "abcdefghij",
-    "version": 1,
-    "masterKeyInfo": {
-        "keyProviderID": 1,
-        "keyManagementType": "abcdefghij",
-        "keyID": "abcdef01-1234-5678-90ab-cdef01234567",
-        "keyCreatedTime": "abcdefghij"
+    "id": 1,
+    "result": {
+        "masterKeyInfo": {
+            "keyCreatedTime": "2021-09-20T23:15:56Z",
+            "keyID": "4d80a629-a11b-40ab-8b30-d66dd5647cfd",
+            "keyManagementType": "internal"
+        },
+        "state": "enabled",
+        "version": 1
     }
 }
 ----

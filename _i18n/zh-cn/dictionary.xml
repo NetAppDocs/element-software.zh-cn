@@ -435,7 +435,6 @@
   <block id="b312f45322f166ee041a7a16747fd5c1" category="doc">新增功能 &amp;#8217</block>
   <block id="038a728ceb0425e8312a168eae48c281" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.3 引入了软件空闲加密增强功能，安全性增强功能，存储固件更新，增强的快照功能以及故障驱动器的行为改进功能。</block>
   <block id="0eb91c90051a8280b5d03272245097b3" category="section-title">NetApp Bug Online 包含已知问题和已解决的问题</block>
-  <block id="eb9b597f5610631d63cab0f7fb6e45e2" category="paragraph">从 Element 12.3 开始， NetApp Bug Online 工具现在会列出已知问题和已解决的问题。您可以浏览这些问题中的 Element 和其他产品。</block>
   <block id="69893000f4da30e1e42922cbcf8dac0e" category="inline-link">NetApp Bug Online</block>
   <block id="6fdef1a96dd1317b8f4387931b94852d" category="list-text">转至<block ref="0c12cf8c0cec0405a310594288c146b6" category="inline-link-rx"></block>。</block>
   <block id="06f64729610d29108de18fcd67a1a763" category="list-text">在 * 按关键字搜索 * 字段中键入产品名称，例如 "element" 。</block>
@@ -634,10 +633,7 @@
   <block id="1a75005c83ba0c4856d5a0dc8856e732" category="section-title">空闲加密（硬件）</block>
   <block id="c62f72fd571b1f51ae201be29d3e8a77" category="paragraph">存储节点中的所有驱动器均可在驱动器级别使用 AES 256 位加密进行加密。每个驱动器都有自己的加密密钥，该密钥是在首次初始化驱动器时创建的。启用加密功能后，系统将创建一个集群范围的密码，然后将该密码区块分发到集群中的所有节点。没有一个节点存储整个密码。然后，使用此密码对所有驱动器访问进行密码保护。解锁驱动器需要密码，因此，除非从驱动器中断电或驱动器锁定，否则不需要密码。</block>
   <block id="2a3d70b6971e1070fb33b38fff9fb1d6" category="inline-link-macro">启用硬件空闲加密功能</block>
-  <block id="fbb6469dc86ca9bc800e44a77cd38838" category="paragraph"><block ref="e0aaa0d82b382c0f7bba30d7de10a282" category="inline-link-macro-rx"></block> 不会影响集群的性能或效率。如果使用 Element API 或 Element UI 从集群配置中删除启用了加密的驱动器或节点，则这些驱动器将禁用空闲加密。删除驱动器后，可以使用 `SecureEraseDrives` API 方法安全擦除驱动器。如果强制删除物理驱动器或节点，则数据仍受集群范围密码和驱动器的各个加密密钥的保护。</block>
   <block id="a3dc930bbe6478d770946b9c65d858ed" category="section-title">空闲加密（软件）</block>
-  <block id="6c5ab1da0869bd1b07e7ca256da346fc" category="inline-link-macro">启用后</block>
-  <block id="f90cf66800b6fcc30f5d8aaf3e503fb6" category="paragraph">另一种类型的空闲加密，即软件空闲加密，可以对写入存储集群中 SSD 的所有数据进行加密。 <block ref="e36037b06c154907c9cd57a345962d25" category="inline-link-macro-rx"></block>，它会对写入的所有数据进行加密，并对软件中自动读取的所有数据进行解密。软件空闲加密可在硬件中镜像自加密驱动器（ SED ）实施，以便在没有 SED 的情况下提供数据安全性。</block>
   <block id="43b870e499bdb0387c629bf497770155" category="paragraph">默认情况下，所有 SolidFire 企业 SDS 节点均可使用空闲软件加密。空闲软件加密可在不包括自加密驱动器（ SED ）的 SolidFire 企业 SDS 节点中提供一个主软件数据安全加密层。</block>
   <block id="7e65cd9d4a4bf4e916488e5827b847c3" category="paragraph">基于软件和基于硬件的空闲加密均可单独使用，也可以相互结合使用。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部密钥管理</block>
@@ -2033,7 +2029,6 @@
   <block id="b631bf7f00d77eddfcbf6feca367bd11" category="inline-link-macro">基于硬件或软件的空闲加密</block>
   <block id="d62272ad249849fed29dbcf8e33b4a66" category="paragraph">使用 SolidFire 集群，您可以对存储在集群驱动器上的所有空闲数据进行加密。您可以使用任一方法在集群范围内对自加密驱动器（ SED ）启用保护 <block ref="4e1c93429537251d700ac9caee965d64" category="inline-link-macro-rx"></block>。</block>
   <block id="118b9b3ce514a868bc27ae35073731c7" category="paragraph">您可以使用 Element UI 或 API 启用空闲硬件加密。启用空闲硬件加密功能不会影响集群的性能或效率。您只能使用 Element API 启用空闲软件加密。</block>
-  <block id="868c3d3f1b4f3b4fe96399bd48e78c6e" category="paragraph">默认情况下，在创建集群期间不会启用基于硬件的空闲加密，您可以从 Element UI 中启用和禁用此加密。必须在创建集群期间启用空闲软件加密，并且在创建集群后无法禁用该加密。</block>
   <block id="fbf0bf350510633ec198d87f496cf0f6" category="list-text">您拥有启用或更改加密设置的集群管理员权限。</block>
   <block id="28ebc10ef7c343a4cf32aacf144f1590" category="list-text">对于基于硬件的空闲加密，在更改加密设置之前，您已确保集群处于运行状况良好的状态。</block>
   <block id="53f1251f9f4067bb924700bbc4f4734a" category="list-text">如果要禁用加密，则集群中必须有两个节点，才能访问密钥以禁用驱动器上的加密。</block>
@@ -4443,7 +4438,6 @@
   <block id="5736148b5375720933e71e45f51b20e5" category="section-title">管理节点上已存在控制器资产</block>
   <block id="fc19c6595bd8969ef30edf3d5a5b0180" category="paragraph">如果管理节点上已存在控制器资产，请使用 `put /assets / ｛ asset_id ｝ /controllers / ｛ controller_id ｝` 执行以下步骤来配置控制器。</block>
   <block id="ae4366a31230f9af19c469714f87f6ee" category="list-text">访问管理节点上的 mnode 服务 API UI ：</block>
-  <block id="8cffe2ec13bf2ab433bf42f4e7f1e2f0" category="paragraph">`https://[management node IP]/mnode`</block>
   <block id="71427c2704c6de4d5876235c27517ca4" category="list-text">选择 * 授权 * 并输入凭据以访问 API 调用。</block>
   <block id="22d2ed076037305c1b4f2cbc0eff7128" category="list-text">选择 `GET /assets` 以获取父 ID 。</block>
   <block id="00599f37a415f2f93cf88aab44078222" category="list-text">选择 `PUT /assets / ｛ asset_id ｝ /controllers / ｛ controller_id ｝` 。</block>
@@ -4656,7 +4650,6 @@
   <block id="6cc910c0977361227d631be0efac7242" category="list-text"><block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block></block>
   <block id="60ab2bd7c82926193a03f5c5a737a700" category="summary">使用管理节点 UI <block ref="a7b0ad1acc22482b3121a6ffb43d70b9" category="inline-link-rx"></block>，您可以更改网络和集群设置，运行系统测试或使用系统实用程序。</block>
   <block id="76aaec2f503ca4060e52d3afcacbf7ac" category="doc">管理节点 UI 概述</block>
-  <block id="5f6a3d453e620c04e86ab8777de65a84" category="paragraph">使用管理节点 UI （`https://&lt;managementNodeIP&gt;:442` ），您可以更改网络和集群设置，运行系统测试或使用系统实用程序。</block>
   <block id="6622311408de951c1b40e6b5bd9c1113" category="paragraph">可以使用管理节点 UI 执行的任务：</block>
   <block id="2f0ef0a953d028bdda160b442f2cffa5" category="list-text"><block ref="2f0ef0a953d028bdda160b442f2cffa5" category="inline-link-macro-rx"></block></block>
   <block id="0f693a63463c62015ee0ce70923983df" category="inline-link-macro">修改并测试管理节点网络，集群和系统设置</block>
@@ -4713,7 +4706,6 @@
   <block id="bf1a89211fedbbf2149f4a151bdb709c" category="list-text"><block ref="bf1a89211fedbbf2149f4a151bdb709c" category="inline-link-macro-rx"></block></block>
   <block id="474c6800f0719d621f24fc2682a27460" category="summary">您可以使用管理节点（ mNode ） API 升级系统服务，管理集群资产和设置，运行系统测试和实用程序，配置 Active IQ 以进行系统监控以及启用或禁用 NetApp 支持 SSH 访问以进行故障排除。</block>
   <block id="b2fc999fbccff4aaaffa26387ba2644f" category="doc">管理节点 REST API UI 概述</block>
-  <block id="99023d452f9135abf85115869e8e281a" category="paragraph">通过使用内置的 REST API UI （`https://&lt;managementNodeIP&gt;/mnode` ），您可以运行或了解与管理节点服务相关的 API ，包括代理服务器配置，服务级别更新或资产管理。</block>
   <block id="79ed200d3fdf33f90ac7bacae1bcd0b9" category="paragraph">可以使用 REST API 执行的任务：</block>
   <block id="9cd8a2455b1839ff98ef70c05b9b5983" category="section-title">Authorization</block>
   <block id="e0e73a2c694effc8913d40fd32f76302" category="list-text"><block ref="e0e73a2c694effc8913d40fd32f76302" category="inline-link-macro-rx"></block></block>
@@ -5252,7 +5244,6 @@
   <block id="30c2b654de6b157d3965b69e2e973b9c" category="paragraph">升级开始后，您可以在此页面上查看升级状态。升级期间，您可能会与 NetApp Hybrid Cloud Control 断开连接，因此必须重新登录才能查看升级结果。</block>
   <block id="e1ab7975bc85b8e4a805e35bfd948176" category="section-title">使用管理节点 API 更新管理服务</block>
   <block id="f64b52761fbac72e8bfdd229b3a113f1" category="paragraph">理想情况下，用户应从 NetApp Hybrid Cloud Control 执行管理服务更新。但是，您可以从管理节点使用 REST API UI 手动更新管理服务。</block>
-  <block id="af268dbd6a20b35e8fafa53f0e7acfc3" category="list-text">在管理节点上打开 REST API UI ： `https://[management node IP]/mnode`</block>
   <block id="fe1085046bceaf490556bf74e0f01c15" category="list-text">（可选）确认管理节点服务的可用版本： `get /services/versions`</block>
   <block id="0edefa8da79067ac4b94f9b1b2a9af8c" category="list-text">（可选）获取有关最新版本的详细信息： `获取 /services/versions/latest`</block>
   <block id="b4851bdc860d51294258bcfa6507a2f6" category="list-text">（可选）获取有关特定版本的详细信息： `GET /services/versions/ ｛ version ｝ /info`</block>
@@ -5338,12 +5329,10 @@
   <block id="26f2f1d140c70238a07a5f09e846fd82" category="inline-link">您的插件版本</block>
   <block id="d7be3f2367f28daeaac07c2967977074" category="list-text">* 管理员权限 * ：您具有 vCenter 管理员角色权限来安装插件。</block>
   <block id="7df6c84beb4c7f9c0109ea10accef1ed" category="list-text">* vSphere 升级 * ：在升级适用于 vCenter Server 的 NetApp Element 插件之前，您已执行任何所需的 vCenter 升级。此操作步骤假定 vCenter 升级已完成。</block>
-  <block id="c60238cb58d95b456566853e62db1d18" category="list-text">* vCenter Server* ：您的 vCenter 插件 4.x 版已注册到 vCenter Server 。从注册实用程序（`https://[management node IP] ： 9443` ）中，选择 * 注册状态 * ，填写必要字段，然后选择 * 检查状态 * 以验证 vCenter 插件是否已注册以及当前安装的版本号。</block>
   <block id="a0b278d8005f2dc2b9518ad7c52c1e27" category="list-text">* 管理服务更新 * ：您已更新<block ref="f6e495ec9a99fcd5692d41358780e884" category="inline-link-rx"></block> 到最新版本。vCenter 插件的更新通过管理服务更新进行分发，这些更新是在 NetApp SolidFire 全闪存存储的主要产品版本之外发布的。</block>
   <block id="4c02ebe342ea429a0d2a2a23be2ddd19" category="inline-link-macro">已升级</block>
   <block id="27c25a67c147529824177fc694e7fd19" category="list-text">* 管理节点升级 * ：您正在运行的管理节点已 <block ref="23cc83378d4b0551eef4ac573737e008" category="inline-link-macro-rx"></block> 到 11.3 或更高版本。vCenter 插件 4.4 或更高版本要求使用 11.3 或更高版本的管理节点，该节点采用可提供单个服务的模块化架构。必须打开管理节点的电源，并配置其 IP 地址或 DHCP 地址。</block>
   <block id="7d3b6b8e2540bf5435b3b6984ad1f702" category="list-text">* Element 存储升级 * ：您的集群运行的是 NetApp Element 软件 11.3 或更高版本。</block>
-  <block id="c13fa68b55894aaf612067aa7455ac53" category="list-text">在浏览器中输入管理节点的 IP 地址，包括要注册的 TCP 端口： `https://[management node IP] ： 9443` 注册实用程序 UI 将打开至该插件的 * 管理 QoSSIOC 服务凭据 * 页面。</block>
   <block id="26fc450c5cd9b7f28b10cff7659b479d" category="image-alt">描绘了此插件的注册实用程序 UI</block>
   <block id="0bd0c7dc69df55cee394b64eebcd27ab" category="list-text">选择 * vCenter 插件注册 * 。</block>
   <block id="5c8b8f78ed09c86ecda3569ee8c3a3f0" category="list-text">在 * 管理 vCenter 插件 * 中，选择 * 更新插件 * 。</block>
@@ -7163,12 +7152,9 @@
   <block id="dc8dc3bb3de4a4adf49596a9aeb17b5a" category="paragraph"><block ref="dc8dc3bb3de4a4adf49596a9aeb17b5a" category="inline-xref-macro-rx"></block></block>
   <block id="a1c5aa843b544d43737e68bf101cd099" category="summary">您可以使用 EnableEncryptionAtRest 方法在集群上启用高级加密标准 \ （ AES\ ） 256 位空闲加密，以便集群可以管理用于每个节点上的驱动器的加密密钥。默认情况下，不会启用此功能。</block>
   <block id="f7fbdcd0f959ea03f9c9fe10c1f436f5" category="paragraph">您可以使用 `EnableEncryptionAtRest` 方法在集群上启用高级加密标准（ Advanced Encryption Standard ， AES ） 256 位空闲加密，以便集群可以管理用于每个节点上的驱动器的加密密钥。默认情况下，不会启用此功能。</block>
-  <block id="08e683c68442f500782b3d5486530a71" category="admonition">此方法不会启用空闲软件加密。只能使用完成此操作 <block ref="d203a09ebf9d1da1010b557da816049a" category="inline-link-macro-rx"></block> 使用 `enableSoftwareEncryptionAtRest` 设置为 `true` 。</block>
-  <block id="d64e1958197f563e5d4a6da4967e8dda" category="paragraph">启用空闲加密后，集群会自动在内部管理集群中每个节点上的驱动器的加密密钥。</block>
   <block id="06dd8c5540d025434b69c38d303f3e8a" category="paragraph">如果指定了 keyProviderID ，则会根据密钥提供程序的类型生成和检索密码。对于 KMIP 密钥提供程序，通常使用密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器来完成此操作。执行此操作后，指定的提供程序将被视为活动提供程序，并且无法删除，直到使用 `DisableEncryptionAtRest` 方法禁用空闲加密为止。</block>
   <block id="0a78a222fd5e48d5331001cedecde88d" category="admonition">如果您的节点类型的型号以 "-NE" 结尾，则 `EnableEncryptionAtRest` 方法调用将失败，并显示响应 " 不允许加密 " 。集群检测到不可加密的节点 " 。</block>
   <block id="4a54a4a7259521b88f93480f1f8c1475" category="admonition">只有当集群正在运行且运行状况良好时，才应启用或禁用加密。您可以根据需要自由选择启用或禁用加密。</block>
-  <block id="f1231b5d542078f02b94131eb356b0f5" category="admonition">此过程是异步的，在启用加密之前返回响应。您可以使用 GetClusterInfo 方法轮询系统以查看此过程何时完成。</block>
   <block id="6a86ff89129aa530aa27db3c9c307848" category="paragraph">要使用的 KMIP 密钥提供程序的 ID 。</block>
   <block id="93be4895c86d760e8bbee3a36d256dc1" category="section-title">响应示例</block>
   <block id="de2ce72bff2708387d1e10b470c242b0" category="paragraph">此方法返回与 EnableEncryptionAtRest 方法中的以下示例类似的响应。没有可报告的结果。</block>
@@ -11304,13 +11290,10 @@
   <block id="c6051cfa3c7828a4f0a2532c70333d32" category="list-text"><block ref="c6051cfa3c7828a4f0a2532c70333d32" category="inline-link-rx"></block></block>
   <block id="cf01dc47ed79267872b62a626969809c" category="paragraph">您可以从概述页面导航到特定任务。</block>
   <block id="b6da6eab87d65c4c9297f872afd87022" category="section-title">在 SolidFire ESDS 集群上使用 Element API</block>
-  <block id="3030e71fadafe9b1abef9e78705bb25e" category="list-text">_new ！ _ * 空闲软件加密增强功能 * ： Element 12.3 引入了空闲软件加密功能的增强功能，在创建 SolidFire 企业 SDS 存储集群时，此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。</block>
-  <block id="4a9ed427fc5a83bc638d8bdcbf03a902" category="paragraph">以下是与空闲软件加密相关的 Element API 方法（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
   <block id="389945c09cdda9d478adbb3a47413d5c" category="list-text">`disableEncryptionAtRest`</block>
   <block id="a3c5dec02de1b4c52f4ef9ce2d7e0b2a" category="list-text">`EnableEncryptionAtRest`</block>
   <block id="9474d63d23a163955eb222057663ae5f" category="list-text">`GetSoftwareEncryptionAtRestInfo`</block>
   <block id="c68a2d9b7e85236a7846e8479df5eb22" category="list-text">`RekeySoftwareEncryptionAtRestMasterKey`</block>
-  <block id="714cc9347f4b08d67d55a3843a3eaf94" category="list-text">_new ！ _ * 能够定义要保留的最大快照数 * ： Element 12.3 对快照保留功能进行了增强。为了支持此增强功能，已对以下 API 进行了修改（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
   <block id="05e99937dbfca39a8e79ec1345dc0caf" category="list-text">`CreateVolume`</block>
   <block id="71a673e3e44f3d66064abf107eecd41b" category="list-text">`m二卷`</block>
   <block id="16668f69631e97f6454595916b95763c" category="list-text">`CreateSnapshot`</block>
@@ -11319,8 +11302,6 @@
   <block id="17527882eae9d5d0fe85324be1ab5b68" category="list-text">`m修改计划`</block>
   <block id="971735603f1c15fa2aefaf1cdcffcf38" category="list-text">`modfySnapshot`</block>
   <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">`CreateGroupSnapshot`</block>
-  <block id="0024bcff774378ef692c68a5a85d8a9b" category="list-text">_new ！ _ * 获取有关 Element 软件修补程序的信息 * ： Element 12.3 引入了 `GetPatchInfo` 方法，可用于获取有关存储节点上安装的 Element 软件修补程序的信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
-  <block id="0c3c4a1b46b5b921108ef9856a80fe9b" category="list-text">_new ！ _ * 列出节点上每个网络接口的统计信息 * ： Element 12.3 引入了 `ListNetworkInterfaceStats` 方法，该方法可用于列出统计信息，例如，节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">* 在 Element 12.2 中引入和更新的 API 以支持 SolidFire ESDS* ： Element 12.2 中引入了几个新的 API ，您可以在 SolidFire ESDS 集群上使用这些 API 。</block>
   <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">下面列出了 Element 12.2 中的新 API ：</block>
   <block id="41773f0138486ec234a35d7b9f9a9fbd" category="inline-link-macro">`GetLicenseKey`</block>
@@ -11673,8 +11654,6 @@
   <block id="adf576ac121282dd87a46368c235ab70" category="paragraph">详细了解 Element 12.3.1 中的新增功能。</block>
   <block id="04aa68617927bbc2709638a86a15ad34" category="section-title">存储固件包 2.99.2</block>
   <block id="81686da1b9f8be4c89479031f62bbb25" category="paragraph">Element 12.3.1 版包含存储固件包版本 2.99.2 。如果存储集群已安装 Element 12.3 ，您可以选择只安装新的 2.99.2 固件包。</block>
-  <block id="d69b9e8a4d0238c47265090b6e217622" category="section-title">SolidFire 企业 SDS 的动态节点评级</block>
-  <block id="95fa63557d09485a12e01a06f82d0783" category="paragraph">动态节点额定值可以根据平台上的核心数量扩展性能。对于 12.3.1 版，如果核心数大于 16 ，则 IOPS 上限为 100 ， 000 。</block>
   <block id="1481eff19800c0874fe76d7649f000f6" category="section-title">支持 SolidFire ESDS 的单绑定网络配置</block>
   <block id="a00727946846293fe49ce2ad34902fe6" category="paragraph">现在，您可以将主机的单个绑定网络配置与 SolidFire ESDS 结合使用。</block>
   <block id="52f03f4718ce263c343918e7d6dc7572" category="section-title">SolidFire 企业 SDS 提供了新的服务器支持</block>
@@ -12375,4 +12354,41 @@
   <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">使用 NetApp Hybrid Cloud Control</block>
   <block id="2e531c00d20727b760f0fefbb4c65c82" category="sidebar">在 NetApp Hybrid Cloud Control 的 Nodes 页面上查看您的清单</block>
   <block id="767682e703a28fefdc1067e1fcf04243" category="sidebar">使用 NetApp Hybrid Cloud Control 监控存储集群上的卷</block>
+  <block id="d999c8f91acdda00b7947df4d88bb296" category="paragraph">现在， NetApp Bug Online 工具中列出了已知问题和已解决的问题。您可以浏览这些问题中的 Element 和其他产品。</block>
+  <block id="605e2776f3071c726f66acc87295d21f" category="section-title">支持 SolidFire ESDS 主机平台的动态 CPU 节点额定值</block>
+  <block id="61356eb323be4d7b821c93b513166119" category="paragraph">SolidFire ESDS 现在可以支持全系列 Intel 级联和银级级湖系列 CPU ，包括 24 种型号。动态节点评级功能会根据 CPU 为主机服务器分配 50 ， 000 到 100 ， 000 的 QoS IOPS 评级。</block>
+  <block id="dd08ecb51d2567c0f5d500734aca7aa7" category="cell">CPU 核心数</block>
+  <block id="67720d011a8ac675acb512bd68ef1987" category="cell">ESDS 节点 IOPS 评级</block>
+  <block id="c9f0f895fb98ab9159f51fd0297e236d" category="paragraph">8.</block>
+  <block id="b548533be6ad1379f80ce604a074ef79" category="paragraph">5 万</block>
+  <block id="1a022ef2ed73e2026bbe5167a998bb93" category="paragraph">60 万</block>
+  <block id="c20ad4d76fe97759aa27a0c99bff6710" category="paragraph">12</block>
+  <block id="1c43c5df76609d14304dc2d83182bcf0" category="paragraph">75 万</block>
+  <block id="aeaa64cd03e3847df06556f5b70e6271" category="paragraph">16 个以上</block>
+  <block id="70c7acef529834326f5a880ae840b93b" category="paragraph">100 ， 000</block>
+  <block id="527b815afb2a497e0a4e73961b0b2530" category="paragraph"><block ref="4887d593881fb1b00f6709ff486d4e82" category="inline-link-macro-rx"></block> 不会影响集群的性能或效率。如果使用 Element API 或 Element UI 从集群配置中删除启用了加密的驱动器或节点，则这些驱动器将禁用空闲加密。删除驱动器后，可以使用 `SecureEraseDrives` API 方法安全擦除驱动器。如果强制删除物理驱动器或节点，则数据仍受集群范围密码和驱动器的各个加密密钥的保护。</block>
+  <block id="33c5b6122776adc3b7c9d47882391b61" category="inline-link-macro">启用时</block>
+  <block id="f821a90c9663cfba67e5463eaa9dd50b" category="paragraph">另一种类型的空闲加密，即软件空闲加密，可以对写入存储集群中 SSD 的所有数据进行加密。 <block ref="850adab22a7d3ffe35b638d0df9b6cf6" category="inline-link-macro-rx"></block>，它会对写入的所有数据进行加密，并对软件中自动读取的所有数据进行解密。空闲软件加密可镜像硬件中的自加密驱动器（ SED ）实施，以便在没有 SED 的情况下提供数据安全性。</block>
+  <block id="5ddb1cb96e389bf43231140cde9934cd" category="admonition">对于 SolidFire 全闪存存储集群，必须在创建集群期间启用空闲软件加密，并且在创建集群后无法禁用该加密。</block>
+  <block id="ea9540183556cd61c73cb60851b8401a" category="paragraph">默认情况下，在创建集群期间不会启用基于硬件的空闲加密，您可以从 Element UI 中启用和禁用此加密。</block>
+  <block id="65e41692ce81538235f31feb59da0df9" category="admonition">对于 SolidFire 全闪存存储集群，必须在创建集群期间启用空闲软件加密，并且在创建集群后无法禁用该加密。对于 SolidFire 企业 SDS （ ESDS ）集群，默认情况下会启用空闲软件加密。</block>
+  <block id="c7f9a749a25add142f440b6abf05f6c6" category="section-title">检查空闲时加密状态</block>
+  <block id="cafb235222dece370f504ef5d0d47b47" category="paragraph">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="b94a2f1f88f1b2af0f1632fc6ab0d549" category="inline-link-macro-rx"></block> 方法您可以使用 <block ref="599a2456b2fb227210a4ba9b77591706" category="inline-link-macro-rx"></block> 获取集群用于对空闲数据进行加密的信息的方法。</block>
+  <block id="189f9cc5227158e41b6756a4618d70a5" category="admonition">`https://&lt;MVIP&gt;/` 上的 Element 软件 UI 信息板当前仅显示基于硬件的加密的空闲加密状态。</block>
+  <block id="0758c5ce5c5ec7a65fa6027b43ac146d" category="paragraph">`https://&lt;ManagementNodeIP&gt;/mnode`</block>
+  <block id="be5056c8c31ea39f1a8500e408b72606" category="paragraph">使用管理节点 UI （`https://&lt;managementNodeIP&gt;:442` ），您可以更改网络和集群设置，运行系统测试或使用系统实用程序。</block>
+  <block id="f092926fa32883d124eb34471b6d25b2" category="paragraph">通过使用内置的 REST API UI （`https://&lt;managementNodeIP&gt;/mnode` ），您可以运行或了解与管理节点服务相关的 API ，包括代理服务器配置，服务级别更新或资产管理。</block>
+  <block id="9a452c7dc2442a21923d0c9fff059919" category="list-text">在管理节点上打开 REST API UI ： `https://&lt;ManagementNodeIP&gt;/mnode`</block>
+  <block id="4b6a458f5e631f2c6085bd25b3456bdf" category="list-text">* vCenter Server* ：您的 vCenter 插件 4.x 版已注册到 vCenter Server 。从注册实用程序（`https://&lt;ManagementNodeIP&gt;:9443` ）中，选择 * 注册状态 * ，填写必要字段，然后选择 * 检查状态 * 以验证 vCenter 插件是否已注册以及当前安装的版本号。</block>
+  <block id="72b711eab7bf0193b651fa7a07068ae1" category="list-text">在浏览器中输入管理节点的 IP 地址，包括用于注册的 TCP 端口： `https://&lt;ManagementNodeIP&gt;:9443` 注册实用程序 UI 将打开至该插件的 * 管理 QoSSIOC 服务凭据 * 页面。</block>
+  <block id="b6da302462725db65b08725e21534c35" category="inline-link-macro">获取集群信息方法</block>
+  <block id="df55ce8d5994202037ca7f6b8add22fc" category="inline-link-macro">获取集群用于对空闲数据进行加密的信息的方法</block>
+  <block id="8645b3842f2ebbd31ef1556eca13e734" category="admonition">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="266af3c6722606b03dffbc748cf8f335" category="inline-link-macro-rx"></block>。您可以使用 `GetSoftwareEncryptionAtRestInfo` <block ref="71cd4d0c7a8355e8bd1074b7039cdde9" category="inline-link-macro-rx"></block>。</block>
+  <block id="54345a69ac071e42416d101550699426" category="admonition">此方法不会启用空闲软件加密。只能使用完成此操作 <block ref="156163f61ad8e976859b5234666eb7c2" category="inline-link-macro-rx"></block> 使用 `enableSoftwareEncryptionAtRest` 设置为 `true` 。</block>
+  <block id="79c6818b5a784bd2a9784bba4752ebda" category="paragraph">启用空闲加密后，集群会自动在内部管理集群中每个节点上的驱动器的加密密钥。</block>
+  <block id="489e484d3d1ef6568aa27e2d4d7b4bb2" category="admonition">此过程是异步的，在启用加密之前返回响应。您可以使用 `GetClusterInfo` 方法轮询系统以查看此过程何时完成。</block>
+  <block id="15f0b4f62899bf3b9a8787207a388277" category="list-text">* 软件空闲加密增强功能 * ： Element 12.3 引入了软件空闲加密功能的增强功能，在创建 SolidFire 企业 SDS 存储集群时，此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。以下是与空闲软件加密相关的 Element API 方法（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
+  <block id="f273afdfc9c8da85f2aa65a9f2472291" category="list-text">* 能够定义要保留的最大快照数 * ： Element 12.3 增强了快照保留功能。为了支持此增强功能，已对以下 API 进行了修改（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
+  <block id="110268879887fb27d1a8394d4bc2030a" category="list-text">* 获取有关 Element 软件修补程序的信息 * ： Element 12.3 引入了 `GetPatchInfo` 方法，可用于获取有关存储节点上安装的 Element 软件修补程序的信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
+  <block id="ebcdf1544f3d1837d74ac7935921840f" category="list-text">* 列出节点上每个网络接口的统计信息 * ： Element 12.3 引入了 `ListNetworkInterfaceStats` 方法，该方法可用于列出统计信息，例如，节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
 </blocks>

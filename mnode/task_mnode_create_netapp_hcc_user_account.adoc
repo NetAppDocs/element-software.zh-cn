@@ -197,7 +197,7 @@ IMPORTANT: Do * not* select * 传播到子项 * 。
 .步骤
 . 访问管理节点上的 mnode 服务 API UI ：
 +
-`https://[management node IP]/mnode`
+`https://<ManagementNodeIP>/mnode`
 
 . 选择 * 授权 * 并输入凭据以访问 API 调用。
 . 选择 `GET /assets` 以获取父 ID 。

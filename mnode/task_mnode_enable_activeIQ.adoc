@@ -25,7 +25,7 @@ Active IQ 收集器服务会将配置数据和基于 Element 软件的集群性�
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +
@@ -63,7 +63,7 @@ NOTE: 您的安装具有在安装或升级期间创建的基本资产配置。
 +
 [listing]
 ----
-https://[management node IP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 .. 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +

@@ -34,7 +34,7 @@ keywords: netapp, mnode, management node, rest api, Element, assets
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 . 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +
@@ -69,7 +69,7 @@ API 将返回所有已知安装的列表。
 +
 [listing]
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 . 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +
@@ -109,7 +109,7 @@ NOTE: 在权威集群上定义的所有用户均定义为与 NetApp Hybrid Cloud
 +
 [listing]
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 . 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +
@@ -168,7 +168,7 @@ NOTE: 确保已按照中的步骤进行操作 <<Retrieve the installation ID and
 +
 [listing]
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 . 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +
@@ -217,7 +217,7 @@ NOTE: 确保已按照中的步骤进行操作 <<Retrieve the installation ID and
 +
 [listing]
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 . 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +

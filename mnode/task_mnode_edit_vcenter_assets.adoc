@@ -24,7 +24,7 @@ keywords: netapp, mnode, management node, rest api, Element
 +
 [listing]
 ----
-https://[management node IP]/vcenter/1/
+https://<ManagementNodeIP>/vcenter/1/
 ----
 . 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +

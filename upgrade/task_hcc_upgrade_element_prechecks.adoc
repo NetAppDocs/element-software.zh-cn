@@ -74,7 +74,7 @@ https://<ManagementNodeIP>
 +
 [listing]
 ----
-https://[management node IP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +
@@ -112,7 +112,7 @@ NOTE: 请勿在本节中使用 ` "parent"` 值，因为这是管理节点的 ID 
 +
 [listing]
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +

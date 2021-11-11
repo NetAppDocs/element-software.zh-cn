@@ -33,13 +33,13 @@ keywords: netapp, mnode, management node, ssh, disable, enable, rest api
 
 [listing]
 ----
-curl -k -X PUT "https://<<managementNodeIP>/mnode/2/settings/ssh?enabled=<false/true>" -H  "accept: application/json" -H  "Authorization: Bearer ${TOKEN}"
+curl -k -X PUT "https://<<ManagementNodeIP>/mnode/2/settings/ssh?enabled=<false/true>" -H  "accept: application/json" -H  "Authorization: Bearer ${TOKEN}"
 ----
 对于管理服务 2.17 或更早版本：
 
 [listing]
 ----
-curl -X PUT "https://<managementNodeIP>/mnode/settings/ssh?enabled=<false/true>" -H  "accept: application/json" -H  "Authorization: Bearer ${TOKEN}"
+curl -X PUT "https://<ManagementNodeIP>/mnode/settings/ssh?enabled=<false/true>" -H  "accept: application/json" -H  "Authorization: Bearer ${TOKEN}"
 ----
 
 NOTE: 您可以找到 API 命令使用的承载 ` $ ｛ token ｝` link:task_mnode_api_get_authorizationtouse.html["授权"]。承载 ` $ ｛ token ｝` 位于 cURL 响应中。
@@ -49,7 +49,7 @@ NOTE: 您可以找到 API 命令使用的承载 ` $ ｛ token ｝` link:task_mno
 +
 [listing]
 ----
-https://<managementNodeIP>/mnode/
+https://<ManagementNodeIP>/mnode/
 ----
 . 选择 * 授权 * 并完成以下操作：
 +
@@ -78,13 +78,13 @@ https://<managementNodeIP>/mnode/
 
 [listing]
 ----
-curl -k -X PUT "https://<<managementNodeIP>/mnode/2/settings/ssh?enabled=<false/true>" -H  "accept: application/json" -H  "Authorization: Bearer ${TOKEN}"
+curl -k -X PUT "https://<<ManagementNodeIP>/mnode/2/settings/ssh?enabled=<false/true>" -H  "accept: application/json" -H  "Authorization: Bearer ${TOKEN}"
 ----
 对于管理服务 2.17 或更早版本：
 
 [listing]
 ----
-curl -X PUT "https://<managementNodeIP>/mnode/settings/ssh?enabled=<false/true>" -H  "accept: application/json" -H  "Authorization: Bearer ${TOKEN}"
+curl -X PUT "https://<ManagementNodeIP>/mnode/settings/ssh?enabled=<false/true>" -H  "accept: application/json" -H  "Authorization: Bearer ${TOKEN}"
 ----
 
 NOTE: 您可以找到 API 命令使用的承载 ` $ ｛ token ｝` link:task_mnode_api_get_authorizationtouse.html["授权"]。承载项 ` $ ｛ token ｝` 位于 cURL 响应中。
@@ -94,7 +94,7 @@ NOTE: 您可以找到 API 命令使用的承载 ` $ ｛ token ｝` link:task_mno
 +
 [listing]
 ----
-https://<managementNodeIP>/mnode/
+https://<ManagementNodeIP>/mnode/
 ----
 . 选择 * 授权 * 并完成以下操作：
 +

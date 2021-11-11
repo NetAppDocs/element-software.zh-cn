@@ -23,7 +23,7 @@ keywords: netapp, mnode, management node, multi-vcenter, Element
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 +
 

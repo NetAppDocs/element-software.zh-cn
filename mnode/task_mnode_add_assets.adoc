@@ -25,7 +25,7 @@ keywords: netapp, mnode, management node, rest api, Element
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +
@@ -73,7 +73,7 @@ POST /assets/{asset_id}/controllers
 +
 [listing]
 ----
-https://[management node IP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +

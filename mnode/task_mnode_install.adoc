@@ -265,7 +265,7 @@ NOTE: 为永久性卷使用与集群上任何现有帐户名称不同的唯一�
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +
@@ -289,7 +289,7 @@ https://[management node IP]/inventory/1/
 +
 [listing]
 ----
-https://[management node IP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 .. 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +

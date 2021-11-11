@@ -28,13 +28,13 @@ keywords: netapp, Element, management node, management services, version, bundle
 +
 [listing]
 ----
-curl -X GET "https://<managementNodeIP>/mnode/about" -H  "accept: application/json"
+curl -X GET "https://<ManagementNodeIP>/mnode/about" -H  "accept: application/json"
 ----
 * 获取有关在管理节点上运行的各个服务的版本信息：
 +
 [listing]
 ----
-curl -X GET "https://<managementNodeIP>/mnode/services?status=running" -H  "accept: */*" -H  "Authorization: ${TOKEN}"
+curl -X GET "https://<ManagementNodeIP>/mnode/services?status=running" -H  "accept: */*" -H  "Authorization: ${TOKEN}"
 ----
 +
 
@@ -50,7 +50,7 @@ NOTE: 注意：您可以找到 API 命令使用的承载 ` $ ｛ token ｝` link
 +
 [listing]
 ----
-https://<managementNodeIP>/mnode/
+https://<ManagementNodeIP>/mnode/
 ----
 . 执行以下操作之一：
 +

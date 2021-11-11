@@ -16,7 +16,7 @@ NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，�
 
 == NetApp Bug Online 包含已知问题和已解决的问题
 
-从 Element 12.3 开始， NetApp Bug Online 工具现在会列出已知问题和已解决的问题。您可以浏览这些问题中的 Element 和其他产品。
+现在， NetApp Bug Online 工具中列出了已知问题和已解决的问题。您可以浏览这些问题中的 Element 和其他产品。
 
 . 转至 https://mysupport.netapp.com/site/products/all/details/solidfire-elementos/bugsonline-tab["NetApp Bug Online"^]。
 . 在 * 按关键字搜索 * 字段中键入产品名称，例如 "element" 。
@@ -41,10 +41,42 @@ Element 12.3.1 版包含存储固件包版本 2.99.2 。如果存储集群已安
 
 
 
-=== SolidFire 企业 SDS 的动态节点评级
+== 支持 SolidFire ESDS 主机平台的动态 CPU 节点额定值
 
-动态节点额定值可以根据平台上的核心数量扩展性能。对于 12.3.1 版，如果核心数大于 16 ，则 IOPS 上限为 100 ， 000 。
+SolidFire ESDS 现在可以支持全系列 Intel 级联和银级级湖系列 CPU ，包括 24 种型号。动态节点评级功能会根据 CPU 为主机服务器分配 50 ， 000 到 100 ， 000 的 QoS IOPS 评级。
 
+[cols="100,100"]
+|===
+| CPU 核心数 | ESDS 节点 IOPS 评级 
+
+
+ a| 
+8.
+ a| 
+5 万
+
+
+
+ a| 
+10
+ a| 
+60 万
+
+
+
+ a| 
+12
+ a| 
+75 万
+
+
+
+ a| 
+16 个以上
+ a| 
+100 ， 000
+
+|===
 
 
 === 支持 SolidFire ESDS 的单绑定网络配置

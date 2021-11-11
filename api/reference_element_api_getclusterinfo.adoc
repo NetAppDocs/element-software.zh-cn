@@ -59,30 +59,40 @@ xref:reference_element_api_clusterinfo.adoc[ClusterInfo]
 [listing]
 ----
 {
-  "id": 1,
-  "result": {
-    "clusterInfo": {
-      "attributes": {},
-      "encryptionAtRestState": "disabled",
-      "ensemble": [
-        "10.10.21.23",
-        "10.10.21.24",
-        "10.10.21.25"
-      ],
-      "mvip": "10.10.1.57",
-      "mvipInterface": "Bond1G",
-      "mvipNodeID": 2,
-      "mvipVlanTag": "120",
-      "name": "Hulk",
-      "repCount": 2,
-      "svip": "10.10.21.57",
-      "svipInterface": "Bond10G",
-      "svipNodeID": 2,
-      "svipVlanTag": "0",
-      "uniqueID": "17nx",
-      "uuid": "8d385a91-9acf-4371-8939-b29e085191fd"
+    "id": 1,
+    "result": {
+        "clusterInfo": {
+            "attributes": {},
+            "defaultProtectionScheme": "doubleHelix",
+            "enabledProtectionSchemes": [
+                "doubleHelix"
+            ],
+            "encryptionAtRestState": "disabled",
+            "ensemble": [
+                "10.10.10.32",
+                "10.10.10.34",
+                "10.10.10.35",
+                "10.10.10.36",
+                "10.10.10.37"
+            ],
+            "mvip": "10.10.11.225",
+            "mvipInterface": "team1G",
+            "mvipNodeID": 3,
+            "mvipVlanTag": "0",
+            "name": "eSDS-1",
+            "repCount": 2,
+            "softwareEncryptionAtRestState": "enabled",
+            "supportedProtectionSchemes": [
+                "doubleHelix"
+            ],
+            "svip": "10.10.10.111",
+            "svipInterface": "team10G",
+            "svipNodeID": 3,
+            "svipVlanTag": "0",
+            "uniqueID": "psmp",
+            "uuid": "2f575d0c-36fe-406d-9d10-dbc1c306ade7"
+        }
     }
-  }
 }
 ----
 

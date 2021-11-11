@@ -175,7 +175,7 @@ CAUTION: 在更新节点时中止集群升级可能会导致驱动器异常地�
 +
 [listing]
 ----
-https://[management node IP]/package-repository/1/
+https://<ManagementNodeIP>/package-repository/1/
 ----
 ... 选择 * 授权 * 并完成以下操作：
 +
@@ -211,7 +211,7 @@ https://[management node IP]/package-repository/1/
 +
 [listing]
 ----
-https://[management node IP]/package-repository/1/
+https://<ManagementNodeIP>/package-repository/1/
 ----
 ... 选择 * 授权 * 并完成以下操作：
 +
@@ -248,7 +248,7 @@ https://[management node IP]/package-repository/1/
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +
@@ -298,7 +298,7 @@ https://[management node IP]/inventory/1/
 +
 [listing]
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +

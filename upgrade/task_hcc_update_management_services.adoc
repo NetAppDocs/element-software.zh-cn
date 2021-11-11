@@ -96,7 +96,7 @@ NOTE: 如果您的安装无法访问 Internet ，则仅会显示当前软件版�
 NOTE: 有关每个服务包版本的可用服务列表，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服务发行说明"^]。
 
 .步骤
-. 在管理节点上打开 REST API UI ： `https://[management node IP]/mnode`
+. 在管理节点上打开 REST API UI ： `https://<ManagementNodeIP>/mnode`
 . 选择 * 授权 * 并完成以下操作：
 +
 .. 输入集群用户名和密码。
@@ -149,7 +149,7 @@ NOTE: 有关每个服务包版本的可用服务列表，请参见 https://kb.ne
 
 
 .步骤
-. 在管理节点上打开 REST API UI ： `https://[management node IP]/mnode`
+. 在管理节点上打开 REST API UI ： `https://<ManagementNodeIP>/mnode`
 . 选择 * 授权 * 并完成以下操作：
 +
 .. 输入集群用户名和密码。

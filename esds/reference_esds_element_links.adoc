@@ -39,27 +39,29 @@ summary: 在存储集群上安装 SolidFire ESDS 后，您可以使用 Element U
 
 == 在 SolidFire ESDS 集群上使用 Element API
 
-* _new ！ _ * 空闲软件加密增强功能 * ： Element 12.3 引入了空闲软件加密功能的增强功能，在创建 SolidFire 企业 SDS 存储集群时，此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。
+* * 软件空闲加密增强功能 * ： Element 12.3 引入了软件空闲加密功能的增强功能，在创建 SolidFire 企业 SDS 存储集群时，此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。以下是与空闲软件加密相关的 Element API 方法（请参见 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 文档"^] 有关每种方法的详细信息：
++
+** `CreateCluster`
+** `disableEncryptionAtRest`
+** `EnableEncryptionAtRest`
+** `GetSoftwareEncryptionAtRestInfo`
+** `RekeySoftwareEncryptionAtRestMasterKey`
 
 
-以下是与空闲软件加密相关的 Element API 方法（请参见 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 文档"^] 有关每种方法的详细信息：
+* * 能够定义要保留的最大快照数 * ： Element 12.3 增强了快照保留功能。为了支持此增强功能，已对以下 API 进行了修改（请参见 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 文档"^] 有关每种方法的详细信息：
++
+** `CreateVolume`
+** `m二卷`
+** `CreateSnapshot`
+** `CreateSchedule`
+** `modfyGroupSnapshot`
+** `m修改计划`
+** `modfySnapshot`
+** `CreateGroupSnapshot`
 
-* `CreateCluster`
-* `disableEncryptionAtRest`
-* `EnableEncryptionAtRest`
-* `GetSoftwareEncryptionAtRestInfo`
-* `RekeySoftwareEncryptionAtRestMasterKey`
-* _new ！ _ * 能够定义要保留的最大快照数 * ： Element 12.3 对快照保留功能进行了增强。为了支持此增强功能，已对以下 API 进行了修改（请参见 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 文档"^] 有关每种方法的详细信息：
-* `CreateVolume`
-* `m二卷`
-* `CreateSnapshot`
-* `CreateSchedule`
-* `modfyGroupSnapshot`
-* `m修改计划`
-* `modfySnapshot`
-* `CreateGroupSnapshot`
-* _new ！ _ * 获取有关 Element 软件修补程序的信息 * ： Element 12.3 引入了 `GetPatchInfo` 方法，可用于获取有关存储节点上安装的 Element 软件修补程序的信息。请参见 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 文档"^] 了解详细信息。
-* _new ！ _ * 列出节点上每个网络接口的统计信息 * ： Element 12.3 引入了 `ListNetworkInterfaceStats` 方法，该方法可用于列出统计信息，例如，节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 文档"^] 了解详细信息。
+
+* * 获取有关 Element 软件修补程序的信息 * ： Element 12.3 引入了 `GetPatchInfo` 方法，可用于获取有关存储节点上安装的 Element 软件修补程序的信息。请参见 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 文档"^] 了解详细信息。
+* * 列出节点上每个网络接口的统计信息 * ： Element 12.3 引入了 `ListNetworkInterfaceStats` 方法，该方法可用于列出统计信息，例如，节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见 https://docs.netapp.com/us-en/element-software/api/index.html["Element API 文档"^] 了解详细信息。
 * * 在 Element 12.2 中引入和更新的 API 以支持 SolidFire ESDS* ： Element 12.2 中引入了几个新的 API ，您可以在 SolidFire ESDS 集群上使用这些 API 。
 
 

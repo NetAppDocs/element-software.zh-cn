@@ -20,7 +20,7 @@ keywords: netapp, element, management node, management services, mnode, logs
 +
 [listing]
 ----
-https://[managementNodeIP]/mnode
+https://<ManagementNodeIP>/mnode
 ----
 . 选择 * 授权 * 或任何锁定图标并完成以下操作：
 +

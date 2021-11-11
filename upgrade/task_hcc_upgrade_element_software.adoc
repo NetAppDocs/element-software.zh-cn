@@ -169,7 +169,7 @@ CAUTION: 如果您离开浏览器窗口，则文件上传将丢失。
 +
 [listing]
 ----
-https://[management node IP]/package-repository/1/
+https://<ManagementNodeIP>/package-repository/1/
 ----
 ... 选择 * 授权 * 并完成以下操作：
 +
@@ -208,7 +208,7 @@ https://[management node IP]/package-repository/1/
 +
 [listing]
 ----
-https://[management node IP]/package-repository/1/
+https://<ManagementNodeIP>/package-repository/1/
 ----
 ... 选择 * 授权 * 并完成以下操作：
 +
@@ -245,7 +245,7 @@ https://[management node IP]/package-repository/1/
 +
 [listing]
 ----
-https://[management node IP]/inventory/1/
+https://<ManagementNodeIP>/inventory/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +
@@ -272,7 +272,7 @@ https://[management node IP]/inventory/1/
 +
 [listing]
 ----
-https://[management node IP]/storage/1/
+https://<ManagementNodeIP>/storage/1/
 ----
 .. 选择 * 授权 * 并完成以下操作：
 +
