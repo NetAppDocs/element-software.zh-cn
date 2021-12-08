@@ -30,10 +30,46 @@ NetApp Element 软件系统具有某些交换机要求和最佳实践，可实�
 
 
 |===
+Element 部署至少需要两个网段，以下每种类型的流量对应一个网段：
+
+* 管理
+* 存储 / 数据
+
+
+根据 NetApp H 系列存储节点型号和规划的布线配置，您可以使用不同的交换机以物理方式分隔这些网络，也可以使用 VLAN 以逻辑方式分隔这些网络。但是，对于大多数部署，您需要使用 VLAN 从逻辑上分隔这些网络。
+
+存储节点需要能够在部署之前，部署期间和部署之后进行通信。
+
+如果要为存储节点实施单独的管理网络，请确保这些管理网络之间具有网络路由。这些网络必须已分配网关，并且这些网关之间必须有路由。确保为每个新节点分配了一个网关，以便于节点和管理网络之间进行通信。
+
+NetApp Element 需要满足以下要求：
+
+* 连接到 NetApp H 系列存储节点的所有交换机端口都必须配置为生成树边缘端口。
++
+** 在 Cisco 交换机上，根据交换机型号，软件版本和端口类型，您可以使用以下命令之一执行此操作：
++
+*** `sPing-tree 端口类型 edge`
+*** `sPing-tree 端口类型 Edge trunk`
+*** `sping-tree portfast`
+*** `sping-tree portfast trunk`
+
+
+** 在 Mellanox 交换机上，您可以使用 `spaning-tree port type edge` 命令执行此操作。
+
+
+* 处理存储流量的交换机必须支持每个端口至少 10GbE 的速度（每个端口最多支持 25GbE ）。
+* 处理管理流量的交换机必须支持每个端口至少 1GbE 的速度。
+* 您必须在处理存储流量的交换机端口上配置巨型帧。主机必须能够端到端发送 9000 字节数据包，才能成功安装。
+* 所有存储节点之间的往返网络延迟不应超过 2 毫秒。
+
+
+某些节点通过专用管理端口提供额外的带外管理功能。NetApp H300S ， H500S 和 H700S 节点还支持通过端口 A 进行 IPMI 访问作为最佳实践，您应通过为环境中的所有节点配置带外管理来简化远程管理。
+
 
 
 == 有关详细信息 ...
 
+* https://docs.netapp.com/us-en/hci/docs/hci_prereqs_network_switch.html["NetApp HCI 网络和交换机要求"^]
 * https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 
