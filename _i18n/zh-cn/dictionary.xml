@@ -12415,4 +12415,14 @@
   <block id="7d85745259e8b65a6c6ca5e9213f9cf8" category="list-text">在浏览器窗口中，输入 ` \https://MIP:443` ，其中 MIP 是管理节点 IP 地址。</block>
   <block id="0d0db1368c9b3c6839d214c1f42c1aff" category="list-text">阅读最终用户许可协议，然后选择 * 我同意 * 。</block>
   <block id="cbda40c0ce8f395ef056b796d0e4c3c6" category="list-text">在响应正文中，选择 * 下载 * 以保存日志输出。</block>
+  <block id="b81c4cad1c00bb06119a7dec22c8ea33" category="section-title">为数据中心分配用户权限</block>
+  <block id="572c8096f094b2f31eedd25f068cff32" category="paragraph">执行以下步骤，为 vCenter 中的数据中心分配用户权限。</block>
+  <block id="81dc28658e950851a725c63d64fa38bb" category="list-text">在左窗格中，选择 * 数据中心 * 。</block>
+  <block id="60099c83b780eff3734ba89e70f43672" category="list-text">选择 `ReadOnly Role` 。</block>
+  <block id="f2fc3bdb47c2c0a00eb78727ce83b919" category="section-title">为 NetApp HCI 数据存储库分配用户权限</block>
+  <block id="feea5da4b4bab374bda05d7bde40c477" category="paragraph">执行以下步骤为 vCenter 中的 NetApp HCI 数据存储库分配用户权限。</block>
+  <block id="e0e3bb875141cd12e27297877e85adf7" category="list-text">创建新的存储文件夹。右键单击 * 数据中心 * 并选择 * 创建存储文件夹 * 。</block>
+  <block id="f3631eb61fca5f83081c3305746bec62" category="list-text">将所有 NetApp HCI 数据存储库从存储集群以及计算节点本地传输到新的存储文件夹。</block>
+  <block id="9caa1c9a8c45be2d5c61600cbaf343e9" category="list-text">选择新的存储文件夹。</block>
+  <block id="b1e270e6370bcaa271189baa59cdc243" category="list-text">选择 `管理员角色`</block>
 </blocks>
