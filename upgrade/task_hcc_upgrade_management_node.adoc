@@ -2,13 +2,13 @@
 sidebar: sidebar 
 permalink: upgrade/task_hcc_upgrade_management_node.html 
 summary: 在 NetApp SolidFire 存储系统升级过程中，您需要升级管理节点。 
-keywords: netapp, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1 
+keywords: netapp, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x 
 ---
 = 升级管理节点
 
 
 [role="lead"]
-您可以将管理节点从 11.0 或更高版本升级到管理节点 12.3.1 或 12.3 版。
+您可以将管理节点从 11.0 或更高版本升级到管理节点 12.3.x 版。
 
 升级存储集群上的 Element 软件不再需要升级管理节点操作系统。如果管理节点为 11.3 或更高版本，您只需将管理服务升级到最新版本，即可使用 NetApp Hybrid Cloud Control 执行 Element 升级。如果您希望出于安全修复等其他原因升级管理节点操作系统，请按照适用于您的方案的管理节点升级操作步骤进行操作。
 
@@ -17,9 +17,13 @@ NOTE: vCenter 插件 4.4 或更高版本需要使用模块化架构创建的管�
 
 选择以下管理节点升级选项之一：
 
+[NOTE]
+====
+* 管理节点 12.3.2 为启用了虚拟卷（ VVOL ）功能的存储集群提供了一个安全缓解措施。如果存储集群已位于 Element 12.3 上且已启用 VVol 功能，则强烈建议升级到 12.3.2 。
+* 管理节点 12.3.1 中没有其他功能更改或错误修复。如果您已运行管理节点 12.3 ，则无需将其升级到 12.3.1 。
 
-NOTE: 管理节点 12.3.1 中没有其他功能更改或错误修复。如果您已运行管理节点 12.3 ，则无需将其升级到 12.3.1 。
 
+====
 * 如果要从管理节点 12.2 升级：<<Upgrade a management node to version 12.3.x from 12.2>>
 * 如果要从管理节点 12.0 升级：<<Upgrade a management node to version 12.3.x from 12.0>>
 * 如果要从管理节点 11.3 ， 11.5 ， 11.7 或 11.8 升级：<<Upgrade a management node to version 12.3.x from 11.3 through 11.8>>

@@ -964,23 +964,14 @@
   <block id="3938cfdbe176bad61cedb25bdb572858" category="section-title">NetApp Element 软件</block>
   <block id="325c4db41bea4b4c5bc841d336b08e32" category="inline-link">《 NetApp Element 软件 12.3 发行说明》</block>
   <block id="c71ec2ef6ee8df4c8ce96c2b779dc917" category="inline-link">《 NetApp Element 软件 12.2.1 发行说明》</block>
-  <block id="7b6c2344660bf791251cb170d62d26dc" category="list-text"><block ref="7b6c2344660bf791251cb170d62d26dc" category="inline-link-rx"></block></block>
   <block id="5702596023de56cf8731146604f8837f" category="inline-link">《 NetApp Element 软件 12.2 发行说明》</block>
-  <block id="1d9105fcc159d90483aaf59489f00494" category="list-text"><block ref="1d9105fcc159d90483aaf59489f00494" category="inline-link-rx"></block></block>
   <block id="3aa4b17575032362b7124d4aeb9c09f1" category="inline-link">《 NetApp Element 软件 12.0.1 发行说明》</block>
-  <block id="948802112ff01dd0135eb1b95727ae31" category="list-text"><block ref="948802112ff01dd0135eb1b95727ae31" category="inline-link-rx"></block></block>
   <block id="1cace3c036a290ab8ee91dddebd361d0" category="inline-link">《 NetApp Element 软件 12.0 发行说明》</block>
-  <block id="4530ac947ab244332016237ecd5be386" category="list-text"><block ref="4530ac947ab244332016237ecd5be386" category="inline-link-rx"></block></block>
   <block id="0f0e809fbd346b6319776f0b02355216" category="inline-link">《 NetApp Element 软件 11.8.1 发行说明》</block>
-  <block id="74af8720eb38c9567cf35e4e63e54dd8" category="list-text"><block ref="74af8720eb38c9567cf35e4e63e54dd8" category="inline-link-rx"></block></block>
   <block id="c238b8c4c43e1a2c0a7fa4b0128df200" category="inline-link">NetApp Element 软件 11.8 发行说明</block>
-  <block id="8e17ada66f25ae507220722cbf209f1a" category="list-text"><block ref="8e17ada66f25ae507220722cbf209f1a" category="inline-link-rx"></block></block>
   <block id="de0f0c49b842adda3c5183c2ee2304e8" category="inline-link">《 NetApp Element 软件 11.7 发行说明》</block>
-  <block id="c16491ff91ceba0f9e002a099673aaaa" category="list-text"><block ref="c16491ff91ceba0f9e002a099673aaaa" category="inline-link-rx"></block></block>
   <block id="a287e6799739729404ccb132fbbb1739" category="inline-link">《 NetApp Element 软件 11.5.1 发行说明》</block>
-  <block id="1a2d85d4d5e69f892a5e0afcf9449c05" category="list-text"><block ref="1a2d85d4d5e69f892a5e0afcf9449c05" category="inline-link-rx"></block></block>
   <block id="87043baf81d739284bd0146e19728ce7" category="inline-link">《 NetApp Element 软件 11.3P1 发行说明》</block>
-  <block id="7489b0d15edbdfa5b0e6ec6795aba52c" category="list-text"><block ref="7489b0d15edbdfa5b0e6ec6795aba52c" category="inline-link-rx"></block></block>
   <block id="6b85e8fee9865d4ab62dcfcd4f941582" category="inline-link">管理服务发行说明</block>
   <block id="8cf0a7fd902364db0eaa5ec60ad654f3" category="inline-link">vCenter 插件 4.7 发行说明</block>
   <block id="c9973d0a1ee56161c6330507362f4803" category="list-text"><block ref="c9973d0a1ee56161c6330507362f4803" category="inline-link-rx"></block></block>
@@ -11667,8 +11658,6 @@
   <block id="8f467f2f73a2f03837ba577c12b0bb94" category="inline-link-macro">自定义保护域文档</block>
   <block id="3c45efdb8d1c533e78702704c9e1eadb" category="paragraph">您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到相同的默认自定义保护域。有关详细信息，请参见 <block ref="80492064a95c042e9c388ee5f725985c" category="inline-link-macro-rx"></block>。</block>
   <block id="7199e7988a06a61dd6614783601855bd" category="inline-link">《 NetApp Element 软件 12.3.1 发行说明》</block>
-  <block id="dcdc1e9a0ffc4276e4a854678f24552e" category="list-text"><block ref="ca40bbd83e0af82b1f5180f506676e8f" category="inline-link-rx"></block> _new ！ _</block>
-  <block id="fddc57c7c9e5e8c37506eaee33bfccd7" category="list-text"><block ref="fddc57c7c9e5e8c37506eaee33bfccd7" category="inline-link-rx"></block></block>
   <block id="d4bb9f19fa4bd6faa9851112c1991e13" category="list-text">启动程序级别的 CHAP 身份验证：您可以为特定启动程序分配唯一的 CHAP 目标和密钥，而无需在单个帐户中绑定到单个 CHAP 。此启动程序级别的 CHAP 身份验证将取代帐户级别的凭据。</block>
   <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。</block>
   <block id="44667d134b93fff726fba8690e829f49" category="doc">自定义保护域</block>
@@ -11715,10 +11704,8 @@
   <block id="dc060618420764cdfc7790fdeb1e33e8" category="paragraph">如果您要将 H610S 系列节点升级到 Element 12.3.x ，而该节点运行的 Element 版本早于 11.8 ，则升级过程将包括两个阶段。</block>
   <block id="5e44a1903ec70087cd72eac7efa174b3" category="paragraph">首先执行的第 1 阶段与标准升级到 Element 12.3.x 的过程相同。它会以滚动方式在集群中逐个节点安装 Element 软件和所有 5 个固件更新。由于固件有效负载，每个 H610S 节点的此过程预计大约需要 1.5 到 2 小时，包括在升级结束时为每个节点执行一个冷启动周期。</block>
   <block id="0156654ae4dc6b09e871c56632755132" category="doc">升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统</block>
-  <block id="58d12ba0097eb00a2bf776fb8069836d" category="admonition">Element 软件 12.3.1 是可使用 NetApp HealthTools 升级到的最终版本。如果您运行的是 Element 软件 11.3 或更高版本，则应使用 NetApp Hybrid Cloud Control 升级 Element 软件。您可以使用 NetApp HealthTools 升级 Element 11.1 或更早版本。</block>
   <block id="46ec2391e9110784c0ae0691c567ad15" category="paragraph">按照以下顺序升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统：</block>
   <block id="0cd7e8b16b69d0465d0cd555180471ad" category="list-text"><block ref="9ab4f30420c80d4c6870d42a969c945d" category="inline-link-macro-rx"></block>。</block>
-  <block id="cb268b6969d2723cec91ec064b52b62a" category="paragraph">您可以将管理节点从 11.0 或更高版本升级到管理节点 12.3.1 或 12.3 版。</block>
   <block id="2c191a2c0c7197808c880518728ba922" category="admonition">管理节点 12.3.1 中没有其他功能更改或错误修复。如果您已运行管理节点 12.3 ，则无需将其升级到 12.3.1 。</block>
   <block id="877752a02a9a723465e45e0699c0408a" category="list-text">如果要从管理节点 12.2 升级：<block ref="13ca98900fab2e9dc617ec4e80e5ef22" category="inline-xref-macro-rx"></block></block>
   <block id="c385c319a88b75509bcd9e965511f832" category="list-text">如果要从管理节点 12.0 升级：<block ref="837fd47411e60554dd964007e7b1f57c" category="inline-xref-macro-rx"></block></block>
@@ -12425,4 +12412,23 @@
   <block id="f3631eb61fca5f83081c3305746bec62" category="list-text">将所有 NetApp HCI 数据存储库从存储集群以及计算节点本地传输到新的存储文件夹。</block>
   <block id="9caa1c9a8c45be2d5c61600cbaf343e9" category="list-text">选择新的存储文件夹。</block>
   <block id="b1e270e6370bcaa271189baa59cdc243" category="list-text">选择 `管理员角色`</block>
+  <block id="1d9f05f083ca394b7aa3fbee6b4ba1c9" category="paragraph">您可以将管理节点从 11.0 或更高版本升级到管理节点 12.3.x 版。</block>
+  <block id="728469310b9db013f8d3ad56547efdaa" category="list-text">管理节点 12.3.2 为启用了虚拟卷（ VVOL ）功能的存储集群提供了一个安全缓解措施。如果存储集群已位于 Element 12.3 上且已启用 VVol 功能，则强烈建议升级到 12.3.2 。</block>
+  <block id="f8945dbfb9c59a4484f33852cc6f95c9" category="admonition">Element 软件 12.3.2 是可使用 NetApp HealthTools 升级到的最终版本。如果您运行的是 Element 软件 11.3 或更高版本，则应使用 NetApp Hybrid Cloud Control 升级 Element 软件。您可以使用 NetApp HealthTools 升级 Element 11.1 或更早版本。</block>
+  <block id="56570048e2475ec7b64ee91388743714" category="inline-link">《 NetApp Element 软件 12.3.2 发行说明》</block>
+  <block id="3903fc6a9f0bcbe1f49608f5110cf661" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block> _new_</block>
+  <block id="9add94ad0bafb6a0c0977e09efa22b79" category="list-text"><block ref="9add94ad0bafb6a0c0977e09efa22b79" category="inline-link-rx"></block></block>
+  <block id="39cb2d043406c59d7a9d49b752c05b48" category="list-text"><block ref="39cb2d043406c59d7a9d49b752c05b48" category="inline-link-rx"></block></block>
+  <block id="59f8389fa12f333264e9b9c7a943546d" category="list-text"><block ref="59f8389fa12f333264e9b9c7a943546d" category="inline-link-rx"></block></block>
+  <block id="640d55cb9494c33f8756387aef98e61d" category="list-text"><block ref="640d55cb9494c33f8756387aef98e61d" category="inline-link-rx"></block></block>
+  <block id="49cbef4a1c4e82dba59d5c67759bce8e" category="list-text"><block ref="49cbef4a1c4e82dba59d5c67759bce8e" category="inline-link-rx"></block></block>
+  <block id="4489a95481ba0e8e951ca2cdc4403b89" category="list-text"><block ref="4489a95481ba0e8e951ca2cdc4403b89" category="inline-link-rx"></block></block>
+  <block id="6ae2e484807ab9e500e1e9aa73aa6354" category="list-text"><block ref="6ae2e484807ab9e500e1e9aa73aa6354" category="inline-link-rx"></block></block>
+  <block id="cd4b0abd6f1976f7d6b641eb6432cebc" category="list-text"><block ref="cd4b0abd6f1976f7d6b641eb6432cebc" category="inline-link-rx"></block></block>
+  <block id="7941eda6d75aeac7fd5d3f88cb08cb39" category="list-text"><block ref="7941eda6d75aeac7fd5d3f88cb08cb39" category="inline-link-rx"></block></block>
+  <block id="84f9569ec486aa9adfb1b73d2a0e3c9f" category="list-text"><block ref="84f9569ec486aa9adfb1b73d2a0e3c9f" category="inline-link-rx"></block></block>
+  <block id="c666b8511317763c38467d5251589d5a" category="list-text"><block ref="c666b8511317763c38467d5251589d5a" category="inline-link-rx"></block></block>
+  <block id="46b078af9bac91704627a9aca75db024" category="section-title">Element 12.3.2</block>
+  <block id="026c4f7e91453952af52a005d7180aec" category="paragraph">详细了解 Element 12.3.2 中的新增功能。</block>
+  <block id="a0e08077e5a0fd5b8a4e6778d5172eae" category="paragraph">Element 软件 12.3.2 版包含一些缓解措施，可消除 Element 软件受到 Apache Log4j 漏洞的影响。已启用虚拟卷（ VVol ）功能的 NetApp SolidFire 存储集群会受到此漏洞的影响。</block>
 </blocks>

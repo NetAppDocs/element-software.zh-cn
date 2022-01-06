@@ -29,6 +29,14 @@ image:bol_filters.PNG["BOL 筛选器，对齐 \" 中心 \""]
 
 
 
+== Element 12.3.2
+
+详细了解 Element 12.3.2 中的新增功能。
+
+Element 软件 12.3.2 版包含一些缓解措施，可消除 Element 软件受到 Apache Log4j 漏洞的影响。已启用虚拟卷（ VVol ）功能的 NetApp SolidFire 存储集群会受到此漏洞的影响。
+
+
+
 == Element 12.3.1
 
 详细了解 Element 12.3.1 中的新增功能。
