@@ -78,6 +78,11 @@ Element 12.2 管理节点是一种可选升级。现有部署不需要此功能�
 +
 *** 6 个虚拟 CPU
 *** 24 GB RAM
+*** 存储适配器类型设置为 LSI Logic Parallel
++
+
+IMPORTANT: 管理节点的默认值可能为 LSI Logic SAS 。在 * 新建虚拟机 * 窗口中，选择 * 自定义硬件 * > * 虚拟硬件 * 以验证存储适配器配置。如果需要，请将 LSI Logic SAS 更改为 * LSI Logic Parallel * 。
+
 *** 400 GB 虚拟磁盘，精简配置
 *** 一个可访问 Internet 和存储 MVIP 的虚拟网络接口。
 *** （可选）一个可通过管理网络访问存储集群的虚拟网络接口。如果存储集群与管理节点（ eth0 ）位于不同的子网中，并且您希望使用永久性卷，请向存储子网（ eth1 ）上的虚拟机添加另一个网络接口控制器（ Network Interface Controller ， NIC ），或者确保管理网络可以路由到存储网络。

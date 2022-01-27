@@ -12431,4 +12431,6 @@
   <block id="46b078af9bac91704627a9aca75db024" category="section-title">Element 12.3.2</block>
   <block id="026c4f7e91453952af52a005d7180aec" category="paragraph">详细了解 Element 12.3.2 中的新增功能。</block>
   <block id="a0e08077e5a0fd5b8a4e6778d5172eae" category="paragraph">Element 软件 12.3.2 版包含一些缓解措施，可消除 Element 软件受到 Apache Log4j 漏洞的影响。已启用虚拟卷（ VVol ）功能的 NetApp SolidFire 存储集群会受到此漏洞的影响。</block>
+  <block id="4cb04e22051dcc88da6d140ef391aab8" category="list-text">存储适配器类型设置为 LSI Logic Parallel</block>
+  <block id="1fde8564c11be0856ccf9a21a1d1430c" category="admonition">管理节点的默认值可能为 LSI Logic SAS 。在 * 新建虚拟机 * 窗口中，选择 * 自定义硬件 * &gt; * 虚拟硬件 * 以验证存储适配器配置。如果需要，请将 LSI Logic SAS 更改为 * LSI Logic Parallel * 。</block>
 </blocks>
