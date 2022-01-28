@@ -331,7 +331,7 @@
 <div class="ie-main">
   <!-- Sidebar Column -->
   
-  <div class="col-md-3" >
+  <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
     <img src="/zh-cn/element-software/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
@@ -5569,6 +5569,13 @@
         法律声明
       </a></li></ul>
 </div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -5624,7 +5631,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-28 00:26:56 +0000">01/28/2022</time>
+    <time datetime="2022-01-28 21:02:51 +0000">01/28/2022</time>
     
   
 
@@ -5670,6 +5677,9 @@
 <div class="ulist">
 <div class="title">关于此任务</div>
 <ul>
+<li>
+<p>本操作步骤介绍了 vSphere 6.7 版中提供的步骤。您的 vSphere 用户界面可能与所述略有不同，具体取决于安装的 vSphere 版本。有关其他帮助，请参见 VMware vCenter 文档。</p>
+</li>
 <li>
 <p>收件人： <a href="task_mnode_create_netapp_hcc_role_vcenter.html#create-a-new-netapp-hcc-role">"创建新的 NetApp HCC 角色"</a>，首先在 vCenter 中设置新用户帐户，创建 NetApp HCC 角色，然后分配用户权限。</p>
 </li>
