@@ -13,6 +13,7 @@ keywords: netapp, mnode, management node, vcenter, hcc, esxi
 此 NetApp HCC 角色会将您的管理节点服务视图限制为纯 NetApp 资产。
 
 .关于此任务
+* 本操作步骤介绍了 vSphere 6.7 版中提供的步骤。您的 vSphere 用户界面可能与所述略有不同，具体取决于安装的 vSphere 版本。有关其他帮助，请参见 VMware vCenter 文档。
 * 收件人： link:task_mnode_create_netapp_hcc_role_vcenter.html#create-a-new-netapp-hcc-role["创建新的 NetApp HCC 角色"]，首先在 vCenter 中设置新用户帐户，创建 NetApp HCC 角色，然后分配用户权限。
 * 对于 NetApp ESXi 主机配置，您应将 NDE 创建的用户帐户更新为新的 NetApp HCC 角色：
 +

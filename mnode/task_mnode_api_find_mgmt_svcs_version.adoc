@@ -38,7 +38,7 @@ curl -X GET "https://<ManagementNodeIP>/mnode/services?status=running" -H  "acce
 ----
 +
 
-NOTE: 注意：您可以找到 API 命令使用的承载 ` $ ｛ token ｝` link:task_mnode_api_get_authorizationtouse.html["授权"]。承载 ` $ ｛ token ｝` 位于 cURL 响应中。
+NOTE: 您可以找到 API 命令使用的承载 ` $ ｛ token ｝` link:task_mnode_api_get_authorizationtouse.html["授权"]。承载 ` $ ｛ token ｝` 位于 cURL 响应中。
 
 
 
