@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: element, solidfire esds, hardware components, configuration file 
 summary: 每个节点都有一个 sf_sSD_config.yaml 文件，其中包含您指定要由 SolidFire ESDS 服务使用的硬件列表。更换驱动器后，您必须在此文件中为更换驱动器的节点添加替代驱动器信息。此文件存储在 /opt/sf/ 中。此文件包含有关节点中驱动器的所有信息。每次添加新驱动器时，必须在此文件中输入新驱动器的详细信息。 
 ---
-= 代码 >SF_SDS_config.YAML</CODE> 文件的内容
+= sf_sSD_config.yaml 文件的内容
 :icons: font
 :imagesdir: ../media/
 

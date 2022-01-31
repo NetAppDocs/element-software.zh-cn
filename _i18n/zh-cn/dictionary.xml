@@ -432,7 +432,6 @@
   <block id="299374653e8935fcb082b9b5d88e8347" category="list-text"><block ref="299374653e8935fcb082b9b5d88e8347" category="inline-link-macro-rx"></block></block>
   <block id="6908246c62018d977556b618780042f4" category="list-text"><block ref="6908246c62018d977556b618780042f4" category="inline-link-macro-rx"></block></block>
   <block id="242169bc3cfede608a33f18d694f8ac7" category="summary">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。</block>
-  <block id="b312f45322f166ee041a7a16747fd5c1" category="doc">新增功能 &amp;#8217</block>
   <block id="038a728ceb0425e8312a168eae48c281" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.3 引入了软件空闲加密增强功能，安全性增强功能，存储固件更新，增强的快照功能以及故障驱动器的行为改进功能。</block>
   <block id="0eb91c90051a8280b5d03272245097b3" category="section-title">NetApp Bug Online 包含已知问题和已解决的问题</block>
   <block id="69893000f4da30e1e42922cbcf8dac0e" category="inline-link">NetApp Bug Online</block>
@@ -10910,7 +10909,6 @@
   <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link">知识库</block>
   <block id="de0d5a9e0eaf321ca5abc502f4878065" category="paragraph">这不是一个全面的列表。您可以搜索<block ref="07e94f182e062d1aec9ab9b62a09e58c" category="inline-link-rx"></block> 查看更多文章。</block>
   <block id="2c6f626aa53141940e041d794daa13ab" category="summary">每个节点都有一个 sf_sSD_config.yaml 文件，其中包含您指定要由 SolidFire ESDS 服务使用的硬件列表。更换驱动器后，您必须在此文件中为更换驱动器的节点添加替代驱动器信息。此文件存储在 /opt/sf/ 中。此文件包含有关节点中驱动器的所有信息。每次添加新驱动器时，必须在此文件中输入新驱动器的详细信息。</block>
-  <block id="a7e76582c3a43dbf501ee9ad5e211796" category="doc">代码 &gt;SF_SDS_config.YAML&lt;/CODE&gt; 文件的内容</block>
   <block id="ea216c541b17d0f5b18e7b68619b13a2" category="paragraph">每个节点都有一个 `sf_sSD_config.yaml` 文件，其中包括您指定要由 SolidFire ESDS 服务使用的硬件列表。更换驱动器后，您应在此文件中为更换驱动器的节点添加更换驱动器信息。此文件存储在 ` /opt/sf/` 中。此文件包含有关节点中驱动器的所有信息。每次添加新驱动器时，都应在此文件中输入新驱动器的详细信息。</block>
   <block id="1e2562204971f2df534c7ce2418dd6c9" category="paragraph">以下是文件的 * 必填 * 内容：</block>
   <block id="897356954c2cd3d41b221e3f24f99bba" category="cell">密钥</block>
@@ -11403,7 +11401,6 @@
   <block id="c04c8f4ee057b9770ef3148a2b7f90b9" category="list-text">单击 * 创建集群 * 。</block>
   <block id="fdfc2cea9a0bc6ec4fa8f32ce2b5502b" category="paragraph">根据集群中的节点数，系统可能需要几分钟的时间来创建集群。在配置正确的网络上，一个包含五个节点的小型集群所需时间应少于一分钟。创建集群后， "Create a New Cluster" 窗口将重定向到集群的 MVIP URL 地址，并显示 Element UI 。</block>
   <block id="4dbf9739b89cc855a36adb8a310e446b" category="summary">开始之前，您可能希望了解安装和设置 NetApp Element 软件的顺序。</block>
-  <block id="f38fb36bf765a660f4e1848cec9c4858" category="doc">接下来是什么？</block>
   <block id="bbde1cda5233ef3e90656a8c516591d1" category="paragraph">设置 Element 软件后，您可以通过完成以下部分选项来管理存储：</block>
   <block id="40fbcf5a102757324058f7fa79b9f9b7" category="list-text"><block ref="40fbcf5a102757324058f7fa79b9f9b7" category="inline-link-macro-rx"></block></block>
   <block id="17c7bc4d0c6040d40f372c983e2ebdfa" category="list-text"><block ref="17c7bc4d0c6040d40f372c983e2ebdfa" category="inline-link-macro-rx"></block></block>
@@ -12433,4 +12430,6 @@
   <block id="4cb04e22051dcc88da6d140ef391aab8" category="list-text">存储适配器类型设置为 LSI Logic Parallel</block>
   <block id="1fde8564c11be0856ccf9a21a1d1430c" category="admonition">管理节点的默认值可能为 LSI Logic SAS 。在 * 新建虚拟机 * 窗口中，选择 * 自定义硬件 * &gt; * 虚拟硬件 * 以验证存储适配器配置。如果需要，请将 LSI Logic SAS 更改为 * LSI Logic Parallel * 。</block>
   <block id="084f667a768181d2c907c53fa5eba8aa" category="list-text">本操作步骤介绍了 vSphere 6.7 版中提供的步骤。您的 vSphere 用户界面可能与所述略有不同，具体取决于安装的 vSphere 版本。有关其他帮助，请参见 VMware vCenter 文档。</block>
+  <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">下一步行动</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
 </blocks>
