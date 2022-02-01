@@ -48,11 +48,12 @@ summary: 在安装 SolidFire ESDS 之前，您应在运行 RHEL 的存储节点�
 * 包括所有管理流量。
 * 如果要从其他第 3 层网络访问集群 API 或 UI ，则可以路由。
 * 应在同一第 2 层广播域上配置网络接口。
+* 应使用 MTU 至少为 1500 字节的网络接口卡进行配置。
 
 
 |===
 
-TIP: 有关配置主机网络的示例和提示，请参见 link:task_esds_configure_the_interface_config_files.adoc["此处"^]。
+TIP: 有关配置主机网络的示例和提示，请参见 link:task_esds_configure_the_interface_config_files.adoc["此处"]。
 
 
 

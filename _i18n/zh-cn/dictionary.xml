@@ -10741,7 +10741,6 @@
   <block id="2fd83b2ce9b49bb4adb1828a92a6cc82" category="list-text">包括所有管理流量。</block>
   <block id="d2d3d320feed9dd5e52ec24dd6095045" category="list-text">如果要从其他第 3 层网络访问集群 API 或 UI ，则可以路由。</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">此处</block>
-  <block id="f01015a4df43fc3a8244df818269f074" category="admonition">有关配置主机网络的示例和提示，请参见 <block ref="b45abff0cd326e9aaefb14fb0711236e" category="inline-link-macro-rx"></block>。</block>
   <block id="310c2ddbe3c53ec931b599a811042076" category="summary">如果要主动更换 SolidFire ESDS 集群中的元数据驱动器或块驱动器，请执行此操作步骤。Element UI 集群 &gt; 驱动器页面会显示驱动器损耗信息。</block>
   <block id="870cd012c02c921543409316615a4ac1" category="paragraph">从此处列出的过程中进行选择，以主动更换驱动器，在驱动器出现故障后更换驱动器以及更换缓存驱动器。更换 SolidFire ESDS 集群中的元数据驱动器或块驱动器。Element UI * 集群 &gt; 驱动器 * 页面显示了驱动器损耗信息。</block>
   <block id="93430097bf00cfcc1e94624e0b982cb8" category="list-text"><block ref="745566ec8dec4c1e7c39183752157fd4" category="inline-xref-macro-rx"></block></block>
@@ -12433,4 +12432,6 @@
   <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">下一步行动</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
   <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">它支持 3000 IOPS 的持续集群限制。</block>
+  <block id="dcd50d347195658baa61d9ec50d87c54" category="list-text">应使用 MTU 至少为 1500 字节的网络接口卡进行配置。</block>
+  <block id="66eb697af36258704e589ddaa8b1f423" category="admonition">有关配置主机网络的示例和提示，请参见 <block ref="75f8e7b74dfe828e63d762ff8e0c66a1" category="inline-link-macro-rx"></block>。</block>
 </blocks>
