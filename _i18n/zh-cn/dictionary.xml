@@ -12432,4 +12432,5 @@
   <block id="084f667a768181d2c907c53fa5eba8aa" category="list-text">本操作步骤介绍了 vSphere 6.7 版中提供的步骤。您的 vSphere 用户界面可能与所述略有不同，具体取决于安装的 vSphere 版本。有关其他帮助，请参见 VMware vCenter 文档。</block>
   <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">下一步行动</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
+  <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">它支持 3000 IOPS 的持续集群限制。</block>
 </blocks>
