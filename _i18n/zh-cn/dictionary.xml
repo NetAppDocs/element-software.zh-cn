@@ -3667,34 +3667,6 @@
   <block id="acf18d5fb4380ea22d0a65b24cb7970a" category="summary">通过永久性卷，可以将管理节点配置数据存储在指定的存储集群上，而不是本地 VM 上，以便在管理节点丢失或删除时可以保留这些数据。永久性卷是一种可选的管理节点配置，但建议使用此配置。</block>
   <block id="ffdacd6c2fa0cc41b20f4135b3c82577" category="paragraph">部署新管理节点时，安装和升级脚本中包含一个启用永久性卷的选项。永久性卷是指基于 Element 软件的存储集群上的卷，其中包含主机管理节点虚拟机的管理节点配置信息，这些信息会在虚拟机生命周期结束后持续存在。如果管理节点丢失，替代管理节点 VM 可以重新连接到丢失的 VM 并恢复其配置数据。</block>
   <block id="6f5983880dad4e85e696acaacf3a185b" category="paragraph">如果在安装或升级期间启用了永久性卷功能，则会自动创建多个卷，并在分配的集群上预先指定 NetApp-HCI-名称 。与任何基于 Element 软件的卷一样，这些卷可以使用 Element 软件 Web UI ，适用于 vCenter Server 的 NetApp Element 插件或 API 进行查看，具体取决于您的首选项和安装。永久性卷必须已启动且正在运行，并与管理节点建立 iSCSI 连接，以维护可用于恢复的当前配置数据。</block>
-  <block id="24de7fb76a6fea6efcddad69b0d1251a" category="summary">您可以使用 NetApp Element 软件界面和集成实用程序管理 SolidFire 存储系统。</block>
-  <block id="8052aa25778d879aba958528a9ec1dea" category="list-text">* NetApp Element 软件用户界面 *</block>
-  <block id="5522c539437a90fd82777546ba2534ea" category="paragraph">用于设置 SolidFire 存储，监控集群容量和性能以及管理多租户基础架构中的存储活动。Element 是 SolidFire 集群的核心存储操作系统。Element 软件可在集群中的所有节点上独立运行，并可使集群节点将资源组合在一起，并作为一个存储系统提供给外部客户端。Element 软件负责整个系统的所有集群协调，扩展和管理工作。软件界面基于 Element API 构建。</block>
-  <block id="5f6d997d610a8179818a527d5ba72f7d" category="list-text">* 适用于 vCenter Server* 的 NetApp Element 插件</block>
-  <block id="e968ed74e2d833a7d578bcffa2857f2e" category="paragraph">用于配置和管理运行 Element 软件的存储集群。此插件为 VMware vSphere 中的 Element UI 提供了一个备用界面。</block>
-  <block id="3353dec73c0c7012530a36c60188e522" category="list-text">* NetApp Element 软件 APi*</block>
-  <block id="b16c2282138fa4c68f35ed3d92178f4a" category="paragraph">用于使用一组对象，方法和例程来管理 SolidFire 存储。Element API 基于 HTTPS 上的 JSON-RPC 协议。您可以通过启用 API 日志来监控 Element UI 中的 API 操作；这样，您可以查看向系统发出的方法。您可以同时启用请求和响应，以查看系统如何对发出的方法做出响应。</block>
-  <block id="41847ce8e56f2a9d4d2b0403ab7b7e2a" category="list-text">* 管理节点 UIs*</block>
-  <block id="60bda7dbf3a1f5304e1e70fc24eab12f" category="paragraph">管理节点包含两个 UI ：一个 UI 用于管理基于 REST 的服务，一个每节点 UI 用于管理网络和集群设置以及操作系统测试和实用程序。从 REST API UI 中，您可以访问与服务相关的 API 菜单，以控制管理节点上的管理服务。</block>
-  <block id="725415e8ab734694f1d47832a6f422f3" category="paragraph">虽然通常使用 NetApp Element ， NetApp Element API 和适用于 vCenter Server 的 NetApp Element 插件来管理存储，但您可以使用其他实用程序和工具。</block>
-  <block id="dbf6f352b4daf642804af7debd41517d" category="inline-link">NetApp 下载： SolidFire vRO</block>
-  <block id="80bbae962c855ff1f5f8c8cd55804aa8" category="list-text"><block ref="80bbae962c855ff1f5f8c8cd55804aa8" category="inline-link-rx"></block></block>
-  <block id="edc921a5b836cb96bbc5ea21aa662f8e" category="paragraph">通过 VMware vRealize Orchestrator ® ，可以方便地使用 SolidFire API 管理 SolidFire 存储系统。</block>
-  <block id="9a476ba32d68d93dea29603fb409b628" category="inline-link">NetApp 下载： Element SDK</block>
-  <block id="c18c72d8eba1eee0b73ac77bc9ee6f67" category="list-text"><block ref="c18c72d8eba1eee0b73ac77bc9ee6f67" category="inline-link-rx"></block></block>
-  <block id="c814245d23679477feeb7f595fbeb900" category="paragraph">用于使用以下工具管理 SolidFire 集群：</block>
-  <block id="c04e6e1e364cf14195ef802fe3f6a035" category="list-text">SolidFire 命令行</block>
-  <block id="ad87bca9ea394cf6b416453368a21592" category="list-text">SolidFire Postman API 测试套件：使程序员能够使用一组 Postman 函数来测试 SolidFire API 调用。</block>
-  <block id="5f874dbe078480520791744c862cd38c" category="list-text">SolidFire PowerShell ：使程序员能够使用一组 Microsoft ® Windows ® PowerShell ® 函数，这些函数使用 SolidFire API 管理 SolidFire 存储系统。</block>
-  <block id="c3449aa3bcb2873c3772278a5bca59b9" category="list-text">SolidFire SDK Java ：使程序员能够将 SolidFire API 与 Java ® 编程语言集成在一起。</block>
-  <block id="987cc6b9855789c2ccda259866a67d5f" category="list-text">SolidFire SDK .NET ：使程序员能够将 SolidFire API 与 .NET 编程平台集成在一起。</block>
-  <block id="d044e13d1391e6da759cd9459ae89e95" category="list-text">SolidFire SDK Python ：使程序员能够将 SolidFire API 与 Python （ TM ）编程语言集成在一起。</block>
-  <block id="d352a4b1a18ea276f4281015259de96c" category="inline-link">NetApp 下载： SolidFire 存储复制适配器</block>
-  <block id="0433f7f4e51b36398d5e0a6632587114" category="list-text"><block ref="0433f7f4e51b36398d5e0a6632587114" category="inline-link-rx"></block></block>
-  <block id="09a110334cd15062a80cffc905ea11c1" category="paragraph">与 VMware ® Site Recovery Manager （ SRM ）集成，可与复制的 SolidFire 存储集群（阵列）进行通信并执行支持的工作流。</block>
-  <block id="743eac4f44fa62c264513e7d109751c1" category="inline-link">NetApp 下载： SolidFire VSS 提供程序</block>
-  <block id="c254d50c9afa3dc2f1a4d4e14c5cb01a" category="list-text"><block ref="c254d50c9afa3dc2f1a4d4e14c5cb01a" category="inline-link-rx"></block></block>
-  <block id="5308472e77fde153d5cc5a74275d7a7a" category="paragraph">将 VSS 卷影副本与 SolidFire 快照和克隆集成在一起。</block>
   <block id="2fffa7f8ecc14b82a139dca0764ff6ce" category="summary">多因素身份验证 \ （ MFA\ ）通过安全断言标记语言 \ （ SAML \ ）使用第三方身份提供程序 \ （ IdP ）来管理用户会话。通过 MFA ，管理员可以根据需要配置其他身份验证因素，例如密码和文本消息以及密码和电子邮件消息。</block>
   <block id="3c7932b9d073a0e6fb52679db5222c4b" category="paragraph">多因素身份验证（ MFA ）通过安全断言标记语言（ Security Assertion Markup Language ， SAML ）使用第三方身份提供程序（ IdP ）来管理用户会话。通过 MFA ，管理员可以根据需要配置其他身份验证因素，例如密码和文本消息以及密码和电子邮件消息。</block>
   <block id="b4de17ead867a3cf0b9d11e57e562672" category="doc">机器翻译</block>
@@ -5461,8 +5433,6 @@
   <block id="b8cff0b41605e83e8a12999dd0a4ca92" category="list-text"><block ref="bd241c643056b4027f18f8f059752b73" category="inline-xref-macro-rx"></block></block>
   <block id="a312c7f516ce1d78e2fb8c261a270383" category="section-title">使用 NetApp Hybrid Cloud Control UI 升级存储固件</block>
   <block id="f650a00f1e40f26bd9259f0a248e5104" category="paragraph">您可以使用 NetApp Hybrid Cloud Control UI 升级集群中存储节点的固件。</block>
-  <block id="938ddcb01ec68dc1fc8dad09ace7e9e9" category="inline-link">适用于运行 Element 软件的 SolidFire 存储集群的存储固件包</block>
-  <block id="50513643afe65606b9ac298f01eb6a9e" category="paragraph"><block ref="50513643afe65606b9ac298f01eb6a9e" category="inline-link-rx"></block></block>
   <block id="021194ed35c1ca85c5ddd9daaf8630c3" category="admonition">每个存储节点的升级过程大约需要 30 分钟。如果要将 Element 存储集群升级到版本 2.76 以上的存储固件，则只有在将新固件写入节点后，各个存储节点才会在升级期间重新启动。</block>
   <block id="41248545ed2949a832d88f9ea8c00917" category="admonition">* 存储 * 选项卡列出了安装过程中的存储集群。如果 NetApp Hybrid Cloud Control 无法访问某个集群，则该集群将不会显示在 * 升级 * 页面上。如果您的集群运行的是 Element 12.0 或更高版本，则会看到为这些集群列出的当前固件包版本。如果一个集群中的节点具有不同的固件版本，或者升级过程中，您将在 * 当前固件包版本 * 列中看到 * 多个 * 。您可以选择 * 多个 * 以导航到 * 节点 * 页面以比较固件版本。如果所有集群运行的 Element 版本均早于 12.0 ，则您将看不到有关固件包版本号的任何信息。如果集群是最新的且 / 或没有可用的升级软件包，则不会显示 * 元素 * 和 * 仅固件 * 选项卡。在升级过程中，也不会显示这些选项卡。如果显示的是 * 元素 * 选项卡，而不是 * 仅固件 * 选项卡，则表示没有可用的固件包。</block>
   <block id="c2478fbc134086873c832f9086152247" category="list-text">选择要升级的集群旁边的下拉箭头。</block>
@@ -11663,34 +11633,10 @@
   <block id="96ba39f59d895d814d38db0ef8c583fd" category="list-text">容错：存储集群具有足够的可用容量，可防止其中一个自定义保护域发生故障后数据丢失。</block>
   <block id="e453e93ae1af3155f2774b6b529f8ed9" category="list-text">故障恢复能力：存储集群具有足够的可用容量，可在其中一个自定义保护域发生故障后自行修复。修复过程完成后，如果其他域发生故障，集群将受到保护，不会丢失数据。</block>
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">如果分配了多个自定义保护域，则每个子系统将为单独的自定义保护域分配重复项。如果无法做到这一点，则会还原为将重复项分配给不同的节点。每个子系统（例如箱，扇区，协议端点提供程序和集合）都独立执行此操作。</block>
-  <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">配置自定义保护域</block>
-  <block id="6e599ec445b85acc8e9d5e5e62c0612c" category="paragraph">您可以使用 Element UI <block ref="207ccb2cb37becc35a7f5fde670b328f" category="inline-link-macro-rx"></block>或者，您也可以使用以下 API 方法：</block>
   <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> - 显示每个节点所在的机箱和自定义保护域。</block>
   <block id="1508ab090b8072419802560c24117082" category="list-text"><block ref="c488c3c5d50768a853ca2b4d12fca704" category="inline-link-macro-rx"></block> - 用于为每个节点分配自定义保护域。</block>
   <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
-  <block id="4d88773c43d7dbc5020c091c9bfeae49" category="summary">您可以配置自定义保护域以提高集群的故障恢复能力。</block>
-  <block id="831136d74ae0649d6294c33fa3ad531e" category="doc">配置自定义保护域</block>
-  <block id="9dbeef114139177da982e36d70b1d7ba" category="paragraph">对于包含两个以上存储节点的 Element 集群，您可以为每个节点配置自定义保护域。配置自定义保护域时，必须将集群中的所有节点分配给域。</block>
-  <block id="624ad082406eef004f913cf9be11f14c" category="inline-link-macro">保护域文档</block>
-  <block id="867d0856d989388741998c80121faf8b" category="admonition">分配保护域时，节点之间将开始数据同步，某些集群操作将不可用，直到数据同步完成为止。为集群配置自定义保护域后，在添加新存储节点时，您无法为新节点添加驱动器，除非为此节点分配一个保护域并允许完成数据同步。请访问 <block ref="f3ad5bc790d9605231c6b7fe5dcc44e4" category="inline-link-macro-rx"></block> 了解有关保护域的更多信息。</block>
-  <block id="a502c101a850887b30441d5f8db8a505" category="admonition">要使自定义保护域方案对集群有用，必须将每个机箱中的所有存储节点分配到同一个自定义保护域。为此，您需要根据需要创建尽可能多的自定义保护域（最小的自定义保护域方案为三个域）。最佳做法是，为每个域配置相同数量的节点，并尝试确保分配给特定域的每个节点的类型相同。</block>
-  <block id="0ee231af8a749d4f6fe93657d92e8266" category="list-text">单击 * 配置保护域 * 。</block>
-  <block id="947cc3c1147f094f5cfe3fc868e27a8d" category="paragraph">在 * 配置自定义保护域 * 窗口中，您可以看到当前配置的保护域（如果有）以及各个节点的保护域分配。</block>
-  <block id="077028c5045f4bacfddea76b9b5acd52" category="list-text">输入新自定义保护域的名称，然后单击 * 创建 * 。</block>
-  <block id="35b73afa49d3e8bed3d471f48691ec32" category="paragraph">对需要创建的所有新保护域重复此步骤。</block>
-  <block id="4034133a53f1cdb2195216eab2ca21a3" category="list-text">对于 * 分配节点 * 列表中的每个节点，单击 * 保护域 * 列中的下拉列表，然后选择要分配给该节点的保护域。</block>
-  <block id="e207eef9c092e71d9b7f81916b0b647e" category="admonition">在应用更改之前，请确保了解您的节点和机箱布局，您配置的自定义保护域方案以及该方案对数据保护的影响。如果您应用保护域方案并立即需要进行更改，则可能需要一段时间才能进行更改，因为应用配置后会发生数据同步。</block>
-  <block id="c45c269988b0fdbfa5d0bfba39824f73" category="paragraph">根据集群的大小，域之间的数据同步数据可能需要一段时间。数据同步完成后，您可以在 * 集群 * &gt; * 节点 * 页面上查看自定义保护域分配， Element Web UI 信息板会在 * 自定义保护域运行状况 * 窗格中显示集群的保护状态。</block>
-  <block id="8ad6c7199b3e216cbd7f9fecdbeb98fc" category="paragraph">应用自定义保护域配置后，您可能会看到以下错误：</block>
   <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解决方法：</block>
-  <block id="960246db47f2dd869bb94da50c55385f" category="cell">SetProtectionDomainLayout 失败： ProtectionDomainLayout 会使 nodeID ｛ 9 ｝ 不可用。默认名称和非默认名称不能同时使用。</block>
-  <block id="b93b7f9e659ceb09e8ca7491f23f3b2c" category="cell">节点未分配保护域。</block>
-  <block id="419cf1435cb163d8b5d03fbeb1d6bee3" category="cell">为节点分配保护域。</block>
-  <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout 失败：保护域类型 " 自定义 " 拆分保护域类型 " 机箱 " 。</block>
-  <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">多节点机箱中的节点分配的保护域与机箱中的其他节点不同。</block>
-  <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">确保为机箱中的所有节点分配相同的保护域。</block>
-  <block id="29a6f38cbca29e0f3bdeecf96eb0b27a" category="paragraph"><block ref="b58e8d039996e87c7075e998e2dbe5e4" category="inline-link-macro-rx"></block>
-<block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="7cccd916bcdac08ea30e7c32df58e516" category="admonition">在将 Element 软件升级到 12.3.x 之前，您必须升级到最新的管理服务包如果要将 Element 软件更新到 12.3.x 版，则需要使用管理服务 2.14.60 或更高版本才能继续。</block>
   <block id="18efefbb7dfc549a016b6c88a83bd60d" category="admonition">如果您要将 H610S 系列节点升级到 Element 12.3.x ，并且此节点运行的 Element 版本早于 11.8 ，则需要执行其他升级步骤（<block ref="705f7add14cc7784392a1a0405b32daa" category="inline-xref-macro-rx"></block>）。如果您运行的是 Element 11.8 或更高版本，则不需要执行其他升级步骤（第 2 阶段）。</block>
   <block id="0624b78cd328c0324c28437326d426bc" category="list-text">请参见 <block ref="c50e0e127d4dd31a05f77777ae6c932f" category="inline-xref-macro-rx"></block> 并完成每个节点的过程。</block>
@@ -11744,7 +11690,6 @@
   <block id="53b5781a15ca0bf5e3350b448255d082" category="list-text"><block ref="53b5781a15ca0bf5e3350b448255d082" category="inline-link-macro-rx"></block></block>
   <block id="26c74f7a8ac6a7c8cdb0def0e876263d" category="inline-link-macro">管理节点 12.3.1 注意事项</block>
   <block id="047152327178a19c354a2a92281da90f" category="list-text"><block ref="047152327178a19c354a2a92281da90f" category="inline-link-macro-rx"></block></block>
-  <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">配置自定义保护域</block>
   <block id="c099da1e7198d2f1407d45eef0d02a48" category="inline-link">Element 演示节点</block>
   <block id="fae634e54f6a24eca87a92f1d78df928" category="paragraph"><block ref="e1baf480e2c2d0517c80b4748e50de89" category="inline-link-rx"></block> 是 Element 软件的 VMware 虚拟机（ VM ）版本，可轻松演示 NetApp HCI 和 SolidFire 产品的许多关键存储功能。开发人员可以通过演示节点根据 Element API 编写代码，而无需使用物理硬件。它会打包为 OVA 文件，以便于 VMware 部署。</block>
   <block id="baae0a76ecbb6b197350ee0618576960" category="inline-link">Element 演示节点下载页面（需要登录）</block>
@@ -12434,4 +12379,7 @@
   <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">它支持 3000 IOPS 的持续集群限制。</block>
   <block id="dcd50d347195658baa61d9ec50d87c54" category="list-text">应使用 MTU 至少为 1500 字节的网络接口卡进行配置。</block>
   <block id="66eb697af36258704e589ddaa8b1f423" category="admonition">有关配置主机网络的示例和提示，请参见 <block ref="75f8e7b74dfe828e63d762ff8e0c66a1" category="inline-link-macro-rx"></block>。</block>
+  <block id="84de930499d735c9f8f12a7a5abd09e2" category="paragraph">您可以使用以下 API 方法配置自定义保护域：</block>
+  <block id="0b012f0f130a45a29cb100381b8d8a18" category="inline-link">已下载存储固件包</block>
+  <block id="2860f82003378d24e87a2b07d470efff" category="list-text">如果您的管理节点未连接到 Internet ，则表示您已连接到 Internet<block ref="91eecee6b4dd8708a7b3c9904156a5c7" category="inline-link-rx"></block>。</block>
 </blocks>

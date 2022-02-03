@@ -44,10 +44,7 @@ NOTE: 有关适用于您的硬件的完整固件和驱动程序固件列表，�
 您可以使用 NetApp Hybrid Cloud Control UI 升级集群中存储节点的固件。
 
 .您需要什么？ #8217 ；将需要什么
-* 如果您的管理节点未连接到 Internet ，则已从以下位置下载此软件包：
-+
-https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["适用于运行 Element 软件的 SolidFire 存储集群的存储固件包"^]
-
+* 如果您的管理节点未连接到 Internet ，则表示您已连接到 Internet https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab/download/62654/Storage_Firmware_Bundle["已下载存储固件包"^]。
 
 
 

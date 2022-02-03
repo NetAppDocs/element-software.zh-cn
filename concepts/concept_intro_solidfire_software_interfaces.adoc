@@ -1,7 +1,7 @@
 ---
 permalink: concepts/concept_intro_solidfire_software_interfaces.html 
 sidebar: sidebar 
-keywords:  
+keywords: interfaces, integration, user interface, Plug-in, vCenter, API, node UIs, command line, snapshots, shadow copies, Element software, Element, Element UI, UI, manage storage, utilities, integration utilities 
 summary: 您可以使用 NetApp Element 软件界面和集成实用程序管理 SolidFire 存储系统。 
 ---
 = SolidFire 软件界面

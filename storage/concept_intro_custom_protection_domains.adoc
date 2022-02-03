@@ -27,7 +27,7 @@ summary: 您可以定义自定义保护域布局，其中每个节点都与一�
 
 如果分配了多个自定义保护域，则每个子系统将为单独的自定义保护域分配重复项。如果无法做到这一点，则会还原为将重复项分配给不同的节点。每个子系统（例如箱，扇区，协议端点提供程序和集合）都独立执行此操作。
 
-您可以使用 Element UI link:task_data_protection_configure_custom_protection_domains.html["配置自定义保护域"^]或者，您也可以使用以下 API 方法：
+您可以使用以下 API 方法配置自定义保护域：
 
 * link:../api/reference_element_api_getprotectiondomainlayout.html["GetProtectionDomainLayout"^] - 显示每个节点所在的机箱和自定义保护域。
 * link:../api/reference_element_api_setprotectiondomainlayout.html["SetProtectionDomainLayout"^] - 用于为每个节点分配自定义保护域。
