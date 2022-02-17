@@ -5629,11 +5629,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-03 20:03:55 +0000">02/03/2022</time>
+    <time datetime="2022-02-17 17:19:53 +0000">02/17/2022</time>
     
   
 
 <span>提供者
+  <a target="_blank" href="https://github.com/netapp-pcarriga">
+    <img  class="avatar avatar-small"
+          alt="netapp-pcarriga"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/77334475?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
   <a target="_blank" href="https://github.com/netapp-mwallis">
     <img  class="avatar avatar-small"
           alt="netapp-mwallis"
@@ -5679,7 +5687,10 @@
 <p><a href="#Backup and restore process overview for Element storage">[Backup and restore process overview for Element storage]</a></p>
 </li>
 <li>
-<p><a href="#Protection domains">[Protection domains]</a></p>
+<p><a href="#Protection Domains">[Protection Domains]</a></p>
+</li>
+<li>
+<p><a href="#Custom Protection Domains">[Custom Protection Domains]</a></p>
 </li>
 <li>
 <p><a href="#Double Helix high availability">[Double Helix high availability]</a></p>
@@ -5878,7 +5889,7 @@
 <h2 id="保护域">保护域</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>保护域是指一个节点或一组已分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。</p>
+<p>保护域是一个节点或一组分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。</p>
 </div>
 <div class="paragraph">
 <p>您可以使用适用于 vCenter Server 的 NetApp Element 插件中的 NetApp Element 配置扩展点手动启用保护域监控。您可以根据节点或机箱域选择保护域阈值。您还可以使用 Element API 或 Web UI 启用保护域监控。</p>
@@ -5912,8 +5923,58 @@
 <div class="paragraph">
 <p>创建新集群时，如果您使用的存储节点位于共享机箱中，则可能需要考虑使用保护域功能设计机箱级别的故障保护。</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="自定义保护域">自定义保护域</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到相同的默认自定义保护域。有关详细信息，请参见 <a href="../storage/concept_intro_custom_protection_domains.html">"自定义保护域文档"</a>。</p>
+<p>您可以定义一个与您的特定机箱和节点布局匹配的自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。</p>
+</div>
+<div class="paragraph">
+<p>如果未分配自定义保护域：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>集群操作不受影响。</p>
+</li>
+<li>
+<p>自定义级别既非容错级别，也非弹性级别。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>在为集群配置自定义保护域时，可以从 Element Web UI 信息板中查看三种可能的保护级别：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>不受保护：存储集群不受其中一个自定义保护域故障的保护。要修复此问题，请向集群添加额外的存储容量或重新配置集群的自定义保护域，以防止集群可能丢失数据。</p>
+</li>
+<li>
+<p>容错：存储集群具有足够的可用容量，可防止其中一个自定义保护域发生故障后数据丢失。</p>
+</li>
+<li>
+<p>故障恢复能力：存储集群具有足够的可用容量，可在其中一个自定义保护域发生故障后自行修复。修复过程完成后，如果其他域发生故障，集群将受到保护，不会丢失数据。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如果分配了多个自定义保护域，则每个子系统将为单独的自定义保护域分配重复项。如果无法做到这一点，则会还原为将重复项分配给不同的节点。每个子系统（例如箱，扇区，协议端点提供程序和集合）都独立执行此操作。</p>
+</div>
+<div class="paragraph">
+<p>您可以使用以下 API 方法配置自定义保护域：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../api/reference_element_api_getprotectiondomainlayout.html" target="_blank" rel="noopener">"GetProtectionDomainLayout"</a> - 显示每个节点所在的机箱和自定义保护域。</p>
+</li>
+<li>
+<p><a href="../api/reference_element_api_setprotectiondomainlayout.html" target="_blank" rel="noopener">"SetProtectionDomainLayout"</a> - 用于为每个节点分配自定义保护域。</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
