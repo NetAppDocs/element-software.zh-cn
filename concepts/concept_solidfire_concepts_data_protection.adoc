@@ -18,7 +18,8 @@ Element 存储数据保护包括以下概念：
 * <<Volume snapshots for data protection>>
 * <<Volume clones>>
 * <<Backup and restore process overview for Element storage>>
-* <<Protection domains>>
+* <<Protection Domains>>
+* <<Custom Protection Domains>>
 * <<Double Helix high availability>>
 
 
@@ -148,7 +149,7 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 == 保护域
 
-保护域是指一个节点或一组已分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。
+保护域是一个节点或一组分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。
 
 您可以使用适用于 vCenter Server 的 NetApp Element 插件中的 NetApp Element 配置扩展点手动启用保护域监控。您可以根据节点或机箱域选择保护域阈值。您还可以使用 Element API 或 Web UI 启用保护域监控。
 
@@ -167,7 +168,32 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 创建新集群时，如果您使用的存储节点位于共享机箱中，则可能需要考虑使用保护域功能设计机箱级别的故障保护。
 
-您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到相同的默认自定义保护域。有关详细信息，请参见 link:../storage/concept_intro_custom_protection_domains.html["自定义保护域文档"]。
+
+
+== 自定义保护域
+
+您可以定义一个与您的特定机箱和节点布局匹配的自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。
+
+如果未分配自定义保护域：
+
+* 集群操作不受影响。
+* 自定义级别既非容错级别，也非弹性级别。
+
+
+在为集群配置自定义保护域时，可以从 Element Web UI 信息板中查看三种可能的保护级别：
+
+* 不受保护：存储集群不受其中一个自定义保护域故障的保护。要修复此问题，请向集群添加额外的存储容量或重新配置集群的自定义保护域，以防止集群可能丢失数据。
+* 容错：存储集群具有足够的可用容量，可防止其中一个自定义保护域发生故障后数据丢失。
+* 故障恢复能力：存储集群具有足够的可用容量，可在其中一个自定义保护域发生故障后自行修复。修复过程完成后，如果其他域发生故障，集群将受到保护，不会丢失数据。
+
+
+如果分配了多个自定义保护域，则每个子系统将为单独的自定义保护域分配重复项。如果无法做到这一点，则会还原为将重复项分配给不同的节点。每个子系统（例如箱，扇区，协议端点提供程序和集合）都独立执行此操作。
+
+您可以使用以下 API 方法配置自定义保护域：
+
+* link:../api/reference_element_api_getprotectiondomainlayout.html["GetProtectionDomainLayout"^] - 显示每个节点所在的机箱和自定义保护域。
+* link:../api/reference_element_api_setprotectiondomainlayout.html["SetProtectionDomainLayout"^] - 用于为每个节点分配自定义保护域。
+
 
 
 

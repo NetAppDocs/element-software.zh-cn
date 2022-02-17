@@ -10,7 +10,7 @@ keywords: netapp, element, cluster, inventory, nodes, storage
 [role="lead"]
 您可以查看系统中的存储资产并确定其 IP 地址，名称和软件版本。
 
-您可以查看多节点系统的存储信息。条件 link:../storage/concept_intro_custom_protection_domains.html["自定义保护域"] 对于已分配的，您可以查看哪些保护域已分配给特定节点。
+您可以查看多节点系统的存储信息。条件 link:../concepts/concept_solidfire_concepts_data_protection.html#custom_pd["自定义保护域"] 对于已分配的，您可以查看哪些保护域已分配给特定节点。
 
 对于 SolidFire 企业 SDS 节点，您可以在 " 存储 " 选项卡上监控清单。
 

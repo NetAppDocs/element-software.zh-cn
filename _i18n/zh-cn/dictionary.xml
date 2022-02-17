@@ -543,14 +543,12 @@
   <block id="c4f7d5f460fa79e3c48a6898d2f12d3e" category="paragraph">精简配置的卷或 LUN 是指未预先预留存储的卷或 LUN 。而是根据需要动态分配存储。删除卷或 LUN 中的数据后，可用空间将释放回存储系统</block>
   <block id="adb71e77f78f7a989c5ecc7b7065855e" category="section-title">存储集群仲裁</block>
   <block id="db7e900d68f252cf8cb92b8b5fbc7133" category="paragraph">Element 软件会从选定节点创建存储集群，从而维护已复制的集群配置数据库。要保持集群故障恢复能力所需的仲裁，至少需要三个节点才能加入集群集合。</block>
-  <block id="859f5ebe453f3b784a507b4d3183a0f7" category="summary">数据保护功能包括远程复制，卷快照，卷克隆，保护域以及采用双 Helix 技术的高可用性。</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="doc">数据保护</block>
   <block id="4fcbbf46c76894b32e527dee3ace85d8" category="paragraph">Element 存储数据保护包括以下概念：</block>
   <block id="6c475b6accd823d482c613521889419e" category="list-text"><block ref="95e714e28ad34f47d4347ab1ee96f11e" category="inline-xref-macro-rx"></block></block>
   <block id="6bcd515030aaab5fe75977e20f29a033" category="list-text"><block ref="a37b1887a46fcb243108c291db21c711" category="inline-xref-macro-rx"></block></block>
   <block id="de4ac7bb688f4ca011e20adb677d9497" category="list-text"><block ref="80d71af12585dfa981bf965dd16ec8a2" category="inline-xref-macro-rx"></block></block>
   <block id="216d01067e38abd2d602d08d41b1d7f9" category="list-text"><block ref="c365b7e67fe4aa18b0963a4d429acf59" category="inline-xref-macro-rx"></block></block>
-  <block id="9b0afd4925041d098c4c8723bd75e68f" category="list-text"><block ref="68d4a725c570718d5f33d73ff7777f66" category="inline-xref-macro-rx"></block></block>
   <block id="0e58f474dfb6f5ab7c71af0b57bd1fa2" category="list-text"><block ref="0f2b1255ed3c8740bcacb3e22e6759b2" category="inline-xref-macro-rx"></block></block>
   <block id="558f7ca74859e811e1602cabb542219f" category="section-title">远程复制类型</block>
   <block id="8df4a1464712c3d455a74fb0a723967a" category="paragraph">数据的远程复制可以采用以下形式：</block>
@@ -608,15 +606,8 @@
   <block id="53ab57ac469b317e4ca572df8797e132" category="list-text">Amazon S3 对象存储</block>
   <block id="bde027a7a0e31e167b9e69407e438af0" category="list-text">OpenStack Swift 对象存储</block>
   <block id="118c7de537193df669257eb1bbaa9f80" category="paragraph">从 OpenStack Swift 或 Amazon S3 还原卷时，您需要原始备份过程中的清单信息。如果要还原的卷是在 SolidFire 存储系统上备份的，则不需要清单信息。</block>
-  <block id="3fc23f34e36d05f9e3d062c71bacd2f0" category="section-title">保护域</block>
-  <block id="1336fc0fd6356b267cac8ff67639cab7" category="paragraph">保护域是指一个节点或一组已分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。</block>
-  <block id="bee912c2703817c56cd91c0739ab04f3" category="paragraph">保护域布局会将每个节点分配给特定的保护域。</block>
-  <block id="bfd0cf529ced32aeb58ef87164fd6f7b" category="paragraph">支持两种不同的保护域布局，称为保护域级别。</block>
-  <block id="3a87586679ff9e67f084a5afcd817ce0" category="list-text">在节点级别，每个节点都位于其自己的保护域中。</block>
-  <block id="3a97f43eb6eef8c815e5cb3a8736c3d6" category="list-text">在机箱级别，只有共享机箱的节点才位于同一保护域中。</block>
   <block id="245dea9ce6077b2fa1c519f4e82b0774" category="list-text">将节点添加到集群时，系统会自动从硬件确定机箱级别布局。</block>
   <block id="4955b339c381c3355161ea5b7c1af363" category="list-text">在每个节点位于单独机箱中的集群中，这两个级别在功能上是相同的。</block>
-  <block id="6cb03c98c76534df27d193a6f33f65b1" category="paragraph">创建新集群时，如果您使用的存储节点位于共享机箱中，则可能需要考虑使用保护域功能设计机箱级别的故障保护。</block>
   <block id="980179142e595d55f1d5d1281611417d" category="section-title">双 Helix 高可用性</block>
   <block id="53ec645d7f176e7648a168024a6c6662" category="paragraph">双 Helix 数据保护是一种复制方法，可在系统中的所有驱动器之间至少分布两个冗余数据副本。通过 " 无 RAID " 方法，系统可以在存储系统的所有级别承受多个并发故障并快速修复。</block>
   <block id="de38f9b39645a1819eeb7bfcb11bad84" category="summary">管理节点 \ （ mNode\ ）是一个虚拟机，它与一个或多个基于 Element 软件的存储集群并行运行。它用于升级和提供系统服务，包括监控和遥测，管理集群资产和设置，运行系统测试和实用程序，以及启用 NetApp 支持访问以进行故障排除。</block>
@@ -11619,14 +11610,9 @@
   <block id="bc8064d6976a4ae417d9071be509d014" category="paragraph">Element 12.3 使用 SolidFire 设备驱动器中的 SMART 运行状况数据对这些驱动器定期执行运行状况检查。未通过智能运行状况检查的驱动器可能接近故障。如果某个驱动器未通过智能运行状况检查，则该驱动器将过渡到 * 故障 * 状态，并显示严重严重性集群故障： `d" 驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器运行状况检查失败 " 。要解决此故障，请更换驱动器。`</block>
   <block id="b4eb0a7d2f620a735a49d295cf464c57" category="section-title">SolidFire ESDS 的新文档</block>
   <block id="295216d6678c57d5badf5770238d96b5" category="section-title">SolidFire ESDS 已知问题的新位置</block>
-  <block id="7b9eb7f0ea5f54558e422ae2773566fc" category="paragraph">您可以使用适用于 vCenter Server 的 NetApp Element 插件中的 NetApp Element 配置扩展点手动启用保护域监控。您可以根据节点或机箱域选择保护域阈值。您还可以使用 Element API 或 Web UI 启用保护域监控。</block>
-  <block id="8f467f2f73a2f03837ba577c12b0bb94" category="inline-link-macro">自定义保护域文档</block>
-  <block id="3c45efdb8d1c533e78702704c9e1eadb" category="paragraph">您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到相同的默认自定义保护域。有关详细信息，请参见 <block ref="80492064a95c042e9c388ee5f725985c" category="inline-link-macro-rx"></block>。</block>
   <block id="7199e7988a06a61dd6614783601855bd" category="inline-link">《 NetApp Element 软件 12.3.1 发行说明》</block>
   <block id="d4bb9f19fa4bd6faa9851112c1991e13" category="list-text">启动程序级别的 CHAP 身份验证：您可以为特定启动程序分配唯一的 CHAP 目标和密钥，而无需在单个帐户中绑定到单个 CHAP 。此启动程序级别的 CHAP 身份验证将取代帐户级别的凭据。</block>
-  <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。</block>
   <block id="44667d134b93fff726fba8690e829f49" category="doc">自定义保护域</block>
-  <block id="5973fb594f77dc8b3479a7d06ec53911" category="paragraph">您可以定义与特定机箱和节点布局匹配的自定义保护域布局。</block>
   <block id="76f4b8308924515694d00b6e67394b63" category="paragraph">如果未分配自定义保护域：</block>
   <block id="615dc19b1563a7a33b749b60a4765c08" category="paragraph">在为集群配置自定义保护域时，可以从 Element Web UI 信息板中查看三种可能的保护级别：</block>
   <block id="db03446c5d87ec34ff0e324a1789d5be" category="list-text">不受保护：存储集群不受其中一个自定义保护域故障的保护。要修复此问题，请向集群添加额外的存储容量或重新配置集群的自定义保护域，以防止集群可能丢失数据。</block>
@@ -11635,7 +11621,6 @@
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">如果分配了多个自定义保护域，则每个子系统将为单独的自定义保护域分配重复项。如果无法做到这一点，则会还原为将重复项分配给不同的节点。每个子系统（例如箱，扇区，协议端点提供程序和集合）都独立执行此操作。</block>
   <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> - 显示每个节点所在的机箱和自定义保护域。</block>
   <block id="1508ab090b8072419802560c24117082" category="list-text"><block ref="c488c3c5d50768a853ca2b4d12fca704" category="inline-link-macro-rx"></block> - 用于为每个节点分配自定义保护域。</block>
-  <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解决方法：</block>
   <block id="7cccd916bcdac08ea30e7c32df58e516" category="admonition">在将 Element 软件升级到 12.3.x 之前，您必须升级到最新的管理服务包如果要将 Element 软件更新到 12.3.x 版，则需要使用管理服务 2.14.60 或更高版本才能继续。</block>
   <block id="18efefbb7dfc549a016b6c88a83bd60d" category="admonition">如果您要将 H610S 系列节点升级到 Element 12.3.x ，并且此节点运行的 Element 版本早于 11.8 ，则需要执行其他升级步骤（<block ref="705f7add14cc7784392a1a0405b32daa" category="inline-xref-macro-rx"></block>）。如果您运行的是 Element 11.8 或更高版本，则不需要执行其他升级步骤（第 2 阶段）。</block>
@@ -11784,7 +11769,6 @@
   <block id="1905fad06cd2d678f65488599a009f2a" category="summary">您可以使用 Hybrid Cloud Control Nodes 页面查看系统中的存储资产。</block>
   <block id="4abf133407ea4fa2eda3059f56e2940f" category="paragraph">您可以查看系统中的存储资产并确定其 IP 地址，名称和软件版本。</block>
   <block id="f0a87811e8be55bf94672bdc19729182" category="inline-link-macro">自定义保护域</block>
-  <block id="8878bca1837d19741db0f2ca4d2fcd17" category="paragraph">您可以查看多节点系统的存储信息。条件 <block ref="057a38bb36aa6e1dcaf6f6415a6c21ab" category="inline-link-macro-rx"></block> 对于已分配的，您可以查看哪些保护域已分配给特定节点。</block>
   <block id="9985a6faeb51ef9840d329f5a5454de1" category="paragraph">对于 SolidFire 企业 SDS 节点，您可以在 " 存储 " 选项卡上监控清单。</block>
   <block id="9914f7f20d19a7ce30054796ca280e28" category="list-text">通过提供 SolidFire 全闪存存储集群管理员凭据登录到 NetApp 混合云控制。</block>
   <block id="f7b8cd7786f2f0ba8b3271684ef8f6ff" category="list-text">在左侧导航栏中，选择 * 节点 * 。</block>
@@ -12382,4 +12366,17 @@
   <block id="84de930499d735c9f8f12a7a5abd09e2" category="paragraph">您可以使用以下 API 方法配置自定义保护域：</block>
   <block id="0b012f0f130a45a29cb100381b8d8a18" category="inline-link">已下载存储固件包</block>
   <block id="2860f82003378d24e87a2b07d470efff" category="list-text">如果您的管理节点未连接到 Internet ，则表示您已连接到 Internet<block ref="91eecee6b4dd8708a7b3c9904156a5c7" category="inline-link-rx"></block>。</block>
+  <block id="eeaa8c18b8187d8aa70fe2be2070cd8e" category="paragraph">您可以查看多节点系统的存储信息。条件 <block ref="7abc9b197257f801951edc3be4066a26" category="inline-link-macro-rx"></block> 对于已分配的，您可以查看哪些保护域已分配给特定节点。</block>
+  <block id="ce901b945342cdd0d7ba447214c227f7" category="summary">数据保护功能包括远程复制，卷快照，卷克隆，保护域以及采用双 Helix 技术的高可用性。</block>
+  <block id="ac57cbf4f51794a3a62f6ab5dde63e38" category="list-text"><block ref="9f7efed5e63ef5c9e0640c875716b07a" category="inline-xref-macro-rx"></block></block>
+  <block id="6ac1619fc98de9128467937d386c0dd2" category="list-text"><block ref="88e3b967e3c729325322529e164d36b2" category="inline-xref-macro-rx"></block></block>
+  <block id="9077d0c626c6abe8e5c94e742b66762a" category="section-title">保护域</block>
+  <block id="5c29df895fc14c6447f1c7b70cab7080" category="paragraph">保护域是一个节点或一组分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。</block>
+  <block id="18e1abcee55f350140acb0013eddc20b" category="paragraph">您可以使用适用于 vCenter Server 的 NetApp Element 插件中的 NetApp Element 配置扩展点手动启用保护域监控。您可以根据节点或机箱域选择保护域阈值。您还可以使用 Element API 或 Web UI 启用保护域监控。</block>
+  <block id="dba802ba43f82abaa07bf96fdb2af6d4" category="paragraph">保护域布局会将每个节点分配给特定的保护域。</block>
+  <block id="5840ebc65ea6274b299d2e293854fb3a" category="paragraph">支持两种不同的保护域布局，称为保护域级别。</block>
+  <block id="cffb96292124888803b5a99c04eb25a0" category="list-text">在节点级别，每个节点都位于其自己的保护域中。</block>
+  <block id="e0aa3d55a5969b10ddedc6eeb6027dd5" category="list-text">在机箱级别，只有共享机箱的节点才位于同一保护域中。</block>
+  <block id="24c0657cc5d2d7b53518905f246af2be" category="paragraph">创建新集群时，如果您使用的存储节点位于共享机箱中，则可能需要考虑使用保护域功能设计机箱级别的故障保护。</block>
+  <block id="dffa7774e7868ad62921ad5e0618ff6f" category="paragraph">您可以定义一个与您的特定机箱和节点布局匹配的自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。</block>
 </blocks>
