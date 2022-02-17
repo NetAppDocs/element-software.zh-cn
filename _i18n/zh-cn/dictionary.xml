@@ -12369,7 +12369,6 @@
   <block id="eeaa8c18b8187d8aa70fe2be2070cd8e" category="paragraph">您可以查看多节点系统的存储信息。条件 <block ref="7abc9b197257f801951edc3be4066a26" category="inline-link-macro-rx"></block> 对于已分配的，您可以查看哪些保护域已分配给特定节点。</block>
   <block id="ce901b945342cdd0d7ba447214c227f7" category="summary">数据保护功能包括远程复制，卷快照，卷克隆，保护域以及采用双 Helix 技术的高可用性。</block>
   <block id="ac57cbf4f51794a3a62f6ab5dde63e38" category="list-text"><block ref="9f7efed5e63ef5c9e0640c875716b07a" category="inline-xref-macro-rx"></block></block>
-  <block id="6ac1619fc98de9128467937d386c0dd2" category="list-text"><block ref="88e3b967e3c729325322529e164d36b2" category="inline-xref-macro-rx"></block></block>
   <block id="9077d0c626c6abe8e5c94e742b66762a" category="section-title">保护域</block>
   <block id="5c29df895fc14c6447f1c7b70cab7080" category="paragraph">保护域是一个节点或一组分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。</block>
   <block id="18e1abcee55f350140acb0013eddc20b" category="paragraph">您可以使用适用于 vCenter Server 的 NetApp Element 插件中的 NetApp Element 配置扩展点手动启用保护域监控。您可以根据节点或机箱域选择保护域阈值。您还可以使用 Element API 或 Web UI 启用保护域监控。</block>
@@ -12379,4 +12378,5 @@
   <block id="e0aa3d55a5969b10ddedc6eeb6027dd5" category="list-text">在机箱级别，只有共享机箱的节点才位于同一保护域中。</block>
   <block id="24c0657cc5d2d7b53518905f246af2be" category="paragraph">创建新集群时，如果您使用的存储节点位于共享机箱中，则可能需要考虑使用保护域功能设计机箱级别的故障保护。</block>
   <block id="dffa7774e7868ad62921ad5e0618ff6f" category="paragraph">您可以定义一个与您的特定机箱和节点布局匹配的自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。</block>
+  <block id="da8f75460055661317175529ad22e459" category="list-text"><block ref="df090c4e5f2ab56fd22fc14848bb611c" category="inline-xref-macro-rx"></block></block>
 </blocks>

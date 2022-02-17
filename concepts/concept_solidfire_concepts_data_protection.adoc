@@ -19,7 +19,7 @@ Element 存储数据保护包括以下概念：
 * <<Volume clones>>
 * <<Backup and restore process overview for Element storage>>
 * <<Protection Domains>>
-* <<Custom Protection Domains>>
+* <<custom_pd,自定义保护域>>
 * <<Double Helix high availability>>
 
 
