@@ -200,7 +200,7 @@ https://<ManagementNodeIP>/package-repository/1/
 | 您的管理节点位于不具有外部连接的非公开站点中。  a| 
 .. 将存储升级软件包下载到可供管理节点访问的设备。
 +
-对于 SolidFire 存储系统，请转至 Element 软件 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["下载页面"^] 并下载最新的存储节点映像。
+转至 Element 软件 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["下载页面"^] 并下载最新的存储节点映像。
 
 .. 将存储升级软件包上传到管理节点：
 +
@@ -453,7 +453,7 @@ CAUTION: 在更新节点时中止集群升级可能会导致驱动器异常地�
 == 使用 HealthTools 升级已连接站点上的 Element 软件
 
 .步骤
-. 下载存储升级软件包。对于 SolidFire 存储系统，请转至 Element 软件 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["下载页面"^] 并将最新的存储节点映像下载到非管理节点设备。
+. 下载存储升级软件包；转到 Element 软件 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["下载页面"^] 并将最新的存储节点映像下载到非管理节点设备。
 +
 
 NOTE: 要升级 Element 存储软件，您需要最新版本的 HealthTools 。
@@ -627,7 +627,7 @@ IMPORTANT: 如果您要将 H610S 系列节点升级到 Element 12.3.x ，并且�
 您可以使用 HealthTools 工具套件在没有外部连接的非公开站点上更新 NetApp Element 软件。
 
 .您需要什么？ #8217 ；将需要什么
-. 对于 SolidFire 存储系统，请转至 Element 软件 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["下载页面"^]。
+. 转至 Element 软件 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["下载页面"^]。
 . 选择正确的软件版本并将最新的存储节点映像下载到非管理节点计算机。
 +
 

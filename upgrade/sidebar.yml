@@ -1,11 +1,9 @@
 ---
 section: upgrade
-title: 升级 SolidFire 系统
+title: 升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统
 entries:
-- title: 升级概述
+- title: 升级顺序概述
   url: "/upgrade/concept_element_upgrade_overview.html"
-- title: 升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统
-  url: "/upgrade/task_sf_upgrade_all.html"
 - title: 系统升级过程
   entries:
   - title: 更新管理服务

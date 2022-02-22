@@ -201,7 +201,7 @@ https://<ManagementNodeIP>/package-repository/1/
 
 
 | 您的管理节点位于不具有外部连接的非公开站点中。  a| 
-.. 将存储固件升级包下载到可供管理节点访问的设备。对于 SolidFire 存储系统，请转至 Element 软件 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["下载页面"^] 并下载最新的存储固件映像。
+.. 将存储固件升级软件包下载到可供管理节点访问的设备；转到 Element 软件 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["下载页面"^] 并下载最新的存储固件映像。
 .. 将存储固件升级软件包上传到管理节点：
 +
 ... 在管理节点上打开管理节点 REST API UI ：

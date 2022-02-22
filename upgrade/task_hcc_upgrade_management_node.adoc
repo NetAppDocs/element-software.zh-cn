@@ -55,7 +55,7 @@ NOTE: Element 12.3.x 管理节点是一种可选升级。现有部署不需要�
 
 TIP: 要检查管理节点的版本，请登录到管理节点并在登录横幅中查看 Element 版本号。
 
-* 您已使用 NetApp Hybrid Cloud Control （ HCC ）将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 HCC ： ` \https://<ManagementNodeIP>`
+* 您已使用 NetApp Hybrid Cloud Control 将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 NetApp Hybrid Cloud Control ： ` https://<ManagementNodeIP>`
 * 如果要将管理节点更新到 12.3.x 版，则需要使用管理服务 2.14.60 或更高版本继续操作。
 * 您已按照中的说明配置了一个额外的网络适配器（如果需要） link:../mnode/task_mnode_install_add_storage_NIC.html["配置其他存储 NIC"]。
 +
@@ -67,7 +67,7 @@ NOTE: 如果 eth0 无法路由到 SVIP ，则永久性卷可能需要额外的�
 
 .步骤
 . 使用 SSH 或控制台访问登录到管理节点虚拟机。
-. 下载的管理节点 ISO https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element"^] 从 NetApp 支持站点到管理节点虚拟机的软件。
+. 下载 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理节点 ISO"^] 从 NetApp 支持站点到管理节点虚拟机的 Element 软件。
 +
 
 NOTE: 此 ISO 的名称类似于 `solidfire-fdva-<element release>-px-XX.X.x.XXXX.iso`
@@ -147,7 +147,7 @@ NOTE: Element 12.3.x 管理节点是一种可选升级。现有部署不需要�
 
 TIP: 要检查管理节点的版本，请登录到管理节点并在登录横幅中查看 Element 版本号。
 
-* 您已使用 NetApp Hybrid Cloud Control （ HCC ）将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 HCC ： ` \https://<ManagementNodeIP>`
+* 您已使用 NetApp Hybrid Cloud Control 将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 NetApp Hybrid Cloud Control ： ` https://<ManagementNodeIP>`
 * 如果要将管理节点更新到 12.3.x 版，则需要使用管理服务 2.14.60 或更高版本继续操作。
 * 您已按照中的说明配置了一个额外的网络适配器（如果需要） link:../mnode/task_mnode_install_add_storage_NIC.html["配置其他存储 NIC"]。
 +
@@ -166,7 +166,7 @@ NOTE: 如果 eth0 无法路由到 SVIP ，则永久性卷可能需要额外的�
 
 
 . 使用 SSH 或控制台访问登录到管理节点虚拟机。
-. 下载的管理节点 ISO https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element"^] 从 NetApp 支持站点到管理节点虚拟机的软件。
+. 下载 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理节点 ISO"^] 从 NetApp 支持站点到管理节点虚拟机的 Element 软件。
 +
 
 NOTE: 此 ISO 的名称类似于 `solidfire-fdva-<element release>-px-XX.X.x.XXXX.iso`
@@ -246,7 +246,7 @@ NOTE: Element 12.3.x 管理节点是一种可选升级。现有部署不需要�
 
 TIP: 要检查管理节点的版本，请登录到管理节点并在登录横幅中查看 Element 版本号。
 
-* 您已使用 NetApp Hybrid Cloud Control （ HCC ）将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 HCC ： ` \https://<ManagementNodeIP>`
+* 您已使用 NetApp Hybrid Cloud Control 将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 NetApp Hybrid Cloud Control ： ` https://<ManagementNodeIP>`
 * 如果要将管理节点更新到 12.3.x 版，则需要使用管理服务 2.14.60 或更高版本继续操作。
 * 您已按照中的说明配置了一个额外的网络适配器（如果需要） link:../mnode/task_mnode_install_add_storage_NIC.html["配置其他存储 NIC"]。
 +
@@ -265,7 +265,7 @@ NOTE: 如果 eth0 无法路由到 SVIP ，则永久性卷可能需要额外的�
 
 
 . 使用 SSH 或控制台访问登录到管理节点虚拟机。
-. 下载的管理节点 ISO https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element"^] 从 NetApp 支持站点到管理节点虚拟机的软件。
+. 下载 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理节点 ISO"^] 从 NetApp 支持站点到管理节点虚拟机的 Element 软件。
 +
 
 NOTE: 此 ISO 的名称类似于 `solidfire-fdva-<element release>-px-XX.X.x.XXXX.iso`
@@ -364,7 +364,7 @@ NOTE: 如果 eth0 无法路由到 SVIP ，则永久性卷可能需要额外的�
 
 
 . 使用 SSH 或控制台访问登录到管理节点虚拟机。
-. 下载的管理节点 ISO https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element"^] 从 NetApp 支持站点到管理节点虚拟机的软件。
+. 下载 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理节点 ISO"^] 从 NetApp 支持站点到管理节点虚拟机的 Element 软件。
 +
 
 NOTE: 此 ISO 的名称类似于 `solidfire-fdva-<element release>-px-XX.X.x.XXXX.iso`

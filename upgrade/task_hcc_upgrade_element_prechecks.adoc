@@ -20,7 +20,7 @@ IMPORTANT: 在升级 Element 软件之前，您必须升级到最新的管理服
 * 您的集群版本运行的是 NetApp Element 软件 11.3 或更高版本。
 
 
-您可以使用 NetApp Hybrid Cloud Control （ HCC ） UI ， HCC API 或 HealthTools 套件运行运行状况检查：
+您可以使用 NetApp Hybrid Cloud Control UI ， NetApp Hybrid Cloud Control API 或 HealthTools 套件运行运行状况检查：
 
 * <<Use NetApp Hybrid Cloud Control to run Element storage health checks prior to upgrading storage>> （首选方法）
 * <<Use API to run Element storage health checks prior to upgrading storage>>
@@ -36,7 +36,7 @@ IMPORTANT: 在升级 Element 软件之前，您必须升级到最新的管理服
 
 == 在升级存储之前，请使用 NetApp Hybrid Cloud Control 运行 Element 存储运行状况检查
 
-使用 NetApp Hybrid Cloud Control （ HCC ），您可以验证存储集群是否已做好升级准备。
+使用 NetApp Hybrid Cloud Control ，您可以验证存储集群是否已做好升级准备。
 
 .步骤
 . 打开 Web 浏览器并浏览到管理节点的 IP 地址：

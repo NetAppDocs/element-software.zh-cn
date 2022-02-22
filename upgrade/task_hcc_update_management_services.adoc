@@ -10,7 +10,7 @@ keywords: netapp, solidfire, cluster, management services, hcc, update managemen
 [role="lead"]
 安装管理节点 11.3 或更高版本后，您可以将管理服务更新到最新的捆绑包版本。
 
-从 Element 11.3 管理节点版本开始，管理节点设计已根据提供单个服务的新模块化架构进行了更改。这些模块化服务可为 SolidFire 全闪存存储系统提供集中式和扩展式管理功能。管理服务包括系统遥测，日志记录和更新服务，适用于 vCenter Server 的 Element 插件的 QoSSIOC 服务， NetApp Hybrid Cloud Control （ HCC ）等。
+从 Element 11.3 管理节点版本开始，管理节点设计已根据提供单个服务的新模块化架构进行了更改。这些模块化服务可为 SolidFire 全闪存存储系统提供集中式和扩展式管理功能。管理服务包括系统遥测，日志记录和更新服务，适用于 vCenter Server 的 Element 插件的 QoSSIOC 服务， NetApp Hybrid Cloud Control 等。
 
 .关于此任务
 * 在升级 Element 软件之前，您必须升级到最新的管理服务包。
@@ -19,7 +19,7 @@ keywords: netapp, solidfire, cluster, management services, hcc, update managemen
 
 NOTE: 有关介绍每个服务包的主要服务，新功能，错误修复和解决方法的最新管理服务发行说明，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服务发行说明"^]
 
-您可以使用 NetApp Hybrid Cloud Control （ HCC ） UI 或管理节点 REST API 更新管理服务：
+您可以使用 NetApp Hybrid Cloud Control UI 或管理节点 REST API 更新管理服务：
 
 * <<Update management services using Hybrid Cloud Control>> （建议方法）
 * <<Update management services using the management node API>>
@@ -30,7 +30,7 @@ NOTE: 有关介绍每个服务包的主要服务，新功能，错误修复和�
 
 == 使用 Hybrid Cloud Control 更新管理服务
 
-您可以使用 NetApp Hybrid Cloud Control （ HCC ）更新 NetApp 管理服务。
+您可以使用 NetApp Hybrid Cloud Control 更新 NetApp 管理服务。
 
 管理服务捆绑包可为您的安装提供增强功能和修复，而不是主要版本。
 

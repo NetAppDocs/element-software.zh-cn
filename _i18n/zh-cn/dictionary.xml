@@ -968,8 +968,6 @@
   <block id="578c07c950972d7b078fc954eef38508" category="inline-link">vCenter 插件 4.4 发行说明</block>
   <block id="e6f04bc267aa8b790e8358fbcafd13da" category="inline-link">vCenter 插件 4.3 发行说明</block>
   <block id="002e74c06881f6eef90f201bb310bbfa" category="section-title">存储固件</block>
-  <block id="e2b165ab46734aee4acaaada05a4c247" category="inline-link">存储固件包 2.99.2 发行说明（最新）</block>
-  <block id="f1de80703dd5c9a1cd53931752c56274" category="list-text"><block ref="f1de80703dd5c9a1cd53931752c56274" category="inline-link-rx"></block></block>
   <block id="826ed2a2fd875eeb127f73e48856de14" category="inline-link">存储固件包 2.76 发行说明</block>
   <block id="7c4a6e26b432f1ad131564bc6dc6e32d" category="inline-link">存储固件包 2.27 发行说明</block>
   <block id="a0b768ade98ef6cf3df956008c966806" category="list-text"><block ref="a0b768ade98ef6cf3df956008c966806" category="inline-link-rx"></block></block>
@@ -4971,8 +4969,6 @@
   <block id="bd91bfdcf4a916f6b8c00c25da13251b" category="list-text">从 REST API UI 中，选择 * 获取 /packages* 。</block>
   <block id="92c655ce479b4404b3a51afa0527fd9b" category="list-text">在响应中，复制并保存软件包 ID ，以供后续步骤使用。</block>
   <block id="1ed5061d3b76fa0c219c1f1d3b386470" category="list-text">将存储升级软件包下载到可供管理节点访问的设备。</block>
-  <block id="4876c936414c8b50876cdff810c036bd" category="inline-link">下载页面</block>
-  <block id="7ee2de3b0e43f349c3fe9cb7ad971f81" category="paragraph">对于 SolidFire 存储系统，请转至 Element 软件<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> 并下载最新的存储节点映像。</block>
   <block id="ca9b271bda1fd83c0839a53fe115bfdb" category="list-text">将存储升级软件包上传到管理节点：</block>
   <block id="382035476e13882c8f8e0dcfdc354d1b" category="list-text">从 REST API UI 中，选择 * POST /packages* 。</block>
   <block id="8a125bba55a89fe2c1f9771882004ba9" category="list-text">选择 * 浏览 * 并选择升级软件包。</block>
@@ -5020,7 +5016,6 @@
   <block id="59176eee36815639c56b916d1ee6d2b9" category="list-text">NetApp 支持部门已确定需要暂时中止升级，以便在三小时内采取更正措施。支持人员将使用 API 中止升级。</block>
   <block id="e0cac02c93ade1b7ecc2eb64907171a8" category="admonition">在更新节点时中止集群升级可能会导致驱动器异常地从节点中删除。如果驱动器被异常删除，则在升级期间重新添加驱动器需要 NetApp 支持部门手动干预。节点执行固件更新或更新后同步活动可能需要较长时间。如果升级进度似乎停滞，请联系 NetApp 支持部门以获得帮助。</block>
   <block id="f7cb949e38e4d529492a7a05aae8a9db" category="section-title">使用 HealthTools 升级已连接站点上的 Element 软件</block>
-  <block id="052f51df453585f756b6da91bdefeca1" category="list-text">下载存储升级软件包。对于 SolidFire 存储系统，请转至 Element 软件<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> 并将最新的存储节点映像下载到非管理节点设备。</block>
   <block id="2d95a5cefb4bb26e6c4f585e36b7dd0a" category="admonition">要升级 Element 存储软件，您需要最新版本的 HealthTools 。</block>
   <block id="0ec4573ec12f9825d509316cd1dca61c" category="list-text">将 ISO 文件复制到可访问位置（如 /tmp ）的管理节点。</block>
   <block id="f2c453451cde52ee9d2593c6e63274eb" category="paragraph">上传 ISO 文件时，请确保文件名不会更改，否则后续步骤将失败。</block>
@@ -5041,7 +5036,6 @@
   <block id="d91b070c7f8d6b290722e056d7aff9ce" category="paragraph">请参见以下成功升级示例摘录。升级事件可用于监控升级进度。</block>
   <block id="503d85929978f593abfff70c30d833a9" category="section-title">使用 HealthTools 升级非公开站点上的 Element 软件</block>
   <block id="dda57880ebc4e427f14795d16b1ee0ad" category="paragraph">您可以使用 HealthTools 工具套件在没有外部连接的非公开站点上更新 NetApp Element 软件。</block>
-  <block id="d11d8f1cb0c9c5bc31a696e290c533d4" category="list-text">对于 SolidFire 存储系统，请转至 Element 软件<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block>。</block>
   <block id="33ff5a5d635fbe38905932dd4b045967" category="list-text">选择正确的软件版本并将最新的存储节点映像下载到非管理节点计算机。</block>
   <block id="a6c9e3a7671c1fd9d7328c3be5d107b5" category="inline-link">JSON 文件</block>
   <block id="cabc168d31fc4c314cb500b86813e131" category="list-text">下载此<block ref="747556e0149f6188670059abaeb4fd3e" category="inline-link-rx"></block> <block ref="53034c8197fc6f1049d26569a56db918" category="inline-link-rx"></block> 从 NetApp 支持站点的非管理节点计算机上，将其重命名为 `metadata 。 json` 。</block>
@@ -5078,14 +5072,12 @@
   <block id="a9665a647615566ad8a19d93fbf94aa9" category="list-text">您已更新到最新的管理服务包（ 2.10.27 或更高版本）。</block>
   <block id="1b4d7862ca62ac0691b197c1c4e48017" category="admonition">在升级 Element 软件之前，您必须升级到最新的管理服务包。</block>
   <block id="d843290a4f160eb5d302fe442b7b62f9" category="list-text">您正在运行管理节点 11.3 或更高版本。</block>
-  <block id="a42a5f062307c65656fb022b1bc38224" category="paragraph">您可以使用 NetApp Hybrid Cloud Control （ HCC ） UI ， HCC API 或 HealthTools 套件运行运行状况检查：</block>
   <block id="0096c254c62197f713da16cbb8cf17bf" category="list-text"><block ref="43e2712ac16e77262f42113e91f41bfc" category="inline-xref-macro-rx"></block> （首选方法）</block>
   <block id="c0ce03ffdb1b2eaf2997d4b003a6c398" category="list-text"><block ref="33b5a46d5ad547c7160d2877495cd388" category="inline-xref-macro-rx"></block></block>
   <block id="2321e5c974e77f58ee923d1e00e01167" category="list-text"><block ref="2afbc4735288b232693d6654f053bf83" category="inline-xref-macro-rx"></block></block>
   <block id="d9072e37167baf145bc5655975039b9c" category="paragraph">您还可以了解有关此服务运行的存储运行状况检查的更多信息：</block>
   <block id="62a5effb348b201359f9288178063353" category="list-text"><block ref="b9c91f9aab75a470a42dbb291a17df8d" category="inline-xref-macro-rx"></block></block>
   <block id="dd2a5a4091be5700ab6001e60a9a6483" category="section-title">在升级存储之前，请使用 NetApp Hybrid Cloud Control 运行 Element 存储运行状况检查</block>
-  <block id="f5c8d254cb62d36b2cfba42c5866a02a" category="paragraph">使用 NetApp Hybrid Cloud Control （ HCC ），您可以验证存储集群是否已做好升级准备。</block>
   <block id="1f7790ed35a0ab861da3622b15bd9e8a" category="list-text">在 * 升级 * 页面上，选择 * 存储 * 选项卡。</block>
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">图标。</block>
   <block id="6f2c388bfbd8977b6fbfc3a23a18b5c1" category="list-text">选择运行状况检查 <block ref="121ad3230a694a5231762b0ae438963f" category="inline-image-macro-rx" type="image"></block> 对于要检查升级准备情况的集群。</block>
@@ -5167,15 +5159,12 @@
   <block id="36f546dcaf82a7b3487c4002a3c6d1ed" category="summary">在 NetApp SolidFire 存储系统升级过程中，您应更新管理服务。</block>
   <block id="2fdf7cb371995103b459c97e897b87ee" category="doc">更新管理服务</block>
   <block id="79775a85ecd792fca2ed73286c1313cf" category="paragraph">安装管理节点 11.3 或更高版本后，您可以将管理服务更新到最新的捆绑包版本。</block>
-  <block id="9d896625607ec2ce2f7a1559c4bdcd1d" category="paragraph">从 Element 11.3 管理节点版本开始，管理节点设计已根据提供单个服务的新模块化架构进行了更改。这些模块化服务可为 SolidFire 全闪存存储系统提供集中式和扩展式管理功能。管理服务包括系统遥测，日志记录和更新服务，适用于 vCenter Server 的 Element 插件的 QoSSIOC 服务， NetApp Hybrid Cloud Control （ HCC ）等。</block>
   <block id="a443497b41405480f6755e35166556e7" category="inline-link">管理服务发行说明</block>
   <block id="b142e9d9b67c7c4504bd1ab09fd15db2" category="admonition">有关介绍每个服务包的主要服务，新功能，错误修复和解决方法的最新管理服务发行说明，请参见<block ref="51c56ce961e981301a44342800a6fcbd" category="inline-link-rx"></block></block>
-  <block id="884a5edae007e6d3e774a912317f61ca" category="paragraph">您可以使用 NetApp Hybrid Cloud Control （ HCC ） UI 或管理节点 REST API 更新管理服务：</block>
   <block id="7d6cae0c176b060b3eb918e8fc3a8a88" category="list-text"><block ref="8b810af37d36ecef3e8ce0cfd28cc60b" category="inline-xref-macro-rx"></block> （建议方法）</block>
   <block id="45d5739efe933eabe3dda4a4ba6b61b1" category="list-text"><block ref="b795f7048c0a3127327e392f4c115728" category="inline-xref-macro-rx"></block></block>
   <block id="610172e2b0e7d4051f0d0b230bd8c722" category="list-text"><block ref="79f95b99cf6c6dc511dd13bb08f1454f" category="inline-xref-macro-rx"></block></block>
   <block id="2325934efda1befa076510008b0f7646" category="section-title">使用 Hybrid Cloud Control 更新管理服务</block>
-  <block id="6812fbe299c3076c40d64e3555fb0f6e" category="paragraph">您可以使用 NetApp Hybrid Cloud Control （ HCC ）更新 NetApp 管理服务。</block>
   <block id="c3e2bcb5601498c3470bd272236342a3" category="paragraph">管理服务捆绑包可为您的安装提供增强功能和修复，而不是主要版本。</block>
   <block id="d0d4d24acea2b29c2079bdc9f046795d" category="list-text">如果要将管理服务更新到版本 2.16 或更高版本，并且运行的是管理节点 11.3 到 11.8 ，则在更新管理服务之前，需要先增加管理节点 VM 的 RAM ：</block>
   <block id="eb6e06188d05a494c7bef0f5114cda80" category="list-text">关闭管理节点虚拟机。</block>
@@ -5227,14 +5216,11 @@
   <block id="5c00f576c2af1d972df95537843e862f" category="list-text"><block ref="e1470314c076bb930d350da1dd8a3b7d" category="inline-link-rx"></block> 使用插件。</block>
   <block id="b4c5d7523b472861778f2afd883b2b2b" category="inline-link">启用 QoSSIOC ：</block>
   <block id="e9649f789dba33069d65dd43f646890f" category="list-text"><block ref="ab3ca5933bb57bf5671eabef88a511cb" category="inline-link-rx"></block> 由插件控制的所有数据存储库。</block>
-  <block id="0efaf95d5aed3c0eeb8ac846a92855dc" category="summary">您可以升级 NetApp SolidFire 全闪存存储系统及其所有组件。</block>
   <block id="ce90f7229835d74f781e9e0252243716" category="paragraph">您可以通过按顺序升级所有 SolidFire 存储组件，在部署后使 NetApp Element 存储系统保持最新。</block>
-  <block id="0faf4f6bf1f4423ea9871139e1ce2c70" category="paragraph">这些组件包括管理服务， HealthTools ， NetApp Hybrid Cloud Control （ HCC ）， Element 软件，管理节点以及适用于 vCenter Server 的 Element 插件（取决于您的安装）。</block>
   <block id="05384005cf99c46ea432f9d7696f56e1" category="list-text">您正在运行管理节点 11.3 或更高版本。较新版本的管理节点采用模块化架构，可提供单个服务。</block>
   <block id="ffa0fe3bc6da6c9b920ff8ce89a0609f" category="inline-link-macro">升级管理节点</block>
   <block id="ee04baa2ee228c73a80bcb76420c3f83" category="admonition">要检查版本，请登录到管理节点并在登录横幅中查看 Element 版本号。如果您没有 11.3 ，请参见 <block ref="298642ffea6db0968793883313b436ff" category="inline-link-macro-rx"></block>。</block>
   <block id="dc80874f9d06173050949a80fc641cfc" category="list-text">您已将管理服务至少升级到 2.1.326 版。</block>
-  <block id="dbfccf960551b08a68ecfc6a6b7d7b65" category="paragraph">早期的服务包版本不支持使用 HCC 进行升级。</block>
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">您已确保所有节点上的系统时间均已同步，并且已为存储集群和节点正确配置 NTP 。必须在每个节点 Web UI （`https://[IP address] ： 442` ）中为每个节点配置一个 DNS 命名服务器，并且不会出现与时间偏差相关的未解决集群故障。</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">从 Hybrid Cloud Control 更新管理服务</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>。</block>
@@ -5302,15 +5288,7 @@
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">在插件的 * NetApp Element Configuration* 扩展点中的 * 关于 * 选项卡中验证版本更改。</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">您应看到以下版本详细信息或较新版本的详细信息：</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter 插件包含联机帮助内容。要确保帮助包含最新内容，请在升级插件后清除浏览器缓存。</block>
-  <block id="e9777d19bdbe46329cd6d019014e06f5" category="summary">本节的内容介绍了 NetApp SolidFire 全闪存存储系统中组件的建议升级顺序。</block>
-  <block id="73937695a7909fb754787fd36d659ac1" category="doc">升级概述</block>
-  <block id="ccc420b652b5625973223c9a1ff6c73d" category="paragraph">本节的内容介绍了 NetApp SolidFire 全闪存存储系统中组件的建议升级顺序。 ​</block>
   <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">系统升级顺序</block>
-  <block id="31ca97489f7ece65495f2b7febcd4b54" category="paragraph">系统升级顺序内容介绍了完成 SolidFire 全闪存存储系统升级所需的任务。理想情况下，这些过程是在较大的升级序列中执行的，而不是孤立执行的。如果需要基于组件的升级或更新，请参见操作步骤前提条件以确保解决其他复杂问题。</block>
-  <block id="d249f69727f1f2d48b0dab7bd856ed7c" category="section-title">vSphere 升级顺序，包括适用于 vCenter Server 的 Element 插件</block>
-  <block id="b0c690633a2f05229420ba898d01dbe6" category="paragraph">vSphere 升级顺序（包括适用于 vCenter Server 的 Element 插件）内容介绍了重新安装适用于 vCenter Server 的 Element 插件所需的其他升级前和升级后步骤。</block>
-  <block id="1dca9e07f94d868e592e1c557b46fb1b" category="paragraph">按照以下顺序使用适用于 vCenter Server 的 Element 插件升级 NetApp SolidFire 全闪存存储系统中的 vSphere 组件：</block>
-  <block id="3e382c500eb4957fbcfd912b8b3b3f10" category="list-text"><block ref="cfac6e060c52f472293e00df8517db42" category="inline-link-macro-rx"></block>。</block>
   <block id="d7cc77e1654b4ecc5878545e7bf4f78d" category="summary">在 NetApp SolidFire 存储系统升级过程中，您需要升级管理节点。</block>
   <block id="1761ea607c3f8d002099290408801187" category="doc">升级管理节点</block>
   <block id="5b6ab4d3c53ec5567002938471c9c120" category="admonition">vCenter 插件 4.4 或更高版本需要使用模块化架构创建的管理节点 11.3 或更高版本，并提供各个服务。</block>
@@ -5321,14 +5299,11 @@
   <block id="2317b568bcd918edcf31949bac7267a8" category="list-text">如果要保留现有管理节点：<block ref="35b702a8c6556d6de2f367adef3740ff" category="inline-xref-macro-rx"></block></block>
   <block id="ec29698b029ebdc0e8d965b404b70339" category="list-text">管理节点 VM 的 RAM 为 24 GB 。</block>
   <block id="d6db6ab6b83c4d33fe8d22d8155fd5df" category="admonition">要检查管理节点的版本，请登录到管理节点并在登录横幅中查看 Element 版本号。</block>
-  <block id="36f00ec8099ee24ce7cf9f89e0d6f7ac" category="list-text">您已使用 NetApp Hybrid Cloud Control （ HCC ）将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 HCC ： ` \https://&lt;ManagementNodeIP&gt;`</block>
   <block id="580c35d1b4dc1d63073ae537ce0f28ab" category="inline-link-macro">配置其他存储 NIC</block>
   <block id="4733d6f93dbca188e79e25900eaeacb7" category="list-text">您已按照中的说明配置了一个额外的网络适配器（如果需要） <block ref="1f5ebd4d6fe6b214007c2692b1a22cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="97badad042e3a18dd496d204994f3a2f" category="admonition">如果 eth0 无法路由到 SVIP ，则永久性卷可能需要额外的网络适配器。在 iSCSI 存储网络上配置一个新的网络适配器，以便配置永久性卷。</block>
   <block id="2759cbca8a5572fe6fdc10d347df91c2" category="list-text">存储节点正在运行 Element 11.3 或更高版本。</block>
   <block id="1a6ffd97834fd7495156f52f3058e50b" category="list-text">使用 SSH 或控制台访问登录到管理节点虚拟机。</block>
-  <block id="231afe47f3f37d3808096b36c28b4ded" category="inline-link">Element</block>
-  <block id="735d094ea474aeeda5cb987742446180" category="list-text">下载的管理节点 ISO<block ref="f69204473ef391e6243daff2874afa29" category="inline-link-rx"></block> 从 NetApp 支持站点到管理节点虚拟机的软件。</block>
   <block id="e097e26564fa470c938b5aa9cb375497" category="admonition">此 ISO 的名称类似于 `solidfire-fdva-&lt;element release&gt;-px-XX.X.x.XXXX.iso`</block>
   <block id="7af3e8bcf74bc743e6d42428a1ef8e84" category="list-text">对下载的文件运行 md5sum 以检查下载的完整性，并将输出与 NetApp 支持站点上提供的 Element 软件进行比较，如以下示例所示：</block>
   <block id="4e82f8cfbdbaab82d0c8c7e65d59b756" category="paragraph">`sudo md5sum -b &lt;path to ISO&gt;/solidfire-fdva-&lt;element release&gt;-supx-XX.X.XXXX.iso`</block>
@@ -5431,7 +5406,6 @@
   <block id="5d1b774bcdd716279a4e1f6c45c21ae4" category="cell">如果 NetApp Hybrid Cloud Control 无法通过外部连接访问联机软件存储库，则会显示此状态，而不是显示 * 可用版本 * 。如果存储服务 API 返回的升级状态不在可能升级状态的枚举列表中，则也会显示此状态。</block>
   <block id="3aff5fc3a8e8d7210a56cf227b42a6e8" category="section-title">使用 NetApp Hybrid Cloud Control API 升级存储固件</block>
   <block id="fa296e9495ac8602647feef1c1f92880" category="list-text">在响应中，复制并保存固件包 ID ，以供后续步骤使用。</block>
-  <block id="dcce2f519bbe6d7772a0dbf0aac7a943" category="list-text">将存储固件升级包下载到可供管理节点访问的设备。对于 SolidFire 存储系统，请转至 Element 软件<block ref="ad89077eafc4eb6d60327946d6a23ef9" category="inline-link-rx"></block> 并下载最新的存储固件映像。</block>
   <block id="3d849e77fb6435c594cb34aff5254c7a" category="list-text">将存储固件升级软件包上传到管理节点：</block>
   <block id="cbba2755a405305c04008eba28b81066" category="list-text">在 * id* 中输入上一步复制的固件包 ID 。</block>
   <block id="3982b15a7d8608c803ba0fea915a806a" category="list-text">找到安装资产 ID ：</block>
@@ -11589,7 +11563,6 @@
   <block id="01f85930b405f5ff6ea401b95fb623af" category="sidebar">使用管理节点 UI</block>
   <block id="ca1fd6fbdda3d71b63bb4ea743cd48e8" category="sidebar">使用管理节点 REST API</block>
   <block id="4c46c9acea33f3a7201c692e8d84806b" category="sidebar">管理支持连接</block>
-  <block id="27d8cd692aeb03225d292fe0d69c19c0" category="sidebar">升级 SolidFire 系统</block>
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">系统升级过程</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionatRestInfo</block>
   <block id="7312c371e606c4ef84d0e890d014f53f" category="sidebar">开始使用 SolidFire ESDS</block>
@@ -11628,8 +11601,6 @@
   <block id="dc060618420764cdfc7790fdeb1e33e8" category="paragraph">如果您要将 H610S 系列节点升级到 Element 12.3.x ，而该节点运行的 Element 版本早于 11.8 ，则升级过程将包括两个阶段。</block>
   <block id="5e44a1903ec70087cd72eac7efa174b3" category="paragraph">首先执行的第 1 阶段与标准升级到 Element 12.3.x 的过程相同。它会以滚动方式在集群中逐个节点安装 Element 软件和所有 5 个固件更新。由于固件有效负载，每个 H610S 节点的此过程预计大约需要 1.5 到 2 小时，包括在升级结束时为每个节点执行一个冷启动周期。</block>
   <block id="0156654ae4dc6b09e871c56632755132" category="doc">升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统</block>
-  <block id="46ec2391e9110784c0ae0691c567ad15" category="paragraph">按照以下顺序升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统：</block>
-  <block id="0cd7e8b16b69d0465d0cd555180471ad" category="list-text"><block ref="9ab4f30420c80d4c6870d42a969c945d" category="inline-link-macro-rx"></block>。</block>
   <block id="2c191a2c0c7197808c880518728ba922" category="admonition">管理节点 12.3.1 中没有其他功能更改或错误修复。如果您已运行管理节点 12.3 ，则无需将其升级到 12.3.1 。</block>
   <block id="877752a02a9a723465e45e0699c0408a" category="list-text">如果要从管理节点 12.2 升级：<block ref="13ca98900fab2e9dc617ec4e80e5ef22" category="inline-xref-macro-rx"></block></block>
   <block id="c385c319a88b75509bcd9e965511f832" category="list-text">如果要从管理节点 12.0 升级：<block ref="837fd47411e60554dd964007e7b1f57c" category="inline-xref-macro-rx"></block></block>
@@ -12393,4 +12364,34 @@
   <block id="46b7076883c5472e769e88f9cf3495c2" category="admonition">如果 RMA 中的电源功率与已卸下电源的功率不匹配，请勿更换电源设备。请联系 NetApp 支持部门了解后续步骤。</block>
   <block id="5728f0317e6dafcb81e2d7025632bf5e" category="list-text">插入一根或两根电源线。</block>
   <block id="8650e9e71e38ae9e93eb5c72f21a25ea" category="list-text">如果您同时更换了两个电源设备，请转到节点正面，然后按电源按钮打开节点的电源。打开电源后，电源按钮 LED 将呈稳定蓝色亮起。驱动器的蓝色 LED 和标识按钮将开始闪烁。</block>
+  <block id="b7fe022e3d13a1a7248fb1583851f437" category="inline-link">《 NetApp Element 软件 11.8.2 发行说明》</block>
+  <block id="96a6137975cbcfe6dbff95b85cf1b6bf" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block> _new_</block>
+  <block id="78f6798eb036b3dd12c871ca38087892" category="inline-link">存储固件包 2.146 发行说明（最新）</block>
+  <block id="cb459c9e82b22fbd72cf1986df403b4c" category="list-text"><block ref="cb459c9e82b22fbd72cf1986df403b4c" category="inline-link-rx"></block></block>
+  <block id="176d9ae1b8e18dc2cedc534e1da45e7c" category="inline-link">存储固件包 2.99.2 发行说明</block>
+  <block id="7a90185243c33f6e26c13fa828aa78ae" category="list-text"><block ref="7a90185243c33f6e26c13fa828aa78ae" category="inline-link-rx"></block></block>
+  <block id="e8feae6554a0416e918615cc5ee78661" category="paragraph">您可以使用 NetApp Hybrid Cloud Control UI ， NetApp Hybrid Cloud Control API 或 HealthTools 套件运行运行状况检查：</block>
+  <block id="ecf6e9bfc923a11b6b64f4916efd1def" category="paragraph">使用 NetApp Hybrid Cloud Control ，您可以验证存储集群是否已做好升级准备。</block>
+  <block id="814733d416c95bcc389df46e42881e26" category="inline-link">下载页面</block>
+  <block id="9b8271bf8ee401fbab82cfd673a6efe7" category="list-text">将存储固件升级软件包下载到可供管理节点访问的设备；转到 Element 软件<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 并下载最新的存储固件映像。</block>
+  <block id="592247e1218ecdf894b0dc3bf1e2b0c6" category="paragraph">转至 Element 软件<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 并下载最新的存储节点映像。</block>
+  <block id="a4a2ed7ca284633b8f6f40c70d9f2816" category="list-text">下载存储升级软件包；转到 Element 软件<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 并将最新的存储节点映像下载到非管理节点设备。</block>
+  <block id="66605290f00669ae460e8d4ed9f22626" category="list-text">转至 Element 软件<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block>。</block>
+  <block id="37a42081cc0d0c72d69723b5792a6c73" category="list-text">您已使用 NetApp Hybrid Cloud Control 将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 NetApp Hybrid Cloud Control ： ` https://&lt;ManagementNodeIP&gt;`</block>
+  <block id="303c7d52b5c18e714947ecd4996594a2" category="inline-link">管理节点 ISO</block>
+  <block id="bc6733dc102d98376848617102ed0352" category="list-text">下载<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> 从 NetApp 支持站点到管理节点虚拟机的 Element 软件。</block>
+  <block id="9ec21c21d51558c2c4720284cc8e9f10" category="summary">您可以通过升级所有 SolidFire 存储组件，在部署后使 NetApp Element 存储系统保持最新。</block>
+  <block id="59a003ce49b82fe00de09fe03510553f" category="doc">升级顺序概述</block>
+  <block id="95f9414b6ac8911d498b5b4173c859c7" category="paragraph">这些组件包括管理服务， HealthTools ， NetApp Hybrid Cloud Control ， Element 软件，管理节点以及适用于 vCenter Server 的 Element 插件（视您的安装情况而定）。</block>
+  <block id="d38f48e8e196e92a833076faf76e21bc" category="inline-xref">系统升级顺序</block>
+  <block id="fb54f95f1b973757c205d87e6c954cbc" category="paragraph">。 <block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block> 内容介绍了完成 SolidFire 全闪存存储系统升级所需的任务。理想情况下，这些过程是在较大的升级序列中执行的，而不是孤立执行的。如果需要基于组件的升级或更新，请参见操作步骤前提条件以确保解决其他复杂问题。</block>
+  <block id="7ce03284a3322764084b916532f7b97d" category="inline-link-macro">vSphere 升级顺序</block>
+  <block id="8bc00ddcdd87294898356c5ea82fd0f8" category="paragraph">。 <block ref="a73406aeab7e054da6bf77ce7414f310" category="inline-link-macro-rx"></block> 包括适用于 vCenter Server 的 Element 插件内容介绍了重新安装适用于 vCenter Server 的 Element 插件所需的其他升级前和升级后步骤。</block>
+  <block id="df3748edc080e7a8ed49863460584cdd" category="paragraph">早期版本的服务包不支持使用 NetApp Hybrid Cloud Control 进行升级。</block>
+  <block id="2ddcbbcdd4f972f2c02a9a2fe92ff535" category="paragraph">您可以按以下顺序升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统</block>
+  <block id="d87d94fb7beccdf03c401aa9b2c29f59" category="paragraph">从 Element 11.3 管理节点版本开始，管理节点设计已根据提供单个服务的新模块化架构进行了更改。这些模块化服务可为 SolidFire 全闪存存储系统提供集中式和扩展式管理功能。管理服务包括系统遥测，日志记录和更新服务，适用于 vCenter Server 的 Element 插件的 QoSSIOC 服务， NetApp Hybrid Cloud Control 等。</block>
+  <block id="a5237c2b3436db5dc67ab53b053d3ec9" category="paragraph">您可以使用 NetApp Hybrid Cloud Control UI 或管理节点 REST API 更新管理服务：</block>
+  <block id="6dd42a6a80b9ea41a3c15d5cbf5c3528" category="paragraph">您可以使用 NetApp Hybrid Cloud Control 更新 NetApp 管理服务。</block>
+  <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">存储固件包 2.146 的注意事项</block>
+  <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
 </blocks>
