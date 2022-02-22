@@ -372,10 +372,8 @@
   <block id="e159277d51155232c1233693978e7d17" category="admonition">机箱中的节点可能看起来不同，具体取决于您拥有的节点类型（存储或计算）。</block>
   <block id="78125b59155d102e8aaa5251656b20e9" category="cell">H610S 机箱</block>
   <block id="d0903a77d9b0158fbdc08393f7894df5" category="image-alt">显示了 H610S 机箱中的电源设备。</block>
-  <block id="5c5d41430098b88201ab9d8c0c6e93d0" category="list-text">从电源设备拔下电源线。</block>
   <block id="9ba1e260d9d9ae75d8c76cebea108691" category="list-text">提起凸轮把手，然后按下蓝色闩锁以滑出电源设备。</block>
   <block id="7d185efa625ef3bb2e75a41ede056877" category="image-alt">显示了要提起的凸轮把手以及要从机箱中滑出的电源设备。</block>
-  <block id="46c6e16902ce40e3fbad439b4edfcff1" category="admonition">图示为一个示例。电源设备在机箱中的位置以及释放按钮的颜色因机箱类型而异。</block>
   <block id="c371affaa3d21df10005ae240ba61da7" category="list-text">用双手将电源设备的边缘与机箱中的开口对齐，使用凸轮把手将此设备轻轻推入机箱，直到锁定到位，然后将凸轮把手恢复到竖直位置。</block>
   <block id="6c7553e2c54a4ea5197e939a2de02334" category="image-alt">显示了要安装在机箱中的电源设备。</block>
   <block id="24902bdac86d2032ef9b09526e7d9043" category="list-text">按照您收到的包装箱中的说明将故障设备退回 NetApp 。</block>
@@ -12379,4 +12377,20 @@
   <block id="24c0657cc5d2d7b53518905f246af2be" category="paragraph">创建新集群时，如果您使用的存储节点位于共享机箱中，则可能需要考虑使用保护域功能设计机箱级别的故障保护。</block>
   <block id="dffa7774e7868ad62921ad5e0618ff6f" category="paragraph">您可以定义一个与您的特定机箱和节点布局匹配的自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。</block>
   <block id="da8f75460055661317175529ad22e459" category="list-text"><block ref="df090c4e5f2ab56fd22fc14848bb611c" category="inline-xref-macro-rx"></block></block>
+  <block id="fcb8e5f46479748d39d370c7d5d3e089" category="admonition">如果要更换节点中的两个 PSU ，则这些 PSU 必须具有相同的部件号和瓦数。不匹配的 PSU 可能会损坏系统。</block>
+  <block id="d4b1178bc99b1c062ec3e4cb775d517c" category="list-text">使用蓝色拉出标记或序列号确定正确的节点。蓝色拉出标记列出了序列号（ S/N ）和驱动器布局。确认要维护的节点的序列号。</block>
+  <block id="d3a849c6085129b5c7ef9371206b717d" category="list-text">如果要更换这两个电源设备，请继续执行步骤 3 。</block>
+  <block id="27d499e57a611b7a950a594c896ba788" category="list-text">如果您仅更换一个电源设备，请跳至步骤 4 。</block>
+  <block id="0b9a7793836e86629adfdc6be8e9a823" category="list-text">确认节点已关闭或已准备好关闭以进行服务。请注意以下事项：</block>
+  <block id="356ea1d4bf42b3db27b152d2ed31ced7" category="list-text">已关闭电源的节点不会在驱动器或电源按钮上显示任何蓝色电源 LED 。</block>
+  <block id="b11b5d35aa2419d5bde4f4272e04ca36" category="list-text">尚未关闭的节点会在驱动器上显示蓝色 LED 并显示电源按钮。</block>
+  <block id="1b4441aea72b5b94cb7aaeeec6f22a2b" category="list-text">已关闭并准备好进行服务的节点会显示一个闪烁的 PSU LED ，此 LED 会在亮起（绿色）和熄灭（无颜色）时闪烁。</block>
+  <block id="21fd44fd2387880fa98d218448007374" category="list-text">尚未关闭的节点会在电源上显示稳定的绿色 LED 。</block>
+  <block id="1ca28788f249845fb043f9cc03992e43" category="list-text">如果要更换两个设备，请从电源设备或同时从两个电源线拔下电源线。</block>
+  <block id="03373c9988bc58638f4b19c25d5b1874" category="admonition">图示为一个示例。电源设备在机箱中的位置以及释放按钮的颜色因机箱类型而异。</block>
+  <block id="dececd49e4a9e7534e8235146a13626d" category="paragraph">如果要更换另一个电源设备，请重复步骤 3 ， 4 和 5 。</block>
+  <block id="924daf33816be3f05e518721c572e4af" category="list-text">找到从机箱中卸下的电源设备上的标签。此标签包含制造商和输出功率的详细信息。</block>
+  <block id="46b7076883c5472e769e88f9cf3495c2" category="admonition">如果 RMA 中的电源功率与已卸下电源的功率不匹配，请勿更换电源设备。请联系 NetApp 支持部门了解后续步骤。</block>
+  <block id="5728f0317e6dafcb81e2d7025632bf5e" category="list-text">插入一根或两根电源线。</block>
+  <block id="8650e9e71e38ae9e93eb5c72f21a25ea" category="list-text">如果您同时更换了两个电源设备，请转到节点正面，然后按电源按钮打开节点的电源。打开电源后，电源按钮 LED 将呈稳定蓝色亮起。驱动器的蓝色 LED 和标识按钮将开始闪烁。</block>
 </blocks>
