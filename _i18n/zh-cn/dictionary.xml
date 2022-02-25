@@ -12394,4 +12394,5 @@
   <block id="6dd42a6a80b9ea41a3c15d5cbf5c3528" category="paragraph">您可以使用 NetApp Hybrid Cloud Control 更新 NetApp 管理服务。</block>
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">存储固件包 2.146 的注意事项</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
+  <block id="329461104609d2ece68f1910799e2db0" category="list-text">您已使用 NetApp Hybrid Cloud Control 将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 NetApp Hybrid Cloud Control ： `https://&lt;ManagementNodeIP&gt;`</block>
 </blocks>
