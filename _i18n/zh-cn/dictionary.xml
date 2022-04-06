@@ -4591,7 +4591,6 @@
   <block id="447a2c77b25a29c4b95502c7ce068a00" category="admonition">您可以添加用户名或允许脚本提示您输入信息。</block>
   <block id="cad0c5c8ceda74235801d01a1f9fd1c9" category="list-text">运行 `redeploy-mnode` 命令。重新部署完成后，此脚本将显示一条成功消息。</block>
   <block id="1ca15a17f59b2f41a1d0fa788065de9d" category="inline-link-macro">重新配置管理节点的身份验证</block>
-  <block id="cfeda7152469f5af9bf12e191eb35e22" category="list-text">如果您使用系统的完全限定域名（ FQDN ）访问 Element Web 界面（例如管理节点或 NetApp Hybrid Cloud Control ）， <block ref="1426c5f10479a8dee24e34881e37d95f" category="inline-link-macro-rx"></block>。</block>
   <block id="1ff95dcbc18b37a5ced1333dc80463dc" category="inline-link-macro">NetApp 支持远程支持通道（ RST ）会话访问</block>
   <block id="5586aaabd0a6d3e90ba91ecb4aabc919" category="inline-link-macro">再次禁用 SSH</block>
   <block id="24260d30caec4399226e019ec2a8a7d4" category="admonition">提供的 SSH 功能 <block ref="6bb28df38aa0844e287b2e23fc581879" category="inline-link-macro-rx"></block> 默认情况下，在运行管理服务 2.18 及更高版本的管理节点上处于禁用状态。如果先前已在管理节点上启用 SSH 功能，则可能需要 <block ref="5b81c87a44b075e9194cc26f66c2b99f" category="inline-link-macro-rx"></block> 在已恢复的管理节点上。</block>
@@ -12312,4 +12311,5 @@
   <block id="5e790f023d6f269f25709b2372d8cef2" category="list-text">使用 TUI 在 MTU 大于或等于 1500 字节的管理网络上配置正确的 IP 。</block>
   <block id="8c79dbfa1dd86948b37af21a8d7639d5" category="list-text">将正确的 VM 网络重新分配给 VM 。</block>
   <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">如果 DHCP 分配的 IP MTU 小于 1500 字节，则可能会阻止您配置管理节点网络或使用管理节点 UI 。</block>
+  <block id="1b8210afec8bf22eaf6aeec2c734fa6c" category="list-text">如果您使用系统的完全限定域名（ FQDN ）访问 Element Web 界面（例如管理节点或 NetApp Hybrid Cloud Control ）， <block ref="3bef977fd72a25456136a30f2d648743" category="inline-link-macro-rx"></block>。</block>
 </blocks>
