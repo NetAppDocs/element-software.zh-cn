@@ -5929,7 +5929,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-28 00:26:56 +0000">01/28/2022</time>
+    <time datetime="2022-04-06 10:17:31 +0000">04/06/2022</time>
     
   
 
@@ -6014,7 +6014,7 @@
 <p>Element 12.2 管理节点是一种可选升级。现有部署不需要此功能。</p>
 </div>
 <div class="paragraph">
-<p>在遵循此操作步骤之前，您应了解 <a href="../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes">"永久性卷"</a> 以及是否要使用它们。永久性卷是可选的，但建议在虚拟机丢失时用于管理节点配置数据恢复。</p>
+<p>在遵循此操作步骤之前，您应了解 <a href="../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes">"永久性卷"</a> 以及是否要使用它们。永久性卷是可选的，但建议在虚拟机（ VM ）丢失时用于管理节点配置数据恢复。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步骤</div>
@@ -6023,7 +6023,7 @@
 <p><a href="#Download ISO or OVA and deploy the VM">[Download ISO or OVA and deploy the VM]</a></p>
 </li>
 <li>
-<p><a href="#Create the management node admin and configure the network">[Create the management node admin and configure the network]</a></p>
+<p><a href="#create_mnode_admin">创建管理节点管理员并配置网络</a></p>
 </li>
 <li>
 <p><a href="#Configure time sync">[Configure time sync]</a></p>
@@ -6074,7 +6074,7 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>使用以下配置从虚拟机管理程序创建新的 64 位虚拟机：</p>
+<p>使用以下配置从虚拟机管理程序创建新的 64 位 VM ：</p>
 <div class="ulist">
 <ul>
 <li>
@@ -6113,7 +6113,7 @@
 <img src="/us-en/element-software/images/important.svg" alt="重要">
 </td>
 <td class="content">
-请勿在此操作步骤中指示稍后启动虚拟机的步骤之前启动虚拟机。
+请勿在此操作步骤 中指示稍后启动此虚拟机的步骤之前启动此虚拟机。
 </td>
 </tr>
 </table>
@@ -6162,6 +6162,37 @@
 </td>
 <td class="content">
 要浏览菜单选项，请按向上或向下箭头键。要在各个按钮之间移动，请按 Tab 。要从按钮移至字段，请按 Tab 。要在字段之间导航，请按向上或向下箭头键。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>如果网络上有一个动态主机配置协议（ DHCP ）服务器，用于分配最大传输单元（ MTU ）小于 1500 字节的 IP ，则必须执行以下步骤：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>临时将管理节点置于不使用 DHCP 的 vSphere 网络上，例如 iSCSI 。</p>
+</li>
+<li>
+<p>重新启动 VM 或重新启动 VM 网络。</p>
+</li>
+<li>
+<p>使用 TUI 在 MTU 大于或等于 1500 字节的管理网络上配置正确的 IP 。</p>
+</li>
+<li>
+<p>将正确的 VM 网络重新分配给 VM 。</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注">
+</td>
+<td class="content">
+如果 DHCP 分配的 IP MTU 小于 1500 字节，则可能会阻止您配置管理节点网络或使用管理节点 UI 。
 </td>
 </tr>
 </table>
