@@ -5,6 +5,7 @@ keywords: user types, account, cluster, access active nodes, per-node UI
 summary: 运行 NetApp Element 软件的存储集群中可以存在两种类型的管理员帐户：主集群管理员帐户和集群管理员帐户。 
 ---
 = 存储集群管理员帐户类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

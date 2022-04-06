@@ -5,6 +5,7 @@ keywords: volume,pairing,order,operations,volumes,pairing,pair,pairs
 summary: 必须先在两个相应集群之间创建一个集群对，然后才能对卷进行配对。 
 ---
 = 卷配对操作顺序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVolumeInfo
 summary: snapMirrorVolumeInfo 对象包含有关 SnapMirror 关系中卷位置的信息，例如卷名称和类型。 
 ---
 = snapMirrorVolumeInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

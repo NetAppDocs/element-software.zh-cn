@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: SNMP network 对象包含有关集群节点的 SNMP v3 配置的信息。 
 ---
 = 网络（ SNMP ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

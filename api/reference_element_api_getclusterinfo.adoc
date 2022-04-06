@@ -5,6 +5,7 @@ keywords: cluster,get,info,getting,getclusterinfo
 summary: 您可以使用 GetClusterInfo 方法返回有关集群的配置信息。 
 ---
 = GetClusterInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

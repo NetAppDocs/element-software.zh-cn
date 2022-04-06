@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, enabl
 summary: 您可以使用 NetApp Element 软件 EnableFeature API 方法启用 FIPS 驱动器功能。 
 ---
 = 启用 FIPS 驱动器功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

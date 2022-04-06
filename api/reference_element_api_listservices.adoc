@@ -5,6 +5,7 @@ keywords: storage,cluster,services,list,listing,listservices
 summary: 您可以使用 ListServices 方法列出节点，驱动器，当前软件以及集群上运行的其他服务的服务信息。 
 ---
 = ListServices
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

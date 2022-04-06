@@ -5,6 +5,7 @@ keywords:
 summary: 在使用光纤通道节点和 SolidFire 存储节点创建新集群时，这些节点的全球通用端口名称 \ （ WWPN ）地址可在 Web UI 中找到。您可以使用 WWPN 地址对光纤通道交换机进行分区。 
 ---
 = 为光纤通道节点设置分区
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

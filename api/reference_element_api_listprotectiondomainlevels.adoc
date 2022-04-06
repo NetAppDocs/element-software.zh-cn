@@ -5,6 +5,7 @@ keywords: list,listing,protection,domain,levels,level,listprotectiondomainlevels
 summary: 您可以使用 ListProtectionDomainLevels 方法列出存储集群的容错和故障恢复能力级别。容错级别表示集群在发生故障时继续读取和写入数据的能力，而故障恢复能力级别则表示存储集群自动从一个或多个故障中自行修复的能力。 
 ---
 = ListProtectionDomainLevels
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: configs configurations,idp configs,list
 summary: 您可以使用 ListIdpConfigurations 方法列出第三方 IdP 的配置。或者，您也可以提供 enabledOnly 标志来检索当前已启用的 IdP 配置，或者提供 IdP 元数据 UUID 或 IdP 名称来查询特定 IdP 配置的信息。 
 ---
 = ListIdpConfigurations
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

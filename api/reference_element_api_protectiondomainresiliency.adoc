@@ -5,6 +5,7 @@ keywords: object,objects,protectionDomainResiliency
 summary: protectionDomainResiliency 对象包含此存储集群的故障恢复能力状态。故障恢复能力表示存储集群能够在其关联保护域类型的单个保护域中自动从一个或多个故障中自行修复。如果某个存储集群能够在任何一个存储节点发生故障时继续读取和写入数据，则会被视为已修复（这种状态称为节点容错）。 
 ---
 = 保护域弹性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

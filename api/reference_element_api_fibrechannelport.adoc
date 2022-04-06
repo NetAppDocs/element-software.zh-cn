@@ -5,6 +5,7 @@ keywords: object,objects,fibreChannelPort
 summary: fibreChannelPort 对象包含有关节点上各个端口或集群中整个节点的信息。您可以使用 ListNodeFibreChannelPortInfo 方法检索此信息。 
 ---
 = fibreChannelPort
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

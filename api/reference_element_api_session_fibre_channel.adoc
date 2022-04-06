@@ -5,6 +5,7 @@ keywords: object,objects,session
 summary: session 对象包含有关对集群可见的每个光纤通道会话以及该会话在哪些目标端口上可见的信息。您可以使用 ListFibreChannelSessions API 方法检索此信息。 
 ---
 = 会话（光纤通道）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

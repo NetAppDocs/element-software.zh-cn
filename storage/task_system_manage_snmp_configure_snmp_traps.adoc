@@ -5,6 +5,7 @@ keywords: snmp, config, traps, notifications, monitor, health, enable, disable
 summary: 系统管理员可以使用 SNMP 陷阱（也称为通知）监控 SolidFire 集群的运行状况。 
 ---
 = 配置 SNMP 陷阱
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

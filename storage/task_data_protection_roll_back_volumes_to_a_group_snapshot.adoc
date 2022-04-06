@@ -5,6 +5,7 @@ keywords: volumes, rollback, group snapshot, purge
 summary: 您可以随时将一组卷回滚到组快照。 
 ---
 = 将卷回滚到组快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

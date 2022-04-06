@@ -5,6 +5,7 @@ keywords: origin,get,getting,getorigin,certificate
 summary: 您可以使用 GetOrigin 方法获取构建节点的源证书。 
 ---
 = GetOrigin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: group snapshot members, edit
 summary: 您可以编辑现有组快照的成员的保留设置。 
 ---
 = 编辑组快照的成员
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

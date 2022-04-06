@@ -5,6 +5,7 @@ keywords: cluster,interface,preferences,delete,deleting,DeleteClusterInterfacePr
 summary: 使用 DeleteClusterInterfacePreference 方法，与运行 Element 软件的存储集群集成的系统可以删除现有集群接口首选项。此方法供内部使用。 
 ---
 = DeleteClusterInterfacePreference
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

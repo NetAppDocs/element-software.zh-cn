@@ -5,6 +5,7 @@ keywords: backup,target,targets,get,getting,GetBackupTarget
 summary: 您可以使用 GetBackupTarget 方法返回有关已创建的特定备份目标的信息。 
 ---
 = GetBackupTarget
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

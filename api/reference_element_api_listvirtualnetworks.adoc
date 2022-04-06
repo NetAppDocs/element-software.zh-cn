@@ -5,6 +5,7 @@ keywords: virtual,network,networks,listing,list,listvirtualnetworks
 summary: 您可以使用 ListVirtualNetworks 方法列出为集群配置的所有虚拟网络。 
 ---
 = ListVirtualNetworks
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

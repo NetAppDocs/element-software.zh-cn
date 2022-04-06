@@ -5,6 +5,7 @@ keywords: node,api,methods
 summary: 您可以使用节点 API 方法配置单个节点。这些方法可在需要配置，已配置但尚未加入集群或正在积极加入集群的单个节点上运行。通过节点 API 方法，您可以查看和修改各个节点以及用于与节点通信的集群网络的设置。您必须对单个节点运行这些方法；不能对集群地址运行每个节点 API 方法。 
 ---
 = 节点 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: remove qos policy, disassociate from a volume, modify
 summary: 您可以通过选择自定义 QoS 设置从卷中删除 QoS 策略关联。 
 ---
 = 删除卷的 QoS 策略关联
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

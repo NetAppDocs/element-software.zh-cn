@@ -5,6 +5,7 @@ keywords:
 summary: 通过卷访问组，可以在光纤通道客户端和 SolidFire 存储系统上的卷之间进行通信。将光纤通道客户端启动程序（ WWPN ）映射到卷访问组中的卷可以在光纤通道网络和 SolidFire 卷之间实现安全的数据 I/O 。 
 ---
 = 为光纤通道客户端创建卷访问组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

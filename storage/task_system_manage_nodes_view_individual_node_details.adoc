@@ -5,6 +5,7 @@ keywords: nodes, view, details, vlan, mip, cip, sip, virtual id
 summary: '您可以查看单个节点的详细信息，例如服务标签，驱动器详细信息以及利用率图形和驱动器统计信息。"Cluster" 选项卡的 "Nodes" 页面提供了 "Version" 列，您可以在此列中查看每个节点的软件版本。' 
 ---
 = 查看节点详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

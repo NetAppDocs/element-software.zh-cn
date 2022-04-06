@@ -5,6 +5,7 @@ keywords: what is, node, management node, storage node, fibre channel, state, pe
 summary: 节点是指分组到集群中以块存储或计算资源形式访问的硬件。 
 ---
 = 节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

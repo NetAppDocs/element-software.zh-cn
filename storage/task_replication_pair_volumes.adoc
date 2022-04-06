@@ -5,6 +5,7 @@ keywords: volume pairings, replication, cluster, cluster pair
 summary: 在集群对中的集群之间建立连接后，您可以将一个集群上的卷与该集群对中另一个集群上的卷配对。建立卷配对关系后，您必须确定哪个卷是复制目标。 
 ---
 = 对卷配对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

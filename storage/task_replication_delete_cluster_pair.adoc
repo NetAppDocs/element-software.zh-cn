@@ -5,6 +5,7 @@ keywords: cluster pairs, delete
 summary: 您可以从集群对中任一集群的 Element UI 中删除集群对。 
 ---
 = 删除集群对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

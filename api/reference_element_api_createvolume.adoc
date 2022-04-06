@@ -5,6 +5,7 @@ keywords: create,volume,volumes,creating,CreateVolume
 summary: 您可以使用 CreateVolume 方法在集群上创建新的空卷。卷创建完成后，即可通过 iSCSI 连接该卷。 
 ---
 = CreateVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

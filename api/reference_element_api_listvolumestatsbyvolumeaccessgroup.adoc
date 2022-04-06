@@ -5,6 +5,7 @@ keywords: volumes,volume,stats,list,listing,access,group,listvolumestatsbyvolume
 summary: 您可以使用 ListVolumeStatsByVolumeAccessGroup 方法列出指定卷访问组成员的所有卷的总活动测量结果。 
 ---
 = ListVolumeStatsByVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,pair,pairs,modify,modifying,edit,editing,changing,change,modify
 summary: 您可以使用 ModifyVolumePair 方法暂停或重新启动一对卷之间的复制。此方法在源卷（具有读 / 写访问权限的卷）上设置。 
 ---
 = ModifyVolumePair
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

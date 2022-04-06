@@ -5,6 +5,7 @@ keywords: volume pairings, replication, validate volume replication
 summary: 复制卷后，您应确保源卷和目标卷处于活动状态。处于活动状态时，卷将配对，数据将从源卷发送到目标卷，并且数据处于同步状态。 
 ---
 = 验证卷复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

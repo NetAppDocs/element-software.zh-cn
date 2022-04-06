@@ -5,6 +5,7 @@ keywords: object,objects,pendingActiveNode
 summary: pendingActiveNode 对象包含有关当前处于 pendingActive 状态的节点的信息，这些节点处于 Pending 和 Active 状态。这些节点是当前正在返回到出厂软件映像的节点。使用 ListPendingActiveNodes API 方法返回所有待定活动节点的此信息列表。 
 ---
 = pendingActiveNode
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

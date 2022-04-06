@@ -5,6 +5,7 @@ keywords: drives, details, manage, filter, cluster
 summary: '"Cluster" 选项卡上的 "Drives" 页面提供了集群中活动驱动器的列表。您可以通过从 "Active" ， "Available" ， "Removing" ， "Erasing" 和 "Failed" 选项卡中选择来筛选页面。' 
 ---
 = 驱动器详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

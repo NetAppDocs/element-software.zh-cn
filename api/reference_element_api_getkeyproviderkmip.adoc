@@ -5,6 +5,7 @@ keywords: KMIP,key provider,retrieving,get,retrieve
 summary: 您可以使用 GetKeyProviderKmip 方法检索有关指定密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序的信息。 
 ---
 = GetKeyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

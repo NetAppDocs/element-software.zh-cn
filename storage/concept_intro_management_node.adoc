@@ -5,6 +5,7 @@ keywords: what is the management node, what is the mNode
 summary: 管理节点 \ （ mNode\ ）是一个虚拟机，它与一个或多个基于 Element 软件的存储集群并行运行。它用于升级和提供系统服务，包括监控和遥测，管理集群资产和设置，运行系统测试和实用程序，以及启用 NetApp 支持访问以进行故障排除。 
 ---
 = Element 软件的管理节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

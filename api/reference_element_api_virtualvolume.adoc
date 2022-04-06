@@ -5,6 +5,7 @@ keywords: object,objects,virtualVolume
 summary: virtualVolume 对象包含有关虚拟卷的配置信息以及有关虚拟卷快照的信息。它不包括运行时或使用情况信息。您可以使用 ListVirtualVolumes 方法检索集群的此信息。 
 ---
 = virtualVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

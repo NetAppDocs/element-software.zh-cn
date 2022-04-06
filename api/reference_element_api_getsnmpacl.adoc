@@ -5,6 +5,7 @@ keywords: snmp,acl,get,getting,getsnmpacl
 summary: 您可以使用 GetSnmpACL 方法获取集群节点上的当前 SNMP 访问权限。 
 ---
 = GetSnmpACL
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

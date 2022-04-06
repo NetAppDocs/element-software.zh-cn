@@ -5,6 +5,7 @@ keywords: solidfire chassis, power supply replacement, sf-series nodes
 summary: 每个 SolidFire 机箱都包含两个电源设备，用于实现电源冗余。如果某个电源设备发生故障，您应尽快更换它，以确保机箱具有冗余电源。 
 ---
 = 更换电源设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster,list,listing,active,node,nodes,listactivenodes
 summary: 您可以使用 ListActiveNodes 方法返回集群中当前活动节点的列表。 
 ---
 = ListActiveNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

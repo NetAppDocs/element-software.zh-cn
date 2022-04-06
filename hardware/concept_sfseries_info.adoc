@@ -5,6 +5,7 @@ keywords: sf-series nodes, hardware installation, hardware maintenance
 summary: 您可以找到有关安装和维护 SF 系列存储节点的信息。 
 ---
 = SF 系列硬件信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

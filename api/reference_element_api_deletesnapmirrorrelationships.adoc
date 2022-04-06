@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,relationships,delete,deleting,DeleteSnapMirror
 summary: Element Web UI 使用 DeleteSnapMirrorRelationships 方法删除源端点和目标端点之间的一个或多个 SnapMirror 关系。 
 ---
 = DeleteSnapMirrorRelationships
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

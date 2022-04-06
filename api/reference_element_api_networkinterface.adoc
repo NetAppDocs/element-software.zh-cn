@@ -5,6 +5,7 @@ keywords: object,objects,networkInterface
 summary: networkInterface 对象包含存储节点上各个网络接口的配置信息。 
 ---
 = 网络接口
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

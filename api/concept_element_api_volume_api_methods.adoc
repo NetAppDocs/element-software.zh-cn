@@ -5,6 +5,7 @@ keywords: volume,API,method,methods
 summary: 通过 Element 软件卷 API 方法，您可以管理驻留在存储节点上的卷。您可以使用以下方法创建，修改，克隆和删除卷。您还可以使用卷 API 方法收集和显示卷的数据测量结果。 
 ---
 = 卷 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

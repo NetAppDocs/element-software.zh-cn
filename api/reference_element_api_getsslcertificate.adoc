@@ -5,6 +5,7 @@ keywords: SSL,certificate,cert,get,getting,active,GetSSLCertificate
 summary: 您可以使用 GetSSLCertificate 方法检索集群存储节点上当前处于活动状态的 SSL 证书。 
 ---
 = GetSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

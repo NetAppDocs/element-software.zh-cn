@@ -5,6 +5,7 @@ keywords: virtual routing, forwarding, enable, vrf, storage networks, create a v
 summary: 您可以启用虚拟路由和转发 \ （ VRF\ ），这样就可以使一个路由表的多个实例存在于一个路由器中并同时运行。此功能仅适用于存储网络。 
 ---
 = 启用虚拟路由和转发
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

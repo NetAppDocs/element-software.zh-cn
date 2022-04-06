@@ -5,6 +5,7 @@ keywords: SNMP,enable,enabling,EnableSNMP
 summary: 您可以使用 EnableSnmp 方法在集群节点上启用 SNMP 。启用 SNMP 后，操作适用场景集群中的所有节点以及传递的值将替换在先前对 EnableSnmp 的任何调用中设置的所有值。 
 ---
 = EnableSnmp
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

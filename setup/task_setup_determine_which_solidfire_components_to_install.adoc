@@ -5,6 +5,7 @@ keywords: setup, element, solidfire active iq
 summary: 根据配置和部署选项，您可能需要检查应安装哪些 SolidFire 组件，例如管理节点， Active IQ 和 NetApp 监控代理（ NMA\ ）。 
 ---
 = 确定要安装的 SolidFire 组件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, api, object, objects, clusterInfo
 summary: clusterInfo 对象包含节点用于与集群通信的信息。您可以使用 GetClusterInfo API 方法获取此信息。 
 ---
 = ClusterInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

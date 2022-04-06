@@ -5,6 +5,7 @@ keywords: management services, aff
 summary: 管理服务可为 SolidFire 全闪存存储提供集中式和扩展式管理功能。这些服务包括 Active IQ 系统遥测，日志记录和服务更新，以及适用于 vCenter 的 Element 插件的 QoSSIOC 服务。 
 ---
 = 适用于 SolidFire 全闪存存储的管理服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

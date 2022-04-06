@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 CancelClone 方法停止正在进行的卷克隆或卷复制过程。取消组克隆操作后，系统将完成并删除该操作的关联 asyncHandle 。 
 ---
 = 正在取消克隆
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

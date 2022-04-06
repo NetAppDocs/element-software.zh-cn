@@ -5,6 +5,7 @@ keywords: delete,deleting,initiator,initiators,DeleteInitiators
 summary: 您可以使用 DeleteInitiators 从系统中删除一个或多个启动程序（以及从任何关联的卷或卷访问组中删除）。 
 ---
 = DeleteInitiators
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

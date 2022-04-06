@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorNode
 summary: snapMirrorNode 对象包含有关 SnapMirror 关系中目标 ONTAP 集群节点的信息。 
 ---
 = snapMirrorNode
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

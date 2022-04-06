@@ -5,6 +5,7 @@ keywords: overview, snapmirror, snapshots, replicating between clusters, managin
 summary: 运行 NetApp Element 软件的系统支持 SnapMirror 功能，可使用 NetApp ONTAP 系统复制和还原快照。 
 ---
 = SnapMirror 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

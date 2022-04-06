@@ -5,6 +5,7 @@ keywords: common,methods
 summary: 常用方法是用于检索有关存储集群， API 本身或正在进行的 API 操作的信息的方法。 
 ---
 = 通用方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

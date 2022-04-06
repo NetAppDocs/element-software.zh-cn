@@ -5,6 +5,7 @@ keywords: node,nodes,cluster,remove,removing,removenodes
 summary: 您可以使用 RemoveNodes 删除不应再加入集群的一个或多个节点。 
 ---
 = RemoveNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

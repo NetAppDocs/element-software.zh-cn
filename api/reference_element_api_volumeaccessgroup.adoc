@@ -5,6 +5,7 @@ keywords: object,objects,volumeAccessGroup
 summary: volumeAccessGroup 对象包含有关特定卷访问组的信息。您可以使用 API 方法 ListVolumeAccessGroups 为所有访问组检索此信息的列表。 
 ---
 = 卷访问组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,initiators,initiator,att
 summary: 您可以使用 ModifyInitiators 方法更改一个或多个现有启动程序的属性。 
 ---
 = ModifyInitiators
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

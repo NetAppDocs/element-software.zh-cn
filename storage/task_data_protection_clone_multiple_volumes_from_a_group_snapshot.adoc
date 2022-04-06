@@ -5,6 +5,7 @@ keywords: multiple volumes, group snapshot, clone, create, data protection
 summary: 您可以从时间点组快照克隆一组卷。此操作要求卷的组快照已存在，因为组快照用作创建卷的基础。创建卷后，您可以像系统中的任何其他卷一样使用这些卷。 
 ---
 = 从组快照克隆多个卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

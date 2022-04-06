@@ -5,6 +5,7 @@ keywords: sort lists, sorting on a single column, sorting on multiple columns, s
 summary: 您可以在 Element UI 的某些页面上按一个或多个条件对列表信息进行排序。这有助于您在屏幕上排列所需的信息。 
 ---
 = 对列表进行排序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

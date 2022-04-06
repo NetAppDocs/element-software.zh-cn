@@ -5,6 +5,7 @@ keywords: set,setting,license,key
 summary: 在 SolidFire 企业 SDS 存储集群上，您可以使用 SetLicenseKey 方法为存储集群设置许可证密钥。存储集群的许可证密钥由集群的订单号和序列号组成，并激活您为 Element 软件购买的容量模型。 
 ---
 = SetLicenseKey
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

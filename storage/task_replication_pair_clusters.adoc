@@ -5,6 +5,7 @@ keywords: pair clusters, replication, connect clusters, data protection
 summary: 要使用实时复制功能，您必须首先将两个集群配对。将两个集群配对并连接后，您可以将一个集群上的活动卷配置为持续复制到另一个集群，从而提供持续数据保护 \ （ CDP\ ）。 
 ---
 = 对集群进行配对以进行复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

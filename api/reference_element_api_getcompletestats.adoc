@@ -5,6 +5,7 @@ keywords:
 summary: NetApp 工程人员使用 GetCompleteStats API 方法测试新功能。从 GetCompleteStats 返回的数据不会进行记录，并且会频繁更改，并且无法保证其准确性。您不应使用 GetCompleteStats 收集性能数据或与运行 Element 软件的存储集群进行任何其他管理集成。 
 ---
 = GetCompleteStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

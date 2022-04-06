@@ -5,6 +5,7 @@ keywords: CreateCluster,cluster,create,creating,initialize,initializing
 summary: '您可以使用 CreateCluster 方法初始化拥有 "mvip" 和 "svip" 地址的集群中的节点。每个新集群都会使用集群中第一个节点的管理 IP （ MIP ）进行初始化。此方法还会自动将要配置的所有节点添加到集群中。每次初始化新集群时，您只需要使用此方法一次。' 
 ---
 = CreateCluster
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

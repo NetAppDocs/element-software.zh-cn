@@ -5,6 +5,7 @@ keywords: system events, monitor, view event log
 summary: 您可以查看有关在系统中检测到的各种事件的信息。系统每 30 秒刷新一次事件消息。事件日志显示集群的关键事件。 
 ---
 = 查看有关系统事件的信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

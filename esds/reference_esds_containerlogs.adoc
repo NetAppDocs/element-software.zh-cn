@@ -5,6 +5,7 @@ keywords: element, solidfire esds, get container logs, sds containers
 summary: 了解有关 SolidFire ESDS 容器以及从何处获取与其关联的日志的详细信息。此处提供的信息可帮助您开始收集日志以进行故障排除。最好联系 NetApp 支持部门，让精通日志分析的经过培训的工程师帮助解决问题。 
 ---
 = 收集容器日志
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: drives, manage, cluster, element ui, remove drives
 summary: 每个节点都包含一个或多个物理驱动器，用于存储集群的部分数据。成功将驱动器添加到集群后，集群将利用驱动器的容量和性能。您可以使用 Element UI 管理驱动器。 
 ---
 = 管理驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

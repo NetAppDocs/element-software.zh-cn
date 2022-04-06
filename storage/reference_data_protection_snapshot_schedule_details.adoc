@@ -5,6 +5,7 @@ keywords: snapshots, snapshot schedules
 summary: 在数据保护 \> 计划页面上，您可以在快照计划列表中查看以下信息。 
 ---
 = Snapshot 计划详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

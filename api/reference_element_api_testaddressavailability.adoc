@@ -5,6 +5,7 @@ keywords: ip,address,availability,test,testing,ensemble,cluster,testaddressavail
 summary: 您可以使用 TestAddressAvailability 方法检查存储集群中的某个接口是否正在使用某个 IP 地址。 
 ---
 = TestAddressAvailability
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

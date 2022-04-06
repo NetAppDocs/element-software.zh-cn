@@ -5,6 +5,7 @@ keywords: setsnmpACL,set,setting,snmp,acl,permissions,access,control,list
 summary: 您可以使用 SetSnmpACL 方法在集群节点上配置 SNMP 访问权限。使用此接口设置的值将应用于集群中的所有节点，传递的值将替换先前任何 SetSnmpACL 调用中设置的所有值。另请注意，使用此接口设置的值将替换使用 SetSnmpInfo 设置的所有 network 或 usmUsers 值。 
 ---
 = SetSnmpACL
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

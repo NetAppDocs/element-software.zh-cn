@@ -5,6 +5,7 @@ keywords: volume,volumes,purge,purging,multiple,deleted,purgedeletedvolumes
 summary: 您可以使用 PurgeDeletedVolumes 方法立即永久清除已删除的卷；您可以使用此方法一次最多清除 500 个卷。 
 ---
 = PurgeDeletedVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: virtual,volume,storage,container,containers,list,listing,liststorageco
 summary: 您可以使用 ListStorageContainers 方法检索有关系统已知的所有虚拟卷存储容器的信息。 
 ---
 = ListStorageContainers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

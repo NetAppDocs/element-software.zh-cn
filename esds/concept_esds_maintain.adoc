@@ -5,6 +5,7 @@ keywords: solidfire esds, software-defined storage, maintain, troubleshooting, m
 summary: 查找有关使用维护模式和更换 SolidFire ESDS 集群中的驱动器的信息。 
 ---
 = 维护 SolidFire ESDS
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

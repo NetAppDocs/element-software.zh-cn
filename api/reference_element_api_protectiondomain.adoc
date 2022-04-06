@@ -5,6 +5,7 @@ keywords: object,objects,protection domains
 summary: protectionDomain 对象包含保护域的名称和类型详细信息。 
 ---
 = 保护域
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

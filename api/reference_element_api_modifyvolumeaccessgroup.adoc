@@ -5,6 +5,7 @@ keywords: volume,access,group,modify,modifying,updating,changing,change,update,e
 summary: 您可以使用 ModifyVolumeAccessGroup 方法更新启动程序以及在卷访问组中添加或删除卷。 
 ---
 = ModifyVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

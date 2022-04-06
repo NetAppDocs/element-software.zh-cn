@@ -5,6 +5,7 @@ keywords: 'network setup, setup network, switch requirements, port requirements,
 summary: SolidFire 系统的网络设置由交换机和端口要求组成。这些功能的实施取决于您的系统。 
 ---
 = 网络
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

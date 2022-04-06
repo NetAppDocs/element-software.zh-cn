@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: network \ （所有接口 \ ）对象收集有关存储节点的网络接口配置的信息。您可以使用 getconfig 和 GetNetworkConfig 方法为存储节点获取此信息。 
 ---
 = 网络（所有接口）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

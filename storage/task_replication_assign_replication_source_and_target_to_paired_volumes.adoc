@@ -5,6 +5,7 @@ keywords: volume pairings, paired volumes, replication source, assign
 summary: 卷配对后，您必须分配源卷及其复制目标卷。复制源或目标可以是卷对中的任一卷。如果源卷不可用，您也可以使用此操作步骤将发送到源卷的数据重定向到远程目标卷。 
 ---
 = 为配对卷分配复制源和目标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

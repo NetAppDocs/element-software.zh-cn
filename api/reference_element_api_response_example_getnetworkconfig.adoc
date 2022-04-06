@@ -5,6 +5,7 @@ keywords: response,example,getnetworkconfig
 summary: GetNetworkConfig 方法返回类似于以下示例的响应。 
 ---
 = GetNetworkConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

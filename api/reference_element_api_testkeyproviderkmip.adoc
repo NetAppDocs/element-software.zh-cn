@@ -5,6 +5,7 @@ keywords: KMIP,key provider,testing,test
 summary: 您可以使用 TestKeyProviderKmip 方法测试指定的密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序是否可访问且运行正常。 
 ---
 = TestKeyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

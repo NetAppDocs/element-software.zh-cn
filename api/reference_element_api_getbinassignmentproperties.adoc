@@ -5,6 +5,7 @@ keywords: bin assignment,assignment properties,retrieve assignment properties
 summary: 您可以使用 GetBinAssignmentProperties 方法检索数据库中的托箱分配属性。 
 ---
 = GetBinAssignmentProperties
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

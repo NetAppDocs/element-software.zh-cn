@@ -5,6 +5,7 @@ keywords: get,getting,pending,operation,getpendingoperation
 summary: 您可以使用 GetPendingOperation 方法检测节点上当前正在进行的操作。此方法还可用于在操作完成后进行报告。 
 ---
 = GetPendingOperation
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

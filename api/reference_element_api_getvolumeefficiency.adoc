@@ -5,6 +5,7 @@ keywords: volume,volumes,get,getting,stats,measurements,efficiency,GetVolumeEffi
 summary: 您可以使用 GetVolumeEfficiency 方法获取有关卷的信息。只有在此 API 方法中作为参数提供的卷才会用于计算容量。 
 ---
 = GetVolumeEfficiency
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

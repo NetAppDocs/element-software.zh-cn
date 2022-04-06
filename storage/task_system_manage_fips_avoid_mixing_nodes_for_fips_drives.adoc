@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, nodes
 summary: 要准备启用 FIPS 驱动器功能，您应避免混用某些支持 FIPS 驱动器而另一些不支持 FIPS 驱动器的节点。 
 ---
 = 避免为 FIPS 驱动器混用节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

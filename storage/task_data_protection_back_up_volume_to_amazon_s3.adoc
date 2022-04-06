@@ -5,6 +5,7 @@ keywords: volume backup, amazon s3 object store
 summary: 您可以将卷备份到与 Amazon S3 兼容的外部对象存储。 
 ---
 = 将卷备份到 Amazon S3 对象存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

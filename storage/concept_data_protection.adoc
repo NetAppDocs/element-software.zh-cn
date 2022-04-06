@@ -5,6 +5,7 @@ keywords: data protection, protect your data, snapshots, replication, back up
 summary: 通过 NetApp Element 软件，您可以通过多种方式保护数据，例如为单个卷或一组卷创建快照，在 Element 上运行的集群和卷之间进行复制以及复制到 ONTAP 系统。 
 ---
 = 保护您的数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

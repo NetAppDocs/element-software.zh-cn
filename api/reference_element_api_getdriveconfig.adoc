@@ -5,6 +5,7 @@ keywords: drive,config,configuration,get,getting,getdriveconfig
 summary: 您可以使用 GetDriveConfig 方法获取预期分区和块驱动器计数以及当前连接到节点的分区和块驱动器数量的驱动器信息。 
 ---
 = GetDriveConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

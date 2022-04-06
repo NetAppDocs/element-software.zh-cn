@@ -5,6 +5,7 @@ keywords: snapmirror,relationship,relationships,initialize,initializing,initiali
 summary: Element 软件 Web UI 可使用 InitializeSnapMirrorRelationship 方法通过在集群之间执行初始基线传输来初始化 SnapMirror 关系中的目标卷。 
 ---
 = InitializeSnapMirrorRelationship
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

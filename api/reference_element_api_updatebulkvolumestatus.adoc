@@ -5,6 +5,7 @@ keywords: updatebulkvolumestatus,update,updating,bulk,volume,status,job
 summary: 您可以使用 UpdateBulkVolumeStatus 方法更新使用 StartBulkVolumeRead 或 StartBulkVolumeWrite 方法启动的批量卷作业的状态。 
 ---
 = UpdateBulkVolumeStatus
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

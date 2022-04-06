@@ -5,6 +5,7 @@ keywords: object,objects,snmptraprecipient
 summary: snmpTrapRecipient 对象包含有关配置为接收存储集群生成的 SNMP 陷阱的主机的信息。您可以使用 GetSnmpTrapInfo API 方法获取配置为接收 SNMP 陷阱的主机列表。 
 ---
 = snmpTrapRecipient
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

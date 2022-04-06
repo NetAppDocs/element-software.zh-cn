@@ -5,6 +5,7 @@ keywords: volume,volumes,get,getting,access,group,efficiency,GetVolumeAccessGrou
 summary: 您可以使用 GetVolumeAccessGroupEfficiency 方法获取有关卷访问组的效率信息。只有在此 API 方法中作为参数提供的卷访问组才会用于计算容量。 
 ---
 = GetVolumeAccessGroupEfficiency
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

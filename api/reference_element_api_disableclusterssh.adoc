@@ -5,6 +5,7 @@ keywords: SSH,disable,disabling,cluster,DisableClusterSsh
 summary: 您可以使用 DisableClusterSsh 方法为整个存储集群禁用 SSH 服务。向存储集群添加节点时，新节点将继承此集群范围的设置。 
 ---
 = DisableClusterSsh
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

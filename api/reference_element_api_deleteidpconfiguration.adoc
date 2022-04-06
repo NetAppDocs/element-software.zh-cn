@@ -5,6 +5,7 @@ keywords: IdP,idp,configuration,delete
 summary: 您可以使用 DeleteIdpConfiguration 方法删除集群的第三方 IdP 的现有配置。删除最后一个 IdP 配置会从集群中删除 SAML 服务提供程序证书。 
 ---
 = DeleteIdpConfiguration
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

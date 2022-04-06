@@ -5,6 +5,7 @@ keywords: remote replication, pairing key, pairing clusters
 summary: 如果您对本地集群拥有集群管理员访问权限，但对远程集群没有访问权限，则可以使用配对密钥对这些集群进行配对。配对密钥会在本地集群上生成，然后安全地发送给远程站点的集群管理员，以建立连接并完成集群配对以实现实时复制。 
 ---
 = 使用配对密钥对集群配对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

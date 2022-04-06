@@ -5,6 +5,7 @@ keywords: object,objects,ldapConfiguration
 summary: ldapConfiguration 对象包含有关存储系统上的 LDAP 配置的信息。您可以使用 GetLdapConfiguration API 方法检索 LDAP 信息。 
 ---
 = ldapConfiguration
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

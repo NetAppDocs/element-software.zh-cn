@@ -5,6 +5,7 @@ keywords: initiator, remove from volume access group, access groups, remove init
 summary: 从访问组中删除启动程序后，它将无法再访问该卷访问组中的卷。对卷的正常帐户访问不会中断。 
 ---
 = 从访问组中删除启动程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

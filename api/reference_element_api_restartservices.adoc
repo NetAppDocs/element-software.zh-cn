@@ -5,6 +5,7 @@ keywords: restart,service,services,restartservices,restarting,node
 summary: 您可以使用 RestartServices 方法重新启动节点上的服务。 
 ---
 = RestartServices
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

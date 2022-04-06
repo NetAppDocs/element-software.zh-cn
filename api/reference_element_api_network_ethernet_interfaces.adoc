@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: network \ （ Ethernet interfaces\ ）对象包含各个以太网接口的配置信息。您可以使用 getconfig 和 GetNetworkConfig 方法为存储节点获取此信息。 
 ---
 = 网络（以太网接口）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

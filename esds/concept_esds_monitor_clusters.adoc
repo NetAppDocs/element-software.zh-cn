@@ -5,6 +5,7 @@ keywords: solidfire esds installation, hcc, hybrid cloud control, esds clusters
 summary: '您可以使用 SolidFire 混合云控制 UI 监控 ESDS 集群的性能并查看清单。您也可以使用 NetApp Hybrid Cloud Control UI 收集日志以进行故障排除。 "' 
 ---
 = 监控集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

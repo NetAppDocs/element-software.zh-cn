@@ -5,6 +5,7 @@ keywords: KMIP,key server,getting information,retrieving
 summary: 您可以使用 GetKeyServerKmip 方法返回有关指定密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器的信息。 
 ---
 = GetKeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

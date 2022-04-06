@@ -5,6 +5,7 @@ keywords: element, solidfire, cluster admin, account, create, change, configure,
 summary: 您可以管理 SolidFire 存储系统的集群管理员帐户。可用的集群管理员管理功能包括创建，删除和编辑集群管理员帐户，更改集群管理员密码以及配置 LDAP 设置以管理用户的系统访问。 
 ---
 = 管理集群管理员用户帐户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

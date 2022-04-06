@@ -5,6 +5,7 @@ keywords: access group details, view, view details, initiators
 summary: 您可以通过图形格式查看单个访问组的详细信息，例如连接的卷和启动程序。 
 ---
 = 查看单个访问组详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

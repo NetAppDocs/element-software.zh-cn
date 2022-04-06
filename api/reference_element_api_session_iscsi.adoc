@@ -5,6 +5,7 @@ keywords: object,objects,session
 summary: session \ （ iscsi\ ）对象包含有关每个卷的 iSCSI 会话的详细信息。您可以使用 ListISCSISessions API 方法检索 iSCSI 会话信息。 
 ---
 = 会话（ iSCSI ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapshot schedule, create, volumes, recurring schedule
 summary: 您可以计划按指定间隔自动创建一个或多个卷的快照。 
 ---
 = 创建快照计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: API,authentication,auth,SolidFire
 summary: 使用 API 时，您可以通过在所有 API 请求中包含 HTTP 基本身份验证标头来向系统进行身份验证。如果省略身份验证信息，则系统将拒绝未经身份验证的请求并发出 HTTP 401 响应。系统支持通过 TLS 进行 HTTP 基本身份验证。 
 ---
 = API 身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

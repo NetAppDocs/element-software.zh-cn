@@ -5,6 +5,7 @@ keywords: configuring node,configure storage node,configuring using TUI,configur
 summary: 您必须先配置各个节点，然后才能将其添加到集群中。在机架单元中安装节点并为其布线并打开其电源后，您可以使用每节点 UI 或节点终端用户界面配置节点网络设置。 
 ---
 = 配置存储节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

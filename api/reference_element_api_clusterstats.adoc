@@ -5,6 +5,7 @@ keywords: objects,clusterStats
 summary: clusterStats 对象包含集群的统计数据。对象中包含的许多与卷相关的统计信息都是针对集群中所有卷的平均值。您可以使用 GetClusterStats 方法检索集群的此信息。 
 ---
 = clusterStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

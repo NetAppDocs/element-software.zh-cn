@@ -5,6 +5,7 @@ keywords: cluster,list,listing,node,nodes,all,listallnodes
 summary: 您可以使用 ListAllNodes 方法列出集群中的活动节点和待定节点。 
 ---
 = ListAllNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

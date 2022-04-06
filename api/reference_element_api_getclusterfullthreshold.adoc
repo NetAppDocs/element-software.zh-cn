@@ -5,6 +5,7 @@ keywords: cluster,get,getting,full,threshold,level,fullness,storage,capacity,get
 summary: 您可以使用 GetClusterFullThreshold 方法查看为集群填充度级别设置的阶段。此方法将返回集群的所有填充度指标。 
 ---
 = GetClusterFullThreshold
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

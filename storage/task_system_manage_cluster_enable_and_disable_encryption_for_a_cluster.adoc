@@ -5,6 +5,7 @@ keywords: enable, disable, encryption at rest, cluster, sed, hardware-based, enc
 summary: 对于 SolidFire 集群，您可以使用空闲时基于软件或硬件的加密对存储在集群上的所有数据进行加密。 
 ---
 = 为集群启用和禁用空闲加密
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

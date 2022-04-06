@@ -5,6 +5,7 @@ keywords: object,objects,network
 summary: network \ （ local interfaces\ ）对象包含存储节点上本地网络接口（例如环回接口）的配置信息。您可以使用 getconfig 和 GetNetworkConfig 方法为存储节点获取此信息。 
 ---
 = 网络（本地接口）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

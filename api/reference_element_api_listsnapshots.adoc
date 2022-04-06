@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,list,listing,attributes,listsnapshots
 summary: 您可以使用 Listsnapshots 返回在卷上创建的每个快照的属性。 
 ---
 = 列表快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

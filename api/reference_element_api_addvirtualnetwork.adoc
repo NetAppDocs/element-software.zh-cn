@@ -5,6 +5,7 @@ keywords: addvirtualnetwork,cluster,add,adding,virtual,network
 summary: 您可以使用 AddVirtualNetwork 方法将新的虚拟网络添加到集群配置中。 
 ---
 = 添加虚拟网络
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

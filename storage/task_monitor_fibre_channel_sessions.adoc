@@ -5,6 +5,7 @@ keywords: fibre channel sessions, fc, FC, sessions
 summary: 您可以查看连接到集群的光纤通道 \ （ FC\ ）会话。您可以对信息进行筛选，以便仅包括要在窗口中显示的连接。 
 ---
 = 查看光纤通道会话
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

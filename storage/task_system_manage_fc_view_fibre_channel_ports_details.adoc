@@ -5,6 +5,7 @@ keywords: fibre channel ports, details, view, fc ports, hba, wwnn, wwpn
 summary: 您可以从 FC 端口页面查看光纤通道端口的详细信息，例如其状态，名称和端口地址。 
 ---
 = 查看光纤通道端口详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

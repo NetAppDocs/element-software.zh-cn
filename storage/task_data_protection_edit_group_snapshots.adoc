@@ -5,6 +5,7 @@ keywords: group snapshots, edit, replication, retention
 summary: 您可以编辑现有组快照的复制和保留设置。 
 ---
 = 编辑组快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

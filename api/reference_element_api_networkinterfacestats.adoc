@@ -5,6 +5,7 @@ keywords: object,objects,stats,statistics,networkInterfacestats
 summary: networkInterfaceStats 对象包含存储节点上各个网络接口的网络统计信息和错误信息。 
 ---
 = 网络接口统计信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

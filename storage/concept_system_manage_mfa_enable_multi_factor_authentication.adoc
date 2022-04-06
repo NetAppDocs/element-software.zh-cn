@@ -5,6 +5,7 @@ keywords: saml, idp, mfa, enable
 summary: 多因素身份验证 \ （ MFA\ ）通过安全断言标记语言 \ （ SAML \ ）使用第三方身份提供程序 \ （ IdP ）来管理用户会话。通过 MFA ，管理员可以根据需要配置其他身份验证因素，例如密码和文本消息以及密码和电子邮件消息。 
 ---
 = 启用多因素身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

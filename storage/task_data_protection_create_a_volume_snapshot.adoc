@@ -5,6 +5,7 @@ keywords: volume snapshot, create, active volume, preserve volume
 summary: 您可以为活动卷创建快照，以便在任意时间点保留卷映像。一个卷最多可以创建 32 个快照。 
 ---
 = 创建卷快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

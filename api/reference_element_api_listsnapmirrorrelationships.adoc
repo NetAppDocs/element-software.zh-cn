@@ -5,6 +5,7 @@ keywords: snapmirror,endpoints,endpoint,list,listing,listsnapmirrorrelationships
 summary: Element 软件 Web UI 使用 ListSnapMirrorRelationships 方法列出 Element 存储集群上的一个或所有 SnapMirror 关系。 
 ---
 = ListSnapMirrorRelationships
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

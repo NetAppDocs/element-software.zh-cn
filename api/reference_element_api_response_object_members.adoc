@@ -5,6 +5,7 @@ keywords: response,object,member
 summary: 每个 Element 软件 API 响应正文都包含以下基本部分： 
 ---
 = 响应对象成员
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

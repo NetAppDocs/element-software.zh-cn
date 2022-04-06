@@ -5,6 +5,7 @@ keywords: volumes,volume,cloning,clone,CloneVolume
 summary: 您可以使用 CloneVolume 方法创建卷的副本。此方法是异步方法，可能需要不同的时间才能完成。 
 ---
 = 克隆卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

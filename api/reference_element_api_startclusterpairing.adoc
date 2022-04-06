@@ -5,6 +5,7 @@ keywords: cluster,pair,pairing,start,starting,startclusterpairing
 summary: 您可以使用 StartClusterPairing 方法从用于与另一个集群配对的集群创建编码密钥。在此 API 方法中创建的密钥将在 CompleteClusterPairing 方法中用于建立集群配对。您最多可以将一个集群与四个其他集群配对。 
 ---
 = 启动集群配对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

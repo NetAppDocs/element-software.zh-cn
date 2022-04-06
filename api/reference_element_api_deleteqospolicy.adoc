@@ -5,6 +5,7 @@ keywords: QoS,policy,policies,delete,deleting,DeleteQoSPolicy
 summary: 您可以使用 DeleteQoSPolicy 方法从系统中删除 QoS 策略。使用此策略创建或修改的所有卷的 QoS 设置不受影响。 
 ---
 = DeleteQoSPolicy
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

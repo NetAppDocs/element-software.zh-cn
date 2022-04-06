@@ -5,6 +5,7 @@ keywords: terms,use,banner,get,getting,getloginbanner,login
 summary: 您可以使用 GetLoginBanner 方法获取用户在登录到 Element Web 界面时看到的当前活动使用条款横幅。 
 ---
 = GetLoginBanner
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

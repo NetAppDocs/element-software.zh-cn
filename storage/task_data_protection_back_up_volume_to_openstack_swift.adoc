@@ -5,6 +5,7 @@ keywords: volume backup, openstack swift object store
 summary: 您可以将卷备份到与 OpenStack Swift 兼容的外部对象存储。 
 ---
 = 将卷备份到 OpenStack Swift 对象存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

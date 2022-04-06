@@ -5,6 +5,7 @@ keywords: KMIP,key providers,key,provider,retrieving,listing,list,retrieve,listk
 summary: 您可以使用 ListKeyProvidersKmip 方法检索所有现有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序的列表。您可以通过指定其他参数来筛选此列表。 
 ---
 = ListKeyProvidersKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

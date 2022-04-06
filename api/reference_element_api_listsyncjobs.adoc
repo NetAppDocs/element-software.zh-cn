@@ -5,6 +5,7 @@ keywords: sync,synchronization,job,jobs,list,get,listing,getting,listsyncjobs
 summary: 您可以使用 ListSyncJobs 方法获取有关在 Element 存储集群上运行的同步作业的信息。此方法将返回有关分区，克隆，块和远程同步作业的信息。 
 ---
 = ListSyncJobs
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

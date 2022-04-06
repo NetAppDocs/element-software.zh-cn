@@ -5,6 +5,7 @@ keywords: object,objects,storagecontainer
 summary: storageContainer 对象包含虚拟卷存储容器的属性。您可以使用 ListStorageContainers API 方法检索集群中每个存储容器的此信息。 
 ---
 = 存储容器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

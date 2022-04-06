@@ -5,6 +5,7 @@ keywords: snapshots, group snapshots, volumes, replication
 summary: '" 数据保护 " 选项卡上的 " 组快照 " 页面提供了有关组快照的信息。' 
 ---
 = 组快照详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

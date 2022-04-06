@@ -5,6 +5,7 @@ keywords: snmp, usm user, config, requests
 summary: 启用 SNMP 版本 3 时，需要配置 USM 用户以接收授权的 SNMP 请求。 
 ---
 = 配置 SNMP USM 用户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

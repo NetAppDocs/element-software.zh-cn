@@ -5,6 +5,7 @@ keywords: virtual,network,modify,modifying,change,changing,edit,editing,modifyvi
 summary: 您可以使用 ModifyVirtualNetwork 方法更改现有虚拟网络的属性。 
 ---
 = ModifyVirtualNetwork
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

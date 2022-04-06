@@ -5,6 +5,7 @@ keywords: object,objects,protectionDomainLevel
 summary: protectionDomainLevel 对象包含有关存储集群当前容错和故障恢复能力级别的信息。容错级别表示集群在发生故障时能够继续读取和写入数据，而故障恢复能力级别则表示集群能够在其相关类型的保护域中自动从一个或多个故障中自行恢复。 
 ---
 = 保护域级别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

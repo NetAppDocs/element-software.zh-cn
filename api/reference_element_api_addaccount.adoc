@@ -5,6 +5,7 @@ keywords: addaccount,add,adding,account,accounts
 summary: 您可以使用 AddAccount 向系统添加新帐户。您也可以使用此方法在创建帐户时在新帐户下创建新卷。为帐户指定的质询握手身份验证协议（ Challenge-Handshake Authentication Protocol ）设置将应用于该帐户拥有的所有卷。 
 ---
 = 添加帐户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: power supply, replacement, h610s, h410s, maintenance, psu, chassis
 summary: 每个机箱都包含两个电源设备，用于实现电源冗余。如果某个电源设备出现故障，您应尽快更换它，以确保机箱具有冗余电源。 
 ---
 = 更换电源设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

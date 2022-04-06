@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, clust
 summary: 在许多客户环境中部署解决方案时，安全性变得越来越重要。联邦信息处理标准（ FIPS ）是计算机安全性和互操作性的标准。经 FIPS 140-2 认证的空闲数据加密是整体安全解决方案的一个组成部分。 
 ---
 = 创建支持 FIPS 驱动器的集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

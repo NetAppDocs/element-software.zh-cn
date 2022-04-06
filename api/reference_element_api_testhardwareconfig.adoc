@@ -5,6 +5,7 @@ keywords: node,test,testing,hardware,config,configuration,testhardwareconfig
 summary: 您可以使用 TestHardwareConfig 方法对节点执行硬件测试。测试选项包括验证硬件配置，固件版本以及所有驱动器是否都存在。 
 ---
 = TestHardwareConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

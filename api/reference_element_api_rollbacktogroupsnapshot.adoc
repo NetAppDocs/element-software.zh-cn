@@ -5,6 +5,7 @@ keywords: rollbacktogroupsnapshot,snapshot,group,individual,creating,create,roll
 summary: 您可以使用 RollbackToGroupSnapshot 将快照组中的所有单个卷回滚到每个卷的单个快照。 
 ---
 = RollbackToGroupSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

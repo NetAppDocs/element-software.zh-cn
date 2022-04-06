@@ -5,6 +5,7 @@ keywords: virtual,volume,volumes,vvol,list,listing,listvirtualvolumes
 summary: 您可以使用 ListVirtualVolumes 方法列出系统中当前的虚拟卷。您可以使用此方法列出所有虚拟卷，也可以仅列出一个子集。 
 ---
 = ListVirtualVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

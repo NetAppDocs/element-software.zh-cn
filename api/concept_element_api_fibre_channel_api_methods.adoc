@@ -5,6 +5,7 @@ keywords: fibre,channel,method,API,fibre channel
 summary: 您可以使用光纤通道 API 方法添加，修改或删除存储集群的光纤通道节点成员。 
 ---
 = 光纤通道 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: h410s, replacement, node replacement, maintenance
 summary: 如果 CPU 出现故障， Radian 卡出现问题，出现其他主板问题或未打开电源，则应更换存储节点。这些说明适用于 H410S 存储节点。 
 ---
 = 更换 H410S 节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

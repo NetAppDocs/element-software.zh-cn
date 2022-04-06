@@ -5,6 +5,7 @@ keywords: ssl,certificate,set,setting,private,key,setnodesslcertificate
 summary: 您可以使用 SetNodeSSLCertificate 方法为管理节点设置用户 SSL 证书和专用密钥。 
 ---
 = SetNodeSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

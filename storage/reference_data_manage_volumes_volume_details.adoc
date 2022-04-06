@@ -5,6 +5,7 @@ keywords: volume, size of volume
 summary: '" 管理 " 选项卡上的 " 卷 " 页面提供了有关活动卷的信息，例如名称，帐户，与卷关联的访问组以及卷大小。' 
 ---
 = 卷详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

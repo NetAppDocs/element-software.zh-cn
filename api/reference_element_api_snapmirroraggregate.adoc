@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorAggregate
 summary: snapMirrorAggregate 对象包含有关可用 ONTAP 聚合的信息，这些聚合是可供卷用作存储的磁盘的集合。您可以使用 ListSnapMirrorAggregates API 方法获取此信息。 
 ---
 = snapMirrorAggregate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

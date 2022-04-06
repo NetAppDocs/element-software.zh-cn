@@ -5,6 +5,7 @@ keywords: access group, add volumes to
 summary: '您可以将卷添加到卷访问组。每个卷可以属于多个卷访问组；您可以在 "Active Volumes" 页面上查看每个卷所属的组。' 
 ---
 = 将卷添加到访问组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

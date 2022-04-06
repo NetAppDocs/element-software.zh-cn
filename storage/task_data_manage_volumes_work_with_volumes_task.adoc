@@ -5,6 +5,7 @@ keywords: volumes, work, storage, iscsi, fc, cluster data management, overview o
 summary: 'SolidFire 系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。从 "Management" 选项卡上的 "Volumes" 页面中，您可以在节点上创建，修改，克隆和删除卷。您还可以查看有关卷带宽和 I/O 使用情况的统计信息。' 
 ---
 = 使用卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

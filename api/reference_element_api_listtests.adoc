@@ -5,6 +5,7 @@ keywords: test,tests,list,listing,listtests
 summary: 您可以使用 ListTests 方法列出可在节点上运行的测试。 
 ---
 = ListTests
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

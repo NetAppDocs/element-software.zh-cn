@@ -5,6 +5,7 @@ keywords: volumes,volume,virtual,stats,list,listing,listvolumestatsbyvirtualvolu
 summary: 您可以使用 ListVolumeStatsByVirtualVolume 方法列出系统中与虚拟卷关联的任何卷的卷统计信息。统计信息是从创建卷开始累积的。 
 ---
 = ListVolumeStatsByVirtualVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: objects,cluster,structure,clusterStructure,object
 summary: clusterStructure 对象保存由 GetClusterStructure 方法创建的集群配置备份信息。您可以使用 SetClusterStructure 方法将此信息还原到要重建的存储集群。 
 ---
 = 集群结构
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

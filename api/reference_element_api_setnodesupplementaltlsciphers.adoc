@@ -5,6 +5,7 @@ keywords: tls,cipher,set,setting,list,supplemental,setnodesupplementaltlsciphers
 summary: 您可以使用 SetNodeSupplementalTlsCiphers 方法指定补充 TLS 密码列表。您可以在管理节点上使用此命令。 
 ---
 = SetNodeSupplementalTlsCiphers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

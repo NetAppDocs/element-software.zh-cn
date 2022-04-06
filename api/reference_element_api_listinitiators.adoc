@@ -5,6 +5,7 @@ keywords: initiators,initiator,list,listing,listinitiators,iqn,wwpn,iqns,wwpns
 summary: 您可以使用 ListInitiators 方法获取启动程序 IQN 或全球通用端口名称（ WWPN\ ）的列表。 
 ---
 = ListInitiators
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

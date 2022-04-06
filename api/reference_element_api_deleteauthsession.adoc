@@ -5,6 +5,7 @@ keywords: authentication sessions,delete
 summary: 您可以使用 DeleteAuthSession 方法删除单个身份验证会话。如果调用用户不在 ClusterAdmins/Administrator AccessGroup 中，则只能删除属于调用用户的身份验证会话。 
 ---
 = DeleteAuthSession
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

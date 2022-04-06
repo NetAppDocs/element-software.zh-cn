@@ -5,6 +5,7 @@ keywords: FIPS 140-2, enable fips, federal information processing standards, ncs
 summary: 您可以使用 EnableFeature API 方法为 HTTPS 通信启用 FIPS 140-2 操作模式。 
 ---
 = 在集群上为 HTTPS 启用 FIPS 140-2
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

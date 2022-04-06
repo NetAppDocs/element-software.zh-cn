@@ -5,6 +5,7 @@ keywords: volumes,volume,defining,define,modify,modifying,edit,editing,change,ch
 summary: 您可以使用 ModifyVolumeAccessGroupLunAssignments 方法为特定卷定义自定义 LUN 分配。 
 ---
 = ModifyVolumeAccessGroupLunAssignments
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

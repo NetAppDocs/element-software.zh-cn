@@ -5,6 +5,7 @@ keywords: volume restore, amazon s3 object store
 summary: 您可以从 Amazon S3 对象存储上的备份还原卷。 
 ---
 = 从 Amazon S3 对象存储上的备份还原卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

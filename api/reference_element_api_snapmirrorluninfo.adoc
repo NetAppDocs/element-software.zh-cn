@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorLunInfo
 summary: snapMirrorLunInfo 对象包含有关 ONTAP LUN 对象的信息。 
 ---
 = snapMirrorLunInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

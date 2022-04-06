@@ -5,6 +5,7 @@ keywords: active,volume,volumes,list,listing,listactivevolumes,cluster
 summary: 您可以使用 ListActiveVolumes 方法获取系统中当前活动卷的列表。卷列表按卷 ID 顺序排序，可以按多个部分 \ （页 \ ）返回。 
 ---
 = ListActiveVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

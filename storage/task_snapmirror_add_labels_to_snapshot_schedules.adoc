@@ -5,6 +5,7 @@ keywords: snapmirror labels, add labels to snapshot schedules, snapmirror polici
 summary: 您可以向快照计划添加 SnapMirror 标签，以确保应用 SnapMirror 策略。您可以从现有 SnapMirror 关系对话框或 NetAppONTAP System Manager 中查看可用标签。 
 ---
 = 将 SnapMirror 标签添加到快照计划中
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

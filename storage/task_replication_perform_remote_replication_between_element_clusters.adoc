@@ -5,6 +5,7 @@ keywords: remote replication, clusters, Element software, failover, failback
 summary: 对于运行 Element 软件的集群，通过实时复制可以快速创建卷数据的远程副本。您可以将一个存储集群与最多四个其他存储集群配对。您可以从集群对中的任一集群同步或异步复制卷数据，以实现故障转移和故障恢复。 
 ---
 = 在运行 NetApp Element 软件的集群之间执行远程复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

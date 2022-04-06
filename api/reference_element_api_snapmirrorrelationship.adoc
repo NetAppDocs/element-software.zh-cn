@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorRelationship
 summary: snapMirrorRelationship 对象包含有关 Element 卷与 ONTAP 卷之间的 SnapMirror 关系的信息。 
 ---
 = snapMirrorRelationship
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

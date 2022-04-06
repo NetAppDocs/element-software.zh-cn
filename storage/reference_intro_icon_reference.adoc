@@ -5,6 +5,7 @@ keywords: icons, element interface, actions, system resources, quick reference
 summary: NetApp Element 软件界面会显示一些图标，表示您可以对系统资源执行的操作。 
 ---
 = Element 界面中的图标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

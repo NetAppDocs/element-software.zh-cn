@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2
 summary: 您应使用 NetApp Element 软件 GetFipsReport API 方法检查存储集群中的所有节点是否均已准备好支持 FIPS 驱动器。 
 ---
 = 确定节点是否已准备好使用 FIPS 驱动器功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

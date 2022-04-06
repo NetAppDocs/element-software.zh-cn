@@ -5,6 +5,7 @@ keywords: API,administration,method,administrator
 summary: 您可以使用管理员 API 方法创建，修改，查看和删除存储集群管理员，并为有权访问存储集群的管理员分配访问级别和特权。 
 ---
 = 管理员 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

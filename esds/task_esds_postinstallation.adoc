@@ -5,6 +5,7 @@ keywords: solidfire esds, installation, create cluster, cluster, add drives, esd
 summary: 安装 SolidFire ESDS 后，请在每个 SolidFire ESDS 节点上配置集群名称。然后，您可以创建 SolidFire ESDS 集群。 
 ---
 = 执行安装后任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: tls,cipher,ciphers,get,getting,getnodeactivetlsciphers,accepted
 summary: 您可以在单个节点上使用 GetNodeActiveTlsCiphers 方法来获取此节点上当前接受的 TLS 密码列表。您可以在管理和存储节点上使用此方法。 
 ---
 = GetNodeActiveTlsCiphers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: API,methods,cluster,create,creation
 summary: 您可以使用这些 API 方法创建存储集群。需要对单个节点上的 API 端点使用所有这些方法。 
 ---
 = 集群创建 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

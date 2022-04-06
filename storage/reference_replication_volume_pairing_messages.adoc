@@ -5,6 +5,7 @@ keywords: volume pairing, messages, replication, data protection
 summary: '在初始配对过程中，您可以从 "Data Protection" 选项卡下的 "Volume Pairs" 页面查看卷配对消息。在复制卷列表视图中，此对的源端和目标端都可以显示这些消息。' 
 ---
 = 卷配对消息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

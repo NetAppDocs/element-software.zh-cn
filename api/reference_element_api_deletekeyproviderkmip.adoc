@@ -5,6 +5,7 @@ keywords: KMIP,key provider,deleting,delete
 summary: 您可以使用 DeleteKeyProviderKmip 方法删除指定的非活动密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序。 
 ---
 = DeleteKeyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,node,protection domains
 summary: nodeProtectionDomains 对象包含有关节点标识以及与该节点关联的保护域的信息。 
 ---
 = nodeProtectionDomains
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

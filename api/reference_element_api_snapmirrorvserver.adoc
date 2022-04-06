@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVserver
 summary: snapMirrorVserver 对象包含有关目标 ONTAP 集群上的 Storage Virtual Machine \ （或 Vservers\ ）的信息。 
 ---
 = snapMirrorVserver
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

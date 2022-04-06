@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,qos,policy,policies,modi
 summary: 您可以使用 ModifyQoSPolicy 方法修改系统上的现有 QoS 策略。 
 ---
 = ModifyQoSPolicy
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: network,config,configuration,get,getting,getnetworkconfig
 summary: 您可以使用 GetNetworkConfig 方法显示节点的网络配置信息。 
 ---
 = GetNetworkConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

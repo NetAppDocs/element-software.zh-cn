@@ -5,6 +5,7 @@ keywords: solidfire, element, cluster admin, storage, account, authoritative clu
 summary: 要管理和提供对系统上存储资源的访问，您需要为系统资源设置帐户。 
 ---
 = 帐户和权限
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

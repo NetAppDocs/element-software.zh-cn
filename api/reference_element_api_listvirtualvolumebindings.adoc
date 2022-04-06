@@ -5,6 +5,7 @@ keywords: virtual,volume,vvol,cluster,bound,protocol,endpoint,binding,bindings,l
 summary: 您可以使用 ListVirtualVolumeBindings 方法获取集群中绑定到协议端点的所有虚拟卷的列表。 
 ---
 = ListVirtualVolumeBindings
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

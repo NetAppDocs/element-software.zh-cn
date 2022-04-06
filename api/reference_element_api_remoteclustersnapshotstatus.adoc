@@ -5,6 +5,7 @@ keywords: object,objects,remoteClusterSnapshotStatus
 summary: remoteClusterSnapshotStatus 对象包含存储在远程存储集群上的快照的 UUID 和状态。您可以使用 listsnapshots 或 ListGroupSnapshots API 方法获取此信息。 
 ---
 = remoteClusterSnapshotStatus
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

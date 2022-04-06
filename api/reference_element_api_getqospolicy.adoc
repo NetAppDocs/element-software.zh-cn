@@ -5,6 +5,7 @@ keywords: qos,policy,policies,get,getting,getqospolicy
 summary: 您可以使用 GetQoSPolicy 方法从系统中获取有关特定 QoS 策略的详细信息。 
 ---
 = GetQoSPolicy
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

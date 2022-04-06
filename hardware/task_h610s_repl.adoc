@@ -5,6 +5,7 @@ keywords: h610s, replacement, node replacement, chassis replacement, maintenance
 summary: 如果风扇，中央处理单元（ CPU ）或双列直插式内存模块（ DIMM ）发生故障，或者要修复过热问题或启动过程中的问题，您可能需要更换机箱。机箱正面的琥珀色 LED 闪烁表示可能需要更换机箱。在继续操作之前，您应联系 NetApp 支持部门。 
 ---
 = 更换 H610S 节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

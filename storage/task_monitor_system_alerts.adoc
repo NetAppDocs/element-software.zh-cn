@@ -5,6 +5,7 @@ keywords: system alerts, view, cluster faults, system errors
 summary: 您可以查看有关系统中集群故障或错误的信息的警报。警报可以是信息，警告或错误，可以很好地指示集群的运行状况。大多数错误都会自动自行解决。 
 ---
 = 查看系统警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

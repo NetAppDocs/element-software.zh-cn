@@ -5,6 +5,7 @@ keywords: cluster,stats,statistics,get,getting,getclusterstats
 summary: 您可以使用 GetClusterStats 方法检索集群的高级别活动测量结果。返回的值是创建集群后累积的值。 
 ---
 = GetClusterStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

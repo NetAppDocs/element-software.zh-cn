@@ -5,6 +5,7 @@ keywords: IdP,idp,authentication,enable
 summary: 您可以使用 EnableIdpAuthentication 方法为集群启用对使用第三方 IdP 进行身份验证的支持。启用 IdP 身份验证后， LDAP 和集群管理员将无法再通过支持的 UI 访问集群，并且任何经过身份验证的活动会话都将失效 / 断开连接。只有经过第三方 IdP 身份验证的用户才能通过受支持的 UI 访问集群。 
 ---
 = EnableIdpAuthentication
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

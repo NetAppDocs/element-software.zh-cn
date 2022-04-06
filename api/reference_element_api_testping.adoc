@@ -5,6 +5,7 @@ keywords: ping,test,TestPing
 summary: 您可以使用 TestPing 方法测试使用 ICMP 数据包在 1G 和 10G 接口上与集群中所有节点的网络连接。此测试会根据网络配置中的 MTU 设置对每个数据包使用适当的 MTU 大小。TestPing 不会创建临时 VLAN 接口。 
 ---
 = TestPing
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

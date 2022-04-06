@@ -5,6 +5,7 @@ keywords: cluster,state,getting,get,getclusterstate
 summary: 您可以使用 GetClusterState API 方法指示节点是否属于集群。 
 ---
 = GetClusterState
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

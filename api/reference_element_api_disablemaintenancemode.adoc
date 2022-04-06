@@ -5,6 +5,7 @@ keywords: disable,maintenance,mode
 summary: 您可以使用 DisableMaintenanceMode 方法使存储节点退出维护模式。只有在完成维护且节点处于联机状态后，才应禁用维护模式。 
 ---
 = 禁用维护模式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: virtual volumes, enable, functionality on the cluster, vvols
 summary: 您必须通过 NetApp Element 软件手动启用 vSphere 虚拟卷（ VVols ）功能。默认情况下， Element 软件系统随附的 VVol 功能处于禁用状态，它不会在新安装或升级过程中自动启用。启用 VVol 功能是一次性配置任务。 
 ---
 = 启用虚拟卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

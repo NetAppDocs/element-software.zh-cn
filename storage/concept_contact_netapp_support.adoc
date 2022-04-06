@@ -5,6 +5,7 @@ keywords: contact,support
 summary: 如果您需要有关 NetApp 产品的帮助或对 NetApp 产品有任何疑问或意见，请联系 NetApp 支持部门。 
 ---
 = 请联系 NetApp 支持部门
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

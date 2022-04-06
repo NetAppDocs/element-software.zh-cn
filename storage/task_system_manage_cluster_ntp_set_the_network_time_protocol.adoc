@@ -5,6 +5,7 @@ keywords: set, ntp, broadcasts, query, updates, clocks, synchronize,
 summary: 可以通过以下两种方式之一设置网络时间协议（ NTP ）：指示集群中的每个节点侦听广播，或指示每个节点查询 NTP 服务器以获取更新。 
 ---
 = 设置网络时间协议
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

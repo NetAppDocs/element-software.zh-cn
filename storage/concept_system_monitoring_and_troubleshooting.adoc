@@ -5,6 +5,7 @@ keywords: trouble, troubleshoot, monitor, element, alert, event
 summary: 您必须监控系统以进行诊断，并获取有关各种系统操作的性能趋势和状态的信息。出于维护目的，您可能需要更换节点或 SSD 。 
 ---
 = 对系统进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

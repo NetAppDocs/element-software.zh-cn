@@ -5,6 +5,7 @@ keywords: terms of use banner, disable
 summary: 您可以禁用使用条款横幅。禁用此横幅后，用户在使用 Element UI 时不再需要接受使用条款。 
 ---
 = 禁用使用条款横幅
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

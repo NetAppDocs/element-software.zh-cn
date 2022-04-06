@@ -5,6 +5,7 @@ keywords: account, volumes
 summary: '" 管理 " 选项卡上的 " 帐户 " 页面提供了有关系统中每个帐户的信息，例如，分配给每个帐户的卷的 ID ，用户名和效率详细信息。' 
 ---
 = 帐户详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

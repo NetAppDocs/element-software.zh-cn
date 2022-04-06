@@ -5,6 +5,7 @@ keywords: virtual,volume,storage,container,delete,deleting,vvol,DeleteStorageCon
 summary: 您可以使用 DeleteStorageContainers 方法一次从系统中最多删除 2000 个虚拟卷（ VVol\ ）存储容器。您删除的存储容器不能包含任何 VVOL 。 
 ---
 = DeleteStorageContainers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

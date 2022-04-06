@@ -5,6 +5,7 @@ keywords: cluster,list,listing,event,events,listevents
 summary: 您可以使用 ListEvents 方法列出在集群上检测到的事件，按从旧到最新的顺序进行排序。 
 ---
 = ListEvents
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: node,hardware,info,get,getting,getnodehardwareinfo
 summary: 您可以使用 GetNodeHardwareInfo 方法返回指定节点的所有硬件信息和状态。这通常包括制造商，供应商，版本以及其他相关硬件标识信息。 
 ---
 = GetNodeHardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

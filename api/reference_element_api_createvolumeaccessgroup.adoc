@@ -5,6 +5,7 @@ keywords: volume,access,groups,group,create,creating,CreateVolumeAccessGroup
 summary: 您可以使用 CreateVolumeAccessGroup 创建新的卷访问组。创建卷访问组时，需要为其指定一个名称，您也可以输入启动程序和卷。 
 ---
 = CreateVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapmirror,vserver,vservers,list,listing,listsnapmirrorvservers
 summary: Element 软件 Web UI 使用 ListSnapMirrorVservers 方法列出远程 ONTAP 系统上可用的所有 SnapMirror Vserver 。 
 ---
 = ListSnapMirrorVservers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

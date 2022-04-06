@@ -5,6 +5,7 @@ keywords: persistent volumes, what are persistent volumes
 summary: 通过永久性卷，可以将管理节点配置数据存储在指定的存储集群上，而不是本地 VM 上，以便在管理节点丢失或删除时可以保留这些数据。永久性卷是一种可选的管理节点配置，但建议使用此配置。 
 ---
 = 永久性卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

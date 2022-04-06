@@ -5,6 +5,7 @@ keywords: troubleshoot, nodes removing
 summary: 您可以从集群中删除节点以进行维护或更换。您应先使用 NetApp Element UI 或 API 删除节点，然后再使其脱机。 
 ---
 = 对节点进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

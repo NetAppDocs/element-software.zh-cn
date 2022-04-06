@@ -5,6 +5,7 @@ keywords: qos,policy,policies,list,listing,listqospolicies
 summary: 您可以使用 ListQoSPolicies 方法列出系统上所有 QoS 策略的设置。 
 ---
 = ListQoSPolicies
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

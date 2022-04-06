@@ -5,6 +5,7 @@ keywords: object,objects,protectionSchemeResiliency
 summary: protectionSchemeResiliency 对象包含有关特定保护方案下的存储集群是否可以在其关联的 protectionDomainType 中自动从一个或多个故障中自行修复的信息。如果某个存储集群能够在任何一个存储节点发生故障时继续读取和写入数据，则会被视为已修复（这种状态称为节点容错）。 
 ---
 = 保护架构弹性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

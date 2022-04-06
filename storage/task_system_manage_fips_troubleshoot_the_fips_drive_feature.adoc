@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2
 summary: 使用 NetApp Element 软件 UI ，您可以查看有关系统中与 FIPS 驱动器功能相关的集群故障或错误信息的警报。 
 ---
 = 对 FIPS 驱动器功能进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

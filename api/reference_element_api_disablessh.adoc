@@ -5,6 +5,7 @@ keywords: SSH,disable,disabling,node,DisableSsh
 summary: 您可以使用 DisableSsh 方法为单个存储节点禁用 SSH 服务。此方法不会影响集群范围的 SSH 服务超时持续时间。 
 ---
 = DisableSsh
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

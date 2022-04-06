@@ -5,6 +5,7 @@ keywords: drive,drives,secure,erase,reset,resetting,encryption,key,secureerasedr
 summary: '您可以使用 SecureEraseDrives 方法从状态为 " 可用 " 的驱动器中删除任何残留数据。在更换服务寿命即将结束且包含敏感数据的驱动器时，您可以使用此方法。此方法使用 Security Erase Unit 命令向驱动器写入预先确定的模式，并重置驱动器上的加密密钥。此异步方法可能需要几分钟才能完成。' 
 ---
 = SecureEraseDrives
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

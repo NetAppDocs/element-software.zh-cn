@@ -5,6 +5,7 @@ keywords: ssl certificate, SSL, private key, self-signed, cluster, nodes, user-d
 summary: 您可以使用 NetApp Element API 更改集群中存储节点的默认 SSL 证书和专用密钥。 
 ---
 = 更改 Element 软件的默认 SSL 证书
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

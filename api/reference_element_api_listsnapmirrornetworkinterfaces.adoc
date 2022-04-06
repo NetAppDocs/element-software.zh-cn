@@ -5,6 +5,7 @@ keywords: snapmirror,interface,interfaces,list,listing,listsnapmirrornetworkinte
 summary: Element 软件 Web UI 使用 ListSnapMirrorNetworkInterfaces 方法列出远程 ONTAP 系统上的所有可用 SnapMirror 接口。 
 ---
 = ListSnapMirrorNetworkInterfaces
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, solidfire esds, troubleshooting, KB articles, knowledge base
 summary: 可通过链接访问知识库文章，以帮助您对 SolidFire ESDS 系统进行故障排除。 
 ---
 = 故障排除知识库文章的链接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: SnapMirror,volume,volumes,break,breaking,relationship,ONTAP
 summary: Element Web UI 使用 BreakSnapMirrorRelationship 方法中断 SnapMirror 关系。中断 SnapMirror 关系后，目标卷将变为读写独立卷，然后可以与源卷分离。您可以使用 ResyncSnapMirrorRelationship API 方法重新建立关系。此方法要求 ONTAP 集群可用。 
 ---
 = BreakSnapMirrorRelationship
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

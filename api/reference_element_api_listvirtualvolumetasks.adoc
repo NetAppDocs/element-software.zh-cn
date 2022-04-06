@@ -5,6 +5,7 @@ keywords: virtual,volume,hosts,host,cluster,list,listing,listvirtualvolumetasks
 summary: 您可以使用 ListVirtualVolumeTasks 方法获取系统中虚拟卷任务的列表。 
 ---
 = ListVirtualVolumeTasks
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

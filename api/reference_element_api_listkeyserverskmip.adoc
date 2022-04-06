@@ -5,6 +5,7 @@ keywords: KMIP,key server,key,server,listing,list,listkeyserverskmip
 summary: 您可以使用 ListKeyServersKmip 方法列出已创建的所有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。您可以通过指定其他参数来筛选结果。 
 ---
 = ListKeyServersKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

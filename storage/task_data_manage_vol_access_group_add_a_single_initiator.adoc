@@ -5,6 +5,7 @@ keywords: initiator, add to volume access group, access groups, add single initi
 summary: 您可以将启动程序添加到现有卷访问组。 
 ---
 = 将单个启动程序添加到卷访问组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

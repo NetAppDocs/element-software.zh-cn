@@ -5,6 +5,7 @@ keywords: volume access group, create, initiators
 summary: 您可以通过将启动程序映射到一组卷来创建卷访问组，以实现安全访问。然后，您可以使用帐户 CHAP 启动程序密钥和目标密钥授予对组中卷的访问权限。 
 ---
 = 创建卷访问组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

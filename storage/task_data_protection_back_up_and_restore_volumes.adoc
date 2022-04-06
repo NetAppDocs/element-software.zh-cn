@@ -5,6 +5,7 @@ keywords: volumes, backup and restore
 summary: 您可以将卷备份和还原到其他 SolidFire 存储以及与 Amazon S3 或 OpenStack Swift 兼容的二级对象存储。 
 ---
 = 备份和还原卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

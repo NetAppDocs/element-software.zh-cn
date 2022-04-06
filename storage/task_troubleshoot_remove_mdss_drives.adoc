@@ -5,6 +5,7 @@ keywords: mdss, remove, multi-drive slice service
 summary: 您可以删除多驱动器分区服务（ MDS\ ）驱动器。只有当节点具有多个分区驱动器时，此操作步骤才适用。 
 ---
 = 删除 MDSS 驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

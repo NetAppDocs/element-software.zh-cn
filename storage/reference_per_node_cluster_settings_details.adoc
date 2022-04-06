@@ -5,6 +5,7 @@ keywords: nodes, changing cluster settings, per-node UI
 summary: 您可以在配置集群后验证存储节点的集群设置，并修改节点主机名。 
 ---
 = 每个节点 UI 中的集群设置详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

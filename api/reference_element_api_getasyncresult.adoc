@@ -5,6 +5,7 @@ keywords: async,asynchronous,results,result,get,getting,GetAsyncResult
 summary: 您可以使用 GetAsyncResult 检索异步方法调用的结果。某些方法调用需要一段时间才能运行，并且在系统发送初始响应时可能无法完成。要获取方法调用的状态或结果，请使用 GetAsyncResult 轮询该方法返回的 asyncHandle 值。 
 ---
 = GetAsyncResult
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

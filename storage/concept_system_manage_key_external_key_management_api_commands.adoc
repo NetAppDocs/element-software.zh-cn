@@ -5,6 +5,7 @@ keywords: ekm, api commands, key providers
 summary: 列出可用于管理和配置 EKM 的所有 API 。 
 ---
 = 外部密钥管理 API 命令
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

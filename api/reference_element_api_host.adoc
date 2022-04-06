@@ -5,6 +5,7 @@ keywords: object,objects,host
 summary: host 对象包含有关虚拟卷主机的信息。您可以使用 ListVirtualVolumeHosts 方法获取所有虚拟卷主机的此信息。 
 ---
 = 主机（虚拟卷）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

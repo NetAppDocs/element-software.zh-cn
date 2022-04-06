@@ -5,6 +5,7 @@ keywords: object,objects,snapshot
 summary: snapshot 对象包含有关为卷创建的快照的信息。您可以使用 listsnapshots API 方法检索卷或所有卷的快照信息列表。对象包含有关活动快照以及为卷创建的每个快照的信息。 
 ---
 = Snapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

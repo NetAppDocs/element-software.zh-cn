@@ -5,6 +5,7 @@ keywords:
 summary:  
 ---
 = 使用 Element 软件管理存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

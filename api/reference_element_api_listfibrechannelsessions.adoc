@@ -5,6 +5,7 @@ keywords: list,listing,fibre,channel,session,sessions,listfibrechannelsessions
 summary: 您可以使用 ListFibreChannelSessions 方法列出有关集群上光纤通道会话的信息。 
 ---
 = ListFibreChannelSessions
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

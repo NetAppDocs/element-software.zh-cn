@@ -5,6 +5,7 @@ keywords: solidfire esds,software-defined storage, dynamic node rating
 summary: NetApp SolidFire 企业 SDS （ ESDS ）可在您选择的符合 SolidFire ESDS 参考配置的硬件上提供 SolidFire 横向扩展技术和 NetApp Element 软件数据服务的优势。SolidFire ESDS 提供独立于底层硬件的 NetApp Element 软件。这样，您就可以在 NetApp 品牌设备或通用服务器上使用所有 Element 功能，这符合 NetApp 参考配置。 
 ---
 = 开始使用 NetApp SolidFire 企业版 SDS
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

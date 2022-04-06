@@ -5,6 +5,7 @@ keywords: failover, cluster, perform a failover, snapmirror
 summary: 您可以从 Element 集群执行故障转移，以使目标卷成为读 / 写卷，并可供目标端的主机访问。在从 Element 集群执行故障转移之前，必须中断 SnapMirror 关系。 
 ---
 = 从 Element 集群执行故障转移
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,volumes,virtual,get,getting,count,GetVirtualVolumeCount
 summary: 您可以使用 GetVirtualVolumeCount 方法检索系统中当前虚拟卷的数量。 
 ---
 = GetVirtualVolumeCount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

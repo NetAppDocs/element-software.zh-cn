@@ -5,6 +5,7 @@ keywords: ntp,info,get,getting,getntpinfo
 summary: 您可以使用 GetNtpInfo 方法获取当前网络时间协议（ NTP ）配置信息。 
 ---
 = GetNtpInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

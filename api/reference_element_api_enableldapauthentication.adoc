@@ -5,6 +5,7 @@ keywords: LDAP,auth,authentication,enable,enabling,EnableLdapAuthentication
 summary: 您可以使用 EnableLdapAuthentication 方法配置 LDAP 目录连接，以便向集群进行 LDAP 身份验证。然后， LDAP 目录的成员用户可以使用其 LDAP 凭据登录到存储系统。 
 ---
 = EnableLdapAuthentication
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

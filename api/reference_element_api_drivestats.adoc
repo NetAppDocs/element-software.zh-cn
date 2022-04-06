@@ -5,6 +5,7 @@ keywords: object,objects,driveStats
 summary: driveStats 对象包含单个驱动器的高级别活动测量结果。您可以使用 API 方法 GetDriveStats 检索测量信息。 
 ---
 = driveStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

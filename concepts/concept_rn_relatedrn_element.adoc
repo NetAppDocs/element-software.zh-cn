@@ -5,6 +5,7 @@ keywords: release information,previous,current,updates
 summary: 您可以通过链接访问 Element 存储环境中各个组件的最新和早期发行说明。 
 ---
 = 当前版本和先前版本信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

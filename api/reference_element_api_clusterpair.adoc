@@ -5,6 +5,7 @@ keywords: objects,object,clusterPair
 summary: clusterPair 对象包含与本地集群配对的集群的相关信息。您可以使用 ListClusterPairs 方法检索本地集群的 clusterPair 对象列表。 
 ---
 = clusterPair
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

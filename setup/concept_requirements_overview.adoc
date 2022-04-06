@@ -5,6 +5,7 @@ keywords:
 summary: 开始之前，您应查看前提条件。 
 ---
 = 要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

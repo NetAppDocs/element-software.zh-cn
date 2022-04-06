@@ -5,6 +5,7 @@ keywords: qos policies, iops
 summary: SolidFire 存储集群可以按卷提供服务质量 \ （ QoS\ ）参数。您可以使用以下三个可配置参数来定义 QoS ，以保证集群性能（以每秒输入和输出数 \ （ IOPS\ ）为单位）：最小 IOPS ，最大 IOPS 和突发 IOPS 。 
 ---
 = Quality of service
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

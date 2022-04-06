@@ -5,6 +5,7 @@ keywords: SolidFire,API,overview,about,Element
 summary: Element API 基于 HTTPS 上的 JSON-RPC 协议。JSON-RPC 是一种基于轻型 JSON 数据交换格式的简单文本 RPC 协议。客户端库可用于所有主要编程语言。 
 ---
 = 关于 Element 软件 API
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

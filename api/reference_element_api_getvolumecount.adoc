@@ -5,6 +5,7 @@ keywords: volume,volumes,get,getting,count,measurements,getvolumecount
 summary: 您可以使用 GetVolumeCount 方法获取系统中当前的卷数。 
 ---
 = GetVolumeCount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume,volumes,adding,add,access,group,addvolumestovolumeaccessgroup
 summary: 您可以使用 AddVolumeAccessGroup 方法将卷添加到指定的卷访问组。 
 ---
 = AddVolumesToVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

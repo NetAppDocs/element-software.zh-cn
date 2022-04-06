@@ -5,6 +5,7 @@ keywords: iscsi sessions, monitor
 summary: 您可以查看连接到集群的 iSCSI 会话。您可以对信息进行筛选，使其仅包含所需的会话。 
 ---
 = 查看 iSCSI 会话
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

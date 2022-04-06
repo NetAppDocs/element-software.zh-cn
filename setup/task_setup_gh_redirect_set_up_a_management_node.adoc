@@ -5,6 +5,7 @@ keywords: install management node,install mNode,install Active IQ,install AIQ
 summary: 您可以安装 NetApp Element 软件管理节点 \ （ mNode\ ）以升级和提供系统服务，管理集群资产和设置，运行系统测试和实用程序，并启用 NetApp 支持访问以进行故障排除。 
 ---
 = 设置管理节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

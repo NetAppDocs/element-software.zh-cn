@@ -5,6 +5,7 @@ keywords: slice drive error, cluster fault, authentication keys
 summary: 有时，可能会发生需要用户干预的错误。如果发生错误，将生成集群故障。下面介绍了两种最可能的情况。 
 ---
 = 恢复不可访问或无效的身份验证密钥
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snmp,trap,information,info,setting,set,setsnmptrapinfo
 summary: 您可以使用 SetSnmpTrapInfo 方法启用和禁用集群 SNMP 通知（陷阱）的生成，并指定一组接收通知的主机。在每次 SetSnmpTrapInfo 方法调用中传递的值将替换先前调用中设置的所有值。 
 ---
 = SetSnmpTrapInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: sign request, certificate authority, software encryption at rest, ear,
 summary: 您可以按照以下步骤操作，并使用列出的 Element API 方法设置外部密钥管理功能。 
 ---
 = 设置外部密钥管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

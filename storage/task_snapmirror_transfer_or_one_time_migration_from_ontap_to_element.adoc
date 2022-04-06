@@ -5,6 +5,7 @@ keywords: transfer, perform, source volume, snapmirror, dr, disaster recovery, o
 summary: 通常，在使用 SnapMirror 从运行 NetApp Element 软件的 SolidFire 存储集群到 ONTAP 软件进行灾难恢复时， Element 是源，而 ONTAP 是目标。但是，在某些情况下， ONTAP 存储系统可以用作源，而 Element 可以用作目标。 
 ---
 = 执行从 ONTAP 到 Element 的传输或一次性迁移
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

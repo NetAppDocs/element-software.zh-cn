@@ -5,6 +5,7 @@ keywords: object,objects,task
 summary: task 对象包含有关系统中当前正在运行或已完成的虚拟卷任务的信息。您可以使用 ListVirtualVolumeTasks 方法检索所有虚拟卷任务的此信息。 
 ---
 = 任务（虚拟卷）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

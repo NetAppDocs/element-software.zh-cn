@@ -5,6 +5,7 @@ keywords: create,creating,support,bundle,CreateSupportBundle
 summary: 您可以使用 CreateSupportBundle 在节点的目录下创建支持包文件。创建后，此捆绑包将以 tar.gz 文件的形式存储在节点上。 
 ---
 = CreateSupportBundle
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

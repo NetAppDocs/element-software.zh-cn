@@ -5,6 +5,7 @@ keywords: initiator,method,methods,API,managing,manage
 summary: 通过启动程序方法，您可以添加，删除，查看和修改 iSCSI 启动程序对象，这些对象用于处理存储系统与外部存储客户端之间的通信。 
 ---
 = 启动程序 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

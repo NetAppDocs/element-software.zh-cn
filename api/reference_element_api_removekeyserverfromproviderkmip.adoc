@@ -5,6 +5,7 @@ keywords: KMIP,key server,unassigning,removing,remove,unassign,removekeyserverfr
 summary: 您可以使用 RemoveKeyServerFromProviderKmip 方法从分配给它的提供程序中取消分配指定的密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。您可以从密钥服务器的提供程序中取消分配密钥服务器，除非它是最后一个密钥服务器且其提供程序处于活动状态 \ （提供当前正在使用的密钥 \ ）。如果指定的密钥服务器未分配给提供程序，则不会执行任何操作，也不会返回任何错误。 
 ---
 = RemoveKeyServerFromProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

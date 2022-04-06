@@ -5,6 +5,7 @@ keywords: mfa, idp, certificates, api method
 summary: 您应了解以下与多因素身份验证相关的注意事项。 
 ---
 = 用于多因素身份验证的追加信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

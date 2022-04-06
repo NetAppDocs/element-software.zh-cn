@@ -5,6 +5,7 @@ keywords: cluster,interface,preferences,create,creating,CreateClusterInterfacePr
 summary: 通过 CreateClusterInterfacePreference 方法，与运行 Element 软件的存储集群集成的系统可以在存储集群上创建和存储任意信息。此方法供内部使用。 
 ---
 = CreateClusterInterfacePreference
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

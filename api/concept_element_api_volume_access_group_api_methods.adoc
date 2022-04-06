@@ -5,6 +5,7 @@ keywords: volume,access,group,method,methods,API,managing,manage
 summary: 通过卷访问组方法，您可以添加，删除，查看和修改卷访问组，这些卷访问组是用户可以使用 iSCSI 或光纤通道启动程序访问的卷的集合。 
 ---
 = 卷访问组 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

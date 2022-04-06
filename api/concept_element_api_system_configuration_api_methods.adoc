@@ -5,6 +5,7 @@ keywords: system,config,configuration,methods,api
 summary: 您可以通过系统配置 API 方法获取和设置应用于集群中所有节点的配置值。 
 ---
 = 系统配置 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

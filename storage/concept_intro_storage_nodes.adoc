@@ -5,6 +5,7 @@ keywords: storage nodes, management nodes, block space, metadata space, data man
 summary: SolidFire 存储节点是一个服务器，其中包含一组通过绑定 10G 网络接口相互通信的驱动器。节点中的驱动器包含用于数据存储和数据管理的块和元数据空间。 
 ---
 = 存储节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

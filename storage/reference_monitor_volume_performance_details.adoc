@@ -5,6 +5,7 @@ keywords: volume performance
 summary: 您可以从 Element UI 中的 Reporting 选项卡的 Volume Performance 页面查看卷的性能统计信息。 
 ---
 = 卷性能详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

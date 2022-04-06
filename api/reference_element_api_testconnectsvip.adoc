@@ -5,6 +5,7 @@ keywords: storage,connection,svip,test,testing,testconnectsvip
 summary: 您可以使用 TestConnectSvip 方法测试与存储集群的存储连接。此测试将使用 ICMP 数据包对 SVIP 执行 ping 操作，如果成功，则会作为 iSCSI 启动程序进行连接。 
 ---
 = TestConnectSvip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: SSH,enabling,enable,cluster,EnableClusterSsh
 summary: 您可以使用 EnableClusterSsh 方法在存储集群中的所有节点上启用 SSH 服务。 
 ---
 = EnableClusterSsh
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

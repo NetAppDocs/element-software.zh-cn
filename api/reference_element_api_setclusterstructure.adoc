@@ -5,6 +5,7 @@ keywords: storage,cluster,configuration,info,restore,set,setting,setclusterstruc
 summary: 您可以使用 SetClusterStructure 方法从备份中还原存储集群配置信息。调用此方法时，您将传递包含要还原的配置信息的 clusterStructure 对象作为参数。 
 ---
 = SetClusterStructure
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

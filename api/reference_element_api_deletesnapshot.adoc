@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,delete,deleting,DeleteSnapshot
 summary: 您可以使用 DeleteSnapshot 方法删除快照。 
 ---
 = DeleteSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

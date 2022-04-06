@@ -5,6 +5,7 @@ keywords: cluster,version,info,get,getting,getclusterversioninfo
 summary: 您可以使用 GetClusterVersionInfo 方法检索有关集群中每个节点上运行的 Element 软件版本的信息。此方法还会返回有关当前正在升级软件的节点的信息。 
 ---
 = GetClusterVersionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

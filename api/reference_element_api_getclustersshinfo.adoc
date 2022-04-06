@@ -5,6 +5,7 @@ keywords: ssh,service,status,get,getting,cluster,info,getclustersshinfo
 summary: 您可以使用 GetClusterSshInfo 方法查询整个存储集群的 SSH 服务状态。 
 ---
 = GetClusterSshInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

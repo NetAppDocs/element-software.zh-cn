@@ -5,6 +5,7 @@ keywords: group snapshots, data protection, set of volumes, backup, rollback
 summary: 您可以为一组相关卷创建组快照，以便为每个卷保留元数据的时间点副本。您可以将来使用组快照作为备份或回滚，将卷组的状态还原到先前的状态。 
 ---
 = 使用组快照执行数据保护任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

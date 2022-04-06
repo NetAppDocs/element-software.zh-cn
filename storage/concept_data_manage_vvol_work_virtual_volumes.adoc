@@ -5,6 +5,7 @@ keywords: virtual volume, configure vvols, use UI to manage
 summary: 您可以使用 Element UI 查看虚拟卷及其关联存储容器，协议端点，绑定和主机的信息并执行相关任务。 
 ---
 = 使用虚拟卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: labels, snapmirror, retention rules
 summary: SnapMirror 标签用作根据关系的保留规则传输指定快照的标记。 
 ---
 = SnapMirror 标签
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

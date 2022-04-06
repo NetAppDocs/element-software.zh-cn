@@ -5,6 +5,7 @@ keywords: element, solidfire, volume, create, edit, delete, purge, restore, clon
 summary: SolidFire 系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。 
 ---
 = 管理卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

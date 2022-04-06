@@ -5,6 +5,7 @@ keywords: replication, snapmirror, data protection
 summary: 您可以从 NetAppElement UI 中的数据保护选项卡创建 SnapMirror 关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。 
 ---
 = 在 Element 和 ONTAP 集群之间使用 SnapMirror 复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

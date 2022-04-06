@@ -5,6 +5,7 @@ keywords: volume,volumes,snapshot,snapshots,CreateGroupSnapshot,group,create,cre
 summary: 您可以使用 CreateGroupSnapshot 为一组卷创建时间点副本。 
 ---
 = CreateGroupSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,backup,target,modifyback
 summary: 您可以使用 ModifyBackupTarget 方法更改备份目标的属性。 
 ---
 = ModifyBackupTarget
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

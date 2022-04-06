@@ -5,6 +5,7 @@ keywords: volume pairs, replication, data protection
 summary: '"Data Protection" 选项卡上的 "Volume Pairs" 页面提供了有关已配对或正在配对的卷的信息。系统会在卷状态列中显示配对和进度消息。' 
 ---
 = 卷对详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

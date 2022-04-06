@@ -5,6 +5,7 @@ keywords: qos,usage,volume,histogram,generate,listvolumeqoshistograms,histograms
 summary: 您可以使用 ListVolumeQoSHistograms 方法生成一个或多个卷的卷 QoS 使用情况直方图。这样，您就可以更好地了解卷如何使用 QoS 。 
 ---
 = ListVolumeQoSHistograms
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

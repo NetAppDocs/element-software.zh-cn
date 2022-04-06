@@ -5,6 +5,7 @@ keywords: data refresh interval, cluster, interval controls, API requests, heavy
 summary: 根据 API 响应时间，集群可能会自动调整您正在查看的 NetApp Element 软件页面的某些部分的数据刷新间隔。 
 ---
 = 接口刷新率受集群负载影响
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

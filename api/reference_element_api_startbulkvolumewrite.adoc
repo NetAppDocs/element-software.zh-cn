@@ -5,6 +5,7 @@ keywords: volume,bulk,start,starting,write,session,startbulkvolumewrite
 summary: 您可以使用 StartBulkVolumeWrite 方法在指定卷上启动批量卷写入会话。 
 ---
 = StartBulkVolumeWrite
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

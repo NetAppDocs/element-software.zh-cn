@@ -5,6 +5,7 @@ keywords: target volume, create, read, write access
 summary: 复制过程涉及两个端点：源卷和目标卷。创建目标卷时，卷会自动设置为读 / 写模式，以便在复制期间接受数据。 
 ---
 = 创建具有读取或写入访问权限的目标卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume pairs, delete
 summary: 如果要删除两个卷之间的对关联，可以删除卷对。 
 ---
 = 删除卷对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

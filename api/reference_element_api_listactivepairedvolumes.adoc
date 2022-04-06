@@ -5,6 +5,7 @@ keywords: active,pairs,paired,pair,volume,volumes,list,listing,listactivepairedv
 summary: 您可以使用 ListActivePairedVolumes 方法列出与卷配对的所有活动卷。此方法将返回有关具有活动和待定配对的卷的信息。 
 ---
 = ListActivePairedVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

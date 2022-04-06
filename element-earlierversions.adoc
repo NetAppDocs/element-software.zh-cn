@@ -6,6 +6,7 @@ summary: 如果您未运行最新版本，可以参考先前版本的文档。
 ---
 = 早期版本的 SolidFire 和 NetApp Element 软件文档
 :hardbreaks:
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapmirror,endpoint,modi
 summary: Element 软件使用此版本的 ModifySnapMirrorEndpoint 方法修改非受管 SnapMirror 端点的存储集群名称或 IP 地址属性。不能使用 Element SnapMirror API 管理非受管端点。它们必须使用 ONTAP 管理软件或 API 进行管理。 
 ---
 = ModifySnapMirrorEndpoint （非受管）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

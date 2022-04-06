@@ -5,6 +5,7 @@ keywords: virtual volumes, volumes, manage
 summary: 您可以从 Element UI 中的 Management 选项卡管理运行 Element 软件的集群中的数据。可用的集群管理功能包括创建和管理数据卷，用户帐户，卷访问组，启动程序和服务质量（ QoS ）策略。 
 ---
 = 管理卷和虚拟卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

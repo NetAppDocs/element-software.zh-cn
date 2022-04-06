@@ -5,6 +5,7 @@ keywords: objects,object,clusterConfig
 summary: clusterConfig 对象将返回节点用于与集群通信的信息。 
 ---
 = clusterconfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

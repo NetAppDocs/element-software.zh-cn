@@ -5,6 +5,7 @@ keywords: deployment, post deployment options, credentials, components, FIPS sec
 summary: 设置 SolidFire 系统后，您可能需要执行一些可选任务。此外，您还可以配置多因素身份验证，外部密钥管理和联邦信息处理标准 \ （ FIPS\ ）安全性的设置。 
 ---
 = 在部署后配置 SolidFire 系统选项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

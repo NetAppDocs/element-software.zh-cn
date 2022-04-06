@@ -5,6 +5,7 @@ keywords: volume pairings, pairing key, volume id, replication
 summary: 配对过程涉及使用卷 ID 或配对密钥对两个卷配对。 
 ---
 = 使用卷 ID 或配对密钥对卷配对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

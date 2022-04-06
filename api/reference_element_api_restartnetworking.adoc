@@ -5,6 +5,7 @@ keywords: node,restarting,restart,networking,network,service,services,restartnet
 summary: 您可以使用 RestartNetworking 方法重新启动节点上的网络服务。 
 ---
 = RestartNetworking
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

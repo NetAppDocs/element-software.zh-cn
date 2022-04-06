@@ -5,6 +5,7 @@ keywords: network,config,configuration,reset,restetting,factory,default,resetnet
 summary: 您可以使用 ResetNetworkConfig 方法帮助解决单个节点的网络配置问题。此方法会将单个节点的网络配置重置为出厂默认设置。 
 ---
 = ResetNetworkConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

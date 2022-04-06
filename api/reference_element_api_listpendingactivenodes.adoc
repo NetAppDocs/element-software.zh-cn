@@ -5,6 +5,7 @@ keywords: cluster,list,listing,pending,active,node,nodes,listpendingactivenodes
 summary: 您可以使用 ListPendingActiveNodes 方法列出集群中处于 PendingActive 状态，处于待定状态和活动状态之间的节点。处于此状态的节点将返回到出厂映像。 
 ---
 = ListPendingActiveNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

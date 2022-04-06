@@ -5,6 +5,7 @@ keywords: clusters, about clusters, collection of nodes, nodes in a cluster, blo
 summary: 集群是 SolidFire 存储系统的中心，由一组节点组成。要实现 SolidFire 存储效率，集群中必须至少有四个节点。集群在网络上显示为一个逻辑组，然后可作为块存储访问。 
 ---
 = 集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

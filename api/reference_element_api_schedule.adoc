@@ -5,6 +5,7 @@ keywords: object,objects,schedule
 summary: schedule 对象包含有关为自主创建卷快照而创建的计划的信息。您可以使用 ListSchedules API 方法检索所有计划的计划信息。 
 ---
 = schedule
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

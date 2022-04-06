@@ -5,6 +5,7 @@ keywords: element, rekey, encryption at rest, rekey master, replace key
 summary: 您可以使用 Element API 重新设置现有密钥的密钥。此过程将为外部密钥管理服务器创建一个新的替换主密钥。 
 ---
 = 重新设置 REST 主密钥的软件加密密钥
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

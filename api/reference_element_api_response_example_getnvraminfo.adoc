@@ -5,6 +5,7 @@ keywords: response,example,getnvraminfo
 summary: GetNvramInfo 方法返回类似于以下示例的响应。 
 ---
 = GetNvramInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

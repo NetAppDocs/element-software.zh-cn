@@ -5,6 +5,7 @@ keywords: volumes,volume,stats,list,listing,listvolumestatsbyvolume,activity
 summary: 您可以使用 ListVolumeStatsByVolume 方法按卷列出每个卷的高级别活动测量结果。值是在创建卷时累积的。 
 ---
 = ListVolumeStatsByVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,QoS
 summary: qos 对象包含有关卷的服务质量 \ （ qos\ ）设置的信息。在未指定 QoS 值的情况下创建的卷将使用默认值创建。您可以使用 GetDefaultQoS 方法查找默认值。 
 ---
 = QoS
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

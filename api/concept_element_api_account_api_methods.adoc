@@ -5,6 +5,7 @@ keywords: account,method,methods,API,managing,manage
 summary: 使用帐户方法可以添加，删除，查看和修改帐户和安全信息。 
 ---
 = 帐户 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

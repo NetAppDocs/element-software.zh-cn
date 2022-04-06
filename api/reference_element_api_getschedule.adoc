@@ -5,6 +5,7 @@ keywords: snapshot,schedule,get,getting,getschedule
 summary: 您可以使用 GetSchedule 获取有关已计划快照的信息。 
 ---
 = GetSchedule
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

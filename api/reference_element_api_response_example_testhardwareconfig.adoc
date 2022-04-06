@@ -5,6 +5,7 @@ keywords: response,example,testhardwareconfig
 summary: TestHardwareConfig 方法返回类似于以下示例的响应。 
 ---
 = TestHardwareConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

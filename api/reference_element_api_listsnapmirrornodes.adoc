@@ -5,6 +5,7 @@ keywords: snapmirror,node,nodes,list,listing,listsnapmirrornodes
 summary: Element 软件 Web UI 使用 ListSnapMirrorNodes 方法获取远程 ONTAP 集群中的节点列表。 
 ---
 = ListSnapMirrorNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

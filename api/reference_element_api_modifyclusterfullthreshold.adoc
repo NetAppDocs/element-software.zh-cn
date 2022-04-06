@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,cluster,full,fullness,th
 summary: 您可以使用 ModifyClusterFullThreshold 方法更改存储集群接近特定容量利用率时系统生成事件的级别。在系统生成警告之前，您可以使用阈值设置指示可接受的已利用块存储量。 
 ---
 = ModifyClusterFullThreshold
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

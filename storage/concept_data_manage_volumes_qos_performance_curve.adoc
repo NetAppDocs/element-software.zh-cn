@@ -5,6 +5,7 @@ keywords: qos, performance curve, block size, iops
 summary: 服务质量 \ （ QoS\ ）性能曲线显示了块大小与 IOPS 百分比之间的关系。 
 ---
 = QoS 性能曲线
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

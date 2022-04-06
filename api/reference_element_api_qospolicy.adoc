@@ -5,6 +5,7 @@ keywords: object,objects,QoSPolicy,QoS,policy,policies
 summary: QoSPolicy 对象包含有关运行 Element 软件的存储集群上的 QoS 策略的信息。 
 ---
 = QoSPolicy
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

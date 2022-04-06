@@ -5,6 +5,7 @@ keywords: support,bundle,delete,deleting,DeleteAllSupportBundles
 summary: 您可以使用 DeleteAllSupportBundles 方法删除使用 CreateSupportBundle API 方法生成的所有支持包。 
 ---
 = DeleteAllSupportBundles
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

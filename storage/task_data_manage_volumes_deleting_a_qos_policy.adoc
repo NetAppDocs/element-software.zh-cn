@@ -5,6 +5,7 @@ keywords: qos policy, delete, volumes
 summary: 您可以删除不再需要的 QoS 策略。删除 QoS 策略时，与该策略关联的所有卷都会保留 QoS 设置，但不会与某个策略关联。 
 ---
 = 删除 QoS 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

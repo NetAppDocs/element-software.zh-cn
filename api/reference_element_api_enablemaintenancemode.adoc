@@ -5,6 +5,7 @@ keywords: maintenance,enable,mode
 summary: 您可以使用 EnableMaintenanceMode 方法准备要维护的存储节点。维护情形包括需要关闭或重新启动节点的任何任务。 
 ---
 = EnableMaintenanceMode
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

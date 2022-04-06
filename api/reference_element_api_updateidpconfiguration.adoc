@@ -5,6 +5,7 @@ keywords: IdP,idp,configuration,update
 summary: 您可以使用 UpdateIdpConfiguration 方法使用集群的第三方 IdP 更新现有配置。 
 ---
 = UpdateIdpConfiguration
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 ResetNode 方法将节点重置为出厂设置。调用此方法时，所有数据，软件包（软件升级等），配置和日志文件都会从节点中删除。但是，此操作期间会保留节点的网络设置。不能将加入集群的节点重置为出厂设置。 
 ---
 = ResetNode
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

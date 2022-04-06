@@ -5,6 +5,7 @@ keywords: element, api, storage, manage, cluster, volumes, json, rpc, https
 summary: 了解如何使用 Element API 管理 NetApp Element 存储集群。 
 ---
 = 使用 Element API 管理存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

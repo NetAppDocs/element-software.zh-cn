@@ -5,6 +5,7 @@ keywords: cluster pair connection, validate
 summary: 完成集群配对后，您可能需要验证集群对连接以确保复制成功。 
 ---
 = 验证集群对连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

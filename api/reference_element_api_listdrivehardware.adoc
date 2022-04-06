@@ -5,6 +5,7 @@ keywords: drive,hardware,list,listing,listdrivehardware,drives
 summary: 您可以使用 ListDriveHardware 方法列出连接到节点的所有驱动器。在单个节点上使用时，此方法将返回驱动器硬件信息。在集群主节点 MVIP 上使用时，此方法将返回所有节点上所有驱动器的信息。 
 ---
 = ListDriveHardware
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

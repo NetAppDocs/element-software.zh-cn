@@ -5,6 +5,7 @@ keywords: volume,snapshot,API,method
 summary: 您可以通过 Element 软件卷快照 API 方法管理卷快照。您可以使用卷快照 API 方法创建，修改，克隆和删除卷快照。 
 ---
 = 卷快照 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

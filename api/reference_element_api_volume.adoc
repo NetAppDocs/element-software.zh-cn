@@ -5,6 +5,7 @@ keywords: object,objects,volume
 summary: volume 对象包含有关未配对或已配对卷的配置信息。它不包含运行时或使用情况信息，也不包含有关虚拟卷的信息。 
 ---
 = volume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

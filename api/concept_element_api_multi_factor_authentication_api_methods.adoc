@@ -5,6 +5,7 @@ keywords: multi-factor,MFA,idp,authentication,methods
 summary: 您可以使用多因素身份验证 \ （ MFA\ ）通过安全断言标记语言 \ （ SAML \ ）使用第三方身份提供程序 \ （ IdP ）管理用户会话。 
 ---
 = 多因素身份验证 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: virtual volumes, view details vvols, vvols performance activity, vSphe
 summary: 您可以在 Element UI 中查看集群上所有活动虚拟卷的虚拟卷信息。您还可以查看每个虚拟卷的性能活动，包括输入，输出，吞吐量，延迟， 队列深度和卷信息。 
 ---
 = 查看虚拟卷详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

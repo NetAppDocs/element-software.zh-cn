@@ -5,6 +5,7 @@ keywords: snmp,state,get,getting,getsnmpstate
 summary: 您可以使用 GetSnmpState 方法获取 SNMP 功能的当前状态。 
 ---
 = GetSnmpState
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

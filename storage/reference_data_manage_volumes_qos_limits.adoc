@@ -5,6 +5,7 @@ keywords: qos, value limits
 summary: 您可以找到有关服务质量 \ （ QoS\ ）的可能最小值和最大值的信息。 
 ---
 = QoS 值限制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

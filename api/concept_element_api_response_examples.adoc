@@ -5,6 +5,7 @@ keywords: response,example
 summary: 此处提供了完整的响应示例。 
 ---
 = 响应示例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

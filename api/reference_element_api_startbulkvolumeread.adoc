@@ -5,6 +5,7 @@ keywords: volume,read,session,start,starting,bulk,startbulkvolumeread
 summary: 您可以使用 StartBulkVolumeRead 方法在指定卷上启动批量卷读取会话。 
 ---
 = StartBulkVolumeRead
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

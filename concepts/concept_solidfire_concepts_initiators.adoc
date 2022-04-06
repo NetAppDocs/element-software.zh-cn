@@ -5,6 +5,7 @@ keywords: netapp, element, initiator, storage volume, element volume, access gro
 summary: 了解启动程序以及如何使用它们允许访问卷访问组中的存储。 
 ---
 = 启动程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

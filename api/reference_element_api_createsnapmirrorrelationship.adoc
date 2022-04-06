@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,relationships,create,creating,CreateSnapMirror
 summary: Element Web UI 使用 CreateSnapMirrorRelationship 方法在源端点和目标端点之间创建 SnapMirror 扩展数据保护关系。 
 ---
 = CreateSnapMirrorRelationship
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

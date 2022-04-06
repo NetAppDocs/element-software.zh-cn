@@ -5,6 +5,7 @@ keywords: compatibility, node version, clusters, software version, compatible ve
 summary: 节点兼容性取决于节点上安装的 Element 软件版本。如果节点和集群的版本不兼容，则基于 Element 软件的存储集群会根据集群上的 Element 软件版本自动创建节点映像。 
 ---
 = 节点版本控制和兼容性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

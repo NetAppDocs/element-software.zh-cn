@@ -5,6 +5,7 @@ keywords: solidfire esds, upgrading solidfire esds clusters, ansible role, clust
 summary: '您可以使用 Ansible 在 SolidFire ESDS 集群上执行无中断滚动升级。使用 NetApp 提供的 `NAR_solidfire_SDS_upgrade` 角色， Ansible 一次执行一个节点的滚动升级，同时保持所有卷的数据可用性。' 
 ---
 = 升级集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

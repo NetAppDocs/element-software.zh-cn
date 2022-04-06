@@ -5,6 +5,7 @@ keywords: create,creating,initiator,CreateInitiators,WWPN,IQN,initiators
 summary: 您可以使用 CreateInitiators 创建多个新启动程序 IQN 或全球通用端口名称（ WWPN ），并可选择为其分配别名和属性。使用 CreateInitiators 创建新启动程序时，您还可以将其添加到卷访问组中。 
 ---
 = CreateInitiators
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

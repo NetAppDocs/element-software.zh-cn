@@ -5,6 +5,7 @@ keywords: volumes, purge a volume
 summary: 清除卷后，该卷将从系统中永久删除。卷中的所有数据都将丢失。 
 ---
 = 清除卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

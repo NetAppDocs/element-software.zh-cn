@@ -5,6 +5,7 @@ keywords: SNMP,disable,disabling,DisableSnmp
 summary: 您可以使用 DisableSnmp 方法在集群节点上禁用 SNMP 。 
 ---
 = DisableSnmp
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

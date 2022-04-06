@@ -5,6 +5,7 @@ keywords: solidfire esds, replace drive, proactive drive replacement, cache driv
 summary: 如果要主动更换 SolidFire ESDS 集群中的元数据驱动器或块驱动器，请执行此操作步骤。Element UI 集群 > 驱动器页面会显示驱动器损耗信息。 
 ---
 = 更换 HPE DL360 的驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

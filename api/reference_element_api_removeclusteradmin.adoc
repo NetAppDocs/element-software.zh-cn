@@ -5,6 +5,7 @@ keywords: cluster,admin,remove,removing,removeclusteradmin
 summary: '您可以使用 RemoveClusterAdmin 方法删除集群管理员， LDAP 集群管理员或第三方身份提供程序 \ （ IdP ）集群管理员。您不能删除 "admin" 集群管理员帐户。' 
 ---
 = RemoveClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

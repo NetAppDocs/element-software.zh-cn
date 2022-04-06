@@ -5,6 +5,7 @@ keywords: troubleshooting network issues, using per-node utilities, storage node
 summary: 如果 NetApp Element 软件 UI 中的标准监控工具无法为您提供足够的故障排除信息，您可以使用每节点实用程序对网络问题进行故障排除。每节点实用程序提供了特定的信息和工具，可帮助您解决节点之间或管理节点的网络问题。 
 ---
 = 使用存储节点的每节点实用程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ssl,cert,certificate,get,getting,getnodesslcertificate,active
 summary: 您可以使用 GetNodeSSLCertificate 方法检索管理节点上当前处于活动状态的 SSL 证书。 
 ---
 = GetNodeSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storage container, create
 summary: 您可以在 Element UI 中创建存储容器，并在 vCenter 中发现它们。您必须至少创建一个存储容器，才能开始配置 VVol 支持的虚拟机。 
 ---
 = 创建存储容器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

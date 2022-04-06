@@ -5,6 +5,7 @@ keywords: object,objects,pendingNode
 summary: pendingNode 对象包含可添加到集群中的节点的相关信息。使用 ListPendingNodes API 方法返回所有待定节点的此信息列表。您可以使用 addnodes API 方法将列出的任何节点添加到集群中。 
 ---
 = pendingNode
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

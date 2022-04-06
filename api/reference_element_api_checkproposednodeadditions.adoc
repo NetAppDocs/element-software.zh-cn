@@ -5,6 +5,7 @@ keywords: proposed,node,additions,CheckProposedNodeAdditions,storage,checking
 summary: 您可以使用 CheckProposedNodeAdditions 方法测试一组存储节点，以确定是否可以将其添加到存储集群中而不会出现错误或违反最佳实践的情况。 
 ---
 = CheckProposedNodeAdditions
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

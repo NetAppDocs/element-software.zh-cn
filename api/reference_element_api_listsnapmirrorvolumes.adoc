@@ -5,6 +5,7 @@ keywords: snapmirror,volume,list,listing,volumes,listsnapmirrorvolumes,ontap
 summary: Element 软件 Web UI 使用 ListSnapMirrorVolumes 方法列出远程 ONTAP 系统上可用的所有 SnapMirror 卷。 
 ---
 = ListSnapMirrorVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

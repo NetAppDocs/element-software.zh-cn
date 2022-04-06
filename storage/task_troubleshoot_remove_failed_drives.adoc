@@ -5,6 +5,7 @@ keywords: troubleshoot, failed drives, remove
 summary: 如果驱动器的自我诊断功能告诉节点驱动器发生故障，或者与驱动器的通信停止五分半或更长时间，则 SolidFire 系统会将驱动器置于故障状态。系统将显示故障驱动器的列表。您必须从 NetApp Element 软件的故障驱动器列表中删除故障驱动器。 
 ---
 = 从集群中删除故障驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

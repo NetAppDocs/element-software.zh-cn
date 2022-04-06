@@ -5,6 +5,7 @@ keywords: soldifre hardware, h-series hardware, install hardware, maintain hardw
 summary: 了解如何安装和维护 H 系列和 SF 系列硬件。 
 ---
 = 安装和维护硬件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

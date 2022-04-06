@@ -5,6 +5,7 @@ keywords: volume,volumes,CopyVolume,overwrite,overwriting,data
 summary: 您可以使用 CopyVolume 方法将现有卷的数据内容覆盖为另一个卷的数据内容 \ （或 snapshot\ ）。目标卷的属性，例如 IQN ， QoS 设置，大小，帐户和卷访问组成员资格不会更改。目标卷必须已存在，并且大小必须与源卷相同。 
 ---
 = CopyVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: virtual network, edit, ip address block, vlan attributes
 summary: 您可以更改 VLAN 属性，例如 VLAN 名称，网络掩码和 IP 地址块大小。无法修改 VLAN 的 VLAN 标记和 SVIP 。对于非 VRF VLAN ，网关属性不是有效参数。 
 ---
 = 编辑虚拟网络
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

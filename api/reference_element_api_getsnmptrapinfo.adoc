@@ -5,6 +5,7 @@ keywords: snmp,trap,get,getting,info,getsnmptrapinfo
 summary: 您可以使用 GetSnmpTrapInfo 方法获取当前 SNMP 陷阱配置信息。 
 ---
 = GetSnmpTrapInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

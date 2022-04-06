@@ -5,6 +5,7 @@ keywords: create,creating,backup,target,CreateBackupTarget
 summary: 您可以使用 CreateBackupTarget 创建和存储备份目标信息，这样，您无需在每次创建备份时重新输入这些信息。 
 ---
 = CreateBackupTarget
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

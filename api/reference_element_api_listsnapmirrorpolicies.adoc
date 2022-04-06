@@ -5,6 +5,7 @@ keywords: snapmirror,policy,policies,list,listing,ontap,listsnapmirrorpolicies
 summary: Element 软件 Web UI 使用 ListSnapMirrorPolicies 方法列出远程 ONTAP 系统上的所有 SnapMirror 策略。 
 ---
 = ListSnapMirrorPolicies
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

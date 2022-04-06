@@ -5,6 +5,7 @@ keywords: qos policy, apply to volumes
 summary: 您可以将现有 QoS 策略批量应用于一个或多个卷。 
 ---
 = 将 QoS 策略应用于卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

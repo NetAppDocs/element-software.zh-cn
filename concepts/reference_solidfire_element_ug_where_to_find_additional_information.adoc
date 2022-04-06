@@ -5,6 +5,7 @@ keywords:
 summary: 您可以在 NetApp SolidFire 文档中心以及 NetApp SolidFire 资源页面上提供的资源中了解有关 SolidFire 存储系统相关任务的更多信息。 
 ---
 = 从何处查找追加信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

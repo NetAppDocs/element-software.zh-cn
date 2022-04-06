@@ -5,6 +5,7 @@ keywords: CreateClusterSupportBundle,create,cluster,support,bundle,creating
 summary: 您可以在管理节点上使用 CreateClusterSupportBundle 从集群中的所有节点收集支持包。创建包时，该包将作为 .tar.gz 文件存储在节点上。此方法只能在管理节点上运行；在存储节点上运行时不起作用。 
 ---
 = CreateClusterSupportBundle
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

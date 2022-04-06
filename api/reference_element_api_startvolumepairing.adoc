@@ -5,6 +5,7 @@ keywords: volume,pair,pairing,start,starting,startvolumepairing
 summary: 您可以使用 StartVolumePairing 方法从用于与另一个卷配对的卷创建编码密钥。此方法创建的密钥将在 CompleteVolumePairing 方法中用于建立卷配对。 
 ---
 = StartVolumePairing
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

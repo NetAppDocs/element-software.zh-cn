@@ -5,6 +5,7 @@ keywords: nvram,info,get,getting,getnvraminfo
 summary: 您可以使用 GetNvramInfo 方法从每个节点获取有关 NVRAM 卡的信息。 
 ---
 = GetNvramInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

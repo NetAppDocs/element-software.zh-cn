@@ -5,6 +5,7 @@ keywords: test,testing,network,config,configuration,testnetworkconfig
 summary: 您可以使用 TestNetworkConfig 方法测试已配置的网络设置是否与系统上正在使用的网络设置匹配。 
 ---
 = TestNetworkConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

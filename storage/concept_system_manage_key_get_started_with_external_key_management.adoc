@@ -5,6 +5,7 @@ keywords: kmip, master key, key management, encryption at rest, software encrypt
 summary: 外部密钥管理（ EKM ）可与集群外外部密钥服务器（ EKS ）结合使用，提供安全的身份验证密钥管理（ AK ）。如果集群上启用了空闲加密，则可以使用这些 AK 锁定和解锁自加密驱动器（ SED ）。 
 ---
 = 开始使用外部密钥管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

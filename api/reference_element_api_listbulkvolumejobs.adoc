@@ -5,6 +5,7 @@ keywords: bulk,volume,job,jobs,volumes,read,write,operation,list,listing,listbul
 summary: 您可以使用 ListBulkVolumeJobs 方法获取有关系统中发生的每个批量卷读取或写入操作的信息。 
 ---
 = ListBulkVolumeJobs
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

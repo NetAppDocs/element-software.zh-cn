@@ -5,6 +5,7 @@ keywords: cluster,list,listing,drive,drives,stats,statistics,listdrivestats
 summary: 您可以使用 ListDriveStats 方法列出集群中多个驱动器的高级别活动测量结果。默认情况下，此方法将返回集群中所有驱动器的统计信息，这些测量值是在将驱动器添加到集群后累积的。此方法返回的某些值特定于块驱动器，而某些值则特定于元数据驱动器。 
 ---
 = ListDriveStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

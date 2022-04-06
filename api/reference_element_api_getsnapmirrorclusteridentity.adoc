@@ -5,6 +5,7 @@ keywords: get,getting,SnapMirror,cluster,identity,GetSnapMirrorClusterIdentity
 summary: Element 软件 Web UI 使用 GetSnapMirrorClusterIdentity 获取有关 ONTAP 集群的身份信息。 
 ---
 = GetSnapMirrorClusterIdentity
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

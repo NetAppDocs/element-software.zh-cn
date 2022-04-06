@@ -5,6 +5,7 @@ keywords: volume,access,group,groups,delete,deleting,DeleteVolumeAccessGroup
 summary: 您可以使用 DeleteVolumeAccessGroup 删除卷访问组。 
 ---
 = DeleteVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: KMIP,key server,keys
 summary: keyServerKmip 对象用于描述密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP\ ）密钥服务器，此服务器用于检索用于集群功能（例如空闲加密）的身份验证密钥。 
 ---
 = KeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

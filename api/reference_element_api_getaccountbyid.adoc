@@ -5,6 +5,7 @@ keywords: accounts,account,get,getting,GetAccountByID,ID
 summary: 您可以使用 GetAccountByID 获取给定帐户 ID 的有关特定帐户的详细信息。 
 ---
 = GetAccountByID
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

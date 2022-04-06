@@ -5,6 +5,7 @@ keywords: remote,logging,host,hosts,set,setting,setremotelogginghosts
 summary: 您可以使用 SetRemoteLoggingHosts 方法配置从存储集群中的节点到集中式日志服务器的远程日志记录。远程日志记录是使用默认端口 514 通过 TCP 执行的。此 API 不会添加到现有日志记录主机中。而是使用此 API 方法指定的新值替换当前存在的值。您可以使用 GetRemoteLoggingHosts 确定当前的日志记录主机，然后使用 SetRemoteLoggingHosts 设置所需的当前和新日志记录主机列表。 
 ---
 = SetRemoteLoggingHosts
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

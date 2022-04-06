@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,group,list,listing,listgroupsnapshots
 summary: 您可以使用 ListGroupSnapshots 方法返回有关已创建的所有组快照的信息。 
 ---
 = ListGroupSnapshots
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

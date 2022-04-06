@@ -5,6 +5,7 @@ keywords: ssl,certificate,cert,remove,removing,cluster,removesslcertificate
 summary: 您可以使用 RemoveSSLCertificate 方法删除集群中存储节点的用户 SSL 证书和专用密钥。删除证书和专用密钥后，存储节点将配置为使用默认证书和专用密钥。 
 ---
 = RemoveSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

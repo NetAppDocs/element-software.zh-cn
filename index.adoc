@@ -6,5 +6,6 @@ lead: A SolidFire all-flash storage system is comprised of hardware components s
 summary: SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。作为一个存储系统，此统一集群使用 NetApp Element 软件进行管理。 
 ---
 = SolidFire 和 Element 软件 12.3.x 文档
+:allow-uri-read: 
 
 

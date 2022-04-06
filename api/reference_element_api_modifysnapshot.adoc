@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapshot,attributes,attr
 summary: 您可以使用 ModifySnapshot 更改当前分配给快照的属性。您也可以使用此方法将读 / 写 \ （源 \ ）卷上创建的快照远程复制到运行 Element 软件的目标存储集群。 
 ---
 = ModifySnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: backup,target,targets,info,list,listing,listbackuptargets
 summary: 您可以使用 ListBackupTargets 方法获取有关已创建的所有备份目标的信息。 
 ---
 = ListBackupTargets
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

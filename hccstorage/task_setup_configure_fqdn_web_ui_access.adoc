@@ -5,6 +5,7 @@ keywords: netapp, element, fqdn, ui, access, web, administration
 summary: 了解如何配置系统 FQDN Web UI 访问并对其进行故障排除。 
 ---
 = 配置完全限定域名 Web UI 访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

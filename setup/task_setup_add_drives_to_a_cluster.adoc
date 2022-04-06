@@ -5,6 +5,7 @@ keywords:
 summary: 向集群添加节点或在现有节点中安装新驱动器时，驱动器会自动注册为可用。您必须先使用 Element UI 或 API 将驱动器添加到集群中，然后这些驱动器才能加入集群。 
 ---
 = 向集群添加驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

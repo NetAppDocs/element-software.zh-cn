@@ -5,6 +5,7 @@ keywords: layout,custom,protection domain,protection domains,retrieve protection
 summary: 您可以使用 GetProtectionDomainLayout 方法返回集群的所有保护域信息，包括每个节点所在的机箱和自定义保护域。 
 ---
 = GetProtectionDomainLayout
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

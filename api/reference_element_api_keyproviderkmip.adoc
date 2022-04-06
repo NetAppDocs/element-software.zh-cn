@@ -5,6 +5,7 @@ keywords: key provider,KMIP,keys
 summary: keyProviderKmip 对象用于描述密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥提供程序。密钥提供程序既是一种机制，也是一个用于检索身份验证密钥以用于集群功能（例如空闲加密）的位置。 
 ---
 = keyProviderKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

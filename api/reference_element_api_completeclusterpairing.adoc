@@ -5,6 +5,7 @@ keywords: CompleteClusterPairing,cluster,pair,pairing,complete,completing
 summary: CompleteClusterPairing 方法是集群配对过程的第二步。将此方法与从 StartClusterPairing 方法收到的编码密钥结合使用，以完成集群配对过程。 
 ---
 = CompleteClusterPairing
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

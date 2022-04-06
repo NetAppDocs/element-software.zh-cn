@@ -5,6 +5,7 @@ keywords: storage nodes, running system utilities, system utilities, network set
 summary: 您可以使用存储节点的每节点 UI 创建或删除支持包，重置驱动器的配置设置以及重新启动网络或集群服务。 
 ---
 = 使用每节点 UI 运行系统实用程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

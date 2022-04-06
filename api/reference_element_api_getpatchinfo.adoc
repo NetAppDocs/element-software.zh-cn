@@ -5,6 +5,7 @@ keywords: get,patch,info,patches,getpatchinfo
 summary: 您可以使用 GetPatchInfo 方法获取有关节点上安装的修补程序的信息。 
 ---
 = GetPatchInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

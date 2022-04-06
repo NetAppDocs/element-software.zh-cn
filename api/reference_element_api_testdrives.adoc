@@ -5,6 +5,7 @@ keywords: drive,drives,test,testing,validating,hardware,testdrives
 summary: 您可以使用 TestDrives 方法对节点上的所有驱动器运行硬件验证。此方法可检测驱动器上的硬件故障，并在验证测试结果中报告任何故障。 
 ---
 = 测试驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

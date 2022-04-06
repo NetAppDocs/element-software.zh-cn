@@ -5,6 +5,7 @@ keywords: volume access groups, volumes, access volumes
 summary: 通过 NetApp SolidFire 存储中的卷访问组， iSCSI 启动程序 IQN 或光纤通道 WWPN 可以访问一组卷。添加到访问组的每个 IQN 都可以访问组中的每个卷，而无需使用 CHAP 身份验证。添加到访问组的每个 WWPN 都允许通过光纤通道网络访问此访问组中的卷。 
 ---
 = 卷访问组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

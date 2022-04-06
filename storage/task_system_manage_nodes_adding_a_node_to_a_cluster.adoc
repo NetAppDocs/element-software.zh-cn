@@ -5,6 +5,7 @@ keywords: nodes, add, config, cluster, pending, pairs, capacity, rule
 summary: 您可以在需要更多存储时或在创建集群后向集群添加节点。首次打开电源时，节点需要进行初始配置。配置节点后，它将显示在待定节点列表中，您可以将其添加到集群中。 
 ---
 = 将节点添加到集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

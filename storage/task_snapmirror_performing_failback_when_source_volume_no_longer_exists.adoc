@@ -5,6 +5,7 @@ keywords: failback, perform, source volume, snapmirror, dr, disaster recovery
 summary: 您可以使用 NetAppElement UI 重新同步原始源卷并执行故障恢复。本节介绍了初始源卷已丢失但初始集群仍完好的适用场景情形。有关如何还原到新集群的说明，请参见 NetApp 支持站点上的文档。 
 ---
 = 源卷不再存在时执行故障恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

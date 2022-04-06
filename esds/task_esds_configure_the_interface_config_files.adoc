@@ -5,6 +5,7 @@ keywords: solidfire esds, host network, networking
 summary: 在安装 SolidFire ESDS 之前，请使用提供的示例和提示配置主机网络。 
 ---
 = 配置主机网络
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

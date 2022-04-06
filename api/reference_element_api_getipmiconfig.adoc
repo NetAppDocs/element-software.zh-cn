@@ -5,6 +5,7 @@ keywords: hardware,sensor,config,configuration,get,getting,getipmiconfig
 summary: 您可以使用 GetIpmiConfig 方法从节点中的传感器检索硬件传感器信息。 
 ---
 = GetIpmiConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: network settings, per-node UI, storage node, ui
 summary: 您可以更改存储节点网络设置，为节点提供一组新的网络属性。 
 ---
 = 每个节点 UI 中的网络设置详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

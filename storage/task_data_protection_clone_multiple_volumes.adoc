@@ -5,6 +5,7 @@ keywords: multiple volumes, clone, create
 summary: 您可以通过单个操作创建多个卷克隆，以便为一组卷上的数据创建时间点副本。 
 ---
 = 克隆多个卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

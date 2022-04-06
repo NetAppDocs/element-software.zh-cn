@@ -5,6 +5,7 @@ keywords: management,connection,test,testing,mvip,testconnectmvip
 summary: 您可以使用 TestConnectMvip 方法测试与存储集群的管理连接。此测试将对 MVIP 执行 ping 操作，并执行一种简单的 API 方法来验证连接。 
 ---
 = TestConnectMvip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ssl,cert,certificate,remove,removing,node,management,removenodesslcert
 summary: 您可以使用 RemoveNodeSSLCertificate 方法删除管理节点的用户 SSL 证书和专用密钥。删除证书和专用密钥后，管理节点将配置为使用默认证书和专用密钥。 
 ---
 = RemoveNodeSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

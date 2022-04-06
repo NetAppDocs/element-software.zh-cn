@@ -5,6 +5,7 @@ keywords: rollbacktosnapshot,snapshot,creating,create,roll,back,rollback,roll ba
 summary: 您可以使用 RollbackToSnapshot 方法为活动卷映像创建现有快照。此方法将从现有快照创建新快照。 
 ---
 = RollbackToSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

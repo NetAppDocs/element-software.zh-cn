@@ -5,6 +5,7 @@ keywords: snapshot, delete, volume snapshot, storage cluster, remove snapshot
 summary: 您可以从运行 Element 软件的存储集群中删除卷快照。删除快照时，系统会立即将其删除。 
 ---
 = 删除快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

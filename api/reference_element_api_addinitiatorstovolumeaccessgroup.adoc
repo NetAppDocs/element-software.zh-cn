@@ -5,6 +5,7 @@ keywords: addinitiatorstovolumeaccessgroup,add,adding,initiators,initiator,volum
 summary: 您可以使用 AddInitiatorsToVolumeAccessGroup 方法将启动程序添加到指定的卷访问组。 
 ---
 = AddInitiatorsToVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

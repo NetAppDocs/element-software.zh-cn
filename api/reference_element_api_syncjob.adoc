@@ -5,6 +5,7 @@ keywords: object,objects,syncjob
 summary: syncJob 对象包含有关正在集群上运行的克隆，远程复制或分区同步作业的信息。 
 ---
 = syncJob
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,group,snapshot,modifygro
 summary: 您可以使用 ModifyGroupSnapshot 更改一组快照的属性。您也可以使用此方法将读 / 写卷（源卷）上创建的快照远程复制到目标存储系统。 
 ---
 = ModifyGroupSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

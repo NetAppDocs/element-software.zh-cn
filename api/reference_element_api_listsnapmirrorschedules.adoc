@@ -5,6 +5,7 @@ keywords: snapmirror,schedule,schedules,list,listing,listsnapmirrorschedules,ont
 summary: Element 软件 Web UI 使用 ListSnapMirrorSchedules 方法获取远程 ONTAP 集群上可用的计划列表。 
 ---
 = ListSnapMirrorSchedules
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: solidfire, element, lab on demand, demo node, element demo node
 summary: 了解有助于您开始使用 Element 软件的资源和工具。 
 ---
 = 试用
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

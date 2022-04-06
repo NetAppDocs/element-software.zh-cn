@@ -5,6 +5,7 @@ keywords: CreateSchedule,create,creating,schedule,schedules,snapshot,snapshots,s
 summary: 您可以使用 CreateSchedule 计划按定义的间隔自动创建卷快照。 
 ---
 = CreateSchedule
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: troubleshoot, drives, ssd, swappable, solid-state drives
 summary: 您可以将发生故障的固态驱动器 \ （ SSD\ ）更换为替代驱动器。SolidFire 存储节点的 SSD 可热插拔。如果您怀疑 SSD 发生故障，请联系 NetApp 支持部门验证故障并指导您完成正确的解决方法操作步骤。NetApp 支持部门还会与您合作，根据您的服务级别协议获取一个替代驱动器。 
 ---
 = 对驱动器进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

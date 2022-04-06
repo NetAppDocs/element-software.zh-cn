@@ -5,6 +5,7 @@ keywords: BMC cold reset,BMC reset,enable BMC
 summary: 您可以使用 EnableBmcColdReset 方法启用后台任务，以便定期为集群中的所有节点重置基板管理控制器（ Baseboard Management Controller ， BMC\ ）。 
 ---
 = EnableBmcColdReset
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

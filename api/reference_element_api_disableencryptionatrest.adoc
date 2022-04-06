@@ -5,6 +5,7 @@ keywords: element, api, encryption, disable, disabling, at rest, rest, DisableEn
 summary: 您可以使用 DisableEncryptionAtRest 方法删除先前使用 EnableEncryptionAtRest 方法应用于集群的加密。此禁用方法是异步的，会在禁用加密之前返回响应。您可以使用 GetClusterInfo 方法轮询系统以查看此过程何时完成。 
 ---
 = DisableEncryptionAtRest
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster,interface,preferences,preference,get,getting,getclusterinterfa
 summary: 通过 GetClusterInterfacePreference 方法，与运行 Element 软件的存储集群集成的系统可以获取有关现有集群接口首选项的信息。此方法供内部使用。 
 ---
 = GetClusterInterfacePreference
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

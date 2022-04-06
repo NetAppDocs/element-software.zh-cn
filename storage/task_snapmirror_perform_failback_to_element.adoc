@@ -5,6 +5,7 @@ keywords: failback, perform a failbacl, Element, snapmirror
 summary: 缓解主端的问题描述后，您必须重新同步原始源卷并故障恢复到 NetApp Element 软件。根据原始源卷是否仍然存在或是否需要故障恢复到新创建的卷，您执行的步骤会有所不同。 
 ---
 = 对 Element 执行故障恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume to snapshot roll back, snapshot roll back, revert changes
 summary: 您可以随时将卷回滚到上一个快照。此操作将还原自创建快照以来对卷所做的任何更改。 
 ---
 = 将卷回滚到快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

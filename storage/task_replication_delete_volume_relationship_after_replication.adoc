@@ -5,6 +5,7 @@ keywords: volume pair, delete, replication
 summary: 复制完成后，如果您不再需要此卷对关系，则可以删除此卷关系。 
 ---
 = 复制后删除卷关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

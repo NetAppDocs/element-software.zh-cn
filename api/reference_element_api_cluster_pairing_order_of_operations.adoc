@@ -5,6 +5,7 @@ keywords: cluster,pairing,pair,order,operations,clusters
 summary: 您必须在运行 Element 软件的一对存储集群之间建立连接，然后才能使用远程复制。 
 ---
 = 集群配对操作顺序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

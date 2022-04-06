@@ -5,6 +5,7 @@ keywords: tls,cipher,ciphers,get,getting,supported,getnodesupportedtlsciphers
 summary: 您可以在单个节点上使用 GetNodeSupportedTlsCiphers 方法来获取此节点当前支持的 TLS 密码列表。您可以在管理和存储节点上使用此方法。 
 ---
 = GetNodeSupportedTlsCiphers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

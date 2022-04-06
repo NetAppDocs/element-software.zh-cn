@@ -5,6 +5,7 @@ keywords: bindings details, vvols, for each virtual volume, endpoints,
 summary: '"VVols" 选项卡上的 "Bindings" 页面提供了有关每个虚拟卷的绑定信息。' 
 ---
 = 绑定详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: support access, enable, disable
 summary: 您可以启用支持访问，以便临时允许 NetApp 支持人员通过 SSH 访问存储节点以进行故障排除。 
 ---
 = 启用和禁用支持访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

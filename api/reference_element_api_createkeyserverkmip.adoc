@@ -5,6 +5,7 @@ keywords: KMIP,key server,creating,create
 summary: 您可以使用 CreateKeyServerKmip 方法创建具有指定属性的密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。创建期间，不会联系服务器；使用此方法之前，不需要存在此服务器。对于集群模式密钥服务器配置，必须在 kmipKeyServerHostnames 参数中提供所有服务器节点的主机名或 IP 地址。您可以使用 TestKeyServerKmip 方法测试密钥服务器。 
 ---
 = CreateKeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

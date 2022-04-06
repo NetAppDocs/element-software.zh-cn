@@ -5,6 +5,7 @@ keywords: volumes, fc, luns, access group, assign
 summary: 您可以更改卷访问组中光纤通道卷的 LUN 分配。您还可以在创建卷访问组时分配光纤通道卷 LUN 。 
 ---
 = 将 LUN 分配给光纤通道卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume restore, openstack swift object store
 summary: 您可以从 OpenStack Swift 对象存储上的备份还原卷。 
 ---
 = 从 OpenStack Swift 对象存储上的备份还原卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

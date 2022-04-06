@@ -5,6 +5,7 @@ keywords: virtual,network,networks,remove,removing,removevirtualnetwork
 summary: 您可以使用 RemoveVirtualNetwork 方法删除先前添加的虚拟网络。 
 ---
 = RemoveVirtualNetwork
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

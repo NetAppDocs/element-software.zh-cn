@@ -5,6 +5,7 @@ keywords: IdP,idp,authentication,retrieve get,idp state
 summary: 您可以使用 GetIdpAuthenticationState 方法返回有关使用第三方 IdP 进行身份验证的状态的信息。 
 ---
 = GetIdpAuthenticationState
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

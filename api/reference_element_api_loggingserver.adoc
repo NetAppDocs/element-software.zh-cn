@@ -5,6 +5,7 @@ keywords: object,objects,loggingServer
 summary: loggingServer 对象包含有关为存储集群配置的任何日志记录主机的信息。您可以使用 GetRemoteLoggingHosts 确定当前的日志记录主机，然后使用 SetRemoteLoggingHosts 设置所需的当前和新日志记录主机列表。 
 ---
 = 日志记录服务器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

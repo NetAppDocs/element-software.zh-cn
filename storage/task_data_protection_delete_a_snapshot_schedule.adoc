@@ -5,6 +5,7 @@ keywords: snapshot schedule, delete
 summary: 您可以删除快照计划。删除此计划后，它将不会运行任何将来计划的快照。计划创建的所有快照都将保留在存储系统上。 
 ---
 = 删除快照计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

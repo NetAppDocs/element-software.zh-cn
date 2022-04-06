@@ -5,6 +5,7 @@ keywords: IdP,idp,cluster,admin,add,adding,addIdpclusteradmin
 summary: 您可以使用 AddIpdClusterAdmin 方法添加经过第三方身份提供程序 \ （ IdP ）身份验证的集群管理员用户。IdP 集群管理员帐户是根据 IdP 与用户关联的 SAML 断言中提供的 SAML 属性值信息进行配置的。如果用户成功通过 IdP 身份验证，并且 SAML 断言中的 SAML 属性语句与多个 IdP 集群管理员帐户匹配，则用户将具有这些匹配的 IdP 集群管理员帐户的组合访问级别。 
 ---
 = AddIdpClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

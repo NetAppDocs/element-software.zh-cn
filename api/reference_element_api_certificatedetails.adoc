@@ -5,6 +5,7 @@ keywords: security,certificate,SSL,get,getting,certificateDetails,object,objects
 summary: certificateDetails 对象包含有关安全证书的解码信息。 
 ---
 = 证书详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

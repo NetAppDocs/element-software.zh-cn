@@ -5,6 +5,7 @@ keywords: account,accounts,list,listing,all,listaccounts
 summary: 您可以使用 ListAccounts 获取整个存储租户帐户列表，并可选择分页支持。通过 Element 帐户可以访问卷。 
 ---
 = ListAccounts
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVolume
 summary: snapMirrorVolume 对象包含有关 ONTAP 卷的信息。 
 ---
 = snapMirrorVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

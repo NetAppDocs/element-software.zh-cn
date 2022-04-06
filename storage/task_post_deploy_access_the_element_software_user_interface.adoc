@@ -5,6 +5,7 @@ keywords: Element UI, accessing, using MVIP, blockers, host name, certificate, m
 summary: 您可以使用主集群节点的管理虚拟 IP （ MVIP ）地址访问 Element UI 。 
 ---
 = 访问 Element 软件用户界面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

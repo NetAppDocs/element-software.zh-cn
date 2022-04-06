@@ -5,6 +5,7 @@ keywords: SnapMirror,volume,volumes,break,breaking,relationship,ONTAP,source,sna
 summary: Element Web UI 使用 BreakSnapMirrorVolume 方法中断 ONTAP 源容器和 Element 目标卷之间的 SnapMirror 关系。如果在将数据复制到 Element 卷时 ONTAP 系统变得不可用，则中断 Element SnapMirror 卷非常有用。通过此功能，存储管理员可以控制 Element SnapMirror 卷，中断其与远程 ONTAP 系统的关系，并将卷还原到先前的快照。 
 ---
 = BreakSnapMirrorVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

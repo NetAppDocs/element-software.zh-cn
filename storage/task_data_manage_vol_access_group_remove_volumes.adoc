@@ -5,6 +5,7 @@ keywords: access group, remove volumes from, initiators, chap
 summary: 从访问组中删除卷后，该组将无法再访问该卷。 
 ---
 = 从访问组中删除卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

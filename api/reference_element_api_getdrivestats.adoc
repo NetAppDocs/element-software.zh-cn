@@ -5,6 +5,7 @@ keywords: drive,drives,stats,get,getting,getdrivestats
 summary: 您可以使用 GetDriveStats 方法获取单个驱动器的高级别活动测量结果。值是在将驱动器添加到集群中后累积的。某些值特定于块驱动器。运行此方法时，系统将返回块或元数据驱动器类型的统计数据。 
 ---
 = GetDriveStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

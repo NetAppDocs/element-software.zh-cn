@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorPolicy
 summary: snapMirrorPolicy 对象包含有关存储在 ONTAP 系统上的 SnapMirror 策略的信息。 
 ---
 = snapMirrorPolicy
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

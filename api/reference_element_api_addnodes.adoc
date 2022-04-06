@@ -5,6 +5,7 @@ keywords: addnodes,node,add,adding,nodes,cluster
 summary: 您可以使用 addnodes 方法向集群添加一个或多个新节点。 
 ---
 = 添加节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

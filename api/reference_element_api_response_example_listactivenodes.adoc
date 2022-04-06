@@ -5,6 +5,7 @@ keywords: response,example,listactivenodes
 summary: ListActiveNodes 方法返回类似于以下示例的响应。 
 ---
 = ListActiveNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

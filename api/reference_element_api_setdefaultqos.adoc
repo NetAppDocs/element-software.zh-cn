@@ -5,6 +5,7 @@ keywords: qos,value,configure,configuring,default,set,setting,setdefaultqos
 summary: 您可以使用 SetDefaultQoS 方法配置卷的默认服务质量值（ QoS ） \ （以每秒输入和输出数或 IOPS\ 为单位）。 
 ---
 = 设置 DefaultQoS
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

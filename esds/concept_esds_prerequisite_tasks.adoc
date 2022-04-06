@@ -5,6 +5,7 @@ keywords: solidfire esds,software-defined storage,ports,prerequisites
 summary: 在安装 SolidFire ESDS 之前，请确保执行必要的检查并验证您的环境是否满足配置， IP 地址和网络连接要求。 
 ---
 = 执行安装的前提条件任务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

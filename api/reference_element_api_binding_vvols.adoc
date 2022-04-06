@@ -5,6 +5,7 @@ keywords: binding,object,objects,volume,volumes,virtual
 summary: 绑定对象包含有关虚拟卷的绑定的信息。您可以使用 ListVirtualVolumeBindings API 方法检索所有虚拟卷的此信息列表。 
 ---
 = 绑定（虚拟卷）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,volumeStats
 summary: volumeStats 对象包含单个卷的统计数据。 
 ---
 = volumeStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

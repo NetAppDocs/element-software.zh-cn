@@ -5,6 +5,7 @@ keywords: snmp, overview, reference, mib, settings, trap
 summary: 在集群选项卡的 SNMP 页面上，您可以查看以下信息。 
 ---
 = SNMP 详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

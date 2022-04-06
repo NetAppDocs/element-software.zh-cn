@@ -5,6 +5,7 @@ keywords: feedback, web user interface, UI issues, feedback form, relevant infor
 summary: 您可以使用反馈表帮助改进 Element 软件 Web 用户界面并解决任何 UI 问题，此反馈表可通过整个 UI 访问。 
 ---
 = 提供反馈
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

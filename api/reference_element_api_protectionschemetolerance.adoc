@@ -5,6 +5,7 @@ keywords: object,objects,protectionSchemeTolerance
 summary: protectionSchemeTolerance 对象包含有关特定保护方案下的存储集群是否可以在发生故障后继续读取和写入数据的信息。 
 ---
 = 保护架构容错
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

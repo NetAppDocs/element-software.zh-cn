@@ -5,6 +5,7 @@ keywords: BMC cold reset,BMC reset,disable BMC
 summary: 您可以使用 DisableBmcColdReset 方法禁用后台任务，此任务会定期重置集群中所有节点的基板管理控制器（ Baseboard Management Controller ， BMC\ ）。 
 ---
 = DisableBmcColdReset
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

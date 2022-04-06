@@ -5,6 +5,7 @@ keywords: individual volume snapshots, use, volume, snapshot
 summary: 卷快照是卷的时间点副本。您可以使用单个卷，而不是一组卷来创建快照。 
 ---
 = 使用单个卷快照进行数据保护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

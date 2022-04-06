@@ -5,6 +5,7 @@ keywords: h410s, h610s, hardware installation, hardware maintenance
 summary: 您可以找到有关安装和维护 H 系列存储节点的信息。 
 ---
 = H410S 和 H610S 硬件信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

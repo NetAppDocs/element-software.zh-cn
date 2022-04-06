@@ -5,6 +5,7 @@ keywords: set,setting,ssl,cert,certificate,cluster,private,key,setsslcertificate
 summary: 您可以使用 SetSSLCertificate 方法为集群中的存储节点设置用户 SSL 证书和专用密钥。 
 ---
 = SetSSLCertificate
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

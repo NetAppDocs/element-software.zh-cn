@@ -5,6 +5,7 @@ keywords: object,objects,virtualNetwork
 summary: virtualNetwork 对象包含有关特定虚拟网络的信息。您可以使用 ListVirtualNetworks API 方法为系统中的所有虚拟网络检索此信息的列表。 
 ---
 = VirtualNetwork
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,cluster,admin,settings,m
 summary: 您可以使用 ModifyClusterAdmin 方法更改集群管理员， LDAP 集群管理员或第三方身份提供程序 \ （ IdP ）集群管理员的设置。您不能更改管理员集群管理员帐户的访问权限。 
 ---
 = ModifyClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

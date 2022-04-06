@@ -5,6 +5,7 @@ keywords: object,objects,fipsReport,FIPS,140-2
 summary: fipsReport 对象包含有关存储集群中所有节点的 FIPS 140-2 支持的信息。您可以使用 GetFipsReport 方法检索此信息。 
 ---
 = fipsReport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: iscsi,connection,list,listing,session,info,cluster,listiscsisessions
 summary: 您可以使用 ListISCSISessions 方法列出集群中卷的 iSCSI 连接信息。 
 ---
 = ListISCSISessions
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

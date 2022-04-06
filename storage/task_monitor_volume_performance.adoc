@@ -5,6 +5,7 @@ keywords: volume performance, view, view alerts
 summary: 您可以查看集群中所有卷的详细性能信息。您可以按卷 ID 或任何性能列对信息进行排序。您也可以使用按特定条件筛选信息。 
 ---
 = 查看卷性能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

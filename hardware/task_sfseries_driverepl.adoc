@@ -5,6 +5,7 @@ keywords: SSDs, drives, replacement, sf-series, nodes
 summary: 您可以将出现故障的固态驱动器热插拔为替代驱动器。 
 ---
 = 更换 SF 系列存储节点的驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snapshot,snapshots,list,listing,information,schedule,schedules,listsch
 summary: 您可以使用 ListSchedules 获取有关已创建的所有计划快照的信息。 
 ---
 = ListSchedules
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: filter, filtering, sorting information, viewing lists, unfiltered list
 summary: 您可以在 Element UI 中筛选页面上的列表信息。在查看列表（例如卷和快照）时，您可以添加一个或多个筛选器以突出显示信息并使其更易于显示在页面上。 
 ---
 = 使用筛选器限制结果
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: data protection, volume snapshots, roll back volume, replicate snapsho
 summary: 卷快照是卷的时间点副本。如果需要将卷回滚到创建快照时的状态，您可以为卷创建快照并稍后使用该快照。 
 ---
 = 使用卷快照进行数据保护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cluster,capacity,getting,get,measurements,measure,deduplication,GetClu
 summary: 您可以使用 GetClusterCapacity 返回整个存储集群的高级别容量测量结果。此方法将返回可用于计算 Element Web UI 中显示的效率速率的字段。您可以在脚本中使用效率计算来返回精简配置，重复数据删除，数据压缩和整体效率的效率比率。 
 ---
 = GetClusterCapacity
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

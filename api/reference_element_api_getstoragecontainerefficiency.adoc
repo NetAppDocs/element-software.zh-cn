@@ -5,6 +5,7 @@ keywords: volume,virtual,container,volumes,get,getting,efficiency,vvol,GetStorag
 summary: 您可以使用 GetStorageContainerEfficiency 方法检索有关虚拟卷存储容器的效率信息。 
 ---
 = GetStorageContainerEfficiency
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

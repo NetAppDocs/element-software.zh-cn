@@ -5,6 +5,7 @@ keywords: cluster,creation,check,proposed,checking,nodes,node,before,CheckPropos
 summary: 您可以使用 CheckProposedCluster 方法在创建存储集群之前测试一组存储节点，以确定尝试可能发生的错误或故障，例如混合节点功能不平衡或双节点存储集群不支持的节点类型。 
 ---
 = CheckProposedCluster
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

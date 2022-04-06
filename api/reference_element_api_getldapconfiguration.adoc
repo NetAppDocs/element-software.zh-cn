@@ -5,6 +5,7 @@ keywords: ldap,config,configuration,get,getting,getldapconfiguration
 summary: 您可以使用 GetLdapConfiguration 方法获取集群上当前活动的 LDAP 配置。 
 ---
 = GetLdapConfiguration
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

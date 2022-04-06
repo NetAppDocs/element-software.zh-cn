@@ -5,6 +5,7 @@ keywords: volume snapshot, backup, openstack swift S3 object store
 summary: 您可以将 SolidFire 快照备份到与 OpenStack Swift 兼容的二级对象存储。 
 ---
 = 将卷快照备份到 OpenStack Swift 对象存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

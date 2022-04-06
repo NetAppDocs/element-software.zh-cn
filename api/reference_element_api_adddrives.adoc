@@ -5,6 +5,7 @@ keywords: drives,adding,cluster,drive,add,adddrives
 summary: 您可以使用 AddDrives 方法向集群添加一个或多个可用驱动器，从而使这些驱动器能够托管集群的部分数据。 
 ---
 = 添加驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

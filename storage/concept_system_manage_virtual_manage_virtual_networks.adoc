@@ -5,6 +5,7 @@ keywords: virtual networks, manage, traffic, clients, vlan tagging
 summary: 通过 SolidFire 存储中的虚拟网络，可以将不同逻辑网络上的多个客户端之间的流量连接到一个集群。通过使用 VLAN 标记在网络堆栈中隔离与集群的连接。 
 ---
 = 管理虚拟网络
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

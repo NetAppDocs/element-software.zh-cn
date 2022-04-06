@@ -5,6 +5,7 @@ keywords: SNMP requestor, config, enable, disable, snmp requests
 summary: 启用 SNMP 版本 2 后，您可以启用或禁用请求程序，并将请求程序配置为接收授权的 SNMP 请求。 
 ---
 = 配置 SNMP 请求程序
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

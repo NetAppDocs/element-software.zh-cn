@@ -5,6 +5,7 @@ keywords: cluster,admin,get,getting,current,getcurrentclusteradmin
 summary: 您可以使用 GetCurrentClusterAdmin 方法返回当前主集群管理员的信息主集群管理员是在创建集群时创建的。 
 ---
 = GetCurrentClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

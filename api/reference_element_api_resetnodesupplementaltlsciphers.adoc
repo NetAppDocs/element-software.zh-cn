@@ -5,6 +5,7 @@ keywords: tls,cipher,reset,supplemental,resetnodesupplementaltlsciphers,restore,
 summary: 您可以使用 ResetNodeSupplementalTlsCiphers 方法将补充 TLS 密码列表还原为默认值。您可以在管理节点上使用此命令。 
 ---
 = ResetNodeSupplementalTlsCiphers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

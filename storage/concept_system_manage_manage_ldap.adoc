@@ -5,6 +5,7 @@ keywords: element, solidfire, ldap, enable, disable, test, config, addresses, pr
 summary: 您可以设置轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ），以便为 SolidFire 存储启用基于目录的安全登录功能。您可以在集群级别配置 LDAP 并授权 LDAP 用户和组。 
 ---
 = 管理 LDAP
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

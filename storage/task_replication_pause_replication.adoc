@@ -5,6 +5,7 @@ keywords: replication, pause, volume pairs
 summary: 如果需要在短时间内停止 I/O 处理，可以手动暂停复制。如果 I/O 处理量激增，而您希望降低处理负载，则可能需要暂停复制。 
 ---
 = 暂停复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

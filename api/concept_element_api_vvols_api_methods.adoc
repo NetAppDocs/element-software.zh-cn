@@ -5,6 +5,7 @@ keywords: virtual,volume,vvol,API,method
 summary: 您可以通过 Element 软件虚拟卷 API 方法管理虚拟卷（ VVols\ ）。您可以使用这些 API 方法查看现有 VVOL ，以及创建，修改和删除虚拟卷存储容器。虽然您无法使用这些方法对普通卷执行操作，但可以使用普通卷 API 方法列出有关 VVOL 的信息。 
 ---
 = 虚拟卷 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

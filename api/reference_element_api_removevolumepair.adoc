@@ -5,6 +5,7 @@ keywords: volume,pair,volumes,remove,removing,removevolumepair
 summary: 您可以使用 RemoveVolumePair 方法删除两个卷之间的远程配对。在配对的源卷和目标卷上使用此方法。删除卷配对信息后，卷中的数据将不再复制。 
 ---
 = RemoveVolumePair
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

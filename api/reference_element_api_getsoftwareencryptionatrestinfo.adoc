@@ -5,6 +5,7 @@ keywords: system, api, security, get, getting, software encryption at rest
 summary: 您可以使用 GetSoftwareEncryptionAtRestInfo 方法获取集群用于对空闲数据进行加密的信息。 
 ---
 = GetSoftwareEncryptionAtRestInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

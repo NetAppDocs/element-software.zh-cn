@@ -5,6 +5,7 @@ keywords: element, solidfire esds, volumes, accounts, snapshots, virtual volumes
 summary: 在存储集群上安装 SolidFire ESDS 后，您可以使用 Element UI ， Element API 或适用于 vCenter Server 的 NetApp Element 插件（ VCP ）来管理存储集群。 
 ---
 = 管理 SolidFire ESDS 存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

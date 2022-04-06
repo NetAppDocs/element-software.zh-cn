@@ -5,6 +5,7 @@ keywords: volumes,volume,delete,deleting,multiple,DeleteVolumes
 summary: 您可以使用 DeleteVolumes 方法将多个 \ （最多 500 个）活动卷标记为待删除。标记后，此卷将在清理间隔过后被清除（永久删除）。 
 ---
 = DeleteVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

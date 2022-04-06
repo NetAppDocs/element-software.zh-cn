@@ -5,6 +5,7 @@ keywords: tls,cipher,reset,supplemental,resetsupplementaltlsciphers,restore,rest
 summary: 您可以使用 ResetSupplementalTlsCiphers 方法将补充 TLS 密码列表还原为默认值。您可以在整个集群上使用此方法。 
 ---
 = ResetSupplementalTlsCiphers
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, solidfire, fibre channel, setup, node, cluster
 summary: 了解使用存储节点设置集群的顺序。 
 ---
 = 设置具有光纤通道节点的集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

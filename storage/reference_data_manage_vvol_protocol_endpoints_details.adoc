@@ -5,6 +5,7 @@ keywords: protocol endpoints, details, vvols, state, type, id
 summary: '"VVols" 选项卡上的 "Protocol Endpoints" 页面提供了协议端点信息。' 
 ---
 = 协议端点详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

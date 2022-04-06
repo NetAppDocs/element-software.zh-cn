@@ -5,6 +5,7 @@ keywords: objects,object,clusterCapacity
 summary: clusterCapacity 对象包含集群的高级别容量测量结果。您可以使用 GetClusterCapacity API 方法获取集群容量信息。对象成员中的空间测量值以字节为单位计算。 
 ---
 = 集群容量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

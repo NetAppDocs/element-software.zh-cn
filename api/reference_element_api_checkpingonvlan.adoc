@@ -5,6 +5,7 @@ keywords: VLAN,pre-deployment,network,validation,validate,validating,check,check
 summary: 在执行部署前网络验证时，您可以使用 CheckPingOnVlan 方法测试临时 VLAN 上的网络连接。CheckPingOnVlan 会创建一个临时 VLAN 接口，并使用 VLAN 接口将 ICMP 数据包发送到存储集群中的所有节点，然后删除该接口。 
 ---
 = CheckPingOnVlan
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

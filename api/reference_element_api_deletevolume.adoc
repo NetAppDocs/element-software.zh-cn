@@ -5,6 +5,7 @@ keywords: volume,volumes,delete,deleting,DeleteVolume
 summary: 您可以使用 DeleteVolume 方法将活动卷标记为待删除。标记后，此卷将在清理间隔过后被清除（永久删除）。 
 ---
 = DeleteVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

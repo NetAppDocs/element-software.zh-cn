@@ -5,6 +5,7 @@ keywords: node,nodes,stats,list,listing,listnodestats
 summary: 您可以使用 ListNodeStats 方法查看存储集群中所有存储节点的高级别活动测量结果。 
 ---
 = ListNodeStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

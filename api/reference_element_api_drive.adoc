@@ -5,6 +5,7 @@ keywords: objects,object,drive
 summary: drive 对象包含有关集群活动节点中各个驱动器的信息。此对象包含有关已添加为卷元数据或块驱动器的驱动器以及尚未添加且可用的驱动器的详细信息。您可以使用 ListDrives API 方法检索此信息。 
 ---
 = 驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: nodes,node,network,interface,get,getting,getnetworkinterface
 summary: 您可以使用 GetNetworkInterface 方法获取有关节点上网络接口的信息。 
 ---
 = GetNetworkInterface
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

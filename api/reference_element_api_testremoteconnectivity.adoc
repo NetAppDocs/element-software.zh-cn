@@ -5,6 +5,7 @@ keywords: remote,connectivity,test,testing,testremoteconnectivity
 summary: 您可以使用 TestRemoteConnectivity 方法对远程集群的每个节点执行 ping 操作并检查远程集合数据库连接。要使用此方法返回有用的结果，必须对集群配对。如果远程数据库连接失败，系统的响应将列出例外情况。 
 ---
 = 测试远程连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

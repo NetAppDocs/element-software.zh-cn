@@ -5,6 +5,7 @@ keywords: volume,volumes,clone,cloning,multiple,CloneMultipleVolumes
 summary: 您可以使用 CloneMultipleVolumes 方法为一组指定卷创建克隆。如果将多个卷同时克隆，则可以为一组卷分配一组一致的特征。 
 ---
 = CloneMultipleVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: protocol endpoint, access, cluster, storage node, iscsi supported
 summary: 协议端点是指主机用来对运行 NetApp Element 软件的集群上的存储进行寻址的访问点。协议端点不能由用户删除或修改，不与帐户关联，也不能添加到卷访问组。 
 ---
 = 协议端点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: element, security, clusters, protection, qos
 summary: 了解与 Element 软件相关的基本概念。 
 ---
 = 概念
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

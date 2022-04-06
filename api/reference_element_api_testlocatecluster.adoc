@@ -5,6 +5,7 @@ keywords: test,testing,cluster,locate,configuration,TestLocateCluster
 summary: 您可以使用 TestLocateCluster 方法验证节点是否可以找到在集群配置中指定的集群。输出将验证是否已创建集群，并列出集群集合中的节点。 
 ---
 = TestLocateCluster
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

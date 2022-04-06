@@ -5,6 +5,7 @@ keywords: object,objects,volumePair
 summary: volumePair 对象包含与其他集群上的另一个卷配对的卷的相关信息。如果卷未配对，则此对象为空。您可以使用 ListActivePairedVolumes 和 ListActiveVolumes API 方法返回有关配对卷的信息。 
 ---
 = 卷对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

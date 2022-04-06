@@ -5,6 +5,7 @@ keywords: set up storage, storage system, set up, configure node, configuring st
 summary: 了解如何为您的环境设置存储系统。 
 ---
 = 设置存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: QoS,object,Quality,Service
 summary: 许多 API 请求和响应都使用对象以及简单类型。对象是键值对的集合，其中值为简单类型或可能为其他对象。属性是自定义名称 - 值对，用户可以在 JSON 对象中设置这些属性。通过某些方法，您可以在创建或修改对象时添加属性。 
 ---
 = 属性
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

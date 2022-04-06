@@ -5,6 +5,7 @@ keywords: configure, cluster, threshold, support access, encryption at rest, vir
 summary: 您可以从 Element UI 的 Cluster 选项卡查看和更改集群范围的设置并执行集群专用任务。 
 ---
 = 配置集群设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

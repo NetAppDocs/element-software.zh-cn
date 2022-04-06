@@ -5,6 +5,7 @@ keywords: snmp,info,setting,set,setsnmpinfo
 summary: 您可以使用 SetSnmpInfo 方法在集群节点上配置 SNMP 版本 2 和版本 3 。使用此接口设置的值将应用于集群中的所有节点，传递的值将替换先前任何 SetSnmpInfo 调用中设置的所有值。 
 ---
 = SetSnmpInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

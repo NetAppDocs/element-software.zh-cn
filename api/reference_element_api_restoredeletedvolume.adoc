@@ -5,6 +5,7 @@ keywords: restore,active,restoring,deleted,volume,volumes,restoredeletedvolume
 summary: 您可以使用 RestoreDeletedVolume 方法将已删除的卷重新标记为活动。此操作可使卷立即可用于 iSCSI 连接。 
 ---
 = RestoreDeletedVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

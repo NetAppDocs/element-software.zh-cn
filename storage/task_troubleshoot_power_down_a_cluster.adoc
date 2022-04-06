@@ -5,6 +5,7 @@ keywords: cluster, power down, mvip
 summary: 您可以在联系 NetApp 支持部门并完成初始步骤后关闭整个集群。 
 ---
 = 关闭集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

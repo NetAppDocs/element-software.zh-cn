@@ -5,6 +5,7 @@ keywords: cluster,clear,clearing,fault,faults,support bundles,ClearClusterFaults
 summary: 您可以使用 ClearClusterFaults 方法清除有关当前和先前检测到的故障的信息。可以清除已解决和未解决的故障。 
 ---
 = ClearClusterFaults
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume restore, solidfire storage cluster
 summary: 您可以从 SolidFire 存储集群上的备份还原卷。 
 ---
 = 从 SolidFire 存储集群上的备份还原卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

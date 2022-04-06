@@ -5,6 +5,7 @@ keywords: clone volume from snapshot, volume snapshots, clone
 summary: 您可以从卷的快照创建新卷。执行此操作时，系统会使用创建快照时卷上包含的数据使用快照信息克隆新卷。此过程会在新创建的卷中存储有关卷的其他快照的信息。 
 ---
 = 从快照克隆卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

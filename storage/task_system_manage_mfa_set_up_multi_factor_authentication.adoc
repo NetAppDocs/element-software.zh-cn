@@ -5,6 +5,7 @@ keywords: idp, json, mfa, cluster, metadata, saml
 summary: 您可以通过 Element API 使用这些基本步骤来设置集群以使用多因素身份验证。有关每个 API 方法的详细信息，请参见 Element API 参考文档。 
 ---
 = 设置多因素身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

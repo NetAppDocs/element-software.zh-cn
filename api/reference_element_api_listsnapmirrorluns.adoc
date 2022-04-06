@@ -5,6 +5,7 @@ keywords: snapmirror,lun,luns,list,listing,listsnapmirrorluns
 summary: Element 软件 Web UI 使用 ListSnapMirrorLuns 方法列出远程 ONTAP 集群中 SnapMirror 关系的 LUN 信息。 
 ---
 = ListSnapMirrorLuns
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: qos policies
 summary: '您可以从 " 管理 " 选项卡查看 QoS 策略的详细信息。' 
 ---
 = QoS 策略详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

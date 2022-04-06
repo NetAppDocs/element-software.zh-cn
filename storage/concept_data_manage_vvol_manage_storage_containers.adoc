@@ -5,6 +5,7 @@ keywords: storage container, storage containers, about storage containers, clust
 summary: 存储容器是在运行 Element 软件的集群上创建的 vSphere 数据存储库表示形式。 
 ---
 = 管理存储容器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

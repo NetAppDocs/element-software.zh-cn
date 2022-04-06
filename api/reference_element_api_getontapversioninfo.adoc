@@ -5,6 +5,7 @@ keywords: ontap,version,info,information,get,getting,api,support,getontapversion
 summary: Element Web UI 使用 GetOntapVersionInfo 从 SnapMirror 关系中的 ONTAP 集群获取有关 API 版本支持的信息。 
 ---
 = GetOntapVersionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

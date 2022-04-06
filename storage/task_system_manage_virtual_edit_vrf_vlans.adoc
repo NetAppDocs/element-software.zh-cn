@@ -5,6 +5,7 @@ keywords: vrf vlans edit, vrf vlan attributes, change
 summary: 您可以更改 VRF VLAN 属性，例如 VLAN 名称，网络掩码，网关和 IP 地址块。 
 ---
 = 编辑 VRF VLAN
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

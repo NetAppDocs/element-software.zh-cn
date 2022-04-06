@@ -5,6 +5,7 @@ keywords: virtual,volume,storage,container,vvol,modify,modifying,change,changing
 summary: 您可以使用 ModifyStorageContainer 方法更改现有虚拟卷存储容器。 
 ---
 = ModifyStorageContainer
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

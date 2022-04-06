@@ -5,6 +5,7 @@ keywords: volume,pairing,CompleteVolumePairing,pair,volumes,complete,completing
 summary: 您可以使用 CompleteVolumePairing 完成对两个卷的配对。 
 ---
 = CompleteVolumePairing
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

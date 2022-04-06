@@ -5,6 +5,7 @@ keywords: LDAP,cluster,admin,add,adding,addldapclusteradmin
 summary: 您可以使用 AddLdapClusterAdmin 添加新的 LDAP 集群管理员用户。LDAP 集群管理员可以使用 API 和管理工具来管理集群。LDAP 集群管理员帐户是完全独立的，与标准租户帐户无关。 
 ---
 = AddLdapClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

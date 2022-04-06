@@ -5,6 +5,7 @@ keywords: running tasks, view progress of
 summary: 您可以在 Web UI 中查看由 ListSyncJobs 和 ListBulkVolumeJobs API 方法报告的正在运行的任务的进度和完成状态。您可以从 Element UI 的 Reporting 选项卡访问 Running Tasks 页面。 
 ---
 = 查看正在运行的任务的状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

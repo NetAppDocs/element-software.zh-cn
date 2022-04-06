@@ -5,6 +5,7 @@ keywords: remote,logging,hosts,host,get,getting,getremotelogginghosts
 summary: 您可以使用 GetRemoteLoggingHosts 方法获取日志服务器的当前列表。 
 ---
 = GetRemoteLoggingHosts
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

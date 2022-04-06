@@ -5,6 +5,7 @@ keywords: initiators,initiator,volume,access,group,remove,removing,removeinitiat
 summary: 您可以使用 RemoveInitiatorsFromVolumeAccessGroup 方法从指定的卷访问组中删除启动程序。 
 ---
 = RemoveInitiatorsFromVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

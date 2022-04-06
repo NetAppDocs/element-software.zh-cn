@@ -5,6 +5,7 @@ keywords: volume,volumes,get,getting,stats,measurements,activity,getvolumestats
 summary: 您可以使用 GetVolumeStats 方法获取单个卷的高级别活动测量结果。值是在创建卷时累积的。 
 ---
 = GetVolumeStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

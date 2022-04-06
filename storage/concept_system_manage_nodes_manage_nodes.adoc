@@ -5,6 +5,7 @@ keywords: nodes, manage, cluster, capacity rule, pairs, stranded nodes
 summary: 您可以从集群选项卡的节点页面管理 SolidFire 存储和光纤通道节点。 
 ---
 = 管理节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

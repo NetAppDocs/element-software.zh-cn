@@ -5,6 +5,7 @@ keywords: group snapshot, create, volumes, schedule, automate group snapshots
 summary: 您可以为一组卷创建快照，也可以创建组快照计划以自动执行组快照。一个组快照一次可以一致地创建多达 32 个卷的快照。 
 ---
 = 创建组快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

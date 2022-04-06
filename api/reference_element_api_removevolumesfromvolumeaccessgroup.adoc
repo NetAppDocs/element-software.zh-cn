@@ -5,6 +5,7 @@ keywords: remove,removing,volume,volumes,access,group,removevolumesfromvolumeacc
 summary: 您可以使用 RemoveVolumeVolumesFromVolumeAccessGroup 方法从指定的卷访问组中删除卷。 
 ---
 = RemoveVolumeVolumesFromVolumeAccessGroup
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

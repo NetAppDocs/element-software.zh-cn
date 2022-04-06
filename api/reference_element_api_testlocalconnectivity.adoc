@@ -5,6 +5,7 @@ keywords: test,testing,local,connectivity,TestLocalConnectivity
 summary: 您可以使用 TestLocalConnectivity 方法对活动集群中每个节点的集群 IP \ （ CIP\ ）执行 ping 操作。 
 ---
 = 测试本地连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

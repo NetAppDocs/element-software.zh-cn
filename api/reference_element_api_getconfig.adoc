@@ -5,6 +5,7 @@ keywords: node,get,getting,info,config,configuration,getconfig
 summary: 您可以使用 getconfig API 方法获取节点的所有配置信息。此 API 方法包含 GetClusterConfig 和 GetNetworkConfig API 方法中提供的相同信息。 
 ---
 = getconfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

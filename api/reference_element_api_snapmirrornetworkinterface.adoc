@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorNetworkInterface
 summary: snapMirrorNetworkInterface 对象包含有关集群间逻辑接口（ LIF\ ）的信息。 
 ---
 = snapMirrorNetworkInterface
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

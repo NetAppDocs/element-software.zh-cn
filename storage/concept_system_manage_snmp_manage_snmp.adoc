@@ -5,6 +5,7 @@ keywords: snmp, manage, config, cluster, requestor, usm, traps, monitor
 summary: 您可以在集群中配置简单网络管理协议（ SNMP\ ）。 
 ---
 = 管理 SNMP
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

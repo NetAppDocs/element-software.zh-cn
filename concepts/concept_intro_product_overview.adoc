@@ -5,6 +5,7 @@ keywords:
 summary: SolidFire 全闪存存储系统由分散的硬件组件（驱动器和节点）组成，这些组件组合成一个存储资源池。此统一集群可作为一个存储系统提供给外部客户端使用，并使用 NetApp Element 软件进行管理。 
 ---
 = 产品概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

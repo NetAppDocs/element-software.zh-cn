@@ -5,6 +5,7 @@ keywords: solidfire, element, aiq, cluster, active iq, vcenter plugin, vcp, stor
 summary: SolidFire 全闪存存储系统由独立的硬件组件（驱动器和节点）组成，这些组件通过在每个节点上独立运行的 NetApp Element 软件组合到一个存储资源池中。此统一集群可作为一个存储系统提供给外部客户端使用，并通过 Element 软件 UI ， API 和其他管理工具作为一个实体进行管理。 
 ---
 = SolidFire 架构概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

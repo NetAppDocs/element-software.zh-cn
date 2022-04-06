@@ -5,6 +5,7 @@ keywords: volume,volumes,purging,purge,deleted,purgedeletedvolume
 summary: 您可以使用 PurgeDeletedVolume 方法立即永久清除已删除的卷。必须先使用 DeleteVolume 删除卷，然后才能清除该卷。 
 ---
 = PurgeDeletedVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

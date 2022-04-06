@@ -5,6 +5,7 @@ keywords: objects,object,idpConfigInfo
 summary: idpConfigInfo 对象包含有关第三方身份提供程序 \ （ IdP ）的配置和集成详细信息。 
 ---
 = idpConfigInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

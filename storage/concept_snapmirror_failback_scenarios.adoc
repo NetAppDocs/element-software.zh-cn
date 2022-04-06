@@ -5,6 +5,7 @@ keywords: failback scenarios, snapmirror, dr, disaster recovery
 summary: SnapMirror 灾难恢复功能在两种故障恢复情形中进行了说明。这些假设已对原始关系进行故障转移（已断开）。 
 ---
 = SnapMirror 故障恢复场景
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

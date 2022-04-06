@@ -5,6 +5,7 @@ keywords: drive,drives,remove,removing,data,reset,resetting,resetdrives,erase
 summary: 您可以使用 ResetDrives 方法主动初始化驱动器并删除当前驻留在驱动器上的所有数据。然后，可以在现有节点中重复使用该驱动器，也可以在升级后的节点中使用该驱动器。 
 ---
 = ResetDrives
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

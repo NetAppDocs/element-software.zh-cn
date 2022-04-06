@@ -5,6 +5,7 @@ keywords: volume pairing reversal, volume pair, replication
 summary: 您可以通过多种方式管理卷关系，例如暂停复制，反转卷配对，更改复制模式，删除卷对或删除集群对。 
 ---
 = 管理卷关系
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

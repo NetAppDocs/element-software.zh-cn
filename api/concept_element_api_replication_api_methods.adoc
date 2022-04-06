@@ -5,6 +5,7 @@ keywords: replication,api,methods
 summary: 通过复制 API 方法，您可以连接两个集群以实现持续数据保护 \ （ CDPS\ ）。连接两个集群时，可以将集群中的活动卷持续复制到另一个集群，以提供数据恢复。通过将卷配对以进行复制，您可以保护数据免受可能导致其无法访问的事件的影响。 
 ---
 = 复制 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

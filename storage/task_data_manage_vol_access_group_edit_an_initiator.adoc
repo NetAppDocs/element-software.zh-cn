@@ -5,6 +5,7 @@ keywords: initiator, edit, change alias, chap, credentials
 summary: 您可以更改现有启动程序的别名，也可以添加别名（如果尚不存在）。 
 ---
 = 编辑启动程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

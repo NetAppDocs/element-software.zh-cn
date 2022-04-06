@@ -5,6 +5,7 @@ keywords: security,key management,encryption
 summary: 您可以将 Element 软件与外部安全相关服务集成，例如外部密钥管理服务器。通过这些与安全相关的方法，您可以为空闲加密配置外部密钥管理等要素安全功能。 
 ---
 = 安全 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

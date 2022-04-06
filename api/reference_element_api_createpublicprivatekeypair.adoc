@@ -5,6 +5,7 @@ keywords: SSL keys,public and private keys,certificate signing request,creating 
 summary: 您可以使用 CreatePublicPrivateKeyPair 方法创建公有和专用 SSL 密钥。您可以使用这些密钥生成证书签名请求。每个存储集群只能使用一个密钥对。在使用此方法替换现有密钥之前，请确保这些密钥不再由任何提供程序使用。 
 ---
 = CreatePublicPrivateKeyPair
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

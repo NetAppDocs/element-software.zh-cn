@@ -5,6 +5,7 @@ keywords: fips, ssl ciphers, 140-2, encryption algorithms
 summary: SSL 密码是主机用来建立安全通信的加密算法。Element 软件支持标准密码，而启用 FIPS 140-2 模式时则支持非标准密码。 
 ---
 = SSL 密码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

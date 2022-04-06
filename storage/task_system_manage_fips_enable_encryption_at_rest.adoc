@@ -5,6 +5,7 @@ keywords: fips, security, encryption at rest, enable, disable, drives
 summary: 您可以启用和禁用集群范围的空闲加密。默认情况下，不会启用此功能。要支持 FIPS 驱动器，必须启用空闲加密。 
 ---
 = 启用空闲加密
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

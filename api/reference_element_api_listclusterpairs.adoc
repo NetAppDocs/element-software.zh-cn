@@ -5,6 +5,7 @@ keywords: cluster,pair,pairs,paired,list,listing,listclusterpairs
 summary: 您可以使用 ListClusterPairs 方法列出与当前集群配对的所有集群。此方法将返回有关活动和待定集群配对的信息，例如有关当前配对以及集群配对的连接和延迟的统计信息。 
 ---
 = ListClusterPairs
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

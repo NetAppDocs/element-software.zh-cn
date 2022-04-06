@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorVserverAggregateInfo
 summary: snapMirrorVserverAggregateInfo 对象包含有关目标 ONTAP 集群上可用数据 Storage Virtual Machine \ （也称为 Vservers\ ）的信息。 
 ---
 = snapMirrorVserverAggregateInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

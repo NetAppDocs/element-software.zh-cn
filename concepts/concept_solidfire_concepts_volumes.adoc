@@ -5,6 +5,7 @@ keywords: what is, element, volume, storage volume, persistent volume
 summary: NetApp SolidFire 存储系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。 
 ---
 = Volumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

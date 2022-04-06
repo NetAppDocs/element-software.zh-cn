@@ -5,6 +5,7 @@ keywords: object,objects,event
 summary: event 对象包含 API 方法调用期间或系统执行操作期间发生的事件的详细信息。 
 ---
 = 事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

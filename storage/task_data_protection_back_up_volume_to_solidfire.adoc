@@ -5,6 +5,7 @@ keywords: volume backup, solidfire storage cluster
 summary: 对于运行 Element 软件的存储集群，您可以将集群上的卷备份到远程集群。 
 ---
 = 将卷备份到 SolidFire 存储集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

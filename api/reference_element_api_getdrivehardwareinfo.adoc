@@ -5,6 +5,7 @@ keywords: drive,get,getting,hardware,info,getdrivehardwareinfo
 summary: 您可以使用 GetDriveHardwareInfo 方法获取给定驱动器的所有硬件信息。这通常包括制造商，供应商，版本以及其他相关硬件标识信息。 
 ---
 = GetDriveHardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

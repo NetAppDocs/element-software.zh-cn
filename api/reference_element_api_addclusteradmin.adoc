@@ -5,6 +5,7 @@ keywords: addclusteradmin,cluster,admin,administrator,adding,add
 summary: 您可以使用 AddClusterAdmin 方法添加新的集群管理员帐户。集群管理员可以通过 API 和管理工具管理集群。集群管理员是完全独立的，与标准租户帐户无关。 
 ---
 = 添加 ClusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

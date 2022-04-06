@@ -5,6 +5,7 @@ keywords: list,listing,node,fibre,channel,port,info,listnodefibrechannelportinfo
 summary: 您可以使用 ListNodeFibreChannelPortInfo 方法列出有关节点上光纤通道端口的信息。 
 ---
 = ListNodeFibreChannelPortInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: objects,object,authSessionInfo
 summary: authSessionInfo 对象包含有关身份验证会话的信息。 
 ---
 = authSessionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

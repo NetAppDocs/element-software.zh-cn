@@ -5,6 +5,7 @@ keywords: snapshot schedule, copy, maintain, schedule attributes
 summary: 您可以复制计划并维护其当前属性。 
 ---
 = 复制快照计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

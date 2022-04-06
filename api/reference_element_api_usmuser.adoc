@@ -5,6 +5,7 @@ keywords: object,objects,usmUser
 summary: 您可以将 SNMP usmUser 对象与 SetSnmpInfo API 方法结合使用，以便在存储集群上配置 SNMP 。 
 ---
 = usmUser
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

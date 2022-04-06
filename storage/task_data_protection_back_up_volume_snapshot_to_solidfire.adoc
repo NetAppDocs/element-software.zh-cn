@@ -5,6 +5,7 @@ keywords: volume snapshot, backup, solidfire cluster
 summary: 您可以将驻留在 SolidFire 集群上的卷快照备份到远程 SolidFire 集群。 
 ---
 = 将卷快照备份到 SolidFire 集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

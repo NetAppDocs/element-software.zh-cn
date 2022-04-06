@@ -5,6 +5,7 @@ keywords: response,example,getconfig
 summary: getconfig 方法返回类似于以下示例的响应。由于篇幅限制，此响应仅包含集群中一个节点的信息。 
 ---
 = getconfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

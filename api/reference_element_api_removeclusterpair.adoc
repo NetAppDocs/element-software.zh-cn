@@ -5,6 +5,7 @@ keywords: cluster,clusters,pair,remove,removing,removeclusterpair
 summary: 您可以使用 RemoveClusterPair 方法关闭两个配对集群之间打开的连接。 
 ---
 = RemoveClusterPair
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

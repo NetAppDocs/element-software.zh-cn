@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorJobScheduleCronInfo
 summary: snapMirrorJobScheduleCronInfo 对象包含有关 ONTAP 系统上的 cron 作业计划的信息。 
 ---
 = snapMirrorJobScheduleCronInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

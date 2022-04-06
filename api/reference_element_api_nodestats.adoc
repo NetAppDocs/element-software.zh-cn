@@ -5,6 +5,7 @@ keywords: object,objects,nodestats
 summary: nodeStats 对象包含节点的高级别活动测量结果。您可以使用 GetNodeStats 和 ListNodeStats API 方法获取部分或全部 nodeStats 对象。 
 ---
 = NodeStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

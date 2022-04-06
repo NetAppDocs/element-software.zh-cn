@@ -5,6 +5,7 @@ keywords: element demo node, virtual machine, element software, element api, vmw
 summary: Element 演示节点是一个 VMware 虚拟机版本的 Element 软件，可通过它轻松演示 NetApp HCI 和 SolidFire 产品的许多关键存储功能。 
 ---
 = 使用 Element 演示节点试用存储功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

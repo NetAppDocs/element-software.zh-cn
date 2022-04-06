@@ -5,6 +5,7 @@ keywords: KMIP,key server,modifying,modify,change,edit
 summary: 您可以使用 ModifyKeyServerKmip 方法将现有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器修改为指定属性。尽管唯一必需的参数是 keyServerID ，但仅包含 keyServerID 的请求不会执行任何操作，也不会返回任何错误。您指定的任何其他参数将使用指定的 keyServerID 替换密钥服务器的现有值。在此操作期间，系统会联系密钥服务器以确保其正常运行。您可以使用 kmipKeyServerHostnames 参数提供多个主机名或 IP 地址，但前提是密钥服务器采用集群配置。 
 ---
 = ModifyKeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

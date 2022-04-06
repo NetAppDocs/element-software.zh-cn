@@ -5,6 +5,7 @@ keywords: pair cluster, mvip, pairing key, cluster pairing
 summary: 如果对源集群和目标集群都具有集群管理员访问权限，则可以使用目标集群的 MVIP 对这两个集群进行配对。如果集群管理员只能访问集群对中的一个集群，则可以在目标集群上使用配对密钥来完成集群配对。 
 ---
 = 使用 MVIP 或配对密钥对集群配对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

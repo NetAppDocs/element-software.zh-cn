@@ -5,6 +5,7 @@ keywords: snapmirror,relationship,relationships,quiesce,quiescing,quiescescnapmi
 summary: 'Element 软件 Web UI 使用 QuiesceSnapMirrorRelationship 方法禁用 SnapMirror 关系的未来数据传输。如果正在进行传输，则关系状态将变为 "quiescing" ，直到传输完成为止。如果当前传输已中止，则不会重新启动。您可以使用 ResumeSnapMirrorRelationship API 方法为此关系重新启用数据传输。' 
 ---
 = QuiesceSnapMirrorRelationship
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

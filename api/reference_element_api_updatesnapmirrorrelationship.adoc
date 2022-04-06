@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,relationships,update,updating,destination,volu
 summary: Element 软件 Web UI 使用 UpdateSnapMirrorRelationship 方法使 SnapMirror 关系中的目标卷成为源卷的最新镜像。 
 ---
 = UpdateSnapMirrorRelationship
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

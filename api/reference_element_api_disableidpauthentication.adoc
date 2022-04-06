@@ -5,6 +5,7 @@ keywords: IdP,idp,authentication,disable
 summary: 您可以使用 DisableIdpAuthentication 方法禁用对集群使用第三方 IdP 进行身份验证的支持。禁用后，经过第三方 IdP 身份验证的用户将无法再访问集群，并且任何经过身份验证的活动会话都将失效 / 断开连接。LDAP 和集群管理员可以通过支持的 UI 访问集群。 
 ---
 = DisableIdpAuthentication
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

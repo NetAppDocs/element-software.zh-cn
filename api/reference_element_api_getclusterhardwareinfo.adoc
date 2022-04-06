@@ -5,6 +5,7 @@ keywords: get,getting,cluster,hardware,getclusterhardwareinfo
 summary: 您可以使用 GetClusterHardwareInfo 方法检索集群中所有光纤通道节点， iSCSI 节点和驱动器的硬件状态和信息。这通常包括制造商，供应商，版本以及其他相关硬件标识信息。 
 ---
 = GetClusterHardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

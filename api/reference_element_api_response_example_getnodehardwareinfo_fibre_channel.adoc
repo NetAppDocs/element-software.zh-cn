@@ -5,6 +5,7 @@ keywords: response,example,getnodehardwareinfo
 summary: 光纤通道节点的 GetNodeHardwareInfo 方法返回类似于以下示例的响应。 
 ---
 = GetNodeHardwareInfo （光纤通道节点的输出）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

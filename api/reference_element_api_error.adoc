@@ -5,6 +5,7 @@ keywords: objects,object,error
 summary: 如果在方法调用期间发生错误，则错误对象包含错误代码和消息。系统生成的所有错误的错误代码均为 500 。 
 ---
 = error
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

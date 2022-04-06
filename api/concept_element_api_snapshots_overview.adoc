@@ -5,6 +5,7 @@ keywords: snapshot,overview
 summary: 卷快照是卷的时间点副本。您可以使用快照将卷回滚到创建快照时的状态。 
 ---
 = Snapshot 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

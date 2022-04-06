@@ -5,6 +5,7 @@ keywords: cluster fullness levels, understanding, fullness levels
 summary: 运行 Element 软件的集群会生成集群故障，以便在集群容量即将用尽时向存储管理员发出警告。集群填充度分为三个级别，所有这些级别均显示在 NetApp Element UI 中：警告，错误和严重。 
 ---
 = 了解集群填充度级别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

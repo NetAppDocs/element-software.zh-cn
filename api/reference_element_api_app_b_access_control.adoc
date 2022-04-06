@@ -5,6 +5,7 @@ keywords: access,control,type
 summary: 根据您设置的访问类型，可用的 Element API 方法会有所不同。 
 ---
 = 访问控制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

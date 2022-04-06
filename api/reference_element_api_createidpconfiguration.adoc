@@ -5,6 +5,7 @@ keywords: IdP,idp,configuration,create,creating
 summary: 您可以使用 CreateIpdConfiguration 方法为集群创建使用第三方身份提供程序 \ （ IdP ）进行身份验证的潜在信任关系。IdP 通信需要 SAML 服务提供商证书。此证书将根据需要生成，并由此 API 调用返回。 
 ---
 = CreateIdpConfiguration
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: relationships, snapmirror, actions, configure relationships
 summary: '您可以从数据保护选项卡的 SnapMirror 关系页面配置关系。此处介绍了 "Actions" 图标中的选项。' 
 ---
 = SnapMirror 关系操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

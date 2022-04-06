@@ -5,6 +5,7 @@ keywords: volume warnings, messages, replication, data protection
 summary: '在对卷配对后， "Data Protection" 选项卡上的 "Volume Pairs" 页面会提供这些消息。这些消息可以在复制卷列表视图中显示在卷对的源端和目标端 \ （除非另有说明）。' 
 ---
 = 卷配对警告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: accounts,account,efficiency,get,getting,GetAccountEfficiency
 summary: 您可以使用 GetAccountEfficiency 获取有关卷帐户的效率统计信息。此方法仅返回作为参数提供的帐户的效率信息。 
 ---
 = GetAccountEfficiency
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

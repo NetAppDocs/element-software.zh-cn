@@ -5,6 +5,7 @@ keywords: snapshot retention, edit, set a retention period, edit retention perio
 summary: 您可以更改快照的保留期限，以控制系统何时删除快照或是否删除快照。您指定的保留期限从输入新间隔开始。设置保留期限时，您可以选择从当前时间开始的期限 \ （不会从快照创建时间计算保留时间 \ ）。您可以以分钟，小时和天为单位指定间隔。 
 ---
 = 编辑快照保留
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

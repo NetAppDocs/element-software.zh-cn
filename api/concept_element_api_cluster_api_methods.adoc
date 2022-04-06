@@ -5,6 +5,7 @@ keywords: cluster,API,methods,method,manage
 summary: 您可以通过 Element 软件集群 API 方法管理存储集群以及属于存储集群的节点的配置和拓扑。 
 ---
 = 集群 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume access groups, initiators, working with, chap, fc, iscsi
 summary: 您可以使用 iSCSI 启动程序或光纤通道启动程序访问卷访问组中定义的卷。 
 ---
 = 使用卷访问组和启动程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

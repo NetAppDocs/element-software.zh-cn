@@ -5,6 +5,7 @@ keywords: SnapMirror,endpoints,create,creating,volume,volumes,CreateSnapMirrorVo
 summary: Element Web UI 使用 CreateSnapMirrorVolume 方法在远程 ONTAP 系统上创建卷。 
 ---
 = CreateSnapMirrorVolume
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

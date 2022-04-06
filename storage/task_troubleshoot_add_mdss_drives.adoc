@@ -5,6 +5,7 @@ keywords: mdss, add, multi-drive slice service
 summary: 通过将插槽 2 中的块驱动器转换为分区驱动器，您可以在 SolidFire 节点上添加第二个元数据驱动器。这可通过启用多驱动器分区服务（ MDS\ ）功能来实现。要启用此功能，您必须联系 NetApp 支持部门。 
 ---
 = 添加 MDSS 驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

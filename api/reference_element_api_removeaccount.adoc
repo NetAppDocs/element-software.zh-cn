@@ -5,6 +5,7 @@ keywords: account,accounts,remove,removing,deleting,delete,purge,volume,volumes,
 summary: 可以使用 RemoveAccount 方法删除现有帐户。您必须先使用 DeleteVolume 删除并清除与帐户关联的所有卷，然后才能删除帐户。如果帐户上的卷仍处于待删除状态，则不能使用 RemoveAccount 删除帐户。 
 ---
 = RemoveAccount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

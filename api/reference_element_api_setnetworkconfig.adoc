@@ -5,6 +5,7 @@ keywords: network,config,configuration,set,setting,node,setnetworkconfig
 summary: 您可以使用 SetNetworkConfig 方法设置节点的网络配置。要显示节点的当前网络设置，请运行 GetNetworkConfig API 方法。 
 ---
 = SetNetworkConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snmp,information,info,get,getting
 summary: 您可以使用 GetSnmpInfo 方法获取当前简单网络管理协议（ Simple Network Management Protocol ， SNMP\ ）配置信息。 
 ---
 = GetSnmpInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: drives,drive,list,listing,listdrives,cluster
 summary: 您可以使用 ListDrives 方法列出集群活动节点中的驱动器。此方法将返回已添加为卷元数据或块驱动器的驱动器，以及尚未添加且可用的驱动器。 
 ---
 = ListDrives
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

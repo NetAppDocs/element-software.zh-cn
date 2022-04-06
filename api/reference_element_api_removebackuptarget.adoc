@@ -5,6 +5,7 @@ keywords: backup,target,targets,remove,delete,removing,deleting,removebackuptarg
 summary: 您可以使用 RemoveBackupTarget 方法删除备份目标。 
 ---
 = RemoveBackupTarget
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

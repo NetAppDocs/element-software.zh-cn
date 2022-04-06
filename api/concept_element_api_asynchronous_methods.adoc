@@ -5,6 +5,7 @@ keywords: async,asynchronous,methods,API
 summary: 某些 API 方法是异步的，这意味着，当方法返回时，它们执行的操作可能不完整。异步方法返回一个句柄，您可以查询该句柄以查看操作状态；某些操作的状态信息可能包括完成百分比。 
 ---
 = 异步方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

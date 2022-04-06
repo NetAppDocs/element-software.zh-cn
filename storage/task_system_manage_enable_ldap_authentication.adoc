@@ -5,6 +5,7 @@ keywords:
 summary: 您可以配置存储系统与现有 LDAP 服务器的集成。这样， LDAP 管理员就可以集中管理用户的存储系统访问权限。 
 ---
 = 使用 Element 用户界面启用 LDAP 身份验证
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

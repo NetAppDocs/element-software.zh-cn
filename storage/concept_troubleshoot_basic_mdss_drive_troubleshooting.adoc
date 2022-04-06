@@ -5,6 +5,7 @@ keywords: mdss drives, troubleshoot, multi-drive slice service
 summary: 如果一个或两个元数据驱动器发生故障，您可以通过将元数据驱动器重新添加到集群来恢复元数据驱动器。如果已在节点上启用 NetApp Element 功能，则可以在 MDSS UI 中执行恢复操作。 
 ---
 = 基本 MDSS 驱动器故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: hardware,sensor,info,ipmi,report,get,getting,getipmiinfo
 summary: 您可以使用 GetIpmiInfo 方法显示系统监控的节点风扇，进气和排气温度以及电源的传感器 \ （对象 \ ）的详细报告。 
 ---
 = GetIpmiInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

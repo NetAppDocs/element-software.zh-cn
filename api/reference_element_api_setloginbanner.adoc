@@ -5,6 +5,7 @@ keywords: terms,use,banner,configure,set,setting,setloginbanner,login
 summary: '您可以使用 SetLoginBanner 方法配置用户在登录到 Element Web 界面时看到的 " 使用条款 " 横幅。' 
 ---
 = SetLoginBanner
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,protocolEndpoint
 summary: ProtocolEndpoint 对象包含协议端点的属性。您可以使用 ListProtocolEndpoints API 方法检索集群中所有协议端点的此信息。 
 ---
 = ProtocolEndpoint
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: qos,values,default,get,getting,getdefaultqos
 summary: 您可以使用 GetDefaultQoS 方法获取新创建卷的默认服务质量值（ QoS ）。 
 ---
 = GetDefaultQoS
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

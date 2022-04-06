@@ -5,6 +5,7 @@ keywords: authentication,login,session,info,timeout,setloginsessioninfo
 summary: 您可以使用 SetLoginSessionInfo 方法设置会话登录身份验证的有效期。在登录期限过后，系统上没有任何活动，身份验证将过期。登录期限过后，要继续访问集群，需要新的登录凭据。 
 ---
 = SetLoginSessionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

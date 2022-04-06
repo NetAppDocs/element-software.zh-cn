@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,accounts,settings,modify
 summary: 您可以使用 ModifyAccount 方法修改现有帐户。 
 ---
 = ModifyAccount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

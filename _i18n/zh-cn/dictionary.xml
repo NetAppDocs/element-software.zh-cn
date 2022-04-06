@@ -11468,8 +11468,6 @@
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">系统升级过程</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionatRestInfo</block>
   <block id="7312c371e606c4ef84d0e890d014f53f" category="sidebar">开始使用 SolidFire ESDS</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="5b7e7ff4cde603a8e9bda3b0790603ec" category="section-title">Element 12.3.1</block>
   <block id="adf576ac121282dd87a46368c235ab70" category="paragraph">详细了解 Element 12.3.1 中的新增功能。</block>
   <block id="04aa68617927bbc2709638a86a15ad34" category="section-title">存储固件包 2.99.2</block>
@@ -12312,4 +12310,5 @@
   <block id="8c79dbfa1dd86948b37af21a8d7639d5" category="list-text">将正确的 VM 网络重新分配给 VM 。</block>
   <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">如果 DHCP 分配的 IP MTU 小于 1500 字节，则可能会阻止您配置管理节点网络或使用管理节点 UI 。</block>
   <block id="1b8210afec8bf22eaf6aeec2c734fa6c" category="list-text">如果您使用系统的完全限定域名（ FQDN ）访问 Element Web 界面（例如管理节点或 NetApp Hybrid Cloud Control ）， <block ref="3bef977fd72a25456136a30f2d648743" category="inline-link-macro-rx"></block>。</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
 </blocks>

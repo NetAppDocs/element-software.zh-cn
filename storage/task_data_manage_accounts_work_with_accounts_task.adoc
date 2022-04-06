@@ -5,6 +5,7 @@ keywords: element, solidfire, accounts, create, delete, change, chap, view, edit
 summary: 在 SolidFire 存储系统中，客户端可以通过用户帐户连接到节点上的卷。创建卷时，卷会分配给特定的用户帐户。 
 ---
 = 使用用户帐户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

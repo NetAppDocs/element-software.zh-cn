@@ -5,6 +5,7 @@ keywords: what is, element, solidfire, replication, clone, snapshot, protection 
 summary: 数据保护功能包括远程复制，卷快照，卷克隆，保护域以及采用双 Helix 技术的高可用性。 
 ---
 = 数据保护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

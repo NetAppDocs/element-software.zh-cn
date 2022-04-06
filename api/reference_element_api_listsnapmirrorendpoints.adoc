@@ -5,6 +5,7 @@ keywords: snapmirror,endpoint,endpoints,list,listing,listsnapmirrorendpoints
 summary: Element 软件 Web UI 使用 ListSnapMirrorEndpoints 方法列出 Element 存储集群正在与其通信的所有 SnapMirror 端点。 
 ---
 = ListSnapMirrorEndpoints
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

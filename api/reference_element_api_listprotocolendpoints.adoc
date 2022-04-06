@@ -5,6 +5,7 @@ keywords: protocol,endpoints,endpoint,list,listing,listprotocolendpoints
 summary: 您可以使用 ListProtocolEndpoints 方法检索有关集群中所有协议端点的信息。协议端点负责管理对其关联虚拟卷存储容器的访问。 
 ---
 = ListProtocolEndpoints
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

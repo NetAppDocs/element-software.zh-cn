@@ -5,6 +5,7 @@ keywords: failback, perform, source volume, snapmirror, ui
 summary: 您可以使用 NetAppElement UI 重新同步原始源卷并执行故障恢复。此操作步骤适用场景情形下，原始源卷仍存在。 
 ---
 = 如果源卷仍存在，请执行故障恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

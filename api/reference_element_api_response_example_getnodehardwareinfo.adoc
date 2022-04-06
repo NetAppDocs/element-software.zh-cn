@@ -5,6 +5,7 @@ keywords: response,example,getnodehardwareinfo
 summary: iSCSI 的 GetNodeHardwareInfo 方法返回类似于以下示例的响应。 
 ---
 = GetNodeHardwareInfo （ iSCSI 的输出）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

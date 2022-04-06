@@ -5,6 +5,7 @@ keywords: accounts,account,name,username,GetAccountByName
 summary: 您可以使用 GetAccountByName 获取有关特定帐户的详细信息（给定帐户的用户名）。 
 ---
 = GetAccountByName
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

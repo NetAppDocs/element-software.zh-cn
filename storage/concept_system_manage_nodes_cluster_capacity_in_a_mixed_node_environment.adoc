@@ -5,6 +5,7 @@ keywords: nodes, mixed environment, capacity, cluster capacity, mixed nodes, enc
 summary: 您可以在一个集群中混用不同类型的节点。SF 系列 2405 ， 3010 ， 4805 ， 6010 ， 9605 ， 9010 ， 19210 ， 38410 和 H 系列可以同时位于一个集群中。 
 ---
 = 混合节点环境中的集群容量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

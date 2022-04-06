@@ -5,6 +5,7 @@ keywords: layout,custom,protection domain,protection domains,setting protection 
 summary: 您可以使用 SetProtectionDomainLayout 方法将节点分配给自定义保护域。 
 ---
 = SetProtectionDomainLayout
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

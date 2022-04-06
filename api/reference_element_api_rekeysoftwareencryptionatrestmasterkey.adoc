@@ -5,6 +5,7 @@ keywords: system, api, element, security, rekey, software encryption at rest
 summary: 您可以使用 RekeySoftwareEncryptionAtRestMasterKey 方法重新设置用于加密磁盘（数据加密密钥）的软件空闲加密主密钥的密钥。 
 ---
 = RekeySoftwareEncryptionAtRestMasterKey
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: SNMP,enable,enabling,EnableFeature,vvols,virtual volumes,FIPS,140-2,Sn
 summary: 您可以使用 EnableFeature 方法启用默认禁用的集群功能，例如 VVol 。 
 ---
 = EnableFeature
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

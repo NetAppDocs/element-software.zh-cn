@@ -5,6 +5,7 @@ keywords: volume,access,group,groups,LUN,mapping,assignment,get,getting,GetVolum
 summary: 您可以使用 GetVolumeAccessGroupLunAssignments 方法检索有关指定卷访问组的 LUN 映射的详细信息。 
 ---
 = GetVolumeAccessGroupLunAssignments
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

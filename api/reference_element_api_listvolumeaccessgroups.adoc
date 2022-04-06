@@ -5,6 +5,7 @@ keywords: volume,access,group,groups,list,listing,listvolumeaccessgroups
 summary: 您可以使用 ListVolumeAccessGroups 方法获取有关系统中当前卷访问组的信息。 
 ---
 = ListVolumeAccessGroups
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

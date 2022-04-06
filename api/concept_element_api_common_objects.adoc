@@ -5,6 +5,7 @@ keywords: common,objects
 summary: Element 软件 API 使用 JSON 对象来表示组织的数据概念。其中许多 API 方法都使用这些对象进行数据输入和输出。本节介绍了这些常用对象；仅在一种方法中使用的对象将使用该方法记录，而不是在本节中记录。 
 ---
 = 通用对象
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

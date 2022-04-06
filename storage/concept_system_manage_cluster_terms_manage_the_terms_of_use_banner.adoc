@@ -5,6 +5,7 @@ keywords: element, terms of use, banner, config, edit, terms of use, disable, en
 summary: 您可以启用，编辑或配置包含用户消息的横幅。 
 ---
 = 管理使用条款横幅
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

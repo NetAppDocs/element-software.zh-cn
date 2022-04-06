@@ -5,6 +5,7 @@ keywords: volumes,volume,stats,list,listing,account,listvolumestatsbyaccount,act
 summary: 您可以使用 ListVolumeStatsByAccount 方法列出每个帐户的卷活动测量结果概要。这些值将从帐户拥有的所有卷中求和。 
 ---
 = ListVolumeStatsByAccount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

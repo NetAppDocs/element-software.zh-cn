@@ -5,6 +5,7 @@ keywords: cluster,getting,bootstrap,information,node,GetBootstrapConfig
 summary: 您可以使用 GetBootstrapConfig 方法从启动配置文件中获取集群和节点信息。在将单个节点加入集群之前，请在该节点上使用此 API 方法。创建集群时，此方法返回的信息将在集群配置界面中使用。 
 ---
 = GetBootstrapConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

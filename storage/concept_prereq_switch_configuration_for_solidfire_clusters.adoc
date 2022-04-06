@@ -5,6 +5,7 @@ keywords: cluster switch configuration, best practices for switch configuration,
 summary: NetApp Element 软件系统具有某些交换机要求和最佳实践，可实现最佳存储性能。 
 ---
 = 运行 Element 软件的集群的交换机配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: objects,object,fipsErrorNodeReport
 summary: fipsErrorNodeReport 对象包含使用 GetFipsReport 方法查询 FIPS 140-2 支持信息时未做出响应的每个节点的错误信息。 
 ---
 = fipsErrorNodeReport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

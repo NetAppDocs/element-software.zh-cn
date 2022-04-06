@@ -5,6 +5,7 @@ keywords: network port requirements, TCP ports, firewall, utilities, URL, access
 summary: 您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。 
 ---
 = 网络端口要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

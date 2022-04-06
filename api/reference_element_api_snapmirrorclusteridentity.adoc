@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorClusterIdentity
 summary: snapMirrorClusterIdentity 对象包含有关 SnapMirror 关系中远程 ONTAP 集群的标识信息。 
 ---
 = snapMirrorClusterIdentity
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

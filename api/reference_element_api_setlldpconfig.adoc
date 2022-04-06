@@ -5,6 +5,7 @@ keywords: lldp,config,configure,set,setting,setlldpconfig
 summary: 您可以使用 SetLldpConfig 方法为存储集群配置链路层发现协议（ Link Layer Discovery Protocol ， LLDP ）设置。 
 ---
 = SetLldpConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

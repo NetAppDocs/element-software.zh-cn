@@ -5,6 +5,7 @@ keywords: cluster,list,listing,fault,faults,listclusterfaults,error,errors
 summary: 您可以使用 ListClusterFaults 方法列出有关在集群上检测到的任何故障的信息。使用此方法，您可以列出当前故障以及已解决的故障。系统每 30 秒缓存一次故障。 
 ---
 = ListClusterFaults
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

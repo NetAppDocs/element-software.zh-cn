@@ -5,6 +5,7 @@ keywords: encryption,enable,enabling,EnableEncryptionAtRest
 summary: 您可以使用 EnableEncryptionAtRest 方法在集群上启用高级加密标准 \ （ AES\ ） 256 位空闲加密，以便集群可以管理用于每个节点上的驱动器的加密密钥。默认情况下，不会启用此功能。 
 ---
 = EnableEncryptionAtRest
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

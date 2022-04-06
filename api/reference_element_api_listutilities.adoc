@@ -5,6 +5,7 @@ keywords: utilities,list,listing,listutilities
 summary: 您可以使用 ListUtilities 方法列出可在节点上运行的操作。 
 ---
 = ListUtilities
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

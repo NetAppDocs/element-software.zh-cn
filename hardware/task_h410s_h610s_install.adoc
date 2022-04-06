@@ -5,6 +5,7 @@ keywords: h410s, h610s, hardware installation, hardware maintenance
 summary: 在开始使用全闪存存储系统之前，您应正确安装和设置存储节点。 
 ---
 = 安装 H 系列存储节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

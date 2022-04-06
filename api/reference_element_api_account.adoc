@@ -5,6 +5,7 @@ keywords: account,object,accounts
 summary: 'account 对象包含有关帐户的信息。此对象仅包含有关帐户的 " 已配置 " 信息，而不包含任何运行时或使用情况信息。' 
 ---
 = account
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

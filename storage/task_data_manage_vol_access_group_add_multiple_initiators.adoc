@@ -5,6 +5,7 @@ keywords: initiator, add to volume access group, access groups, add multiple ini
 summary: 您可以向现有卷访问组添加多个启动程序，以允许访问卷访问组中的卷，无论是否需要 CHAP 身份验证。 
 ---
 = 将多个启动程序添加到卷访问组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

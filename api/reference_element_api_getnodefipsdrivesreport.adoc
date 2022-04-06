@@ -5,6 +5,7 @@ keywords: individual,fips,feature,support,info,report,get,getting,getnodefipsdri
 summary: 您可以使用 GetNodeFipsDrivesReport 方法检查存储集群中单个节点的 FIPS 140-2 驱动器加密功能状态。您必须对单个存储节点运行此方法。 
 ---
 = GetNodeFipsDrivesReport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

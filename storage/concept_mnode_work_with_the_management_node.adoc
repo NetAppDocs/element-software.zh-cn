@@ -5,6 +5,7 @@ keywords: management node,mNode
 summary: 您可以使用管理节点 \ （ mNode\ ）升级系统服务，管理集群资产和设置，运行系统测试和实用程序，配置 Active IQ 以进行系统监控以及启用 NetApp 支持访问以进行故障排除。 
 ---
 = 使用管理节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

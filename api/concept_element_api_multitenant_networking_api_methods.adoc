@@ -5,6 +5,7 @@ keywords: multitenant,network,networking,api,prerequisites,requirements,virtual,
 summary: Element 存储集群中的多租户网络允许在不同逻辑网络上的多个客户端之间将流量连接到一个 Element 存储集群，而无需第 3 层路由。 
 ---
 = 多租户网络 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ldap,auth,authentication,test,testing,testldapauthentication
 summary: 您可以使用 TestLdapAuthentication 方法验证当前已启用的 LDAP 身份验证设置。如果配置正确， API 调用将返回测试用户的组成员资格。 
 ---
 = TestLdapAuthentication
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

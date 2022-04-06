@@ -5,6 +5,7 @@ keywords: username,sessions,authentication sessions,list
 summary: 可以使用 ListAuthSessionsByUsername 方法列出指定用户的所有身份验证会话。不属于访问组集群管理员 / 管理员权限的调用方只能列出自己的会话。具有 ClusterAdmins/Administrator 权限的调用程序可以列出属于任何用户的会话。 
 ---
 = ListAuthSessionsByUsername
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

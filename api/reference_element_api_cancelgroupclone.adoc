@@ -5,6 +5,7 @@ keywords:
 summary: 您可以使用 CancelGroupClone 方法停止一组卷上正在进行的克隆过程。取消组克隆操作后，系统将完成并删除该操作的关联 asyncHandle 。 
 ---
 = 正在取消 GroupClone
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

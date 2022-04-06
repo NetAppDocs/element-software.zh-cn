@@ -5,6 +5,7 @@ keywords: cluster,get,getting,login,session,info,getloginsessioninfo
 summary: 您可以使用 GetLoginSessionInfo 方法返回登录身份验证会话对登录 shell 和 TUI 均有效的时间段。 
 ---
 = GetLoginSessionInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

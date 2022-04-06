@@ -5,6 +5,7 @@ keywords: object,objects,fault
 summary: fault 对象包含有关在集群中检测到的故障的信息。ListClusterFaults 方法将返回集群故障信息。 
 ---
 = 故障
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

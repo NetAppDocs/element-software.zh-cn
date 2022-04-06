@@ -5,6 +5,7 @@ keywords: session auth
 summary: 您可以使用基于会话的身份验证来管理用户会话。 
 ---
 = 会话身份验证 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

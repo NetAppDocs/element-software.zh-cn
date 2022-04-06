@@ -5,6 +5,7 @@ keywords: volume,volumes,modifying,modify,change,changing,edit,editing,modifyvol
 summary: 您可以使用 ModifyVolumes 方法一次最多配置 500 个现有卷。更改将立即生效。如果 ModifyVolumes 无法修改任何指定卷，则不会更改任何指定卷。 
 ---
 = ModifyVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,snapMirrorEndpoint
 summary: snapMirrorEndpoint 对象包含有关与 Element 存储集群通信的远程 SnapMirror 存储系统的信息。您可以使用 ListSnapMirrorEndpoints API 方法检索此信息。 
 ---
 = snapMirrorEndpoint
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

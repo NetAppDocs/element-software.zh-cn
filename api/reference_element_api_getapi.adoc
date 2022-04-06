@@ -5,6 +5,7 @@ keywords: API,method,return,list,methods,GetAPI
 summary: 您可以使用 GetAPI 方法获取可在系统中使用的所有 API 方法和受支持的 API 端点的列表。 
 ---
 = GetAPI
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object,objects,hardwareInfo
 summary: hardwareInfo 对象包含有关集群中每个节点的硬件和状态的详细信息。您可以使用 GetHardwareInfo API 方法检索此信息。 
 ---
 = hardwareInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

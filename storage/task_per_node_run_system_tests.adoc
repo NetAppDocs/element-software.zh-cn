@@ -5,6 +5,7 @@ keywords: storage nodes, running system tests,s ystem tests, network settings, t
 summary: 在将网络设置提交到网络配置后，您可以测试对这些设置所做的更改。您可以运行测试以确保存储节点稳定，并且可以使其联机而不出现任何问题。 
 ---
 = 使用每节点 UI 运行系统测试
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

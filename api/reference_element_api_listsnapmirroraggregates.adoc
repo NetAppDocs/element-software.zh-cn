@@ -5,6 +5,7 @@ keywords: snapmirror,aggregate,aggregates,list,listing,listsnapmirroraggregates
 summary: Element 软件 Web UI 使用 ListSnapMirrorAggregates 方法列出远程 ONTAP 系统上可用的所有 SnapMirror 聚合。聚合用于描述一组物理存储资源。 
 ---
 = ListSnapMirrorAggregates
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

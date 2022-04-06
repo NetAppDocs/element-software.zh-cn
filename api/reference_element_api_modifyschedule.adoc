@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapshot,schedule,schedu
 summary: 您可以使用 ModifySchedule 更改计划快照的执行间隔。您也可以使用此方法删除或暂停计划。 
 ---
 = ModifySchedule
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

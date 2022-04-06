@@ -5,6 +5,7 @@ keywords: snapshot, schedule, volume snapshots, group snapshots
 summary: 您可以通过计划按指定间隔执行卷快照来保护卷或一组卷上的数据。您可以计划自动运行单个卷快照或组快照。 
 ---
 = 计划快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

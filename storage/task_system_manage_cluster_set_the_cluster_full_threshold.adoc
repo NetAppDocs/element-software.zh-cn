@@ -5,6 +5,7 @@ keywords: cluster fullness, setting threshold, metadata, warning
 summary: 您可以使用以下步骤更改系统生成块集群填充度警告的级别。此外，您还可以使用 ModifyClusterFullThreshold API 方法更改系统生成块或元数据警告的级别。 
 ---
 = 设置集群全满阈值
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

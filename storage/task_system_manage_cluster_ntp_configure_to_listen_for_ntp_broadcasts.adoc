@@ -5,6 +5,7 @@ keywords: ntp, broadcasts, server, config, server list, broadcast client
 summary: 通过使用广播模式，您可以指示集群中的每个节点在网络上侦听特定服务器发出的网络时间协议（ Network Time Protocol ， NTP ）广播消息。 
 ---
 = 配置集群以侦听 NTP 广播
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

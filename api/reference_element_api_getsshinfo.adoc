@@ -5,6 +5,7 @@ keywords: SSH,status,get,getting,getsshinfo
 summary: 您可以使用 GetSshInfo 方法查询单个节点上的 SSH 服务状态。 
 ---
 = GetSshInfo
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

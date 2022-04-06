@@ -5,6 +5,7 @@ keywords: modify,modifying,edit,editing,change,changing,snapmirror,endpoint,modi
 summary: Element 软件 Web UI 使用 ModifySnapMirrorEndpoint 方法更改 SnapMirror 端点的名称和管理属性。 
 ---
 = ModifySnapMirrorEndpoint
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

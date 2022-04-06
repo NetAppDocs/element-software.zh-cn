@@ -5,6 +5,7 @@ keywords: drive,API,methods,method
 summary: 您可以使用驱动器 API 方法添加和管理可供存储集群使用的驱动器。将存储节点添加到存储集群或在现有存储节点中安装新驱动器时，可以将这些驱动器添加到存储集群中。 
 ---
 = 驱动器 API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

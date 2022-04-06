@@ -5,6 +5,7 @@ keywords: solidfire esds, software-defined storage, networks, linux host routing
 summary: 在安装 SolidFire ESDS 之前，您应在运行 RHEL 的存储节点上设置所需的网络。您负责环境中的网络路由。您可以使用作为框架提供的最佳实践。 
 ---
 = 网络配置注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

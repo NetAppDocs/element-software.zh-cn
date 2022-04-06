@@ -5,6 +5,7 @@ keywords: fips, security, federal information processing standards, 140-2, drive
 summary: 您可以使用 NetApp Element 软件 GetFeatureStatus API 方法检查是否已在集群上启用 FIPS 驱动器功能，该方法显示了 FIPS 驱动器已启用状态是 true 还是 false 。 
 ---
 = 检查 FIPS 驱动器状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

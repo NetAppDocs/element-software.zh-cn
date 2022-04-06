@@ -5,6 +5,7 @@ keywords: ldap,api,methods
 summary: 您可以使用轻型目录访问协议 \ （ ldap\ ）对 Element 存储的访问进行身份验证。使用本节所述的 LDAP API 方法，您可以配置对存储集群的 LDAP 访问。 
 ---
 = LDAP API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

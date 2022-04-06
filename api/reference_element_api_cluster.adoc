@@ -5,6 +5,7 @@ keywords: objects,object,cluster
 summary: cluster 对象包含节点用于与集群通信的信息。您可以使用 GetClusterConfig API 方法检索此信息。 
 ---
 = 集群
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

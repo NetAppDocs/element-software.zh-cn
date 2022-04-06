@@ -5,6 +5,7 @@ keywords: volume,volumes,group,snapshot,snapshots,delete,deleting,DeleteGroupSna
 summary: 您可以使用 DeleteGroupSnapshot 删除组快照。 
 ---
 = DeleteGroupSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

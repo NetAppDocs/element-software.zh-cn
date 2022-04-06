@@ -5,6 +5,7 @@ keywords: storage,system,naming,convention,virtual,network
 summary: NetApp Element 存储系统使用单调递增的数字作为系统中所有对象的唯一标识符。 
 ---
 = 虚拟网络命名约定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

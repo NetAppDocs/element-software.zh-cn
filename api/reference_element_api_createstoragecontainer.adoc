@@ -5,6 +5,7 @@ keywords: create,creating,storage,container,virtual,volume,volumes,vvol,vvols,Cr
 summary: 您可以使用 CreateStorageContainer 方法创建虚拟卷（ VVol\ ）存储容器。您可以使用存储容器进行报告和资源分配。要使用虚拟卷功能，您需要至少创建一个存储容器。 
 ---
 = CreateStorageContainer
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

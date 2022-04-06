@@ -5,6 +5,7 @@ keywords: virtual,volume,vvol,host,hosts,list,listing,known,listvirtualvolumehos
 summary: 您可以使用 ListVirtualVolumeHosts 方法获取集群已知的所有虚拟卷主机的列表。虚拟卷主机是指已启动与 VASA API 提供程序会话的 VMware ESX 主机。 
 ---
 = ListVirtualVolumeHosts
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

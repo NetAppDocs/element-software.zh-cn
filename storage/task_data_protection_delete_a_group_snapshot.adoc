@@ -5,6 +5,7 @@ keywords: group snapshot, delete
 summary: 您可以从系统中删除组快照。删除组快照时，您可以选择是删除与组关联的所有快照，还是将其保留为单个快照。 
 ---
 = 删除组快照
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

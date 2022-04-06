@@ -5,6 +5,7 @@ keywords: bindings, vvols, bound virtual volumes
 summary: 要对虚拟卷执行 I/O 操作， ESXi 主机必须先绑定虚拟卷。 
 ---
 = 绑定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

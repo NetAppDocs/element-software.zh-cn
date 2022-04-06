@@ -5,6 +5,7 @@ keywords: KMIP,key server,deleting,delete
 summary: 您可以使用 DeleteKeyServerKmip 方法删除现有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。您可以删除密钥服务器，除非该密钥服务器是分配给其提供程序的最后一个密钥服务器，并且该提供程序正在提供当前正在使用的密钥。 
 ---
 = DeleteKeyServerKmip
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

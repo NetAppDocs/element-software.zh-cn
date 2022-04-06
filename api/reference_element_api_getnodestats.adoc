@@ -5,6 +5,7 @@ keywords: node,get,getting,stats,getnodestats
 summary: 您可以使用 GetNodeStats 方法检索单个节点的高级别活动测量结果。 
 ---
 = GetNodeStats
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

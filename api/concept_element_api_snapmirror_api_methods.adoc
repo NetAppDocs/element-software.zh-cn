@@ -5,6 +5,7 @@ keywords: SnapMirror,API,method
 summary: Element Web UI 使用 SnapMirror API 方法管理通过远程 ONTAP 系统镜像的快照。这些方法仅供 Element Web UI 使用。如果需要通过 API 访问 SnapMirror 功能，请使用 ONTAP API 。不提供 SnapMirror API 方法的请求和返回示例。 
 ---
 = SnapMirror API 方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

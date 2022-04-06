@@ -5,6 +5,7 @@ keywords: test,testing,connectivity,ensemble,testconnectensemble
 summary: 您可以使用 TestConnectEnsemble 方法验证与指定数据库集合的连接。默认情况下，它会对与节点关联的集群使用集合。或者，您也可以提供其他集合来测试连接。 
 ---
 = TestConnectEnsemble
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: volume pairings, replication mode, change, volume pair properties
 summary: 您可以编辑卷对属性以更改卷对关系的复制模式。 
 ---
 = 更改复制模式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

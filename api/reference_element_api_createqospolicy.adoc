@@ -5,6 +5,7 @@ keywords: QoS,policy,policies,create,creating
 summary: 您可以使用 CreateQoSPolicy 方法创建 QoSPolicy 对象，稍后可以在创建或修改卷时将其应用于卷。QoS 策略具有唯一的 ID ，名称和 QoS 设置。 
 ---
 = CreateQoSPolicy
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

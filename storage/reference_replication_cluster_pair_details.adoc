@@ -5,6 +5,7 @@ keywords: cluster pairs, replication, data protection
 summary: '"Data Protection" 选项卡上的 "Cluster Pairs" 页面提供了有关已配对或正在配对的集群的信息。系统将在状态列中显示配对和进度消息。' 
 ---
 = 集群对详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: event types, monitor, event log
 summary: '系统会报告多种类型的事件；每个事件都是系统已完成的一项操作。事件可以是例行事件，正常事件或需要管理员注意的事件。"Event Log" 页面上的 "Event Types" 列指示系统中发生事件的部分。' 
 ---
 = 事件类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

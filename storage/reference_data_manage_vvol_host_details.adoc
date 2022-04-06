@@ -5,6 +5,7 @@ keywords: host details, vvols, ESXi host details, virtual volumes, bindings, end
 summary: '"VVols" 选项卡上的 "Hosts" 页面提供了有关托管虚拟卷的 VMware ESXi 主机的信息。' 
 ---
 = 主机详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

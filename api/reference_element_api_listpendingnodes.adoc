@@ -5,6 +5,7 @@ keywords: cluster,list,listing,pending,nodes,node,listpendingnodes
 summary: 您可以使用 ListPendingNodes 方法列出系统中的待定存储节点。待定节点是指正在运行并配置为加入存储集群但尚未使用 Addnodes API 方法添加的存储节点。 
 ---
 = ListPendingNodes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

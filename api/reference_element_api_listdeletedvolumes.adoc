@@ -5,6 +5,7 @@ keywords: volume,volumes,marked,delete,deleted,deletion,list,listing,listdeleted
 summary: 您可以使用 ListDeletedVolumes 方法检索已标记为删除并已从系统中清除的卷的列表。 
 ---
 = ListDeletedVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

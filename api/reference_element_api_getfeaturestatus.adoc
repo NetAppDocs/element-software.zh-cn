@@ -5,6 +5,7 @@ keywords: feature,status,cluster,get,getting,getfeaturestatus
 summary: 您可以使用 GetFeatureStatus 方法检索集群功能的状态。 
 ---
 = GetFeatureStatus
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

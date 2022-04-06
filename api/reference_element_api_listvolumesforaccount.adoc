@@ -5,6 +5,7 @@ keywords: volume,volumes,list,listing,account,active,pending,deleted,listvolumes
 summary: 您可以使用 ListVolumesForAccount 方法列出帐户的活动卷和 \ （待定）已删除卷。 
 ---
 = ListVolumesForAccount
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

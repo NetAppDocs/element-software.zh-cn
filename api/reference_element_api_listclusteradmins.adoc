@@ -5,6 +5,7 @@ keywords: admin,admins,cluster,list,listing,listclusteradmins
 summary: 您可以使用 ListClusterAdmins 方法返回集群的所有集群管理员的列表。 
 ---
 = ListClusterAdmins
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

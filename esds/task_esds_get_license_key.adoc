@@ -5,6 +5,7 @@ keywords: solidfire esds, capacity model, license key, get license key
 summary: 您应先获取 SolidFire ESDS 集群的许可证密钥信息，然后再联系 NetApp 支持部门以帮助解决问题。SolidFire ESDS 集群的许可证密钥由集群的订单号和序列号组成。 
 ---
 = 获取许可证密钥
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

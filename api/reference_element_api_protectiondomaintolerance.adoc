@@ -5,6 +5,7 @@ keywords: object,objects,protectionDomainTolerance
 summary: protectionDomainTolerance 对象包含有关存储集群在发生一个或多个故障时继续读取和写入数据的能力的信息，所有这些信息都位于与其关联的保护域类型的单个保护域中。 
 ---
 = protectionDomainTolerance
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

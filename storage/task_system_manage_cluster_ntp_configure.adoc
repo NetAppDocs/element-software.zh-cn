@@ -5,6 +5,7 @@ keywords: ntp, cluster, query, fqdn, dns server
 summary: 您可以指示集群中的每个节点查询网络时间协议（ NTP ）服务器以获取更新。集群仅会联系已配置的服务器并从这些服务器请求 NTP 信息。 
 ---
 = 配置要查询的集群的网络时间协议服务器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

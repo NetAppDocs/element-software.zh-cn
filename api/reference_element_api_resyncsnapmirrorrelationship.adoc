@@ -5,6 +5,7 @@ keywords: SnapMirror,relationship,resync,resyncing,ResyncSnapMirrorRelationship
 summary: Element 软件 Web UI 使用 ResyncSnapMirrorRelationship 方法在源端点和目标端点之间建立或重新建立镜像关系。重新同步关系时，系统会删除目标卷上比通用快照副本更新的快照，然后将目标卷挂载为数据保护卷，并将通用快照副本作为导出的快照副本。 
 ---
 = 重新同步 SnapMirrorRelationship
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

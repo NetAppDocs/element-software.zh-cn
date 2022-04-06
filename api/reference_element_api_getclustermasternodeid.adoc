@@ -5,6 +5,7 @@ keywords: cluster,master,node,ID,get,getting,getclustermasternodeID
 summary: 您可以使用 GetClusterMasterNodeID 方法检索执行集群范围管理任务并持有存储虚拟 IP 地址（ SVIP\ ）和管理虚拟 IP 地址（ MVIP\ ）的节点的 ID 。 
 ---
 = GetClusterMasterNodeID
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

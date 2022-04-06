@@ -5,6 +5,7 @@ keywords: object,objects,initiator
 summary: initiator 对象包含有关 iSCSI 或光纤通道启动程序的信息。启动程序对象可以包含 IQN 或 WWPN 标识符。您可以使用 ListInitiators 方法获取系统上已知的所有启动程序的列表。您可以使用启动程序对象配置 SCSI 启动程序通过卷访问组访问一组卷。一个启动程序一次只能是一个卷访问组的成员。您可以通过使用 CreateInitiators 和 ModifyInitiators 方法指定一个或多个 virtualNetworkID 来限制启动程序对一个或多个 VLAN 的访问。如果未指定任何虚拟网络，则启动程序可以访问所有网络。 
 ---
 = 启动程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: objects,object,clusterAdmin
 summary: clusterAdmin 对象包含有关当前集群管理员用户的信息。您可以使用 GetCurrentClusterAdmin API 方法检索管理员用户信息。 
 ---
 = clusterAdmin
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

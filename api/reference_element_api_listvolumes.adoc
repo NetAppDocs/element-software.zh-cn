@@ -5,6 +5,7 @@ keywords: volume,volumes,list,listing,listvolumes
 summary: 您可以使用 ListVolumes 方法获取集群中的卷列表。您可以使用可用参数指定要在列表中返回的卷。 
 ---
 = ListVolumes
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

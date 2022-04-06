@@ -5,6 +5,7 @@ keywords: initiator, create, fc, iscsi, aliases, chap
 summary: 您可以创建 iSCSI 或光纤通道启动程序，也可以为其分配别名。 
 ---
 = 创建启动程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

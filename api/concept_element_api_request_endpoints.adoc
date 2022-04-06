@@ -5,6 +5,7 @@ keywords: request,endpoints
 summary: API 中使用三种类型的请求端点（存储集群，存储集群创建和每个节点）。您应始终使用您的 Element 软件版本支持的最新端点。 
 ---
 = 请求端点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

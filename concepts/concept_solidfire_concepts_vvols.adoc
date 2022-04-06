@@ -6,6 +6,7 @@ summary: vSphere 虚拟卷是 VMware 的一种存储模式，可将 vSphere 的�
 ---
 = 虚拟卷（ VVOL ）
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

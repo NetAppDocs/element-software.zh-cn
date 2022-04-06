@@ -5,6 +5,7 @@ keywords: access group, delete
 summary: 您可以删除不再需要的访问组。在删除卷访问组之前，您无需从该组中删除启动程序 ID 和卷 ID 。删除访问组后，对卷的组访问将中断。 
 ---
 = 删除访问组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

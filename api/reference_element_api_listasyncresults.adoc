@@ -5,6 +5,7 @@ keywords: async,asynchronous,result,results,get,list,listing,listasyncresults
 summary: 您可以使用 ListAsyncResults 列出系统上所有当前正在运行和已完成的异步方法的结果。使用 ListAsyncResults 查询异步结果不会使发生原因已完成的 asyncHandles 过期；您可以使用 GetAsyncResult 查询由 ListAsyncResults 返回的任何 asyncHandles 。 
 ---
 = ListAsyncResults
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

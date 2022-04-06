@@ -5,6 +5,7 @@ keywords: volume,volumes,create,creating,snapshot,snapshots,CreateSnapshot
 summary: 您可以使用 CreateSnapshot 创建卷的时间点副本。您可以从任何卷或现有快照创建快照。 
 ---
 = CreateSnapshot
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snmp,test,send,trap,testing,sending,snmpsendtesttraps
 summary: 使用 SnmpSendTestTraps 可以测试集群的 SNMP 功能。此方法指示集群向当前配置的 SNMP 管理器发送测试 SNMP 陷阱。 
 ---
 = SnmpSendTestTraps
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

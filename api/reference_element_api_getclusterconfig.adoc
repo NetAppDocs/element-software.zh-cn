@@ -5,6 +5,7 @@ keywords: cluster,configuration,get,getting,config,getclusterconfig
 summary: 您可以使用 GetClusterConfig API 方法返回有关节点用于与其集群通信的集群配置的信息。 
 ---
 = GetClusterConfig
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

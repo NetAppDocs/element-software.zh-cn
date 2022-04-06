@@ -5,6 +5,7 @@ keywords: storage,cluster,structure,config,configuration,info,get,getting,getclu
 summary: 您可以使用 GetClusterStructure 方法备份当前存储集群配置信息。如果在运行此方法时更改了存储集群配置，则配置备份的内容将不可预测。您可以将此数据保存到文本文件中，并在发生灾难时在其他集群或同一集群上还原此数据。 
 ---
 = GetClusterStructure
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

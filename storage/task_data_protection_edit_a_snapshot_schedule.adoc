@@ -5,6 +5,7 @@ keywords: snapshot schedule, edit, modify
 summary: 您可以修改现有快照计划。修改后，计划下次运行时，将使用更新后的属性。原始计划创建的所有快照都将保留在存储系统上。 
 ---
 = 编辑快照计划
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

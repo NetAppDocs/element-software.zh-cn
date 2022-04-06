@@ -5,6 +5,7 @@ keywords: pair clusters, mvip, connection
 summary: 您可以使用一个集群的 MVIP 与另一个集群建立连接，从而将两个集群配对以实现实时复制。要使用此方法，需要对两个集群都具有集群管理员访问权限。集群管理员用户名和密码用于在集群配对之前对集群访问进行身份验证。 
 ---
 = 使用 MVIP 对集群配对
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

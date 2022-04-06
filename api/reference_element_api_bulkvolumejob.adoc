@@ -5,6 +5,7 @@ keywords: bulkVolumeJob,object,objects,read,write,clones,snapshots,clone,snapsho
 summary: bulkVolumeJob 对象包含有关批量卷读取或写入操作的信息，例如克隆或创建快照。 
 ---
 = bulkVolumeJob
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

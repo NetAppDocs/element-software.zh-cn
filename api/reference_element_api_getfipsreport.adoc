@@ -5,6 +5,7 @@ keywords: fips,report,get,getting,getfipsreport,feature,support
 summary: 您可以使用 GetFipsReport 方法检查存储集群中所有节点的 FIPS 140-2 加密功能支持状态。 
 ---
 = GetFipsReport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
