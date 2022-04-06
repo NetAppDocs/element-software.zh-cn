@@ -37,7 +37,6 @@ Element API 基于 HTTPS 上的 JSON-RPC 协议。JSON-RPC 是一种基于轻型
 * xref:concept_element_api_volume_access_group_api_methods.adoc[卷访问组 API 方法]
 * xref:concept_element_api_volume_snapshot_api_methods.adoc[卷快照 API 方法]
 * xref:concept_element_api_vvols_api_methods.adoc[虚拟卷 API 方法]
-* xref:reference_element_api_app_a_cluster_fault_codes.adoc[集群故障代码]
 * xref:reference_element_api_app_b_access_control.adoc[访问控制]
 * xref:concept_element_api_response_examples.adoc[响应示例]
 

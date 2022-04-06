@@ -29,7 +29,7 @@ WARNING: 对于 SolidFire 全闪存存储集群，必须在创建集群期间启
 
 == 检查空闲时加密状态
 
-要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo"^] 方法您可以使用  获取集群用于对空闲数据进行加密的信息的方法。
+要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo"^] 方法您可以使用 link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["GetSoftwareEncryptionAtRestInfo"^] 获取集群用于对空闲数据进行加密的信息的方法。
 
 
 NOTE: `https://<MVIP>/` 上的 Element 软件 UI 信息板当前仅显示基于硬件的加密的空闲加密状态。

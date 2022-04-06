@@ -113,7 +113,7 @@ CAUTION: 选择 * 是 * 下一步将从安装中删除集群。
 
 如果您需要使存储节点脱机进行维护，例如软件升级或主机修复，则可以通过最大限度地减少对存储集群其余部分的 I/O 影响 <<enable_main_mode,启用>> 该节点的维护模式。当您 <<disable_main_mode,-disable>> 维护模式下，系统会对节点进行监控，以确保在节点过渡到维护模式之前满足特定条件。
 
-有关信息，请参见 link:../esds/reference_esds_use_maintenance_mode.html["维护模式"] 启用和禁用功能选项和 。
+有关信息，请参见 link:../esds/reference_esds_use_maintenance_mode.html["维护模式"] 启用和禁用功能选项和 link:../esds/reference_esds_use_maintenance_mode.html#possible-scenarios-while-using-maintenance-mode["使用维护模式时的可能情形"]。
 
 .您需要什么？ #8217 ；将需要什么
 * * Element 软件 * ：您的存储集群版本运行的是 NetApp Element 软件 12.2 或更高版本。

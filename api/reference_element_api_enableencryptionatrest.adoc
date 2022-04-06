@@ -13,7 +13,7 @@ summary: 您可以使用 EnableEncryptionAtRest 方法在集群上启用高级�
 您可以使用 `EnableEncryptionAtRest` 方法在集群上启用高级加密标准（ Advanced Encryption Standard ， AES ） 256 位空闲加密，以便集群可以管理用于每个节点上的驱动器的加密密钥。默认情况下，不会启用此功能。
 
 
-TIP: 要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 link:../api/reference_element_api_getclusterinfo["获取集群信息方法"^]。您可以使用 `GetSoftwareEncryptionAtRestInfo` 。
+TIP: 要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 link:../api/reference_element_api_getclusterinfo["获取集群信息方法"^]。您可以使用 `GetSoftwareEncryptionAtRestInfo` link:../api/reference_element_api_getsoftwareencryptionatrestinfo["获取集群用于对空闲数据进行加密的信息的方法"^]。
 
 
 NOTE: 此方法不会启用空闲软件加密。只能使用完成此操作 link:../api/reference_element_api_createcluster.html["创建集群方法"^] 使用 `enableSoftwareEncryptionAtRest` 设置为 `true` 。

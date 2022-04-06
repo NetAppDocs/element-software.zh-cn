@@ -28,12 +28,12 @@ summary: 您可以按照以下步骤操作，并使用列出的 Element API 方�
 +
 .. 通过调用以下 API 方法创建密钥服务器详细信息所在的密钥提供程序： link:../api/reference_element_api_createkeyproviderkmip.html["CreateKeyProviderKmip"]
 .. 通过调用以下 API 方法，创建一个提供证书颁发机构的签名证书和公有密钥证书的密钥服务器： link:../api/reference_element_api_createkeyserverkmip.html["CreateKeyServerKmip"]
-
+link:../api/reference_element_api_testkeyserverkmip.html["TestKeyServerKmip"]
 +
 如果测试失败，请验证您的服务器连接和配置。然后重复测试。
 
 .. 通过调用以下 API 方法将密钥服务器添加到密钥提供程序容器中：link:../api/reference_element_api_addkeyservertoproviderkmip.html["AddKeyServerToProviderKmip"]
-
+link:../api/reference_element_api_testkeyproviderkmip.html["TestKeyProviderKmip"]
 +
 如果测试失败，请验证您的服务器连接和配置。然后重复测试。
 
@@ -41,12 +41,12 @@ summary: 您可以按照以下步骤操作，并使用列出的 Element API 方�
 
 . 执行以下操作之一作为空闲加密的下一步：
 +
-.. （用于空闲硬件加密）启用 link:../concepts/concept_solidfire_concepts_security.html["空闲硬件加密"] 通过调用来提供用于存储密钥的密钥服务器所在的密钥提供程序的 ID  API 方法。
+.. （用于空闲硬件加密）启用 link:../concepts/concept_solidfire_concepts_security.html["空闲硬件加密"] 通过调用来提供用于存储密钥的密钥服务器所在的密钥提供程序的 ID link:../api/reference_element_api_enableencryptionatrest.html["EnableEncryptionAtRest"] API 方法。
 +
 
 NOTE: 您必须通过启用空闲加密 link:../api/reference_element_api_enableencryptionatrest.html["API"]。使用现有 Element UI 按钮启用空闲加密将使用内部生成的密钥对功能进行发生原因还原。
 
-.. （用于空闲软件加密） link:../concepts/concept_solidfire_concepts_security.html["空闲软件加密"] 要使用新创建的密钥提供程序，请将密钥提供程序 ID 传递到  API 方法。
+.. （用于空闲软件加密） link:../concepts/concept_solidfire_concepts_security.html["空闲软件加密"] 要使用新创建的密钥提供程序，请将密钥提供程序 ID 传递到 link:../api/reference_element_api_rekeysoftwareencryptionatrestmasterkey.html["RekeySoftwareEncryptionAtRestMasterKey"] API 方法。
 
 
 

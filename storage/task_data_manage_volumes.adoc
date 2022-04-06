@@ -283,7 +283,7 @@ IMPORTANT: 与管理服务关联的永久性卷会在安装或升级期间创建
 集群一次最多支持每个卷运行两个克隆请求，一次最多支持八个活动卷克隆操作。超过这些限制的请求将排队等待稍后处理。
 
 
-NOTE: 操作系统在处理克隆卷方面有所不同。VMware ESXi 会将克隆的卷视为卷副本或快照卷。此卷将成为可用于创建新数据存储库的设备。有关挂载克隆卷和处理快照 LUN 的详细信息，请参见上的 VMware 文档 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["挂载 VMFS 数据存储库副本"] 和。
+NOTE: 操作系统在处理克隆卷方面有所不同。VMware ESXi 会将克隆的卷视为卷副本或快照卷。此卷将成为可用于创建新数据存储库的设备。有关挂载克隆卷和处理快照 LUN 的详细信息，请参见上的 VMware 文档 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EEFEB765-A41F-4B6D-917C-BB9ABB80FC80.html["挂载 VMFS 数据存储库副本"] 和 https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-EBAB0D5A-3C77-4A9B-9884-3D4AD69E28DC.html["管理重复的 VMFS 数据存储库"]。
 
 
 IMPORTANT: 在通过克隆到较小的大小截断克隆的卷之前，请确保准备好分区，使其适合较小的卷。

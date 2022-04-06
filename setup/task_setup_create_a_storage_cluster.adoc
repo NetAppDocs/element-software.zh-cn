@@ -20,7 +20,7 @@ summary: 您可以在配置完所有单个节点后创建存储集群。创建�
 在新节点配置期间，会为每个节点分配 1 G 或 10 G 管理 IP （ Management IP ， MIP ）地址。您必须使用在配置期间创建的节点 IP 地址之一打开创建新集群页面。您使用的 IP 地址取决于您为集群管理选择的网络。
 
 
-IMPORTANT: 如果要启用集群范围的 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["空闲软件加密"]，您必须使用创建集群  而是 API 方法，并将 enableSoftwareEncryptionAtRest 参数更改为 `true` 。启用空闲软件加密后，无法在集群上禁用它。默认情况下， SolidFire ESDS 集群会启用空闲软件加密。基于硬件的空闲加密可以是  创建集群后。
+IMPORTANT: 如果要启用集群范围的 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["空闲软件加密"]，您必须使用创建集群 link:../api/reference_element_api_createcluster.html["CreateCluster"] 而是 API 方法，并将 enableSoftwareEncryptionAtRest 参数更改为 `true` 。启用空闲软件加密后，无法在集群上禁用它。默认情况下， SolidFire ESDS 集群会启用空闲软件加密。基于硬件的空闲加密可以是 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["已启用和已禁用"] 创建集群后。
 
 [NOTE]
 ====

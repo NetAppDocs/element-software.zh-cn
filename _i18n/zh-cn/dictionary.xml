@@ -7661,7 +7661,6 @@
   <block id="4d10c3e24e7b6edfa72b4c011dadac86" category="list-text">volume ：影响单个卷的故障。</block>
   <block id="0a2bf1d355540ae9ad881fb6d158ec6a" category="inline-xref-macro">ListClusterFaults</block>
   <block id="7821875a472294168621a09938fb4651" category="list-text"><block ref="7821875a472294168621a09938fb4651" category="inline-xref-macro-rx"></block></block>
-  <block id="3903d3b2985d16476d5183c0d4083057" category="list-text"><block ref="3903d3b2985d16476d5183c0d4083057" category="inline-xref-macro-rx"></block></block>
   <block id="e57b956af31e98e7384b69e0e0cfc5a6" category="summary">您可以使用 UpdateBulkVolumeStatus 方法更新使用 StartBulkVolumeRead 或 StartBulkVolumeWrite 方法启动的批量卷作业的状态。</block>
   <block id="207fb408c59f98b4eafa864bbc3f6ebe" category="doc">UpdateBulkVolumeStatus</block>
   <block id="0cbc9b3eac70901cd08c76ae7fb284c1" category="paragraph">您可以使用 `UpdateBulkVolumeStatus` 方法更新使用 `STartBulkVolumeRead` 或 `STartBulkVolumeWrite` 方法启动的批量卷作业的状态。</block>
@@ -10213,100 +10212,6 @@
   <block id="a382fc873af055a44b77ea69dfb19c81" category="paragraph">与会话关联的卷的卷 ID （如果有）。</block>
   <block id="3c1891dd585e189a03a3738dc0aabddc" category="paragraph">卷实例</block>
   <block id="c8587e41483add069cdbf299856867fd" category="paragraph">标识与 iSCSI 会话关联的卷对象（如果有）。</block>
-  <block id="d25f5e226239713265f2bcd9097ea3d9" category="summary">如果存储集群遇到管理员可能感兴趣的错误或状态，则会生成集群故障。您可以使用 ListClusterFaults 方法检索存储集群上已解决和未解决的故障的当前列表。</block>
-  <block id="32e6aaf950017a84b1ab127d90a8cd73" category="paragraph">如果存储集群遇到管理员可能感兴趣的错误或状态，则会生成集群故障。您可以使用 `ListClusterFaults` 方法检索存储集群上已解决和未解决的故障的当前列表。</block>
-  <block id="08c9f33e90162e7c5b80a70d3c8aa867" category="paragraph">以下列表提供了有关 NetApp Element 存储集群故障的详细信息以及可能的解决方案：</block>
-  <block id="4d98a80b85374d1311eed6454df98c3b" category="paragraph">没有足够的可用块存储空间来支持单节点丢失。有关集群填充度级别的详细信息，请参见 `GetClusterFullThreshold` API 方法。此集群故障指示以下情况之一：</block>
-  <block id="3db1b2b278c0d698957be3ed18d42de5" category="paragraph">要解决此故障，请清除或删除卷，或者向存储集群添加另一个存储节点。</block>
-  <block id="5a6382e5e39ddd7ab060673ce2523e8b" category="paragraph">集群主节点与提供令牌的节点之间的时间偏差超过建议的阈值。</block>
-  <block id="39dab517f8236f92cc89879a65097ef2" category="paragraph">存储集群无法自动更正节点之间的时间偏差。要解决此故障，请使用网络内部的 NTP 服务器，而不是使用安装默认值。如果您已在使用内部 NTP 服务器，请联系 NetApp 支持部门以获得帮助。</block>
-  <block id="6f0088cdf2c7b3dad2942a89353c2b68" category="paragraph">集群块数据处于降级状态，用于还原完整块数据冗余的自动修复过程无法继续；太多节点或块服务处于脱机状态，或者集群块服务过满。</block>
-  <block id="f3ffaddc928cf25788e1add3fc16d416" category="paragraph">要解决此故障，请添加更多块容量或联系 NetApp 支持部门。</block>
-  <block id="c37aa739f6a3b24edd32a877c555e3f5" category="paragraph">存储集群 IOPS 配置过度。所有最小 QoS IOPS 的总和大于集群的预期 IOPS 。系统无法同时为所有卷保持最低 QoS 。</block>
-  <block id="ab37700b0df7d254582657aa08260e04" category="paragraph">要解决此故障，请降低卷的最低 QoS IOPS 设置。</block>
-  <block id="3a38698ed20d2b51f1d0781ec02e5c87" category="paragraph">禁用空闲加密功能后，无法禁用驱动器安全。此驱动器仍启用了驱动器安全保护。</block>
-  <block id="121654d824d8ceb6408f940c8de02811" category="paragraph">无法禁用驱动器安全性的原因显示在故障详细信息中；您可能需要根据此原因调查问题。如果需要恢复未成功禁用安全性的磁盘，请执行以下步骤：</block>
-  <block id="439ee6a5afc1cd45005be05a7653ab07" category="list-text">通过将驱动器移至 " 可用 " 状态从逻辑上删除驱动器。</block>
-  <block id="273c0bb976b8f467495ee48fae3e1c19" category="list-text">对驱动器执行安全擦除。</block>
-  <block id="fff51ddf8246606628af34a9e4f74c22" category="list-text">将驱动器移至 "active" 状态。如果这些步骤无法解决问题描述问题，请更换此驱动器。</block>
-  <block id="ca505a259b750fe5a33a46d3a0b1380e" category="paragraph">集群对已断开连接或配置不正确。</block>
-  <block id="b08d9368a4197f3cf36aeb195b3848e2" category="paragraph">检查集群的网络连接。</block>
-  <block id="030593fde2e9cf275ac8e18e40e77cbd" category="paragraph">远程节点已断开连接或配置不正确。检查节点之间的网络连接。</block>
-  <block id="ef6314346433530b2e488a790cf076af" category="paragraph">可以在存储集群中添加一个或多个驱动器。通常，所有存储集群都应添加所有驱动器，并且所有驱动器都不应处于可用状态。如果意外出现此故障，请联系 NetApp 支持部门。</block>
-  <block id="225c937a79d1fadd0e404df90f04ed6f" category="paragraph">存在多个存储集群主候选项。</block>
-  <block id="9044d525754cbaf1c9aa47a573ac52ed" category="paragraph">启用空闲加密功能后，无法启用驱动器安全保护。</block>
-  <block id="cf74dfaaa13e2e52d57e1a9ff8aa2672" category="paragraph">确保使用正确的密钥启用安全性。如果需要恢复未成功启用安全性的磁盘，请执行以下步骤：</block>
-  <block id="4bba0b2aae153f2a9209ff82e1ff10fb" category="paragraph">其中一个集合节点已断开网络连接或电源。</block>
-  <block id="d2342f99a78712b9ee1fa27974b89aee" category="paragraph">要解决此故障，请恢复受影响节点的网络连接或电源。</block>
-  <block id="1e9c06875eaa0fff8c9b078db63bea78" category="paragraph">发生异常故障。这些故障不会自动从故障队列中清除。</block>
-  <block id="0092527a0cb321d5a813f5e071aaa45e" category="paragraph">光纤通道节点未通过其存储 IP 地址对存储集群中的其他节点做出响应。</block>
-  <block id="bf67c87d37b9233d02e142302836fd57" category="paragraph">所有光纤通道节点均无响应。此时将显示节点 ID 。</block>
-  <block id="897353d1ce2876e6dd9645249c871840" category="paragraph">已将非 FIPS 驱动器插入 FIPS 存储节点或已将 FIPS 驱动器插入非 FIPS 存储节点。</block>
-  <block id="41132d2def22fb064ed264826ba92fc2" category="paragraph">卸下或更换有问题的驱动器。</block>
-  <block id="cc84eb08eef17d0c2e0b250756f9e67f" category="paragraph">系统检测到已禁用空闲加密或存储集群中存在非 FIPS 硬件。</block>
-  <block id="9575b80cd9c5765a86912e0409ddff03" category="paragraph">启用空闲加密或从存储集群中删除非 FIPS 硬件。</block>
-  <block id="217c9deaee318d3bd12927f04caa1c58" category="paragraph">系统在 FIPS 自检期间检测到故障。</block>
-  <block id="aca7df4e501ae7d2add7d97814315d29" category="list-text">节点正在使用不受支持的驱动器。</block>
-  <block id="e34ab0116446eb703fc3c5eef0891f9b" category="list-text">驱动器的加密功能状态与其父节点不匹配。请联系 NetApp 支持部门以获得帮助。</block>
-  <block id="f377b2b38ea921d06792212f83c462c5" category="paragraph">用于第三方身份提供程序的集群服务提供商 SSL 证书即将到期或已过期。此故障会根据紧急程度使用以下严重性：</block>
-  <block id="e058e237149ccd7c52a0620d92e60d02" category="paragraph">要解决此故障，请在 SSL 证书过期之前对其进行更新。将 UpdateIdpConfiguration 方法与 `refreshCertificate呼 出 Time=true` 结合使用以提供更新后的 SSL 证书。</block>
-  <block id="ae5d3104abdae092ec87127df4c70cc0" category="paragraph">要解决此故障，请在每节点 Web UI 中修改绑定模式。</block>
-  <block id="6fc1988f796789606d1a7788a6fe4250" category="paragraph">要解决此故障，请在每节点 Web UI 中修改 MTU 设置。</block>
-  <block id="0556ad4e965313f1ffafac4f00c62769" category="paragraph">要解决此故障，请在 Element （存储集群） Web UI 中修改子网掩码。</block>
-  <block id="146f2b31e751a3d1265ceecc20d02f21" category="list-text">* kmipCertificateFault （根证书颁发机构（ CA ）证书即将到期） *</block>
-  <block id="ed567d278c3974824988049b2c111fc2" category="paragraph">根证书颁发机构（ CA ）证书即将到期。此故障会根据紧急程度使用以下严重性：</block>
-  <block id="fd58f0129cdd35b5e370dbd7b79db10e" category="paragraph">证书将在 3 天内过期。</block>
-  <block id="f95baa7a107665ecaae975f01ac7edc3" category="paragraph">要解决此故障，请在证书过期之前更新此证书。从根 CA 获取一个新证书，该证书的到期日期至少为未来 30 天。使用 ModifyKeyServerKmip API 方法提供更新后的根 CA 证书。</block>
-  <block id="9861508ecbeed5e9fbc443095592eb8f" category="list-text">* kmipCertificateFault （客户端证书即将到期） *</block>
-  <block id="840aaf8a8b2720440ebc740df98562e6" category="paragraph">客户端证书即将到期。此故障会根据紧急程度使用以下严重性：</block>
-  <block id="e6b687a40c1d24d41844f93c165a412f" category="paragraph">要解决此故障，请使用 GetClientCertificateSigningRequest 方法创建一个新的 CSR 。对 CSR 进行签名并使其到期日期超过 30 天，然后使用 ModifyKeyServerKmip API 方法将即将到期的 KMIP 客户端证书替换为新证书。</block>
-  <block id="091d0fc8fdc4383d7ce083951cbc653c" category="list-text">* kmipCertificateFault （根证书颁发机构（ CA ）证书已过期） *</block>
-  <block id="d51be7553ddbe9f2bc7e5477bb563bbe" category="paragraph">根 CA 证书已过期。</block>
-  <block id="022f95feb35f143e01a16b6b1e6c6eed" category="paragraph">从根 CA 获取一个新证书，该证书的到期日期至少为未来 30 天。使用 ModifyKeyServerKmip API 方法提供更新后的根 CA 证书。</block>
-  <block id="fdc9f6cb047f5b168ce82457178114b8" category="list-text">* kmipCertificateFault （客户端证书已过期） *</block>
-  <block id="d27f6d4f53de1dc511579ab140393ec3" category="paragraph">客户端证书已过期。</block>
-  <block id="812cf44fa02f67ff9c8fddb56a4c9985" category="paragraph">使用 GetClientCertificateSigningRequest API 方法创建新的 CSR 并对其进行签名，以确保新的到期日期至少在未来 30 天。使用 ModifyKeyServerKmip API 方法将已过期的客户端证书替换为新证书。</block>
-  <block id="2e87150ed823fc3834baf28af608e485" category="list-text">* kmipCertificateFault （根证书颁发机构（ CA ）证书无效） *</block>
-  <block id="a908e509a1a0b2dc8767bdc6c1a80c54" category="paragraph">根 CA 证书无效。</block>
-  <block id="ca34afe28a5e1cdb65d8116284b2c20f" category="paragraph">确保提供的证书正确无误。如果需要，请从根 CA 重新获取证书。使用 ModifyKeyServerKmip API 方法安装正确的证书。</block>
-  <block id="3de47aa9779613d0dedb0ab86875c29d" category="list-text">* kmipCertificateFault （客户端证书无效） *</block>
-  <block id="0b024a8347f60375d4249529b15a4139" category="paragraph">客户端证书无效。</block>
-  <block id="083fc5d279fd73bb3f94e6ca8fb3b307" category="paragraph">确保安装了正确的 KMIP 客户端证书。客户端证书的根 CA 应安装在外部密钥管理服务器上。如果需要更新客户端证书，请使用 ModifyKeyServerKmip API 方法进行更新。</block>
-  <block id="723a1ea937d686aec7ad25f965c31c16" category="list-text">* kmipServerFault （连接失败） *</block>
-  <block id="13cdf933a1c1d3beca453ab7d0521cec" category="paragraph">一个或多个节点无法访问外部密钥管理服务器。</block>
-  <block id="20b55cd5ab13a6d96393688a90490d02" category="paragraph">故障详细信息中提供了密钥服务器 ID 。确保服务器正常运行并可通过管理网络访问。如果只有部分节点无法访问外部密钥管理服务器，则故障详细信息中将列出无法访问密钥服务器的节点。在网络或特定节点级别执行故障排除，以确定为什么只有部分节点可以访问外部密钥管理服务器。</block>
-  <block id="86d4ff43058edb65f9af819dcfd47da1" category="list-text">* kmipServerFault （身份验证失败） *</block>
-  <block id="5cc5c7caacea256a9002ab3381ab6ad3" category="paragraph">一个或多个节点无法向外部密钥管理服务器进行身份验证。</block>
-  <block id="759ecaac26c1f586572dabbcecf2d04a" category="paragraph">确保正在使用正确的根 CA 和 KMIP 客户端证书。如果需要更新任何证书，请使用 ModifyKeyServerKmip 方法安装正确的证书。</block>
-  <block id="eade44c8e23537f95eb84f24426d13f5" category="list-text">* kmipServerFault （服务器错误） *</block>
-  <block id="6f61ff32f736b10131517229dc652d94" category="paragraph">外部密钥管理服务器出现错误。</block>
-  <block id="a31307c1242e58a4be9014afc06d75b1" category="paragraph">故障详细信息中提供了错误详细信息。您可能需要根据此错误对外部密钥管理服务器进行故障排除。</block>
-  <block id="308ded7e16ce934c75a01e4ac1f9c866" category="admonition">有关故障类型的更多详细信息，请参见错误故障的 * 详细信息 * 标题。</block>
-  <block id="2f4404d1f53c3e0104852bded542147c" category="list-text">stage5CompletelyConsumed （严重） 1 ；不允许写入或新的 iSCSI 连接。将保持当前的 iSCSI 连接。写入将失败，直到向集群添加更多容量为止。清除或删除数据或添加更多节点。有关详细信息，请参见 _ 了解集群填充度级别 _ 。</block>
-  <block id="713c1f103ca74a6f919ef7544e6aaefd" category="list-text">不存在预期的网络接口。</block>
-  <block id="2daf8cc67ea4469719d1d7092295910f" category="list-text">存在重复的网络接口。</block>
-  <block id="a94ecb250b7e5b960be8ce16a18f95e6" category="list-text">网络接口已配置，但已关闭。</block>
-  <block id="77d5269bd8523a86db0c6f4f3a135732" category="list-text">需要重新启动网络接口。请联系 NetApp 支持部门以获得帮助。</block>
-  <block id="c4454706342053bea7fb984b62eb9945" category="paragraph">Element 软件无法与指定节点进行通信。</block>
-  <block id="97ae3d0b3a8c5a578275f9398682f5df" category="paragraph">要解决此故障，请检查集群的网络连接和网络布线。如果没有网络问题，请联系 NetApp 支持部门更换节点。</block>
-  <block id="15171c04c4ca2884a751133663d55632" category="paragraph">要解决此故障，请检查 NTP 服务器配置，网络和防火墙。</block>
-  <block id="fedcfabb2cfec0de72c7da31545b3034" category="list-text">电源没有输入或输入超出范围。要解决此故障，请验证是否已为所有节点提供冗余电源。如果问题描述仍然存在，请联系 NetApp 支持部门。</block>
-  <block id="d9ec13666aa4de7ae099fde6bc3d26de" category="paragraph">存储集群的整体已配置容量过满。</block>
-  <block id="7e86477012c1ee97d9d8c3d0e0f124c1" category="paragraph">要解决此故障，请添加更多已配置空间，或者删除并清除卷或快照。</block>
-  <block id="65e58ff4798bf793261ceb923ccf6b20" category="paragraph">已超过为复制配置的异步延迟。</block>
-  <block id="02c53cf3cf77d38f62cf01cc524c5852" category="paragraph">要解决此故障，请删除远程集群上的某些快照。</block>
-  <block id="2720062f4c9a9abe0b540ca56a165526" category="paragraph">要解决此故障，请添加更多存储节点或联系 NetApp 支持部门。</block>
-  <block id="4d55e6484c45b2629c5f0a3bab55eb1d" category="paragraph">要解决此故障，请在节点上禁用 SSH 服务。</block>
-  <block id="de3e5549122bac0d08064ef5de222370" category="paragraph">为了保持数据冗余，系统会减少最大节点的容量，以使其部分块容量处于孤立状态（未使用）。要解决此故障，请向现有存储节点添加更多驱动器或向集群添加存储节点。</block>
-  <block id="19ea2f91b3ae961be9e609088755c628" category="paragraph">要解决此故障，请恢复升级或联系 NetApp 支持部门以获得帮助。</block>
-  <block id="343b83008361f7348f29b09992c036a1" category="list-text">* 未平衡混用节点 *</block>
-  <block id="21d9554faf915c184479d8c414879a2a" category="paragraph">单个节点占存储集群容量的三分之一以上。</block>
-  <block id="cee5216be9ba626ac51bd95852a64ddf" category="paragraph">系统服务已变得无响应。</block>
-  <block id="a47f69fbe65c37ed6c032cad6a13015c" category="list-text">网络掩码不正确。</block>
-  <block id="592d7386d2730cefa2d178a375b13922" category="paragraph">二级卷尚未完全复制和同步。</block>
-  <block id="b3e722a43226f69be3a749b06deb3593" category="paragraph">同步完成后，此故障将被清除。</block>
-  <block id="43d437f44edd9731eb55ac4bda52ba7e" category="paragraph">如果故障仍然存在，请检查网络连接问题和硬件错误。</block>
-  <block id="6b3f5cdcf5ea28c920a4c59ff8a5b0ff" category="paragraph">存储集群中的一个或多个卷已脱机。</block>
   <block id="1c8d03b94219effcb7913447cfa07b5b" category="summary">您可以使用 GetNodeHardwareInfo 方法返回指定节点的所有硬件信息和状态。这通常包括制造商，供应商，版本以及其他相关硬件标识信息。</block>
   <block id="1eddc855ab1db00029f5919d5d2faaa6" category="paragraph">您可以使用 `GetNodeHardwareInfo` 方法返回指定节点的所有硬件信息和状态。这通常包括制造商，供应商，版本以及其他相关硬件标识信息。</block>
   <block id="70102b213e2e4ab01cc4b057f41a1d7b" category="paragraph">要请求其硬件信息的节点的 ID 。如果指定了光纤通道节点，则会返回有关光纤通道节点的信息。</block>
@@ -12395,4 +12300,6 @@
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">存储固件包 2.146 的注意事项</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
   <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">升级到 VMware vCenter Server 7.0 U3 后，适用于 vCenter Server 的所有版本的 NetApp Element 插件都无法部署。要解决此问题描述 ，请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
+  <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
+  <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
 </blocks>

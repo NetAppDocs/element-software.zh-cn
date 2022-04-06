@@ -902,8 +902,6 @@ entries:
     url: "/api/reference_element_api_listvirtualvolumetasks.html"
   - title: ModifyStorageContainer
     url: "/api/reference_element_api_modifystoragecontainer.html"
-- title: 集群故障代码
-  url: "/api/reference_element_api_app_a_cluster_fault_codes.html"
 - title: 访问控制
   url: "/api/reference_element_api_app_b_access_control.html"
 - title: 响应示例
