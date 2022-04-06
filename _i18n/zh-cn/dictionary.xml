@@ -4769,8 +4769,6 @@
   <block id="7e6093e52119f18464fc862a969c9f6a" category="admonition">如果需要 IPv6 支持，可以使用管理节点 11.1 。</block>
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">（使用代理服务器的管理节点 12.0 及更高版本）在配置代理服务器之前，您已将 NetApp Hybrid Cloud Control 更新为管理服务版本 2.16 。</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Element 12.2 管理节点是一种可选升级。现有部署不需要此功能。</block>
-  <block id="fa6c9c65878eae48ea2b7f9c23ccabe8" category="paragraph">在遵循此操作步骤之前，您应了解 <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 以及是否要使用它们。永久性卷是可选的，但建议在虚拟机丢失时用于管理节点配置数据恢复。</block>
-  <block id="d65a2ab43bcac7efebde7effc9d142f8" category="list-text"><block ref="4e8e62755aa10b5d2420c05d87c0085a" category="inline-xref-macro-rx"></block></block>
   <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
   <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
   <block id="12b8893b065179b6b80fdc2d448862df" category="inline-link-macro">Element 软件</block>
@@ -12302,4 +12300,16 @@
   <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">升级到 VMware vCenter Server 7.0 U3 后，适用于 vCenter Server 的所有版本的 NetApp Element 插件都无法部署。要解决此问题描述 ，请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
   <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
+  <block id="3ab5d74afdff3156333304ac18ad1977" category="paragraph">在遵循此操作步骤之前，您应了解 <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 以及是否要使用它们。永久性卷是可选的，但建议在虚拟机（ VM ）丢失时用于管理节点配置数据恢复。</block>
+  <block id="2ef294393b47ae9f1c9dee1f319efb0d" category="list-text"><block ref="bf7a9c417954187cdc8487e05cd6fa32" category="inline-xref-macro-rx"></block></block>
+  <block id="bb79fe0e6bf117510635c505cc16e74d" category="list-text">使用以下配置从虚拟机管理程序创建新的 64 位 VM ：</block>
+  <block id="4aec8fb7a6a9c5631ebb25a7b86d9ac5" category="admonition">请勿在此操作步骤 中指示稍后启动此虚拟机的步骤之前启动此虚拟机。</block>
+  <block id="1632315c8463eb1e9d1b980297d68c37" category="list-text">将 ISO 连接到虚拟机并启动到 .iso 安装映像。</block>
+  <block id="faa024991ac61fa39b20d61ed2e88ada" category="list-text">安装完成后，启动管理节点的虚拟机。</block>
+  <block id="c19f63a05ffe39159954c2b2fd892582" category="list-text">如果网络上有一个动态主机配置协议（ DHCP ）服务器，用于分配最大传输单元（ MTU ）小于 1500 字节的 IP ，则必须执行以下步骤：</block>
+  <block id="b44234e2a29812de715ddf5ea19c15fc" category="list-text">临时将管理节点置于不使用 DHCP 的 vSphere 网络上，例如 iSCSI 。</block>
+  <block id="f35b648abbd5fe5949ea297ee6cef3b9" category="list-text">重新启动 VM 或重新启动 VM 网络。</block>
+  <block id="5e790f023d6f269f25709b2372d8cef2" category="list-text">使用 TUI 在 MTU 大于或等于 1500 字节的管理网络上配置正确的 IP 。</block>
+  <block id="8c79dbfa1dd86948b37af21a8d7639d5" category="list-text">将正确的 VM 网络重新分配给 VM 。</block>
+  <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">如果 DHCP 分配的 IP MTU 小于 1500 字节，则可能会阻止您配置管理节点网络或使用管理节点 UI 。</block>
 </blocks>
