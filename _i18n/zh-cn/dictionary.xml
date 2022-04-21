@@ -11576,8 +11576,6 @@
   <block id="12a6ece51476e2d3feae5dff01704e58" category="list-text">* vSphere Web Client* ：在开始任何插件升级之前，您已从 vSphere Web Client 中注销。如果您未注销， Web 客户端将无法识别在此过程中对插件所做的更新。</block>
   <block id="2bfb7d51aea637d48bf5bca4afcb46a1" category="list-text">以 vCenter 管理员身份登录到 vSphere Web Client 。如果您已登录到 vSphere Web Client ，则必须先注销，等待两到三分钟，然后重新登录。</block>
   <block id="a0abd6db969f497b63a29f8fbd1771df" category="inline-link-macro">适用于 vCenter Server 的 Element 插件</block>
-  <block id="3cc243a697de25c61818bc316cea4e98" category="paragraph">如果不显示 vCenter 插件图标，请参见 <block ref="f9851c8aa620f0cd00ac6d51cd4290b1" category="inline-link-macro-rx"></block> 有关插件故障排除的文档。</block>
-  <block id="65dc103da0aa4a7822d43218290b7b8d" category="paragraph">在使用 VMware vCenter Server 6.7U1 升级到 VCP 4.8 后，如果 NetApp Element 配置的 * 集群 * 和 * QoSSIOC 设置 * 部分未列出存储集群或显示服务器错误，请参见 <block ref="107c2c097bec52fadb44d9536d1a3a46" category="inline-link-macro-rx"></block> 有关对这些错误进行故障排除的文档。</block>
   <block id="95044d6cb92a8dcd9435a8d6518710be" category="inline-link">Element 11.7 文档</block>
   <block id="ef4ff55196c56aee6ea12eb45472f816" category="list-text"><block ref="ef4ff55196c56aee6ea12eb45472f816" category="inline-link-rx"></block></block>
   <block id="be03f79fc587170366cede6d4134dfb1" category="summary">了解如何配置系统 FQDN Web UI 访问并对其进行故障排除。</block>
@@ -12311,4 +12309,6 @@
   <block id="85708c896a2da121ac4eee4307002bd9" category="admonition">如果 DHCP 分配的 IP MTU 小于 1500 字节，则可能会阻止您配置管理节点网络或使用管理节点 UI 。</block>
   <block id="1b8210afec8bf22eaf6aeec2c734fa6c" category="list-text">如果您使用系统的完全限定域名（ FQDN ）访问 Element Web 界面（例如管理节点或 NetApp Hybrid Cloud Control ）， <block ref="3bef977fd72a25456136a30f2d648743" category="inline-link-macro-rx"></block>。</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
+  <block id="5e98629f8afe2eee1c27355eb45a80e0" category="paragraph">如果不显示 vCenter 插件图标，请参见 <block ref="ab9b282dbdbe327f4195d1f5d71c406f" category="inline-link-macro-rx"></block> 有关插件故障排除的文档。</block>
+  <block id="521c210a351c001deef5246c22bee2e9" category="paragraph">在使用 VMware vCenter Server 6.7U1 升级到 VCP 4.8 后，如果 NetApp Element 配置的 * 集群 * 和 * QoSSIOC 设置 * 部分未列出存储集群或显示服务器错误，请参见 <block ref="d3d121eeab4b23de37134539e0fe19dd" category="inline-link-macro-rx"></block> 有关对这些错误进行故障排除的文档。</block>
 </blocks>
