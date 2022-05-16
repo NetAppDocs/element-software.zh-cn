@@ -12136,7 +12136,6 @@
   <block id="5dc24222e8b8a9148a6bfcbd2707e07e" category="paragraph">如果您运行的是Element 12.3及更早版本、并且需要SolidFire 全闪存存储系统的技术支持、则NetApp支持部门可以远程连接到您的系统。要启动会话并获得远程访问， NetApp 支持部门可以与您的环境建立反向安全 Shell （ SSH ）连接。</block>
   <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">动态节点额定值</block>
   <block id="f413d4f1d8e95d29f50c5e04149a3882" category="paragraph">动态节点额定值支持每个ESDS平台使用24个受支持的CPU、而不是当今每个平台使用一个CPU的模式。</block>
-  <block id="c1265bffe835ce4c170f3f9a9a83b18f" category="admonition">对于Element 12.5、支持的Podman版本为1.0.4。</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element软件12.5.</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
   <block id="fe69a3287756ee47fc4650a84806448a" category="inline-link-macro">NetApp SolidFire 企业版SDS 12.5.</block>
@@ -12287,4 +12286,5 @@
   <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5文档</block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升级适用于Element软件12.5的NetApp SolidFire 全闪存存储系统</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">配置自定义保护域</block>
+  <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">对于 Element 12.3 ，支持的 Podman 版本为 1.0.4 。</block>
 </blocks>
