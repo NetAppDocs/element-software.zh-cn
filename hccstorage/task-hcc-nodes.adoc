@@ -16,7 +16,7 @@ keywords: netapp, element, cluster, inventory, nodes, storage
 对于 SolidFire 企业 SDS 节点，您可以在 " 存储 " 选项卡上监控清单。
 
 .步骤
-. 打开 Web 浏览器并浏览到管理节点的 IP 地址。例如：
+. 在Web浏览器中打开管理节点的IP地址。例如：
 +
 [listing]
 ----

@@ -5,7 +5,12 @@ summary: 在 NetApp SolidFire 存储系统升级过程中，您应更新管理�
 keywords: netapp, solidfire, cluster, management services, hcc, update management services 
 ---
 = 更新管理服务
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -19,6 +24,23 @@ keywords: netapp, solidfire, cluster, management services, hcc, update managemen
 
 
 NOTE: 有关介绍每个服务包的主要服务，新功能，错误修复和解决方法的最新管理服务发行说明，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服务发行说明"^]
+
+从管理服务2.2开始、您必须先接受并保存最终用户许可协议(EULA)、然后才能使用NetApp Hybrid Cloud Control UI或API升级管理服务：
+
+. 在Web浏览器中打开管理节点的IP地址：
++
+[listing]
+----
+https://<ManagementNodeIP>
+----
+. 通过提供存储集群管理员凭据登录到 NetApp Hybrid Cloud Control 。
+. 选择靠近接口右上角的 * 升级 * 。
+. 此时将弹出EULA。向下滚动、选择*我接受当前更新和所有未来更新*、然后选择*保存*。
++
+
+NOTE: 如果您接受EULA、则会在所有未来更新中记录此EULA、并启用自动下载功能。您将收到有关NetApp软件更新和升级的更新、您可以在方便时自行决定安装这些更新。您可以通过禁用与NetApp联机软件存储库的网络连接来禁用自动下载功能。
+
+
 
 您可以使用 NetApp Hybrid Cloud Control UI 或管理节点 REST API 更新管理服务：
 
@@ -52,7 +74,12 @@ NOTE: 有关介绍每个服务包的主要服务，新功能，错误修复和�
 NOTE: 有关每个服务包版本的可用服务列表，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服务发行说明"^]。
 
 .步骤
-. 打开 Web 浏览器并浏览到管理节点的 IP 地址： ` \https://<ManagementNodeIP>`
+. 在Web浏览器中打开管理节点的IP地址：
++
+[listing]
+----
+https://<ManagementNodeIP>
+----
 . 通过提供存储集群管理员凭据登录到 NetApp Hybrid Cloud Control 。
 . 选择靠近接口右上角的 * 升级 * 。
 . 在 Upgrades 页面上，选择 * 管理服务 * 选项卡。

@@ -4079,11 +4079,6 @@
   <block id="ff888c386cbf7561a41674237043ab02" category="summary">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="bbb9ca100f5b4a2074b8caeaaf4b1ae0" category="paragraph">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="2f5dc9e1194b10f0920c3f6b85205b99" category="paragraph">除非另有说明，否则所有端口均为 TCP 端口，并且应允许在 NetApp 支持服务器，管理节点和运行 Element 软件的节点之间进行双向通信。</block>
-  <block id="f5395c9793af8a11b406ca7c1ac70da9" category="inline-link">了解更多信息。</block>
-  <block id="73f6f247f92d43dc1a02705cd9cb72df" category="admonition">NetApp 正在重建联机存储库，该存储库托管支持 NetApp Hybrid Cloud Control 自动升级工作流的软件和固件包下载。<block ref="d8be8d6cc7cc728c856f13214fa255cd" category="inline-link-rx"></block></block>
-  <block id="1b1965ab9261b2d5c557a2c1b29aa90a" category="paragraph">NetApp Hybrid Cloud Control Web UI 和 API 可从 NetApp 在线软件存储库下载软件包，该存储库使用 JFrog Artifactory Cloud 作为分发中心，并采用 CDN 技术托管文件。因此，根据内容交付网络，某些 URL 或 IP 地址可能会解析为其他 URL 或 IP 地址。如果可能，您应与网络工程师合作，使用以下常规步骤将这些 URL 或 IP 地址添加到防火墙规则中：</block>
-  <block id="c23be595ff2a6ce3fc50807942a4b8be" category="list-text">使用 wget 或 cURL 实用程序访问 URL （例如 repo.netapp.com ）。</block>
-  <block id="a6ef25224f54dbfe30361976f2ce77d9" category="list-text">无法访问此 URL （与 repo.netapp.com 不同）。</block>
   <block id="cca942e088eb1473b2eb9de24822300b" category="list-text">编辑防火墙规则以允许使用新 URL 。</block>
   <block id="fc0bbd3b7c620ea524d15f50953b65de" category="list-text">重复上述步骤，直到访问尝试成功为止。</block>
   <block id="1f2681a91e9e795d6ebb1d5828cd1182" category="admonition">在管理节点，运行 Element 软件的节点和集群 MVIP 之间启用 ICMP 。</block>
@@ -4112,10 +4107,6 @@
   <block id="b20a6c801c401908aa3c96f370665e05" category="paragraph">DNS 查找</block>
   <block id="c203d8a151612acf12457e4d67635a95" category="paragraph">442</block>
   <block id="3576cff8b205debb58711ff360f51ffd" category="paragraph">通过 UI 和 API 访问存储节点和 Element 软件升级</block>
-  <block id="5144ef28ff0fa7b5ab2a36331abbe530" category="paragraph">联机软件存储库：</block>
-  <block id="5230f6b2c891063490d3865eb12fbb11" category="list-text">`https://repo.netapp.com/bintray/api/package`</block>
-  <block id="387d5419d340e95ff756a4806e220b45" category="list-text">`https://repo.netapp.com/downloads`</block>
-  <block id="983c91027e090f85708d6c62fd362220" category="list-text">`https://netappdownloads.jfrog.io:443`</block>
   <block id="d747a3883d729833b05cf76084503b96" category="paragraph">管理节点服务升级</block>
   <block id="00a55ff76496c3c45ca20071f6151bfc" category="paragraph">monitoring.solidfire.com</block>
   <block id="6ac181854a8b48c5ac6018a305f6ae7c" category="paragraph">存储集群向 Active IQ 报告</block>
@@ -4841,18 +4832,13 @@
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">启用远程 NetApp 支持连接</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="b699ffaa70a5cdf708fca1e6ce6761c0" category="list-text"><block ref="b699ffaa70a5cdf708fca1e6ce6761c0" category="inline-link-macro-rx"></block></block>
-  <block id="b5ecd82e8979ed40797d70974bacb136" category="summary">您可以使用 REST API UI 在管理节点上禁用，启用或确定 SSH 支持连接功能的状态。</block>
   <block id="d1cfb55513d453a2cf4188067d2cf218" category="paragraph">您可以使用 REST API 在管理节点（ mNode ）上禁用，重新启用或确定 SSH 功能的状态。提供的 SSH 功能 <block ref="6bb28df38aa0844e287b2e23fc581879" category="inline-link-macro-rx"></block> 默认情况下，在运行管理服务 2.18 或更高版本的管理节点上处于禁用状态。</block>
   <block id="893af10adfc625cc78ae6b31f194e8e2" category="list-text">* 集群管理员权限 * ：您对存储集群拥有管理员权限。</block>
   <block id="4a8504402e610045f6f515076b209af8" category="list-text">* Element 软件 * ：集群运行的是 NetApp Element 软件 11.3 或更高版本。</block>
   <block id="102af6f3bd432d98e24116bfff78e2e8" category="list-text">* 管理节点 * ：您已部署运行 11.3 或更高版本的管理节点。</block>
   <block id="72b0efdaad5d469b43f79c332bb57be4" category="inline-link">管理服务包</block>
-  <block id="4a88eeb4f796838ccaa4089974150760" category="list-text">* 管理服务更新 * ：您已更新<block ref="f6e495ec9a99fcd5692d41358780e884" category="inline-link-rx"></block> 到 2.17 版。</block>
   <block id="4dcaf58a1a6fd3555d9626cfadc42510" category="inline-link-macro">身份验证</block>
   <block id="6c037204162665482371752d5cbc4b05" category="paragraph">之后，您可以执行以下任一任务 <block ref="1e3a79de8ad58046eb273d2d7b15a0d8" category="inline-link-macro-rx"></block>：</block>
-  <block id="746fb73201580f1ce79de5d018bc83e3" category="list-text"><block ref="7ab86ed14fb41c15b39d9fc3f88bb5fb" category="inline-xref-macro-rx"></block></block>
-  <block id="14eea61135a60aa00226fb53ed68b0d6" category="list-text"><block ref="915bb5f173ab674859bad881a235217a" category="inline-xref-macro-rx"></block></block>
-  <block id="027b3ee820565177e41833e702f75a6c" category="section-title">在管理节点上禁用或启用 SSH 功能</block>
   <block id="0170650c612167fa500a0929a1506872" category="paragraph">您可以在管理节点上禁用或重新启用 SSH 功能。提供的 SSH 功能 <block ref="6bb28df38aa0844e287b2e23fc581879" category="inline-link-macro-rx"></block> 默认情况下，在运行管理服务 2.18 或更高版本的管理节点上处于禁用状态。禁用 SSH 不会终止或断开与管理节点的现有 SSH 客户端会话。如果禁用 SSH 并选择稍后重新启用它，则可以使用同一 API 来执行此操作。</block>
   <block id="085a0793a542f0eebf46d23f033ee424" category="paragraph">对于管理服务 2.18 或更高版本：</block>
   <block id="9d5d97be2b35b2991e27e028a5e6269e" category="paragraph">对于管理服务 2.17 或更早版本：</block>
@@ -4860,7 +4846,6 @@
   <block id="6b70c036a345ea917a8a1112ea5225b9" category="list-text">输入管理节点 IP 地址并后跟 ` /mnode/` 来访问管理节点 API 服务的 REST API UI ：</block>
   <block id="ff6cbc041657a578c9d520790c1efc72" category="list-text">从 REST API UI 中，选择 * PUT settings​ /ssh* 。</block>
   <block id="594b8969c95fa90b4dac77dbef24c6a0" category="list-text">将 * 已启用 * 参数设置为 `false` 以禁用 SSH ，或将 `true` 以重新启用先前已禁用的 SSH 功能。</block>
-  <block id="e419c387e790d54ef946c619b6e3b391" category="section-title">确定管理节点上 SSH 功能的状态</block>
   <block id="54fe4061a922c8e20f0e36680484efba" category="paragraph">您可以使用管理节点服务 API 确定是否在管理节点上启用了 SSH 功能。在运行管理服务 2.18 或更高版本的管理节点上， SSH 默认处于禁用状态。</block>
   <block id="85b9564487317ce0e6d7210cb84f0494" category="admonition">您可以找到 API 命令使用的承载 ` $ ｛ token ｝` <block ref="13f13ef2cfa191d3bfde7dc1932402de" category="inline-link-macro-rx"></block>。承载项 ` $ ｛ token ｝` 位于 cURL 响应中。</block>
   <block id="34f75415ccae7652ea5f2cb6678e0d8b" category="list-text">从 REST API UI 中，选择 * 获取 settings​ /ssh* 。</block>
@@ -4913,7 +4898,6 @@
   <block id="49e349363aad0972c82ddaf25dd30f70" category="paragraph"><block ref="49e349363aad0972c82ddaf25dd30f70" category="inline-link-rx"></block></block>
   <block id="2882996895673f16b2fcf0cabfb994f1" category="admonition">有关使用 NetApp Hybrid Cloud Control 升级存储集群时的潜在问题及其解决方法，请参见<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>。</block>
   <block id="7fad05c5548f9989eaee59a54633305a" category="admonition">对于非 H610S 平台，每个节点的升级过程大约需要 30 分钟。</block>
-  <block id="76dc87fa8de1da44ac9cde3fec3cb965" category="list-text">打开 Web 浏览器并浏览到管理节点的 IP 地址：</block>
   <block id="d64a6336a39c9f27c33956f187d79c87" category="list-text">通过提供存储集群管理员凭据登录到 NetApp Hybrid Cloud Control 。</block>
   <block id="1f760966967601f6feb32cc62bb11ca3" category="list-text">选择靠近接口右上角的 * 升级 * 。</block>
   <block id="8d2b20731c568a1d9a02267e5d20edb7" category="list-text">在 * 升级 * 页面上，选择 * 存储 * 。</block>
@@ -5066,7 +5050,6 @@
   <block id="370ad5e096ae3a6d595b48d9baa50889" category="list-text">按照此步骤中的第 2 阶段升级操作步骤进行操作<block ref="30b30908e7d32799d6c615b58aa4901f" category="inline-link-rx"></block> 完成每个 H610S 节点的升级所需的时间。</block>
   <block id="a498167117e7a2196c9adf20f5cb149b" category="summary">在 NetApp SolidFire 存储系统升级过程中，您需要对 NetApp Element 软件运行状况检查。</block>
   <block id="f5734d4e8acdeb186a1c22c351c4a0bf" category="paragraph">您必须在升级 Element 存储之前运行运行运行状况检查，以确保集群中的所有存储节点均已准备好进行下一次 Element 存储升级。</block>
-  <block id="a9665a647615566ad8a19d93fbf94aa9" category="list-text">您已更新到最新的管理服务包（ 2.10.27 或更高版本）。</block>
   <block id="1b4d7862ca62ac0691b197c1c4e48017" category="admonition">在升级 Element 软件之前，您必须升级到最新的管理服务包。</block>
   <block id="d843290a4f160eb5d302fe442b7b62f9" category="list-text">您正在运行管理节点 11.3 或更高版本。</block>
   <block id="0096c254c62197f713da16cbb8cf17bf" category="list-text"><block ref="43e2712ac16e77262f42113e91f41bfc" category="inline-xref-macro-rx"></block> （首选方法）</block>
@@ -5169,7 +5152,6 @@
   <block id="8f6d7a4937d5ef994024ec37d0af96db" category="list-text">打开管理节点虚拟机的电源。</block>
   <block id="291b81212712dc828fee9037f0662499" category="list-text">您已将管理服务至少升级到 2.1.326 版。NetApp Hybrid Cloud Control 升级在早期的服务捆绑包中不可用。</block>
   <block id="f4b19cd96a813fb177542ed57f6d27aa" category="admonition">有关每个服务包版本的可用服务列表，请参见<block ref="b7b8dc48337abf993d8909e2c4d32cb1" category="inline-link-rx"></block>。</block>
-  <block id="45dc170ddb8e0f5aaf3d64bcf2a668fd" category="list-text">打开 Web 浏览器并浏览到管理节点的 IP 地址： ` \https://&lt;ManagementNodeIP&gt;`</block>
   <block id="9c3b6a2840d81e74fa978e35f9fda09e" category="list-text">在 Upgrades 页面上，选择 * 管理服务 * 选项卡。</block>
   <block id="2a67be48fd33aed34d5d9b95445a0c20" category="paragraph">管理服务选项卡显示管理服务软件的当前版本和可用版本。</block>
   <block id="6d991bb9237f73dba10797ec25468d86" category="admonition">如果您的安装无法访问 Internet ，则仅会显示当前软件版本。如果您的安装具有外部连接，但无法访问 NetApp 联机存储库，请检查 <block ref="3fa2d0476e68824edbcf4c56be4ac531" category="inline-link-macro-rx"></block>。</block>
@@ -5255,7 +5237,6 @@
   <block id="52c024f42502475a786f1217e16b22dc" category="list-text">运行 `sfupdate-healthtools -v` 命令以验证已安装的版本是否已升级。</block>
   <block id="2e78b6f70db7c1550da68540c472fe32" category="summary">在 NetApp SolidFire 存储系统升级过程中，您可以升级适用于 vCenter Server 的 Element 插件。</block>
   <block id="9e31323b5cbbe61c6c8c43ad2755958b" category="doc">升级适用于 vCenter Server 的 Element 插件</block>
-  <block id="03efd38b0802e06b31537f557cd0421f" category="paragraph">对于已注册适用于 vCenter Server 的 NetApp Element 插件（ VCP ）的现有 vSphere 环境，您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
   <block id="e6c04958395a323ddbc02c929b4dfdf0" category="paragraph">您可以使用注册实用程序在 vCenter Server 虚拟设备（ vCSA ）或 Windows 上更新插件注册。您必须在需要使用 vCenter 插件的每个 vCenter Server 上更改此插件的注册。</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">此升级操作步骤包括以下升级情形：</block>
   <block id="a6a18366932bfeffc2341cc7aa5fe09d" category="list-text">您要升级到 7.0 ， 6.7 或 6.5 HTML5 vSphere Web Client 。</block>
@@ -10777,7 +10758,6 @@
   <block id="f87c4fc47e1a9b71054d097f2a6d4709" category="paragraph">收集日志时，请记住以下注意事项：</block>
   <block id="5cd79f5ecf3281008f9950c643e48e63" category="list-text">请勿使用 Podman 命令收集日志。</block>
   <block id="eee0db9a7df523d15f4bdffde63fa075" category="list-text">NetApp 支持使用一个收集来收集主机日志。为了获得最佳支持体验，您应安装一个 Collect 。</block>
-  <block id="22a850d72f690cbbd2600492a8add31d" category="list-text">打开 Web 浏览器并浏览到管理节点的 IP 地址。例如：</block>
   <block id="e41f733ab7b14b59356c114dc4bde28a" category="list-text">从信息板中，选择右上角的菜单。</block>
   <block id="e06ac0adef7c01a35f79bc08edb11555" category="list-text">选择 * 收集日志 * 。</block>
   <block id="832502905fff9a7d3a4748f703388704" category="list-text">在 * 日期范围 * 下拉菜单中选择一个日期范围，以指定日志应包含的日期。</block>
@@ -11557,8 +11537,6 @@
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">【 substed_f_install_config_time_sync]] 通过虚拟机管理程序禁用与主机的时间同步（以下是 VMware 示例）：</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">设置命令</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时影响 NTP <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> 在管理节点上。</block>
-  <block id="394e1ee42fe49c664653cce821c59bc2" category="inline-link-macro">管理服务通知 2.19</block>
-  <block id="54bd6026e83ef252dbfce1e3b805d9c1" category="list-text"><block ref="54bd6026e83ef252dbfce1e3b805d9c1" category="inline-link-macro-rx"></block></block>
   <block id="3b79e75f8bb7342984eec3a3fd95ccf6" category="list-text"><block ref="3b79e75f8bb7342984eec3a3fd95ccf6" category="inline-link-rx"></block></block>
   <block id="3b34803433d83528840d8e729af0e8bc" category="inline-link">vCenter 插件 4.8 发行说明</block>
   <block id="c561b7d92736e6c451a661a0a5da7586" category="list-text"><block ref="c561b7d92736e6c451a661a0a5da7586" category="inline-link-rx"></block></block>
@@ -11569,8 +11547,6 @@
   <block id="c8de9bc8a027f0e5864fb603489b44fd" category="list-text"><block ref="c8de9bc8a027f0e5864fb603489b44fd" category="inline-link-rx"></block></block>
   <block id="4c0d90c9ada6ab81f16f3446180ab3a1" category="inline-link-macro">vCenter 链接模式</block>
   <block id="03474279d3fc9d2a56fdc80404029d49" category="admonition">使用适用于 vCenter Server 的 NetApp Element 插件从其他 vCenter Server 管理集群资源 <block ref="7b02ca43ff4544fd4c29159c11bae6d5" category="inline-link-macro-rx"></block> 仅限于本地存储集群。</block>
-  <block id="4c671b547a1a811f45797247ec5747c3" category="list-text">您要升级到 VCP 4.8 ， 4.7 ， 4.6 ， 4.5 或 4.4 。</block>
-  <block id="10d52a77bc99042d3e815ba24e48132b" category="admonition">此插件与适用于 VCP 4.7 及更高版本的 VMware vCenter Server 6.5 不兼容。</block>
   <block id="f171584692be059c88cbbda35827f299" category="list-text">您要升级到 6.7 Flash vSphere Web Client 。</block>
   <block id="2acbddec1a60b854691b264d7efa1855" category="admonition">此插件与 vSphere Web Client 6.7 U2 for Flash ， 6.7 U3 （ Flash 和 HTML5 ）和 7.0 U1 兼容。此插件与 HTML5 vSphere Web Client 的 6.7 U2 内部版本 13007421 以及更新 2a （内部版本 13643870 ）之前发布的其他 6.7 U2 内部版本不兼容。有关受支持的 vSphere 版本的详细信息，请参见的发行说明<block ref="52a3661120ba33cd100cafc9c9d568e0" category="inline-link-rx"></block>。</block>
   <block id="12a6ece51476e2d3feae5dff01704e58" category="list-text">* vSphere Web Client* ：在开始任何插件升级之前，您已从 vSphere Web Client 中注销。如果您未注销， Web 客户端将无法识别在此过程中对插件所做的更新。</block>
@@ -12310,5 +12286,65 @@
   <block id="1b8210afec8bf22eaf6aeec2c734fa6c" category="list-text">如果您使用系统的完全限定域名（ FQDN ）访问 Element Web 界面（例如管理节点或 NetApp Hybrid Cloud Control ）， <block ref="3bef977fd72a25456136a30f2d648743" category="inline-link-macro-rx"></block>。</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="5e98629f8afe2eee1c27355eb45a80e0" category="paragraph">如果不显示 vCenter 插件图标，请参见 <block ref="ab9b282dbdbe327f4195d1f5d71c406f" category="inline-link-macro-rx"></block> 有关插件故障排除的文档。</block>
-  <block id="521c210a351c001deef5246c22bee2e9" category="paragraph">在使用 VMware vCenter Server 6.7U1 升级到 VCP 4.8 后，如果 NetApp Element 配置的 * 集群 * 和 * QoSSIOC 设置 * 部分未列出存储集群或显示服务器错误，请参见 <block ref="d3d121eeab4b23de37134539e0fe19dd" category="inline-link-macro-rx"></block> 有关对这些错误进行故障排除的文档。</block>
+  <block id="f9ebc0753ac68177e6d0f29d964386bb" category="list-text">在Web浏览器中打开管理节点的IP地址。例如：</block>
+  <block id="c3dfd82361c52d5d3d1551c20c83f1a6" category="list-text">在Web浏览器中打开管理节点的IP地址：</block>
+  <block id="62403656f60d86891c7c9ad1ffa2f44f" category="summary">您可以使用NetApp Hybrid Cloud Control UI或REST API UI在管理节点上禁用和启用SSH功能、或者使用REST API UI确定SSH支持连接功能的状态。</block>
+  <block id="de7e6ba1aa5db3f3ecd18e0db7533988" category="paragraph">从管理服务2.2开始、您可以使用NetApp Hybrid Cloud Control UI在管理节点上启用和禁用SSH功能。</block>
+  <block id="3c94e6ce915e7526e3d52ade19785a73" category="list-text">* NetApp Hybrid Cloud Control权限*：您拥有管理员权限。</block>
+  <block id="ac7ca17dbb21ace6afb8d4dca6cabea3" category="list-text">*管理服务更新*：</block>
+  <block id="b5fac2f2425ddc92784c5c7e5d8d557e" category="list-text">要使用NetApp Hybrid Cloud Control UI、您已更新<block ref="f6e495ec9a99fcd5692d41358780e884" category="inline-link-rx"></block> 到版本2.20。</block>
+  <block id="43fe8cb39bfeedc36b52f882e1fa6566" category="list-text">要使用REST API UI、您已更新<block ref="f6e495ec9a99fcd5692d41358780e884" category="inline-link-rx"></block> 到 2.17 版。</block>
+  <block id="22b10ea78e232391f766c1d30f89f143" category="list-text"><block ref="ceecdddcb31feb92e45b5238bea4a2dd" category="inline-xref-macro-rx"></block></block>
+  <block id="d67941a2c5c95f11d7bc3ffe04663673" category="list-text"><block ref="2a0c666d485e7ff160ef18f3e883e750" category="inline-xref-macro-rx"></block></block>
+  <block id="952dd7ee9f76db5eee00864b27184f09" category="list-text"><block ref="c015de97077c7fae9700ca0f0b057b0c" category="inline-xref-macro-rx"></block></block>
+  <block id="1ac9fe92a4a5c8b73ea917dd0fcc1457" category="section-title">使用NetApp Hybrid Cloud Control UI在管理节点上禁用或启用SSH功能</block>
+  <block id="7d480381cb8ec5a78271712dba86ed65" category="paragraph">您可以在管理节点上禁用或重新启用 SSH 功能。提供的 SSH 功能 <block ref="6bb28df38aa0844e287b2e23fc581879" category="inline-link-macro-rx"></block> 默认情况下，在运行管理服务 2.18 或更高版本的管理节点上处于禁用状态。禁用 SSH 不会终止或断开与管理节点的现有 SSH 客户端会话。如果您禁用SSH并选择稍后重新启用它、则可以使用NetApp Hybrid Cloud Control UI执行此操作。</block>
+  <block id="660ecb933461ee45e6f742dd41d60408" category="inline-link-macro">Element UI集群设置页面</block>
+  <block id="b8ca94071b6a95259282b683cc3072b1" category="admonition">要使用SSH为存储集群启用或禁用支持访问、必须使用 <block ref="7a7fd29f4889eb838eaa74572f2b6f9f" category="inline-link-macro-rx"></block>。</block>
+  <block id="f5b8f13ee9298406bb5846e6c80e1259" category="list-text">在*管理节点的支持访问*屏幕中、切换交换机以启用管理节点SSH。</block>
+  <block id="c2ec3d3d7a3c559651551d3d9f14d2b9" category="list-text">完成故障排除后、在*管理节点的支持访问*屏幕中、切换交换机以禁用管理节点SSH。</block>
+  <block id="bd1ea3213926ecdb3e25a30ccf5157d9" category="section-title">使用API在管理节点上禁用或启用SSH功能</block>
+  <block id="526719701f51876f46433bfa55249a45" category="section-title">使用API确定管理节点上SSH功能的状态</block>
+  <block id="00bbf849ee83f2b3ea6c67bb7bd6c6f8" category="inline-link-macro">管理服务2.20.69通知(VCP 4.9.14)</block>
+  <block id="5d7470e5082c3ea6c12bf2f4c55e8dbb" category="list-text"><block ref="5d7470e5082c3ea6c12bf2f4c55e8dbb" category="inline-link-macro-rx"></block></block>
+  <block id="8b1a6c95fed8363998ed5d7eae965f1a" category="inline-link-macro">管理服务注意事项 2.19.48 （ VCP 4.8.34 ）</block>
+  <block id="e8e7eb7097323aa3034e0425eaeaed17" category="list-text"><block ref="e8e7eb7097323aa3034e0425eaeaed17" category="inline-link-macro-rx"></block></block>
+  <block id="9fb45d65282cc3f96e819596e5e394dd" category="inline-link-macro">管理服务 2.18.91 通知（ VCP 4.7.10 ）</block>
+  <block id="2f3560171886f0333ae7b91d6a8fe5db" category="list-text"><block ref="2f3560171886f0333ae7b91d6a8fe5db" category="inline-link-macro-rx"></block></block>
+  <block id="4dc58eed88195e2dee9ef97cb0900fcc" category="inline-link-macro">管理服务 2.17.56 （ VCP 4.6.32 ）通知</block>
+  <block id="8c9e7e7003dea0cc51d935664aa2b05b" category="list-text"><block ref="8c9e7e7003dea0cc51d935664aa2b05b" category="inline-link-macro-rx"></block></block>
+  <block id="2916cda094e8e99dde87d679e5faf4af" category="inline-link-macro">管理服务注意事项 2.17.52 （ VCP 4.6.29 ）</block>
+  <block id="4136bfeea3ec838cfab29fd9c1195c0c" category="list-text"><block ref="4136bfeea3ec838cfab29fd9c1195c0c" category="inline-link-macro-rx"></block></block>
+  <block id="3e7b640ad20b44c0dc8fac94c0950302" category="inline-link-macro">管理服务通知 2.16 （ VCP 4.6.29 ）</block>
+  <block id="5b7e80ac9a05f9e50f6518700e41ea95" category="list-text"><block ref="5b7e80ac9a05f9e50f6518700e41ea95" category="inline-link-macro-rx"></block></block>
+  <block id="62864cd06ca88cef11a85391c9a3cc4a" category="inline-link-macro">管理服务服务声明2.14 (VCP 4.5.42)</block>
+  <block id="c6e6fce2297f748637abede532cd03cb" category="list-text"><block ref="c6e6fce2297f748637abede532cd03cb" category="inline-link-macro-rx"></block></block>
+  <block id="8905ab1c0ad30471bfb792d567577041" category="inline-link-macro">管理服务通知 2.13 （ VCP 4.5.42 ）</block>
+  <block id="a8669ef36581c9c2f98e06802d4578c8" category="list-text"><block ref="a8669ef36581c9c2f98e06802d4578c8" category="inline-link-macro-rx"></block></block>
+  <block id="573d529ded9f2b66a55c1d25a9498c72" category="paragraph">从管理服务2.2开始、您必须先接受并保存最终用户许可协议(EULA)、然后才能使用NetApp Hybrid Cloud Control UI或API升级管理服务：</block>
+  <block id="be441559765f3e52d513b155b4b59981" category="list-text">此时将弹出EULA。向下滚动、选择*我接受当前更新和所有未来更新*、然后选择*保存*。</block>
+  <block id="06194f109ff7ed4270c1e5f89cbe9e74" category="admonition">如果您接受EULA、则会在所有未来更新中记录此EULA、并启用自动下载功能。您将收到有关NetApp软件更新和升级的更新、您可以在方便时自行决定安装这些更新。您可以通过禁用与NetApp联机软件存储库的网络连接来禁用自动下载功能。</block>
+  <block id="07cc0d856c010a1ee3ff9ee8f5157778" category="list-text">*最终用户许可协议(EULA)*：从管理服务2.2开始、您必须先接受并保存EULA、然后才能使用NetApp Hybrid Cloud Control UI或API升级存储固件：</block>
+  <block id="a3affadb8671444f8e45462ea7a0de50" category="list-text">*最终用户许可协议(EULA)*：从管理服务2.2开始、您必须先接受并保存EULA、然后才能使用NetApp Hybrid Cloud Control UI或API升级Element软件：</block>
+  <block id="f4926605dca5caffd5d52e790b9eb676" category="list-text">*管理服务*：您已更新到最新的管理服务包(2.10.27或更高版本)。</block>
+  <block id="fb7a24d6912e863521bf9df7516e215b" category="list-text">*管理节点*：您正在运行管理节点11.3或更高版本。</block>
+  <block id="cd87cb364b82cfd7ff555087f3e88e59" category="list-text">* Element Software*：您的集群版本运行的是NetApp Element 软件11.3或更高版本。</block>
+  <block id="84d8587fb67731ba50262a0ffeacb7ac" category="list-text">*最终用户许可协议(EULA)*：从管理服务来看、在使用NetApp混合云控制UI或API运行Element存储运行状况检查之前、您必须接受并保存此EULA：</block>
+  <block id="651784e7a6ddc6534201a6e8d1fbf248" category="paragraph">对于已注册适用于vCenter Server的NetApp Element 插件的现有vSphere环境、您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
+  <block id="47e9151ac689287505aa641c93450d92" category="list-text">您要升级到适用于vCenter Server 4.9、4.8、4.7、4.6、4.5或4.4的NetApp Element 插件。</block>
+  <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">此插件与适用于VMware vCenter Server 4.6、4.7和4.8的VMware vCenter Server 6.5 for Element插件不兼容。</block>
+  <block id="f31daff1bed8bc4fec4119d69f3093d9" category="paragraph">使用VMware vCenter Server 6.7U1升级到VCP 4.8或更高版本后、如果NetApp Element 配置的*集群*和* QoSSIOC设置*部分未列出存储集群或显示服务器错误、请参见 <block ref="ccd6ffc15d371ab994b0e9dff04cb8c2" category="inline-link-macro-rx"></block> 有关对这些错误进行故障排除的文档。</block>
+  <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter插件4.9发行说明</block>
+  <block id="6452d1b3e56fe38fdc537aeb6fe8d1c8" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block>_new_</block>
+  <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp Hybrid Cloud Control Web UI和API可从NetApp联机软件存储库下载软件包。因此，根据内容交付网络，某些 URL 或 IP 地址可能会解析为其他 URL 或 IP 地址。如果可能，您应与网络工程师合作，使用以下常规步骤将这些 URL 或 IP 地址添加到防火墙规则中：</block>
+  <block id="468e2827e5dc0169c965a021b0f015d8" category="list-text">使用wget或cURL实用程序访问URL (例如support-sg-nawest.netapp.com)。</block>
+  <block id="887a9d2ae67bb61c76d5d0032a4b7b0f" category="list-text">检查连接、如以下示例所示：</block>
+  <block id="9b6b0ba6c58622cfc8a6178412a0e4bf" category="image-alt">检查端口连接</block>
+  <block id="17dc6266a36d140e3656a007ab0a9fce" category="list-text">无法访问此URL (与support-sg-nawest.netapp.com不同)。</block>
+  <block id="27639a1d6103dcea8efd114fa6c08ad8" category="paragraph">新版本通知：</block>
+  <block id="ab3ee28175c91fc275541983d197ab00" category="list-text">`https://support.netapp.com/aods/`</block>
+  <block id="202ff041fdb9a5ee3579e8cb7984ef6b" category="paragraph">软件下载：</block>
+  <block id="9fc75d41716cfd46199787dcf77473a1" category="list-text">`https://support-sg-emea.netapp.com`</block>
+  <block id="a1b1a9120bbc7238c7b6088d7223d194" category="list-text">`https://support-sg-naeast.netapp.com`</block>
+  <block id="219033cd316af31663b173765be6dd78" category="list-text">`https://support-sg-nawest.netapp.com`</block>
 </blocks>
