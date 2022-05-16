@@ -9,7 +9,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,zh-tw,ko-kr
 sidebar:
   entries:
-  - title: SolidFire 和 Element 软件 12.3.x 文档
+  - title: SolidFire 和Element软件12.5文档
     url: "/index.html"
   - title: 发行说明
     url: "/concepts/concept_rn_relatedrn_element.html"
@@ -123,6 +123,8 @@ homepage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 早期版本
     links:
+    - title: Element 12.5文档
+      url: https://docs.netapp.com/us-en/element-software-123/
     - title: Element 12.2 文档
       url: https://docs.netapp.com/sfe-122/index.jsp
     - title: Element 12.0 文档

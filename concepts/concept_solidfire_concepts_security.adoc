@@ -28,7 +28,7 @@ link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_c
 另一种类型的空闲加密，即软件空闲加密，可以对写入存储集群中 SSD 的所有数据进行加密。 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["启用时"^]，它会对写入的所有数据进行加密，并对软件中自动读取的所有数据进行解密。空闲软件加密可镜像硬件中的自加密驱动器（ SED ）实施，以便在没有 SED 的情况下提供数据安全性。
 
 
-NOTE: 默认情况下，所有 SolidFire 企业 SDS 节点均可使用空闲软件加密。空闲软件加密可在不包括自加密驱动器（ SED ）的 SolidFire 企业 SDS 节点中提供一个主软件数据安全加密层。
+NOTE: 默认情况下、所有SolidFire 企业SDS节点均启用空闲软件加密。空闲软件加密可在不包括自加密驱动器（ SED ）的 SolidFire 企业 SDS 节点中提供一个主软件数据安全加密层。
 
 
 WARNING: 对于 SolidFire 全闪存存储集群，必须在创建集群期间启用空闲软件加密，并且在创建集群后无法禁用该加密。

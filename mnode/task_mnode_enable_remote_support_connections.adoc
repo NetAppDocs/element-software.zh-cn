@@ -4,12 +4,12 @@ permalink: mnode/task_mnode_enable_remote_support_connections.html
 summary: 您可以使用管理节点启用 NetApp 支持访问以进行故障排除。 
 keywords: netapp, mnode, management node, connect to support, support tunnel, rst 
 ---
-= 启动远程 NetApp 支持会话
+= 启动远程NetApp支持会话(Element 12.3及更早版本)
 :allow-uri-read: 
 
 
 [role="lead"]
-如果您需要 SolidFire 全闪存存储系统的技术支持， NetApp 支持部门可以远程连接到您的系统。要启动会话并获得远程访问， NetApp 支持部门可以与您的环境建立反向安全 Shell （ SSH ）连接。
+如果您运行的是Element 12.3及更早版本、并且需要SolidFire 全闪存存储系统的技术支持、则NetApp支持部门可以远程连接到您的系统。要启动会话并获得远程访问， NetApp 支持部门可以与您的环境建立反向安全 Shell （ SSH ）连接。
 
 您可以与 NetApp 支持部门为 SSH 反向通道连接打开 TCP 端口。通过此连接， NetApp 支持部门可以登录到您的管理节点。
 
@@ -42,7 +42,7 @@ keywords: netapp, mnode, management node, connect to support, support tunnel, rs
 * （可选）禁用 link:task_mnode_ssh_management.html["远程访问功能"] 再次重申。
 +
 
-NOTE: 如果不禁用 SSH ，它将保持启用状态。启用了 SSH 的配置会通过更新和升级在管理节点上持续存在，直到手动禁用为止。
+NOTE: 如果不禁用SSH、则它在管理节点上保持启用状态。启用了 SSH 的配置会通过更新和升级在管理节点上持续存在，直到手动禁用为止。
 
 
 

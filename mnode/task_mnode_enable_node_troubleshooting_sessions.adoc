@@ -1,0 +1,234 @@
+---
+sidebar: sidebar 
+permalink: mnode/task_mnode_enable_node_troubleshooting_sessions.html 
+summary: 对于Element 12.5及更高版本、您可以在管理节点上启用sfreadonly用户帐户来对系统组件进行故障排除、而无需NetApp支持人员的帮助。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。 
+keywords: netapp, sfreadonly, connect to support, support tunnel, rst, mnode, management node 
+---
+= 使用SSH访问存储节点以进行基本故障排除
+:allow-uri-read: 
+
+
+[role="lead"]
+从Element 12.5开始、您可以使用存储节点上的sfreadonly系统帐户进行基本故障排除。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。
+
+通过sfreadonly系统帐户、可以运行基本的Linux系统和网络故障排除命令、包括`ping`。
+
+
+WARNING: 除非NetApp支持部门建议、否则不支持对此系统进行任何更改、从而使您的支持合同失效、并可能导致数据不稳定或无法访问。
+
+.开始之前
+* *写入权限*：验证您是否具有对当前工作目录的写入权限。
+* *(可选)生成您自己的密钥对*：从Windows 10、MacOS或Linux分发版运行`ssh-keygen`。这是一次性操作、用于创建用户密钥对、可重复用于将来的故障排除会话。您可能希望使用与员工帐户关联的证书、此证书在此模式下也适用。
+* *在管理节点上启用SSH功能*：要在管理模式下启用远程访问功能、请参见 link:task_mnode_ssh_management.html["本主题"]。对于管理服务 2.18 及更高版本，默认情况下，管理节点上的远程访问功能处于禁用状态。
+* *在存储集群上启用SSH功能*：要在存储集群节点上启用远程访问功能、请参见 link:https://docs.netapp.com/us-en/element-software/storage/task_system_manage_cluster_enable_and_disable_support_access.html["本主题"]。
+* *防火墙配置*：如果管理节点位于代理服务器之后、则sshd.config文件需要以下TCP端口：
++
+[cols="15,25,60"]
+|===
+| TCP 端口 | Description | 连接方向 
+
+
+| 443. | API 调用 /HTTPS ，用于通过打开的支持通道向 Web UI 转发反向端口 | 管理节点到存储节点 
+
+
+| 22. | SSH 登录访问 | 管理节点到存储节点或从存储节点到管理节点 
+|===
+
+
+.故障排除选项
+* <<Troubleshoot a cluster node>>
+* <<Troubleshoot a cluster node with NetApp Support>>
+* <<Troubleshoot a node that is not part of cluster>>
+
+
+
+
+== 对集群节点进行故障排除
+
+您可以使用sfreadonly系统帐户执行基本故障排除：
+
+.步骤
+. 使用您在安装管理节点虚拟机时选择的帐户登录凭据通过SSH连接到管理节点。
+. 在管理节点上、转至` Sf/bin`。
+. 查找适用于您的系统的脚本：
++
+** SignSshKeys.ps1
+** SignSshKeys.py
+** SignSshKeys.sh
++
+[NOTE]
+====
+SignSshKeys.ps1依赖于PowerShell 7或更高版本、而SignSshKeys.py依赖于Python 3.6.0或更高版本以及 https://docs.python-requests.org/["请求模块"^]。
+
+`SignSshKeys`脚本会将`user`、`user.pub`和`user-cert.pub`文件写入当前工作目录、此目录稍后会由`ssh`命令使用。但是、在向该脚本提供公有 密钥文件时、只会向目录中写入一个`<public_key>`文件(其中、`<public_key>`替换为传递到该脚本的公有 密钥文件的前缀)。
+
+====
+
+
+. 在管理节点上运行脚本以生成SSH密钥链。该脚本可在集群中的所有节点上使用sfreadonly系统帐户启用SSH访问。
++
+[listing]
+----
+SignSshKeys --ip [ip address] --user [username] --duration [hours] --publickey [public key path]
+----
++
+.. 替换以下每个参数的方括号(包括方括号)中的值：
++
+
+NOTE: 您可以使用缩写或完整格式参数。
+
++
+*** *—-ip |-i [IP address]*：要对其运行API的目标节点的IP地址。
+*** *-user |-u [用户名]*：用于运行API调用的集群用户。
+*** *(可选)-duration |-d [hours]*：已签名密钥的持续时间应保持为一个整数(以小时为单位)。默认值为 24 小时。
+*** *(可选)-publickey |-k公有 key path]*：公有 密钥的路径(如果用户选择提供)。
+
+
+.. 将您输入的内容与以下示例命令进行比较。在此示例中、`10.116139.195`是存储节点的IP、`admin`是集群用户名、密钥有效期为两小时：
++
+[listing]
+----
+sh /sf/bin/SignSshKeys.sh --ip 10.116.139.195 --user admin --duration 2
+----
+.. 运行命令。
+
+
+. 通过SSH连接到节点IP：
++
+[listing]
+----
+ssh -i user sfreadonly@[node_ip]
+----
++
+您可以运行基本的Linux系统和网络故障排除命令、例如`ping`以及其他只读命令。
+
+. （可选）禁用 link:task_mnode_ssh_management.html["远程访问功能"] 完成故障排除后再次执行此操作。
++
+
+NOTE: 如果不禁用SSH、则它在管理节点上保持启用状态。启用了 SSH 的配置会通过更新和升级在管理节点上持续存在，直到手动禁用为止。
+
+
+
+
+
+== 使用NetApp支持对集群节点进行故障排除
+
+NetApp支持部门可以使用系统帐户执行高级故障排除、从而使技术人员能够运行更深入的Element诊断。
+
+.步骤
+. 使用您在安装管理节点虚拟机时选择的帐户登录凭据通过SSH连接到管理节点。
+. 使用NetApp支持部门发送的端口号运行rst命令以打开支持通道：
++
+`rst -r sfsupport.solidfire.com -u element -p <port_number>`
+
++
+NetApp支持将使用支持通道登录到您的管理节点。
+
+. 在管理节点上、转至` Sf/bin`。
+. 查找适用于您的系统的脚本：
++
+** SignSshKeys.ps1
+** SignSshKeys.py
+** SignSshKeys.sh
++
+[NOTE]
+====
+SignSshKeys.ps1依赖于PowerShell 7或更高版本、而SignSshKeys.py依赖于Python 3.6.0或更高版本以及 https://docs.python-requests.org/["请求模块"^]。
+
+`SignSshKeys`脚本会将`user`、`user.pub`和`user-cert.pub`文件写入当前工作目录、此目录稍后会由`ssh`命令使用。但是、在向该脚本提供公有 密钥文件时、只会向目录中写入一个`<public_key>`文件(其中、`<public_key>`替换为传递到该脚本的公有 密钥文件的前缀)。
+
+====
+
+
+. 运行此脚本以生成带有`-sfadmin`标志的SSH密钥链。此脚本可在所有节点上启用SSH。
++
+[listing]
+----
+SignSshKeys --ip [ip address] --user [username] --duration [hours] --sfadmin
+----
++
+[NOTE]
+====
+要将SSH作为`-sfadmin`以SSH发送到集群节点、您必须在集群上使用`-user`并具有`supportAdmin`访问权限来生成SSH密钥链。
+
+要为集群管理员帐户配置`supportAdmin`访问、您可以使用Element UI或API：
+
+** link:../storage/concept_system_manage_manage_cluster_administrator_users.html#view-cluster-admin-details["使用Element UI配置"supportAdmin"访问"]
+** 使用API并在API请求中添加`"supportAdmin"`作为`"access"`类型来配置`supportAdmin`访问：
++
+*** link:../api/reference_element_api_addclusteradmin.html["为新帐户配置"supportAdmin"访问权限"]
+*** link:../api/reference_element_api_modifyclusteradmin.html["为现有帐户配置"supportAdmin"访问权限"]
++
+要获取`clusterAdminID`、您可以使用 link:../api/reference_element_api_listclusteradmins.html["ListClusterAdmins"] API。
+
+
+
+
+
+要添加`supportAdmin` access、您必须具有集群管理员或管理员权限。
+
+====
++
+.. 替换以下每个参数的方括号(包括方括号)中的值：
++
+
+NOTE: 您可以使用缩写或完整格式参数。
+
++
+*** *—-ip |-i [IP address]*：要对其运行API的目标节点的IP地址。
+*** *-user |-u [用户名]*：用于运行API调用的集群用户。
+*** *(可选)-duration |-d [hours]*：已签名密钥的持续时间应保持为一个整数(以小时为单位)。默认值为 24 小时。
+
+
+.. 将您输入的内容与以下示例命令进行比较。在此示例中、`192.168.0.1`是存储节点的IP、`admin`是集群用户名、密钥有效期为两小时、`-sfadmin`允许NetApp支持节点访问以进行故障排除：
++
+[listing]
+----
+sh /sf/bin/SignSshKeys.sh --ip 192.168.0.1 --user admin --duration 2 --sfadmin
+----
+.. 运行命令。
+
+
+. 通过SSH连接到节点IP：
++
+[listing]
+----
+ssh -i user sfadmin@[node_ip]
+----
+. 要关闭远程支持通道，请输入以下内容：
++
+`rst -killall`
+
+. （可选）禁用 link:task_mnode_ssh_management.html["远程访问功能"] 完成故障排除后再次执行此操作。
++
+
+NOTE: 如果不禁用SSH、则它在管理节点上保持启用状态。启用了 SSH 的配置会通过更新和升级在管理节点上持续存在，直到手动禁用为止。
+
+
+
+
+
+== 对不属于集群的节点进行故障排除
+
+您可以对尚未添加到集群中的节点执行基本故障排除。您可以使用sfreadonly系统帐户来实现此目的、无论是否获得NetApp支持。如果已设置管理节点、则可以将其用于SSH并运行为此任务提供的脚本。
+
+. 在安装了SSH客户端的Windows、Linux或Mac计算机上、运行NetApp支持部门为您的系统提供的相应脚本。
+. 通过SSH连接到节点IP：
++
+[listing]
+----
+ssh -i user sfreadonly@[node_ip]
+----
+. （可选）禁用 link:task_mnode_ssh_management.html["远程访问功能"] 完成故障排除后再次执行此操作。
++
+
+NOTE: 如果不禁用SSH、则它在管理节点上保持启用状态。启用了 SSH 的配置会通过更新和升级在管理节点上持续存在，直到手动禁用为止。
+
+
+
+[discrete]
+== 了解更多信息
+
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+* https://www.netapp.com/hybrid-cloud/hci-documentation/["NetApp HCI 资源页面"^]
+

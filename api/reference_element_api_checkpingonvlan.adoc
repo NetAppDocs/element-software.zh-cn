@@ -169,7 +169,7 @@ virtualNetworkTag
 
 
  a| 
-详细信息
+结果
  a| 
 列出节点能够与之通信的每个 IP 以及 ping 响应统计信息。
  a| 
@@ -206,38 +206,34 @@ JSON 对象
 {
   "id": 1,
   "result": {
-    "details": {
-      "192.168.41.2": {
-        "individualResponseCodes": [
-          "Success",
-          "Success",
-          "Success",
-          "Success",
-          "Success"
-        ],
-        "individualResponseTimes": [
-          "00:00:00.000373",
-          "00:00:00.000098",
-          "00:00:00.000097",
-          "00:00:00.000074",
-          "00:00:00.000075"
-        ],
-        "individualStatus": [
-          true,
-          true,
-          true,
-          true,
-          true
-        ],
-        "interface": "Bond10G",
-        "responseTime": "00:00:00.000143",
-        "sourceAddressV4": "192.168.41.4",
-        "successful": true,
-        "virtualNetworkTag": 4001
-      }
-    },
-    "duration": "00:00:00.244379",
-    "result": "Passed"
+    "192.168.41.2": {
+      "individualResponseCodes": [
+        "Success",
+        "Success",
+        "Success",
+        "Success",
+        "Success"
+      ],
+      "individualResponseTimes": [
+        "00:00:00.000373",
+        "00:00:00.000098",
+        "00:00:00.000097",
+        "00:00:00.000074",
+        "00:00:00.000075"
+      ],
+      "individualStatus": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "interface": "Bond10G",
+      "responseTime": "00:00:00.000143",
+      "sourceAddressV4": "192.168.41.4",
+      "successful": true,
+      "virtualNetworkTag": 4001
+    }
   }
 }
 ----
