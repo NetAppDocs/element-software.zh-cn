@@ -5849,7 +5849,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/element-software/mnode/task_mnode_enable_node_troubleshooting_sessions.html">
         使用SSH访问存储节点以进行基本故障排除
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/element-software/mnode/task_mnode_enable_remote_support_connections.html">
-        启动远程NetApp支持会话(Element 12.3及更早版本)
+        启动远程 NetApp 支持会话
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/element-software/mnode/task_mnode_ssh_management.html">
         在管理节点上管理 SSH 功能
       </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
@@ -5939,7 +5939,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:33:56 +0000">04/18/2022</time>
+    <time datetime="2022-05-17 20:40:50 +0000">05/17/2022</time>
     
   
 
@@ -6011,7 +6011,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>* 软件空闲加密增强功能 * ： Element 12.3 引入了软件空闲加密功能的增强功能，在创建 SolidFire 企业 SDS 存储集群时，此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。以下是与空闲软件加密相关的 Element API 方法（请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API 文档"</a> 有关每种方法的详细信息：</p>
+<p><strong>软件空闲加密增强功能</strong>：Element 12.3引入了空闲软件加密功能增强功能、在创建SolidFire 企业SDS存储集群时、此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。以下是与空闲软件加密相关的 Element API 方法（请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API 文档"</a> 有关每种方法的详细信息：</p>
 <div class="ulist">
 <ul>
 <li>
@@ -6033,7 +6033,7 @@
 </div>
 </li>
 <li>
-<p>* 能够定义要保留的最大快照数 * ： Element 12.3 增强了快照保留功能。为了支持此增强功能，已对以下 API 进行了修改（请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API 文档"</a> 有关每种方法的详细信息：</p>
+<p><strong>能够定义要保留的最大快照数</strong>：Element 12.3增强了快照保留功能。为了支持此增强功能，已对以下 API 进行了修改（请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API 文档"</a> 有关每种方法的详细信息：</p>
 <div class="ulist">
 <ul>
 <li>
@@ -6064,10 +6064,10 @@
 </div>
 </li>
 <li>
-<p>* 获取有关 Element 软件修补程序的信息 * ： Element 12.3 引入了 <code>GetPatchInfo</code> 方法，可用于获取有关存储节点上安装的 Element 软件修补程序的信息。请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API 文档"</a> 了解详细信息。</p>
+<p><strong>获取有关Element软件修补程序的信息</strong>：Element 12.3中引入的`GetPatchInfo`方法可用于获取有关存储节点上安装的Element软件修补程序的信息。请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API 文档"</a> 了解详细信息。</p>
 </li>
 <li>
-<p>* 列出节点上每个网络接口的统计信息 * ： Element 12.3 引入了 <code>ListNetworkInterfaceStats</code> 方法，该方法可用于列出统计信息，例如，节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API 文档"</a> 了解详细信息。</p>
+<p><strong>列出节点上每个网络接口的统计信息</strong>：Element 12.3中引入的`ListNetworkInterfaceStats`方法可用于列出统计信息、例如、节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element API 文档"</a> 了解详细信息。</p>
 </li>
 <li>
 <p>* 在 Element 12.2 中引入和更新的 API 以支持 SolidFire ESDS* ： Element 12.2 中引入了几个新的 API ，您可以在 SolidFire ESDS 集群上使用这些 API 。</p>
