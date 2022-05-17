@@ -44,7 +44,7 @@ TIP: 要检查版本，请登录到管理节点并在登录横幅中查看 Eleme
 
 == 系统升级顺序
 
-您可以按以下顺序升级适用于Element软件12.5的NetApp SolidFire 全闪存存储系统。
+您可以按以下顺序升级适用于Element 12.5的NetApp SolidFire 全闪存存储系统。
 
 .步骤
 . link:task_hcc_update_management_services.html["从 Hybrid Cloud Control 更新管理服务"]。

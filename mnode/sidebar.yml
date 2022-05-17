@@ -52,7 +52,7 @@ entries:
   entries:
   - title: 使用SSH访问存储节点以进行基本故障排除
     url: "/mnode/task_mnode_enable_node_troubleshooting_sessions.html"
-  - title: 启动远程NetApp支持会话(Element 12.3及更早版本)
+  - title: 启动远程 NetApp 支持会话
     url: "/mnode/task_mnode_enable_remote_support_connections.html"
   - title: 在管理节点上管理 SSH 功能
     url: "/mnode/task_mnode_ssh_management.html"
