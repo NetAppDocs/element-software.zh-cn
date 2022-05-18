@@ -11900,7 +11900,6 @@
   <block id="1fde8564c11be0856ccf9a21a1d1430c" category="admonition">管理节点的默认值可能为 LSI Logic SAS 。在 * 新建虚拟机 * 窗口中，选择 * 自定义硬件 * &gt; * 虚拟硬件 * 以验证存储适配器配置。如果需要，请将 LSI Logic SAS 更改为 * LSI Logic Parallel * 。</block>
   <block id="084f667a768181d2c907c53fa5eba8aa" category="list-text">本操作步骤介绍了 vSphere 6.7 版中提供的步骤。您的 vSphere 用户界面可能与所述略有不同，具体取决于安装的 vSphere 版本。有关其他帮助，请参见 VMware vCenter 文档。</block>
   <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">下一步行动</block>
-  <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
   <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">它支持 3000 IOPS 的持续集群限制。</block>
   <block id="dcd50d347195658baa61d9ec50d87c54" category="list-text">应使用 MTU 至少为 1500 字节的网络接口卡进行配置。</block>
   <block id="66eb697af36258704e589ddaa8b1f423" category="admonition">有关配置主机网络的示例和提示，请参见 <block ref="75f8e7b74dfe828e63d762ff8e0c66a1" category="inline-link-macro-rx"></block>。</block>
@@ -12287,4 +12286,5 @@
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出节点上每个网络接口的统计信息*：Element 12.3中引入的`ListNetworkInterfaceStats`方法可用于列出统计信息、例如、节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1中引入的动态节点评级功能使您可以在每个ESDS平台上利用24个受支持的CPU、而不是目前的每个平台使用一个CPU的模式。</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
+  <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element软件12.5.</block>
 </blocks>
