@@ -11958,7 +11958,6 @@
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">存储固件包 2.146 的注意事项</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
   <block id="38be14292d8d278a5d7b04a84bab839d" category="admonition">升级到 VMware vCenter Server 7.0 U3 后，适用于 vCenter Server 的所有版本的 NetApp Element 插件都无法部署。要解决此问题描述 ，请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
-  <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
   <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
   <block id="3ab5d74afdff3156333304ac18ad1977" category="paragraph">在遵循此操作步骤之前，您应了解 <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 以及是否要使用它们。永久性卷是可选的，但建议在虚拟机（ VM ）丢失时用于管理节点配置数据恢复。</block>
   <block id="2ef294393b47ae9f1c9dee1f319efb0d" category="list-text"><block ref="bf7a9c417954187cdc8487e05cd6fa32" category="inline-xref-macro-rx"></block></block>
@@ -12287,4 +12286,5 @@
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">*获取有关Element软件修补程序的信息*：Element 12.3中引入的`GetPatchInfo`方法可用于获取有关存储节点上安装的Element软件修补程序的信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出节点上每个网络接口的统计信息*：Element 12.3中引入的`ListNetworkInterfaceStats`方法可用于列出统计信息、例如、节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1中引入的动态节点评级功能使您可以在每个ESDS平台上利用24个受支持的CPU、而不是目前的每个平台使用一个CPU的模式。</block>
+  <block id="234a1430825055fe25203429facd267e" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
 </blocks>
