@@ -51,7 +51,7 @@ NOTE: 最佳实践是，仅将一个管理节点与一个 VMware vCenter 实例�
 
 * link:task_mnode_enable_node_troubleshooting_sessions.html["使用SSH访问存储节点以进行基本故障排除"]
 +
-** link:task_mnode_enable_remote_support_connections.html["启用远程NetApp支持连接(Element 12.3及更早版本)"]
+** link:task_mnode_enable_remote_support_connections.html["启用远程 NetApp 支持连接"]
 ** link:task_mnode_ssh_management.html["在管理节点上管理 SSH 功能"]
 
 
