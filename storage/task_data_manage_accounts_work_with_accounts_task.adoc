@@ -4,16 +4,14 @@ sidebar: sidebar
 keywords: element, solidfire, accounts, create, delete, change, chap, view, edit 
 summary: 在 SolidFire 存储系统中，客户端可以通过用户帐户连接到节点上的卷。创建卷时，卷会分配给特定的用户帐户。 
 ---
-= 使用用户帐户
+= 使用CHAP处理帐户
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在 SolidFire 存储系统中，客户端可以通过用户帐户连接到节点上的卷。创建卷时，卷会分配给特定的用户帐户。
-
-帐户包含访问分配给它的卷所需的 CHAP 身份验证。
+在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。帐户包含访问分配给它的卷所需的质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)身份验证。创建卷时、卷会分配给特定帐户。
 
 一个帐户最多可以分配 2 ， 000 个卷，但一个卷只能属于一个帐户。
 
