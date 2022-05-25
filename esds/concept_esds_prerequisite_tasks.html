@@ -5939,7 +5939,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-16 17:40:06 +0000">05/16/2022</time>
+    <time datetime="2022-05-25 16:22:58 +0000">05/25/2022</time>
     
   
 
@@ -5966,7 +5966,7 @@
 <div class="title">&lt;Strong&gt; 配置主机（节点） &lt;/Strong&gt;</div>
 <ul>
 <li>
-<p>根据中列出的受支持版本安装 RHEL <a href="https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&amp;solution=1757&amp;isHWU#welcome" target="_blank" rel="noopener">"NetApp 互操作性表（需要登录）"</a>。</p>
+<p>根据中列出的受支持版本安装Red Hat Package Manager <a href="https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&amp;solution=1757&amp;isHWU#welcome" target="_blank" rel="noopener">"NetApp 互操作性表（需要登录）"</a>。</p>
 </li>
 <li>
 <p>配置网络时间协议（ NTP ）服务器，以便与网络中的所有主机结合使用。</p>
@@ -5980,7 +5980,7 @@
 <img src="/us-en/element-software/images/note.svg" alt="注">
 </td>
 <td class="content">
-默认情况下， RHEL 会选择 <code>xfs</code> 作为您手动创建的分区的默认文件系统。您应将其更改为 <code>ext4</code> ，但 ` /boot` 和 <code>sWAP</code> 分区除外。您的 ` /boot` 分区应使用 <code>ext2</code> 。
+默认情况下、Red Hat Package Manager会选择`xfs`作为您手动创建的分区的默认文件系统。您应将其更改为 <code>ext4</code> ，但 ` /boot` 和 <code>sWAP</code> 分区除外。您的 ` /boot` 分区应使用 <code>ext2</code> 。
 </td>
 </tr>
 </table>
@@ -6075,7 +6075,7 @@
 <p>为 /boot 禁用 RAID 。</p>
 </li>
 <li>
-<p>在选择要安装的特定软件包的软件选择屏幕上，根据您的 RHEL 版本选择 * 服务器 * 或 * 基础架构服务器 * 。</p>
+<p>在选择要安装的特定软件包的软件选择屏幕上、根据您的Red Hat Package Manager版本选择*服务器*或*基础架构服务器*。</p>
 </li>
 <li>
 <p>首次启动后，执行以下操作：</p>
@@ -6114,7 +6114,45 @@ rhel-7-server-extras-rpms</pre>
 <img src="/us-en/element-software/images/note.svg" alt="注">
 </td>
 <td class="content">
-对于 Element 12.3 ，支持的 Podman 版本为 1.0.4 。
+<div class="paragraph">
+<p>对于Element 12.5、支持的Podman版本取决于您的Red Hat Package Manager版本：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 35%;">
+<col style="width: 65%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Red Hat Package Manager版本</th>
+<th class="tableblock halign-left valign-top">Podman版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.x</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.6.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.1、8.2、8.3和8.4</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>3.1.x、3.2.x、3.3.x、3.4.1和3.4.2</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/element-software/images/note.svg" alt="注">
+</td>
+<td class="content">
+如果有、NetApp建议您接受适用于您的Podman版本的安全更新。
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </td>
 </tr>
 </table>
@@ -6220,7 +6258,7 @@ rhel-7-server-extras-rpms</pre>
 <div class="title">&lt;Strong&gt; 了解网络和 IP 地址要求 &lt;/Strong&gt;</div>
 <ul>
 <li>
-<p>熟悉如何在 RHEL 中配置和管理网络和网络接口。请参见 <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index" target="_blank" rel="noopener">"Red Hat 文档"</a>。</p>
+<p>熟悉如何在Red Hat Package Manager中配置和管理网络和网络接口。请参见 <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index" target="_blank" rel="noopener">"Red Hat 文档"</a>。</p>
 </li>
 <li>
 <p>按照此处详细介绍的 IP 要求配置网络：</p>
@@ -6354,7 +6392,7 @@ rhel-7-server-extras-rpms</pre>
 <div class="title">&lt;Strong&gt; 允许特定端口通过数据中心？ #8217 ； s 防火墙 &lt;/Strong&gt;</div>
 <ul>
 <li>
-<p>如果在运行 RHEL 的存储节点上启用了 <code>firewalld</code> ，请确保打开以下端口，以便可以远程管理系统，允许数据中心外部的客户端连接到资源，并确保内部服务可以正常运行：</p>
+<p>如果在运行Red Hat Package Manager的存储节点上启用了`firewalld`、请确保以下端口处于打开状态、以便您可以远程管理系统、允许数据中心外部的客户端连接到资源、并确保内部服务可以正常运行：</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
