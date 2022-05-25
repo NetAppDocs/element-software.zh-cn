@@ -12295,4 +12295,8 @@
   <block id="f82fbefaef1108fe81a739d7c43f6e9f" category="list-text">熟悉如何在Red Hat Package Manager中配置和管理网络和网络接口。请参见<block ref="a661302e878d4f2065d4f48e5679440c" category="inline-link-rx"></block>。</block>
   <block id="5cfb8e81e0263340cb87df666ea52280" category="list-text">如果在运行Red Hat Package Manager的存储节点上启用了`firewalld`、请确保以下端口处于打开状态、以便您可以远程管理系统、允许数据中心外部的客户端连接到资源、并确保内部服务可以正常运行：</block>
   <block id="da098b5086ce4e5936074c04efe5aa87" category="paragraph">您可以使用 Element UI <block ref="cbef8289b7bcb52ca0b9a41f4d962912" category="inline-link-macro-rx"></block>或者，您也可以使用以下 API 方法：</block>
+  <block id="927feedbfb9bbc4a93e285ba9504ab0b" category="inline-link-macro">存储固件包 2.76 的注意事项</block>
+  <block id="69b7535618573fd609dc8b4663c8b8c0" category="list-text"><block ref="69b7535618573fd609dc8b4663c8b8c0" category="inline-link-macro-rx"></block></block>
+  <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">存储固件包 2.27 的注意事项</block>
+  <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
 </blocks>
