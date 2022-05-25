@@ -19,12 +19,12 @@ summary: 在安装 SolidFire ESDS 之前，请确保执行必要的检查并验�
 
 
 .<Strong> 配置主机（节点） </Strong>
-* 根据中列出的受支持版本安装 RHEL https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp 互操作性表（需要登录）"^]。
+* 根据中列出的受支持版本安装Red Hat Package Manager https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp 互操作性表（需要登录）"^]。
 * 配置网络时间协议（ NTP ）服务器，以便与网络中的所有主机结合使用。
 * 选择安装目标时，选择单选按钮以手动配置文件系统分区。在 * 手动分区 * 页面上，使用 * + * 和 * - * 按钮删除任何现有分区，并根据此处列出的建议创建新分区并调整其大小。使用默认 LVM 分区方案，您可以在以后根据需要轻松调整大小。
 +
 
-NOTE: 默认情况下， RHEL 会选择 `xfs` 作为您手动创建的分区的默认文件系统。您应将其更改为 `ext4` ，但 ` /boot` 和 `sWAP` 分区除外。您的 ` /boot` 分区应使用 `ext2` 。
+NOTE: 默认情况下、Red Hat Package Manager会选择`xfs`作为您手动创建的分区的默认文件系统。您应将其更改为 `ext4` ，但 ` /boot` 和 `sWAP` 分区除外。您的 ` /boot` 分区应使用 `ext2` 。
 
 +
 如果您的 SATA 磁盘为 250 GB ，请按照下面建议的分区进行操作。如果 SATA 磁盘具有更多空间，则可以增加 /opt 和 /var 分区大小。
@@ -88,7 +88,7 @@ NOTE: 默认情况下， RHEL 会选择 `xfs` 作为您手动创建的分区的�
 NOTE: 任何进程均不使用 ` /dev/sdb` 磁盘。
 
 * 为 /boot 禁用 RAID 。
-* 在选择要安装的特定软件包的软件选择屏幕上，根据您的 RHEL 版本选择 * 服务器 * 或 * 基础架构服务器 * 。
+* 在选择要安装的特定软件包的软件选择屏幕上、根据您的Red Hat Package Manager版本选择*服务器*或*基础架构服务器*。
 * 首次启动后，执行以下操作：
 +
 ** 安装 Red Hat 订阅管理器并启用以下存储库：
@@ -109,9 +109,26 @@ rhel-7-server-extras-rpms
 .<Strong> 安装所需软件 </Strong>
 * 安装 Ansible ， Git ， Podman 和 Python 3.0 。
 +
+[NOTE]
+====
+对于Element 12.5、支持的Podman版本取决于您的Red Hat Package Manager版本：
 
-NOTE: 对于 Element 12.3 ，支持的 Podman 版本为 1.0.4 。
+[cols="35,65"]
+|===
+| Red Hat Package Manager版本 | Podman版本 
 
+
+| 7.x | 1.6.4 
+
+
+| 8.1、8.2、8.3和8.4  a| 
+3.1.x、3.2.x、3.3.x、3.4.1和3.4.2
+
+
+NOTE: 如果有、NetApp建议您接受适用于您的Podman版本的安全更新。
+
+|===
+====
 
 
 .<Strong> 验证您的配置是否符合 NetApp&#8217 安装 SolidFire ESDS</Strong> 的要求
@@ -168,7 +185,7 @@ NOTE: 即使您开始使用 SolidFire ESDS 系统，也应定期运行合规性�
 
 
 .<Strong> 了解网络和 IP 地址要求 </Strong>
-* 熟悉如何在 RHEL 中配置和管理网络和网络接口。请参见 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["Red Hat 文档"^]。
+* 熟悉如何在Red Hat Package Manager中配置和管理网络和网络接口。请参见 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["Red Hat 文档"^]。
 * 按照此处详细介绍的 IP 要求配置网络：
 +
 [cols="4*"]
@@ -245,7 +262,7 @@ IMPORTANT: 此处提供的图示仅用作示例。实际硬件可能因服务器
 
 
 .<Strong> 允许特定端口通过数据中心？ #8217 ； s 防火墙 </Strong>
-* 如果在运行 RHEL 的存储节点上启用了 `firewalld` ，请确保打开以下端口，以便可以远程管理系统，允许数据中心外部的客户端连接到资源，并确保内部服务可以正常运行：
+* 如果在运行Red Hat Package Manager的存储节点上启用了`firewalld`、请确保以下端口处于打开状态、以便您可以远程管理系统、允许数据中心外部的客户端连接到资源、并确保内部服务可以正常运行：
 +
 [cols="4*"]
 |===

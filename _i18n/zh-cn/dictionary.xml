@@ -10544,10 +10544,8 @@
   <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">安装支持的服务器。请参见<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> 有关详细信息 ...</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">确保硬件配置是平衡的，并且所有通道均已填充。有关最大程度地提高带宽的详细信息，请参见<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （需要登录）。</block>
   <block id="2a97471ec199242556431779bd30838a" category="list-title">&lt;Strong&gt; 配置主机（节点） &lt;/Strong&gt;</block>
-  <block id="dfda84dd73a63b7698fcd71a1a191bb4" category="list-text">根据中列出的受支持版本安装 RHEL<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">配置网络时间协议（ NTP ）服务器，以便与网络中的所有主机结合使用。</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">选择安装目标时，选择单选按钮以手动配置文件系统分区。在 * 手动分区 * 页面上，使用 * + * 和 * - * 按钮删除任何现有分区，并根据此处列出的建议创建新分区并调整其大小。使用默认 LVM 分区方案，您可以在以后根据需要轻松调整大小。</block>
-  <block id="7cf307b4cbb4dc37df69fb730f71704e" category="admonition">默认情况下， RHEL 会选择 `xfs` 作为您手动创建的分区的默认文件系统。您应将其更改为 `ext4` ，但 ` /boot` 和 `sWAP` 分区除外。您的 ` /boot` 分区应使用 `ext2` 。</block>
   <block id="3349300356cb3141ea939dcbdf749789" category="cell">分区</block>
   <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">Size</block>
   <block id="a53bfb333437907a8d5bdc636d15c75d" category="paragraph">/boot</block>
@@ -10562,7 +10560,6 @@
   <block id="6666cd76f96956469e7be39d750cc7d9" category="paragraph">/</block>
   <block id="876bd0b5b542dbc543a61dd69f527ceb" category="admonition">任何进程均不使用 ` /dev/sdb` 磁盘。</block>
   <block id="09942c4da908193c21f2c641c4c45cd7" category="list-text">为 /boot 禁用 RAID 。</block>
-  <block id="d0c957516dbabedfe88742b9e4a4cfdc" category="list-text">在选择要安装的特定软件包的软件选择屏幕上，根据您的 RHEL 版本选择 * 服务器 * 或 * 基础架构服务器 * 。</block>
   <block id="303f5963e3ea829928dcbe2a9317331c" category="list-text">首次启动后，执行以下操作：</block>
   <block id="583f03cc8d89c265cfb974e74e052cc2" category="list-text">安装 Red Hat 订阅管理器并启用以下存储库：</block>
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">在节点上启用 SSH 。</block>
@@ -10583,8 +10580,6 @@
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">运行合规性检查攻略手册，如以下示例所示：</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">即使您开始使用 SolidFire ESDS 系统，也应定期运行合规性检查，以确保您的系统符合要求。在某些情况下， NetApp 支持部门会要求您运行合规性检查，以帮助诊断和解决问题。</block>
   <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">&lt;Strong&gt; 了解网络和 IP 地址要求 &lt;/Strong&gt;</block>
-  <block id="c8bd9bfc4e58f0125e3130b5e3b58307" category="inline-link">Red Hat 文档</block>
-  <block id="36a4a4fa850be7aa4008ba57334d681b" category="list-text">熟悉如何在 RHEL 中配置和管理网络和网络接口。请参见<block ref="a5d07f73933f9c55909e31f1ce2ee464" category="inline-link-rx"></block>。</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">按照此处详细介绍的 IP 要求配置网络：</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">组件</block>
   <block id="265df7cdddd316ce979aa017f0753e25" category="cell">存储网络 IP 地址</block>
@@ -10606,7 +10601,6 @@
   <block id="ebff118a006e94651da911d800279c44" category="admonition">此处提供的图示仅用作示例。实际硬件可能因服务器而异。</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">将交换机端口 MTU 更改为 9216 字节。</block>
   <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">&lt;Strong&gt; 允许特定端口通过数据中心？ #8217 ； s 防火墙 &lt;/Strong&gt;</block>
-  <block id="2c87e2d0f38577f9f5bdce1dc171ae67" category="list-text">如果在运行 RHEL 的存储节点上启用了 `firewalld` ，请确保打开以下端口，以便可以远程管理系统，允许数据中心外部的客户端连接到资源，并确保内部服务可以正常运行：</block>
   <block id="ab2f4d4dbd7fe86289026b4321e7e53d" category="paragraph">80 TCP/UDP</block>
   <block id="f5fc4cfbf6f32dae142bd0f1c443bc13" category="paragraph">集群升级</block>
   <block id="b0ee3a63a5791163e83df745e5b7b013" category="paragraph">442 TCP</block>
@@ -12193,7 +12187,6 @@
   <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">您已为计划了足够的时间 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升级。升级到Element软件12.5时、升级过程时间因Element软件版本和固件更新而异。</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">您可以使用NetApp Hybrid Cloud Control UI或NetApp Hybrid Cloud Control API运行运行状况检查：</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">配置自定义保护域</block>
-  <block id="5425a332a34a92102aeaad92cb1cfd47" category="paragraph">您可以使用 Element UI <block ref="6aad22cf2ff364471fbadae1f249e90f" category="inline-link-macro-rx"></block>或者，您也可以使用以下 API 方法：</block>
   <block id="b9d7f7d96ba0d7f9fb0ebbfdd76705d5" category="list-text"><block ref="a92b076f4c042891d554c076d8d2ec26" category="inline-link-macro-rx"></block> - 显示每个节点所在的机箱和自定义保护域。</block>
   <block id="ed4cb7ef9d0074dd188232c212f3131c" category="list-text"><block ref="79208a7b3d3c86443da0ca3bafbef925" category="inline-link-macro-rx"></block> - 用于为每个节点分配自定义保护域。</block>
   <block id="61b35a1ffe9df32c3c0e2e4a7969de4b" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.5引入了改进的存储节点访问、增强的自定义保护域易管理性、新增和改进的集群故障和事件、增强的创建集群UI功能、增强的安全性以及使用Ansible的自动升级。</block>
@@ -12272,7 +12265,6 @@
   <block id="30486cdfdde2444e4151845599ac5bf5" category="sidebar">Element 12.5文档</block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升级适用于Element软件12.5的NetApp SolidFire 全闪存存储系统</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">配置自定义保护域</block>
-  <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">对于 Element 12.3 ，支持的 Podman 版本为 1.0.4 。</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">启动远程 NetApp 支持会话</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">如果您需要 SolidFire 全闪存存储系统的技术支持， NetApp 支持部门可以远程连接到您的系统。要启动会话并获得远程访问， NetApp 支持部门可以与您的环境建立反向安全 Shell （ SSH ）连接。</block>
   <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*软件空闲加密增强功能*：Element 12.3引入了空闲软件加密功能增强功能、在创建SolidFire 企业SDS存储集群时、此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。以下是与空闲软件加密相关的 Element API 方法（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
@@ -12288,4 +12280,19 @@
   <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">适用于Element演示节点12.5 VM的ESXi 6.7和7.0</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP处理帐户</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。帐户包含访问分配给它的卷所需的质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)身份验证。创建卷时、卷会分配给特定帐户。</block>
+  <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">根据中列出的受支持版本安装Red Hat Package Manager<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
+  <block id="8297e8d8235ab4d403ff5275f7488f0e" category="admonition">默认情况下、Red Hat Package Manager会选择`xfs`作为您手动创建的分区的默认文件系统。您应将其更改为 `ext4` ，但 ` /boot` 和 `sWAP` 分区除外。您的 ` /boot` 分区应使用 `ext2` 。</block>
+  <block id="e39438a68fb3f711253e9a7370ff67d2" category="list-text">在选择要安装的特定软件包的软件选择屏幕上、根据您的Red Hat Package Manager版本选择*服务器*或*基础架构服务器*。</block>
+  <block id="94f57e8fc8a5e98d0aadd2f3fd717077" category="paragraph">对于Element 12.5、支持的Podman版本取决于您的Red Hat Package Manager版本：</block>
+  <block id="111f3cbd261a94954f796bd076317101" category="cell">Red Hat Package Manager版本</block>
+  <block id="89c0c976c84a0dc5ae614e09b4cc1c8e" category="cell">Podman版本</block>
+  <block id="b1db54564fe54a4c74a975b18a791532" category="cell">7.x</block>
+  <block id="029b1c7f4aeae9b0d7440388e1b6b30b" category="cell">1.6.4</block>
+  <block id="9b894f3cda522ff568508c500c301f16" category="cell">8.1、8.2、8.3和8.4</block>
+  <block id="f991179eef81959ca4ec71aa86a4df76" category="paragraph">3.1.x、3.2.x、3.3.x、3.4.1和3.4.2</block>
+  <block id="23e29da41b25c9d2df2b9c3e88b4f7e0" category="admonition">如果有、NetApp建议您接受适用于您的Podman版本的安全更新。</block>
+  <block id="cd9179614936afe6f50612f0cf8c5615" category="inline-link">Red Hat 文档</block>
+  <block id="f82fbefaef1108fe81a739d7c43f6e9f" category="list-text">熟悉如何在Red Hat Package Manager中配置和管理网络和网络接口。请参见<block ref="a661302e878d4f2065d4f48e5679440c" category="inline-link-rx"></block>。</block>
+  <block id="5cfb8e81e0263340cb87df666ea52280" category="list-text">如果在运行Red Hat Package Manager的存储节点上启用了`firewalld`、请确保以下端口处于打开状态、以便您可以远程管理系统、允许数据中心外部的客户端连接到资源、并确保内部服务可以正常运行：</block>
+  <block id="da098b5086ce4e5936074c04efe5aa87" category="paragraph">您可以使用 Element UI <block ref="cbef8289b7bcb52ca0b9a41f4d962912" category="inline-link-macro-rx"></block>或者，您也可以使用以下 API 方法：</block>
 </blocks>
