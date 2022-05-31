@@ -12276,7 +12276,6 @@
   <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element软件12.5.</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">启用远程 NetApp 支持连接</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
-  <block id="36d8d20d969c93e2ea2538dca80bb707" category="list-text">适用于Element演示节点12.5 VM的ESXi 6.7和7.0</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP处理帐户</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。帐户包含访问分配给它的卷所需的质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)身份验证。创建卷时、卷会分配给特定帐户。</block>
   <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">根据中列出的受支持版本安装Red Hat Package Manager<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
@@ -12299,4 +12298,5 @@
   <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">存储固件包 2.27 的注意事项</block>
   <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 12.3文档</block>
+  <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">适用于Element演示节点12.3和12.5 VM的ESXi 6.7和7.0</block>
 </blocks>
