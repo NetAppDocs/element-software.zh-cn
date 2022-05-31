@@ -38,7 +38,7 @@ IMPORTANT: 如果其中一个容器未启动或运行，请勿使用 Podman 直�
 
 
 
-=== 使用 NetApp Hybrid Cloud Control UI 收集日志
+== 使用 NetApp Hybrid Cloud Control UI 收集日志
 
 您可以收集日志并发送给 NetApp 支持部门，以帮助诊断 SolidFire ESDS 集群的问题。
 
