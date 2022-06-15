@@ -5,7 +5,12 @@ summary: 您可以使用 NetApp Hybrid Control UI 为存储集群添加，删除
 keywords: netapp, element, storage cluster, hybrid cloud control, hcc, maintenance mode, enable, disable 
 ---
 = 使用 NetApp Hybrid Cloud Control 添加和管理存储集群
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

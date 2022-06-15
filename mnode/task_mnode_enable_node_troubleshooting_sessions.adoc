@@ -5,7 +5,12 @@ summary: 对于Element 12.5及更高版本、您可以在管理节点上启用sf
 keywords: netapp, sfreadonly, connect to support, support tunnel, rst, mnode, management node 
 ---
 = 使用SSH访问存储节点以进行基本故障排除
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

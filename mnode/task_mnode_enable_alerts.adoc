@@ -5,7 +5,12 @@ summary: 您不能配置设置来监控 SolidFire 全闪存存储系统上的警
 keywords: netapp, Element, management node, mnode, ui, alerts, alert monitoring 
 ---
 = 配置警报监控
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

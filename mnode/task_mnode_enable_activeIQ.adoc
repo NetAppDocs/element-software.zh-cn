@@ -5,7 +5,12 @@ summary: 您可以使用管理节点（ mNode ）为 SolidFire 全闪存存储�
 keywords: netapp, Element, api, enable, active iq, activeiq 
 ---
 = 启用 Active IQ 和 NetApp 监控
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

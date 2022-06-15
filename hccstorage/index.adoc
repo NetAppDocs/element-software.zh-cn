@@ -5,7 +5,12 @@ summary: 借助 NetApp SolidFire 全闪存存储，您可以使用 NetApp 混合
 keywords: netapp, element, cluster, element, account, user, volume, hybrid cloud control, hcc 
 ---
 = 使用 NetApp Hybrid Cloud Control 管理和监控存储
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

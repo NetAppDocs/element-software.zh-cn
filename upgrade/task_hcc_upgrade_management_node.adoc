@@ -5,7 +5,12 @@ summary: 在 NetApp SolidFire 存储系统升级过程中，您需要升级管�
 keywords: netapp, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5 
 ---
 = 升级管理节点
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

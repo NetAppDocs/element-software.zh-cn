@@ -5,7 +5,12 @@ summary: 在 NetApp SolidFire 系统升级过程中，您需要升级与存储�
 keywords: netapp, element, hcc, firmware, storage firmware 
 ---
 = 升级存储固件
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -5,7 +5,12 @@ summary: 您可以升级 SolidFire 存储系统的 VMware 组件，并执行其�
 keywords: netapp, solidfire, vsphere components, upgrade, vCenter, ESXi 
 ---
 = 使用适用于 vCenter Server 的 Element 插件升级适用于 NetApp SolidFire 存储系统的 vSphere 组件
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

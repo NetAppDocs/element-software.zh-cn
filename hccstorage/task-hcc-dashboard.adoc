@@ -5,7 +5,12 @@ summary: 您可以在 NetApp Hybrid Cloud Control Dashboard 上查看存储资�
 keywords: netapp, element, hcc, hybrid cloud control, storage, storage performance, capacity 
 ---
 = 在混合云控制信息板上监控存储资源
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

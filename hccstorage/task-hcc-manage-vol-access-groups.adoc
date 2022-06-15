@@ -5,7 +5,12 @@ summary: 了解如何添加新的卷访问组以使用 SolidFire 全闪存存储
 keywords: netapp, element, cluster, volume, access 
 ---
 = 创建和管理卷访问组
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

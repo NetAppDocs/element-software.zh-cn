@@ -5,7 +5,12 @@ summary: 如果集群使用代理服务器，则必须配置代理设置才能�
 keywords: netapp, Element, mnode, api, management node, add proxy, proxy server 
 ---
 = 配置代理服务器
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]

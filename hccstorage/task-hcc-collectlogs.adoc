@@ -5,7 +5,12 @@ summary: 您可以使用 NetApp Hybrid Cloud Control 从 Element 安装中收集
 keywords: netapp, element, logs, collection, troubleshooting, monitor 
 ---
 = 收集日志以进行故障排除
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
 [role="lead"]
