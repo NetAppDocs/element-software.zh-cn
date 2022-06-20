@@ -16,21 +16,21 @@ summary: 在存储集群上安装 SolidFire ESDS 后，您可以使用 Element U
 以下是指向各种存储管理任务内容的链接：
 
 * link:../storage/task_intro_use_basic_options_in_the_element_software_ui.html["使用 Element 软件 UI 中的基本选项"^]
-* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["使用用户帐户"^]
-* link:../storage/task_data_manage_volumes_work_with_volumes_task.html["使用卷"^]
+* link:../storage/task_data_manage_accounts_work_with_accounts_task.html["使用CHAP处理帐户"]
+* link:../storage/task_data_manage_volumes_work_with_volumes_task.html["使用卷"]
 +
 您还可以在此处找到有关将 QoS 策略应用于卷的信息。
 
-* link:../storage/concept_data_manage_vvol_work_virtual_volumes.html["使用虚拟卷"^]
-* link:../storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用卷访问组和启动程序"^]
-* link:../storage/task_data_protection_using_volume_snapshots.html["使用快照"^]
-* link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["开始使用外部密钥管理"^] _new ！ _
-* link:../storage/task_system_manage_key_set_up_external_key_management.html["设置外部密钥管理"^] _new ！ _
-* link:../storage/task_replication_perform_remote_replication_between_element_clusters.html["在集群之间执行远程复制"^]
-* link:../storage/task_data_protection_back_up_and_restore_volumes.html["备份和还原卷"^]
-* link:../api/index.html["使用 Element API 管理存储"^]
-* link:../storage/concept_system_monitoring_and_troubleshooting.html["对系统进行故障排除"^]
-* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件概述"]
+* link:../storage/concept_data_manage_vvol_work_virtual_volumes.html["使用虚拟卷"]
+* link:../storage/concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用卷访问组和启动程序"]
+* link:../storage/task_data_protection_using_volume_snapshots.html["使用快照"]
+* link:../storage/concept_system_manage_key_get_started_with_external_key_management.html["开始使用外部密钥管理"] _new ！ _
+* link:../storage/task_system_manage_key_set_up_external_key_management.html["设置外部密钥管理"] _new ！ _
+* link:../storage/task_replication_perform_remote_replication_between_element_clusters.html["在集群之间执行远程复制"]
+* link:../storage/task_data_protection_back_up_and_restore_volumes.html["备份和还原卷"]
+* link:../api/index.html["使用 Element API 管理存储"]
+* link:../storage/concept_system_monitoring_and_troubleshooting.html["对系统进行故障排除"]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件概述"^]
 +
 您可以从概述页面导航到特定任务。
 

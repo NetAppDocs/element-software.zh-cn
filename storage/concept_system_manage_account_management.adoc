@@ -1,0 +1,26 @@
+---
+permalink: storage/concept_system_manage_account_management.html 
+sidebar: sidebar 
+keywords: element, chap, cluster, accounts, administrator 
+summary: 您可以在Element UI中管理帐户。其中包括使用CHAP处理帐户以及管理集群管理员用户帐户。 
+---
+= 管理帐户
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Element UI中管理系统帐户。其中包括使用质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)处理帐户以及管理集群管理员用户帐户。
+
+* link:task_data_manage_accounts_work_with_accounts_task.html["使用CHAP处理帐户"]
+* link:concept_system_manage_manage_cluster_administrator_users.html["管理集群管理员用户帐户"]
+
+
+
+
+== 有关详细信息 ...
+
+* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
+
