@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: volume snapshot, backup operations, back up volume snapshot, cluster, object store 
 summary: 您可以使用集成备份功能备份卷快照。您可以将快照从 SolidFire 集群备份到外部对象存储或另一个 SolidFire 集群。将快照备份到外部对象存储时，必须与允许读 / 写操作的对象存储建立连接。 
 ---
-= 卷快照备份操作
+= 备份卷快照
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

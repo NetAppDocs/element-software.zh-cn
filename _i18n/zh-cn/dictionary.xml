@@ -3839,7 +3839,6 @@
   <block id="82dcb1ea44a19825adb5f55b7d89b9e8" category="paragraph">启用此操作模式后，所有 HTTPS 通信都将使用 FIPS 140-2 批准的密码。</block>
   <block id="5d43108a7f3f1bb62fb0046723092b8d" category="list-text"><block ref="5d43108a7f3f1bb62fb0046723092b8d" category="inline-xref-macro-rx"></block></block>
   <block id="c790184773e8ef26c5af49a38611a471" category="summary">您可以使用集成备份功能备份卷快照。您可以将快照从 SolidFire 集群备份到外部对象存储或另一个 SolidFire 集群。将快照备份到外部对象存储时，必须与允许读 / 写操作的对象存储建立连接。</block>
-  <block id="c967cc149224958942b374673d02980e" category="doc">卷快照备份操作</block>
   <block id="4e385daedad4a81e3776afbca9ea07a7" category="list-text"><block ref="4e385daedad4a81e3776afbca9ea07a7" category="inline-link-macro-rx"></block></block>
   <block id="3a50ce5f4085bd0f74405eb1c25f6cc9" category="list-text"><block ref="3a50ce5f4085bd0f74405eb1c25f6cc9" category="inline-link-macro-rx"></block></block>
   <block id="091f209abc9bb34dfb86fb2328780ca1" category="list-text"><block ref="091f209abc9bb34dfb86fb2328780ca1" category="inline-link-macro-rx"></block></block>
@@ -12307,4 +12306,5 @@
   <block id="dcfa4d00c50a08c56e2319fa3f3d1288" category="list-text"><block ref="dcfa4d00c50a08c56e2319fa3f3d1288" category="inline-link-macro-rx"></block></block>
   <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
   <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
+  <block id="324fcb27182f60b1051fad39c080b193" category="doc">备份卷快照</block>
 </blocks>

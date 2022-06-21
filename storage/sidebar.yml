@@ -222,7 +222,7 @@ entries:
         url: "/storage/task_data_protection_clone_a_volume_from_a_snapshot.html"
       - title: 将卷回滚到快照
         url: "/storage/task_data_protection_roll_back_a_volume_to_a_snapshot.html"
-      - title: 卷快照备份操作
+      - title: 备份卷快照
         url: "/storage/concept_data_protection_volume_snapshot_backup_operations.html"
         entries:
         - title: 将卷快照备份到 Amazon S3 对象存储
