@@ -15,7 +15,7 @@ summary: 开始之前，您可能希望了解安装和设置 NetApp Element 软�
 
 * link:task_post_deploy_access_the_element_software_user_interface.html["访问 Element 软件用户界面"]
 * link:../storage/task_post_deploy_configure_system_options.html["在部署后配置 SolidFire 系统选项"]
-* link:../storage/concept_system_manage_account_management.html["管理帐户"]
+* link:../storage/concept_system_manage_accounts_overview.html["管理帐户"]
 * link:../storage/concept_system_manage_system_management.html["管理您的系统"]
 * link:../storage/concept_data_manage_data_management.html["管理卷和虚拟卷"]
 * link:../storage/concept_data_protection.html["保护您的数据"]

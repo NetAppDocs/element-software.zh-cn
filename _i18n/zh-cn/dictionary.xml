@@ -3490,11 +3490,6 @@
   <block id="61cdc942423ae857cab50a88f5d96f28" category="list-text">在 * 编辑卷访问组 * 对话框的添加卷下，单击 * 附加卷 * 列表上的箭头。</block>
   <block id="de23c347c953e1b1b7d0a55759da7b30" category="list-text">从列表中选择要删除的卷，然后单击 * x * 图标从列表中删除该卷。</block>
   <block id="fa9af863a5c38bb09eda10cee4e97b6c" category="paragraph">您可以重复执行此步骤来删除更多卷。</block>
-  <block id="34fa21de6cec673be30516d925b1ef0a" category="summary">在 SolidFire 存储系统中，客户端可以通过用户帐户连接到节点上的卷。您还可以管理 SolidFire 存储系统的集群管理员帐户。</block>
-  <block id="4dc056b77b799b07e73a3c822af00828" category="paragraph">在 SolidFire 存储系统中，客户端可以通过用户帐户连接到节点上的卷。创建卷时，卷会分配给特定的用户帐户。您还可以管理 SolidFire 存储系统的集群管理员帐户。</block>
-  <block id="7e5784de66821e5068bc24c9a5c6d1d6" category="inline-link-macro">使用用户帐户</block>
-  <block id="f5b0d24b7d0469f0116c13fb8bcbb772" category="list-text"><block ref="f5b0d24b7d0469f0116c13fb8bcbb772" category="inline-link-macro-rx"></block></block>
-  <block id="093667bda42279d43524628d34f5580a" category="list-text"><block ref="093667bda42279d43524628d34f5580a" category="inline-link-macro-rx"></block></block>
   <block id="925b9e4a5e967e704fa574ff41dbb23a" category="summary">您可以启用支持访问，以便临时允许 NetApp 支持人员通过 SSH 访问存储节点以进行故障排除。</block>
   <block id="3cb626bc3d43e80335c0553cc6790891" category="paragraph">要更改支持访问权限，您必须具有集群管理员权限。</block>
   <block id="182969fe3381ded6f453dee920d37c9f" category="list-text">在启用 / 禁用支持访问部分中，输入要允许支持人员访问的持续时间（以小时为单位）。</block>
@@ -12285,12 +12280,8 @@
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">存储固件包2.150注意事项</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
-  <block id="372092ac59d2946fc3d092b0e44df82a" category="list-text"><block ref="372092ac59d2946fc3d092b0e44df82a" category="inline-link-macro-rx"></block></block>
-  <block id="26bde7cf1d647a00812ba293427f218c" category="summary">您可以在Element UI中管理帐户。其中包括使用CHAP处理帐户以及管理集群管理员用户帐户。</block>
-  <block id="cb7c12b1424a0e6b1be1defaded53de8" category="paragraph">您可以在Element UI中管理系统帐户。其中包括使用质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)处理帐户以及管理集群管理员用户帐户。</block>
   <block id="0de8022e52b232dc0912129174158b7b" category="list-text"><block ref="0de8022e52b232dc0912129174158b7b" category="inline-link-macro-rx"></block></block>
   <block id="93b99f5d3cef7af59adc0f899dddf1e1" category="list-text"><block ref="93b99f5d3cef7af59adc0f899dddf1e1" category="inline-link-macro-rx"></block></block>
-  <block id="5ca104d2b413ecd234583f40c3a808b8" category="list-text"><block ref="5ca104d2b413ecd234583f40c3a808b8" category="inline-link-macro-rx"></block></block>
   <block id="7e33105c99e1040a1b09764052c96bf6" category="list-text"><block ref="7e33105c99e1040a1b09764052c96bf6" category="inline-xref-macro-rx"></block></block>
   <block id="b9d025f755210db0c30935ae2494f820" category="list-text"><block ref="b9d025f755210db0c30935ae2494f820" category="inline-xref-macro-rx"></block></block>
   <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
@@ -12307,4 +12298,8 @@
   <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
   <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
   <block id="324fcb27182f60b1051fad39c080b193" category="doc">备份卷快照</block>
+  <block id="cd7c96dd340046e8b1a1ed84b73227c0" category="summary">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。您还可以管理 SolidFire 存储系统的集群管理员帐户。</block>
+  <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。创建卷时、卷会分配给特定帐户。您还可以管理 SolidFire 存储系统的集群管理员帐户。</block>
+  <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
+  <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
 </blocks>

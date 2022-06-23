@@ -21,7 +21,7 @@ Element 是 SolidFire 集群的核心存储操作系统。Element 软件可在�
 * link:task_post_deploy_configure_system_options.html["在部署后配置 SolidFire 系统选项"]
 * link:concept_upgrade_storage_components.html["升级存储系统组件"]
 * link:task_intro_use_basic_options_in_the_element_software_ui.html["使用 Element 软件 UI 中的基本选项"]
-* link:concept_system_manage_account_management.html["管理帐户"]
+* link:concept_system_manage_accounts_overview.html["管理帐户"]
 * link:concept_system_manage_system_management.html["管理您的系统"]
 * link:concept_data_manage_data_management.html["管理卷和虚拟卷"]
 * link:concept_data_protection.html["保护您的数据"]
