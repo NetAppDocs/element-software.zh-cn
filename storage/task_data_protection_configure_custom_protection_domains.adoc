@@ -56,5 +56,6 @@ CAUTION: 在应用更改之前，请确保了解您的节点和机箱布局，�
 
 == 了解更多信息
 
-link:concept_intro_custom_protection_domains.html["自定义保护域"^]
-link:../api/index.html["使用 Element API 管理存储"^]
+* link:../concepts/concept_solidfire_concepts_data_protection.html#custom_pd["自定义保护域"^]
+* link:../api/index.html["使用 Element API 管理存储"^]
+

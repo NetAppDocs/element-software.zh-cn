@@ -11126,25 +11126,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
-  <block id="eb3c130e264688a3a29d73ad802f6f63" category="paragraph">通知文件提供了有关第三方版权和许可证的信息。</block>
-  <block id="fbcc1cb0e2a70eff701965a5f3e0d76b" category="inline-link-macro">Ember OS 12.3 注意事项</block>
-  <block id="fd9a4be3d806a4349b944f9bfba66d2f" category="list-text"><block ref="fd9a4be3d806a4349b944f9bfba66d2f" category="inline-link-macro-rx"></block></block>
-  <block id="43551c29e9ac231743a69c265f5ef85c" category="inline-link-macro">管理节点 12.3 通知</block>
-  <block id="75a6ef9f6db80c36c759ab0d75ce6a00" category="list-text"><block ref="75a6ef9f6db80c36c759ab0d75ce6a00" category="inline-link-macro-rx"></block></block>
-  <block id="61cd5267ad49d97d8c6a8799b4590b34" category="inline-link-macro">管理服务声明 2.18</block>
-  <block id="a32fc98c3fcd85bfbaec869e06369054" category="list-text"><block ref="a32fc98c3fcd85bfbaec869e06369054" category="inline-link-macro-rx"></block></block>
-  <block id="6a277dcdcf3e292a520228548566382d" category="inline-link-macro">管理服务注意事项 2.17.56</block>
-  <block id="a13f8370935ba66df60b71ed88c770a4" category="list-text"><block ref="a13f8370935ba66df60b71ed88c770a4" category="inline-link-macro-rx"></block></block>
-  <block id="a7f3524da37a8fea65e29d2411b8d139" category="inline-link-macro">管理服务注意事项 2.17.52</block>
-  <block id="c4b0c1a013a1ecb5b81326f9c346a81a" category="list-text"><block ref="c4b0c1a013a1ecb5b81326f9c346a81a" category="inline-link-macro-rx"></block></block>
-  <block id="0ee51fae49898e7b795797b58419f657" category="inline-link-macro">关于管理服务的通知 2.16</block>
-  <block id="72f5ccb1ed4b7e177d8ae3b465eef55a" category="list-text"><block ref="72f5ccb1ed4b7e177d8ae3b465eef55a" category="inline-link-macro-rx"></block></block>
-  <block id="1dfa4a8c715814e4b02560de4804ce2d" category="inline-link-macro">管理服务声明 2.14</block>
-  <block id="508fdda0cae73a3702d387c360f820fa" category="list-text"><block ref="508fdda0cae73a3702d387c360f820fa" category="inline-link-macro-rx"></block></block>
-  <block id="b299d2f02ed62ade4c836e18fedda400" category="inline-link-macro">管理服务通知 2.13</block>
-  <block id="4c906abe4e1aa56f6ecc4fc5bb0dac85" category="list-text"><block ref="4c906abe4e1aa56f6ecc4fc5bb0dac85" category="inline-link-macro-rx"></block></block>
-  <block id="a6e60f5446d407aa42b1293e56f2cb42" category="inline-link-macro">NetApp SolidFire 企业 SDS 通知</block>
-  <block id="b96897a2164001e55b7cb0f0b7883d94" category="list-text"><block ref="b96897a2164001e55b7cb0f0b7883d94" category="inline-link-macro-rx"></block></block>
   <block id="2e5993f9d970daebf225967bb1e45acc" category="inline-link-macro">存储固件包 2.99.2 注意事项</block>
   <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
@@ -11194,8 +11175,6 @@
   <block id="96ba39f59d895d814d38db0ef8c583fd" category="list-text">容错：存储集群具有足够的可用容量，可防止其中一个自定义保护域发生故障后数据丢失。</block>
   <block id="e453e93ae1af3155f2774b6b529f8ed9" category="list-text">故障恢复能力：存储集群具有足够的可用容量，可在其中一个自定义保护域发生故障后自行修复。修复过程完成后，如果其他域发生故障，集群将受到保护，不会丢失数据。</block>
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">如果分配了多个自定义保护域，则每个子系统将为单独的自定义保护域分配重复项。如果无法做到这一点，则会还原为将重复项分配给不同的节点。每个子系统（例如箱，扇区，协议端点提供程序和集合）都独立执行此操作。</block>
-  <block id="bd77f2754e5c1c371ba7793ef5fe29b4" category="list-text"><block ref="6702e5c49e3601276668962e5917edde" category="inline-link-macro-rx"></block> - 显示每个节点所在的机箱和自定义保护域。</block>
-  <block id="1508ab090b8072419802560c24117082" category="list-text"><block ref="c488c3c5d50768a853ca2b4d12fca704" category="inline-link-macro-rx"></block> - 用于为每个节点分配自定义保护域。</block>
   <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解决方法：</block>
   <block id="0f7229b82509dba67fd326002f94b558" category="inline-link-macro">更换 HPE DL380 的驱动器</block>
   <block id="be51a55dd3e1d87adc0cfa8354012eb4" category="list-text"><block ref="be51a55dd3e1d87adc0cfa8354012eb4" category="inline-link-macro-rx"></block></block>
@@ -11212,10 +11191,6 @@
   <block id="08a481e768a7e6b16029a890ff83c01c" category="list-text">使用 SSH 连接到从集群中删除的节点。</block>
   <block id="97536cbfae1b231373bcd97b10deb15c" category="paragraph">目前在 ESDS 上支持的所有平台均支持动态节点评级： DL360 ， DL380 和 R640 。</block>
   <block id="24bc1a938f18ccc15e42f585341c44d5" category="paragraph">对于第一版动态节点评级，任何节点的最大 IOPS 评级均为 10 万次 IOPS 。</block>
-  <block id="24e9da091f15f10b8da793e19b340302" category="inline-link-macro">Ember OS 12.3.1 注意事项</block>
-  <block id="53b5781a15ca0bf5e3350b448255d082" category="list-text"><block ref="53b5781a15ca0bf5e3350b448255d082" category="inline-link-macro-rx"></block></block>
-  <block id="26c74f7a8ac6a7c8cdb0def0e876263d" category="inline-link-macro">管理节点 12.3.1 注意事项</block>
-  <block id="047152327178a19c354a2a92281da90f" category="list-text"><block ref="047152327178a19c354a2a92281da90f" category="inline-link-macro-rx"></block></block>
   <block id="c099da1e7198d2f1407d45eef0d02a48" category="inline-link">Element 演示节点</block>
   <block id="fae634e54f6a24eca87a92f1d78df928" category="paragraph"><block ref="e1baf480e2c2d0517c80b4748e50de89" category="inline-link-rx"></block> 是 Element 软件的 VMware 虚拟机（ VM ）版本，可轻松演示 NetApp HCI 和 SolidFire 产品的许多关键存储功能。开发人员可以通过演示节点根据 Element API 编写代码，而无需使用物理硬件。它会打包为 OVA 文件，以便于 VMware 部署。</block>
   <block id="baae0a76ecbb6b197350ee0618576960" category="inline-link">Element 演示节点下载页面（需要登录）</block>
@@ -12206,9 +12181,6 @@
   <block id="5c2dfac41e0fdae2b2af5a185bd13a44" category="list-text">*二级节点ID*：此卷的二级节点列表。在过渡状态期间可以是多个值、例如二级节点更改、但通常只有一个值。</block>
   <block id="92cbb89e687486d046f0af2031e1de69" category="list-text">* QoS限制*：确定卷是否因主存储节点上的高负载而受到限制。</block>
   <block id="16deeb1542b48d5c3cc48574bd812c77" category="list-text">支持管理员</block>
-  <block id="1c99ab1d6f1bd835e71ce34f57021bf2" category="summary">您可以定义自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。</block>
-  <block id="5973fb594f77dc8b3479a7d06ec53911" category="paragraph">您可以定义与特定机箱和节点布局匹配的自定义保护域布局。</block>
-  <block id="6e599ec445b85acc8e9d5e5e62c0612c" category="paragraph">您可以使用 Element UI <block ref="207ccb2cb37becc35a7f5fde670b328f" category="inline-link-macro-rx"></block>或者，您也可以使用以下 API 方法：</block>
   <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="74fdf94991a3d3c1590a208535b101cc" category="list-text">【csum_event】* cSumEvent*</block>
   <block id="2c33c7444ec9022ae43511db98615b15" category="paragraph">与端到端校验和验证期间检测到校验和不匹配相关的事件。</block>
@@ -12236,8 +12208,6 @@
   <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout 失败：保护域类型 " 自定义 " 拆分保护域类型 " 机箱 " 。</block>
   <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">多节点机箱中的节点分配的保护域与机箱中的其他节点不同。</block>
   <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">确保为机箱中的所有节点分配相同的保护域。</block>
-  <block id="29a6f38cbca29e0f3bdeecf96eb0b27a" category="paragraph"><block ref="b58e8d039996e87c7075e998e2dbe5e4" category="inline-link-macro-rx"></block>
-<block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升级适用于Element软件12.5的NetApp SolidFire 全闪存存储系统</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">配置自定义保护域</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">启动远程 NetApp 支持会话</block>
@@ -12302,4 +12272,5 @@
   <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。创建卷时、卷会分配给特定帐户。您还可以管理 SolidFire 存储系统的集群管理员帐户。</block>
   <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
   <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
+  <block id="d42c0305f510d1b93b9961f158db9d17" category="list-text"><block ref="d42c0305f510d1b93b9961f158db9d17" category="inline-link-macro-rx"></block></block>
 </blocks>
