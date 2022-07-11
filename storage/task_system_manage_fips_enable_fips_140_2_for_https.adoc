@@ -13,7 +13,7 @@ summary: 您可以使用 EnableFeature API 方法为 HTTPS 通信启用 FIPS 140
 [role="lead"]
 您可以使用 EnableFeature API 方法为 HTTPS 通信启用 FIPS 140-2 操作模式。
 
-借助 NetApp Element 软件，您可以选择在集群上启用联邦信息处理标准（ Federal Information Processing Standards ， FIPS ） 140-2 操作模式。启用此模式将激活 NetApp 加密安全模块（ NetApp Cryptographic Security Module ， NCSM ），并在通过 HTTPS 与 NetApp Element UI 和 API 进行所有通信时采用 FIPS 140-2 1 级认证加密。
+借助 NetApp Element 软件，您可以选择在集群上启用联邦信息处理标准（ Federal Information Processing Standards ， FIPS ） 140-2 操作模式。启用此模式将激活NetApp加密安全模块(NetApp Cryptographic Security Module、NCSM)、并对通过HTTPS与NetApp Element UI和API进行的所有通信使用FIPS 140-2 1级认证加密。
 
 
 IMPORTANT: 启用 FIPS 140-2 模式后，无法将其禁用。启用 FIPS 140-2 模式后，集群中的每个节点都会重新启动并运行自检，以确保 NCSM 已正确启用并在 FIPS 140-2 认证模式下运行。这会导致集群上的管理和存储连接中断。您应仔细规划，并且只有在您的环境需要此模式提供的加密机制时才启用此模式。

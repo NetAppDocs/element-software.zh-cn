@@ -13,7 +13,7 @@ summary: 运行 NetApp Element 软件的系统支持 SnapMirror 功能，可使�
 [role="lead"]
 运行 NetApp Element 软件的系统支持 SnapMirror 功能，可使用 NetApp ONTAP 系统复制和还原快照。
 
-运行 Element 的系统可以直接与 ONTAP 系统 9.3 或更高版本上的 SnapMirror 进行通信。NetAppElement API 提供了在集群，卷和快照上启用 SnapMirror 功能的方法。此外， Element UI 还提供了管理 Element 软件和 ONTAP 系统之间的 SnapMirror 关系所需的所有功能。
+运行 Element 的系统可以直接与 ONTAP 系统 9.3 或更高版本上的 SnapMirror 进行通信。NetApp Element API提供了在集群、卷和快照上启用SnapMirror功能的方法。此外， Element UI 还提供了管理 Element 软件和 ONTAP 系统之间的 SnapMirror 关系所需的所有功能。
 
 您可以在特定使用情形下将 ONTAP 发起的卷复制到 Element 卷，但功能有限。有关详细信息，请参见 ONTAP 文档。
 

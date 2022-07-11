@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html 
 sidebar: sidebar 
 keywords: replication, snapmirror, data protection 
-summary: 您可以从 NetAppElement UI 中的数据保护选项卡创建 SnapMirror 关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。 
+summary: 您可以从NetApp Element UI中的数据保护选项卡创建SnapMirror关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。 
 ---
 = 在 Element 和 ONTAP 集群之间使用 SnapMirror 复制
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以从 NetAppElement UI 中的数据保护选项卡创建 SnapMir
 
 
 [role="lead"]
-您可以从 NetAppElement UI 中的数据保护选项卡创建 SnapMirror 关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。
+您可以从NetApp Element UI中的数据保护选项卡创建SnapMirror关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。
 
 NetApp Element 软件和 ONTAP 集群之间的 SnapMirror 复制不支持 IPv6 。
 

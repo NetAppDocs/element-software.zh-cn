@@ -1272,7 +1272,6 @@
   <block id="83a1a5ceb5398a01a54e7effead0e886" category="admonition">由于 NetApp Element 帐户 ID 会自动创建并分配给存储容器，因此无需手动创建帐户。</block>
   <block id="5c52fea0e83d9a95a1c098c60ff6b58d" category="section-title">查看存储容器详细信息</block>
   <block id="c24adc0881381170eed28052264ee784" category="paragraph">在 "VVols" 选项卡的 "Storage Containers" 页面上，您可以查看集群上所有活动存储容器的信息。</block>
-  <block id="9a14ff246991ca75a508eaad3a696a9c" category="list-text">* 帐户 ID* ：与存储容器关联的 NetAppElement 帐户的 ID 。</block>
   <block id="bb9c607dcd3a4bd18589c06ac12a84a4" category="list-text">* 名称 * ：存储容器的名称。</block>
   <block id="95aeb213f6e0232dfebbeef4d3fabdbb" category="list-text">* 状态 * ：存储容器的状态。可能值：</block>
   <block id="a507855536939dbee1cb704ccef400de" category="list-text">Active ：存储容器正在使用中。</block>
@@ -1328,7 +1327,6 @@
   <block id="8a6761bcdd39e4137842897ab361e087" category="paragraph">系统将显示卷的详细信息以及性能图形。</block>
   <block id="50a6bc502f172a89b4004b2bb626e0fe" category="inline-xref-macro">卷性能详细信息</block>
   <block id="86526640373537e5f89d0533e8d4949f" category="paragraph"><block ref="86526640373537e5f89d0533e8d4949f" category="inline-xref-macro-rx"></block></block>
-  <block id="570aab436b512498fd7406a4088e8c43" category="summary">Element 系统使用 NetAppElement API 作为其特性和功能的基础。使用 Element UI ，您可以在使用界面时查看系统上各种类型的实时 API 活动。通过 API 日志，您可以查看用户发起的后台系统 API 活动，以及在当前查看的页面上进行的 API 调用。</block>
   <block id="7c35c8728e14ba23965505592c24e8dc" category="doc">查看 API 活动</block>
   <block id="1e022b9ed0afb421ad5cb475bd23e7c5" category="paragraph">Element 系统使用 NetApp Element API 作为其特性和功能的基础。使用 Element UI ，您可以在使用界面时查看系统上各种类型的实时 API 活动。通过 API 日志，您可以查看用户发起的后台系统 API 活动，以及在当前查看的页面上进行的 API 调用。</block>
   <block id="3c7b529bb5fc2bcf9519f64a68e3cf4e" category="paragraph">您可以使用 API 日志确定用于某些任务的 API 方法，并了解如何使用 API 方法和对象构建自定义应用程序。</block>
@@ -1902,7 +1900,6 @@
   <block id="8e898ca379b1b894ff6ef3d5b88b0a0d" category="list-text">* 可选： * 根据需要添加更多卷。</block>
   <block id="a5b2d4de2841c516a54a4c4b3db587b1" category="summary">运行 NetApp Element 软件的系统支持 SnapMirror 功能，可使用 NetApp ONTAP 系统复制和还原快照。</block>
   <block id="908041e9f7dbdfd6dd76e9617f0b3454" category="doc">SnapMirror 概述</block>
-  <block id="265f031cee0ea04d5f3ef759b07f4907" category="paragraph">运行 Element 的系统可以直接与 ONTAP 系统 9.3 或更高版本上的 SnapMirror 进行通信。NetAppElement API 提供了在集群，卷和快照上启用 SnapMirror 功能的方法。此外， Element UI 还提供了管理 Element 软件和 ONTAP 系统之间的 SnapMirror 关系所需的所有功能。</block>
   <block id="5a5a2d3bbdb5fecdea9055d444ee32af" category="paragraph">您可以在特定使用情形下将 ONTAP 发起的卷复制到 Element 卷，但功能有限。有关详细信息，请参见 ONTAP 文档。</block>
   <block id="49c8c279b60ab1926e498dd27ba47ce7" category="inline-link">在 Element 软件和 ONTAP 之间进行复制</block>
   <block id="e01755805869b3d9cedc19fff7c5daae" category="paragraph"><block ref="e01755805869b3d9cedc19fff7c5daae" category="inline-link-rx"></block></block>
@@ -2345,7 +2342,6 @@
   <block id="dfd6aa64345e38d761de88d09eb69e74" category="list-text">输入名称和电子邮件地址。</block>
   <block id="3ea7ea212cd72a9932f88450a33398e2" category="list-text">选中此复选框可包含有关当前环境的数据。</block>
   <block id="4b5d2dd70af718ebe67bfea5b43d8667" category="list-text">单击 * 提交 * 。</block>
-  <block id="5bb220f689bb9c696c552f6b16bf7a7b" category="summary">您可以使用 NetAppElement UI 重新同步原始源卷并执行故障恢复。此操作步骤适用场景情形下，原始源卷仍存在。</block>
   <block id="269b111274fdfcab7832c8477a7bfa81" category="list-text">在 Element UI 中，找到为执行故障转移而中断的关系。</block>
   <block id="dfee99faea9f8bafc9217380d561c98e" category="list-text">单击 "Actions" 图标，然后单击 * 反向重新同步 * 。</block>
   <block id="f5143a520c1fda122c346660fb8e2183" category="admonition">反向重新同步操作会创建一个新关系，在此关系中，初始源卷和目标卷的角色将发生反转（这会导致两个关系，因为初始关系仍然存在）。在反向重新同步操作中，原始目标卷中的任何新数据都会传输到原始源卷。您可以继续访问目标端上的活动卷并向其写入数据，但在重定向回初始主卷之前，您需要断开与源卷连接的所有主机并执行 SnapMirror 更新。</block>
@@ -2854,7 +2850,6 @@
   <block id="000efedbd91c1dc90eeed1eed2ed0d38" category="list-text">在显示的菜单中，选择 * 从组 Snapshot 克隆卷 * 。</block>
   <block id="85f25e517be971387868da433ef32753" category="list-text">在 * 从组 Snapshot 克隆卷 * 对话框中输入 * 新卷名称前缀 * 。</block>
   <block id="7deb6510407fdccfef5ba10c1a66315f" category="paragraph">前缀将应用于从组快照创建的所有卷。</block>
-  <block id="7b5a00f2f339a450a57bb4aaa1f60371" category="summary">您必须先在 NetAppElement UI 中创建 SnapMirror 端点，然后才能创建关系。</block>
   <block id="dedd3700704f998555c9779c076f3d9c" category="doc">创建 SnapMirror 端点</block>
   <block id="47f8bb61ca87b0a38661fa7bfdece7b4" category="paragraph">SnapMirror 端点是指用作运行 Element 软件的集群的复制目标的 ONTAP 集群。在创建 SnapMirror 关系之前，请先创建 SnapMirror 端点。</block>
   <block id="4720a2d6ded47a6e3a7c30b7a024eb83" category="paragraph">您最多可以在运行 Element 软件的存储集群上创建和管理四个 SnapMirror 端点。</block>
@@ -2994,7 +2989,6 @@
   <block id="d4b87b373b7fe0e0d009a6cc8ea3d3f9" category="list-text"><block ref="d4b87b373b7fe0e0d009a6cc8ea3d3f9" category="inline-xref-macro-rx"></block></block>
   <block id="f6e1cbdb2c7e86d550e022623d7c9169" category="summary">您可以使用 NetApp Element API 更改集群中存储节点的默认 SSL 证书和专用密钥。</block>
   <block id="bbe65836a52825bc510aa92a420d59bb" category="doc">更改 Element 软件的默认 SSL 证书</block>
-  <block id="443d95dd305b59017ca1b34a7df3d4ac" category="paragraph">您可以使用 NetAppElement API 更改集群中存储节点的默认 SSL 证书和专用密钥。</block>
   <block id="1aa8b758f81e4b362f8fc94cd4c2a3ba" category="paragraph">创建 NetApp Element 软件集群时，集群会创建一个唯一的自签名安全套接字层（ SSL ）证书和专用密钥，用于通过 Element UI ，每节点 UI 或 API 进行所有 HTTPS 通信。Element 软件支持自签名证书以及由可信证书颁发机构（ CA ）颁发和验证的证书。</block>
   <block id="774ce4e623f683d68865c30ea0ac37fa" category="paragraph">您可以使用以下 API 方法获取有关默认 SSL 证书的详细信息并进行更改。</block>
   <block id="5a1085897e38e4e51b92668061c6497c" category="paragraph">有关每种方法的信息，请参见 <block ref="27df1ddfd415d14d906f38bd54bde22c" category="inline-link-macro-rx"></block>。</block>
@@ -3669,7 +3663,6 @@
   <block id="f7ea74ec9eb772b005ca505f7e3152dc" category="list-text"><block ref="f7ea74ec9eb772b005ca505f7e3152dc" category="inline-xref-macro-rx"></block></block>
   <block id="7ebbb13946c9fffd26a7b13e6398716f" category="list-text"><block ref="7ebbb13946c9fffd26a7b13e6398716f" category="inline-xref-macro-rx"></block></block>
   <block id="07247ae99141cc08cff6254d470a39e4" category="list-text"><block ref="07247ae99141cc08cff6254d470a39e4" category="inline-xref-macro-rx"></block></block>
-  <block id="0b3db31a78382ab0be6cb2c1c708acfa" category="summary">您可以使用 NetAppElement UI 重新同步原始源卷并执行故障恢复。本节介绍了初始源卷已丢失但初始集群仍完好的适用场景情形。有关如何还原到新集群的说明，请参见 NetApp 支持站点上的文档。</block>
   <block id="42d57b6f08f8ad59237283315e687c79" category="list-text">Element 卷和 ONTAP 卷之间的复制关系已断开。</block>
   <block id="7a3a43b13837f525a81135347991edaf" category="list-text">Element 卷已丢失，无法恢复。</block>
   <block id="500be7b88a1dd1b15fded97d1897c173" category="list-text">原始卷名称显示为未找到。</block>
@@ -3737,7 +3730,6 @@
   <block id="7a54e861e189a7ac7a4a7568eb30405c" category="list-text">选择计划类型，然后从提供的选项中设置计划。</block>
   <block id="6a534c07140abc28755f6ee21454dcdf" category="list-text">* 可选： * 在 * 新快照名称 * 字段中输入新快照的名称。</block>
   <block id="7d6c710717186b2ae9b3650d85162d63" category="list-text">要设置快照的保留，请选择以下选项：</block>
-  <block id="7b610931ca8d2eeb0a73a56e2e8f50f1" category="summary">您必须在 NetAppElement UI 中创建 SnapMirror 关系。</block>
   <block id="2de1d87763849258fb54f9bb79e65283" category="doc">创建 SnapMirror 关系</block>
   <block id="507526c658246388ad3ac5ab8feb0b16" category="admonition">如果某个卷尚未启用 SnapMirror ，而您选择从 Element UI 创建关系，则该卷会自动启用 SnapMirror 。</block>
   <block id="d0d72af3850aa3c7f23bae5777534059" category="paragraph">已在卷上启用 SnapMirror 。</block>
@@ -3827,7 +3819,6 @@
   <block id="cf2ff9b7ea3eb3bce319cc91a4b72f83" category="paragraph">删除多个启动程序</block>
   <block id="6782e1f5a9c96fd48a0546b49ae6ef97" category="list-text">选中要删除的启动程序旁边的复选框。</block>
   <block id="e7eb95bedcf0e5a384949274771b9090" category="summary">您可以使用 EnableFeature API 方法为 HTTPS 通信启用 FIPS 140-2 操作模式。</block>
-  <block id="f7b1c0a6c1bbdeeb75abbfb1e3471656" category="paragraph">借助 NetApp Element 软件，您可以选择在集群上启用联邦信息处理标准（ Federal Information Processing Standards ， FIPS ） 140-2 操作模式。启用此模式将激活 NetApp 加密安全模块（ NetApp Cryptographic Security Module ， NCSM ），并在通过 HTTPS 与 NetApp Element UI 和 API 进行所有通信时采用 FIPS 140-2 1 级认证加密。</block>
   <block id="28117dac6dae3b2926b3fa3daa54c622" category="admonition">启用 FIPS 140-2 模式后，无法将其禁用。启用 FIPS 140-2 模式后，集群中的每个节点都会重新启动并运行自检，以确保 NCSM 已正确启用并在 FIPS 140-2 认证模式下运行。这会导致集群上的管理和存储连接中断。您应仔细规划，并且只有在您的环境需要此模式提供的加密机制时才启用此模式。</block>
   <block id="5f29c6b789d473ccf8c4eab2ed0331b5" category="paragraph">有关详细信息，请参见 Element API 信息。</block>
   <block id="27f7170bd4fd080bb623675efbd52303" category="paragraph">以下是用于启用 FIPS 的 API 请求示例：</block>
@@ -3957,7 +3948,6 @@
   <block id="ce8f7dd1608dc67c9404ff17eac605a7" category="list-text">* 卷 *</block>
   <block id="7bb6651b24ac622589ee6a2bece471c0" category="paragraph">显示使用此策略的卷数。此数字链接到已应用此策略的卷表。</block>
   <block id="61e4de56f3e5ad1651eba1f85e759c1c" category="summary">每个节点都包含一个或多个物理驱动器，用于存储集群的部分数据。成功将驱动器添加到集群后，集群将利用驱动器的容量和性能。您可以使用 Element UI 管理驱动器。</block>
-  <block id="190cdc01f7fb56224ceac8d08d754e74" category="summary">您必须通过 NetAppElement UI 在集群级别手动启用 SnapMirror 功能。默认情况下，系统随附的 SnapMirror 功能处于禁用状态，并且在新安装或升级过程中不会自动启用此功能。启用 SnapMirror 功能是一次性配置任务。</block>
   <block id="8c6deb05dad76c6d98756a12280faf11" category="doc">在集群上启用 SnapMirror</block>
   <block id="c2ced3365f4afea26203cb8baf8d5496" category="paragraph">只能为运行 Element 软件并与 NetApp ONTAP 系统上的卷结合使用的集群启用 SnapMirror 。只有当集群已连接并可与 NetApp ONTAP 卷结合使用时，才应启用 SnapMirror 功能。</block>
   <block id="1ad412799aee12c3b2a515a4b2c82ddc" category="paragraph">存储集群必须运行 NetApp Element 软件。</block>
@@ -4206,7 +4196,6 @@
   <block id="d80cd8fa95af20a6db70c7b630fec9d5" category="list-text"><block ref="d80cd8fa95af20a6db70c7b630fec9d5" category="inline-link-macro-rx"></block></block>
   <block id="00d9b65b0278a7c0902cd4d38ca0db7d" category="list-text"><block ref="00d9b65b0278a7c0902cd4d38ca0db7d" category="inline-link-macro-rx"></block></block>
   <block id="a46b2e9e11746e7af42a228a42b55c2a" category="list-text"><block ref="a46b2e9e11746e7af42a228a42b55c2a" category="inline-link-macro-rx"></block></block>
-  <block id="a400e22973320013f60a0fa177f3e08a" category="summary">您可以从 NetAppElement UI 中的数据保护选项卡创建 SnapMirror 关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。</block>
   <block id="535a1bef8214ea6639d284226cee5417" category="paragraph">NetApp Element 软件和 ONTAP 集群之间的 SnapMirror 复制不支持 IPv6 。</block>
   <block id="cff1ba82911704030dd8ccc8f2c0c6c0" category="inline-link">NetApp 视频：适用于 NetApp HCI 和 Element 软件的 SnapMirror</block>
   <block id="248c4c4df12448050266854cd21cd105" category="paragraph"><block ref="248c4c4df12448050266854cd21cd105" category="inline-link-rx"></block></block>
@@ -12273,4 +12262,12 @@
   <block id="f22f8c5563a22eebf5e40a4e6776b17e" category="list-text"><block ref="f22f8c5563a22eebf5e40a4e6776b17e" category="inline-link-macro-rx"></block></block>
   <block id="270743fb35c053386e4a4cdf6792cc48" category="list-text"><block ref="270743fb35c053386e4a4cdf6792cc48" category="inline-link-macro-rx"></block></block>
   <block id="d42c0305f510d1b93b9961f158db9d17" category="list-text"><block ref="d42c0305f510d1b93b9961f158db9d17" category="inline-link-macro-rx"></block></block>
+  <block id="b993f1dfdbc58279c2f9905a87a5d1f9" category="summary">您可以使用NetApp Element UI重新同步原始源卷并执行故障恢复。此操作步骤适用场景情形下，原始源卷仍存在。</block>
+  <block id="a9e1805646cc4c8c63ca09ebfe9a934f" category="summary">您必须先在NetApp Element UI中创建SnapMirror端点、然后才能创建关系。</block>
+  <block id="e132a123dcc09df973758d5a0e1b3ecc" category="paragraph">运行 Element 的系统可以直接与 ONTAP 系统 9.3 或更高版本上的 SnapMirror 进行通信。NetApp Element API提供了在集群、卷和快照上启用SnapMirror功能的方法。此外， Element UI 还提供了管理 Element 软件和 ONTAP 系统之间的 SnapMirror 关系所需的所有功能。</block>
+  <block id="143d30e05d618ff708914d3e2d71e227" category="summary">您可以使用NetApp Element UI重新同步原始源卷并执行故障恢复。本节介绍了初始源卷已丢失但初始集群仍完好的适用场景情形。有关如何还原到新集群的说明，请参见 NetApp 支持站点上的文档。</block>
+  <block id="fabd7e443e902f1444baa0a8705c8f97" category="summary">您必须通过NetApp Element UI在集群级别手动启用SnapMirror功能。默认情况下，系统随附的 SnapMirror 功能处于禁用状态，并且在新安装或升级过程中不会自动启用此功能。启用 SnapMirror 功能是一次性配置任务。</block>
+  <block id="f221d4619622735ba1922f6893d26f19" category="summary">您必须在NetApp Element UI中创建SnapMirror关系。</block>
+  <block id="bab67863e0374777af0d17961d5b365a" category="paragraph">借助 NetApp Element 软件，您可以选择在集群上启用联邦信息处理标准（ Federal Information Processing Standards ， FIPS ） 140-2 操作模式。启用此模式将激活NetApp加密安全模块(NetApp Cryptographic Security Module、NCSM)、并对通过HTTPS与NetApp Element UI和API进行的所有通信使用FIPS 140-2 1级认证加密。</block>
+  <block id="549a916860c9d8029a7326d1bc29de0f" category="summary">您可以从NetApp Element UI中的数据保护选项卡创建SnapMirror关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。</block>
 </blocks>

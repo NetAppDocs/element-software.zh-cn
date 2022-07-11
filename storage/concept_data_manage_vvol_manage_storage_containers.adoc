@@ -52,7 +52,7 @@ NOTE: 由于 NetApp Element 帐户 ID 会自动创建并分配给存储容器，
 
 在 "VVols" 选项卡的 "Storage Containers" 页面上，您可以查看集群上所有活动存储容器的信息。
 
-* * 帐户 ID* ：与存储容器关联的 NetAppElement 帐户的 ID 。
+* * 帐户 ID* ：与存储容器关联的 NetApp Element 帐户的 ID 。
 * * 名称 * ：存储容器的名称。
 * * 状态 * ：存储容器的状态。可能值：
 +

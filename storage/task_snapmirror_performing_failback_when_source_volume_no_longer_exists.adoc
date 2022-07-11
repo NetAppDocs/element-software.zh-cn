@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_performing_failback_when_source_volume_no_longer_exists.html 
 sidebar: sidebar 
 keywords: failback, perform, source volume, snapmirror, dr, disaster recovery 
-summary: 您可以使用 NetAppElement UI 重新同步原始源卷并执行故障恢复。本节介绍了初始源卷已丢失但初始集群仍完好的适用场景情形。有关如何还原到新集群的说明，请参见 NetApp 支持站点上的文档。 
+summary: 您可以使用NetApp Element UI重新同步原始源卷并执行故障恢复。本节介绍了初始源卷已丢失但初始集群仍完好的适用场景情形。有关如何还原到新集群的说明，请参见 NetApp 支持站点上的文档。 
 ---
 = 源卷不再存在时执行故障恢复
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您可以使用 NetAppElement UI 重新同步原始源卷并执行故�
 
 
 [role="lead"]
-您可以使用 NetAppElement UI 重新同步原始源卷并执行故障恢复。本节介绍了初始源卷已丢失但初始集群仍完好的适用场景情形。有关如何还原到新集群的说明，请参见 NetApp 支持站点上的文档。
+您可以使用NetApp Element UI重新同步原始源卷并执行故障恢复。本节介绍了初始源卷已丢失但初始集群仍完好的适用场景情形。有关如何还原到新集群的说明，请参见 NetApp 支持站点上的文档。
 
 .您需要什么？ #8217 ；将需要什么
 * Element 卷和 ONTAP 卷之间的复制关系已断开。

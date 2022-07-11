@@ -2,7 +2,7 @@
 permalink: storage/task_snapmirror_create_an_endpoint.html 
 sidebar: sidebar 
 keywords: endpoints, create, snapmirror, ui 
-summary: 您必须先在 NetAppElement UI 中创建 SnapMirror 端点，然后才能创建关系。 
+summary: 您必须先在NetApp Element UI中创建SnapMirror端点、然后才能创建关系。 
 ---
 = 创建 SnapMirror 端点
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您必须先在 NetAppElement UI 中创建 SnapMirror 端点，然后�
 
 
 [role="lead"]
-您必须先在 NetAppElement UI 中创建 SnapMirror 端点，然后才能创建关系。
+您必须先在NetApp Element UI中创建SnapMirror端点、然后才能创建关系。
 
 SnapMirror 端点是指用作运行 Element 软件的集群的复制目标的 ONTAP 集群。在创建 SnapMirror 关系之前，请先创建 SnapMirror 端点。
 
