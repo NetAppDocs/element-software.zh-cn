@@ -78,7 +78,7 @@ homepage:
     - title: SolidFire ESDS 概述
       url: "/esds/concept_get_started_esds.html"
     - title: 快速入门
-      url: https://review.docs.netapp.com/us-en/element-software_element_tile_restructure_doc-3473/media/SDS_Quick_Start_Guide.pdf
+      url: https://docs.netapp.com/us-en/element-software/media/SDS_Quick_Start_Guide.pdf
     - title: 安装要求
       url: "/esds/concept_esds_prerequisite_tasks.html"
     - title: 管理存储

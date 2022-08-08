@@ -6,6 +6,7 @@ summary: 您可以更改 VLAN 属性，例如 VLAN 名称，网络掩码和 IP �
 ---
 = 编辑虚拟网络
 :allow-uri-read: 
+:url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP%27s_are_in_use_and_which_nodes_those_IP%27s_are_assigned_to_in_Element
 :icons: font
 :imagesdir: ../media/
 
@@ -35,6 +36,6 @@ summary: 您可以更改 VLAN 属性，例如 VLAN 名称，网络掩码和 IP �
 
 链接到知识库文章，以帮助您解决管理 VLAN IP 地址范围的问题。
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["在 Element 集群上的 VLAN 中添加存储节点后出现重复 IP 警告"]
-* link:++https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP's_are_in_use_and_which_nodes_those_IP's_are_assigned_to_in_Element++["如何在 Element 中确定正在使用的 VLAN IP 以及将这些 IP 分配给哪些节点"]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["在 Element 集群上的 VLAN 中添加存储节点后出现重复 IP 警告"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_determine_which_VLAN_IP%27s_are_in_use_and_which_nodes_those_IP%27s_are_assigned_to_in_Element["如何在 Element 中确定正在使用的 VLAN IP 以及将这些 IP 分配给哪些节点"^]
 
