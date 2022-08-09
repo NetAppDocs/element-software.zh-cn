@@ -12272,4 +12272,12 @@
   <block id="70659e4f9824d888c2aa77344aaa46c4" category="list-text"><block ref="70659e4f9824d888c2aa77344aaa46c4" category="inline-link-rx"></block></block>
   <block id="0ea391471e626f95079246bfd0ab48f9" category="paragraph">适用于vCenter Server SIOC的NetApp Element 插件密码也称为_QoSSIOC密码_。 </block>
   <block id="0ba7ef8feca0e0b45134473e9c3182d4" category="paragraph">查看｛url-peak｝[适用于vCenter Server的Element插件知识库文章^。</block>
+  <block id="3bf9f01521140ec88c2161d9f808b379" category="paragraph">从Element 12.5开始、您可以启用串行创建、并从UI中选择以先出(First-in-First-Out、FIFO)为基础保留快照。</block>
+  <block id="5beca424202dedf9ea56fe2a0a6d24f6" category="list-text">*启用串行创建*选项指定一次仅复制一个快照。如果先前的快照复制仍在进行中、则创建新快照将失败。如果未选中此复选框、则在另一个快照复制仍在进行中时、允许创建快照。</block>
+  <block id="70342af84cb4a95a09688a4c7e780637" category="list-text">通过* FIFO *选项、可以保留一致数量的最新快照。选中此复选框后、快照将按FIFO保留。当FIFO快照队列达到其最大深度后、插入新的FIFO快照时、最旧的FIFO快照将被丢弃。</block>
+  <block id="b576ad045524fd70facc357a10b32b10" category="list-text">选择*数据保护*&gt;*计划*。</block>
+  <block id="e514a3adc1ea9d298a7e9ab19078872e" category="list-text">*可选：*选中*启用串行创建*复选框以确保一次仅复制一个快照。</block>
+  <block id="3c508c424a766cdd354ff2b5f471ceb9" category="list-text">*可选：*选中*先出先出*复选框以保留一致数量的最新快照。</block>
+  <block id="3905d1636a9d67ee561424a8bc5551a7" category="list-text">选择*永久保留*可在系统上无限期保留快照。</block>
+  <block id="627fb665998dc47f162df6850e3bb211" category="list-text">选择*设置保留期限*、然后使用日期调整框选择系统保留快照的时间长度。</block>
 </blocks>
