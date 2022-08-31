@@ -35,6 +35,8 @@ sidebar:
   - section: api
   - title: 使用适用于 vCenter Server 的 Element 插件管理存储（链接）
     url: https://docs.netapp.com/us-en/vcp/
+  - title: 使用NetApp SolidFire Active IQ 监控存储
+    url: "/monitor-storage-active-iq.html"
   - section: mnode
   - section: upgrade
   - title: 早期版本
@@ -71,6 +73,8 @@ homepage:
       url: "/api/index.html"
     - title: 使用适用于 vCenter Server 的 Element 插件
       url: https://docs.netapp.com/us-en/vcp/
+    - title: 使用NetApp SolidFire Active IQ
+      url: https://docs.netapp.com/us-en/solidfire-active-iq/
     - title: 使用管理节点
       url: "/mnode/task_mnode_work_overview.html"
   - title: 安装和使用 SolidFire 企业 SDS

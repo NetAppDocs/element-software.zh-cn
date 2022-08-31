@@ -1,13 +1,14 @@
 ---
-permalink: concepts/concept_intro_solidfire_active_iq.html 
 sidebar: sidebar 
-keywords: solidfire, active, iq, activeiq, tool, aiq 
+permalink: monitor-storage-active-iq.html 
+keywords: solidfire, active, iq, activeiq, tool, aiq, monitor, storage 
 summary: Active IQ 是一款基于 Web 的工具，可提供持续更新的集群范围数据历史视图。您可以为特定事件，阈值或指标设置警报。通过 Active IQ ，您可以监控系统性能和容量，并随时了解集群运行状况。 
 ---
-= SolidFire Active IQ
+= 使用SolidFire Active IQ 监控存储
+:hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

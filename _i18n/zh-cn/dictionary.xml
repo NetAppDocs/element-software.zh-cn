@@ -474,7 +474,6 @@
   <block id="09bfac84403d33379e533954403b0f94" category="list-text">有关虚拟机的 CPU 和存储相关信息</block>
   <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">有关详细信息 ...</block>
   <block id="8f7f4baec8aa05a765ec83446ad7d0c6" category="inline-link">适用于 Active IQ 的 NetApp 支持站点和管理工具</block>
-  <block id="a93cab242c29bc1f7ed010aedb157dab" category="list-text"><block ref="1a3a02f863c93340fc1be395cd8c98c0" category="inline-link-rx"></block></block>
   <block id="f1d02ef71e655f874094154fe26955ae" category="summary">集群是 SolidFire 存储系统的中心，由一组节点组成。要实现 SolidFire 存储效率，集群中必须至少有四个节点。集群在网络上显示为一个逻辑组，然后可作为块存储访问。</block>
   <block id="9b99bf7d2bfd4b09363304c166832734" category="doc">集群</block>
   <block id="c31f538ab7ed22954b3c941becbca20b" category="paragraph">创建新集群会将节点初始化为集群的通信所有者，并为集群中的每个节点建立网络通信。此过程仅对每个新集群执行一次。您可以使用 Element UI 或 API 创建集群。</block>
@@ -12280,4 +12279,12 @@
   <block id="3c508c424a766cdd354ff2b5f471ceb9" category="list-text">*可选：*选中*先出先出*复选框以保留一致数量的最新快照。</block>
   <block id="3905d1636a9d67ee561424a8bc5551a7" category="list-text">选择*永久保留*可在系统上无限期保留快照。</block>
   <block id="627fb665998dc47f162df6850e3bb211" category="list-text">选择*设置保留期限*、然后使用日期调整框选择系统保留快照的时间长度。</block>
+  <block id="ef9cbe434b5f28c847ba96be9c26f253" category="list-text">以图形方式表示CPU、内存使用情况和节点限制</block>
+  <block id="7aa85da92a1cd23b2981568643e3da1c" category="inline-link">SolidFire Active IQ 文档</block>
+  <block id="f02632134f46548247abd92a38e5f73e" category="paragraph">要了解SolidFire Active IQ 、请参见<block ref="3422f40bd7bba6370d69142070e812b4" category="inline-link-rx"></block>。</block>
+  <block id="1a1a6c5ed33ecaf055e3e38150525306" category="list-text"><block ref="11e28499cd7c9c7d408304fbab2a1320" category="inline-link-rx"></block></block>
+  <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：</block>
+  <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">使用SolidFire Active IQ 监控存储</block>
+  <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">使用NetApp SolidFire Active IQ 监控存储</block>
+  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ</block>
 </blocks>
