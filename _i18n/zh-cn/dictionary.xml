@@ -469,7 +469,6 @@
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> 是一种基于 Web 的工具，可提供持续更新的集群范围数据历史视图。您可以为特定事件，阈值或指标设置警报。通过 SolidFire Active IQ ，您可以监控系统性能和容量，并随时了解集群运行状况。</block>
   <block id="841b3da78955b4e942c8bd5ffddca29e" category="paragraph">您可以在 SolidFire Active IQ 中找到有关您的系统的以下信息：</block>
   <block id="4cea75009713f3eadbea7bd906d0523e" category="list-text">节点数量和节点状态：运行状况良好，脱机或故障</block>
-  <block id="1d60ceb1c0eb7b235010f9d4f656f6d7" category="list-text">CPU 和内存使用情况的图形表示</block>
   <block id="390ad22ea22a7a4699d87e2efaa0c84e" category="list-text">有关节点的详细信息，例如序列号，机箱中的插槽位置，型号以及存储节点上运行的 NetApp Element 软件版本</block>
   <block id="09bfac84403d33379e533954403b0f94" category="list-text">有关虚拟机的 CPU 和存储相关信息</block>
   <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">有关详细信息 ...</block>
@@ -489,7 +488,6 @@
   <block id="4902bbb0f0792204a931cd6714a07488" category="section-title">权威存储集群</block>
   <block id="a18ea3a466ff3d7bd70cfb3f7158e88d" category="paragraph">权威存储集群是 NetApp Hybrid Cloud Control 用于对用户进行身份验证的存储集群。</block>
   <block id="2cd0e9f52d18ccaa56ebdcbb4861e9b3" category="paragraph">如果您的管理节点只有一个存储集群，则它是权威集群。如果您的管理节点有两个或更多存储集群，其中一个集群将被分配为权威集群，只有该集群中的用户才能登录到 NetApp Hybrid Cloud Control 。要了解哪个集群是权威集群，您可以使用 `get /mnode/about` API 。在响应中， `token_url` 字段中的 IP 地址是权威存储集群的管理虚拟 IP 地址（ MVIP ）。如果您尝试以非权威集群上的用户身份登录到 NetApp Hybrid Cloud Control ，则登录尝试将失败。</block>
-  <block id="231614b040b1229fa532738569668845" category="paragraph">许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。在继续管理多个存储集群之前，您应确保在权威集群上定义的用户已在具有相同权限的所有其他存储集群上定义。</block>
   <block id="7637537a215094d11d21f8d200622812" category="inline-link-macro">Element 软件用户界面</block>
   <block id="353681e44a9f1004360ad2451b95f66a" category="paragraph">在继续管理多个存储集群之前，您应确保在权威集群上定义的用户已在具有相同权限的所有其他存储集群上定义。您可以从管理用户 <block ref="c6f9d44a89e7c75fd4726f61bea07a82" category="inline-link-macro-rx"></block>。</block>
   <block id="68f491affafdc67007d139c6e24190b1" category="inline-link-macro">创建和管理存储集群资产</block>
@@ -1531,7 +1529,6 @@
   <block id="1d571a87e429de32d15e077fd11efa4c" category="paragraph">远程集群上卷的卷 ID 。</block>
   <block id="62fac95c783d4dee37c3fd0105a6842d" category="list-text">* 远程卷名称 *</block>
   <block id="8ddc2f3b11177418057af7e520d41192" category="paragraph">创建远程卷时为其指定的名称。</block>
-  <block id="148fe9926e292adb5c7374ee88fa6651" category="paragraph">您可以在 Active IQ 中找到有关您的系统的以下信息：</block>
   <block id="b1ff5704b48e42d700d43961dd415064" category="doc">商标</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="paragraph"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -2693,9 +2690,6 @@
   <block id="e184b6353db6b97eb8014ea10f962324" category="paragraph">为对中的每个集群指定的唯一 ID 。</block>
   <block id="6e9575b9d78c74ecac3c7ffb6cc01291" category="summary">您可以删除快照计划。删除此计划后，它将不会运行任何将来计划的快照。计划创建的所有快照都将保留在存储系统上。</block>
   <block id="b5a47ab00ee38fd24f7e8b0828ad2a73" category="list-text">单击要删除的计划对应的 * 操作 * 图标。</block>
-  <block id="05da295a52c5ab8bf219722efcc57625" category="summary">服务质量 \ （ QoS\ ）性能曲线显示了块大小与 IOPS 百分比之间的关系。</block>
-  <block id="735a31f1d01fe768279621625e725b79" category="doc">QoS 性能曲线</block>
-  <block id="18a66bc3ec4b3669a530ba3c51d026aa" category="paragraph">服务质量（ QoS ）性能曲线显示了块大小与 IOPS 百分比之间的关系。</block>
   <block id="0b627a9e309e95034aa647662c6850ba" category="summary">可以通过以下两种方式之一设置网络时间协议（ NTP ）：指示集群中的每个节点侦听广播，或指示每个节点查询 NTP 服务器以获取更新。</block>
   <block id="aee40dc887e7ee1a678b3c4f23851b92" category="doc">设置网络时间协议</block>
   <block id="e4fb8fa88e0f62a27817b1b76b7fb1f6" category="paragraph">可以通过以下两种方式之一设置网络时间协议（ NTP ）：指示集群中的每个节点侦听广播，或者指示每个节点查询 NTP 服务器以获取更新。</block>
@@ -3455,18 +3449,6 @@
   <block id="bed13c073d5912ccef92dd70e9357cd2" category="list-text"><block ref="bed13c073d5912ccef92dd70e9357cd2" category="inline-link-macro-rx"></block></block>
   <block id="f3b82e36a84370efe127112e7f219805" category="inline-link-macro">更改节点的 IPMI 密码</block>
   <block id="4aa4554ac18412c09dee47b401202fc0" category="list-text"><block ref="4aa4554ac18412c09dee47b401202fc0" category="inline-link-macro-rx"></block></block>
-  <block id="8bc14f0cb78851f59e85c1d447c2c99f" category="doc">Quality of service</block>
-  <block id="8525478e88fe768020917024e56b3375" category="list-text">* 最小 IOPS*</block>
-  <block id="27e38a475d319fbe8808dbde111a71f4" category="paragraph">存储集群为卷提供的最小可持续每秒输入输出数（ IOPS ）。为卷配置的最小 IOPS 是卷性能的保证级别。性能不会低于此级别。</block>
-  <block id="0eafe666057554f59d8d2c8c24b3e0f3" category="list-text">* 最大 IOPS*</block>
-  <block id="086078d6e9862aa3229698f9f4ea609d" category="paragraph">存储集群为卷提供的最大可持续 IOPS 。如果集群 IOPS 级别非常高，则不会超过此 IOPS 性能级别。</block>
-  <block id="6c3439000c562798f2214c4888ab4ed8" category="paragraph">在短时突发情形下允许的最大 IOPS 数。如果卷运行的 IOPS 低于最大 IOPS ，则会累积突发额度。如果性能级别变得非常高并被推送到最大级别，则允许在卷上短时突发 IOPS 。</block>
-  <block id="21094115b958d315231b910f9b8e8c38" category="paragraph">一个卷可以累积突发 IOPS ，并使用这些额度在设定的 " 突发期间 " 突发 IOPS ，使其高于其最大 IOPS ，直至达到突发 IOPS 级别。如果集群具有容纳此突发的容量，则卷的突发时间可长达 60 秒。</block>
-  <block id="1d817bd510c09dbc5ee3cf5101fa6e94" category="paragraph">卷在其最大 IOPS 限制下运行的每秒累积一秒突发额度（最多 60 秒）。</block>
-  <block id="4fb6dee19a7208b7558396de228b1c1c" category="list-text">* 有效最大带宽 *</block>
-  <block id="248da5ca182c3126378490e07f585f5c" category="paragraph">最大带宽是通过将 IOPS 数（基于 QoS 曲线）乘以 IO 大小计算得出的。</block>
-  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">示例</block>
-  <block id="4f88c9126146259f6c0627052d9cda8f" category="paragraph">100 min IOPS ， 1000 Max IOPS 和 1500 Burst IOPS 的 QoS 参数设置会对性能质量产生以下影响：</block>
   <block id="1aaca5edc4fbf2eb13aafb9dacdd81f0" category="summary">启用 SNMP 版本 3 时，需要配置 USM 用户以接收授权的 SNMP 请求。</block>
   <block id="a363169b1744dccfddf694d199d4a087" category="doc">配置 SNMP USM 用户</block>
   <block id="3104b99d314e34f0b267b138695bd206" category="list-text">在 * 常规 SNMP 设置 * 下，单击 * 是 * 以启用 SNMP 。</block>
@@ -11108,7 +11090,6 @@
   <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
-  <block id="c653b8edc861abcc06840aebde786e4b" category="sidebar">使用适用于 vCenter Server 的 Element 插件管理存储（链接）</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">早期版本</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
   <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">安装维护硬件</block>
@@ -12287,4 +12268,10 @@
   <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">使用SolidFire Active IQ 监控存储</block>
   <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">使用NetApp SolidFire Active IQ 监控存储</block>
   <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ</block>
+  <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">使用适用于vCenter Server的NetApp Element 插件(VMware vSphere界面的插件)管理和监控运行NetApp Element 软件的存储集群。</block>
+  <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">适用于vCenter Server的NetApp Element 插件为VMware vSphere界面提供了一个插件、可用于管理和监控运行NetApp Element 软件的存储集群。</block>
+  <block id="da3eb0bd8c882a21931739ac39ce915a" category="inline-link">适用于 vCenter Server 的 NetApp Element 插件文档</block>
+  <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">要了解适用于vCenter Server的Element插件、请参见<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
+  <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。</block>
+  <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">使用适用于vCenter Server的Element插件管理存储</block>
 </blocks>

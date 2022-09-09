@@ -38,7 +38,7 @@ NOTE: 从 Element 11.0 开始，可以为节点的管理网络配置 IPv4 ， IP
 
 如果您的管理节点只有一个存储集群，则它是权威集群。如果您的管理节点有两个或更多存储集群，其中一个集群将被分配为权威集群，只有该集群中的用户才能登录到 NetApp Hybrid Cloud Control 。要了解哪个集群是权威集群，您可以使用 `get /mnode/about` API 。在响应中， `token_url` 字段中的 IP 地址是权威存储集群的管理虚拟 IP 地址（ MVIP ）。如果您尝试以非权威集群上的用户身份登录到 NetApp Hybrid Cloud Control ，则登录尝试将失败。
 
-许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。在继续管理多个存储集群之前，您应确保在权威集群上定义的用户已在具有相同权限的所有其他存储集群上定义。
+许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。
 
 在继续管理多个存储集群之前，您应确保在权威集群上定义的用户已在具有相同权限的所有其他存储集群上定义。您可以从管理用户 link:../storage/concept_system_manage_manage_cluster_administrator_users.html["Element 软件用户界面"]。
 
