@@ -28,11 +28,11 @@ keywords: netapp, element, storage cluster, hybrid cloud control, hcc, maintenan
 
 
 .选项
-* <<Add a storage cluster>>
-* <<Confirm storage cluster status>>
-* <<Edit storage cluster credentials>>
-* <<Remove a storage cluster>>
-* <<Enable and disable maintenance mode>>
+*  a storage cluster
+*  storage cluster status
+*  storage cluster credentials
+*  a storage cluster
+*  and disable maintenance mode
 
 
 
@@ -117,7 +117,7 @@ CAUTION: 选择 * 是 * 下一步将从安装中删除集群。
 
 == 启用和禁用维护模式
 
-如果您需要使存储节点脱机进行维护，例如软件升级或主机修复，则可以通过最大限度地减少对存储集群其余部分的 I/O 影响 <<enable_main_mode,启用>> 该节点的维护模式。当您 <<disable_main_mode,-disable>> 维护模式下，系统会对节点进行监控，以确保在节点过渡到维护模式之前满足特定条件。
+如果您需要使存储节点脱机进行维护，例如软件升级或主机修复，则可以通过最大限度地减少对存储集群其余部分的 I/O 影响 ,启用 该节点的维护模式。当您 ,-disable 维护模式下，系统会对节点进行监控，以确保在节点过渡到维护模式之前满足特定条件。
 
 有关信息，请参见 link:../esds/reference_esds_use_maintenance_mode.html["维护模式"] 启用和禁用功能选项和 link:../esds/reference_esds_use_maintenance_mode.html#possible-scenarios-while-using-maintenance-mode["使用维护模式时的可能情形"]。
 

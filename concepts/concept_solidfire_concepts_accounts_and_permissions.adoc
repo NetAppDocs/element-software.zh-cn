@@ -15,9 +15,9 @@ summary: 要管理和提供对系统上存储资源的访问，您需要为系�
 
 使用 Element 存储，您可以创建和管理以下类型的帐户：
 
-* <<Storage cluster administrator accounts,存储集群的管理员用户帐户>>
-* <<User accounts,用于访问存储卷的用户帐户>>
-* <<Authoritative cluster user accounts,NetApp Hybrid Cloud Control 的权威集群用户帐户>>
+*  cluster administrator accounts,存储集群的管理员用户帐户
+*  accounts,用于访问存储卷的用户帐户
+*  cluster user accounts,NetApp Hybrid Cloud Control 的权威集群用户帐户
 
 
 

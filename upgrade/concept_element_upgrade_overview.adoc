@@ -22,7 +22,7 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 NOTE: 从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 link:https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["使用HealthTools升级到Element 12.3"^] 然后使用NetApp Hybrid Cloud Control升级到Element 12.5。
 
-。 <<sys_upgrade,系统升级顺序>> 内容介绍了完成 SolidFire 全闪存存储系统升级所需的任务。理想情况下，这些过程是在较大的升级序列中执行的，而不是孤立执行的。如果需要基于组件的升级或更新，请参见操作步骤前提条件以确保解决其他复杂问题。
+。 ,系统升级顺序 内容介绍了完成 SolidFire 全闪存存储系统升级所需的任务。理想情况下，这些过程是在较大的升级序列中执行的，而不是孤立执行的。如果需要基于组件的升级或更新，请参见操作步骤前提条件以确保解决其他复杂问题。
 
 。 link:task_sf_upgrade_all_vsphere.html["vSphere 升级顺序"] 包括适用于 vCenter Server 的 Element 插件内容介绍了重新安装适用于 vCenter Server 的 Element 插件所需的其他升级前和升级后步骤。
 

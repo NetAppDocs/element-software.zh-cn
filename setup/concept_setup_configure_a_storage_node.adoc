@@ -15,8 +15,8 @@ summary: 您必须先配置各个节点，然后才能将其添加到集群中�
 
 配置存储节点有两个选项：
 
-* <<Configure a storage node using the per-node UI,每节点 UI>>：使用每节点 UI (https://<node_management_IP>:442)[] 配置节点网络设置。
-* <<Configure a storage node using the TUI,TUI>>：使用节点终端用户界面（ TUI ）配置节点。
+*  a storage node using the per-node UI,每节点 UI：使用每节点 UI (https://<node_management_IP>:442)[] 配置节点网络设置。
+*  a storage node using the TUI,TUI：使用节点终端用户界面（ TUI ）配置节点。
 
 
 您不能将使用 DHCP 分配的 IP 地址的节点添加到集群中。您可以使用 DHCP IP 地址在每节点 UI ， TUI 或 API 中对节点进行初始配置。在此初始配置期间，您可以添加静态 IP 地址信息，以便将节点添加到集群中。

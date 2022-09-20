@@ -41,9 +41,9 @@ WARNING: 除非NetApp支持部门建议、否则不支持对此系统进行任�
 
 
 .故障排除选项
-* <<Troubleshoot a cluster node>>
-* <<Troubleshoot a cluster node with NetApp Support>>
-* <<Troubleshoot a node that is not part of cluster>>
+*  a cluster node
+*  a cluster node with NetApp Support
+*  a node that is not part of cluster
 
 
 

@@ -5097,7 +5097,6 @@
   <block id="26db8374256abd97a337e0f9af2f21c8" category="admonition">在升级存储节点上的固件之前，您必须升级到最新的管理服务包。如果要将 Element 软件更新到 12.2 或更高版本，则需要使用管理服务 2.14.60 或更高版本才能继续。</block>
   <block id="736c409b380383ee8843715d26079c63" category="list-text">* 集群运行状况 * ：您已运行运行运行状况检查。请参见 <block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>。</block>
   <block id="7389b01d5fe0e17f5523a7fb85295f91" category="inline-link">此知识库文章</block>
-  <block id="b24f3db75077a578765967e0b8ffa295" category="admonition">有关适用于您的硬件的完整固件和驱动程序固件列表，请参见<block ref="54a79ab153742147d13ffd4ac16bf6ba" category="inline-link-rx"></block> （需要登录）。</block>
   <block id="5212e4232f93722ce70d3ed042cd25c1" category="paragraph">选择以下存储固件升级选项之一：</block>
   <block id="71894c0623112f371e3598666af16695" category="list-text"><block ref="c67f607f0c5a6b98a7e28e151694a09a" category="inline-xref-macro-rx"></block></block>
   <block id="b8cff0b41605e83e8a12999dd0a4ca92" category="list-text"><block ref="bd241c643056b4027f18f8f059752b73" category="inline-xref-macro-rx"></block></block>
@@ -11941,7 +11940,6 @@
   <block id="a0fc274442d4c69dfe575d357ce015e2" category="cell">40到70分钟</block>
   <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">完全关闭节点并断开电源</block>
   <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">您还必须花费130到160分钟<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> 对于每个H610S节点。</block>
-  <block id="6ed1151a1c81c87309cd82c96457f044" category="paragraph">^1^有关适用于您的硬件的完整固件和驱动程序固件列表、请参见此内容<block ref="919d0da258d2c9346bfb11f078cfd474" category="inline-link-rx"></block> （需要登录）。</block>
   <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^如果将写入IOPS负载较重的集群与较长的固件更新时间结合使用、则数据同步时间将会增加。</block>
   <block id="eb05636c0d5a8e35fae14ecd37584ea8" category="doc">SolidFire 和Element软件12.5文档</block>
   <block id="7275696d9abdd4848d9921861f886410" category="inline-link">Element 12.3.x文档</block>
@@ -12274,4 +12272,7 @@
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">要了解适用于vCenter Server的Element插件、请参见<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">使用适用于vCenter Server的Element插件管理存储</block>
+  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支持的固件和ESXi驱动程序版本</block>
+  <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1^有关适用于您的硬件的完整固件和驱动程序固件列表、请参见<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
+  <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">有关适用于您的硬件的完整固件和驱动程序固件列表，请参见<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
 </blocks>

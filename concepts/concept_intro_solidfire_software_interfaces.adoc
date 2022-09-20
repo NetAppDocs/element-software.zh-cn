@@ -14,12 +14,12 @@ summary: 您可以使用 NetApp Element 软件界面和集成实用程序管理 
 您可以使用不同的 NetApp Element 软件界面和集成实用程序来管理 SolidFire 存储系统。
 
 .选项
-* <<NetApp Element software user interface>>
-* <<NetApp Element software API>>
-* <<NetApp Element Plug-in for vCenter Server>>
-* <<NetApp Hybrid Cloud Control>>
-* <<Management node UIs>>
-* <<Additional integration utilities and tools>>
+*  Element software user interface
+*  Element software API
+*  Element Plug-in for vCenter Server
+*  Hybrid Cloud Control
+*  node UIs
+*  integration utilities and tools
 
 
 

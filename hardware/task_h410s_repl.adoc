@@ -32,9 +32,9 @@ image::hci_stor_node_ssd_bays.gif[显示了与 H410S 节点的四节点机箱中
 
 下面简要概述了这些步骤：
 
-* <<Prepare to replace the node>>
-* <<Replace the node in the chassis>>
-* <<Add the node to the cluster>>
+*  to replace the node
+*  the node in the chassis
+*  the node to the cluster
 
 
 

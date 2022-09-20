@@ -15,10 +15,10 @@ summary: 安装 SolidFire ESDS 后，请在每个 SolidFire ESDS 节点上配置
 
 下面简要概述了在安装 SolidFire ESDS 后应完成的任务：
 
-* <<Configure the cluster name>>
-* <<Set the license key>>
-* <<Create a cluster>>
-* <<Add drives to the cluster>>
+*  the cluster name
+*  the license key
+*  a cluster
+*  drives to the cluster
 
 
 

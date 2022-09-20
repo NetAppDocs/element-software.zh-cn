@@ -73,9 +73,9 @@ Element 演示节点软件是一组 VMware 文件，这些文件已打包在一�
 
 在 VMware ESXi 上安装 Element 演示节点涉及以下任务：
 
-* <<Configure network interfaces>>
-* <<Register the demo node on an ESXi server>>
-* <<Start the demo node on an ESXi server>>
+*  network interfaces
+*  the demo node on an ESXi server
+*  the demo node on an ESXi server
 
 
 

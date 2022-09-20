@@ -62,9 +62,9 @@ NOTE: 上图为一个示例。SF9608 采用不同的驱动器布局，其中仅�
 ====
 下面简要概述了这些步骤：
 
-* <<Remove the drive from the cluster>>
-* <<Replace the drive from the chassis>>
-* <<Add the drive to the cluster>>
+*  the drive from the cluster
+*  the drive from the chassis
+*  the drive to the cluster
 
 
 

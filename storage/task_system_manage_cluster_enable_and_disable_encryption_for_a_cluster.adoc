@@ -36,9 +36,9 @@ WARNING: 对于 SolidFire 全闪存存储集群，必须在创建集群期间启
 NOTE: `https://<MVIP>/` 上的 Element 软件 UI 信息板当前仅显示基于硬件的加密的空闲加密状态。
 
 .选项
-* <<Enable hardware-based encryption at rest>>
-* <<Enable software-based encryption at rest>>
-* <<Disable hardware-based encryption at rest>>
+*  hardware-based encryption at rest
+*  software-based encryption at rest
+*  hardware-based encryption at rest
 
 
 

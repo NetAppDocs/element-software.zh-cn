@@ -15,13 +15,13 @@ summary: 数据保护功能包括远程复制，卷快照，卷克隆，保护�
 
 Element 存储数据保护包括以下概念：
 
-* <<Remote replication types>>
-* <<Volume snapshots for data protection>>
-* <<Volume clones>>
-* <<Backup and restore process overview for Element storage>>
-* <<Protection Domains>>
-* <<custom_pd,自定义保护域>>
-* <<Double Helix high availability>>
+*  replication types
+*  snapshots for data protection
+*  clones
+*  and restore process overview for Element storage
+*  Domains
+* ,自定义保护域
+*  Helix high availability
 
 
 
@@ -30,9 +30,9 @@ Element 存储数据保护包括以下概念：
 
 数据的远程复制可以采用以下形式：
 
-* <<Synchronous and asynchronous replication between clusters>>
-* <<Snapshot-only replication>>
-* <<Replication between Element and ONTAP clusters using SnapMirror>>
+*  and asynchronous replication between clusters
+*  replication
+*  between Element and ONTAP clusters using SnapMirror
 
 
 有关详细信息，请参见 https://www.netapp.com/us/media/tr-4741.pdf["TR-4741 ： NetApp Element 软件远程复制"^]。

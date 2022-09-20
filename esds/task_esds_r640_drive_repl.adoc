@@ -13,9 +13,9 @@ summary: 如果要主动更换 SolidFire ESDS 集群中的元数据驱动器或�
 [role="lead"]
 从此处列出的过程中进行选择，以主动更换驱动器，在驱动器出现故障后更换驱动器以及更换缓存驱动器。更换 SolidFire ESDS 集群中的元数据驱动器或块驱动器。Element UI * 集群 > 驱动器 * 页面显示了驱动器损耗信息。
 
-* <<Replace a drive proactively>>
-* <<Replace a faulty drive>>
-* <<Replace a cache drive>>
+*  a drive proactively
+*  a faulty drive
+*  a cache drive
 
 
 
