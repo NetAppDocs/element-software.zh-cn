@@ -12275,4 +12275,5 @@
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支持的固件和ESXi驱动程序版本</block>
   <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1^有关适用于您的硬件的完整固件和驱动程序固件列表、请参见<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
   <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">有关适用于您的硬件的完整固件和驱动程序固件列表，请参见<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
+  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列存储节点支持的固件版本</block>
 </blocks>

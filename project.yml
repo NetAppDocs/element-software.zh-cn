@@ -63,8 +63,8 @@ homepage:
       url: "/hardware/concept_h410s_h610s_info.html"
     - title: SF 系列硬件信息
       url: "/hardware/concept_sfseries_info.html"
-    - title: 支持的固件和ESXi驱动程序版本
-      url: https://docs.netapp.com/us-en/hci/docs/firmware_driver_versions.html
+    - title: NetApp H系列存储节点支持的固件版本
+      url: https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html
   - title: 管理存储
     links:
     - title: 使用 Element 软件 UI
