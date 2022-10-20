@@ -4765,7 +4765,6 @@
   <block id="b8b5ab3135b691068cf7fe977ca56d49" category="list-text">将所需值添加到有效负载。</block>
   <block id="2a9657ab3bc5d2dff84e7a553d41a3ff" category="summary">您可以使用 REST API 从管理节点上运行的服务检索日志。</block>
   <block id="7eada9b3aeba75afea1bb6e56efd98a1" category="paragraph">您可以使用 REST API 从管理节点上运行的服务检索日志。您可以从所有公有服务中提取日志，也可以指定特定服务并使用查询参数更好地定义返回结果。</block>
-  <block id="4ac581155f2c6a4a3a056078e2b122a1" category="list-text">在管理节点上打开 REST API UI ：</block>
   <block id="fe5314e1f2b52008d7c6c1dc49232535" category="list-text">如果尚未填充值，请以 mnode-client 的形式输入客户端 ID 。</block>
   <block id="09cd4d07205bec65818c2a8ba07333f0" category="list-text">选择 * 获取 /logs* 。</block>
   <block id="c3f3617407361c6204e50a958c94b6a6" category="list-text">`Lines` ：输入希望日志返回的行数。此参数是一个整数，默认值为 1000 。</block>
@@ -12336,4 +12335,7 @@
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服务2.21.61的通知(适用于VMware vCenter Server的NetApp Element 插件4.10.12)</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">您要升级到适用于vCenter Server 4.10、4.9、4.8、4.7、4.6的NetApp Element 插件、 4.5或4.4。</block>
+  <block id="5d8cb69408d9a6773459aa0a397a3003" category="list-text">在管理节点上打开REST API UI。</block>
+  <block id="4eed3af07414f10fffdba8a7ff51ca36" category="list-text">从管理服务2.21.61开始：</block>
+  <block id="880c70977a68b1ec897e498bb11c7021" category="list-text">对于管理服务2.20.69或更早版本：</block>
 </blocks>
