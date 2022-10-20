@@ -62,7 +62,7 @@ NOTE: 有关适用于您的硬件的完整固件和驱动程序固件列表，�
 +
 ^3^从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将SF2405升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。
 
-* *最终用户许可协议(EULA)*：从管理服务2.2开始、您必须先接受并保存EULA、然后才能使用NetApp Hybrid Cloud Control UI或API升级存储固件：
+* *最终用户许可协议(EULA)*：从管理服务2.20.69开始、您必须先接受并保存此EULA、然后才能使用NetApp Hybrid Cloud Control UI或API升级存储固件：
 +
 .. 在Web浏览器中打开管理节点的IP地址：
 +
