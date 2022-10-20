@@ -11899,7 +11899,6 @@
   <block id="cd87cb364b82cfd7ff555087f3e88e59" category="list-text">* Element Software*：您的集群版本运行的是NetApp Element 软件11.3或更高版本。</block>
   <block id="84d8587fb67731ba50262a0ffeacb7ac" category="list-text">*最终用户许可协议(EULA)*：从管理服务来看、在使用NetApp混合云控制UI或API运行Element存储运行状况检查之前、您必须接受并保存此EULA：</block>
   <block id="651784e7a6ddc6534201a6e8d1fbf248" category="paragraph">对于已注册适用于vCenter Server的NetApp Element 插件的现有vSphere环境、您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
-  <block id="47e9151ac689287505aa641c93450d92" category="list-text">您要升级到适用于vCenter Server 4.9、4.8、4.7、4.6、4.5或4.4的NetApp Element 插件。</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">此插件与适用于VMware vCenter Server 4.6、4.7和4.8的VMware vCenter Server 6.5 for Element插件不兼容。</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter插件4.9发行说明</block>
   <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp Hybrid Cloud Control Web UI和API可从NetApp联机软件存储库下载软件包。因此，根据内容交付网络，某些 URL 或 IP 地址可能会解析为其他 URL 或 IP 地址。如果可能，您应与网络工程师合作，使用以下常规步骤将这些 URL 或 IP 地址添加到防火墙规则中：</block>
@@ -12334,4 +12333,7 @@
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI会话的身份验证信息。</block>
   <block id="2e5eceda3bfa3409dad5d20e93cd57ac" category="list-text">从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
   <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5。然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。</block>
+  <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服务2.21.61的通知(适用于VMware vCenter Server的NetApp Element 插件4.10.12)</block>
+  <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
+  <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">您要升级到适用于vCenter Server 4.10、4.9、4.8、4.7、4.6的NetApp Element 插件、 4.5或4.4。</block>
 </blocks>
