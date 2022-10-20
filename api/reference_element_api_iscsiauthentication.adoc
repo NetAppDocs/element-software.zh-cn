@@ -1,0 +1,61 @@
+---
+permalink: api/reference_element_api_iscsiauthentication.html 
+sidebar: sidebar 
+keywords: ISCSIAuthentication,iscsi,authentication 
+summary: ISCSIAuthentication对象包含有关iSCSI会话的身份验证信息。 
+---
+= ISCSI身份验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ISCSIAuthentication对象包含有关iSCSI会话的身份验证信息。
+
+
+
+== 对象成员
+
+此对象包含以下成员：
+
+|===
+| Name | Description | Type 
+
+
+ a| 
+authMethod
+ a| 
+iSCSI会话登录期间使用的身份验证方法、例如CHAP或无。
+ a| 
+string
+
+
+
+ a| 
+chapAlgorithm
+ a| 
+正在使用的CHAP算法、例如MD5、SHA1*、SHA-256*、 或SHA3-256*
+ a| 
+string
+
+
+
+ a| 
+用户名
+ a| 
+启动程序在iSCSI会话登录期间指定的CHAP用户名。
+ a| 
+string
+
+
+
+ a| 
+方向
+ a| 
+身份验证方向、例如单向(仅限启动程序)或双向(启动程序和目标)。
+ a| 
+string
+
+|===
+*从Element 12.7开始提供。

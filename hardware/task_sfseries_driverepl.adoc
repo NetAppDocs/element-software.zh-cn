@@ -35,6 +35,15 @@ summary: 您可以将出现故障的固态驱动器热插拔为替代驱动器�
 * SF38410
 
 
+[NOTE]
+====
+根据您的Element软件版本、不支持以下节点：
+
+* 从Element 12.7开始、SF2405和SF9608存储节点。
+* 从Element 12.0开始、SF3010、SF6010和SF9010存储节点。
+
+
+====
 下图显示了 SF9605 机箱中的驱动器位置：
 
 image::../media/sf_drives.gif[此图显示了 SolidFire 机箱中的驱动器。]

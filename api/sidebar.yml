@@ -75,6 +75,8 @@ entries:
     url: "/api/reference_element_api_idpconfiginfo.html"
   - title: 启动程序
     url: "/api/reference_element_api_initiator.html"
+  - title: ISCSI身份验证
+    url: "/api/reference_element_api_iscsiauthentication.html"
   - title: keyProviderKmip
     url: "/api/reference_element_api_keyproviderkmip.html"
   - title: KeyServerKmip

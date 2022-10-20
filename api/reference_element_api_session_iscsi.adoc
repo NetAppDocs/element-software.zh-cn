@@ -42,6 +42,15 @@ string
 
 
  a| 
+身份验证
+ a| 
+此iSCSI会话的身份验证信息。
+ a| 
+xref:reference_element_api_iscsiauthentication.adoc[ISCSI身份验证]
+
+
+
+ a| 
 CREATETIME
  a| 
 创建 iSCSI 会话的时间，采用 UTC+0 格式。

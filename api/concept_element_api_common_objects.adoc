@@ -40,6 +40,7 @@ Element 软件 API 使用 JSON 对象来表示组织的数据概念。其中许�
 * xref:reference_element_api_host.adoc[主机（虚拟卷）]
 * xref:reference_element_api_idpconfiginfo.adoc[idpConfigInfo]
 * xref:reference_element_api_initiator.adoc[启动程序]
+* xref:reference_element_api_iscsiauthentication.adoc[ISCSI身份验证]
 * xref:reference_element_api_keyproviderkmip.adoc[keyProviderKmip]
 * xref:reference_element_api_keyserverkmip.adoc[KeyServerKmip]
 * xref:reference_element_api_ldapconfiguration.adoc[ldapConfiguration]
