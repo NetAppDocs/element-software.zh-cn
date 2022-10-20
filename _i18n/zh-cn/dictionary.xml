@@ -12144,7 +12144,6 @@
   <block id="65475fb8d204c527f117e51b4e025657" category="sidebar">Element 12.3文档</block>
   <block id="612f97930662fc3cd831ed7bc5ae322c" category="list-text">适用于Element演示节点12.3和12.5 VM的ESXi 6.7和7.0</block>
   <block id="f73f11dc118d0773193fe38ff975e133" category="inline-link">存储固件包2.150发行说明</block>
-  <block id="4ed157f2adee50f00ed14eca30c23284" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block> _new_</block>
   <block id="e8158506d71c28d8d821c3acbeb0f97d" category="list-text"><block ref="e8158506d71c28d8d821c3acbeb0f97d" category="inline-link-rx"></block></block>
   <block id="831b7fafcb48c5cdc3232392066936d8" category="inline-link-macro">存储固件包2.150注意事项</block>
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
@@ -12319,7 +12318,6 @@
   <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">身份验证</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI会话的身份验证信息。</block>
-  <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5。然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服务2.21.61的通知(适用于VMware vCenter Server的NetApp Element 插件4.10.12)</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="01c72a31a534b06f00c7ab5b05653a0a" category="list-text">您要升级到适用于vCenter Server 4.10、4.9、4.8、4.7、4.6的NetApp Element 插件、 4.5或4.4。</block>
@@ -12338,4 +12336,10 @@
   <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误、指出Element 12.x不支持此节点</block>
   <block id="ab23337415270010383937ce784cb519" category="list-text">从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">插槽 0 用于存放节点的元数据驱动器。如果要更换插槽 0 中的驱动器，则必须将装运箱中的标签贴在替代驱动器上，以便可以与其他驱动器分开识别。</block>
+  <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">存储固件包2.164.0发行说明</block>
+  <block id="e95c3968984424b94d3bd781dd9e8819" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block> _new_</block>
+  <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
+  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支持的固件和ESXi驱动程序版本</block>
+  <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _new_</block>
+  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="list-text">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5。</block>
 </blocks>
