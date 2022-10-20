@@ -271,7 +271,6 @@
   <block id="050a0195689eb13051d78e278eae86ff" category="paragraph">下图显示了 SF9605 机箱中的驱动器位置：</block>
   <block id="5a23ec1a6f5e87de11e59c22d96e2bd7" category="image-alt">此图显示了 SolidFire 机箱中的驱动器。</block>
   <block id="24fc9cf8cab934ad1c788b6bb3a2c787" category="admonition">上图为一个示例。SF9608 采用不同的驱动器布局，其中仅包含从左到右编号为 1 到 8 的八个驱动器。</block>
-  <block id="a1ea4553e6d3011ca1816468f53f4286" category="paragraph">插槽 0 用于存放节点的元数据驱动器。如果要更换插槽 0 中的驱动器，则必须将装运箱中的标签贴在替代驱动器上，以便可以与其他驱动器分开识别。SF3010 例外，因为元数据保存在内部串行高级技术连接（ Serial Advanced Technology Attachment ， SATA ）双列直插式内存模块（ Dual Inline Memory Module ， DIMM ）上。</block>
   <block id="c8d4ba7da30930acc89e5d2a87511ca3" category="paragraph">处理驱动器时，请遵循以下最佳实践：</block>
   <block id="58c147306bf280b47a164e7c0b0dd750" category="list-text">请将驱动器放在 ESD 袋中，直到准备好安装为止，以防止静电放电（ ESD ）。</block>
   <block id="0c03fb247c8bb85a717d43d5091a6825" category="list-text">请勿将金属工具或刀片插入 ESD 袋中。</block>
@@ -12235,7 +12234,6 @@
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列存储节点支持的固件版本</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">从Element 12.5开始、您可以在管理节点上启用sfreadonly用户帐户、以便在没有NetApp支持帮助的情况下对系统组件进行故障排除。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">根据您的Element软件版本、不支持以下SF系列存储节点：</block>
-  <block id="8c807086e16a6bf793517a3ea6554487" category="paragraph">如果将其中一个存储节点升级到不受支持的Element版本、则会看到一条错误、指出Element 12.x不支持此节点</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">在升级到Element 12.5或更高版本期间、如果节点先前存在故障BMC、或者在升级期间节点的BMC出现故障、则不会生成`BmcSelfTestFailed`故障。如果在升级期间自检失败的BMC会在整个集群完成升级后出现问题描述 A `BmcSelfTestFailed`警告故障。</block>
   <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">*升级过程时间*：您已计划足够的时间执行升级。升级到Element软件12.5或更高版本时、升级过程时间会因您当前的Element软件版本和固件更新而异。</block>
   <block id="139691973eba994346784166c2abe4d8" category="cell">具有最新固件^3^的所有SolidFire 和NetApp H系列节点</block>
@@ -12305,7 +12303,6 @@
   <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">在Element 12.7升级期间、如果您已更新主机iSCSI启动程序配置、以便在存储节点重新启动时发送包含SHA算法列表的会话请求、 此时将激活新的安全算法、并使用最安全的协议建立新的或重新连接的iSCSI会话。在升级期间、所有现有iSCSI会话都会从MD5过渡到SHA。如果不更新主机iSCSI启动程序配置以请求SHA、则现有iSCSI会话将继续使用MD5。稍后、在更新主机iSCSI启动程序CHAP算法后、iSCSI会话应根据导致iSCSI会话重新连接的维护活动逐渐从MD5过渡到SHA。</block>
   <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">例如、Red Hat Enterprise Linux (RHEL) 8.3中的默认主机iSCSI启动程序的`node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5`设置已注释、这会导致iSCSI启动程序仅使用MD5。在主机上取消此设置的注释并重新启动iSCSI启动程序会触发来自该主机的iSCSI会话、以便开始使用SHA3-256。</block>
   <block id="55fc627721522ae45305c9f988153a20" category="paragraph">如果需要、您可以使用<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> API方法、用于查看每个会话所使用的CHAP算法。</block>
-  <block id="822cfacfacaf81a90ce9862ea1ea1e0e" category="paragraph">^3^从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将SF2405升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
   <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">根据您的Element软件版本、不支持以下节点：</block>
   <block id="08c7862f5f38b9fd867553b48afef501" category="list-text">从Element 12.7开始、SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。</block>
   <block id="8308b7fe397e44d83e5a712066af41fb" category="list-text">从Element 12.0开始、SF3010、SF6010和SF9010存储节点。</block>
@@ -12322,7 +12319,6 @@
   <block id="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="list-text"><block ref="26ec8ecb1fcaf2f2f4f5e78b73417e01" category="inline-xref-macro-rx"></block></block>
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">身份验证</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI会话的身份验证信息。</block>
-  <block id="2e5eceda3bfa3409dad5d20e93cd57ac" category="list-text">从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
   <block id="3ce48b341428a446ef1ef80ae2ebc84a" category="list-text">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5。然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服务2.21.61的通知(适用于VMware vCenter Server的NetApp Element 插件4.10.12)</block>
   <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
@@ -12338,4 +12334,8 @@
   <block id="e4eccb810d78b1a07fe7514cdf52eb9f" category="admonition">升级到VMware vCenter Server 7.0 U3时、Element插件无法部署。要使用Spring Framework 4解决此问题描述 、请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="62449609bcf95f48fbdbae6dddedcc19" category="list-text">*最终用户许可协议(EULA)*：从管理服务2.20.69开始、您必须先接受并保存此EULA、然后才能使用NetApp Hybrid Cloud Control UI或API升级Element软件：</block>
   <block id="d6802e127914e53f73aa2f2db8cb5e44" category="paragraph">从管理服务2.20.69开始、您必须先接受并保存最终用户许可协议(EULA)、然后才能使用NetApp Hybrid Cloud Control UI或API升级管理服务：</block>
+  <block id="33d4cce2372c2f81af75e357ed402fe5" category="paragraph">^3^从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
+  <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误、指出Element 12.x不支持此节点</block>
+  <block id="ab23337415270010383937ce784cb519" category="list-text">从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
+  <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">插槽 0 用于存放节点的元数据驱动器。如果要更换插槽 0 中的驱动器，则必须将装运箱中的标签贴在替代驱动器上，以便可以与其他驱动器分开识别。</block>
 </blocks>

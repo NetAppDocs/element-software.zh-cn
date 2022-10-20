@@ -21,7 +21,7 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 [NOTE]
 ====
-* 从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。
+* 从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。
 * 从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 link:https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["使用HealthTools升级到Element 12.3"^] 然后使用NetApp Hybrid Cloud Control升级到Element 12.5。然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。
 
 
