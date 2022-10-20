@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。 
 ---
-= Element软件12.5.
+= Element软件12.5及更高版本中的新增功能
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
@@ -12,13 +12,75 @@ summary: NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新�
 
 
 [role="lead"]
-NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.5引入了改进的存储节点访问、增强的自定义保护域易管理性、新增和改进的集群故障和事件、增强的创建集群UI功能、增强的安全性以及使用Ansible的自动升级。
+NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.7是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。
+
+
+NOTE: 根据存储集群上运行的当前Element版本、在Element 12.7升级过程中会安装累积软件和固件更新。例如、如果集群当前运行的是Element 12.3.x、则可以直接升级到Element 12.7、以便从Element 12.5和12.7获取累积更新。有关支持的升级路径、请参见此部分 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["知识库文章"^]
+
+
+
+== 要素12.7.
+
+详细了解Element 12.7中的新增功能。
+
+
+
+=== 安全CHAP算法
+
+Element 12.7支持符合FIPS的安全质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)算法SHA1、SHA-256和SHA3-256。 link:../storage/task_data_manage_accounts_work_with_accounts_task.html["了解更多信息。"]。
+
+
+
+=== 动态块(BIN)同步速率
+
+集群操作(例如添加、升级或维护节点或添加驱动器等)会同步触发块(BIN)、以便将块数据分发到集群布局中的新节点或更新节点。使用单个慢速作为默认同步速率会导致这些操作需要很长时间、并且无法利用较大节点的较高处理能力。从Element 12.7开始、同步速率会根据存储节点上的核心数量动态调整、从而显著加快这些操作的速度。
+
+例如、在向现有集群添加运行Element 12.7的大型28核存储节点(H610S、SF19210和SF38410)时、数据的同步速率会自动调整为110 Mbps、而不是60 Mbps。此外、如果您将这些大型存储节点置于节点维护模式之外、例如在使用NetApp Hybrid Cloud Control从Element 12.3.x或更高版本升级到Element 12.7期间、更改的块数据速率的同步速率会自动调整为110 Mbps、而不是20 Mbps。
+
+将中型16核存储节点(H410S)和小型12核存储节点(SF4805)添加到Element 12.7集群时、数据的同步速率仍为60 Mbps； 但是、如果在从Element 12.3.x升级到Element 12.7期间将更改的块从节点维护模式中移出、则同步速率会自动将中型存储节点的同步速率从20 Mbps调整为60 Mbps、而小型存储节点的同步速率则从40 Mbps调整为40 Mbps。
+
+删除存储节点时、不会影响块同步出速率、从而避免对客户端I/O造成性能影响
+
+
+
+=== 垃圾收集改进
+
+例如、对于具有较大存储节点的集群、具有1 PB已用空间的H610S-4正在运行具有覆盖的工作负载非常高、 如果重复数据删除和数据压缩率较高、则垃圾收集操作现在可以保持运行状态、因为较大节点的默认业务增长筛选器大小已从700 GB或更大的内存增加到1048576位。此更改会在将存储节点升级到Element 12.7后自动生效、并且不会对较小的节点产生任何影响。
+
+
+
+=== 扩展改进
+
+对于Element 12.7、在向现有集群添加多个存储节点时、不再需要遵循特定的顺序。使用Element UI或API、您只需选择所有可用驱动器并同时批量添加它们即可。Element 12.7会自动管理数据同步、以使所有块服务同时同步。随着每个节点的块服务完成同步、该节点上的元数据驱动器将可分配用于托管卷。这种扩展性提升可显著降低读取响应延迟、并防止在新添加的存储节点之间同步数据时性能下降。
+
+
+
+=== 存储节点固件更新
+
+Element 12.7包括存储固件包版本2.164.0、其中包括对新系统组件的支持。 link:https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["了解更多信息。"]。
+
+
+NOTE: Element 12.7版本中没有新的固件更新。但是、根据存储节点上运行的当前固件包、在升级到Element 12.7时会安装累积更新。
+
+
+
+=== SolidFire Active IQ 文档
+
+在SolidFire Active IQ UI中、您现在可以导航到"QoS管理"页面以查看集群的建议和节点限制信息。此外、集群信息板现在还会显示总快照计数。其他近期增强功能包括为节点上的主卷添加主节点和二级节点信息以及过去30分钟的平均吞吐量、IOPS和平均延迟。
+
+现在、您可以从Element软件文档访问SolidFire Active IQ 文档。 link:https://docs.netapp.com/us-en/element-software/monitor-storage-active-iq.html["了解更多信息。"]。
+
+
+
+=== NetApp Bug Online包含已解决的问题和已知问题
+
+NetApp Bug Online工具中列出了已解决的问题和已知问题。您可以在中浏览有关Element软件和其他产品的这些问题 https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp Bug Online"^]。
 
 
 
 == 要素12.5.
 
-详细了解Element 12.5中的新增功能。
+Element 12.5引入了改进的存储节点访问、增强的自定义保护域易管理性、新增和改进的集群故障和事件、增强的创建集群UI功能、增强的安全性以及使用Ansible的自动升级。
 
 
 
@@ -66,12 +128,6 @@ Element 12.5还包括120多个CVE安全漏洞修复。
 
 在Element 12.5中、您可以使用Ansible对整个存储集群执行滚动升级、从而自动执行Element软件升级工作流。要开始使用，请导航到 https://github.com/NetApp-Automation["NetApp Ansible存储库"^] 在GitHub上下载`NAR_solidfire_SDS_upgrade`角色和文档。
 
-
-
-=== NetApp Bug Online包含已解决的问题和已知问题
-
-NetApp Bug Online工具中列出了已解决的问题和已知问题。您可以在中浏览有关Element软件和其他产品的这些问题 https://mysupport.netapp.com/site/products/all/details/element-software/bugsonline-tab["NetApp Bug Online"^]。
-
 [discrete]
 == 了解更多信息
 
@@ -81,5 +137,5 @@ NetApp Bug Online工具中列出了已解决的问题和已知问题。您可以
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"^]
 * http://docs.netapp.com/sfe-122/index.jsp["适用于先前版本的 SolidFire 和 Element 软件文档中心"^]
 * https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI 资源页面"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["NetApp HCI 和 NetApp Element 软件的固件和驱动程序版本"^]
+* https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html["SolidFire 存储节点支持的存储固件版本"^]
 

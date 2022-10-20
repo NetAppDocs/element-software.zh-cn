@@ -13,7 +13,7 @@ summary: 在节点或集群上启用ssh后、您可以使用SignSshKeys方法以
 [role="lead"]
 使用在集群上启用SSH后 link:../api/reference_element_api_enablessh.html["EnableSSH方法"]、您可以使用`SignSshKeys`方法访问节点上的Shell。
 
-`sfreadonly`是从Element 12.5开始的一个新系统帐户、可用于对节点进行基本故障排除。此API可在集群中的所有节点上使用`sfreadonly` system帐户启用SSH访问。
+从Element 12.5开始、`sfreadonly`是一个新的系统帐户、可用于对节点进行基本故障排除。此API可在集群中的所有节点上使用`sfreadonly` system帐户启用SSH访问。
 
 
 WARNING: 除非NetApp支持部门建议、否则不支持对系统进行任何更改、从而使您的支持合同失效、并可能导致数据不稳定或无法访问。

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: mnode/task_mnode_enable_node_troubleshooting_sessions.html 
-summary: 对于Element 12.5及更高版本、您可以在管理节点上启用sfreadonly用户帐户来对系统组件进行故障排除、而无需NetApp支持人员的帮助。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。 
+summary: 从Element 12.5开始、您可以在管理节点上启用sfreadonly用户帐户、以便在没有NetApp支持帮助的情况下对系统组件进行故障排除。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。 
 keywords: netapp, sfreadonly, connect to support, support tunnel, rst, mnode, management node 
 ---
 = 使用SSH访问存储节点以进行基本故障排除

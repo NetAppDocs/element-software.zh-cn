@@ -101,7 +101,7 @@ error
 请联系NetApp支持部门以获得帮助。
 
 +
-在Element 12.5升级期间、如果某个节点的BMC已出现故障、或者该节点的BMC在升级期间出现故障、则不会为该节点生成`BmcSelfTestFailed`故障。如果在升级期间自检失败的BMC会在整个集群完成升级后出现问题描述 A `BmcSelfTestFailed`警告故障。
+在升级到Element 12.5或更高版本期间、如果节点先前存在故障BMC、或者在升级期间节点的BMC出现故障、则不会生成`BmcSelfTestFailed`故障。如果在升级期间自检失败的BMC会在整个集群完成升级后出现问题描述 A `BmcSelfTestFailed`警告故障。
 
 * * 时钟 SkewExceedsFaultThreshold *
 +

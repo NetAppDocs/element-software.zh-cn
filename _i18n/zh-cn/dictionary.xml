@@ -462,8 +462,6 @@
   <block id="049adc1802f0210729234e1fe80d95e6" category="list-text"><block ref="049adc1802f0210729234e1fe80d95e6" category="inline-link-rx"></block></block>
   <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">NetApp HCI 资源页面</block>
   <block id="bc218e71c18c2f809dffb10d3bc2a6e8" category="list-text"><block ref="bc218e71c18c2f809dffb10d3bc2a6e8" category="inline-link-rx"></block></block>
-  <block id="311f4aa48c89c4e8754b8d93a8d5c0d5" category="inline-link">NetApp HCI 和 NetApp Element 软件的固件和驱动程序版本</block>
-  <block id="8c47ac98e3f72388d0a7fb3d375c0441" category="list-text"><block ref="8c47ac98e3f72388d0a7fb3d375c0441" category="inline-link-rx"></block></block>
   <block id="148da2fc8997120fa9c4ae723fb03eb1" category="summary">Active IQ 是一款基于 Web 的工具，可提供持续更新的集群范围数据历史视图。您可以为特定事件，阈值或指标设置警报。通过 Active IQ ，您可以监控系统性能和容量，并随时了解集群运行状况。</block>
   <block id="c9618f4b15d53501dee68300c1517890" category="doc">SolidFire Active IQ</block>
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> 是一种基于 Web 的工具，可提供持续更新的集群范围数据历史视图。您可以为特定事件，阈值或指标设置警报。通过 SolidFire Active IQ ，您可以监控系统性能和容量，并随时了解集群运行状况。</block>
@@ -1023,8 +1021,6 @@
   <block id="c9587cb08e5592f619eef36a7fb5d994" category="doc">混合节点环境中的集群容量</block>
   <block id="e1a3e19f69efda7a7363311358c45df4" category="paragraph">H 系列由 H610S-1 ， H610S-2 ， H610S-4 和 H410S 节点组成。这些节点支持 10GbE 和 25GbE 。</block>
   <block id="17d44e89eecd428fa4268b3fa3873164" category="paragraph">最好不要混用非加密节点和加密节点。在混合节点集群中，任何节点都不能超过集群总容量的 33% 。例如，在具有四个 SF 系列 4805 节点的集群中，可以单独添加的最大节点是 SF 系列 9605 。在这种情况下，集群容量阈值是根据最大节点的潜在损失计算的。</block>
-  <block id="dde5a199f31b4af53ccd088330e8314c" category="paragraph">从 Element 12.0 开始，不支持以下 SF 系列存储节点：</block>
-  <block id="58432e4b26f0e5c8db86828d17f3a7ba" category="paragraph">如果将其中一个存储节点升级到 Element 12.0 ，则会看到一条错误，指出 Element 12.0 不支持此节点。</block>
   <block id="da286307c85db8e876f4cf760e4a8dc2" category="summary">如果您具有远程集群的集群管理员凭据，则可以将某个卷与远程集群上的另一个卷配对。</block>
   <block id="0046da2aa067f20f295ecbc573820209" category="doc">使用卷 ID 对卷配对</block>
   <block id="5e664610aae0289e363c77ef3388af3a" category="list-text">确保包含卷的集群已配对。</block>
@@ -11907,7 +11903,6 @@
   <block id="47e9151ac689287505aa641c93450d92" category="list-text">您要升级到适用于vCenter Server 4.9、4.8、4.7、4.6、4.5或4.4的NetApp Element 插件。</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">此插件与适用于VMware vCenter Server 4.6、4.7和4.8的VMware vCenter Server 6.5 for Element插件不兼容。</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter插件4.9发行说明</block>
-  <block id="6452d1b3e56fe38fdc537aeb6fe8d1c8" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block>_new_</block>
   <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp Hybrid Cloud Control Web UI和API可从NetApp联机软件存储库下载软件包。因此，根据内容交付网络，某些 URL 或 IP 地址可能会解析为其他 URL 或 IP 地址。如果可能，您应与网络工程师合作，使用以下常规步骤将这些 URL 或 IP 地址添加到防火墙规则中：</block>
   <block id="468e2827e5dc0169c965a021b0f015d8" category="list-text">使用wget或cURL实用程序访问URL (例如support-sg-nawest.netapp.com)。</block>
   <block id="887a9d2ae67bb61c76d5d0032a4b7b0f" category="list-text">检查连接、如以下示例所示：</block>
@@ -11919,13 +11914,11 @@
   <block id="9fc75d41716cfd46199787dcf77473a1" category="list-text">`https://support-sg-emea.netapp.com`</block>
   <block id="a1b1a9120bbc7238c7b6088d7223d194" category="list-text">`https://support-sg-naeast.netapp.com`</block>
   <block id="219033cd316af31663b173765be6dd78" category="list-text">`https://support-sg-nawest.netapp.com`</block>
-  <block id="54aa7f2dcdc54ac5abd932a5b6c8b3d7" category="list-text">*升级过程时间*：您已计划足够的时间执行升级。升级到Element软件12.5时、升级过程时间会因您当前的Element软件版本和固件更新而异。</block>
   <block id="778b8320a31f425d9021c72ba59dd8bd" category="cell">存储节点</block>
   <block id="c4303966c5d95835840cedbb4010f17d" category="cell">当前Element软件版本</block>
   <block id="0eb587cb5fd7c18c359cc306f978cd9d" category="cell">每个节点的大致软件和固件安装时间^1^</block>
   <block id="67578343d744d824d2ae7f1f0780853f" category="cell">每个节点的大致数据同步时间^2^</block>
   <block id="16ac89e788575fb90e5d952ce28c7d05" category="cell">每个节点的大致升级总时间</block>
-  <block id="ff99582146f5f2ab14948a290d24066e" category="cell">具有最新固件的所有SolidFire 和NetApp H系列节点</block>
   <block id="94a391e7535162277a17a069254b24c6" category="cell">12.x</block>
   <block id="2a7bb67d9681d8b5c8241cd49c734772" category="cell">15 分钟</block>
   <block id="5e1ee2491e0c0ac6da474bab9124ae95" category="cell">10到15分钟</block>
@@ -11941,10 +11934,8 @@
   <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">完全关闭节点并断开电源</block>
   <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">您还必须花费130到160分钟<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> 对于每个H610S节点。</block>
   <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^如果将写入IOPS负载较重的集群与较长的固件更新时间结合使用、则数据同步时间将会增加。</block>
-  <block id="eb05636c0d5a8e35fae14ecd37584ea8" category="doc">SolidFire 和Element软件12.5文档</block>
   <block id="7275696d9abdd4848d9921861f886410" category="inline-link">Element 12.3.x文档</block>
   <block id="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="list-text"><block ref="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="inline-link-rx"></block></block>
-  <block id="70a1cc9bac71af783948e9c6d13ed046" category="summary">对于Element 12.5及更高版本、您可以在管理节点上启用sfreadonly用户帐户来对系统组件进行故障排除、而无需NetApp支持人员的帮助。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。</block>
   <block id="87c6849449248757341d19789f0ecb83" category="doc">使用SSH访问存储节点以进行基本故障排除</block>
   <block id="ed66fa0901c1a26113d52acbb6ee20dd" category="paragraph">从Element 12.5开始、您可以使用存储节点上的sfreadonly系统帐户进行基本故障排除。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。</block>
   <block id="d1ac7db9c842ceaac83404d4d52e800f" category="paragraph">通过sfreadonly系统帐户、可以运行基本的Linux系统和网络故障排除命令、包括`ping`。</block>
@@ -12020,7 +12011,6 @@
   <block id="3ae6493bf18ba6963b40d7f9821c1a52" category="summary">在节点或集群上启用ssh后、您可以使用SignSshKeys方法以sfadmin或sfreadonly身份访问节点上的shell。sfreadonly是Element 12.5中的一个新用户帐户、可用于对节点进行初始故障排除、但缺少执行提升命令的权限。</block>
   <block id="a7917a2f080408ce1e230f197d5433cd" category="inline-link-macro">EnableSSH方法</block>
   <block id="6dda290cb72d73d469f631c0dfd2e0f3" category="paragraph">使用在集群上启用SSH后 <block ref="7d9609f81e054cdd171756b31fbc7560" category="inline-link-macro-rx"></block>、您可以使用`SignSshKeys`方法访问节点上的Shell。</block>
-  <block id="ac22ef258ca6640c6916f485dfb04a12" category="paragraph">`sfreadonly`是从Element 12.5开始的一个新系统帐户、可用于对节点进行基本故障排除。此API可在集群中的所有节点上使用`sfreadonly` system帐户启用SSH访问。</block>
   <block id="4c99bed64e74c6cc1cfc268cdeaa6615" category="admonition">除非NetApp支持部门建议、否则不支持对系统进行任何更改、从而使您的支持合同失效、并可能导致数据不稳定或无法访问。</block>
   <block id="b076eaceedc6422f2cfaa718fed94e69" category="paragraph">使用方法后、您必须从响应中复制密钥链、将其保存到要启动SSH连接的系统、然后运行以下命令：</block>
   <block id="d0bb781e5b5f30c7270f5c59dbe3b4b0" category="paragraph">`identity_file`是一个文件、可从中读取公有 密钥身份验证的身份(私钥)、而`node_IP`是节点的IP地址。有关`identity_file`的详细信息、请参见SSH手册页。</block>
@@ -12045,28 +12035,17 @@
   <block id="cf3e481a44141cabd4e9d46cfbb1f899" category="paragraph">12.5.</block>
   <block id="1cd7e1f52564ecd1b9b47bf17fe8d192" category="inline-link-macro">启用和禁用</block>
   <block id="9be1c6c1a5e1d288c79545fe648fce2d" category="paragraph">如果要启用集群范围的 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block> 对于SolidFire 全闪存存储集群、您必须在创建集群期间执行此操作。从Element 12.5开始、您必须在创建集群期间在创建集群UI中启用空闲软件加密。对于Element 12.3.x及更早版本、必须使用创建集群 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> API方法并将enableSoftwareEncryptionAtRest参数更改为`true`。默认情况下， SolidFire ESDS 集群会启用空闲软件加密。对于SolidFire 全闪存存储集群和SolidFire ESDS集群、在集群上启用空闲软件加密后、无法将其禁用。您可以 <block ref="c4953cd715ac499bd17d25e3487e7fdb" category="inline-link-macro-rx"></block> 创建集群后的空闲时基于硬件的加密。</block>
-  <block id="90c2dc9b8e4f7b029c80f8c7488a4b58" category="paragraph">您可以将管理节点从12.3.x版升级到管理节点12.5.</block>
   <block id="2ee9526aa61dc0808ea0ccf6ccfa2412" category="paragraph">升级存储集群上的 Element 软件不再需要升级管理节点操作系统。您只需将管理服务升级到最新版本、即可使用NetApp Hybrid Cloud Control执行Element升级。如果您希望出于安全修复等其他原因升级管理节点操作系统，请按照适用于您的方案的管理节点升级操作步骤进行操作。</block>
   <block id="cd5e8795f7da1b9c55223a753f0c64bd" category="inline-link">Element 12.3.x管理节点升级文档</block>
   <block id="33fea926c5e46b795ee89cd754264618" category="admonition">如果您需要有关升级管理节点12.2或更早版本的信息、请参见<block ref="7510c32e54d32b91989c1cd2810dc6d2" category="inline-link-rx"></block>。</block>
-  <block id="8802b9126d6080e36bb95641f40cfab3" category="list-text"><block ref="54df05cfe3df35112175e19c0aa861b7" category="inline-xref-macro-rx"></block></block>
   <block id="4ec79ca5d6408d326fb4a58b0c3b2e40" category="list-text"><block ref="35b702a8c6556d6de2f367adef3740ff" category="inline-xref-macro-rx"></block></block>
   <block id="f3bac24ec8b72ab99e38f7ecb167cc25" category="paragraph">如果您已按*顺序*更新(1)管理服务版本和(2) Element存储版本、并希望*保留*现有管理节点、请选择此选项：</block>
-  <block id="e94fb483edf44bcb1d0066bfff1ffe18" category="section-title">将管理节点从12.3.x升级到版本12.5.</block>
-  <block id="e071a52c7e2ea747fe3b237e04bcec11" category="paragraph">您可以将管理节点从12.3.x版原位升级到版本12.5、而无需配置新的管理节点虚拟机。</block>
-  <block id="cd6641a5f66844b15e37f50c79eafa6e" category="admonition">Element 12.5管理节点是一种可选升级。现有部署不需要此功能。</block>
-  <block id="02bd6928c03c8f53c18f8a5143bdd5f4" category="list-text">您要升级的管理节点为 12.0 版，并使用 IPv4 网络。管理节点版本12.5不支持IPv6。</block>
-  <block id="1e92b13cdf15b50caf5e299263e754d4" category="list-text">如果要将管理节点更新到版本12.5、则需要管理服务2.20.69或更高版本才能继续。</block>
-  <block id="dfa645595ef398bf7b6f3c49d39a3426" category="list-text">存储节点正在运行Element 12.3或更高版本。</block>
   <block id="2914d2e1549f2ef461f9b040823e6218" category="list-text">您已将管理服务更新到2.20.69或更高版本。</block>
   <block id="311e83625ce0c896e7a3f811f3ac48c2" category="list-text">存储集群运行的是Element 12.3或更高版本。</block>
   <block id="0637ebd56fb666abb4197f99ee28a8be" category="list-text">*已更新H610S节点的基板管理控制器(BMC)*：您已升级H610S节点的BMC版本。请参见 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
   <block id="356747bc1580f5d7e13f9055ae1f02df" category="paragraph">要升级NetApp Element 软件、您可以使用NetApp混合云控制UI或REST API。Element 软件升级期间会禁止某些操作，例如添加和删除节点，添加和删除驱动器以及与启动程序，卷访问组和虚拟网络等关联的命令。</block>
   <block id="abad8a22ec62bb4befaee820afb760ef" category="inline-link-macro">使用HealthTools升级到Element 12.3</block>
-  <block id="e4f2f9baf039ea62b7a0740e3ba88a7a" category="admonition">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5。</block>
-  <block id="7970314795c697c589f52cd629d4a341" category="admonition">在将Element软件升级到版本12.5之前、您必须升级到最新的管理服务包。如果要将Element软件更新到版本12.5、则需要使用管理服务2.20.69或更高版本继续操作。</block>
   <block id="649c8d7c132041751dab6da01f1fd9db" category="list-text">*已更新H610S存储节点的基板管理控制器(BMC)*：您已升级H610S节点的BMC版本。请参见 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
-  <block id="eed743cc753cdf3d22086e7df918db02" category="admonition">如果您要将H610S系列节点升级到Element 12.5、并且此节点运行的Element版本早于11.8、则需要执行此中的其他升级步骤<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 用于每个存储节点。如果您运行的是Element 11.8或更高版本、则不需要执行其他升级步骤。</block>
   <block id="02526a9433819b3363fdad9cdfc66a7d" category="list-text">如果您的管理节点未连接到 Internet ，则表示您已下载<block ref="0c09c6a7a60b11e622c5ccc20d3a7783" category="inline-link-rx"></block>。</block>
   <block id="a901d2b8512ddf5cf3b7654718ea92a4" category="admonition">有关使用NetApp Hybrid Cloud Control升级存储集群时的潜在问题及其解决方法、请参见此部分<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>。</block>
   <block id="981a393a1b5619c45c3545ca7373b5cf" category="list-text">选择 * 开始升级 * 。升级完成后、UI将提示您执行其他升级步骤。</block>
@@ -12076,14 +12055,11 @@
   <block id="fb9099604c3233c77b3c8b5487c99eb3" category="list-text">完成此中的其他升级步骤<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 对于每个节点。</block>
   <block id="7fdc03d82c29eba6b61c702a58fd28ba" category="paragraph">这些组件包括管理服务、NetApp Hybrid Cloud Control、Element软件、管理节点以及适用于vCenter Server的Element插件(具体取决于您的安装)。</block>
   <block id="85aed6fa173952d69db4c99c1290921b" category="inline-link-macro">存储固件</block>
-  <block id="a8c7f4c70c59120de0b33efda8af8aa5" category="list-text">您已为计划了足够的时间 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升级。升级到Element软件12.5时、升级过程时间因Element软件版本和固件更新而异。</block>
   <block id="2fa7dfb88e1cb5cf745edc36604f73fd" category="paragraph">您可以使用NetApp Hybrid Cloud Control UI或NetApp Hybrid Cloud Control API运行运行状况检查：</block>
   <block id="d37f0270ef1cdc666fe669356e1a4f75" category="inline-link-macro">配置自定义保护域</block>
   <block id="b9d7f7d96ba0d7f9fb0ebbfdd76705d5" category="list-text"><block ref="a92b076f4c042891d554c076d8d2ec26" category="inline-link-macro-rx"></block> - 显示每个节点所在的机箱和自定义保护域。</block>
   <block id="ed4cb7ef9d0074dd188232c212f3131c" category="list-text"><block ref="79208a7b3d3c86443da0ca3bafbef925" category="inline-link-macro-rx"></block> - 用于为每个节点分配自定义保护域。</block>
-  <block id="61b35a1ffe9df32c3c0e2e4a7969de4b" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.5引入了改进的存储节点访问、增强的自定义保护域易管理性、新增和改进的集群故障和事件、增强的创建集群UI功能、增强的安全性以及使用Ansible的自动升级。</block>
   <block id="38614c843f3a64f496d80e9b3a15ca3c" category="section-title">要素12.5.</block>
-  <block id="3841a44fe905d7faa925f35d459015bf" category="paragraph">详细了解Element 12.5中的新增功能。</block>
   <block id="632a0cf5bff2b4038d81ba8a87bedf56" category="section-title">改进了存储节点访问</block>
   <block id="36c6fef8b472466a86d8c04fae14b83a" category="paragraph">Element 12.5通过使用签名SSH证书改进了对单个节点的远程访问。为了安全地远程访问存储节点、现在会在存储节点的RTFI期间创建一个名为`sfreadonly`的新的有限权限本地用户帐户。使用`sfreadonly`帐户可以访问存储节点后端、以便进行基本维护或故障排除。现在、您可以为集群管理员用户配置`supportAdmin`访问类型、以允许NetApp支持根据需要访问集群。</block>
   <block id="c4850a0256fd94385624e245ebb4e3f5" category="section-title">增强了自定义保护域的易管理性</block>
@@ -12102,7 +12078,6 @@
   <block id="3e295da75c8e1147efb1d40b92bc67b1" category="section-title">NetApp Bug Online包含已解决的问题和已知问题</block>
   <block id="dacb18e4909785f6226e9cc6bcd62371" category="paragraph">NetApp Bug Online工具中列出了已解决的问题和已知问题。您可以在中浏览有关Element软件和其他产品的这些问题<block ref="6d0e40d4342f9a7ae6016dd8d3efbf3e" category="inline-link-rx"></block>。</block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">《NetApp Element 软件12.5发行说明》</block>
-  <block id="f8e8ebc61e5eb8b12488dfac5a827259" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block> _new_</block>
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">存储固件包 2.146 发行说明</block>
@@ -12110,7 +12085,6 @@
   <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BmcSelfTestFailed</block>
   <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">基板管理控制器(BMC)未通过自检。</block>
   <block id="f13985a4689ae985836f2d3e56cd1a5f" category="paragraph">请联系NetApp支持部门以获得帮助。</block>
-  <block id="dfe7f32d919b2362aed8eecc2ad964cf" category="paragraph">在Element 12.5升级期间、如果某个节点的BMC已出现故障、或者该节点的BMC在升级期间出现故障、则不会为该节点生成`BmcSelfTestFailed`故障。如果在升级期间自检失败的BMC会在整个集群完成升级后出现问题描述 A `BmcSelfTestFailed`警告故障。</block>
   <block id="45a258c05276cacb5b1d7863b0d316e4" category="list-text">* cpuTherMalEventThreshold *</block>
   <block id="2e83559dc365c7e917e7fba7009ec948" category="paragraph">一个或多个CPU上的CPU散热事件数超过配置的阈值。</block>
   <block id="b045aebb370ef7c237c48505464a66fe" category="paragraph">如果在10分钟内未检测到新的CPU散热事件、则此警告将自行解决。</block>
@@ -12147,18 +12121,15 @@
   <block id="07cf8fd6e47576d971bbe1a1f3791d23" category="cell">SetProtectionDomainLayout 失败：保护域类型 " 自定义 " 拆分保护域类型 " 机箱 " 。</block>
   <block id="74edc88174dceefbbbb11b9aba21d425" category="cell">多节点机箱中的节点分配的保护域与机箱中的其他节点不同。</block>
   <block id="49c71a7c59d3ffac02af2e11f20c6903" category="cell">确保为机箱中的所有节点分配相同的保护域。</block>
-  <block id="da8bff445c6c74f2506b1cfb6b3ca63f" category="sidebar">升级适用于Element软件12.5的NetApp SolidFire 全闪存存储系统</block>
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">配置自定义保护域</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">启动远程 NetApp 支持会话</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">如果您需要 SolidFire 全闪存存储系统的技术支持， NetApp 支持部门可以远程连接到您的系统。要启动会话并获得远程访问， NetApp 支持部门可以与您的环境建立反向安全 Shell （ SSH ）连接。</block>
   <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*软件空闲加密增强功能*：Element 12.3引入了空闲软件加密功能增强功能、在创建SolidFire 企业SDS存储集群时、此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。以下是与空闲软件加密相关的 Element API 方法（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
   <block id="a22ab525bece28b87773c244a6f1b3a0" category="list-text">*能够定义要保留的最大快照数*：Element 12.3增强了快照保留功能。为了支持此增强功能，已对以下 API 进行了修改（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
-  <block id="7e567302f5ef9349d96e39bff1919742" category="paragraph">您可以按以下顺序升级适用于Element 12.5的NetApp SolidFire 全闪存存储系统。</block>
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">*获取有关Element软件修补程序的信息*：Element 12.3中引入的`GetPatchInfo`方法可用于获取有关存储节点上安装的Element软件修补程序的信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出节点上每个网络接口的统计信息*：Element 12.3中引入的`ListNetworkInterfaceStats`方法可用于列出统计信息、例如、节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1中引入的动态节点评级功能使您可以在每个ESDS平台上利用24个受支持的CPU、而不是目前的每个平台使用一个CPU的模式。</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
-  <block id="3f28cad21e73645ec84c4a70033925a4" category="doc">Element软件12.5.</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">启用远程 NetApp 支持连接</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP处理帐户</block>
@@ -12272,8 +12243,67 @@
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">要了解适用于vCenter Server的Element插件、请参见<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">使用适用于vCenter Server的Element插件管理存储</block>
-  <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支持的固件和ESXi驱动程序版本</block>
-  <block id="7f6c7867ac3c62c136dad288b3e3298e" category="paragraph">^1^有关适用于您的硬件的完整固件和驱动程序固件列表、请参见<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
-  <block id="3c22f77849e3b66d2e0c9c63419afb53" category="admonition">有关适用于您的硬件的完整固件和驱动程序固件列表，请参见<block ref="70c4c9f03a0e1a210c8e6bdafdb7db30" category="inline-link-rx"></block>。</block>
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列存储节点支持的固件版本</block>
+  <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">从Element 12.5开始、您可以在管理节点上启用sfreadonly用户帐户、以便在没有NetApp支持帮助的情况下对系统组件进行故障排除。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。</block>
+  <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">根据您的Element软件版本、不支持以下SF系列存储节点：</block>
+  <block id="02cf6300fcf798dec9268510fe501399" category="cell">Element软件版本</block>
+  <block id="d491880ed7c4f2716c5b8ebf0f2cfbb0" category="cell">SF系列存储节点</block>
+  <block id="30e5e485b533c453bba3daf6375cc212" category="cell">从Element 12.0开始</block>
+  <block id="7f2ce5d6d8ad99c7a9f40d2f7b993f65" category="cell">从Element 12.7开始</block>
+  <block id="8c807086e16a6bf793517a3ea6554487" category="paragraph">如果将其中一个存储节点升级到不受支持的Element版本、则会看到一条错误、指出Element 12.x不支持此节点</block>
+  <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">在升级到Element 12.5或更高版本期间、如果节点先前存在故障BMC、或者在升级期间节点的BMC出现故障、则不会生成`BmcSelfTestFailed`故障。如果在升级期间自检失败的BMC会在整个集群完成升级后出现问题描述 A `BmcSelfTestFailed`警告故障。</block>
+  <block id="57f06358fba0b8a8922a0641b09632cd" category="list-text">*升级过程时间*：您已计划足够的时间执行升级。升级到Element软件12.5或更高版本时、升级过程时间会因您当前的Element软件版本和固件更新而异。</block>
+  <block id="139691973eba994346784166c2abe4d8" category="cell">具有最新固件^3^的所有SolidFire 和NetApp H系列节点</block>
+  <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">SolidFire 存储节点支持的存储固件版本</block>
+  <block id="b20b54856add4fca7311231c02ca0554" category="paragraph">^1^有关适用于您的硬件的完整固件和驱动程序固件列表、请参见<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
+  <block id="084b51ffb24ddd67b6e5691377e919f4" category="paragraph">^3^从Element 12.7开始、不支持SF2405存储节点。如果您尝试将SF2405升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
+  <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">从Element 12.5开始、`sfreadonly`是一个新的系统帐户、可用于对节点进行基本故障排除。此API可在集群中的所有节点上使用`sfreadonly` system帐户启用SSH访问。</block>
+  <block id="482c14e23170c54f9df57d397733d7af" category="doc">Element软件12.5及更高版本中的新增功能</block>
+  <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.7是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。</block>
+  <block id="31433f4c595cf82b6f9b0654fe86c038" category="admonition">根据存储集群上运行的当前Element版本、在Element 12.7升级过程中会安装累积软件和固件更新。例如、如果集群当前运行的是Element 12.3.x、则可以直接升级到Element 12.7、以便从Element 12.5和12.7获取累积更新。有关支持的升级路径、请参见此部分<block ref="5d2488aae82cc199977a2b418e4bfb0b" category="inline-link-rx"></block></block>
+  <block id="7a5d44771145d6289118d595153e9a0f" category="section-title">要素12.7.</block>
+  <block id="c5955a73b2634f54a283c2c1c11a5f00" category="paragraph">详细了解Element 12.7中的新增功能。</block>
+  <block id="e1aa603edc6a21750a2c4f3ad4c5c6fe" category="section-title">安全CHAP算法</block>
+  <block id="7d8047866d4cd4b945792113fe0aef7e" category="paragraph">Element 12.7支持符合FIPS的安全质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)算法SHA1、SHA-256和SHA3-256。 <block ref="b6cad66d2ee175f758d394e0154cb07f" category="inline-link-macro-rx"></block>。</block>
+  <block id="3dd61b40b979f11e2f99dcbda82fabe4" category="section-title">动态块(BIN)同步速率</block>
+  <block id="f0f51fd465849cb53ced2b63167aa2a4" category="paragraph">集群操作(例如添加、升级或维护节点或添加驱动器等)会同步触发块(BIN)、以便将块数据分发到集群布局中的新节点或更新节点。使用单个慢速作为默认同步速率会导致这些操作需要很长时间、并且无法利用较大节点的较高处理能力。从Element 12.7开始、同步速率会根据存储节点上的核心数量动态调整、从而显著加快这些操作的速度。</block>
+  <block id="9a34a7d8791a1a6d72b590e86a6e6c71" category="paragraph">例如、在向现有集群添加运行Element 12.7的大型28核存储节点(H610S、SF19210和SF38410)时、数据的同步速率会自动调整为110 Mbps、而不是60 Mbps。此外、如果您将这些大型存储节点置于节点维护模式之外、例如在使用NetApp Hybrid Cloud Control从Element 12.3.x或更高版本升级到Element 12.7期间、更改的块数据速率的同步速率会自动调整为110 Mbps、而不是20 Mbps。</block>
+  <block id="5ea9100be0bb0a226350ecb83ed7bbf3" category="paragraph">将中型16核存储节点(H410S)和小型12核存储节点(SF4805)添加到Element 12.7集群时、数据的同步速率仍为60 Mbps； 但是、如果在从Element 12.3.x升级到Element 12.7期间将更改的块从节点维护模式中移出、则同步速率会自动将中型存储节点的同步速率从20 Mbps调整为60 Mbps、而小型存储节点的同步速率则从40 Mbps调整为40 Mbps。</block>
+  <block id="238da46c9fb35f77225a8601b5dcc7c7" category="paragraph">删除存储节点时、不会影响块同步出速率、从而避免对客户端I/O造成性能影响</block>
+  <block id="cba547779696e53fe77f25c2836e9ea2" category="section-title">垃圾收集改进</block>
+  <block id="2089f735c5678c4d81adad19a94b0654" category="paragraph">例如、对于具有较大存储节点的集群、具有1 PB已用空间的H610S-4正在运行具有覆盖的工作负载非常高、 如果重复数据删除和数据压缩率较高、则垃圾收集操作现在可以保持运行状态、因为较大节点的默认业务增长筛选器大小已从700 GB或更大的内存增加到1048576位。此更改会在将存储节点升级到Element 12.7后自动生效、并且不会对较小的节点产生任何影响。</block>
+  <block id="83e68150a866d5b50cad0d93cf7c5492" category="section-title">扩展改进</block>
+  <block id="0f4f4bf2c2176ad09cbc4a0ca3ff4eeb" category="paragraph">对于Element 12.7、在向现有集群添加多个存储节点时、不再需要遵循特定的顺序。使用Element UI或API、您只需选择所有可用驱动器并同时批量添加它们即可。Element 12.7会自动管理数据同步、以使所有块服务同时同步。随着每个节点的块服务完成同步、该节点上的元数据驱动器将可分配用于托管卷。这种扩展性提升可显著降低读取响应延迟、并防止在新添加的存储节点之间同步数据时性能下降。</block>
+  <block id="43a918d4e27a1a7a8251fef04c98185b" category="paragraph">Element 12.7包括存储固件包版本2.164.0、其中包括对新系统组件的支持。 <block ref="01562cc61c3c006c5e7ad8d89f347678" category="inline-link-macro-rx"></block>。</block>
+  <block id="3fc5b3acd1d3708d5cfa3ba7d0a8162e" category="admonition">Element 12.7版本中没有新的固件更新。但是、根据存储节点上运行的当前固件包、在升级到Element 12.7时会安装累积更新。</block>
+  <block id="5c74c03fbdeea06c0e7eb5afe2d9f9bb" category="paragraph">在SolidFire Active IQ UI中、您现在可以导航到"QoS管理"页面以查看集群的建议和节点限制信息。此外、集群信息板现在还会显示总快照计数。其他近期增强功能包括为节点上的主卷添加主节点和二级节点信息以及过去30分钟的平均吞吐量、IOPS和平均延迟。</block>
+  <block id="ab55ac9ce7363800677511aee7a9ab12" category="paragraph">现在、您可以从Element软件文档访问SolidFire Active IQ 文档。 <block ref="cf42182e91c5e79a875ebd341c48eb99" category="inline-link-macro-rx"></block>。</block>
+  <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5引入了改进的存储节点访问、增强的自定义保护域易管理性、新增和改进的集群故障和事件、增强的创建集群UI功能、增强的安全性以及使用Ansible的自动升级。</block>
+  <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">SolidFire 存储节点支持的存储固件版本</block>
+  <block id="2ef946a9f76c178cd4c28a70511f3ac8" category="list-text"><block ref="2ef946a9f76c178cd4c28a70511f3ac8" category="inline-link-rx"></block></block>
+  <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">《NetApp Element 软件12.7发行说明》</block>
+  <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _new_</block>
+  <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
+  <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter插件4.10发行说明</block>
+  <block id="5c6c5d2c88269bcae97dbd93d213851a" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block> _new_</block>
+  <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
+  <block id="b7faeba39aadbf9af836a1e70f5708d7" category="doc">SolidFire 和Element软件12.5及更高版本文档</block>
+  <block id="280ccd6bb84b0a0b3e9c579cabeab78e" category="list-text">从Element 12.7开始、不支持SF2405存储节点。如果将SF2405存储节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
+  <block id="dddc768078a274c29d2a79433013cc8b" category="list-text">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="d9103b755f8af19a5128488b4c389687" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。</block>
+  <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">您已为计划了足够的时间 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升级。升级到Element软件12.5或更高版本时、升级过程时间因Element软件版本和固件更新而异。</block>
+  <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">您可以按以下顺序升级适用于Element 12.5或更高版本的NetApp SolidFire 全闪存存储系统。</block>
+  <block id="840a7d863d92c143994565c1a1169097" category="admonition">有关适用于您的硬件的完整固件和驱动程序固件列表，请参见<block ref="30c1aa6de93ea8b8201546979be3ae7b" category="inline-link-rx"></block>。</block>
+  <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">使用HealthTools升级到Element 12.3.x</block>
+  <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。</block>
+  <block id="7ef561ec74f917ecad309d4001bff056" category="admonition">在将Element软件升级到版本12.5或更高版本之前、您必须升级到最新的管理服务包。如果要将Element软件更新到版本12.5或更高版本、则需要使用管理服务2.21.61或更高版本才能继续。</block>
+  <block id="25c6e7b86999549e989728f739c4fc89" category="admonition">如果您要将H610S系列节点升级到Element 12.5或更高版本、并且此节点运行的Element版本早于11.8、则需要执行此中的其他升级步骤<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 用于每个存储节点。如果您运行的是Element 11.8或更高版本、则不需要执行其他升级步骤。</block>
+  <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">您可以将管理节点从12.3.x或更高版本升级到管理节点12.5或更高版本。</block>
+  <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
+  <block id="2a67edcd39483da3b7c2244d1a853ca7" category="section-title">将管理节点从12.3.x或更高版本升级到版本12.5或更高版本</block>
+  <block id="00986f242d79556b370e046857ac478c" category="paragraph">您可以将管理节点从12.3.x或更高版本原位升级到版本12.5或更高版本、而无需配置新的管理节点虚拟机。</block>
+  <block id="162101c4a12e19388bdcdc0495ccc2ae" category="admonition">Element 12.5或更高版本的管理节点是可选的升级。现有部署不需要此功能。</block>
+  <block id="cd847f70c9955e37a7a701eee9f2cd67" category="list-text">您要升级的管理节点为 12.0 版，并使用 IPv4 网络。管理节点版本12.5或更高版本不支持IPv6。</block>
+  <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">如果要将管理节点更新到版本12.5或更高版本、则需要使用管理服务2.21.61或更高版本继续操作。</block>
+  <block id="b529479350602e9be1d9caa1838edb9b" category="list-text">存储节点正在运行Element 12.3.x或更高版本。</block>
+  <block id="a3fc65b85282a6a88ae5d5d3defca6e5" category="sidebar">升级适用于Element软件12.5或更高版本的NetApp SolidFire 全闪存存储系统</block>
 </blocks>
