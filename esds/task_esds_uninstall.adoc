@@ -14,14 +14,14 @@ summary: '您可以通过删除安装了 SolidFire ESDS 的节点上的 SolidFir
 您可以通过删除 SolidFire ESDS 上的 SolidFire ESDS 来 * 重置 * 已安装 ESDS 的节点。要在节点上恢复 SolidFire ESDS ，您应执行所有安装步骤。
 
 
-NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_sds_uninstall["`NAR_solidfire_SDS_uninstall`"^] NetApp 为执行此操作而提供的 Ansible 角色。如果要手动删除节点上的 SolidFire ESDS ，请参见以下步骤。
+NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_sds_uninstall["bfc7399c1c92cf0d90621d6b98ee2e84"^] NetApp 为执行此操作而提供的 Ansible 角色。如果要手动删除节点上的 SolidFire ESDS ，请参见以下步骤。
 
 .步骤
-. 使用 Element UI 或从集群中删除驱动器 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removedrives.html["`RemoveDrives`"^] API 方法。
+. 使用 Element UI 或从集群中删除驱动器 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removedrives.html["c97feb073ff79f44cf03a1742a29f033"^] API 方法。
 +
 这会导致系统将数据从节点的驱动器迁移到集群中的其他驱动器。此过程所需时间取决于必须迁移的数据量。
 
-. 使用 Element UI 或从集群中删除节点 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["`RemoveNodes`"^] API 方法。
+. 使用 Element UI 或从集群中删除节点 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_removenodes.html["3a7274d7e44dc3f5bd547cc6bc747d94"^] API 方法。
 . 使用 SSH 连接到从集群中删除的节点。
 . 按如下所示从节点中删除 SolidFire ESDS ：
 +

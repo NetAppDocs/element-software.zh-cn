@@ -22,7 +22,7 @@ summary: 安装 SolidFire ESDS 后，请在每个 SolidFire ESDS 节点上配置
 
 
 
-NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_cluster_config["`NAR_solidfire_cluster_config`"^] NetApp 提供的可执行安装后步骤的角色。如果要手动执行此操作，请参见以下步骤。
+NOTE: 您可以使用 link:https://github.com/NetApp-Automation/nar_solidfire_cluster_config["49284958c9d16c4b6d8ee9ddd4ebbca5"^] NetApp 提供的可执行安装后步骤的角色。如果要手动执行此操作，请参见以下步骤。
 
 
 
@@ -43,7 +43,7 @@ IMPORTANT: 创建集群后，您无法更改集群名称。
 ... 选择 * 应用更改 * 。
 
 
-** 使用 link:../api/reference_element_api_setclusterconfig.html["`setClusterConfig`"^] API 方法。
+** 使用 link:../api/reference_element_api_setclusterconfig.html["acf00854bc64655927abe2f08f53203f"^] API 方法。
 +
 此方法具有以下输入参数：
 
@@ -411,7 +411,7 @@ string
 ... 确认已添加驱动器，并且集群容量符合预期。
 
 
-** 使用 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_adddrives.html["`AddDrives`"^] API 方法。
+** 使用 https://docs.netapp.com/us-en/element-software/docs/api/reference_element_api_adddrives.html["775ca0ad68fdedd2fe06eeb23598d120"^] API 方法。
 +
 此方法具有以下输入参数：
 
@@ -468,7 +468,7 @@ JSON 对象数组
 
 
 
-有关此 API 方法的详细信息，请参见 link:../api/reference_element_api_adddrives.html["`AddDrives`"^]。
+有关此 API 方法的详细信息，请参见 link:../api/reference_element_api_adddrives.html["775ca0ad68fdedd2fe06eeb23598d120"^]。
 
 
 

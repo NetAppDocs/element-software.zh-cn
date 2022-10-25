@@ -14,7 +14,7 @@ summary: 如果您需要使某个存储节点脱机以进行维护，例如软�
 如果您需要使某个存储节点脱机以进行维护，例如软件升级或主机修复，则可以通过为该节点启用维护模式来最大限度地减少对该存储集群其余部分的 I/O 影响。
 
 
-TIP: 如果要验证节点上维护模式的当前状态，请使用 link:../api/reference_element_api_listactivenodes.html["`ListActiveNodes`"^] API 方法。节点对象包含 `maintenanceMode` 参数，该参数表示节点上维护模式的当前状态。
+TIP: 如果要验证节点上维护模式的当前状态，请使用 link:../api/reference_element_api_listactivenodes.html["9a22eba2ac8927a67bb3d8f09e152944"^] API 方法。节点对象包含 `maintenanceMode` 参数，该参数表示节点上维护模式的当前状态。
 
 
 NOTE: 确保在启用维护模式后立即执行维护。请勿将节点置于任何必要的维护模式。
