@@ -5043,7 +5043,6 @@
   <block id="14b68e07a69ae90b19c2bd823797ff21" category="paragraph">注册成功后，注册实用程序 UI 中将显示一个横幅。</block>
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">此操作将创建一个新数据库并在 vSphere Web Client 中完成安装。</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">在 vSphere Web Client 中，请在任务监控器中查找以下已完成的任务，以确保安装已完成： `download plug-in` 和 `DeDeploy plug-in` 。</block>
-  <block id="c4676996d8b51da422f5ab619c54ae01" category="list-text">验证 NetApp Element 配置和管理扩展点是否显示在 vSphere Web Client 的 * 快捷方式 * 选项卡以及侧面板中。</block>
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">在插件的 * NetApp Element Configuration* 扩展点中的 * 关于 * 选项卡中验证版本更改。</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">您应看到以下版本详细信息或较新版本的详细信息：</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter 插件包含联机帮助内容。要确保帮助包含最新内容，请在升级插件后清除浏览器缓存。</block>
@@ -12360,4 +12359,7 @@
   <block id="85406fb94df2ff523b7477f229b1c9c8" category="image-alt">描述了成功升级或安装Element插件4.10或更早版本之后的插件扩展点</block>
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">管理服务2.22.7通知(适用于VMware vCenter Server 5.0.37的NetApp Element 插件)</block>
   <block id="6bad10de0797378a77f16be896cb0776" category="list-text"><block ref="6bad10de0797378a77f16be896cb0776" category="inline-link-macro-rx"></block></block>
+  <block id="d471727ba1fb423986701d5307906d08" category="list-text">验证插件扩展点是否显示在vSphere Web Client的*快捷方式*选项卡和侧面板中。</block>
+  <block id="290b380ec7760347344e9055b68f217d" category="paragraph">从适用于vCenter Server 5.0的Element插件开始、NetApp Element 远程插件扩展点：</block>
+  <block id="7491d78d51f3545fc9fe30d2249bc196" category="paragraph">适用于vCenter Server 4.10或更早版本的Element插件、NetApp Element 配置和管理扩展点：</block>
 </blocks>
