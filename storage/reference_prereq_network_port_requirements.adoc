@@ -515,6 +515,17 @@ vCenter 插件 API 访问
  a| 
 vCenter Server
  a| 
+远程插件
+ a| 
+8333
+ a| 
+远程vCenter插件服务
+
+
+
+ a| 
+vCenter Server
+ a| 
 管理节点
  a| 
 8443
