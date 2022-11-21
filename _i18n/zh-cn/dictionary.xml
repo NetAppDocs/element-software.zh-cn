@@ -12349,9 +12349,6 @@
   <block id="924861571eeb51fd5eb1d806da0f0e5e" category="list-text">* Element存储升级*：</block>
   <block id="b9ad9c0000e5c2b012be9c9ba83b7cff" category="list-text">从Element vCenter插件5.0开始、您的集群运行的是NetApp Element 软件12.3.x或更高版本。</block>
   <block id="02738f63a80a594ad3ab131f3a7298f2" category="list-text">对于Element vCenter插件4.10或更早版本、您的集群运行的是NetApp Element 软件11.3或更高版本。</block>
-  <block id="e8b1bdd38a7601206cf400f05fbdc57d" category="paragraph">从适用于vCenter Server 5：0的Element插件开始：</block>
-  <block id="05c0e13a813e930c3eab807f98959379" category="paragraph">适用于vCenter Server 4.10或更早版本的Element插件：</block>
-  <block id="23fa7915a24406758b2d7b2b274fe1f3" category="list-text">(对于内部服务器/非公开站点)根据适用于vCenter的Element插件版本、插件JSON文件或插件ZIP的自定义URL：</block>
   <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">从适用于vCenter Server 5.0的Element插件开始、此插件JSON文件的自定义URL。</block>
   <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">如果您使用的是HTTP或HTTPS服务器(非公开站点)或已修改JSON文件名或网络设置、则可以选择*自定义URL*自定义URL。有关自定义 URL 的其他配置步骤，请参见适用于 vCenter Server 的 Element 插件文档，了解有关修改内部（非公开站点） HTTP 服务器的 vCenter 属性的信息。</block>
   <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">对于适用于vCenter Server 4.10或更早版本的Element插件、此插件ZIP的自定义URL。</block>
@@ -12360,6 +12357,14 @@
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">管理服务2.22.7通知(适用于VMware vCenter Server 5.0.37的NetApp Element 插件)</block>
   <block id="6bad10de0797378a77f16be896cb0776" category="list-text"><block ref="6bad10de0797378a77f16be896cb0776" category="inline-link-macro-rx"></block></block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">验证插件扩展点是否显示在vSphere Web Client的*快捷方式*选项卡和侧面板中。</block>
-  <block id="290b380ec7760347344e9055b68f217d" category="paragraph">从适用于vCenter Server 5.0的Element插件开始、NetApp Element 远程插件扩展点：</block>
-  <block id="7491d78d51f3545fc9fe30d2249bc196" category="paragraph">适用于vCenter Server 4.10或更早版本的Element插件、NetApp Element 配置和管理扩展点：</block>
+  <block id="78d33ed700a31bfed5ec712d766def44" category="paragraph">存储节点基板管理控制器(BMC)/智能平台管理接口(IPMI) H410和H600系列</block>
+  <block id="59f1e3a87c5b329f2a5a951d9bf325f8" category="paragraph">对节点远程控制的HTTPS UI和API访问</block>
+  <block id="1381491a5bb8087f95db0601150c5c28" category="paragraph">存储节点BMC/IPMI H410和H600系列</block>
+  <block id="ad097a4f1c93214faa0a1ca354a82225" category="paragraph">623 UDP</block>
+  <block id="483602128e75be96f5280855d8065878" category="paragraph">远程管理控制协议端口。这是管理启用了IPMI的系统所必需的。</block>
+  <block id="3ef00ef1af91bf9fe0b72f4052a67f59" category="list-text">适用于vCenter Server 5.0的Element插件的vCenter插件注册页面：</block>
+  <block id="1875d143de1e9be70dc9e780b41377fe" category="list-text">适用于vCenter Server 4.10或更早版本的Element插件的vCenter插件注册页面：</block>
+  <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">(对于内部服务器/非公开站点)根据适用于vCenter的Element插件版本、此插件JSON文件或插件ZIP的自定义URL：</block>
+  <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">从适用于vCenter Server 5.0的Element插件开始、将显示NetApp Element 远程插件扩展点：</block>
+  <block id="1c63b3cd9a6d3bdf8b9b31aca68672d7" category="list-text">对于适用于vCenter Server 4.10或更早版本的Element插件、将显示NetApp Element 配置和管理扩展点：</block>
 </blocks>
