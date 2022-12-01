@@ -137,5 +137,5 @@ Element 12.5还包括120多个CVE安全漏洞修复。
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"^]
 * http://docs.netapp.com/sfe-122/index.jsp["适用于先前版本的 SolidFire 和 Element 软件文档中心"^]
 * https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI 资源页面"^]
-* https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html["SolidFire 存储节点支持的存储固件版本"^]
+* link:../hardware/fw_storage_nodes.html["SolidFire 存储节点支持的存储固件版本"]
 

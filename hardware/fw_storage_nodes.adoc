@@ -1,0 +1,14 @@
+---
+permalink: hardware/fw_storage_nodes.html 
+sidebar: sidebar 
+keywords: documentation, earlier, previous, versions 
+summary: 存储节点支持的固件和驱动程序版本。 
+---
+= 存储节点
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+<stdin> 中未解析的指令-包括：https://raw.githubusercontent.com/NetAppDocs/hci/main/_include/fw_storage_nodes.adoc[]

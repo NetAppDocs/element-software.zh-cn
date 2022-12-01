@@ -64,7 +64,7 @@ homepage:
     - title: SF 系列硬件信息
       url: "/hardware/concept_sfseries_info.html"
     - title: NetApp H系列存储节点支持的固件版本
-      url: https://docs.netapp.com/us-en/hci/docs/fw_storage_nodes.html
+      url: "/hardware/fw_storage_nodes.html"
   - title: 管理存储
     links:
     - title: 使用 Element 软件 UI
