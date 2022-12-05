@@ -12092,7 +12092,6 @@
   <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">*获取有关Element软件修补程序的信息*：Element 12.3中引入的`GetPatchInfo`方法可用于获取有关存储节点上安装的Element软件修补程序的信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出节点上每个网络接口的统计信息*：Element 12.3中引入的`ListNetworkInterfaceStats`方法可用于列出统计信息、例如、节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1中引入的动态节点评级功能使您可以在每个ESDS平台上利用24个受支持的CPU、而不是目前的每个平台使用一个CPU的模式。</block>
-  <block id="234a1430825055fe25203429facd267e" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">启用远程 NetApp 支持连接</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP处理帐户</block>
@@ -12553,4 +12552,5 @@
   <block id="55fc3b139c0a126af7257f980acb20c5" category="cell">身份模块</block>
   <block id="c9c5cc2efc04287e6fe8d7feebf032aa" category="cell">N41WC 1.02</block>
   <block id="126078d2e17c3ac2589cca85b30163c7" category="cell">启动设备</block>
+  <block id="64c9f5445140b2d5ab2eb8fe31bd6872" category="admonition">对于Element 12.5及更早版本、请勿将多个NetApp Element VASA Provider注册到一个vCenter实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
 </blocks>

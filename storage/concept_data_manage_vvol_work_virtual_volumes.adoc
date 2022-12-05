@@ -20,7 +20,7 @@ NetApp Element 软件存储系统在出厂时已禁用虚拟卷（ VVol ）功�
 在 Element 软件存储系统中使用虚拟卷功能所需的大多数配置均在 vSphere 中进行。要在 vCenter 中注册 VASA Provider ，创建和管理 VVOL 数据存储库以及根据策略管理存储，请参见 _VMware vSphere 适用于 SolidFire 存储的虚拟卷配置指南。
 
 
-NOTE: 请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。
+NOTE: 对于Element 12.5及更早版本、请勿将多个NetApp Element VASA Provider注册到一个vCenter实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。
 
 
 NOTE: 如果您已在 vCenter 中注册了 VASA Provider ，则可通过升级修补程序为多个 vCenter 提供 VASA 支持。要安装，请从下载 VASA39 .tar.gz 文件 https://mysupport.netapp.com/products/element_software/VASA39/index.html["NetApp 软件下载"] 并按照清单中的说明进行操作。NetApp Element VASA 提供程序使用 NetApp 证书。使用此修补程序时， vCenter 会未经修改地使用此证书来支持多个 vCenter 以供 VASA 和 VVol 使用。请勿修改证书。VASA 不支持自定义 SSL 证书。
