@@ -13,7 +13,7 @@ summary: 您可以向快照计划添加 SnapMirror 标签，以确保应用 Snap
 [role="lead"]
 您可以向快照计划添加 SnapMirror 标签，以确保应用 SnapMirror 策略。您可以从现有 SnapMirror 关系对话框或 NetAppONTAP System Manager 中查看可用标签。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 必须在集群级别启用 SnapMirror 。
 * 要添加的标签已存在于 ONTAP 中。
 

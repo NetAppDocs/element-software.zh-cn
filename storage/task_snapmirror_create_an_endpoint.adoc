@@ -22,7 +22,7 @@ NOTE: 如果现有端点最初是使用 API 创建的，但未保存凭据，则
 
 有关 API 方法的详细信息，请参见 link:../api/index.html["使用 Element API 管理存储"]。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您应已在 Element UI 中为存储集群启用 SnapMirror 。
 * 您知道端点的 ONTAP 凭据。
 

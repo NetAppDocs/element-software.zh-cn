@@ -13,6 +13,7 @@ summary: '您可以使用 Ansible 在 SolidFire ESDS 集群上执行无中断滚
 [role="lead"]
 您可以使用 Ansible 在 SolidFire ESDS 集群上执行无中断滚动升级。使用 NetApp 提供的 `NAR_solidfire_SDS_upgrade` 角色， Ansible 一次执行一个节点的滚动升级，同时保持所有卷的数据可用性。
 
+.您需要的内容
 在升级之前，请确保满足以下条件：
 
 * Element UI 中没有集群故障。
@@ -35,6 +36,7 @@ hosts:
 * 清单文件指定了以下变量： sf_mgmt_virt_IP （ MVIP ）， sf_cluster_admin_username ， sf_cluster_admin_passwd 和 solidfire_element_rpm （新 RPM 文件的路径）。
 
 
+.升级概述
 下面简要介绍了升级过程中会发生的情况：
 
 * 系统将验证您在清单文件中输入的信息。

@@ -109,7 +109,6 @@
   <block id="f94e428499e6b0a048593b378e6d1e63" category="image-alt">此图显示了具有四个存储节点的四节点机箱。</block>
   <block id="66e62fb3b4f9f571913a8e7fc1ad86eb" category="paragraph">下面是具有 H410S 节点的四节点机箱的正面图，其中显示了与每个节点对应的托架：</block>
   <block id="02f1f5dfbef570d0aa6ffa60d170113c" category="image-alt">显示了与 H410S 节点的四节点机箱中的每个节点关联的托架。</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要什么？ #8217 ；将需要什么</block>
   <block id="8d73b8d7cb951ae03021818360431bf3" category="list-text">您已确认存储节点出现故障，需要更换。</block>
   <block id="a5de1df78b2a5f859ad00751d2bd98e0" category="list-text">您已获得替代存储节点。</block>
   <block id="7dc71fc1ba8b3b46bc5aa180659fd0c4" category="list-text">您已佩戴静电释放（ ESD ）腕带，或者已采取其他防静电保护措施。</block>
@@ -5046,7 +5045,6 @@
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">在插件的 * NetApp Element Configuration* 扩展点中的 * 关于 * 选项卡中验证版本更改。</block>
   <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">您应看到以下版本详细信息或较新版本的详细信息：</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter 插件包含联机帮助内容。要确保帮助包含最新内容，请在升级插件后清除浏览器缓存。</block>
-  <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">系统升级顺序</block>
   <block id="d7cc77e1654b4ecc5878545e7bf4f78d" category="summary">在 NetApp SolidFire 存储系统升级过程中，您需要升级管理节点。</block>
   <block id="1761ea607c3f8d002099290408801187" category="doc">升级管理节点</block>
   <block id="1edc36bdf08bca8bac4f78d104c92780" category="admonition">如果您未依次更新管理服务和 Element 存储，则无法使用此操作步骤重新配置身份验证。请改用相应的升级操作步骤。</block>
@@ -10471,11 +10469,9 @@
   <block id="1e23f0ce49a8f014bc05289297cd4e9d" category="paragraph">日志包采用压缩的 UNIX ` .tgz` 文件格式。</block>
   <block id="8a221a4f965f4cfc6edfd1e855cb0aaa" category="summary">在安装 SolidFire ESDS 之前，请确保执行必要的检查并验证您的环境是否满足配置， IP 地址和网络连接要求。</block>
   <block id="88d5e6f116564d2c06f8abf0724efec5" category="doc">执行安装的前提条件任务</block>
-  <block id="f7dcb8224f85128ec87fe0a2442fc52a" category="list-title">&lt;Strong&gt; 安装所需硬件 &lt;/Strong&gt;</block>
   <block id="72af4b89bf6c89e877a119046199a6b7" category="inline-link">NetApp 互操作性表（需要登录）</block>
   <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">安装支持的服务器。请参见<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> 有关详细信息 ...</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">确保硬件配置是平衡的，并且所有通道均已填充。有关最大程度地提高带宽的详细信息，请参见<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （需要登录）。</block>
-  <block id="2a97471ec199242556431779bd30838a" category="list-title">&lt;Strong&gt; 配置主机（节点） &lt;/Strong&gt;</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">配置网络时间协议（ NTP ）服务器，以便与网络中的所有主机结合使用。</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">选择安装目标时，选择单选按钮以手动配置文件系统分区。在 * 手动分区 * 页面上，使用 * + * 和 * - * 按钮删除任何现有分区，并根据此处列出的建议创建新分区并调整其大小。使用默认 LVM 分区方案，您可以在以后根据需要轻松调整大小。</block>
   <block id="3349300356cb3141ea939dcbdf749789" category="cell">分区</block>
@@ -10497,8 +10493,6 @@
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">在节点上启用 SSH 。</block>
   <block id="f0a2de2efe6108942f8b79e50b1b6be5" category="inline-link">知识库文章（需要登录）</block>
   <block id="57208611101414fe2f0426e46c1f0d65" category="list-text">如果要禁用 IPv6 ，请按照本节中详细介绍的步骤进行操作<block ref="2a5c78b7a0390cd7a5313c37d3eb2c52" category="inline-link-rx"></block>。</block>
-  <block id="1a76b48d9d60fd8364da6ea0eaec3eff" category="list-title">&lt;Strong&gt; 安装所需软件 &lt;/Strong&gt;</block>
-  <block id="e1633c03fa0d88ea4ec55f043ee4598c" category="list-title">&lt;Strong&gt; 验证您的配置是否符合 NetApp&amp;#8217 安装 SolidFire ESDS&lt;/Strong&gt; 的要求</block>
   <block id="30ec57363b9938495c0097cd8a0bcbbf" category="list-text">使用中列出的 SolidFire ESDS 配置<block ref="d73544449e4c516eccc06a758c5e6c47" category="inline-link-rx"></block> 作为参考。</block>
   <block id="909806d31a8e12a761cf09c409cefaad" category="admonition">如果您就与 SolidFire ESDS 相关的问题联系 NetApp 支持部门寻求帮助，支持部门将首先验证您的平台是否符合 IMT 中列出的 SolidFire ESDS 的参考配置。如果支持部门确定您的底层平台不符合参考配置，支持部门将指导您将不合规的固件，软件和 / 或硬件组件与 IMT 中的正确版本对齐。</block>
   <block id="6314b9fb7626759e31aeab5d959e5286" category="list-text">对 SolidFire ESDS 运行合规性检查。</block>
@@ -10511,7 +10505,6 @@
   <block id="34838a3f0559a6f772b5758da69cbbfb" category="list-text">创建用于合规性检查的攻略手册。</block>
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">运行合规性检查攻略手册，如以下示例所示：</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">即使您开始使用 SolidFire ESDS 系统，也应定期运行合规性检查，以确保您的系统符合要求。在某些情况下， NetApp 支持部门会要求您运行合规性检查，以帮助诊断和解决问题。</block>
-  <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">&lt;Strong&gt; 了解网络和 IP 地址要求 &lt;/Strong&gt;</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">按照此处详细介绍的 IP 要求配置网络：</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">组件</block>
   <block id="265df7cdddd316ce979aa017f0753e25" category="cell">存储网络 IP 地址</block>
@@ -10532,7 +10525,6 @@
   <block id="3954d0109fc9c791be6d11e39804cb50" category="paragraph">用于管理网络的端口</block>
   <block id="ebff118a006e94651da911d800279c44" category="admonition">此处提供的图示仅用作示例。实际硬件可能因服务器而异。</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">将交换机端口 MTU 更改为 9216 字节。</block>
-  <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">&lt;Strong&gt; 允许特定端口通过数据中心？ #8217 ； s 防火墙 &lt;/Strong&gt;</block>
   <block id="ab2f4d4dbd7fe86289026b4321e7e53d" category="paragraph">80 TCP/UDP</block>
   <block id="f5fc4cfbf6f32dae142bd0f1c443bc13" category="paragraph">集群升级</block>
   <block id="b0ee3a63a5791163e83df745e5b7b013" category="paragraph">442 TCP</block>
@@ -10552,11 +10544,9 @@
   <block id="f0f166a01d55488cbf1ae223ecbb6068" category="paragraph">vCenter 插件 QoSSIOC 服务</block>
   <block id="b843120f7921517683f4de0687bf0a29" category="admonition">Element 分布式数据库需要使用端口 2181 ， 2182 和 2183 ，并且在安装 SolidFire ESDS 时，将从 Element 容器动态打开端口 2181 ， 2182 和 2183 。</block>
   <block id="0cb585626379a70b87a0e3ee14309e3b" category="list-text">使用以下命令打开上述端口：</block>
-  <block id="95f75258f8b33664eeaf8b541ff97858" category="list-title">&lt;Strong&gt; 配置主机网络 &lt;/Strong&gt;</block>
   <block id="78ff65afbf92a15cd30dea91aefc1e9b" category="inline-link-macro">最佳实践</block>
   <block id="f433801b7b771eb645906990697cb40d" category="list-text">使用配置主机网络 <block ref="d5d50f06af9eb06fd5c8afba97ab5274" category="inline-link-macro-rx"></block> 已提供。</block>
   <block id="9fe0e0876a07d2247ecb84a994e87a77" category="admonition">您应完成配置主机网络的步骤，以确保成功安装 SolidFire ESDS 。</block>
-  <block id="fb96b65afb5d2a139a12f87e3171372c" category="list-title">&lt;Strong&gt; 完成其他要求 &lt;/Strong&gt;</block>
   <block id="d5272d5ecd1fe99c7097dfcca90c8f7d" category="list-text">安装一个 Collect ， NetApp 支持部门将使用它收集主机日志。您可以从安装一个 Collect<block ref="d3b16539387c5c512d10064586f79c65" category="inline-link-rx"></block>。要访问下载内容，您需要一个 NetApp 帐户。您还可以在同一位置找到《 One Collect 安装指南》和《发行说明》。</block>
   <block id="b4cac9f0dca24135289e8ff89afe6aa1" category="admonition">要获得最佳支持体验，您必须下载并安装一个 Collect 。</block>
   <block id="6d1d7be211708c9b56d930f731aa306b" category="list-text">安装用于收集日志的管理节点，并启用 NetApp 支持访问以进行故障排除。有关管理节点和安装步骤的信息，请参见 <block ref="9915e3fe57455c0bc98ba7d4ab2016f9" category="inline-link-macro-rx"></block>。</block>
@@ -12553,4 +12543,28 @@
   <block id="c9c5cc2efc04287e6fe8d7feebf032aa" category="cell">N41WC 1.02</block>
   <block id="126078d2e17c3ac2589cca85b30163c7" category="cell">启动设备</block>
   <block id="64c9f5445140b2d5ab2eb8fe31bd6872" category="admonition">对于Element 12.5及更早版本、请勿将多个NetApp Element VASA Provider注册到一个vCenter实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="paragraph-title">您需要的内容</block>
+  <block id="2cd70ba1e2d0b294626ea7f96d25a07f" category="paragraph-title">日志收集选项</block>
+  <block id="891a52ee80600fd58bac60927df7a3a9" category="section-title">【启用主模式】启用维护模式</block>
+  <block id="27404255e546058b4a4837fb07e90bbf" category="section-title">【disable_main_mode]]禁用维护模式</block>
+  <block id="64916198004d1ee19b1b50002f51f1a8" category="paragraph-title">升级选项</block>
+  <block id="bac407daf00ae86b0f95e89cf84eeac1" category="section-title">【系统升级】系统升级顺序</block>
+  <block id="df5820ca7f238b48987ff74db1271e4a" category="paragraph-title">更新选项</block>
+  <block id="a31b6eafc73ca0db90a0d96e6fb9dc93" category="paragraph-title">运行状况检查选项</block>
+  <block id="f8317d9a65a7e996db437d8eabc22aeb" category="paragraph-title">故障排除知识库文章链接</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
+  <block id="1505b4d22f5b2439d387f71ebb0fccd2" category="paragraph-title">可能的错误</block>
+  <block id="2de79e7b8c77e4847d6bcd5a8ee879ce" category="section-title">【SF节点】SF38410、SF19210、SF9605和SF4805</block>
+  <block id="6a31058d1e6208d43e0d620fb4953c23" category="paragraph-title">存储集群资产管理选项</block>
+  <block id="50f33d14f129e4548c1c270fd6725a78" category="paragraph-title">配置选项</block>
+  <block id="63f488c7bb829c89f024839d6aa602f4" category="section-title">【自定义PD】自定义保护域</block>
+  <block id="fa5cc5e49b65ffd46ba8881097cf8310" category="list-title">*安装所需硬件*</block>
+  <block id="6b170e726e4567decff7daaed3e1a08b" category="list-title">*配置主机(节点)*</block>
+  <block id="c86064ac886a0aab9f8ecf92f19f98b3" category="list-title">*安装所需软件*</block>
+  <block id="fd9cdaf80c90bdd2d3af18c1c856b60f" category="list-title">*验证您的配置是否符合NetApp安装SolidFire ESDS*的要求</block>
+  <block id="9bfadf4c7ec72b1af0ecb9eaabaf58c8" category="list-title">*了解网络和IP地址要求*</block>
+  <block id="a113f5f001cbfcc5dc2a0dde65f4e2d9" category="list-title">*允许特定端口通过数据中心的防火墙*</block>
+  <block id="45f450486d575041c747125231750ffe" category="list-title">*配置主机网络*</block>
+  <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">*完成其他要求*</block>
+  <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">升级概述</block>
 </blocks>

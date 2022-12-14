@@ -19,10 +19,10 @@ keywords: netapp, element, hcc, hybrid cloud control, storage, storage performan
 
 NOTE: 首次启动新的 NetApp Hybrid Cloud Control 会话时，如果管理节点管理多个集群，则加载 NetApp Hybrid Cloud Control Dashboard 视图可能会出现延迟。加载时间因管理节点主动管理的集群数量而异。对于后续发布，您将体验到更快的加载速度。
 
-*  the NetApp HCC Dashboard
-*  storage resources
-*  storage capacity
-*  storage performance
+* <<访问 NetApp HCC 信息板>>
+* <<监控存储资源>>
+* <<监控存储容量>>
+* <<监控存储性能>>
 
 
 

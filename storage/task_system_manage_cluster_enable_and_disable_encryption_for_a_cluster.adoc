@@ -20,7 +20,7 @@ summary: 对于 SolidFire 集群，您可以使用空闲时基于软件或硬件
 
 WARNING: 对于 SolidFire 全闪存存储集群，必须在创建集群期间启用空闲软件加密，并且在创建集群后无法禁用该加密。对于 SolidFire 企业 SDS （ ESDS ）集群，默认情况下会启用空闲软件加密。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您拥有启用或更改加密设置的集群管理员权限。
 * 对于基于硬件的空闲加密，在更改加密设置之前，您已确保集群处于运行状况良好的状态。
 * 如果要禁用加密，则集群中必须有两个节点，才能访问密钥以禁用驱动器上的加密。
@@ -36,9 +36,9 @@ WARNING: 对于 SolidFire 全闪存存储集群，必须在创建集群期间启
 NOTE: `https://<MVIP>/` 上的 Element 软件 UI 信息板当前仅显示基于硬件的加密的空闲加密状态。
 
 .选项
-*  hardware-based encryption at rest
-*  software-based encryption at rest
-*  hardware-based encryption at rest
+* <<启用基于硬件的空闲加密>>
+* <<启用基于软件的空闲加密>>
+* <<禁用基于硬件的空闲加密>>
 
 
 

@@ -13,7 +13,7 @@ summary: 您必须在 Element UI 中对卷启用 SnapMirror 。这样可以将�
 [role="lead"]
 您必须在 Element UI 中对卷启用 SnapMirror 。这样可以将数据复制到指定的 ONTAP 卷。这是运行 NetApp Element 软件的集群管理员为 SnapMirror 提供的控制卷的权限。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已在 Element UI 中为集群启用 SnapMirror 。
 * SnapMirror 端点可用。
 * 卷的块大小必须为 512e 。

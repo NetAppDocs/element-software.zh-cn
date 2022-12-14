@@ -22,7 +22,7 @@ summary: 您可以使用 Element API 重新设置现有密钥的密钥。此过�
 
 NOTE: 此过程是异步的，在重新设置密钥操作完成之前返回响应。您可以使用 link:../api/reference_element_api_getasyncresult.html["GetAsyncResult"] 对系统进行轮询以查看进程何时完成的方法。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已使用启用空闲软件加密 link:../api/reference_element_api_createcluster.html["CreateCluster"] 方法，用于新集群，该集群不包含卷，也不具有 I/O使用 ... link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["9510c8e68784d05acbae2e947dde3cd8"] 在继续操作之前，确认状态为 `enabled` 。
 * 您已拥有 link:../storage/task_system_manage_key_set_up_external_key_management.html["建立信任关系"] 在 SolidFire 集群和外部密钥服务器（ EKS ）之间。运行 link:../api/reference_element_api_testkeyserverkmip.html["TestKeyProviderKmip"] 用于验证是否已建立与密钥提供程序的连接的方法。
 

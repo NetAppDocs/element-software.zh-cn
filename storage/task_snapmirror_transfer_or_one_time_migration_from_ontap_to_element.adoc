@@ -21,7 +21,7 @@ summary: 通常，在使用 SnapMirror 从运行 NetApp Element 软件的 SolidF
 
 
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * Element 目标节点必须可供 ONTAP 访问。
 * 必须已为 Element 卷启用 SnapMirror 复制。
 

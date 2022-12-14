@@ -13,7 +13,7 @@ summary: 您必须通过 NetApp Element 软件手动启用 vSphere 虚拟卷（ 
 [role="lead"]
 您必须通过 NetApp Element 软件手动启用 vSphere 虚拟卷（ VVol ）功能。默认情况下， Element 软件系统随附的 VVol 功能处于禁用状态，它不会在新安装或升级过程中自动启用。启用 VVol 功能是一次性配置任务。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 集群必须运行 Element 9.0 或更高版本。
 * 集群必须连接到与 VVol 兼容的 ESXi 6.0 或更高版本环境。
 * 如果您使用的是 Element 11.3 或更高版本，则集群必须连接到 ESXi 6.0 Update 3 或更高版本的环境。

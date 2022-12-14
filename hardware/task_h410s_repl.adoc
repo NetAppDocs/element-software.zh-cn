@@ -23,7 +23,7 @@ image::hci_stornode_rear.gif[此图显示了具有四个存储节点的四节点
 
 image::hci_stor_node_ssd_bays.gif[显示了与 H410S 节点的四节点机箱中的每个节点关联的托架。]
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已确认存储节点出现故障，需要更换。
 * 您已获得替代存储节点。
 * 您已佩戴静电释放（ ESD ）腕带，或者已采取其他防静电保护措施。
@@ -32,9 +32,9 @@ image::hci_stor_node_ssd_bays.gif[显示了与 H410S 节点的四节点机箱中
 
 下面简要概述了这些步骤：
 
-*  to replace the node
-*  the node in the chassis
-*  the node to the cluster
+* <<准备更换节点>>
+* <<更换机箱中的节点>>
+* <<将节点添加到集群>>
 
 
 

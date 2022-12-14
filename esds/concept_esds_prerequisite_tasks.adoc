@@ -13,12 +13,12 @@ summary: 在安装 SolidFire ESDS 之前，请确保执行必要的检查并验�
 [role="lead"]
 在安装 SolidFire ESDS 之前，请确保执行必要的检查并验证您的环境是否满足配置， IP 地址和网络连接要求。
 
-.<Strong> 安装所需硬件 </Strong>
+.*安装所需硬件*
 * 安装支持的服务器。请参见 https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp 互操作性表（需要登录）"^] 有关详细信息 ...
 * 确保硬件配置是平衡的，并且所有通道均已填充。有关最大程度地提高带宽的详细信息，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/SolidFire_Enterprise_SDS/How_to_balance_memory_and_maximize_bandwidth_for_your_hardware_configurations["知识库文章"^] （需要登录）。
 
 
-.<Strong> 配置主机（节点） </Strong>
+.*配置主机(节点)*
 * 根据中列出的受支持版本安装Red Hat Package Manager https://mysupport.netapp.com/matrix/imt.jsp?components=97283;&solution=1757&isHWU#welcome["NetApp 互操作性表（需要登录）"^]。
 * 配置网络时间协议（ NTP ）服务器，以便与网络中的所有主机结合使用。
 * 选择安装目标时，选择单选按钮以手动配置文件系统分区。在 * 手动分区 * 页面上，使用 * + * 和 * - * 按钮删除任何现有分区，并根据此处列出的建议创建新分区并调整其大小。使用默认 LVM 分区方案，您可以在以后根据需要轻松调整大小。
@@ -106,7 +106,7 @@ rhel-7-server-extras-rpms
 
 
 
-.<Strong> 安装所需软件 </Strong>
+.*安装所需软件*
 * 安装 Ansible ， Git ， Podman 和 Python 3.0 。
 +
 [NOTE]
@@ -131,7 +131,7 @@ NOTE: 如果有、NetApp建议您接受适用于您的Podman版本的安全更�
 ====
 
 
-.<Strong> 验证您的配置是否符合 NetApp&#8217 安装 SolidFire ESDS</Strong> 的要求
+.*验证您的配置是否符合NetApp安装SolidFire ESDS*的要求
 * 使用中列出的 SolidFire ESDS 配置 https://mysupport.netapp.com/matrix/#welcome["NetApp 互操作性表工具（ IMT ）"] 作为参考。
 +
 
@@ -184,7 +184,7 @@ NOTE: 即使您开始使用 SolidFire ESDS 系统，也应定期运行合规性�
 
 
 
-.<Strong> 了解网络和 IP 地址要求 </Strong>
+.*了解网络和IP地址要求*
 * 熟悉如何在Red Hat Package Manager中配置和管理网络和网络接口。请参见 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index["Red Hat 文档"^]。
 * 按照此处详细介绍的 IP 要求配置网络：
 +
@@ -261,7 +261,7 @@ IMPORTANT: 此处提供的图示仅用作示例。实际硬件可能因服务器
 * 将交换机端口 MTU 更改为 9216 字节。
 
 
-.<Strong> 允许特定端口通过数据中心？ #8217 ； s 防火墙 </Strong>
+.*允许特定端口通过数据中心的防火墙*
 * 如果在运行Red Hat Package Manager的存储节点上启用了`firewalld`、请确保以下端口处于打开状态、以便您可以远程管理系统、允许数据中心外部的客户端连接到资源、并确保内部服务可以正常运行：
 +
 [cols="4*"]
@@ -446,7 +446,7 @@ firewall-cmd –-reload
 ----
 
 
-.<Strong> 配置主机网络 </Strong>
+.*配置主机网络*
 * 使用配置主机网络 link:task_esds_configure_the_interface_config_files.html["最佳实践"^] 已提供。
 +
 
@@ -454,7 +454,7 @@ IMPORTANT: 您应完成配置主机网络的步骤，以确保成功安装 Solid
 
 
 
-.<Strong> 完成其他要求 </Strong>
+.*完成其他要求*
 * 安装一个 Collect ， NetApp 支持部门将使用它收集主机日志。您可以从安装一个 Collect https://mysupport.netapp.com/site/tools/tool-eula/activeiq-onecollect["此处"^]。要访问下载内容，您需要一个 NetApp 帐户。您还可以在同一位置找到《 One Collect 安装指南》和《发行说明》。
 +
 

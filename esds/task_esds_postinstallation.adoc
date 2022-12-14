@@ -13,12 +13,13 @@ summary: 安装 SolidFire ESDS 后，请在每个 SolidFire ESDS 节点上配置
 [role="lead"]
 安装 SolidFire ESDS 后，请在每个 SolidFire ESDS 节点上配置集群名称。然后，您可以创建 SolidFire ESDS 集群。
 
+.关于此任务
 下面简要概述了在安装 SolidFire ESDS 后应完成的任务：
 
-*  the cluster name
-*  the license key
-*  a cluster
-*  drives to the cluster
+* <<配置集群名称>>
+* <<设置许可证密钥>>
+* <<创建集群>>
+* <<向集群添加驱动器>>
 
 
 
@@ -92,6 +93,7 @@ IMPORTANT: 创建集群后，您无法更改集群名称。
 
 创建 SolidFire ESDS 集群时，您需要许可证密钥信息。NetApp 支持部门还需要许可证密钥信息，以帮助解决问题描述问题。SolidFire ESDS 集群的许可证密钥由集群的订单号和序列号组成，并激活您购买的容量期限许可证模式。
 
+.关于此任务
 您可以使用 `SetLicenseKey` 方法为 SolidFire ESDS 存储集群设置许可证密钥。`SetLicenseKey` 方法具有以下输入参数：
 
 [cols="5*"]

@@ -34,6 +34,7 @@ summary: 您可以更改 VLAN 属性，例如 VLAN 名称，网络掩码和 IP �
 . 选择 * 保存更改 * 。
 
 
+.故障排除知识库文章链接
 链接到知识库文章，以帮助您解决管理 VLAN IP 地址范围的问题。
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Duplicate_IP_warning_after_adding_a_storage_node_in_VLAN_on_Element_cluster["在 Element 集群上的 VLAN 中添加存储节点后出现重复 IP 警告"^]

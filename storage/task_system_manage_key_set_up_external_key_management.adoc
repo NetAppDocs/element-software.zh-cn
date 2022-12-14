@@ -13,7 +13,7 @@ summary: 您可以按照以下步骤操作，并使用列出的 Element API 方�
 [role="lead"]
 您可以按照以下步骤操作，并使用列出的 Element API 方法设置外部密钥管理功能。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 如果要将外部密钥管理与空闲软件加密结合使用，则已使用启用空闲软件加密 link:../api/reference_element_api_createcluster.html["CreateCluster"] 方法。
 
 

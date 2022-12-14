@@ -23,11 +23,11 @@ summary: 集群是 SolidFire 存储系统的中心，由一组节点组成。要
 NOTE: 从 Element 11.0 开始，可以为节点的管理网络配置 IPv4 ， IPv6 或这两个地址。此适用场景同时用于存储节点和管理节点，但不支持 IPv6 的管理节点 11.3 及更高版本除外。创建集群时， MVIP 只能使用一个 IPv4 或 IPv6 地址，并且必须在所有节点上配置相应的地址类型。
 
 .有关集群的更多信息
-*  storage clusters
-*  of thirds
-*  capacity
-*  efficiency
-*  cluster quorum
+* <<权威存储集群>>
+* <<第 3 条规则>>
+* <<孤立容量>>
+* <<存储效率>>
+* <<存储集群仲裁>>
 
 
 

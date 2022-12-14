@@ -15,7 +15,7 @@ summary: 了解如何配置系统 FQDN Web UI 访问并对其进行故障排除�
 
 通过此过程，集群可以正确重定向登录会话，并改进与外部服务的集成，例如用于多因素身份验证的密钥管理器和身份提供程序。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 此功能需要 Element 12.2 或更高版本。
 * 使用 NetApp Hybrid Cloud Control REST API 配置此功能需要使用管理服务 215 或更高版本。
 * 使用 NetApp Hybrid Cloud Control UI 配置此功能需要管理服务 2.19 或更高版本。
@@ -25,11 +25,11 @@ summary: 了解如何配置系统 FQDN Web UI 访问并对其进行故障排除�
 
 您可以使用 NetApp Hybrid Cloud Control 和 REST API 配置或删除 FQDN Web UI 访问。您还可以对配置不正确的 FQDN 进行故障排除。
 
-*  FQDN web UI access using NetApp Hybrid Cloud Control
-*  FQDN web UI access using the REST API
-*  FQDN web UI access using NetApp Hybrid Cloud Control
-*  FQDN web UI access using the REST API
-* 
+* <<使用 NetApp Hybrid Cloud Control 配置 FQDN Web UI 访问>>
+* <<使用 REST API 配置 FQDN Web UI 访问>>
+* <<使用 NetApp Hybrid Cloud Control 删除 FQDN Web UI 访问>>
+* <<使用 REST API 删除 FQDN Web UI 访问>>
+* <<故障排除>>
 
 
 

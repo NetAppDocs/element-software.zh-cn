@@ -13,13 +13,14 @@ summary: 您可以使用 Ansible 等自动化工具安装 SolidFire ESDS 。如�
 [role="lead"]
 您可以使用 Ansible 等自动化工具安装 SolidFire ESDS 。如果您非常熟悉 Ansible ，则可以创建一本 Ansible 攻略手册，该攻略手册将多项任务结合在一起，例如安装 SolidFire ESDS 和创建集群。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已按照提供的说明在本地服务器上安装 Ansible https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installation-guide["此处"^]。
 * 您已熟悉 Ansible 角色。请参见 https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html["此处"^]。
 * 您已执行列出的所有前提条件任务 link:concept_esds_prerequisite_tasks.html["此处"^]。
 * 您已对 SolidFire ESDS 运行合规性检查。有关如何运行合规性检查的说明，请参见 link:concept_esds_prerequisite_tasks.html["此处"^]。
 
 
+.关于此任务
 使用 Ansible Vault 获取敏感信息，例如密码，而不是使用纯文本。有关详细信息，请参见以下链接：
 
 * https://docs.ansible.com/ansible/latest/user_guide/playbooks_vault.html["使用 Ansible Vault"^]
