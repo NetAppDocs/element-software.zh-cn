@@ -12567,4 +12567,6 @@
   <block id="45f450486d575041c747125231750ffe" category="list-title">*配置主机网络*</block>
   <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">*完成其他要求*</block>
   <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">升级概述</block>
+  <block id="29d5a1c31c94981fab1916121b43f763" category="cell">存储节点BMC/IPMI</block>
+  <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP端口。这是管理启用了IPMI的系统所必需的。</block>
 </blocks>

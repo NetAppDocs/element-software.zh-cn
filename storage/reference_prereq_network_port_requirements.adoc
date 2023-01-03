@@ -189,6 +189,9 @@ repo.netapp.com
 
 
 
+| 管理节点 | 存储节点BMC/IPMI | 623 UDP | RMCP端口。这是管理启用了IPMI的系统所必需的。 
+
+
  a| 
 管理节点
  a| 
@@ -224,13 +227,14 @@ SNMP 轮询
 
  a| 
 SNMP 服务器
- a| 
-存储节点 MIP
- a| 
+| 存储节点 MIP  a| 
 161/UDP
  a| 
 SNMP 轮询
 
+
+
+| 存储节点BMC/IPMI | 管理节点 | 623 UDP | RMCP端口。这是管理启用了IPMI的系统所必需的。 
 
 
  a| 
