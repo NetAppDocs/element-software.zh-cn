@@ -129,15 +129,15 @@ homepage:
       url: https://mysupport.netapp.com/site/products/all/details/element-software/guideme-tab
   - title: 早期版本
     links:
-    - title: Element 12.3文档
-      url: https://docs.netapp.com/us-en/element-software-123/
+    - title: Element 12.3.x文档
+      url: https://docs.netapp.com/us-en/element-software-123/index.html
+    - title: Element 12.2.1文档
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63945&language=en-US
     - title: Element 12.2 文档
-      url: https://docs.netapp.com/sfe-122/index.jsp
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63593&language=en-US
+    - title: Element 12.0.1文档
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63946&language=en-US
     - title: Element 12.0 文档
-      url: https://docs.netapp.com/sfe-120/index.jsp
-    - title: Element 11.8 文档
-      url: https://docs.netapp.com/sfe-118/index.jsp
-    - title: Element 11.5 文档
-      url: https://docs.netapp.com/sfe-115/index.jsp
-    - title: Element 11.3 文档
-      url: https://docs.netapp.com/sfe-113/index.jsp
+      url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63368&language=en-US
+    - title: Element 11.8.2及更早版本的文档
+      url: "/element-earlierversions.html"
