@@ -6,7 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-  langs: zh-cn,us-en,ja-jp,zh-tw,ko-kr,fr-fr,de-de
+  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,fr-fr
 sidebar:
   entries:
   - title: SolidFire 和Element软件12.5及更高版本文档
@@ -63,6 +63,8 @@ homepage:
       url: "/hardware/concept_h410s_h610s_info.html"
     - title: SF 系列硬件信息
       url: "/hardware/concept_sfseries_info.html"
+    - title: 返回出厂映像信息
+      url: "/hardware/concept_rtfi_configure.html"
     - title: NetApp H系列存储节点支持的固件版本
       url: "/hardware/fw_storage_nodes.html"
   - title: 管理存储

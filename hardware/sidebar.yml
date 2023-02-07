@@ -25,3 +25,13 @@ entries:
     url: "/hardware/task_sfseries_driverepl.html"
   - title: 更换电源设备
     url: "/hardware/task_sfseries_psurepl.html"
+- title: 返回出厂映像信息
+  entries:
+  - title: 配置恢复出厂映像
+    url: "/hardware/concept_rtfi_configure.html"
+  - title: RTFI部署和安装选项
+    url: "/hardware/task_rtfi_deployment_and_install_options.html"
+  - title: RTFI进程
+    url: "/hardware/task_rtfi_process.html"
+  - title: RTFI选项菜单
+    url: "/hardware/task_rtfi_options_menu.html"

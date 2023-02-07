@@ -1,0 +1,29 @@
+---
+permalink: hardware/task_rtfi_deployment_and_install_options.html 
+sidebar: sidebar 
+keywords: rtfi, return, factory, image, deploy, deployment, install, installation, media 
+summary: 从NetApp 支持站点 下载特定于您的Element软件版本的RTFI ISO映像、并使用可启动且可安装的介质进行部署。 
+---
+= RTFI部署和安装选项
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+恢复出厂映像(Return to Factory Image、RTFI)过程使用可启动且可安装的介质以及完全独立且极简的Linux操作系统、在节点上部署Element软件。您可以从下载特定于您的Element软件版本的RTFI ISO映像 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["NetApp 支持站点"^]。
+
+下载RTFI ISO映像后、您可以按照以下常用方法之一进行部署：
+
+* *物理USB密钥*：您可以将可启动Element软件ISO写入USB密钥。有关说明、请参见知识库文章 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_create_an_RTFI_key_to_re-image_a_SolidFire_storage_node["如何创建RTFI密钥以重新创建SolidFire 存储节点的映像"^]。将带有ISO的USB密钥插入节点、然后从USB密钥启动。
+* *使用基板管理控制器(BMC)管理端口的虚拟介质*：您可以使用BMC动态连接到位于客户端系统上的ISO。此ISO可作为虚拟驱动器(CD或DVD)提供给主机操作系统。有关详细信息、请参见知识库文章 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/How_to_RTFI_a_node_via_BMC["如何通过BMC对节点执行RTFI"^]。
+* *使用预启动执行环境(PXE)、简单文件传输协议(TFTP)或FTP进行网络启动*：您可以使用、而不是手动打开ISO映像的包装 `autofs` 在RTFI进程请求时自动提取映像。此部署机制需要更多初始设置、但可以实现正确的自动化和可扩展安装。
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

@@ -1,0 +1,108 @@
+---
+permalink: hardware/task_rtfi_process.html 
+sidebar: sidebar 
+keywords: rtfi, return, factory, image, process, solidfire, node 
+summary: 执行RTFI过程以还原SolidFire 节点上的Element软件。 
+---
+= RTFI进程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过在系统启动之前显示的文本控制台提示与节点进行交互、开始恢复出厂映像(RTFI)过程。
+
+
+WARNING: RTFI过程会对数据造成破坏、并安全地擦除节点中的所有数据和配置详细信息、然后安装新的操作系统。验证用于RTFI进程的节点是否在集群中处于非活动状态。
+
+image::../media/rtfi_warning.PNG[SolidFire 警告、然后继续]
+
+RTFI进程将执行以下高级操作：
+
+. 在用户确认后启动安装并验证映像。
+. 解锁节点上的所有驱动器。
+. 验证固件并使其闪烁。
+. 检查硬件。
+. 测试硬件。
+. 安全擦除所有选定驱动器。
+. 对根驱动器进行分区并创建文件系统。
+. 挂载和卸载映像。
+. 配置主机名、网络连接(动态主机配置协议)、默认集群配置和Grub启动加载程序。
+. 停止所有服务、收集日志并重新启动。
+
+
+要在RTFI过程成功完成后配置节点、请参见 https://docs.netapp.com/us-en/element-software/index.html["您的Element软件版本的文档"^]。节点成功完成RTFI过程后、它会默认过渡到_available_(未配置)状态。
+
+
+
+== 执行RTFI过程
+
+使用以下操作步骤 还原SolidFire 节点上的Element软件。
+
+有关创建USB密钥或使用BMC执行RTFI过程的信息、请参见 link:task_rtfi_deployment_and_install_options.html["RTFI部署和安装选项"]。
+
+.开始之前
+验证是否满足以下要求：
+
+* 您可以访问SolidFire 节点的控制台。
+* 正在执行RTFI进程的节点已启动并连接到网络。
+* 要执行RTFI进程的节点不属于活动集群。
+* 您可以访问可启动安装介质、其中包含适用于您的配置的相关Element软件版本的映像。
+
+
+在执行RTFI过程之前、如果您有任何疑问、请联系NetApp支持部门。
+
+.步骤
+. 将显示器和键盘连接到节点背面、或连接到BMC IP UI、然后从UI中的*远程控制*选项卡启动* iKVM/HTML5 *控制台。
+. 在节点背面的两个USB插槽之一中插入一个具有适当映像的USB密钥。
+. 启动或重置节点。在启动期间、选择* F11 *以选择启动设备：
++
+
+NOTE: 您必须快速连续多次选择* F11*、因为启动设备屏幕会很快消失。
+
+. 在启动设备选择菜单中、突出显示USB选项。
++
+显示的选项取决于您使用的USB品牌。
+
++
+[NOTE]
+====
+如果未列出任何USB设备、请进入BIOS、验证此USB是否已按启动顺序列出、然后重新启动并重试。
+
+如果无法解析问题描述 、请进入BIOS、浏览到*保存并退出*选项卡、选择*还原到优化默认值*、接受并保存设置、然后重新启动。
+
+====
+. 此时将显示突出显示的USB设备上的映像列表。选择所需版本并选择Enter以启动RTFI过程。
++
+此时将显示RTFI映像Element软件名称和版本号。
+
+. 在初始提示符处、系统会通知您此过程将从节点中删除所有数据、并且此过程开始后、此数据将无法恢复。输入*是*开始。
++
+
+WARNING: 启动此过程后、所有数据和配置详细信息将从节点中永久擦除。如果您选择不继续、则系统会将您定向到 link:task_rtfi_options_menu.html["RTFI选项菜单"]。
+
++
+
+NOTE: 如果要在RTFI过程中查看控制台、可以按* Alt+F8*键切换到详细模式控制台。按*按Alt+F7*返回到主GUI。
+
+. 如果系统提示您执行大量硬件测试、请输入*否*、除非您有理由怀疑硬件故障或NetApp支持部门指示您执行测试。
++
+此时将显示一条消息、指示RTFI进程已完成、系统已关闭。
+
+. 如有必要、请在节点关闭后取出所有可启动安装介质。
++
+此时、节点便可启动并进行配置。请参见 https://docs.netapp.com/us-en/element-software/setup/concept_setup_overview.html["Element软件设置存储文档"^] 配置存储节点。
+
++
+如果在RTFI过程中遇到错误消息、请参见 link:task_rtfi_options_menu.html["RTFI选项菜单"]。
+
+
+
+
+
+== 了解更多信息
+
+* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
+

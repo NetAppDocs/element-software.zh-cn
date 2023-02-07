@@ -15,6 +15,7 @@ summary: 了解如何安装和维护 H 系列和 SF 系列硬件。
 
 * xref:concept_h410s_h610s_info.adoc[H410S 和 H610S 硬件信息]
 * xref:concept_sfseries_info.adoc[SF 系列硬件信息]
+* xref:concept_rtfi_configure.html[返回出厂映像信息]
 
 
 
