@@ -40,7 +40,7 @@ RTFI进程将执行以下高级操作：
 
 使用以下操作步骤 还原SolidFire 节点上的Element软件。
 
-有关创建USB密钥或使用BMC执行RTFI过程的信息、请参见 link:task_rtfi_deployment_and_install_options.html["RTFI部署和安装选项"]。
+有关创建USB密钥或使用BMC执行RTFI过程的信息、请参见 xref:task_rtfi_deployment_and_install_options.html[RTFI部署和安装选项]。
 
 .开始之前
 验证是否满足以下要求：
@@ -80,7 +80,7 @@ NOTE: 您必须快速连续多次选择* F11*、因为启动设备屏幕会很�
 . 在初始提示符处、系统会通知您此过程将从节点中删除所有数据、并且此过程开始后、此数据将无法恢复。输入*是*开始。
 +
 
-WARNING: 启动此过程后、所有数据和配置详细信息将从节点中永久擦除。如果您选择不继续、则系统会将您定向到 link:task_rtfi_options_menu.html["RTFI选项菜单"]。
+WARNING: 启动此过程后、所有数据和配置详细信息将从节点中永久擦除。如果您选择不继续、则系统会将您定向到 xref:task_rtfi_options_menu.html[RTFI选项菜单]。
 
 +
 
@@ -95,7 +95,7 @@ NOTE: 如果要在RTFI过程中查看控制台、可以按* Alt+F8*键切换到�
 此时、节点便可启动并进行配置。请参见 https://docs.netapp.com/us-en/element-software/setup/concept_setup_overview.html["Element软件设置存储文档"^] 配置存储节点。
 
 +
-如果在RTFI过程中遇到错误消息、请参见 link:task_rtfi_options_menu.html["RTFI选项菜单"]。
+如果在RTFI过程中遇到错误消息、请参见 xref:task_rtfi_options_menu.html[RTFI选项菜单]。
 
 
 
