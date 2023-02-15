@@ -11,7 +11,7 @@ summary: 'account 对象包含有关帐户的信息。此对象仅包含有关�
 
 
 [role="lead"]
-account 对象包含有关帐户的信息。此对象仅包含有关帐户的 " 已配置 " 信息，而不包含任何运行时或使用情况信息。
+。 `account` 对象包含有关帐户的信息。此对象仅包含有关帐户的 " 已配置 " 信息，而不包含任何运行时或使用情况信息。
 
 
 
@@ -24,7 +24,7 @@ account 对象包含有关帐户的信息。此对象仅包含有关帐户的 " 
 
 
  a| 
-accountId
+`帐户 ID`
  a| 
 帐户的唯一帐户 ID 。
  a| 
@@ -33,7 +33,7 @@ accountId
 
 
  a| 
-属性
+`属性`
  a| 
 名称 - 值对列表，采用 JSON 对象格式。
  a| 
@@ -42,7 +42,7 @@ JSON 对象
 
 
  a| 
-enableChap
+`enableChap`
  a| 
 指定启动程序是否可以使用 CHAP 帐户凭据来访问卷。
  a| 
@@ -51,7 +51,7 @@ boolean
 
 
  a| 
-initiatorSecret
+`initiatorSecret`
  a| 
 启动程序 CHAP 密钥。
  a| 
@@ -60,7 +60,7 @@ string
 
 
  a| 
-status
+`status`
  a| 
 帐户的当前状态。可能值：
 
@@ -74,7 +74,7 @@ string
 
 
  a| 
-storageContainerID
+`storageContainerID`
  a| 
 与此帐户关联的虚拟卷存储容器的唯一 ID 。
  a| 
@@ -83,7 +83,7 @@ UUID
 
 
  a| 
-targetSecret
+`targetSecret`
  a| 
 目标 CHAP 密钥。
  a| 
@@ -92,7 +92,7 @@ string
 
 
  a| 
-username
+`用户名`
  a| 
 帐户的用户名。
  a| 
@@ -101,7 +101,7 @@ string
 
 
  a| 
-volumes
+`卷`
  a| 
 此帐户拥有的卷的卷 ID 列表。
  a| 

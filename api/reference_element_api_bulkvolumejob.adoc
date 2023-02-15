@@ -11,7 +11,7 @@ summary: bulkVolumeJob 对象包含有关批量卷读取或写入操作的信息
 
 
 [role="lead"]
-bulkVolumeJob 对象包含有关批量卷读取或写入操作的信息，例如克隆或创建快照。
+。 `bulkVolumeJob` 对象包含有关批量卷读取或写入操作的信息、例如克隆或创建快照。
 
 
 
@@ -24,7 +24,7 @@ bulkVolumeJob 对象包含有关批量卷读取或写入操作的信息，例如
 
 
  a| 
-属性
+`属性`
  a| 
 批量卷作业的 JSON 属性。
  a| 
@@ -33,7 +33,7 @@ JSON 对象
 
 
  a| 
-bulkVolumeID
+`bulkVolumeID`
  a| 
 内部批量卷作业 ID 。
  a| 
@@ -42,7 +42,7 @@ bulkVolumeID
 
 
  a| 
-CREATETIME
+`createTime`
  a| 
 为 UTC+0 格式的批量卷作业创建的时间戳。
  a| 
@@ -51,7 +51,7 @@ ISO 8601 日期字符串
 
 
  a| 
-已过时间
+`elapsedTime`
  a| 
 自作业开始以来的秒数。
  a| 
@@ -60,7 +60,7 @@ string
 
 
  a| 
-格式。
+`format`
  a| 
 批量卷操作的格式。可能值：
 
@@ -73,7 +73,7 @@ string
 
 
  a| 
-key
+`key`
  a| 
 批量卷会话创建的唯一密钥。
  a| 
@@ -82,7 +82,7 @@ string
 
 
  a| 
-完成百分比
+`percentComplete`
  a| 
 操作报告的已完成百分比。
  a| 
@@ -91,7 +91,7 @@ string
 
 
  a| 
-余时间
+`remainingTime`
  a| 
 估计剩余时间，以秒为单位。
  a| 
@@ -100,7 +100,7 @@ string
 
 
  a| 
-srcVolumeID
+`srcVolumeID`
  a| 
 源卷 ID 。
  a| 
@@ -109,7 +109,7 @@ srcVolumeID
 
 
  a| 
-status
+`status`
  a| 
 操作的状态。可能值：
 
@@ -124,7 +124,7 @@ string
 
 
  a| 
-脚本
+`script`
  a| 
 脚本的名称（如果提供）。
  a| 
@@ -133,7 +133,7 @@ string
 
 
  a| 
-snapshotId
+`snapshotID`
  a| 
 如果快照位于批量卷作业的源中，则为快照的 ID 。
  a| 
@@ -142,7 +142,7 @@ snapshotId
 
 
  a| 
-type
+`type`
  a| 
 批量操作的类型。可能值：
 

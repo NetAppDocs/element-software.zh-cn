@@ -11,7 +11,7 @@ summary: clusterConfig 对象将返回节点用于与集群通信的信息。
 
 
 [role="lead"]
-clusterConfig 对象将返回节点用于与集群通信的信息。
+。 `clusterConfig` 对象返回节点用于与集群通信的信息。
 
 
 
@@ -24,7 +24,7 @@ clusterConfig 对象将返回节点用于与集群通信的信息。
 
 
  a| 
-密码
+`cipi`
  a| 
 用于集群通信的网络接口。
  a| 
@@ -33,7 +33,7 @@ string
 
 
  a| 
-集群
+`集群`
  a| 
 集群的唯一名称。
  a| 
@@ -42,7 +42,7 @@ string
 
 
  a| 
-加密可容量
+`encryptionCapable`
  a| 
 指定节点是否支持加密。
  a| 
@@ -51,7 +51,7 @@ boolean
 
 
  a| 
-集合
+`ensemble`
  a| 
 加入集群的节点。
  a| 
@@ -60,7 +60,7 @@ string array
 
 
  a| 
-fipsDriveConfiguration
+`fipsDriveConfiguration`
  a| 
 指定节点是否支持 FIPS 140-2 认证驱动器。
  a| 
@@ -69,7 +69,7 @@ boolean
 
 
  a| 
-具有 LocalAdmin
+`hasLocalAdmin`
  a| 
 指定集群是否具有本地管理员。
  a| 
@@ -78,7 +78,7 @@ boolean
 
 
  a| 
-MIPI
+`mipi`
  a| 
 用于节点管理的网络接口。
  a| 
@@ -87,7 +87,7 @@ string
 
 
  a| 
-name
+`名称`
  a| 
 集群的唯一标识符。
  a| 
@@ -96,7 +96,7 @@ string
 
 
  a| 
-节点 ID
+`nodeID`
  a| 
 节点的唯一标识符。
  a| 
@@ -105,7 +105,7 @@ string
 
 
  a| 
-pendingNodeID
+`pendingNodeID`
  a| 
 待定节点的唯一标识符。
  a| 
@@ -114,7 +114,7 @@ pendingNodeID
 
 
  a| 
-role
+`role`
  a| 
 标识节点的角色。
  a| 
@@ -123,7 +123,7 @@ string
 
 
  a| 
-和
+`sipi`
  a| 
 用于存储的网络接口。
  a| 
@@ -132,7 +132,7 @@ string
 
 
  a| 
-state
+`state`
  a| 
 指示节点的状态。
  a| 
@@ -141,7 +141,7 @@ string
 
 
  a| 
-version
+`version`
  a| 
 指示节点的版本。
  a| 

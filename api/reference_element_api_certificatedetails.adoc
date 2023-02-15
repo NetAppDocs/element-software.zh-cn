@@ -11,7 +11,7 @@ summary: certificateDetails 对象包含有关安全证书的解码信息。
 
 
 [role="lead"]
-certificateDetails 对象包含有关安全证书的解码信息。
+。 `certificateDetails` 对象包含有关安全证书的解码信息。
 
 
 
@@ -24,7 +24,7 @@ certificateDetails 对象包含有关安全证书的解码信息。
 
 
  a| 
-颁发者
+`issuer`
  a| 
 颁发者的名称。
  a| 
@@ -33,7 +33,7 @@ string
 
 
  a| 
-模数
+`modulus`
  a| 
 公有密钥的模量。
  a| 
@@ -42,7 +42,7 @@ string
 
 
  a| 
-注释之后
+`notAfter`
  a| 
 证书的到期日期。
  a| 
@@ -51,7 +51,7 @@ ISO 8601 字符串
 
 
  a| 
-目前尚未完成
+`notBefore`
  a| 
 证书的开始日期。
  a| 
@@ -60,7 +60,7 @@ ISO 8601 字符串
 
 
  a| 
-串行
+`serial`
  a| 
 证书序列号。
  a| 
@@ -69,7 +69,7 @@ string
 
 
  a| 
-sha1 指纹
+`sha1Fingerprint`
  a| 
 经过 DER 编码的证书版本的摘要。
  a| 
@@ -78,7 +78,7 @@ string
 
 
  a| 
-主题
+`subject`
  a| 
 主题名称。
  a| 

@@ -24,7 +24,7 @@ summary: 绑定对象包含有关虚拟卷的绑定的信息。您可以使用 L
 
 
  a| 
-protocolEndpointID
+`protocolEndpointID`
  a| 
 协议端点的唯一 ID 。
  a| 
@@ -33,7 +33,7 @@ UUID
 
 
  a| 
-protocolEndpointInBandID
+`protocolEndpointInBandID`
  a| 
 协议端点的 scsiNAADeviceID 。
  a| 
@@ -42,7 +42,7 @@ string
 
 
  a| 
-protocolEndpointType
+`protocolEndpointType`
  a| 
 协议端点的类型。SCSI 是为协议端点类型返回的唯一值。
  a| 
@@ -51,7 +51,7 @@ string
 
 
  a| 
-virtualVolumeBindingID
+`virtualVolumeBindingID`
  a| 
 虚拟卷绑定对象的唯一 ID 。
  a| 
@@ -60,7 +60,7 @@ virtualVolumeBindingID
 
 
  a| 
-virtualVolumeHostID
+`virtualVolumeHostID`
  a| 
 虚拟卷主机的唯一 ID 。
  a| 
@@ -69,7 +69,7 @@ UUID
 
 
  a| 
-virtualVolumeID
+`virtualVolumeID`
  a| 
 虚拟卷的唯一 ID 。
  a| 
@@ -78,7 +78,7 @@ UUID
 
 
  a| 
-virtualVolumeSecondaryID
+`virtualVolumeSecondaryID`
  a| 
 虚拟卷的二级 ID 。
  a| 

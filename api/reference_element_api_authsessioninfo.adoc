@@ -11,7 +11,7 @@ summary: authSessionInfo 对象包含有关身份验证会话的信息。
 
 
 [role="lead"]
-authSessionInfo 对象包含有关身份验证会话的信息。
+。 `authSessionInfo` 对象包含有关身份验证会话的信息。
 
 
 
@@ -24,7 +24,7 @@ authSessionInfo 对象包含有关身份验证会话的信息。
 
 
  a| 
-访问组列表
+`accessGroupList`
  a| 
 用户的访问组列表。
  a| 
@@ -33,7 +33,7 @@ string array
 
 
  a| 
-authMethod
+`authMethod`
  a| 
 集群管理员用户拥有的授权类型。可能值：
 
@@ -47,7 +47,7 @@ string
 
 
  a| 
-clusterAdminID
+`clusterAdminIDs`
  a| 
 与此会话关联的集群管理员 ID 列表。对于与 LDAP 或第三方身份提供程序（ IdP ）相关的会话，此会话将是与此会话关联的匹配集群管理员 ID 的聚合列表。
  a| 
@@ -56,7 +56,7 @@ clusterAdminID
 
 
  a| 
-finalTimeout
+`finalTimeout`
  a| 
 会话无效的时间。此时间在创建会话时设置，无法更改。
  a| 
@@ -65,7 +65,7 @@ string
 
 
  a| 
-idpConfigVersion
+`idpConfigVersion`
  a| 
 创建会话时的 IdP 配置版本。
  a| 
@@ -74,7 +74,7 @@ idpConfigVersion
 
 
  a| 
-lastAccessTimeout
+`lastAccessTimeout`
  a| 
 会话因非活动而变得无效的时间。访问会话以供使用时，会话将设置为新值，直到会话因达到 finalTimeout 而变得无效为止。
  a| 
@@ -83,7 +83,7 @@ string
 
 
  a| 
-sessionCreationTime
+`sessionCreationTime`
  a| 
 创建会话的时间。
  a| 
@@ -92,7 +92,7 @@ string
 
 
  a| 
-会话 ID
+`sessionID`
  a| 
 此会话的 UUID 。
  a| 
@@ -101,7 +101,7 @@ UUID
 
 
  a| 
-username
+`用户名`
  a| 
 与此会话关联的用户名。对于与 LDAP 相关的会话，此 DN 将为用户的 LDAP DN 。对于与第三方 IdP 相关的会话，此名称 - 值对为任意名称 - 值对，将用于在会话中执行审核操作。它不一定与集群上的集群管理员名称匹配。例如， SAML 主题名称 ID ，但这取决于 IdP 的配置以及 SAML 断言的结果内容。
  a| 
