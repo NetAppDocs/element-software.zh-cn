@@ -3030,7 +3030,6 @@
   <block id="1b3b2f72f429aa6470095a49affa4ebc" category="paragraph">没有足够的可用块存储空间来支持单节点丢失。有关集群填充度级别的详细信息，请参见 GetClusterFullThreshold API 方法。此集群故障指示以下情况之一：</block>
   <block id="638768955c5a6f2ab425aae1bce583bc" category="list-text">stage3Low （ Warning ）：已超过用户定义的阈值。调整 "Cluster Full" 设置或添加更多节点。</block>
   <block id="66ee2d060cdf84b1fec9ae435d8f1a81" category="list-text">stage4Critical （ Error ）：没有足够的空间从单节点故障中恢复。不允许创建卷，快照和克隆。</block>
-  <block id="6dd7d6f50201f92efca3955b56977f59" category="list-text">stage5CompletelyConsumed （严重） 1 ；不允许写入或新的 iSCSI 连接。将保持当前的 iSCSI 连接。写入将失败，直到向集群添加更多容量为止。要解决此故障，请清除或删除卷，或者向存储集群添加另一个存储节点。</block>
   <block id="d224dcc4acfd1590ca54fc5fcc706716" category="list-text">* 块已降级 *</block>
   <block id="4121923b447abdbd7a192a5ef89111dc" category="paragraph">由于发生故障，块数据不再完全复制。</block>
   <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="paragraph">警告</block>
@@ -3048,7 +3047,6 @@
   <block id="76c3f3974c0bb69705ba25d138d9a599" category="paragraph">检测到块服务运行状况不正常：</block>
   <block id="43f872680fd424e2b1762db257650751" category="list-text">严重性 = 警告：不执行任何操作。此警告期限将在 cTimeUntilBSisKiledMSec=330000 毫秒后过期。</block>
   <block id="1243ff1c26bd2b3dd66afd02705039aa" category="list-text">严重性 = 错误：系统正在自动停用数据并将其数据重新复制到其他运行状况良好的驱动器。</block>
-  <block id="f1b539b56aae2623dd1a1bb6034beea5" category="list-text">严重性 = 严重：多个节点上的故障块服务大于或等于复制计数（双 Helix 为 2 ）。数据不可用，无法完成箱同步。检查网络连接问题和硬件错误。如果特定硬件组件出现故障，则会出现其他故障。当可访问块服务或已停用此服务时，此故障将得以清除。</block>
   <block id="799dde904a69e8b3fcf523b6166fba1f" category="list-text">* 时钟 SkewExceedsFaultThreshold *</block>
   <block id="e81a409bc10ef4f9e8f7f0a560b3a8df" category="paragraph">集群主节点与提供令牌的节点之间的时间偏差超过建议的阈值。存储集群无法自动更正节点之间的时间偏差。</block>
   <block id="735738d3bd7e45f7b009dc755262bf43" category="paragraph">要解决此故障，请使用网络内部的 NTP 服务器，而不是使用安装默认值。如果您使用的是内部 NTP 服务器，请联系 NetApp 支持部门以获得帮助。</block>
@@ -3064,14 +3062,10 @@
   <block id="550957ff4e127baf9356e53acd6bec29" category="paragraph">集群未配置为启用驱动器安全性（空闲加密），但至少有一个驱动器启用了驱动器安全性，这意味着在这些驱动器上禁用驱动器安全性失败。此故障会记录为 "`Warning` " 严重性。</block>
   <block id="9b7fe003823e01b6d191cd130cac6e23" category="paragraph">要解决此故障，请查看故障详细信息以了解无法禁用驱动器安全保护的原因。可能的原因包括：</block>
   <block id="87c8214c4d624147becc5521d4175136" category="list-text">无法获取加密密钥，请调查此密钥或外部密钥服务器的访问问题。</block>
-  <block id="17d5d626f718f91ee043b656973c4202" category="list-text">对驱动器执行禁用操作失败，请确定是否可能获取了错误的密钥。如果这两种情况都不是导致故障的原因，则可能需要更换驱动器。</block>
   <block id="c7dbd3edb899d383f271fbaddff857c9" category="paragraph">您可以尝试恢复未成功禁用安全的驱动器，即使提供的身份验证密钥正确也是如此。要执行此操作，请将驱动器移至 "Available" （可用）以从系统中删除，对驱动器执行安全擦除并将其移回 "Active" （活动）。</block>
   <block id="5f195070878aa77d5ab08b4ac4a54f3d" category="list-text">* 已断开 ClusterPair*</block>
-  <block id="42344d5a7661ee02bc81824149e682ec" category="paragraph">集群对已断开连接或配置不正确。检查集群之间的网络连接。</block>
   <block id="3fd928a4db83d2fce8a6a22ae18c96e5" category="list-text">* 断开 RemoteNode*</block>
-  <block id="4df25837c8cec48ce5932444744985b2" category="paragraph">远程节点已断开连接或配置不正确。检查节点之间的网络连接。</block>
   <block id="c0ab26c4daa61064202eea521001fd78" category="list-text">* 断开 SnapMirrorEndpoint*</block>
-  <block id="49304f2e992199a7f758572f901ebd72" category="paragraph">远程 SnapMirror 端点已断开连接或配置不正确。检查集群与远程 SnapMirrorEndpoint 之间的网络连接。</block>
   <block id="306920e20dd0fe16e804aba58ddd2916" category="list-text">* 可用驱动器 *</block>
   <block id="ae53472bfa7653cba79cb2a0c97df1b7" category="paragraph">集群中有一个或多个驱动器可用。通常，所有集群都应添加所有驱动器，而不应使任何驱动器处于可用状态。如果意外出现此故障，请联系 NetApp 支持部门。</block>
   <block id="931adb816c53335ac4fa33d4806e546b" category="paragraph">要解决此故障，请向存储集群添加任何可用驱动器。</block>
@@ -3082,19 +3076,15 @@
   <block id="fb3e817b0c8795e02aefa4556e7780dc" category="list-text">驱动器缺失。</block>
   <block id="1bbb54812222b3924c6bf4c604fa345c" category="list-text">无法访问节点的主服务（此节点中的所有驱动器均视为缺失 / 故障）。</block>
   <block id="357055579aee5a54ad7a5eeeaff622af" category="list-text">驱动器已锁定，无法获取驱动器的身份验证密钥。</block>
-  <block id="3d00feb87354cc29eeca71cb7c6337cb" category="list-text">驱动器已锁定，解锁操作失败。要解决此问题描述，请执行以下操作：</block>
   <block id="d573f30ca912851cb2b018b5e162b81e" category="list-text">检查节点的网络连接。</block>
   <block id="eb060d511b605e93f2a2a260b6dbc752" category="list-text">更换驱动器。</block>
   <block id="c6a23c02f7b414f5c0f52e9a7a75617a" category="list-text">确保身份验证密钥可用。</block>
   <block id="e9d2d415045856f2ca7f232b17779252" category="list-text">* 驱动器运行状况故障 *</block>
   <block id="ed77497765047a5cf8d5a44d362b2e87" category="paragraph">驱动器未通过智能运行状况检查，因此驱动器的功能会降低。此故障具有严重严重性级别：</block>
-  <block id="cf6c9b1c70a2c3988584cd35ab6553cf" category="list-text">插槽中序列号为 &lt; 序列号 &gt; 的驱动器： &lt; 节点插槽 &gt;&lt; 驱动器插槽 &gt; 未通过 SMART 整体运行状况检查。要解决此故障，请更换驱动器。</block>
   <block id="56b8d37bfe2dd64bbdf23e1e3f2f7ea7" category="list-text">* 驱动器 WearFault *</block>
   <block id="e675bb0d238256c785eec015e9bb8114" category="paragraph">驱动器的剩余寿命已降至阈值以下，但它仍在运行。此故障可能存在两个严重性级别：严重和警告：</block>
   <block id="450f3e44340f787c8a2402d47b9d8839" category="list-text">序列号为 &lt; 序列号 &gt; 的驱动器插槽： &lt; 节点插槽 &gt;&lt; 驱动器插槽 &gt; 具有严重的损耗级别。</block>
-  <block id="7c9f14461aa7585ef3cbd85404b200f3" category="list-text">驱动器的插槽： &lt;node slot&gt;&lt;drive slot&gt; 中的序列号为 &lt;serial number&gt; ，因此预留的损耗较低。要解决此故障，请尽快更换驱动器。</block>
   <block id="6bb4a8aa55442d93640dd64e3af9591b" category="list-text">* 双工 ClusterMasterCandidate*</block>
-  <block id="02b81dbf521552655d4a2cd6aa0b1afb" category="paragraph">检测到多个存储集群候选主存储。请联系 NetApp 支持部门以获得帮助。</block>
   <block id="3f881480536a97ff08a0d4e8479d95f8" category="list-text">* 启用 DriveSecurityFailed</block>
   <block id="6fade1bd2a365206b6a213e2b5b00c62" category="paragraph">集群已配置为需要驱动器安全性（空闲加密），但至少一个驱动器无法启用驱动器安全性。此故障会记录为 "`Warning` " 严重性。</block>
   <block id="8019ecfd9e8dbe87d5f5d4dc8e47f11d" category="paragraph">要解决此故障，请查看故障详细信息以了解无法启用驱动器安全保护的原因。可能的原因包括：</block>
@@ -3104,7 +3094,6 @@
   <block id="3b3e099ccd971f57b43b46533613607d" category="paragraph">一个或多个集合节点已断开网络连接或电源。</block>
   <block id="56c3dd0e50c6cf4993350d6aeac7f9bd" category="paragraph">要解决此故障，请还原网络连接或电源。</block>
   <block id="9a7ee3317b3f58ab912aa398126464fc" category="list-text">* 异常 *</block>
-  <block id="edb1590e58bd9eec8435f60fcb5260ad" category="paragraph">报告的故障不是例行故障。这些故障不会自动从故障队列中清除。请联系 NetApp 支持部门以获得帮助。</block>
   <block id="1252af204b6a81b333395f05ae66d195" category="list-text">* 故障空间 TooFull*</block>
   <block id="2fd17e6f1ee2875e5116bdddb35a4bdb" category="paragraph">块服务未响应数据写入请求。这会导致分区服务用尽存储失败写入的空间。</block>
   <block id="7d5092acb3ccf2843e39faff0e6f93c8" category="paragraph">要解决此故障，请还原块服务功能，以允许继续正常写入并从分区服务刷新故障空间。</block>
@@ -3112,30 +3101,24 @@
   <block id="f027e93cb191c3a34b63d2380336aa2f" category="paragraph">风扇传感器出现故障或缺失。</block>
   <block id="7820c1d9ad4697a94c323676b62aef9c" category="paragraph">要解决此故障，请更换任何出现故障的硬件。</block>
   <block id="d46186bf1074b548dc7e656292fe9d79" category="list-text">* 光纤通道访问已降级 *</block>
-  <block id="df103158c18b8fbdbb3a080a5551cd33" category="paragraph">光纤通道节点在一段时间内未通过其存储 IP 对存储集群中的其他节点做出响应。在此状态下，节点将被视为无响应并生成集群故障。检查网络连接。</block>
   <block id="010012bcf587a096a5299b7b1a55e19e" category="list-text">* 光纤通道访问不可用 *</block>
-  <block id="350260c827d22bf266542d0329507824" category="paragraph">所有光纤通道节点均无响应。此时将显示节点 ID 。检查网络连接。</block>
   <block id="9a239bb37b76456edd6beae3f86996bf" category="list-text">* fibreChannelActiveIxL*</block>
   <block id="7b1e90f542ce632a3d53bd8584b6d818" category="paragraph">IXL Nexus 计数即将达到支持的限制，即每个光纤通道节点具有 8000 个活动会话。</block>
   <block id="afde178f3cdc76e86b358a735370a4ee" category="list-text">最佳实践限制为 5500 。</block>
   <block id="2a89b8bd6f61acaa29e36c53507cdcd9" category="list-text">警告限制为 7500 。</block>
-  <block id="6c56e1741b1b70da8687046bccdd9219" category="list-text">最大限制（未强制实施）为 8192 。要解决此故障，请将 IXL Nexus 计数降至最佳实践限制 5500 以下。</block>
   <block id="bb8e93e925fd43a4aea012f3ee50c111" category="list-text">* fibreChannelConfig*</block>
   <block id="6894d61b116b1aed9a5f537bbf47060f" category="paragraph">此集群故障指示以下情况之一：</block>
   <block id="eea8c17dfc94cc47441f5d76cd656589" category="list-text">PCI 插槽上存在意外的光纤通道端口。</block>
   <block id="77f0a06c22e15fd19ec507cc798e4687" category="list-text">存在意外的光纤通道 HBA 型号。</block>
   <block id="9081496d4343ff2942d3a7ace8927753" category="list-text">光纤通道 HBA 的固件存在问题。</block>
   <block id="9b6b174ad1439ca86267072c96c6a708" category="list-text">光纤通道端口未联机。</block>
-  <block id="284b15d95b9022c777da88ba199d8d99" category="list-text">有一个永久性问题描述正在配置光纤通道直通。请联系 NetApp 支持部门以获得帮助。</block>
   <block id="b9e3ca72a9c87848342ca9f2c269ea2d" category="list-text">* 光纤通道 IOPS*</block>
   <block id="1920210ab5977cb3b8fbce0d869553e7" category="paragraph">集群中光纤通道节点的总 IOPS 计数即将达到 IOPS 限制。限制包括：</block>
   <block id="30df86760d85d6e2bce14a346d935d23" category="list-text">FC0025 ：每个光纤通道节点 4 k 块大小时的 IOPS 限制为 450 k 。</block>
-  <block id="736f0c444dc6d16da36825884a13b439" category="list-text">FCN001 ：每个光纤通道节点 4 K 块大小时的 625K 操作数限制。要解决此故障，请在所有可用光纤通道节点之间平衡负载。</block>
   <block id="6675d019f3da60337f04e5cbade63637" category="list-text">* fibreChannelStaticIxL*</block>
   <block id="fcebb97bf64928933388bc235f02631d" category="paragraph">IXL Nexus 计数即将达到支持的限制，即每个光纤通道节点有 16000 个静态会话。</block>
   <block id="d85f1b7e325152ab8b9dc4987156513c" category="list-text">最佳实践限制为 11000 。</block>
   <block id="ecba663b07684c482e30930dbc2c5447" category="list-text">警告限制为 15000 。</block>
-  <block id="be7907804b39f6bb8eb8f693b3948133" category="list-text">最大限制（强制实施）为 16384 。要解决此故障，请将 IXL Nexus 计数降至最佳实践限制 11000 以下。</block>
   <block id="1732cf9a398a21acc054d31275c3e4bb" category="list-text">* 文件系统容量低 *</block>
   <block id="813d286021d5006aabfe635f27b246a1" category="paragraph">其中一个文件系统空间不足。</block>
   <block id="fe98c55781fece742fe24f76102b689e" category="paragraph">要解决此故障，请向文件系统添加更多容量。</block>
@@ -3152,7 +3135,6 @@
   <block id="71af532c4c9766361e01036327838cdd" category="list-text">此类节点的驱动器大小不正确。</block>
   <block id="f37083c72cc95f714c6dcccbf50fbae6" category="list-text">检测到不受支持的驱动器。可能的原因是，安装的 Element 版本无法识别此驱动器。建议更新此节点上的 Element 软件。</block>
   <block id="7adda67a2bab68e6354d45fbda56172d" category="list-text">驱动器固件不匹配。</block>
-  <block id="b346b0ec45c209c42645dd9f78da6721" category="list-text">驱动器加密功能状态与节点不匹配。请联系 NetApp 支持部门以获得帮助。</block>
   <block id="f333ac88b43f31babae53274c15bc06a" category="list-text">* idPCertificateExpiration*</block>
   <block id="a17d48e8302e765f05d40934bd23fb08" category="paragraph">用于第三方身份提供程序（ IdP ）的集群服务提供商 SSL 证书即将到期或已过期。此故障会根据紧急程度使用以下严重性：</block>
   <block id="76664c0be6648ca07148b71896d0b43f" category="paragraph">证书将在 30 天内过期。</block>
@@ -3163,7 +3145,6 @@
   <block id="b475deeed44bd779162bd430e996d375" category="paragraph">VLAN 设备上缺少绑定模式。此故障将显示预期的绑定模式和当前正在使用的绑定模式。</block>
   <block id="fda27fd12d2000d1a0b9936573376fa0" category="list-text">* 不一致的 Mtus*</block>
   <block id="9c1485d86c325377a29a8d89037f06b2" category="list-text">Bond1G mismatch ：在绑定 1G 接口上检测到 MTU 不一致。</block>
-  <block id="b58eb7f90dba2f54452894923240eadb" category="list-text">Bond10G mismatch ：在绑定 10G 接口上检测到 MTU 不一致。此故障将显示相关节点以及关联的 MTU 值。</block>
   <block id="c11e78a17f64007d25b6de5ae396d1d4" category="list-text">* 不一致的路由规则 *</block>
   <block id="af06857975f05b4ba140f81c535ca3ca" category="paragraph">此接口的路由规则不一致。</block>
   <block id="926a2c4cb3cf87fae9e13dfa3e2caa73" category="list-text">* 不一致的子网询问 *</block>
@@ -3219,7 +3200,6 @@
   <block id="f0c41738998b4e7c8da03ee30be0e125" category="paragraph">系统内存已完全耗尽。</block>
   <block id="de54af49388227db08b3aed3c76f21b2" category="list-text">* 元数据 ClusterFull*</block>
   <block id="a6e65ad071757627d1787887e0f732ed" category="paragraph">没有足够的可用元数据存储空间来支持单节点丢失。有关集群填充度级别的详细信息，请参见 GetClusterFullThreshold API 方法。此集群故障指示以下情况之一：</block>
-  <block id="348ab1889b814efd0359a5dfe10a8a81" category="list-text">stage5CompletelyConsumed （严重） 1 ；不允许写入或新的 iSCSI 连接。将保持当前的 iSCSI 连接。写入将失败，直到向集群添加更多容量为止。清除或删除数据或添加更多节点。要解决此故障，请清除或删除卷，或者向存储集群添加另一个存储节点。</block>
   <block id="e71f12b026ae4fcf06c49eb9f0469a1f" category="list-text">* mtuCheckFailure *</block>
   <block id="ac9e3e7c4730a02619836ba5e86f7e87" category="paragraph">未为网络设备配置正确的 MTU 大小。</block>
   <block id="6b5c51f1e1330cd58c5c189b5c3cd67a" category="paragraph">要解决此故障，请确保为所有网络接口和交换机端口配置巨型帧（ MTU 大小高达 9000 字节）。</block>
@@ -3227,10 +3207,8 @@
   <block id="9f7d0d58efdf92487c79aa73770cf27a" category="list-text">预期接口不存在。</block>
   <block id="1034f427f692ffaeb3c342ef7af5a6d1" category="list-text">存在重复接口。</block>
   <block id="b8edcaaaa4084c689bfac36d5cb428a6" category="list-text">已配置的接口已关闭。</block>
-  <block id="d5e6f85254ff923ed2fdf9f9d1972674" category="list-text">需要重新启动网络。请联系 NetApp 支持部门以获得帮助。</block>
   <block id="c8dfa7e973e5dfd88b07c9ea8f39d5c1" category="list-text">* 节点可用虚拟网络 IP 插件 *</block>
   <block id="5a1b0770161278deb085c70d18081459" category="paragraph">IP 地址块中没有可用的虚拟网络地址。</block>
-  <block id="7b3dc932f6f5617b82c2df4a26203725" category="list-text">virtualNetworkID # 标记（ ### ）没有可用的存储 IP 地址。无法向集群添加其他节点。要解决此故障，请向虚拟网络地址块添加更多 IP 地址。</block>
   <block id="2c351c3e6b16ecda4ee3c5b07bf92f86" category="list-text">*nodeHardwareFault （网络接口 &lt;name&gt; 已关闭或缆线已拔出） *</block>
   <block id="550b9a0d94cd045f1d5953d97983f335" category="paragraph">网络接口已关闭或已拔下缆线。</block>
   <block id="6cc9733e0e3716a18c7fe043f52abced" category="paragraph">要解决此故障，请检查一个或多个节点的网络连接。</block>
@@ -3278,7 +3256,6 @@
   <block id="106147765d484e9d580a4ffb4aecd320" category="list-text">* 电源供应错误 *</block>
   <block id="1aada3eca1e3ebdad5bf568c00f6618a" category="list-text">电源不存在。</block>
   <block id="e3843a30f99965f6bf0fe2f2727273d3" category="list-text">电源出现故障。</block>
-  <block id="9475afd968f0ca7555d0c65ee2d7153a" category="list-text">电源输入缺失或超出范围。要解决此故障，请验证是否已为所有节点提供冗余电源。请联系 NetApp 支持部门以获得帮助。</block>
   <block id="173645bdc5529260f13137fc1a0b972e" category="list-text">* 配置空间 TooFull*</block>
   <block id="64c6b1920eb7741d6bfcc0679fbd5ad6" category="paragraph">集群的整体已配置容量过满。</block>
   <block id="3412e2f46d96ab7c4a5565eaf7540202" category="paragraph">要解决此故障，请添加更多已配置空间，或者删除并清除卷。</block>
@@ -3303,7 +3280,6 @@
   <block id="b0537d36b3091b7e8e1d1a8f59a8f8eb" category="list-text">* sliceServiceUnhealth*</block>
   <block id="abe34aeb4fb1207c0198415cbbaa59f2" category="paragraph">系统已检测到分区服务运行状况不正常，并且正在自动停用该服务。</block>
   <block id="37b556315ca9e4d0bf96bfbb72a90068" category="list-text">严重性 = 警告：不执行任何操作。此警告期限将在 6 分钟后过期。</block>
-  <block id="211bd79997a55288a61ce77e3f0294d5" category="list-text">严重性 = 错误：系统正在自动停用数据并将其数据重新复制到其他运行状况良好的驱动器。检查网络连接问题和硬件错误。如果特定硬件组件出现故障，则会出现其他故障。当分区服务可访问或服务已停用时，此故障将得以清除。</block>
   <block id="77a9bdbc36212768a8fa68cd2fa5b2df" category="list-text">* 已启用 ssh*</block>
   <block id="c0dcf8bdd514b88aa2f4e08c9146ee43" category="paragraph">已在存储集群中的一个或多个节点上启用 SSH 服务。</block>
   <block id="08859561c22bfd25c836ab28ea73e205" category="paragraph">要解决此故障，请在相应节点上禁用 SSH 服务，或者联系 NetApp 支持部门以获得帮助。</block>
@@ -3319,7 +3295,6 @@
   <block id="c4db6be37f68c3d45398133d7edc70d0" category="paragraph">要解决此故障，请检查存储集群附近是否存在气流障碍。如果需要，请联系 NetApp 支持部门以获得帮助。</block>
   <block id="92018782133eb660d9128d1342172fb9" category="list-text">* 升级 *</block>
   <block id="fd406b4623b781b31f258a0879276c93" category="paragraph">升级已进行 24 小时以上。</block>
-  <block id="c20d3b325dabe9dc4b42e3e85097a989" category="paragraph">要解决此故障，请恢复升级或联系 NetApp 支持部门以获得帮助。</block>
   <block id="ee6e3166109a6358fc272981bf9bd6cb" category="list-text">* 无响应服务 *</block>
   <block id="5e4d14c3be61157b20827e4a7845df94" category="paragraph">服务已变得无响应。</block>
   <block id="732cb524681f74d8b6ed83b31dd8fdfb" category="list-text">* 虚拟网络配置 *</block>
@@ -3328,7 +3303,6 @@
   <block id="48766e2b79a5b9849011f867e2a4543b" category="list-text">网络掩码不正确。</block>
   <block id="9ade69268a715c1a417af433fedcd21e" category="list-text">IP 地址不正确。</block>
   <block id="0a2b48020b48f8fbcf311a98dace5d74" category="list-text">某个接口未启动且未运行。</block>
-  <block id="5109af461c73b502ce6b072e4cc0a0c9" category="list-text">节点上存在多余的接口。请联系 NetApp 支持部门以获得帮助。</block>
   <block id="85a491c87fd77350bc3bd38a726fd168" category="list-text">* 卷已降级 *</block>
   <block id="9451a3dfb762350c7cbcbe9ee518b8af" category="paragraph">二级卷尚未完成复制和同步。同步完成后，此消息将被清除。</block>
   <block id="f18e735235d5a307ceb3e60d3161fa15" category="list-text">* 卷脱机 *</block>
@@ -12710,4 +12684,45 @@
   <block id="6232a2f1b30c3036b5c008529bc21aef" category="paragraph"><block ref="cfc64b55d03850e2ab017f7286375f5d" prefix="" category="inline-code"></block></block>
   <block id="01e67269f053fa497a470b13c81ac40c" category="paragraph"><block ref="9ed39e2ea931586b6a985a6942ef573e" prefix="" category="inline-code"></block></block>
   <block id="7877022c956918624cc0373ff564cad4" category="paragraph"><block ref="2af72f100c356273d46284f6fd1dfc08" prefix="" category="inline-code"></block></block>
+  <block id="0e9854d5683c94e98eff290cc17a418d" category="list-text">stage5CompletelyConsumed （严重） 1 ；不允许写入或新的 iSCSI 连接。将保持当前的 iSCSI 连接。写入将失败，直到向集群添加更多容量为止。</block>
+  <block id="3db1b2b278c0d698957be3ed18d42de5" category="paragraph">要解决此故障，请清除或删除卷，或者向存储集群添加另一个存储节点。</block>
+  <block id="2ae0b813312f2044fb0000c93b743c18" category="list-text">严重性 = 严重：多个节点上的故障块服务大于或等于复制计数（双 Helix 为 2 ）。数据不可用，无法完成箱同步。</block>
+  <block id="5f0cbed0ef8a3bd7e904fa0b7d66df2a" category="paragraph">检查网络连接问题和硬件错误。如果特定硬件组件出现故障，则会出现其他故障。当可访问块服务或已停用此服务时，此故障将得以清除。</block>
+  <block id="c12520b146934cca9f0563beb6c4b386" category="list-text">对驱动器执行禁用操作失败，请确定是否可能获取了错误的密钥。</block>
+  <block id="e8bd7f29873c064c3b0afe30143a9400" category="paragraph">如果这两种情况都不是导致故障的原因，则可能需要更换驱动器。</block>
+  <block id="ca505a259b750fe5a33a46d3a0b1380e" category="paragraph">集群对已断开连接或配置不正确。</block>
+  <block id="0e5226fbc6080c457c2049fae2c59580" category="paragraph">检查集群之间的网络连接。</block>
+  <block id="19fc4b6eefc66be47a1245164a1e0a30" category="paragraph">远程节点已断开连接或配置不正确。</block>
+  <block id="bda8d7e202992031643b7f0dd34f95b6" category="paragraph">检查节点之间的网络连接。</block>
+  <block id="d295ddb65575ec2f7c53600c865abb3f" category="paragraph">远程 SnapMirror 端点已断开连接或配置不正确。</block>
+  <block id="20d0ab0df11b1d6b1906d3ba602b7a60" category="paragraph">检查集群与远程 SnapMirrorEndpoint 之间的网络连接。</block>
+  <block id="5b0e7d9573ad0e308cbbcaa692388ffa" category="list-text">驱动器已锁定，解锁操作失败。</block>
+  <block id="4d76376d1fdfa802843702a2b8cfb46f" category="paragraph">要解决此问题描述，请执行以下操作：</block>
+  <block id="6b6ada126074585acbda3e3e706375bf" category="list-text">插槽中序列号为 &lt; 序列号 &gt; 的驱动器： &lt; 节点插槽 &gt;&lt; 驱动器插槽 &gt; 未通过 SMART 整体运行状况检查。</block>
+  <block id="58b8e7725ad2228baeb985d92f7b7d73" category="paragraph">要解决此故障，请更换驱动器。</block>
+  <block id="bc85c300d6a6164fbbdb72d6f4ad2e6c" category="list-text">驱动器的插槽： &lt;node slot&gt;&lt;drive slot&gt; 中的序列号为 &lt;serial number&gt; ，因此预留的损耗较低。</block>
+  <block id="8f0cd9a07c4f987dbf40bc8ac46d0623" category="paragraph">要解决此故障，请尽快更换驱动器。</block>
+  <block id="6c6cd406a169110c850887e787bf23b5" category="paragraph">检测到多个存储集群候选主存储。</block>
+  <block id="f876d0eee683cd78e680d10a4e6544ac" category="paragraph">报告的故障不是例行故障。这些故障不会自动从故障队列中清除。</block>
+  <block id="c1dbe321100df10efa6ed1cb882091dc" category="paragraph">光纤通道节点在一段时间内未通过其存储 IP 对存储集群中的其他节点做出响应。在此状态下，节点将被视为无响应并生成集群故障。</block>
+  <block id="92f4ebeef8956a175af4d3e1ec7b1c15" category="paragraph">检查网络连接。</block>
+  <block id="bf67c87d37b9233d02e142302836fd57" category="paragraph">所有光纤通道节点均无响应。此时将显示节点 ID 。</block>
+  <block id="87cec377fddbc2b343c523b1f948a6e2" category="list-text">最大限制（未强制实施）为 8192 。</block>
+  <block id="7d8bc88f1f8ee937dacd85baa429de19" category="paragraph">要解决此故障，请将 IXL Nexus 计数降至最佳实践限制 5500 以下。</block>
+  <block id="1a8b25bc838c0110139358395735d6f5" category="list-text">有一个永久性问题描述正在配置光纤通道直通。</block>
+  <block id="0601c36d5a717978b7c215c94c397752" category="list-text">FCN001 ：每个光纤通道节点 4 K 块大小时的 625K 操作数限制。</block>
+  <block id="0bcb81681e0f1dd4a80519a70edf9f0e" category="paragraph">要解决此故障，请在所有可用光纤通道节点之间平衡负载。</block>
+  <block id="0164a04bfac1ebbda38a2e22844ed405" category="list-text">最大限制（强制实施）为 16384 。</block>
+  <block id="2d89e20951d3587ba7465143c06aaed8" category="paragraph">要解决此故障，请将 IXL Nexus 计数降至最佳实践限制 11000 以下。</block>
+  <block id="84235cc0ee8b4a1704e15c4682efed21" category="list-text">驱动器加密功能状态与节点不匹配。</block>
+  <block id="b9c6a0b1df2e02b3cef9f3c2de4ae589" category="list-text">Bond10G mismatch ：在绑定 10G 接口上检测到 MTU 不一致。</block>
+  <block id="59634c985623b38ef29cbc5c41cdcd71" category="paragraph">此故障将显示相关节点以及关联的 MTU 值。</block>
+  <block id="cb5b46f0ba19f5a116bf29e63d30a1cc" category="list-text">stage5CompletelyConsumed （严重） 1 ；不允许写入或新的 iSCSI 连接。将保持当前的 iSCSI 连接。写入将失败，直到向集群添加更多容量为止。清除或删除数据或添加更多节点。</block>
+  <block id="e475633cda3cbb184cee43276947ca84" category="list-text">需要重新启动网络。</block>
+  <block id="4eda4adc3d0ab81d7babf172a3dff251" category="list-text">virtualNetworkID #标记(###)没有可用的存储IP地址。无法向集群添加其他节点。</block>
+  <block id="a23d1fa9eb45a4686b769b2b24c1ad79" category="list-text">电源输入缺失或超出范围。</block>
+  <block id="9fe5420d18a5c8643739c1442185b688" category="paragraph">要解决此故障，请验证是否已为所有节点提供冗余电源。请联系 NetApp 支持部门以获得帮助。</block>
+  <block id="2f2028a01cc26368c3f4daa01753e427" category="paragraph">检查网络连接问题和硬件错误。如果特定硬件组件出现故障，则会出现其他故障。当分区服务可访问或服务已停用时，此故障将得以清除。</block>
+  <block id="19ea2f91b3ae961be9e609088755c628" category="paragraph">要解决此故障，请恢复升级或联系 NetApp 支持部门以获得帮助。</block>
+  <block id="9672f91e71f82d57d55bef9837c3723c" category="list-text">节点上存在多余的接口。</block>
 </blocks>

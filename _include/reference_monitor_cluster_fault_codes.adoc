@@ -1,19 +1,6 @@
----
-permalink: storage/reference_monitor_cluster_fault_codes.html 
-sidebar: sidebar 
-keywords: cluster fault codes, alerts, error codes, view 
-summary: '系统会通过生成故障代码来报告可能需要关注的错误或状态，此故障代码会列在 "Alerts" 页面上。这些代码可帮助您确定系统中哪个组件出现警报以及生成警报的原因。' 
----
-= 集群故障代码
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
-
-[role="lead"]
-系统会通过生成故障代码来报告可能需要关注的错误或状态，此故障代码会列在 "Alerts" 页面上。这些代码可帮助您确定系统中哪个组件出现警报以及生成警报的原因。
-
-以下列表概述了不同类型的代码：
 
 * * 身份验证服务故障 *
 +
