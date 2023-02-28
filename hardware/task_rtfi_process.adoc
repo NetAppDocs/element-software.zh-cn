@@ -40,7 +40,7 @@ RTFI进程将执行以下高级操作：
 
 使用以下操作步骤 还原SolidFire 节点上的Element软件。
 
-有关创建USB密钥或使用BMC执行RTFI过程的信息、请参见 xref:task_rtfi_deployment_and_install_options.html[RTFI部署和安装选项]。
+有关创建USB密钥或使用BMC执行RTFI过程的信息、请参见 xref:task_rtfi_deployment_and_install_options.adoc[RTFI部署和安装选项]。
 
 .开始之前
 验证是否满足以下要求：

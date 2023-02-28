@@ -26,9 +26,9 @@ WARNING: RTFI过程会对数据造成破坏、并安全地擦除节点中的所�
 
 部署和安装RTFI International Organization for Standarding (ISO)映像并执行RTFI过程：
 
-* xref:task_rtfi_deployment_and_install_options.html[RTFI部署和安装选项]
-* xref:task_rtfi_process.html[执行RTFI过程]
-* xref:task_rtfi_options_menu.html[RTFI选项菜单]
+* xref:task_rtfi_deployment_and_install_options.adoc[RTFI部署和安装选项]
+* xref:task_rtfi_process.adoc[执行RTFI过程]
+* xref:task_rtfi_options_menu.adoc[RTFI选项菜单]
 
 
 
