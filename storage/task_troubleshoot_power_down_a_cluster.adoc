@@ -11,12 +11,12 @@ summary: 您可以在联系 NetApp 支持部门并完成初始步骤后关闭整
 
 
 [role="lead"]
-您可以在联系 NetApp 支持部门并完成初始步骤后关闭整个集群。
+执行以下操作步骤 以关闭整个集群。
 
-执行以下操作，为集群做好关闭准备：
-
-* 停止所有 I/O
-* 断开所有 iSCSI 会话的连接。
+.步骤
+. (可选)请联系NetApp支持部门以协助完成准备步骤。
+. 验证所有I/O是否均已停止。
+. 断开所有iSCSI会话的连接：
 +
 .. 导航到集群上的管理虚拟 IP （ MVIP ）地址以打开 Element UI 。
 .. 记下节点列表中列出的节点。
@@ -24,3 +24,21 @@ summary: 您可以在联系 NetApp 支持部门并完成初始步骤后关闭整
 
 
 
+
+[NOTE]
+====
+重新启动集群时、必须按照特定步骤验证所有节点是否均已联机：
+
+. 验证所有严重严重性和 `volumesOffline` 集群故障已解决。
+. 等待10到15分钟、以使集群建立连接。
+. 启动主机以访问数据。
+
+
+如果要在打开节点电源并在维护后验证其运行状况是否良好时留出更多时间、请联系技术支持以帮助延迟数据同步以防止不必要的箱同步。
+
+====
+
+
+== 了解更多信息
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_to_gracefully_shut_down_and_power_on_a_NetApp_Solidfire_HCI_storage_cluster["如何正常关闭和启动NetApp Solidfire/HCI存储集群"^]
