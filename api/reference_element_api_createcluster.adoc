@@ -55,7 +55,7 @@ JSON 对象
  a| 
 enableSoftwareEncryptionAtRest
  a| 
-启用此参数可使用基于软件的空闲加密。在 SolidFire 企业 SDS 集群上默认为 true 。在所有其他集群上，默认为 false 。启用空闲软件加密后，无法在集群上禁用它。
+启用此参数可使用基于软件的空闲加密。在所有集群上、默认为false。启用空闲软件加密后，无法在集群上禁用它。
  a| 
 boolean
  a| 

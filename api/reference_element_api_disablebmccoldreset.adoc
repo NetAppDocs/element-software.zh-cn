@@ -14,9 +14,6 @@ summary: 您可以使用 DisableBmcColdReset 方法禁用后台任务，此任�
 您可以使用 `DisableBmcColdReset` 方法禁用后台任务，该任务会定期为集群中的所有节点重置基板管理控制器（ Baseboard Management Controller ， BMC ）。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == 参数
 

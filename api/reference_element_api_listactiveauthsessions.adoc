@@ -34,7 +34,7 @@ summary: 您可以使用 ListActiveAuthSessions 方法列出经过身份验证�
  a| 
 身份验证会话的会话信息。
  a| 
-link:reference_element_api_authsessioninfo.md#GUID-FF0CE38C-8F99-4F23-8A6F-F6EA4487E808["authSessionInfo"]
+link:reference_element_api_authsessioninfo.html["authSessionInfo"]
 
 |===
 

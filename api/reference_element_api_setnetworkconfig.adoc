@@ -14,9 +14,6 @@ summary: 您可以使用 SetNetworkConfig 方法设置节点的网络配置。�
 您可以使用 `SetNetworkConfig` 方法设置节点的网络配置。要显示节点的当前网络设置，请运行 `GetNetworkConfig` API 方法。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == 参数
 

@@ -14,6 +14,9 @@ summary: 您可以使用 SetSSLCertificate 方法为集群中的存储节点设�
 您可以使用 `SetSSLCertificate` 方法为集群中的存储节点设置用户 SSL 证书和专用密钥。
 
 
+NOTE: 使用API后、必须重新启动管理节点。
+
+
 
 == Parameters
 

@@ -39,7 +39,7 @@ NOTE: 以下配置不支持自定义保护域：
  a| 
 每个节点的保护域信息。
  a| 
-JSON 列表 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["nodeProtectionDomains"] 对象。
+JSON 列表 link:reference_element_api_nodeprotectiondomains.html["nodeProtectionDomains"] 对象。
  a| 
 无
  a| 
@@ -61,7 +61,7 @@ JSON 列表 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A
  a| 
 节点列表，每个节点及其关联的保护域。
  a| 
-JSON 列表 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["nodeProtectionDomains"] 对象。
+JSON 列表 link:reference_element_api_nodeprotectiondomains.html["nodeProtectionDomains"] 对象。
 
 |===
 

@@ -31,19 +31,11 @@ SolidFire 系统可提供以下功能：
 
 
 
-== SolidFire 部署选项
+== SolidFire 部署
 
-SolidFire 提供了不同的部署选项：
+使用NetApp提供并与NetApp Element 软件集成的存储节点。
 
-* 使用 NetApp 提供并与 NetApp Element 软件集成的存储节点
-+
 link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html["SolidFire 全闪存存储架构概述"]
-
-* 使用容器化 SolidFire 企业 SDS 使用您自己的服务器运行 Element 软件
-+
-link:../esds/concept_get_started_esds.html["开始使用 NetApp SolidFire 企业版 SDS"]
-
-
 
 
 

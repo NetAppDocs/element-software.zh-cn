@@ -20,20 +20,18 @@ summary: 您可以在需要更多存储时或在创建集群后向集群添加�
 
 NOTE: 如果新添加的节点占用的集群总容量超过 50% ，则此节点的某些容量将变为不可用（ " 孤立 " ），以使其符合容量规则。在添加更多存储之前，情况始终如此。如果添加的节点非常大，并且也不遵守容量规则，则先前的孤立节点将不再处于孤立状态，而新添加的节点将变为孤立状态。应始终成对添加容量，以避免发生这种情况。当节点变为孤立时，将引发 strandedCapacity 集群故障。
 
-https://www.youtube.com/embed/2smVHWkikXY?rel=0["NetApp 视频：按需扩展：扩展 SolidFire 集群"]
+https://www.youtube.com/embed/2smVHWkikXY?rel=0["NetApp 视频：按需扩展：扩展 SolidFire 集群"^]
 
-您可以将节点添加到 SolidFire 企业 SDS （ SolidFire ESDS ）集群或 NetApp HCI 设备。
-
-SolidFire ESDS 节点使用节点类型前缀 `SFC` 表示，例如， "c2" `s 100 。` "
+您可以向NetApp HCI 设备添加节点。
 
 .步骤
 . 选择 * 集群 * > * 节点 * 。
 . 单击 * 待定 * 以查看待定节点列表。
 +
-添加节点（ SolidFire ESDS 或非 SolidFire ESDS 节点）的过程完成后，这些节点将显示在 "Active" 节点列表中。在此之前，待定节点将显示在 "Pending Active" 列表中。
+添加节点的过程完成后、这些节点将显示在"Active nodes"列表中。在此之前，待定节点将显示在 "Pending Active" 列表中。
 
 +
-对于非 SolidFire ESDS 节点的节点，当您将这些节点添加到集群时， SolidFire 会在这些待定节点上安装集群的 Element 软件版本。这可能需要几分钟时间。
+将待定节点添加到集群时、SolidFire 会在这些节点上安装集群的Element软件版本。这可能需要几分钟时间。
 
 . 执行以下操作之一：
 +

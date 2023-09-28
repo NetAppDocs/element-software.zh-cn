@@ -50,7 +50,7 @@ kmipKeyProvider
  a| 
 包含有关请求的密钥提供程序的详细信息的对象。
  a| 
-link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"]
+link:reference_element_api_keyproviderkmip.html["KeyProviderKmip"]
 
 |===
 

@@ -14,9 +14,6 @@ summary: 您可以使用 GetIpmiConfig 方法从节点中的传感器检索硬�
 您可以使用 `GetIpmiConfig` 方法从节点中的传感器检索硬件传感器信息。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == 参数
 

@@ -104,7 +104,7 @@ kmipKeyServer
  a| 
 一个对象，其中包含有关新创建的密钥服务器的详细信息。
  a| 
-link:reference_element_api_keyserverkmip.md#["KeyServerKmip"]
+link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 
 |===
 

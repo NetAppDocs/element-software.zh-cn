@@ -14,9 +14,6 @@ summary: 您可以使用 EnableSsh 方法为单个节点启用 SSH 服务。此�
 您可以使用 `EnableSsh` 方法为单个节点启用安全 Shell （ SSH ）服务。此方法不会影响集群范围的 SSH 超时持续时间，也不会使节点免于因全局 SSH 超时而禁用 SSH 。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == 参数
 

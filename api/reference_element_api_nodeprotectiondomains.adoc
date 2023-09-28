@@ -37,6 +37,6 @@ nodeProtectionDomains 对象包含有关节点标识以及与该节点关联的�
  a| 
 节点所属的保护域列表。
  a| 
-link:reference_element_api_protectiondomain.md#GUID-96388C5C-ACA2-44D9-86CE-19FEF0825A11["保护域"]
+link:reference_element_api_protectiondomain.html["保护域"]
 
 |===

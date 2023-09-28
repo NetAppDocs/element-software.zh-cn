@@ -14,9 +14,6 @@ summary: 您可以使用 SetNtpInfo 方法在集群节点上配置 NTP 。使用
 您可以使用 `SetNtpInfo` 方法在集群节点上配置 NTP 。使用此接口设置的值将应用于集群中的所有节点。如果 NTP 广播服务器定期在网络上广播时间信息，您可以选择将节点配置为广播客户端。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == Parameters
 

@@ -14,9 +14,6 @@ summary: 您可以使用 DisableClusterSsh 方法为整个存储集群禁用 SSH
 您可以使用 `DisableClusterSsh` 方法为整个存储集群禁用 SSH 服务。向存储集群添加节点时，新节点将继承此集群范围的设置。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == 参数
 

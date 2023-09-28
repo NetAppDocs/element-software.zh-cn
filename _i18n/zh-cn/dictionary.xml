@@ -429,7 +429,6 @@
   <block id="6908246c62018d977556b618780042f4" category="list-text"><block ref="6908246c62018d977556b618780042f4" category="inline-link-macro-rx"></block></block>
   <block id="242169bc3cfede608a33f18d694f8ac7" category="summary">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。</block>
   <block id="69893000f4da30e1e42922cbcf8dac0e" category="inline-link">NetApp Bug Online</block>
-  <block id="c08a6bc5249e5f81c4e136382fe69500" category="inline-link-macro">Element API 文档</block>
   <block id="19b9aebc333a4f2fd40dbdb629489716" category="list-text">CreateGroupSnapshot</block>
   <block id="cf8796419400dbe7dacd8ab0a637eb0f" category="list-text">CreateSchedule</block>
   <block id="db66912e8bdff8f12b8b75883aeb66ef" category="list-text">CreateSnapshot</block>
@@ -446,8 +445,6 @@
   <block id="0b4057fd4b93c58d91230bc0c7796200" category="list-text">RekeySoftwareEncryptionAtRestMasterKey</block>
   <block id="a4377e2a5c151e23b56034c95f4a740c" category="section-title">存储节点固件更新</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多信息。</block>
-  <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp 互操作性表工具（ IMT ）</block>
-  <block id="f450dc1f11b420ef61c997b620a5ddf3" category="inline-link">更换 Dell R640 的驱动器</block>
   <block id="44b0209ace608ab3332e7d7917cfc3c2" category="inline-link">《 NetApp 混合云控制和管理服务发行说明》</block>
   <block id="8c62a8856619185a333cdec6cc116a79" category="list-text"><block ref="8c62a8856619185a333cdec6cc116a79" category="inline-link-rx"></block></block>
   <block id="a881a0468246e93ae6e2c5bccd78758e" category="inline-link">适用于 vCenter Server 的 NetApp Element 插件</block>
@@ -635,9 +632,7 @@
   <block id="83221d7a8e6873bb96d6fbbd9afcf8e8" category="inline-link-macro">管理节点</block>
   <block id="a818b18784f90669084d24af8a7d4d6b" category="paragraph">从 Element 11.3 版开始， * 管理服务 * 托管在上 <block ref="5faa37a8cb9b8f7bb17a5a6af86182c8" category="inline-link-macro-rx"></block>，可以在主要版本之外更快地更新选定的软件服务。</block>
   <block id="593f52e571df0ab61f6211b57e2ab8da" category="inline-link-macro">NetApp Hybrid Cloud Control</block>
-  <block id="33613f9e26b4d3202f0d812df6bedba3" category="paragraph">管理服务可为 SolidFire 全闪存存储提供集中式和扩展式管理功能。这些服务包括 <block ref="53cac838271c3c6f19adc6b835ed9d5f" category="inline-link-macro-rx"></block>， Active IQ 系统遥测，日志记录和服务更新以及适用于 vCenter 的 Element 插件的 QoSSIOC 服务。</block>
   <block id="257409197ae1a07404e333be63986ac6" category="inline-link-macro">管理服务版本</block>
-  <block id="4651d824b0048b0eb592cc60e9dd3977" category="admonition">了解更多信息 <block ref="873adfb4e707b3b5ed2423771a9400e1" category="inline-link-macro-rx"></block>。</block>
   <block id="90b829ded7efd204b562b06bf2e6f0a8" category="summary">NetApp SolidFire 存储系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。</block>
   <block id="c6f01c78bfe0a0a495cb5d3ed77824a9" category="doc">Volumes</block>
   <block id="cf199f5d0d7153679fbded97f2959b77" category="paragraph">NetApp Element 存储系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。</block>
@@ -898,14 +893,8 @@
   <block id="83606de5ad551fe725df50c202137b96" category="list-text">使用服务质量策略保证性能</block>
   <block id="9f686c4bacb24adf8a227785ae4811a3" category="list-text">包括集群中所有节点之间的自动负载平衡</block>
   <block id="6bac9874bf1ac47d5ed430aed14ed2f9" category="list-text">添加或减去节点后，会自动重新平衡集群</block>
-  <block id="52bf07624a8d5bb0d68193acb84da83e" category="section-title">SolidFire 部署选项</block>
-  <block id="02945d28d2bc238db7db04788c61b17f" category="paragraph">SolidFire 提供了不同的部署选项：</block>
-  <block id="a154af7b29c8a3c4e140a0c42b637b07" category="list-text">使用 NetApp 提供并与 NetApp Element 软件集成的存储节点</block>
   <block id="cc9d5c6e43509b7b512cd8106b62cef6" category="inline-link-macro">SolidFire 全闪存存储架构概述</block>
   <block id="ce772989c5b639e2ddb875f41c132379" category="paragraph"><block ref="ce772989c5b639e2ddb875f41c132379" category="inline-link-macro-rx"></block></block>
-  <block id="634807b0b6c298b475c1d228bd4ad9c7" category="list-text">使用容器化 SolidFire 企业 SDS 使用您自己的服务器运行 Element 软件</block>
-  <block id="c4fc43d88500ff0f1f2bd4bbe1f8c8f1" category="inline-link-macro">开始使用 NetApp SolidFire 企业版 SDS</block>
-  <block id="2690306398b12ce9bf41853430302eb9" category="paragraph"><block ref="2690306398b12ce9bf41853430302eb9" category="inline-link-macro-rx"></block></block>
   <block id="c53ac523fca81d6b664e10690cd73392" category="summary">您可以通过链接访问 Element 存储环境中各个组件的最新和早期发行说明。</block>
   <block id="943b44cc4d2524cb05c04a86b015994e" category="doc">当前版本和先前版本信息</block>
   <block id="f8baaa336de0b43c94445176248817a5" category="admonition">系统将提示您使用 NetApp 支持凭据登录。</block>
@@ -932,7 +921,6 @@
   <block id="7c4a6e26b432f1ad131564bc6dc6e32d" category="inline-link">存储固件包 2.27 发行说明</block>
   <block id="a0b768ade98ef6cf3df956008c966806" category="list-text"><block ref="a0b768ade98ef6cf3df956008c966806" category="inline-link-rx"></block></block>
   <block id="af149d844cc5e37dba5faa0cc28a9285" category="inline-link-macro">H610S BMC 3.84.07 发行说明</block>
-  <block id="eead60ae6beeaad1ec995f62a611e1c3" category="list-text"><block ref="eead60ae6beeaad1ec995f62a611e1c3" category="inline-link-macro-rx"></block></block>
   <block id="0e93badeabe261c69b6984cdc67bfc5d" category="summary">了解启动程序以及如何使用它们允许访问卷访问组中的存储。</block>
   <block id="6430db21988dbbdfca7783c89a7710df" category="doc">启动程序</block>
   <block id="80d6153382e70910f8e51a18694440a4" category="paragraph">通过启动程序，外部客户端可以访问集群中的卷，从而充当客户端和卷之间通信的入口点。您可以使用启动程序对存储卷进行基于 CHAP 的访问，而不是基于帐户的访问。添加到卷访问组时，单个启动程序允许卷访问组成员访问添加到组中的所有存储卷，而无需身份验证。一个启动程序只能属于一个访问组。</block>
@@ -1335,12 +1323,7 @@
   <block id="d804bc95982bb82c21ba99bf3e7a1a09" category="paragraph">您可以向现有集群添加容量较小或较大的节点。您可以向集群添加更大的节点容量，以支持容量增长。必须成对向节点较小的集群添加较大的节点。这样，如果一个较大的节点发生故障，双 Helix 就可以有足够的空间来移动数据。您可以将较小的节点容量添加到较大的节点集群以提高性能。</block>
   <block id="0652571d9c7a6df0db1af62b1e7320be" category="admonition">如果新添加的节点占用的集群总容量超过 50% ，则此节点的某些容量将变为不可用（ " 孤立 " ），以使其符合容量规则。在添加更多存储之前，情况始终如此。如果添加的节点非常大，并且也不遵守容量规则，则先前的孤立节点将不再处于孤立状态，而新添加的节点将变为孤立状态。应始终成对添加容量，以避免发生这种情况。当节点变为孤立时，将引发 strandedCapacity 集群故障。</block>
   <block id="910cbe464eb671d551213eb21cdaa9a6" category="inline-link">NetApp 视频：按需扩展：扩展 SolidFire 集群</block>
-  <block id="7633b7e5460c6a2e4fcab4791bc73fcd" category="paragraph"><block ref="7633b7e5460c6a2e4fcab4791bc73fcd" category="inline-link-rx"></block></block>
-  <block id="520c540d3834c0114667b6ff66ee2f8f" category="paragraph">您可以将节点添加到 SolidFire 企业 SDS （ SolidFire ESDS ）集群或 NetApp HCI 设备。</block>
-  <block id="40ea1cf7dc682a9b8a9ffd21532cdc72" category="paragraph">SolidFire ESDS 节点使用节点类型前缀 `SFC` 表示，例如， "c2" `s 100 。` "</block>
   <block id="10d0051ad322ddca8a07665ecd3f0fa2" category="list-text">单击 * 待定 * 以查看待定节点列表。</block>
-  <block id="8566161c203e323f7b4c8041c5206f50" category="paragraph">添加节点（ SolidFire ESDS 或非 SolidFire ESDS 节点）的过程完成后，这些节点将显示在 "Active" 节点列表中。在此之前，待定节点将显示在 "Pending Active" 列表中。</block>
-  <block id="92b31f65d1455ca2576f9366cfde1e3f" category="paragraph">对于非 SolidFire ESDS 节点的节点，当您将这些节点添加到集群时， SolidFire 会在这些待定节点上安装集群的 Element 软件版本。这可能需要几分钟时间。</block>
   <block id="adef510fe0bae196ab5aad0986c16bed" category="list-text">要添加单个节点，请单击要添加的节点对应的 * 操作 * 图标。</block>
   <block id="fa5516f88272118fddf27dd26883e74c" category="list-text">要添加多个节点，请选中要添加的节点对应的复选框，然后选中 * 批量操作 * 。* 注： * 如果要添加的节点的 Element 软件版本与集群上运行的版本不同，则集群会异步将此节点更新为集群主节点上运行的 Element 软件版本。更新节点后，它会自动将自己添加到集群中。在此异步过程中，节点将处于 pendingActive 状态。</block>
   <block id="fbe83e30f293159fb9bea412faa468a4" category="paragraph"><block ref="fbe83e30f293159fb9bea412faa468a4" category="inline-xref-macro-rx"></block></block>
@@ -1410,7 +1393,6 @@
   <block id="17597d1694bdaa4d0233e43918f0bd33" category="paragraph">系统解决警报后，有关警报的所有信息（包括警报解决日期）将移至 "Resolved" （已解决）区域。</block>
   <block id="4850ec1703a18dc7cbf35cb1e86d7e62" category="inline-xref-macro">集群故障代码</block>
   <block id="dc679f38ed2d35dde42b872d737e46db" category="list-text"><block ref="dc679f38ed2d35dde42b872d737e46db" category="inline-xref-macro-rx"></block></block>
-  <block id="8e078db9f02bd406ca631ba2825dd629" category="list-text"><block ref="8e078db9f02bd406ca631ba2825dd629" category="inline-link-macro-rx"></block></block>
   <block id="541b1a4ef8c08ff2d5f73af6e60010fc" category="summary">您可以将驻留在 SolidFire 集群上的卷快照备份到远程 SolidFire 集群。</block>
   <block id="5a7756bec1a6d55954906bd35365f9ec" category="doc">将卷快照备份到 SolidFire 集群</block>
   <block id="4123d6b6d785dabc80fe562f9a9cb54c" category="paragraph">确保源集群和目标集群已配对。</block>
@@ -2603,7 +2585,6 @@
   <block id="cec857908542efcebbbb737da14b7e0e" category="list-text">在 * 使用条款 * 对话框中，编辑要显示的文本。</block>
   <block id="f8897b2738a77bb4ad7124b58abcfb15" category="summary">您可以更改存储节点网络设置，为节点提供一组新的网络属性。</block>
   <block id="d4e5cc0a91691a4f74fb328bf7e5b929" category="paragraph">登录到存储节点时，您可以在 * 网络设置 * 页面上查看该节点的网络设置 <block ref="5ef220bc3aead68899688e4686910df0" category="inline-link-rx"></block> IP&gt; ： 442/HCC/ 节点 / 网络设置）。您可以选择 * 绑定 1G* （管理）或 * 绑定 10G* （存储）设置。以下列表介绍了在存储节点处于可用，待定或活动状态时可以修改的设置：</block>
-  <block id="ccf6ac4a8e7d87343fecfe9c7ced8faa" category="admonition">如果您运行的是 SolidFire 企业 SDS 集群，则在部署节点后，无法修改每节点 UI 中的大多数网络设置。</block>
   <block id="28ed9b5b5df5d633073f9cca1d10bee9" category="list-text">* 方法 *</block>
   <block id="e06af92a28c93f969ec10a00fe62f1a0" category="paragraph">用于配置接口的方法。可能的方法：</block>
   <block id="69752e68db7d200cb20de80d1eca1afd" category="list-text">loopback ：用于定义 IPv4 环回接口。</block>
@@ -2685,7 +2666,6 @@
   <block id="aee40dc887e7ee1a678b3c4f23851b92" category="doc">设置网络时间协议</block>
   <block id="e4fb8fa88e0f62a27817b1b76b7fb1f6" category="paragraph">可以通过以下两种方式之一设置网络时间协议（ NTP ）：指示集群中的每个节点侦听广播，或者指示每个节点查询 NTP 服务器以获取更新。</block>
   <block id="fc428e2e9245a085f2b34ce5c6a2ff3c" category="paragraph">NTP 用于通过网络同步时钟。在初始集群设置过程中，应连接到内部或外部 NTP 服务器。</block>
-  <block id="54901669f6ee1692cfa5c4342dec9cf6" category="admonition">此功能在 SolidFire 企业 SDS 集群中不可用。</block>
   <block id="5333107ce01dd4c2f0611ff975c33c6a" category="summary">您可以管理 SolidFire 存储系统的集群管理员帐户。可用的集群管理员管理功能包括创建，删除和编辑集群管理员帐户，更改集群管理员密码以及配置 LDAP 设置以管理用户的系统访问。</block>
   <block id="d71b1ecdf0776be0675958067594eb38" category="doc">管理集群管理员用户帐户</block>
   <block id="29c9cd9d0007be5f17f7ba4fba718376" category="paragraph">您可以通过创建，删除和编辑集群管理员帐户，更改集群管理员密码以及配置 LDAP 设置来管理用户的系统访问来管理 SolidFire 存储系统的集群管理员帐户。</block>
@@ -2789,8 +2769,6 @@
   <block id="e3ba29915abd7b6580d69f4dab5a9180" category="list-text"><block ref="e3ba29915abd7b6580d69f4dab5a9180" category="inline-link-rx"></block></block>
   <block id="6a5872631c0cf8f8396f83702a5d1b69" category="inline-link">更换 H600S 系列存储节点的驱动器</block>
   <block id="958c4b86b435f9f588d64cfab02d9a5d" category="list-text"><block ref="958c4b86b435f9f588d64cfab02d9a5d" category="inline-link-rx"></block></block>
-  <block id="24ed1c3d2fd5e7a8e8358705c065eee8" category="list-text"><block ref="24ed1c3d2fd5e7a8e8358705c065eee8" category="inline-link-macro-rx"></block></block>
-  <block id="f938a270ef0dee1673d32b1160f2268d" category="list-text"><block ref="f938a270ef0dee1673d32b1160f2268d" category="inline-link-macro-rx"></block></block>
   <block id="d1b6fdc9a4557e38fe637eacf520a0eb" category="summary">您可以在 Element UI 中筛选页面上的列表信息。在查看列表（例如卷和快照）时，您可以添加一个或多个筛选器以突出显示信息并使其更易于显示在页面上。</block>
   <block id="7a1148e1c8d80c4269467567c7dbb686" category="doc">使用筛选器限制结果</block>
   <block id="798d7bf43f9818d41dcebdc41046644b" category="paragraph">您可以在 Element UI 中筛选页面上的列表信息。在查看列表（例如卷和快照）时，您可以添加一个或多个筛选器以突出显示信息并使其更易于显示在页面上。</block>
@@ -2805,7 +2783,6 @@
   <block id="4fab5bcfea15c9a9fcf2c0dab635067a" category="summary">外部密钥管理（ EKM ）可与集群外外部密钥服务器（ EKS ）结合使用，提供安全的身份验证密钥管理（ AK ）。如果集群上启用了空闲加密，则可以使用这些 AK 锁定和解锁自加密驱动器（ SED ）。</block>
   <block id="672ba027ea7326ea51e3f870eba51243" category="inline-link-macro">空闲加密</block>
   <block id="d7779881296a451c483341e1778d3c0b" category="paragraph">外部密钥管理（ External Key Management ， EKM ）可与集群外外部密钥服务器（ External Key Server ， EKS ）结合使用，提供安全身份验证密钥（ Authentication Key ， AK ）管理。在这种情况下，可以使用这些 AK 锁定和解锁自加密驱动器（ SED ） <block ref="f3199fa54b442bc1907a18c173eb7451" category="inline-link-macro-rx"></block> 已在集群上启用。EKS 可以安全地生成和存储 AK 。集群利用密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）（ OASIS 定义的标准协议）与 EKS 进行通信。</block>
-  <block id="2d90e95bb2cceafa5164d25012c9abc9" category="admonition">SolidFire 企业 SDS 集群只能使用空闲软件加密。</block>
   <block id="e95cde644dcbc92ed35f811389d93624" category="inline-link-macro">设置外部管理</block>
   <block id="8038ace7de9a6145f384d01b5f03e2d8" category="list-text"><block ref="8038ace7de9a6145f384d01b5f03e2d8" category="inline-link-macro-rx"></block></block>
   <block id="652b436094afd98b18ad951a7e4f0cf8" category="inline-link-macro">重新设置 REST 主密钥的软件加密密钥</block>
@@ -2862,7 +2839,6 @@
   <block id="b2dff7fa85ae16d6add42cbf710b33b5" category="inline-link-macro">在部署后配置 SolidFire 系统选项</block>
   <block id="9767ec22fca2804b6bdbd87e39200375" category="list-text"><block ref="9767ec22fca2804b6bdbd87e39200375" category="inline-link-macro-rx"></block></block>
   <block id="d3daac97e8c69781f73bcc5512cb5c2a" category="inline-link-macro">升级存储系统组件</block>
-  <block id="ecb20e3ca51440136d042527b042c2ee" category="list-text"><block ref="ecb20e3ca51440136d042527b042c2ee" category="inline-link-macro-rx"></block></block>
   <block id="cef2ee48106a0a7790ec9a773798ee14" category="inline-link-macro">使用 Element 软件 UI 中的基本选项</block>
   <block id="6038a645307a76874f058ffe322fc4f6" category="list-text"><block ref="6038a645307a76874f058ffe322fc4f6" category="inline-link-macro-rx"></block></block>
   <block id="afa76abc4566eab1fcb19c24508a45f6" category="inline-link-macro">管理帐户</block>
@@ -2973,13 +2949,9 @@
   <block id="bbe65836a52825bc510aa92a420d59bb" category="doc">更改 Element 软件的默认 SSL 证书</block>
   <block id="1aa8b758f81e4b362f8fc94cd4c2a3ba" category="paragraph">创建 NetApp Element 软件集群时，集群会创建一个唯一的自签名安全套接字层（ SSL ）证书和专用密钥，用于通过 Element UI ，每节点 UI 或 API 进行所有 HTTPS 通信。Element 软件支持自签名证书以及由可信证书颁发机构（ CA ）颁发和验证的证书。</block>
   <block id="774ce4e623f683d68865c30ea0ac37fa" category="paragraph">您可以使用以下 API 方法获取有关默认 SSL 证书的详细信息并进行更改。</block>
-  <block id="5a1085897e38e4e51b92668061c6497c" category="paragraph">有关每种方法的信息，请参见 <block ref="27df1ddfd415d14d906f38bd54bde22c" category="inline-link-macro-rx"></block>。</block>
   <block id="c7d6aa2232acd143092ba0d52cae5ba8" category="list-text">* GetSSLCertificate *</block>
-  <block id="04b9e2887637b86b8614c4021d65bb52" category="paragraph">您可以使用此方法检索有关当前安装的 SSL 证书的信息，包括所有证书详细信息。</block>
   <block id="855a3dbbd51c2fdec4e1d006b91d6323" category="list-text">* 设置 SSLCertificate *</block>
-  <block id="42eb9a81f7de36c9246dce8d9177d0de" category="paragraph">您可以使用此方法将集群和每节点 SSL 证书设置为您提供的证书和专用密钥。系统会验证证书和专用密钥，以防止应用无效证书。</block>
   <block id="84295a797b60702f81143ab1aa871f82" category="list-text">* 删除 SSLCertificer*</block>
-  <block id="a302712f1b09c9dcdfc7d5808cb5fe30" category="paragraph">此方法将删除当前安装的 SSL 证书和专用密钥。然后，集群将生成新的自签名证书和专用密钥。</block>
   <block id="7402074664fcb3503f94b26301713adb" category="admonition">集群 SSL 证书会自动应用于添加到集群中的所有新节点。从集群中删除的任何节点都会还原为自签名证书，并且所有用户定义的证书和密钥信息都会从该节点中删除。</block>
   <block id="c6fb1c7cc7329b493957a81087cb0a6b" category="summary">如果需要在短时间内停止 I/O 处理，可以手动暂停复制。如果 I/O 处理量激增，而您希望降低处理负载，则可能需要暂停复制。</block>
   <block id="8a2366fa83611265d27988025f7ee38d" category="list-text">单击卷对对应的 "Actions" 图标。</block>
@@ -3381,7 +3353,6 @@
   <block id="94d1207223d97d0a0a9877e887c40d29" category="inline-link-macro">更改默认 IPMI 密码</block>
   <block id="a88b2ec4dd01d7fd61509f9c9d5bd481" category="list-text">对于 H410C ， H610C 和 H615C 节点， <block ref="1d4aa273a0eca9d7d120f38c4573165c" category="inline-link-macro-rx"></block>。</block>
   <block id="9ef4592bcb5c2379e3e631deeae02163" category="inline-link-macro">更改默认 IPM 密码</block>
-  <block id="c406ac81de66b241c8b18e8b786204ce" category="list-text">对于 H410S 和 H610S 节点， <block ref="948675b0a3c0cef9123c5f0ab6b48101" category="inline-link-macro-rx"></block>。</block>
   <block id="5da96725b80167a4658f4e9057a4cb45" category="inline-link-macro">更改管理节点上的 BMC 凭据</block>
   <block id="57137c1e68d7300587dc9d9e4c6d107c" category="list-text"><block ref="5215e9d1d5c62231ce2eff57e0d99e18" category="inline-link-macro-rx"></block>。</block>
   <block id="409517b29e406b86b0f2e96d825034ac" category="paragraph">ESXi 凭据</block>
@@ -3524,10 +3495,6 @@
   <block id="278b57bad13f8c1a15188e0504efd31b" category="list-text">* 仅限 Snapshot * ：仅复制在源集群上创建的快照。不会复制源卷中的活动写入。* 注意： * 更改复制模式会立即更改此模式。请确保您已在两个站点协调这些更改。</block>
   <block id="4a0a4752a851bfbcb612292d19d020e2" category="list-text">选择 * 使用 LDAPS 协议 * 。</block>
   <block id="4e8b9c52e60070f73bcaa6e5e5ba4121" category="inline-link-macro">LDAP 详细信息</block>
-  <block id="543e9c1cf295e8284006e3af49b8105a" category="paragraph"><block ref="543e9c1cf295e8284006e3af49b8105a" category="inline-link-macro-rx"></block></block>
-  <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">* 相关信息 *</block>
-  <block id="a1245e096ef503d7567667afaa906b60" category="paragraph"><block ref="a1245e096ef503d7567667afaa906b60" category="inline-xref-macro-rx"></block></block>
-  <block id="52dc765a830c6c6b29cc239ca9482774" category="paragraph"><block ref="52dc765a830c6c6b29cc239ca9482774" category="inline-xref-macro-rx"></block></block>
   <block id="ad4f994f46b2918f9140ecbc2a4806e4" category="summary">您可以将 SolidFire 快照备份到与 OpenStack Swift 兼容的二级对象存储。</block>
   <block id="eea58b3659596532522a08f03fb583b8" category="doc">将卷快照备份到 OpenStack Swift 对象存储</block>
   <block id="393a50df83ef054f405e26e99368e8b4" category="list-text">在 * 集成备份 * 对话框的 * 备份到 * 下，选择 * Swift* 。</block>
@@ -3958,8 +3925,6 @@
   <block id="ff888c386cbf7561a41674237043ab02" category="summary">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="bbb9ca100f5b4a2074b8caeaaf4b1ae0" category="paragraph">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="2f5dc9e1194b10f0920c3f6b85205b99" category="paragraph">除非另有说明，否则所有端口均为 TCP 端口，并且应允许在 NetApp 支持服务器，管理节点和运行 Element 软件的节点之间进行双向通信。</block>
-  <block id="cca942e088eb1473b2eb9de24822300b" category="list-text">编辑防火墙规则以允许使用新 URL 。</block>
-  <block id="fc0bbd3b7c620ea524d15f50953b65de" category="list-text">重复上述步骤，直到访问尝试成功为止。</block>
   <block id="1f2681a91e9e795d6ebb1d5828cd1182" category="admonition">在管理节点，运行 Element 软件的节点和集群 MVIP 之间启用 ICMP 。</block>
   <block id="15a1051d03ca55ab79226f44fa683bbe" category="paragraph">下表使用了以下缩写词：</block>
   <block id="60175d30ed8f8459b2f835b923bb4ee5" category="list-text">mip ：管理 IP 地址，每节点地址</block>
@@ -3986,7 +3951,6 @@
   <block id="b20a6c801c401908aa3c96f370665e05" category="paragraph">DNS 查找</block>
   <block id="c203d8a151612acf12457e4d67635a95" category="paragraph">442</block>
   <block id="3576cff8b205debb58711ff360f51ffd" category="paragraph">通过 UI 和 API 访问存储节点和 Element 软件升级</block>
-  <block id="d747a3883d729833b05cf76084503b96" category="paragraph">管理节点服务升级</block>
   <block id="00a55ff76496c3c45ca20071f6151bfc" category="paragraph">monitoring.solidfire.com</block>
   <block id="6ac181854a8b48c5ac6018a305f6ae7c" category="paragraph">存储集群向 Active IQ 报告</block>
   <block id="0c29e1667ad297897573438219b3e1c6" category="paragraph">repo.netapp.com</block>
@@ -4756,20 +4720,16 @@
   <block id="c68d0cefaf6daaa0eddd2f2ab63ba5c8" category="list-text"><block ref="910aaaa5a5f6089f423c0c681bb2f1ce" category="inline-xref-macro-rx"></block></block>
   <block id="1a1c6d70aec56ed56fdc5c3ac8162a8b" category="section-title">使用 NetApp Hybrid Cloud Control UI 升级 Element 存储</block>
   <block id="a544a5293c147dec832e983a6fbad504" category="paragraph">您可以使用 NetApp Hybrid Cloud Control UI 升级存储集群。</block>
-  <block id="106cc5a0e6a0bb3c0776b3ba8fb64337" category="inline-link">适用于 SolidFire 存储集群的 Element 软件升级包（ .tar.gz ）</block>
   <block id="2882996895673f16b2fcf0cabfb994f1" category="admonition">有关使用 NetApp Hybrid Cloud Control 升级存储集群时的潜在问题及其解决方法，请参见<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>。</block>
   <block id="d64a6336a39c9f27c33956f187d79c87" category="list-text">通过提供存储集群管理员凭据登录到 NetApp Hybrid Cloud Control 。</block>
   <block id="1f760966967601f6feb32cc62bb11ca3" category="list-text">选择靠近接口右上角的 * 升级 * 。</block>
   <block id="8d2b20731c568a1d9a02267e5d20edb7" category="list-text">在 * 升级 * 页面上，选择 * 存储 * 。</block>
   <block id="eced5161fd4b5a5d98480da44ccabc87" category="paragraph">* 存储 * 选项卡列出了安装过程中的存储集群。如果 NetApp Hybrid Cloud Control 无法访问某个集群，则该集群将不会显示在 * 升级 * 页面上。</block>
   <block id="f1bd2e17b5412e4b45851ad42541f684" category="list-text">从以下选项中进行选择，并执行一组适用于您的集群的步骤：</block>
-  <block id="042b4c254a65c4222ecfd8eda19de8fb" category="cell">您的管理节点具有外部连接。</block>
-  <block id="28915945fea0308bbd2cdf191b79dd68" category="list-text">选择要升级的集群旁边的下拉箭头，然后从 * 元素 * 选项卡下提供的升级版本中进行选择。</block>
   <block id="c132ec9989c2f6d64865e3b80e0712f9" category="list-text">选择 * 开始升级 * 。</block>
   <block id="b9088c022e9648ce7ddea6e6d4a7d2a2" category="admonition">升级期间， * 升级状态 * 会发生更改，以反映此过程的状态。它也会根据您执行的操作而发生更改，例如暂停升级或升级返回错误。请参见 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="1c1f68c70e4604204e19388cd8dedfa2" category="admonition">在升级过程中，您可以退出此页面，稍后再返回此页面以继续监控进度。如果集群行已折叠，则此页面不会动态更新状态和当前版本。必须展开集群行才能更新此表，您也可以刷新此页面。</block>
   <block id="f7c462da794bbac0b6cb931507af8070" category="paragraph">升级完成后，您可以下载日志。</block>
-  <block id="8fce94dc58f1bdc7de438659f9a9a00b" category="cell">您的管理节点位于不具有外部连接的非公开站点中。</block>
   <block id="308f16f303adc416b27b236c19797514" category="list-text">选择 * 浏览 * 上传您下载的升级软件包。</block>
   <block id="9f3e44fdaf4628028bd071e9fdf42636" category="list-text">等待上传完成。进度条会显示上传状态。</block>
   <block id="4109e9de1e5e5e6a88e7ab1943736894" category="admonition">如果您离开浏览器窗口，则文件上传将丢失。</block>
@@ -4792,20 +4752,11 @@
   <block id="ed226233e95079cc1be83a4449d31733" category="cell">您已暂停升级。选择 * 恢复 * 以恢复此过程。</block>
   <block id="26783b13c35f4845ca30d151f29a8ddc" category="cell">升级期间发生错误。您可以下载错误日志并将其发送给 NetApp 支持部门。解决此错误后，您可以返回到页面并选择 * 恢复 * 。恢复升级时，进度条会后退几分钟，而系统会运行运行状况检查并检查升级的当前状态。</block>
   <block id="6fc59d6889d5ac60b02946bb6b8b8898" category="cell">无法检测</block>
-  <block id="25026455f4896275dc71ea344eae7273" category="inline-link-macro">代理配置：</block>
-  <block id="00bdf0ae9f642cb5870113a82a86b5ba" category="cell">如果 NetApp Hybrid Cloud Control 无法通过外部连接访问联机软件存储库，则会显示此状态，而不是显示 * 可用版本 * 。如果您已建立外部连接，但仍看到此消息，请检查 <block ref="3fa2d0476e68824edbcf4c56be4ac531" category="inline-link-macro-rx"></block>。</block>
   <block id="c25db468e3487f49a3fe8a8fd3ee6fca" category="cell">完成并进行跟进</block>
   <block id="c46945f40a6b2e92964b73d6d398f9d3" category="section-title">使用 NetApp Hybrid Cloud Control API 升级 Element 存储</block>
   <block id="13381b43a34c53873fa3ea94ea881f65" category="paragraph">您可以使用 API 将集群中的存储节点升级到最新的 Element 软件版本。您可以使用自己选择的自动化工具来运行 API 。此处介绍的 API 工作流使用管理节点上提供的 REST API UI 作为示例。</block>
-  <block id="8c641b6be2c77d41b861c68406aa882e" category="list-text">根据您的连接执行以下操作之一：</block>
-  <block id="99d815c1264bfc1b74f7a653fb83e659" category="list-text">验证存储库连接：</block>
   <block id="a6ed38b882eb2bb18669e728ffb1f93a" category="list-text">在管理节点上打开管理节点 REST API UI ：</block>
   <block id="85bb06226f2384b478691f49e53204fc" category="list-text">关闭授权窗口。</block>
-  <block id="132a5b6da037e3c0aba1107add99cd58" category="list-text">从 REST API UI 中，选择 * 获取​ / packages​ / 远程 - repository​ / 连接 * 。</block>
-  <block id="7ac2eb4e7073a0bed37085ee1d0656de" category="list-text">如果返回代码 200 ，请转至下一步。如果未连接到远程存储库，请建立连接或使用非公开站点选项。</block>
-  <block id="ecd4792b2445292557fc3b37de2cda15" category="list-text">查找升级软件包 ID ：</block>
-  <block id="bd91bfdcf4a916f6b8c00c25da13251b" category="list-text">从 REST API UI 中，选择 * 获取 /packages* 。</block>
-  <block id="92c655ce479b4404b3a51afa0527fd9b" category="list-text">在响应中，复制并保存软件包 ID ，以供后续步骤使用。</block>
   <block id="1ed5061d3b76fa0c219c1f1d3b386470" category="list-text">将存储升级软件包下载到可供管理节点访问的设备。</block>
   <block id="ca9b271bda1fd83c0839a53fe115bfdb" category="list-text">将存储升级软件包上传到管理节点：</block>
   <block id="382035476e13882c8f8e0dcfdc354d1b" category="list-text">从 REST API UI 中，选择 * POST /packages* 。</block>
@@ -4916,7 +4867,6 @@
   <block id="b142e9d9b67c7c4504bd1ab09fd15db2" category="admonition">有关介绍每个服务包的主要服务，新功能，错误修复和解决方法的最新管理服务发行说明，请参见<block ref="51c56ce961e981301a44342800a6fcbd" category="inline-link-rx"></block></block>
   <block id="7d6cae0c176b060b3eb918e8fc3a8a88" category="list-text"><block ref="8b810af37d36ecef3e8ce0cfd28cc60b" category="inline-xref-macro-rx"></block> （建议方法）</block>
   <block id="45d5739efe933eabe3dda4a4ba6b61b1" category="list-text"><block ref="b795f7048c0a3127327e392f4c115728" category="inline-xref-macro-rx"></block></block>
-  <block id="610172e2b0e7d4051f0d0b230bd8c722" category="list-text"><block ref="79f95b99cf6c6dc511dd13bb08f1454f" category="inline-xref-macro-rx"></block></block>
   <block id="2325934efda1befa076510008b0f7646" category="section-title">使用 Hybrid Cloud Control 更新管理服务</block>
   <block id="c3e2bcb5601498c3470bd272236342a3" category="paragraph">管理服务捆绑包可为您的安装提供增强功能和修复，而不是主要版本。</block>
   <block id="d0d4d24acea2b29c2079bdc9f046795d" category="list-text">如果要将管理服务更新到版本 2.16 或更高版本，并且运行的是管理节点 11.3 到 11.8 ，则在更新管理服务之前，需要先增加管理节点 VM 的 RAM ：</block>
@@ -4926,28 +4876,13 @@
   <block id="291b81212712dc828fee9037f0662499" category="list-text">您已将管理服务至少升级到 2.1.326 版。NetApp Hybrid Cloud Control 升级在早期的服务捆绑包中不可用。</block>
   <block id="f4b19cd96a813fb177542ed57f6d27aa" category="admonition">有关每个服务包版本的可用服务列表，请参见<block ref="b7b8dc48337abf993d8909e2c4d32cb1" category="inline-link-rx"></block>。</block>
   <block id="9c3b6a2840d81e74fa978e35f9fda09e" category="list-text">在 Upgrades 页面上，选择 * 管理服务 * 选项卡。</block>
-  <block id="2a67be48fd33aed34d5d9b95445a0c20" category="paragraph">管理服务选项卡显示管理服务软件的当前版本和可用版本。</block>
-  <block id="6d991bb9237f73dba10797ec25468d86" category="admonition">如果您的安装无法访问 Internet ，则仅会显示当前软件版本。如果您的安装具有外部连接，但无法访问 NetApp 联机存储库，请检查 <block ref="3fa2d0476e68824edbcf4c56be4ac531" category="inline-link-macro-rx"></block>。</block>
-  <block id="b48c8e3e654392e94eba7ff80f2a9810" category="list-text">如果您的安装可以访问 Internet ，并且可以进行管理服务升级，请选择 * 开始升级 * 。</block>
-  <block id="88cc6eac67699034974d69a75c774238" category="list-text">如果您的安装无法访问 Internet ，请执行以下操作：</block>
   <block id="3a91ea590517ccc87ccaf6cbda3ac55c" category="list-text">按照页面上的说明将管理服务升级包下载并保存到您的计算机。</block>
   <block id="59ab5341afeb797e4cbab599e21e347f" category="list-text">选择 * 浏览 * 以找到您保存的软件包并上传它。</block>
   <block id="30c2b654de6b157d3965b69e2e973b9c" category="paragraph">升级开始后，您可以在此页面上查看升级状态。升级期间，您可能会与 NetApp Hybrid Cloud Control 断开连接，因此必须重新登录才能查看升级结果。</block>
   <block id="e1ab7975bc85b8e4a805e35bfd948176" category="section-title">使用管理节点 API 更新管理服务</block>
-  <block id="f64b52761fbac72e8bfdd229b3a113f1" category="paragraph">理想情况下，用户应从 NetApp Hybrid Cloud Control 执行管理服务更新。但是，您可以从管理节点使用 REST API UI 手动更新管理服务。</block>
-  <block id="fe1085046bceaf490556bf74e0f01c15" category="list-text">（可选）确认管理节点服务的可用版本： `get /services/versions`</block>
-  <block id="0edefa8da79067ac4b94f9b1b2a9af8c" category="list-text">（可选）获取有关最新版本的详细信息： `获取 /services/versions/latest`</block>
-  <block id="b4851bdc860d51294258bcfa6507a2f6" category="list-text">（可选）获取有关特定版本的详细信息： `GET /services/versions/ ｛ version ｝ /info`</block>
-  <block id="bf5a6801d77133c83554e3433950d36e" category="list-text">执行以下管理服务更新选项之一：</block>
-  <block id="0da74aa7d2a1855d917aaf432d2d3ca4" category="list-text">运行此命令可更新到最新版本的管理节点服务： `PUT /services/update/latest`</block>
-  <block id="0663ec28ae182530f1f365d17c98c119" category="list-text">运行此命令以更新到管理节点服务的特定版本： `PUT /services/update/ ｛ version ｝`</block>
-  <block id="f488e48b4d2bc7d793f0e09cb03654ee" category="list-text">运行 `get/services/update/status` 以监控更新状态。</block>
   <block id="0e4f8b996ad3d1d666cae0ca65696890" category="paragraph">成功更新将返回类似于以下示例的结果：</block>
-  <block id="e620d1115b8f26b9e2c66f46d34832bc" category="section-title">使用非公开站点的管理节点 API 更新管理服务</block>
   <block id="c202282c44af53d5ea8a677636541731" category="paragraph">理想情况下，用户应从 NetApp Hybrid Cloud Control 执行管理服务更新。但是，您可以使用 REST API 手动将管理服务的服务包更新上传到，提取并部署到管理节点。您可以从管理节点的 REST API UI 运行每个命令。</block>
   <block id="3601cad086244ec56eee653db5e2b0a3" category="list-text">您已部署 NetApp Element 软件管理节点 11.3 或更高版本。</block>
-  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支持站点</block>
-  <block id="9d89df9ed11d9d07aa2a21fce8623b87" category="list-text">您已从下载服务包更新<block ref="1c68cef0c53db6ec1d50d3b221c314cd" category="inline-link-rx"></block> 可在非公开站点中使用的设备。</block>
   <block id="54521ea545972501500b09f85df8ba55" category="list-text">使用以下命令在管理节点上上传并提取服务包： `PUT /services/upload`</block>
   <block id="4963e624e3688c6904a816aa37c6c7cc" category="list-text">在管理节点上部署管理服务： `PUT /services/Deploy`</block>
   <block id="c512caf817d81cdc178fb65c97607344" category="list-text">监控更新状态： `get /services/update/status`</block>
@@ -5054,14 +4989,10 @@
   <block id="a312c7f516ce1d78e2fb8c261a270383" category="section-title">使用 NetApp Hybrid Cloud Control UI 升级存储固件</block>
   <block id="f650a00f1e40f26bd9259f0a248e5104" category="paragraph">您可以使用 NetApp Hybrid Cloud Control UI 升级集群中存储节点的固件。</block>
   <block id="021194ed35c1ca85c5ddd9daaf8630c3" category="admonition">每个存储节点的升级过程大约需要 30 分钟。如果要将 Element 存储集群升级到版本 2.76 以上的存储固件，则只有在将新固件写入节点后，各个存储节点才会在升级期间重新启动。</block>
-  <block id="41248545ed2949a832d88f9ea8c00917" category="admonition">* 存储 * 选项卡列出了安装过程中的存储集群。如果 NetApp Hybrid Cloud Control 无法访问某个集群，则该集群将不会显示在 * 升级 * 页面上。如果您的集群运行的是 Element 12.0 或更高版本，则会看到为这些集群列出的当前固件包版本。如果一个集群中的节点具有不同的固件版本，或者升级过程中，您将在 * 当前固件包版本 * 列中看到 * 多个 * 。您可以选择 * 多个 * 以导航到 * 节点 * 页面以比较固件版本。如果所有集群运行的 Element 版本均早于 12.0 ，则您将看不到有关固件包版本号的任何信息。如果集群是最新的且 / 或没有可用的升级软件包，则不会显示 * 元素 * 和 * 仅固件 * 选项卡。在升级过程中，也不会显示这些选项卡。如果显示的是 * 元素 * 选项卡，而不是 * 仅固件 * 选项卡，则表示没有可用的固件包。</block>
   <block id="c2478fbc134086873c832f9086152247" category="list-text">选择要升级的集群旁边的下拉箭头。</block>
   <block id="e0d814d8ce005e1e08731f39dc4cff27" category="list-text">选择 * 仅固件 * ，然后从可用的升级版本中进行选择。</block>
-  <block id="929933851dc2ac970fff1ef0a8351b29" category="paragraph">成功上传并验证文件后，将显示一条屏幕消息。验证可能需要几分钟时间。如果在此阶段离开浏览器窗口，则会保留文件上传。升级完成后，您可以下载日志。有关各种升级状态更改的信息，请参见 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="79767150703c682eb62b32792815ff4b" category="cell">集群已升级到最新可用 Element 版本，或者固件已升级到最新版本。</block>
-  <block id="5d1b774bcdd716279a4e1f6c45c21ae4" category="cell">如果 NetApp Hybrid Cloud Control 无法通过外部连接访问联机软件存储库，则会显示此状态，而不是显示 * 可用版本 * 。如果存储服务 API 返回的升级状态不在可能升级状态的枚举列表中，则也会显示此状态。</block>
   <block id="3aff5fc3a8e8d7210a56cf227b42a6e8" category="section-title">使用 NetApp Hybrid Cloud Control API 升级存储固件</block>
-  <block id="fa296e9495ac8602647feef1c1f92880" category="list-text">在响应中，复制并保存固件包 ID ，以供后续步骤使用。</block>
   <block id="3d849e77fb6435c594cb34aff5254c7a" category="list-text">将存储固件升级软件包上传到管理节点：</block>
   <block id="cbba2755a405305c04008eba28b81066" category="list-text">在 * id* 中输入上一步复制的固件包 ID 。</block>
   <block id="3982b15a7d8608c803ba0fea915a806a" category="list-text">找到安装资产 ID ：</block>
@@ -5330,7 +5261,6 @@
   <block id="22cbf2d257b8051278ddcc97997a2e0e" category="paragraph">如果指定此名称，则此名称将替换旧的 IdP 名称。</block>
   <block id="0c2fa1c0ffa320e7273124b77aabbd2b" category="paragraph">idpConfigInfo</block>
   <block id="4fe48157e0ddec891127037ec85510dd" category="paragraph">有关第三方 IdP 配置的信息。</block>
-  <block id="9c26e58197dbaa39e74144e77ff06a0e" category="paragraph"><block ref="9c26e58197dbaa39e74144e77ff06a0e" category="inline-link-macro-rx"></block></block>
   <block id="195863009ffa903e83ad7fd7e7db63b1" category="paragraph">12.0</block>
   <block id="ff94b189f06c2f2dfe20256650d1591a" category="summary">您可以使用 ListVolumeQoSHistograms 方法生成一个或多个卷的卷 QoS 使用情况直方图。这样，您就可以更好地了解卷如何使用 QoS 。</block>
   <block id="2406c3f8324adafee7de8fcad733e4c1" category="doc">ListVolumeQoSHistograms</block>
@@ -5448,7 +5378,6 @@
   <block id="161bca2e917335e125291a00fd76a80f" category="paragraph">会话</block>
   <block id="3f94bd0ec37d383d1f37803b50ec6f49" category="paragraph">身份验证会话的会话信息列表。</block>
   <block id="9a43554262146ce04817985e50c7f70c" category="inline-link-macro">authSessionInfo</block>
-  <block id="b1bff35225b1453efa974801b476caff" category="paragraph"><block ref="b1bff35225b1453efa974801b476caff" category="inline-link-macro-rx"></block></block>
   <block id="2aadcba117e3a2f437c408847a79d745" category="summary">您可以使用 GetClusterConfig API 方法返回有关节点用于与其集群通信的集群配置的信息。</block>
   <block id="a2a712e172ff77f56dce01e522f75ef9" category="doc">GetClusterConfig</block>
   <block id="11a82ff8e5e8c3b1f3c7996eaa3e9536" category="paragraph">您可以使用 `GetClusterConfig` API 方法返回有关节点用于与其集群通信的集群配置的信息。</block>
@@ -5481,7 +5410,6 @@
   <block id="7b83b62cb20100ba0de15d611893c1ca" category="summary">通过 ListClusterInterfacePreference 方法，与运行 Element 软件的存储集群集成的系统可以列出存储在系统上的现有集群接口首选项。此方法供内部使用。</block>
   <block id="b5722c702064083edd72d0753fc7684f" category="doc">ListClusterInterfacePreferences</block>
   <block id="ba077ef4fd3296d1da3929205fad6b93" category="paragraph">使用 `ListClusterInterfacePreference` 方法，与运行 Element 软件的存储集群集成的系统可以列出存储在系统上的现有集群接口首选项。此方法供内部使用。</block>
-  <block id="1767ff27a6b3014619875bcc1251351f" category="admonition">SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。</block>
   <block id="1ce027fe3518cc64ef3570b50a9a7c10" category="paragraph">首选项</block>
   <block id="f5fd1adb53e7d7711944fc6f8a747c3f" category="paragraph">当前存储在存储集群上的集群接口对象列表，每个对象都包含首选项的名称和值。</block>
   <block id="02ad845d2f8ac57a5c265ea083b2169b" category="paragraph">11.0</block>
@@ -6394,7 +6322,6 @@
   <block id="2d956871963e704854b5e24781df3ac6" category="paragraph">kmipKeyProviders</block>
   <block id="daed31255d43e1a9cb8957ea4827280f" category="paragraph">已创建的 KMIP 密钥提供程序的列表。</block>
   <block id="af6fa3b56666058ff3f8eacb74577a16" category="inline-link-macro">KeyProviderKmip</block>
-  <block id="9e1dc08162fd6287c4fb2fdc4c4a9a0f" category="paragraph"><block ref="318d6ed2c493a66e91fc7d1db5a0f022" category="inline-link-macro-rx"></block> 数组</block>
   <block id="4b5e5f25e330176bd74e0783233118f4" category="summary">使用 DeleteClusterInterfacePreference 方法，与运行 Element 软件的存储集群集成的系统可以删除现有集群接口首选项。此方法供内部使用。</block>
   <block id="1c966e6f6f64e9f1d2cff18dba9c7e15" category="doc">DeleteClusterInterfacePreference</block>
   <block id="f231627fbc35abdad000cb072fd6c434" category="paragraph">使用 `DDeleteClusterInterfacePreference` 方法，与运行 Element 软件的存储集群集成的系统可以删除现有集群接口首选项。此方法供内部使用。</block>
@@ -6678,7 +6605,6 @@
   <block id="fbdb185641af63b17915fc853bdd3ce5" category="paragraph">要返回的 KMIP 密钥提供程序对象的 ID 。</block>
   <block id="c398d0b5db2ad6bd0f494cea5b8f4088" category="paragraph">kmipKeyProvider</block>
   <block id="4b24e793c1e1dcb9bd3df75b299d9536" category="paragraph">包含有关请求的密钥提供程序的详细信息的对象。</block>
-  <block id="318d6ed2c493a66e91fc7d1db5a0f022" category="paragraph"><block ref="318d6ed2c493a66e91fc7d1db5a0f022" category="inline-link-macro-rx"></block></block>
   <block id="c176f379ffd18a342109979ab4abea92" category="summary">您可以使用 StartVolumePairing 方法从用于与另一个卷配对的卷创建编码密钥。此方法创建的密钥将在 CompleteVolumePairing 方法中用于建立卷配对。</block>
   <block id="1b1e27b757f17637e4619bf0329ff3e8" category="paragraph">您可以使用 `STartVolumePairing` 方法从用于与另一个卷配对的卷创建编码密钥。此方法创建的密钥将在 `CompleteVolumePairing` 方法中使用以建立卷配对。</block>
   <block id="5f974f8715ade3f44c89f462774927c3" category="paragraph">要启动配对过程的卷的模式。只有当卷为源卷时，才能设置此模式。可能值：</block>
@@ -6768,7 +6694,6 @@
   <block id="b140fd3c0111005bcfc14eb207c72b2d" category="paragraph">保护域</block>
   <block id="8182124863c7746cec9195a8d74456c3" category="paragraph">节点所属的保护域列表。</block>
   <block id="c6faecb3ce8f08fb0dfc3519050b8527" category="inline-link-macro">保护域</block>
-  <block id="4a7c9a0bc1a3ed41374850a08662f9a1" category="paragraph"><block ref="4a7c9a0bc1a3ed41374850a08662f9a1" category="inline-link-macro-rx"></block></block>
   <block id="8ee5e7345a08724cdab7fbe669e991ca" category="summary">您可以使用 ListSchedules 获取有关已创建的所有计划快照的信息。</block>
   <block id="e9963c9b6b5dfa04ccfc50e0bf881bb9" category="paragraph">您可以使用 `ListSchedules` 获取有关已创建的所有计划快照的信息。</block>
   <block id="70ec15bf614ceec61b217f3addfa4eba" category="paragraph">schedules</block>
@@ -7258,15 +7183,8 @@
   <block id="e483c580f026961e60a91a50b22808ef" category="paragraph"><block ref="e483c580f026961e60a91a50b22808ef" category="inline-xref-macro-rx"></block></block>
   <block id="67e1a3c3ac004f9f743a4aaf5391ef70" category="section-title">启用 SNMP v3 的请求示例</block>
   <block id="414fc0c1afbf48366dd6f44f5fef6656" category="section-title">启用 SNMP v2 的请求示例</block>
-  <block id="1d3e9919d29c393a044433bd501a19df" category="summary">在 SolidFire 企业 SDS 存储集群上，您可以使用 SetLicenseKey 方法为存储集群设置许可证密钥。存储集群的许可证密钥由集群的订单号和序列号组成，并激活您为 Element 软件购买的容量模型。</block>
-  <block id="aa29735d996af88d638281fde22f2e59" category="doc">SetLicenseKey</block>
-  <block id="ad3466e61e1b49fb64f6186e7fdcadd2" category="paragraph">在 SolidFire `SSDS 存储集群上，您可以使用` etLicenseKey 方法设置存储集群的许可证密钥。存储集群的许可证密钥由集群的订单号和序列号组成，并激活您为 Element 软件购买的容量模型。</block>
   <block id="d77322ac0c7d90b3c259e9940600190a" category="paragraph">订单编号</block>
-  <block id="725879e2d0f942281276c78c3d3777d2" category="paragraph">此存储集群的新销售订单号。</block>
   <block id="071878f85c90e53e15aac400b22e48b5" category="paragraph">serialNumber</block>
-  <block id="8b51f48c895c48ff8a144f0677fdd18e" category="paragraph">此存储集群的新序列号。</block>
-  <block id="7a4d90a85ce4994534e3a2d8f5916e73" category="paragraph">存储集群的新销售订单号。</block>
-  <block id="841f3f1d4135af7999e02dca54fe9486" category="paragraph">存储集群的新序列号。</block>
   <block id="caf605fb2823e7e3307b18308d7ebd3b" category="summary">使用 ModifyClusterInterfacePreference 方法，与运行 Element 软件的存储集群集成的系统可以更改现有集群接口首选项。此方法供内部使用。</block>
   <block id="cc920f3843ab277d6a6f521bab4be384" category="doc">ModifyClusterInterfacePreference</block>
   <block id="359870395d79efd529fba15ad28fbcfe" category="paragraph">使用 `ModfyClusterInterfacePreference` 方法，与运行 Element 软件的存储集群集成的系统可以更改现有集群接口首选项。此方法供内部使用。</block>
@@ -7380,7 +7298,6 @@
   <block id="f3856ff581517deae4c9045682768677" category="paragraph">检索特定 IdP 名称的 IdP 配置信息。</block>
   <block id="cbf736cf2cf084245cf2ef853366ba11" category="paragraph">idpConfigInfo</block>
   <block id="c54f92fa106774d26ba461cc1c497aae" category="paragraph">有关第三方 IdP 配置的信息。</block>
-  <block id="a29f9fdde9669fd7ca1ae6b4127f82b8" category="paragraph"><block ref="9c26e58197dbaa39e74144e77ff06a0e" category="inline-link-macro-rx"></block> 数组</block>
   <block id="d75770a94c059a1d35360e5ac1f6153f" category="summary">您可以使用多因素身份验证 \ （ MFA\ ）通过安全断言标记语言 \ （ SAML \ ）使用第三方身份提供程序 \ （ IdP ）管理用户会话。</block>
   <block id="3fa52bb1f27e457bba53cd67eb49d081" category="doc">多因素身份验证 API 方法</block>
   <block id="9fba87d16629109ef300e4ed7ad24d7f" category="paragraph">您可以使用多因素身份验证（ Multi-Factor Authentication ， MFA ）通过安全断言标记语言（ Security Assertion Markup Language ， SAML ）使用第三方身份提供程序（ IdP ）管理用户会话。</block>
@@ -7458,7 +7375,6 @@
   <block id="893cd6843bbc2f9b74beda40cece2f34" category="paragraph">您可以使用 `GetProtectionDomainLayout` 方法返回集群的所有保护域信息，包括每个节点所在的机箱和自定义保护域。</block>
   <block id="78acf42d4e20f5f2468d1e65f57abf33" category="paragraph">保护域布局</block>
   <block id="05a5c63fcd5e41bcca1f51f811155ae8" category="paragraph">节点列表，每个节点及其关联的保护域。</block>
-  <block id="239e7b7fda84773161e54a846a2d1cd4" category="paragraph">JSON 列表 <block ref="900764c76dfb916163ee11006f145e7d" category="inline-link-macro-rx"></block> 对象。</block>
   <block id="b308b670db77c0aa4c7f428f9825ca9d" category="summary">您可以使用 RemoveVolumeVolumesFromVolumeAccessGroup 方法从指定的卷访问组中删除卷。</block>
   <block id="15b518b0831c5494900de128c05d6591" category="paragraph">您可以使用 `RemoveVolumeVolumesFromVolumeAccessGroup` 方法从指定卷访问组中删除卷。</block>
   <block id="3a3ec403cd089cbe76cec691425b7738" category="paragraph">要从中删除卷的卷访问组 ID 。</block>
@@ -7601,7 +7517,6 @@
   <block id="fa086ddf62bedd344204fceb97eb97b1" category="paragraph">kmipKeyServer</block>
   <block id="86d9b0ecb31e3598bf29d711f80152ec" category="paragraph">包含有关新修改的密钥服务器的详细信息的对象。</block>
   <block id="64ce33c3af0564919d68824260f9d7c0" category="inline-link-macro">KeyServerKmip</block>
-  <block id="0971c717c82e5a2659fd8ee2d73d170d" category="paragraph"><block ref="0971c717c82e5a2659fd8ee2d73d170d" category="inline-link-macro-rx"></block></block>
   <block id="84a129325551e4a370b12f19377141b1" category="summary">您可以使用 ListNetworkInterfaceStats 方法列出有关节点上每个网络接口的统计信息。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口。</block>
   <block id="c8d441628a69c3ab4034b9cedfa8687c" category="doc">ListNetworkInterfaceStats</block>
   <block id="cfdb6f211fc6730bc2244a7fe24ee4ed" category="paragraph">您可以使用 `ListNetworkInterfaceStats` 方法列出统计信息，例如节点上每个网络接口的丢弃数据包数和各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。</block>
@@ -8488,7 +8403,6 @@
   <block id="03ca6818409054c6f788f8f1512a9a83" category="paragraph">如果省略此参数，则不会根据是否已分配 KMIP 密钥提供程序对返回的 KMIP 密钥服务器进行筛选。</block>
   <block id="2c1426081603fa11f6ec5fe617919158" category="paragraph">kmipKeyServer</block>
   <block id="24fdfa87efc0bd3dccff05037bf0a5e8" category="paragraph">已创建的 KMIP 密钥服务器的完整列表。</block>
-  <block id="0a2a9e2ac4719c4ac6cdb0954649f468" category="paragraph"><block ref="0971c717c82e5a2659fd8ee2d73d170d" category="inline-link-macro-rx"></block> 数组</block>
   <block id="05bbba9a1d65a8646dca41194a937925" category="summary">您可以使用 ListDeletedVolumes 方法检索已标记为删除并已从系统中清除的卷的列表。</block>
   <block id="f508f41a6ff86bedb5b7893aaddc97c9" category="paragraph">您可以使用 `ListDeletedVolumes` 方法检索已标记为要删除并已从系统中清除的卷的列表。</block>
   <block id="dcba1578391952759f63fee89e68fbf5" category="paragraph">默认情况下，响应中包含虚拟卷。要排除虚拟卷，请设置为 false 。</block>
@@ -8849,8 +8763,6 @@
   <block id="85fd9c08ed2c88b0af983ded05c3fa02" category="inline-xref-macro">GetClusterVersionInfo</block>
   <block id="22520e0f79b161fd138e3a37475e46c1" category="list-text"><block ref="22520e0f79b161fd138e3a37475e46c1" category="inline-xref-macro-rx"></block></block>
   <block id="b72fcf071e83f34adf2ed5bda5f53811" category="list-text"><block ref="b72fcf071e83f34adf2ed5bda5f53811" category="inline-xref-macro-rx"></block></block>
-  <block id="e6ef59da013bb902965829ad5b87555e" category="inline-xref-macro">GetLicenseKey</block>
-  <block id="5aba1cd1719fb766f60b7ffdbe9bd4a1" category="list-text"><block ref="5aba1cd1719fb766f60b7ffdbe9bd4a1" category="inline-xref-macro-rx"></block></block>
   <block id="e8b1ccca9ceb1c8d49110ffd517331f6" category="inline-xref-macro">GetLoginSessionInfo</block>
   <block id="244e4d68551ba33ed755875796b7715a" category="list-text"><block ref="244e4d68551ba33ed755875796b7715a" category="inline-xref-macro-rx"></block></block>
   <block id="ac668465c0a230aea6ea37d2c05ae4ba" category="inline-xref-macro">GetNodeHardwareInfo</block>
@@ -8863,7 +8775,6 @@
   <block id="468632abb1bac64827f7f0860b5a969b" category="list-text"><block ref="468632abb1bac64827f7f0860b5a969b" category="inline-xref-macro-rx"></block></block>
   <block id="d1e9f118cc2896332499433f051860ad" category="list-text"><block ref="d1e9f118cc2896332499433f051860ad" category="inline-xref-macro-rx"></block></block>
   <block id="99af96643360f14d8491e1a3db76670b" category="list-text"><block ref="99af96643360f14d8491e1a3db76670b" category="inline-xref-macro-rx"></block></block>
-  <block id="e7ac6f23e0ce05c66482e1e86f007493" category="list-text"><block ref="e7ac6f23e0ce05c66482e1e86f007493" category="inline-xref-macro-rx"></block></block>
   <block id="bb691212fb55b0514079cc2d0ea324cb" category="list-text"><block ref="bb691212fb55b0514079cc2d0ea324cb" category="inline-xref-macro-rx"></block></block>
   <block id="3339cf3860b4354d2b18ca86148968b1" category="summary">您可以使用 ListVirtualVolumeHosts 方法获取集群已知的所有虚拟卷主机的列表。虚拟卷主机是指已启动与 VASA API 提供程序会话的 VMware ESX 主机。</block>
   <block id="729d062de92cee3965129088677b543d" category="paragraph">您可以使用 `ListVirtualVolumeHosts` 方法获取集群已知的所有虚拟卷主机的列表。虚拟卷主机是指已启动与 VASA API 提供程序会话的 VMware ESX 主机。</block>
@@ -9062,10 +8973,6 @@
   <block id="7103a81bfb4a23f2cd9566f355060124" category="paragraph">新克隆卷的卷 ID 。</block>
   <block id="965a7739ec017fdf43ca620f771bd7eb" category="summary">光纤通道节点的 GetNodeHardwareInfo 方法返回类似于以下示例的响应。</block>
   <block id="673efa185f64dcef33dae562d8fefd92" category="paragraph">光纤通道节点的 `GetNodeHardwareInfo` 方法返回类似于以下示例的响应。</block>
-  <block id="ceb51754cd6e664a2577f5fe932a79ad" category="summary">在 SolidFire 企业 SDS 存储集群上，您可以使用 GetLicenseKey 方法检索存储集群的当前许可证密钥。存储集群的许可证密钥由集群的订单号和序列号组成，并激活您为 Element 软件购买的容量模型。</block>
-  <block id="a91b5f34ee6a7ba303eb1a3edf798b56" category="paragraph">在 SolidFire 企业 SDS 存储集群上，您可以使用 `GetLicenseKey` 方法检索存储集群的当前许可证密钥。存储集群的许可证密钥由集群的订单号和序列号组成，并激活您为 Element 软件购买的容量模型。</block>
-  <block id="678b0bacfeadd3ddc80c0e88bf638d07" category="paragraph">存储集群的销售订单号。</block>
-  <block id="50c6837828a868cd1b9b36bb3851ef37" category="paragraph">存储集群的序列号。</block>
   <block id="ec7d68971f95704014dafbea188c4266" category="summary">您可以使用 TestAddressAvailability 方法检查存储集群中的某个接口是否正在使用某个 IP 地址。</block>
   <block id="0087057397b9a57f7d8139061a3d4ccf" category="paragraph">您可以使用 `TestAddressAvailability` 方法检查存储集群中某个接口上是否正在使用某个 IP 地址。</block>
   <block id="7a1a79864a62cab30d5a320d744908da" category="paragraph">目标网络接口（例如 eth0 ，绑定 10G 等）。</block>
@@ -9552,7 +9459,6 @@
   <block id="5f957efd2a2dab5353167aa8a39ba3f3" category="admonition">登录到集群的主节点并运行后 <block ref="748e19af81842e64567311ae92bd3ad3" category="inline-xref-macro-rx"></block> 方法要获取要包括在集群中的其余节点的 IP 地址，可以对集群的主节点运行 CreateCluster 方法。</block>
   <block id="7beaad1565f9535900896a8110fe5907" category="paragraph">指示您在创建此集群时接受最终用户许可协议。要接受 EULA ，请将此参数设置为 true 。</block>
   <block id="8a6d1a92159080729def71f4e50f41d0" category="paragraph">enableSoftwareEncryptionAtRest</block>
-  <block id="d367a8e91d09cfd76f26347a32c08992" category="paragraph">启用此参数可使用基于软件的空闲加密。在 SolidFire 企业 SDS 集群上默认为 true 。在所有其他集群上，默认为 false 。启用空闲软件加密后，无法在集群上禁用它。</block>
   <block id="ef794b4d0ef4fcac898bf9a56cfb3b87" category="paragraph">管理网络上集群的浮动（虚拟） IP 地址。</block>
   <block id="18752c5fbd4d6f0e2f3c56afa128f81f" category="paragraph">构成集群的一组初始节点的 CIP/SIP 地址。此节点的 IP 必须位于列表中。</block>
   <block id="c8c6148afb476fb148b2e06eee51dfce" category="paragraph">字母数字销售订单号。在基于软件的平台上需要。</block>
@@ -10128,632 +10034,22 @@
   <block id="2c12a8fc8ebe352f3362db0f5f5ea2fe" category="paragraph">您可以使用 `DDeleteAuthSessionsByUsername` 方法删除给定用户的所有身份验证会话。不在访问组集群管理员 / 管理员中的调用方只能删除自己的会话。具有 ClusterAdmins/Administrator 权限的调用程序可以删除属于任何用户的会话。要查看可删除的会话列表，请使用具有相同参数的 `ListAuthSessionsByUsername` 。要查看可能删除的会话列表，请使用具有相同参数的 `ListAuthSessionsByUsername` 方法。</block>
   <block id="3838b46486cbb10a53ae693c57c34218" category="paragraph">要删除的用户会话的身份验证方法。只有 ClusterAdmins/Administrator AccessGroup 中的调用程序才能提供此参数。可能值包括：</block>
   <block id="c6ad545ed5197a02a4f86759e091d934" category="summary">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。作为一个存储系统，此统一集群使用 NetApp Element 软件进行管理。</block>
-  <block id="e3de36a1aef62c74efb2ffde98c7c6ff" category="summary">安装 SolidFire ESDS 后，请在每个 SolidFire ESDS 节点上配置集群名称。然后，您可以创建 SolidFire ESDS 集群。</block>
-  <block id="d1998acac536abf9d812058700ed1eb5" category="doc">执行安装后任务</block>
-  <block id="09b7be0765e1d395729a9ab3946e4d4e" category="paragraph">下面简要概述了在安装 SolidFire ESDS 后应完成的任务：</block>
-  <block id="b1802c77389b4ac3b23faeadf903c049" category="list-text"><block ref="1efdf10dcfe9c2e3a25a8865e617917c" category="inline-xref-macro-rx"></block></block>
-  <block id="97b3e300fdc30fec27018f67c316a56f" category="list-text"><block ref="7369d04fe6c601eb40cc8c3814fb604a" category="inline-xref-macro-rx"></block></block>
-  <block id="ef5b20c600ed307281dd18a2e008153b" category="list-text"><block ref="c3d184e2b4d651938156eb240caa790b" category="inline-xref-macro-rx"></block></block>
-  <block id="bdc50eb6c47970077e948f5bb3f2f8a9" category="admonition">您可以使用 <block ref="66b3dfe54b73a97277e6f9c94606df0e" category="inline-link-macro-rx"></block> NetApp 提供的可执行安装后步骤的角色。如果要手动执行此操作，请参见以下步骤。</block>
-  <block id="9130cceb2ee763a25b9513639313012e" category="section-title">配置集群名称</block>
-  <block id="3b50f0fa5346b2b7a1dbbc42b96fff06" category="paragraph">您应先在每个 SolidFire ESDS 节点上配置集群名称，然后才能将此节点添加到集群中。您可以使用每节点 UI 或 Element API 执行此操作。</block>
-  <block id="5f7caddb08898f7907582d7ba6c9ef2a" category="admonition">创建集群后，您无法更改集群名称。</block>
-  <block id="405ec6e1de058a4767f5b76c64e0ec37" category="list-text">选择以下选项之一：</block>
-  <block id="3c8818976f51e21d1fab55e2858a800e" category="list-text">使用每节点 UI ：</block>
-  <block id="3b8521cd8c98f1b89d1886e9da53e4c7" category="list-text">打开每节点管理节点 UI ： `https://&lt;node_mip&gt;:442` 。</block>
-  <block id="ecf9269363976c8aa9dfb2d865ab2460" category="list-text">选择 * 集群设置 * 并输入集群名称。</block>
-  <block id="2ce8d1287d5fe484f0fb11eb92e9f79a" category="list-text">选择 * 应用更改 * 。</block>
-  <block id="cadf3b6311b2a5cd1f2479588b496983" category="list-text">使用 <block ref="ae527e5fc4083ce232328ba1f392402b" category="inline-link-macro-rx"></block> API 方法。</block>
   <block id="65e18a0bb1868a9c1e181302d4733dba" category="paragraph">`集群`</block>
-  <block id="783a065554458a06417e6f7521ebd39a" category="paragraph">请参见以下请求示例：</block>
-  <block id="7a78f32c7990fdc6985d68bc0f9be927" category="section-title">设置许可证密钥</block>
-  <block id="691254517087ab5aa80b8fedc8074dde" category="paragraph">创建 SolidFire ESDS 集群时，您需要许可证密钥信息。NetApp 支持部门还需要许可证密钥信息，以帮助解决问题描述问题。SolidFire ESDS 集群的许可证密钥由集群的订单号和序列号组成，并激活您购买的容量期限许可证模式。</block>
-  <block id="732467a5be3a0e6831e6e7c57dec968e" category="paragraph">您可以使用 `SetLicenseKey` 方法为 SolidFire ESDS 存储集群设置许可证密钥。`SetLicenseKey` 方法具有以下输入参数：</block>
-  <block id="20b0e2c62056b17778d75467b7f11179" category="paragraph">`OrderNumber`</block>
-  <block id="2b8f74e815f6f69baace5b39d17a4b95" category="paragraph">`serialNumber`</block>
-  <block id="1fdd119a4bb77f8b9026c9623772f04d" category="list-text">使用 `SetLicenseKey` API 方法，如以下示例所示：</block>
-  <block id="827cf8abef04842be3b5c070bfc281fe" category="paragraph">在每个 SolidFire ESDS 存储节点上配置集群名称后，您可以使用每节点 UI 或 Element API 创建集群。</block>
-  <block id="d3935ee6d4fcb1fcfcca9d1d5532be95" category="admonition">默认情况下， SolidFire ESDS 集群会启用空闲软件加密。如果要更改默认值，应在使用 `CreateCluster` API 方法创建集群时进行更改。</block>
-  <block id="61a32c002a03e8fd83a344ed9a7fd770" category="list-text">打开每节点管理节点 UI ： `https://&lt;node_mip&gt;:442*` 。</block>
-  <block id="187c9c0ca7ae54697748620e9cc6ee36" category="list-text">从左侧导航栏中，选择 * 创建集群 * 。</block>
-  <block id="b5d6453b440a0aa61202cbb0fb56fa39" category="list-text">选中节点对应的复选框。SolidFire ESDS 节点将显示为 SFc100 。</block>
-  <block id="6ba3d6de9a67d1e1dc7ea740e4fc907b" category="list-text">输入以下信息：用户名，密码，管理虚拟 IP （ MVIP ）地址，存储虚拟 IP （ SVIP ）地址，软件订单号和序列号。</block>
-  <block id="62e3f1df3cda0ff781908933bdd3ed75" category="admonition">创建集群后，您无法更改 MVIP 和 SVIP 地址。不支持对 MVIP 和 SVIP 使用相同的 IP 地址。</block>
-  <block id="25e0759133f6ffe3e3f5c42d39a574c0" category="admonition">您不能更改初始集群管理员用户名。</block>
-  <block id="b1e6d88930283b4b36838d93a6a12628" category="admonition">如果不指定订单号和序列号，则创建集群操作将失败。</block>
-  <block id="5af069a1eb1f56c657bb5b4fb99772c3" category="image-alt">显示了每节点 UI 屏幕。</block>
-  <block id="de15ae070d5996850bf7d83e2f63512a" category="list-text">确认您已阅读 NetApp 最终用户许可协议。</block>
   <block id="9f81c4b0580fea32a530ea1db9771375" category="list-text">选择 * 创建集群 * 。</block>
-  <block id="af85f46a40300546b1987cf4380ee9fd" category="list-text">要验证是否已创建集群，请登录到集群： `http://mvip_ip` 。</block>
-  <block id="4bb7a31020c21c8bb0fc798f8f2d3fe5" category="list-text">验证 clustername ， SVIP ， MVIP ， Node Count 和 Element 版本是否正确。</block>
-  <block id="38787e417733f8155ad2e1956fe4ce49" category="inline-link-macro">`CreateCluster`</block>
-  <block id="1bae6c22ddcfd1845cf8b87aa67baa5b" category="list-text">使用 <block ref="8404d841c616b784628d5ae406a01813" category="inline-link-macro-rx"></block> API 方法。</block>
-  <block id="2723529d6d9bef5bca5e710bc75d587a" category="paragraph">`acceptEula`</block>
-  <block id="b7d292490ca5299a17739ba794b13f27" category="paragraph">`enableSoftwareEncryptionAtRest`</block>
-  <block id="c0d214d7702cffe90cdbcad805762cf9" category="paragraph">启用此参数可使用基于软件的空闲加密。在 SolidFire ESDS 集群上默认为 true 。在所有其他集群上，默认为 false 。</block>
-  <block id="a95fe881e6cf7cb9047563638d0bc631" category="paragraph">`节点`</block>
-  <block id="ceb72326968ce70b929f6e9a90208870" category="paragraph">字母数字销售订单号。在 SolidFire ESDS 上为必需项。</block>
-  <block id="62938659b459d7364a61aa1ffdf0378d" category="paragraph">否（基于硬件的平台）是（基于软件的平台）</block>
-  <block id="9bdbffdff93061db8bced3243c32da1f" category="paragraph">九位字母数字序列号。在 SolidFire ESDS 上为必需项。</block>
-  <block id="24841b8c940815b0a21dbf19cd9b2f40" category="paragraph">`sVIP`</block>
-  <block id="d956341df9858fed6a81fbbaffcece6c" category="paragraph">请参见以下示例请求：</block>
-  <block id="b82ce956c8030a404acc9638ed130af0" category="paragraph">有关此方法的详细信息，请参见 <block ref="8781a29069f8e7cbcecbd291d40151c5" category="inline-link-macro-rx"></block>。</block>
   <block id="aaba44e78ade1315cb286ec922069279" category="section-title">向集群添加驱动器</block>
-  <block id="1eae906fd77cf396f405f0a249a9a6d8" category="paragraph">您应将驱动器添加到 SolidFire ESDS 集群中，以便它们可以加入集群。您可以使用 Element UI 或 API 执行此操作。</block>
-  <block id="9ec797bc87593a53c946c895e6c29645" category="list-text">使用 Element UI ：</block>
-  <block id="c9347a5a6675f6567839e4fc23da9425" category="list-text">要添加多个驱动器，请选中要添加的驱动器对应的复选框，选择 * 批量操作 * ，然后选择 * 添加 * 。</block>
-  <block id="368f584747203782ae3edd4027e4dbb3" category="list-text">确认已添加驱动器，并且集群容量符合预期。</block>
-  <block id="0c6dbcef2d177e85c06897fc358c21b2" category="list-text">使用<block ref="c0d40b2326a5711bff7fb806cc298f7f" category="inline-link-rx"></block> API 方法。</block>
-  <block id="eba45a3406905c7055cebb16bd953ac4" category="paragraph">`d` 驱动器</block>
-  <block id="333e523014fc6637a48d2a78b34543ee" category="paragraph">以下是请求示例：</block>
-  <block id="3e4e7ad63faa41cd10c99bab1326dae7" category="paragraph">有关此 API 方法的详细信息，请参见 <block ref="2d2008e4715b3e295dedaaed2dd66963" category="inline-link-macro-rx"></block>。</block>
-  <block id="ea19982590b74d12aac35aacd5835a53" category="summary">在安装 SolidFire ESDS 之前，您应在运行 RHEL 的存储节点上设置所需的网络。您负责环境中的网络路由。您可以使用作为框架提供的最佳实践。</block>
-  <block id="976853b724bc8dc04cb414a9fb12db05" category="doc">网络配置注意事项</block>
-  <block id="3b9c8ba7a3bd37e4a65e1de05fdef4e5" category="list-text">使用绑定或绑定的接口。</block>
-  <block id="8ca2b4a9650fa49cbe42339741e33491" category="list-text">对集群中的所有节点使用相同的接口名称（例如： team-mgt 表示每个节点的管理接口，而 team-stg 表示每个节点的存储接口）。</block>
-  <block id="f88d1e8e117d7ff82b84753361ac8166" category="list-text">确保 NetworkManager 正在运行。</block>
-  <block id="6e42937ce348be1c5416984b8ee9ba49" category="list-text">确保已在所有存储节点上安装 NetworkManager-dispater-routing-rules 软件包，以便进行基于策略的路由。</block>
-  <block id="65dbe95c242278b16027edd5ce7f892b" category="inline-link">NetApp SolidFire 存储系统上的网络连接和网络维护最佳实践</block>
-  <block id="f45e3a07245374b159bc399fb6afe546" category="list-text">请参见<block ref="1f8c2b5156232f0493607332ce02d10a" category="inline-link-rx"></block>。</block>
-  <block id="7ae007a2478f6c08dfc345d5a8ca7d5d" category="list-text">在每个节点上配置管理和存储网络，以便通过绑定或组配置使用多个冗余物理接口。</block>
-  <block id="fe12de3f5859e9916414a7e57ff9fc1a" category="inline-link">配置网络绑定</block>
-  <block id="861181df702ea579602e357dbe75cc75" category="paragraph">有关网络绑定的信息，请参见<block ref="240539021272d6b3302e91e57c25dacf" category="inline-link-rx"></block>。默认情况下，所有存储节点 10GbE 接口均已启用，最大传输单元（ MTU ）为 9000 字节。为了获得最佳性能，请为所有服务器端存储接口配置与 NetApp SolidFire 存储节点相同的 MTU 。您应将网络交换机配置为至少支持 9016 字节或更多的 MTU ，以考虑巨型帧开销以及通过网络正确转发。如果要更改此配置以支持较低的 MTU 设置，应联系 NetApp 支持部门。</block>
-  <block id="de0b71558fee801783ca86dc7c2ac1e0" category="paragraph">有关 SolidFire ESDS 针对不同类型的流量所需的存储和管理网络的信息，请参见下表：</block>
-  <block id="49a2f4a664c6051d6e27dc8a1e984eb7" category="cell">网络类型</block>
-  <block id="cd3718e8610b820344c9a0284fe84f90" category="paragraph">存储网络</block>
-  <block id="04f1a887fa1ef25c310d969766ac3dad" category="list-text">包括所有存储 /iSCSI 流量。</block>
-  <block id="059a9648319131d27b88f066a62e9011" category="list-text">如果要从位于不同第 3 层网络的主机挂载，或者计划在集群之间复制数据，则可以路由。</block>
-  <block id="05fd30fd1204451c2deb07dc3b90ef4f" category="list-text">应在同一第 2 层广播域上配置网络接口。</block>
-  <block id="494eeb741723e2c166dc5864c7da1e64" category="paragraph">管理网络</block>
-  <block id="2fd83b2ce9b49bb4adb1828a92a6cc82" category="list-text">包括所有管理流量。</block>
-  <block id="d2d3d320feed9dd5e52ec24dd6095045" category="list-text">如果要从其他第 3 层网络访问集群 API 或 UI ，则可以路由。</block>
-  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">此处</block>
-  <block id="310c2ddbe3c53ec931b599a811042076" category="summary">如果要主动更换 SolidFire ESDS 集群中的元数据驱动器或块驱动器，请执行此操作步骤。Element UI 集群 &gt; 驱动器页面会显示驱动器损耗信息。</block>
-  <block id="870cd012c02c921543409316615a4ac1" category="paragraph">从此处列出的过程中进行选择，以主动更换驱动器，在驱动器出现故障后更换驱动器以及更换缓存驱动器。更换 SolidFire ESDS 集群中的元数据驱动器或块驱动器。Element UI * 集群 &gt; 驱动器 * 页面显示了驱动器损耗信息。</block>
-  <block id="93430097bf00cfcc1e94624e0b982cb8" category="list-text"><block ref="745566ec8dec4c1e7c39183752157fd4" category="inline-xref-macro-rx"></block></block>
-  <block id="83a3c326a86d47f6802c6ed22c176440" category="list-text"><block ref="b52083613fc958e90f60ffdaefb39b47" category="inline-xref-macro-rx"></block></block>
-  <block id="83bfe4a93c138c4f60d8874e9ba74e81" category="list-text"><block ref="cdae2d56fb5c7b2e77369d3885b68305" category="inline-xref-macro-rx"></block></block>
-  <block id="099c232e5babe7e675afcc12e7835765" category="section-title">主动更换驱动器</block>
-  <block id="789dede1454c270db56065afdee66b4d" category="paragraph">如果要主动更换 SolidFire ESDS 集群中的元数据驱动器或块驱动器，请执行此操作步骤。Element UI * 集群 * &gt; * 驱动器 * 页面显示了驱动器损耗信息。</block>
-  <block id="d24c310313d039073fc99de16da25ff5" category="list-text">在 NetApp Element 软件 UI 中，确保集群运行状况良好，并且没有警告或集群故障。您可以使用主集群节点的管理虚拟 IP （ MVIP ）地址访问 Element UI 。</block>
-  <block id="4914b249c87b31201b94eeda3698c304" category="list-text">确保集群上没有正在运行的活动作业。</block>
-  <block id="44857896e38e4779632927df69b29cc6" category="list-text">确保您已熟悉所有步骤。</block>
-  <block id="75baff9f3ac045bf1ecc3e9f63a44d1c" category="list-text">请确保采取必要的预防措施，防止在处理驱动器时发生静电放电（ ESD ）。</block>
-  <block id="12d03c854ec7b14b135a03eb267b4543" category="list-text">在 Element UI 中执行以下步骤：</block>
-  <block id="60b7cb0fe8135387fc49d83ac3145939" category="list-text">在 Element UI 中，选择 * 集群 * &gt; * 驱动器 * &gt; * 活动 * 。</block>
-  <block id="9d3fba5eaf3f14453930e171ccfd6fde" category="list-text">选择要更换的驱动器。</block>
-  <block id="13309b41efb95010d6093bd1a4e36b99" category="list-text">记下驱动器的序列号。这将有助于您在 Integrated Dell Remote Access Controller （ iDRAC ）中找到驱动器的相应插槽编号。</block>
-  <block id="29fb5a6cbd41e910cd87451a86fb6736" category="list-text">选择 * 批量操作 * &gt; * 删除 * 。删除驱动器后，该驱动器将进入 * 正在删除 * 状态。它会在一段时间内保持 * 正在删除 * 状态，等待驱动器上的数据同步或重新分配到集群中的其余驱动器。删除完成后，驱动器将移至 * 可用 * 状态。</block>
-  <block id="abef703f713ff51c19f264189a18d1b1" category="list-text">执行以下步骤，找到要更换的驱动器的驱动器插槽：</block>
-  <block id="d3891f1db1e7793c3b75220c0916ad18" category="list-text">登录到节点的 IPMI 接口（此处为 iDRAC ）。</block>
-  <block id="f5d799f75df9d16023fe1b4affa31424" category="list-text">从菜单中选择 * 存储 * ，然后选择 * 物理磁盘 * 。</block>
-  <block id="ee31df9c5350a19b8da479e3c17f16d9" category="list-text">要查找驱动器的序列号，请选择每个 PCIe SSD 旁边的 * + * 图标。</block>
-  <block id="b96d8a8a66977f2e5e4999589644542f" category="list-text">将屏幕上显示的序列号与您在 Element UI 中记下的序列号进行匹配。</block>
-  <block id="a5aa63fd9a6648d3fefd450765ecccb0" category="list-text">根据序列号查找列出的插槽编号。</block>
-  <block id="40f2d3c70a2c1817b6de7b14fbeaa63c" category="paragraph">此物理插槽应用于卸下驱动器。</block>
-  <block id="43ad9d82e9ed8d423afb25e77a91664d" category="list-text">确定驱动器后，按如下所示物理方式将其卸下：</block>
-  <block id="922fde8fd7e7ea28d48a2898b1b3eb94" category="list-text">确定机箱中的驱动器插槽编号。</block>
-  <block id="15478b340ab16f74765d02c1c103cfdc" category="paragraph">下图显示了服务器的正面，并显示了每个驱动器的插槽编号：</block>
-  <block id="aea08d107a566c93740255cccc06c4da" category="image-alt">显示了 R640 服务器的正面，其中显示了每个驱动器的插槽编号。</block>
-  <block id="e8f008e0b4231d34963d05d211900300" category="list-text">按驱动器上的按钮。</block>
-  <block id="95bc71ec24b01b4c55a5df72a11e2bce" category="paragraph">闩锁即会打开。</block>
-  <block id="291f6c0ff676c8cacdbe777ea4e61dda" category="list-text">从插槽中物理拉出驱动器。</block>
-  <block id="25473894157b425b28364c1c732af89a" category="admonition">请确保您非常小心地处理驱动器。</block>
-  <block id="433e214c804655544d227d1bdd0c2af1" category="paragraph">物理移除驱动器后， Element UI 中的驱动器状态将更改为 * 故障 * 。</block>
-  <block id="c9b5bcc63aaa06da49a9c4bd016af714" category="list-text">在 Element UI 中，选择 * 集群 * &gt; * 驱动器 * &gt; * 故障 * 。</block>
-  <block id="630f065b7d6885fbd1a8cf5271c1ecfa" category="list-text">选择 * 操作 * 下的图标，然后选择 * 删除 * 。</block>
-  <block id="3f8d1dd9497fdfa60e51d71751747bea" category="paragraph">现在，您可以继续在节点中安装新驱动器。</block>
-  <block id="253741015eaf39777dcf346ebe208d2f" category="list-text">记下新驱动器的序列号。</block>
-  <block id="5ec6dd5bfb5c14ed01417a5e52fd2b9f" category="list-text">插入替代驱动器，方法是使用闩锁小心地将驱动器推入托架并合上闩锁。正确插入驱动器后，驱动器将通电。</block>
-  <block id="7cd857aa64fe31678947a9048695cd97" category="list-text">执行以下步骤以验证 iDRAC 中的新驱动器详细信息：</block>
-  <block id="75821e835e8e367635d9f0601b25a84d" category="list-text">登录到 iDRAC 。</block>
-  <block id="cf8f1bbfdf4b384f5c66a0e65aa5ec8e" category="list-text">选择 * 维护 * &gt; * 系统事件日志 * 。</block>
-  <block id="66b4b92af0fbc77c35c0d8b4bcd1386b" category="paragraph">您会看到为添加的驱动器记录的事件。</block>
-  <block id="ade1548526e94d39d4bc9aa208aaf294" category="list-text">验证您插入的新驱动器是否显示在 UI 的相应插槽中。</block>
-  <block id="409f100e5b42256881d32b4cedd854f5" category="list-text">将新驱动器信息添加到更换了该驱动器的节点的 `sf_sSD_config.yaml` 文件中。</block>
-  <block id="dedfd80f4bc23f7a477c222b73af5572" category="inline-link-macro">sf_sSD_config.yaml 文件的内容</block>
-  <block id="4d1e172c35bc383eae48750e0f8846ff" category="paragraph">`sf_sSD_config.yaml` 文件存储在 ` /opt/sf/` 中。此文件包含有关节点中驱动器的所有信息。每次更换驱动器时，您都必须在此文件中输入更换驱动器信息。有关此文件的详细信息，请参见 <block ref="a61ae55e02c127e2d3a16b74926a9eb8" category="inline-link-macro-rx"></block>。</block>
-  <block id="04eec68f2bd8e2942b1210db3b83bb19" category="list-text">使用 PuTTY 与节点建立 SSH 连接。</block>
-  <block id="82a381803951f3ace652e2eac416b54e" category="list-text">在 PuTTY 配置窗口的 * 主机名（或 IP 地址） * 字段中输入节点 MIP 。</block>
-  <block id="91dd66dbbc7bcb9ff2accc62e548e2fa" category="list-text">选择 * 打开 * 。</block>
-  <block id="4f4bd91d8575c8ccfd87491d8bce6a2b" category="list-text">在打开的终端窗口中，使用您的用户名和密码登录。</block>
-  <block id="17e937916547834164ee39dde7fa15f2" category="list-text">运行 ` # cat /opt/sf/sf_sSD_config.yaml` 命令以列出文件的内容。</block>
-  <block id="e1a7903a7397468e05c8648b3668ab8e" category="list-text">将已替换驱动器的 `dataDevices` 或 `cachDevices` 列表中的条目替换为新驱动器信息。</block>
-  <block id="d5fe93e34c96dc99356cee8f14d0d505" category="list-text">运行 ` # systemctl start solidfire-update-drives` 。</block>
-  <block id="0326f0356488370fe6f2b00115a9d56a" category="paragraph">运行此命令后，您会看到 Bash 提示符。之后，您应转到 Element UI 将驱动器添加到集群中。Element UI 将显示可用新驱动器的警报。</block>
-  <block id="41f48ebedc1a60110b55c62c14548a24" category="list-text">选择 * 集群 * &gt; * 驱动器 * &gt; * 可用 * 。</block>
-  <block id="d31d7cbf9240923ae42bd21027151d35" category="paragraph">您将看到您安装的新驱动器的序列号。</block>
-  <block id="21c6483f8af9b6d1183900f008fd09e4" category="list-text">选择 * 操作 * 下的图标，然后选择 * 添加 * 。</block>
-  <block id="d6b08584fdc8ae3278980bace97f38ca" category="list-text">块同步作业完成后，刷新 Element UI 。如果您从 Element UI 的 * 报告 * 选项卡访问 * 正在运行的任务 * 页面，则会看到有关可用驱动器的警报已清除。</block>
-  <block id="b4b6601cfa9b1b1f77c65b26207ade0d" category="section-title">更换故障驱动器</block>
-  <block id="edc088e70bcd947f9db337277e69e90b" category="paragraph">如果 SolidFire ESDS 集群中的驱动器出现故障， Element UI 将显示警报。从集群中删除驱动器之前，请查看节点 / 服务器 IPMI 接口中的信息，以验证故障原因。如果要更换块驱动器或元数据驱动器，则这些步骤适用。</block>
-  <block id="88cb33bf8bf4a01920889f3d1a73b913" category="list-text">从 NetApp Element 软件 UI 中，验证驱动器是否出现故障。Element 会在驱动器出现故障时显示警报。您可以使用主集群节点的管理虚拟 IP （ MVIP ）地址访问 Element UI 。</block>
-  <block id="afc07af04065036f62613d8415f64926" category="list-text">使用 Element UI 按如下所示从集群中删除故障驱动器：</block>
-  <block id="8cb7fb2776ff84b38d935e6a604b9fec" category="list-text">选择 * 集群 * &gt; * 驱动器 * &gt; * 故障 * 。</block>
-  <block id="53fd9ade41bbd2af8388ece91d5bd070" category="list-text">记下与故障驱动器关联的节点名称和序列号。</block>
-  <block id="e722cab7f29f4a0dbfc895f389851a14" category="list-text">选择 * 操作 * 下的图标，然后选择 * 删除 * 。如果您看到与此驱动器关联的服务警告，请等待托箱同步完成，然后删除此驱动器。</block>
-  <block id="8b7bb912ac7daa8e5873b70f7255f145" category="list-text">执行以下步骤以验证驱动器故障并查看与驱动器故障相关的已记录事件：</block>
-  <block id="a77ecaa3be5e14a47f7f02315911de16" category="list-text">登录到节点的 IPMI 接口（此处为 iDRAC ）。</block>
-  <block id="4f57e26764a2212f402bd486b6ae5419" category="list-text">选择 * 维护 * &gt; * 系统事件日志 * 以查看驱动器故障的原因（例如，未正确插入 SSDWearOut 或驱动器）。</block>
-  <block id="77a9c76946b083c534b1dbb05d6c9219" category="paragraph">您还可以查看显示驱动器状态的事件。</block>
-  <block id="19ec16f58d74d9cd9a309e25d6662a19" category="list-text">使用您在 Element UI 中记下的序列号查找故障驱动器的插槽编号。</block>
-  <block id="37fb80a3deda4f459b572da0705f1c0f" category="list-text">按如下所示物理卸下驱动器：</block>
-  <block id="7022a5dc87961d8d629b0649a0b1ad26" category="list-text">插入替代驱动器，方法是使用闩锁小心地将驱动器推入插槽并合上闩锁。</block>
-  <block id="36e8725ea2d53cb4e73aa7fb43c5ced5" category="paragraph">正确插入驱动器后，驱动器将通电。</block>
-  <block id="86d28dd1ff28f610e522ea4e1485c817" category="list-text">在 iDRAC 中验证新驱动器详细信息：</block>
-  <block id="c62875d9bf5cb571ff6c17f67f62ea0b" category="list-text">选择 * 维护 * &gt; * 系统事件日志 * 。您会看到为添加的驱动器记录的事件。</block>
-  <block id="2bbda0407bb0cea3929e8279435dd27b" category="section-title">更换缓存驱动器</block>
-  <block id="afa3c67d99980a4a0dcc737e62cd61ea" category="paragraph">如果要更换 SolidFire ESDS 集群中的缓存驱动器，请执行此操作步骤。缓存驱动器与元数据服务相关联。Element UI * 集群 * &gt; * 驱动器 * 页面显示了驱动器损耗信息。</block>
-  <block id="ccdc7f20f551a8957f8c9dd9208c7d6c" category="list-text">确保从 Element UI 中删除元数据服务。</block>
-  <block id="7fab6c0a02c6da20b4645e9faf80f742" category="list-text">在 Element UI 中，选择 * 集群 * &gt; * 节点 * &gt; * 活动 * 。</block>
-  <block id="d19f7153e28c24bda3f1caca7796d143" category="list-text">记下要更换缓存驱动器的节点的节点 ID 和管理 IP 地址。</block>
-  <block id="ac16c42b1d9134f4e01d826fbfdc50dc" category="list-text">如果缓存驱动器运行状况良好且您要主动更换它，请选择 * 活动驱动器 * ，找到元数据驱动器并将其从 UI 中删除。</block>
-  <block id="70c2b1202985a3ebbca2e9107d74504a" category="paragraph">删除后，元数据驱动器将首先进入 * 正在删除 * 状态，然后进入 * 可用 * 状态。</block>
-  <block id="b695147061ad49bb2f0334cb12df8cdb" category="list-text">如果在缓存驱动器出现故障后执行更换，则元数据驱动器将处于 * 可用 * 状态，并列在 * 集群 * &gt; * 驱动器 * &gt; * 可用 * 下。</block>
-  <block id="7a24b1407139732efbf761f46c6f87fd" category="list-text">选择与 NodeName 关联的元数据驱动器，以便在其中更换缓存驱动器。</block>
-  <block id="adce899a3c126ed0c423f4b10d3205a3" category="list-text">执行以下步骤，找到要更换的缓存驱动器的驱动器插槽：</block>
-  <block id="7e536d8a2198829b01ee88113562885f" category="list-text">找到缓存驱动器。</block>
-  <block id="1e08bc0de6fc4d2b8a0650edf5cdf400" category="admonition">缓存驱动器的容量（ 375 GB ）小于存储驱动器，并且是 PCIe SSD 。</block>
-  <block id="beb7ca36a24aa9872fd70bbcd0683237" category="list-text">查找列出的缓存驱动器插槽编号。</block>
-  <block id="c2968ed57f156a96b1c8f1dc804721ed" category="list-text">记下新缓存驱动器的型号和 ISN （序列号）。</block>
-  <block id="ff32499bdaaea0f01e8a0d21bf1ebb18" category="list-text">在更换了此驱动器的节点的 `sf_sSD_config.yaml` 文件中添加新的缓存驱动器信息。</block>
-  <block id="f7a28e1f19d4e5b3639509e4f094ae77" category="paragraph">`sf_sSD_config.yaml` 文件存储在 ` /opt/sf/` 中。此文件包含有关节点中驱动器的所有信息。每次更换驱动器时，您都应在此文件中输入更换驱动器信息。有关此文件的详细信息，请参见 <block ref="a61ae55e02c127e2d3a16b74926a9eb8" category="inline-link-macro-rx"></block>。</block>
-  <block id="547c2b45f59f9150ed520fa5ce827b8c" category="list-text">在 PuTTY 配置窗口的 * 主机名（或 IP 地址） * 字段中，输入节点 MIP 地址（您先前在 Element UI 中记下了该地址）。</block>
-  <block id="c8bacde2ad16d804b1fd0d25b5b3da08" category="list-text">运行 `nvme list` 命令以列出 NMVe 设备。</block>
-  <block id="dff1272b37c60f4819c0e0364b13536c" category="paragraph">您可以查看新缓存驱动器的型号和序列号。请参见以下示例输出：</block>
-  <block id="892a8f568b41f70a530e309ae8efc991" category="image-alt">显示了新缓存驱动器的型号和序列号。</block>
-  <block id="c291a756b177b95bc7da31a75c290bba" category="list-text">在 ` /opt/sf/sf_sSD_config.yaml` 中添加新缓存驱动器信息。</block>
-  <block id="cdc52955edfe4cc5b7af4221e8f281bc" category="paragraph">您应将现有缓存驱动器型号和序列号替换为新缓存驱动器的相应信息。请参见以下示例：</block>
-  <block id="5a877d44ba7b8991cf9c4aee49a29a15" category="image-alt">显示了型号和序列号。</block>
-  <block id="81ce57118c076387f90de5b9f81cc0a3" category="list-text">保存 ` /opt/sf/sf_sSD_config.yaml` 文件。</block>
-  <block id="c7a46a8b6c533c292a8b6187e261e8da" category="list-text">针对您适用的场景执行以下步骤：</block>
-  <block id="54861efdd06fc309e1c9a420feff98eb" category="cell">场景</block>
-  <block id="c9944fc6b0c81fc1d0012c6260479070" category="cell">运行 `nvme list` 命令后，新插入的缓存驱动器将显示出来</block>
-  <block id="2adddff4a619bac49d7bb86b54bf0a62" category="list-text">运行 ` # systemctl restart SolidFire` 。此过程大约需要三分钟。</block>
-  <block id="0f069e4de4822d5de2266a4b18268cc3" category="list-text">运行 `ssystem status SolidFire` 检查 SolidFire` 的状态。</block>
-  <block id="f1bf50366739c2deaea051a7aec101e7" category="list-text">转至步骤 9. 。</block>
-  <block id="32c2199b4c1769d3d8674e609c29981b" category="cell">运行 `nvme list` 命令后，新插入的缓存驱动器不会显示出来</block>
-  <block id="d512ecec76aa43a3417c7b9f7ac216b3" category="list-text">重新启动节点。</block>
-  <block id="31c9e6dd3cc4a02484b39b8d99f69caa" category="list-text">重新启动节点后，通过登录到节点（使用 PuTTY ）并运行 `ssystem status SolidFire` 命令来验证 SolidFire` 服务是否正在运行。</block>
-  <block id="e18af434d33c7b8918ec0ccd040853af" category="admonition">重新启动 SolidFire` 或重新启动节点会导致一些集群故障，这些故障最终会在大约五分钟后清除。</block>
-  <block id="1ab4fb47f4f6dc72e5e5f10eef2fea3a" category="list-text">在 Element UI 中，重新添加已删除的元数据驱动器：</block>
-  <block id="cb32765d125e687d8985c458aa7df33f" category="list-text">选择操作下的图标，然后选择 * 添加 * 。</block>
-  <block id="452faffe8f79fe24d111b3a99be32656" category="list-text">块同步作业完成后，请刷新 Element UI 。</block>
-  <block id="ef988ff4187e2a3d703b98f2f10132e9" category="paragraph">您可以看到，有关可用驱动器的警报已清除，并出现其他集群故障。</block>
-  <block id="9a716c82c0b5d3cac686395aa4cd9933" category="summary">查找有关使用维护模式和更换 SolidFire ESDS 集群中的驱动器的信息。</block>
-  <block id="6ff742d193be4e19cf7fd680dec548cb" category="doc">维护 SolidFire ESDS</block>
-  <block id="92e30aa156c183d8aa93e957ced9c428" category="inline-link-macro">获取许可证密钥</block>
-  <block id="1f4cb821844b4c80e8d72b8d42798609" category="list-text"><block ref="1f4cb821844b4c80e8d72b8d42798609" category="inline-link-macro-rx"></block></block>
-  <block id="bdb990aa3afdea2ddb2f218cad666a89" category="inline-link-macro">在 SolidFire ESDS 集群上使用维护模式</block>
-  <block id="5cd937dfaa2ddd62635f49feb728681e" category="list-text"><block ref="5cd937dfaa2ddd62635f49feb728681e" category="inline-link-macro-rx"></block></block>
-  <block id="68c8eb96434ce19942b296c49e6e8184" category="inline-link-macro">更换 HPE DL360 的驱动器</block>
-  <block id="03d33bbf07fc824665e7f34a4140d9f8" category="list-text"><block ref="03d33bbf07fc824665e7f34a4140d9f8" category="inline-link-macro-rx"></block></block>
-  <block id="ea7568f6604922aeb2111ca1a2ee6b92" category="list-text"><block ref="ea7568f6604922aeb2111ca1a2ee6b92" category="inline-link-macro-rx"></block></block>
-  <block id="13f35f769215959903b1af0e8a011491" category="inline-link-macro">收集容器日志</block>
-  <block id="6717c0c44c11c1374644359dd8287dc4" category="list-text"><block ref="6717c0c44c11c1374644359dd8287dc4" category="inline-link-macro-rx"></block></block>
-  <block id="6e809805408cd55878a3ac49c9cb799b" category="inline-link-macro">故障排除知识库文章的链接</block>
-  <block id="7382773366ad9854738abf2bca4ec206" category="list-text"><block ref="7382773366ad9854738abf2bca4ec206" category="inline-link-macro-rx"></block></block>
-  <block id="c7de22498f541c23b73f964b57960cb5" category="summary">在安装 SolidFire ESDS 之前，请使用提供的示例和提示配置主机网络。</block>
-  <block id="e8556fad03f7666db676dcf377f5d765" category="doc">配置主机网络</block>
-  <block id="b2b0513a4f73288f55fe24e59b159ac9" category="paragraph">下面是一个示例网络配置：</block>
-  <block id="72069a88e146ccacfec89a85505d98c0" category="image-alt">显示了一个示例网络配置。</block>
-  <block id="d1bc1a1a222fa86fecc3c229846acae8" category="inline-link">已组合</block>
-  <block id="0effd8b9da0721859b0d48652f96da35" category="paragraph">在此示例中，存储节点上的两个接口为 network<block ref="cda349186af47afd14116798d9708d1b" category="inline-link-rx"></block> 并连接到管理网络以实现冗余。同样，还会将另外两个接口组合在一起并连接到存储网络。</block>
-  <block id="addaf55953c8deabf7371d002b089db7" category="inline-link">接口配置文件</block>
-  <block id="20745548d9745bec02c99727ae9cc2f8" category="admonition">每个接口都有一个名为 ifcfg-&lt;interface-name&gt;X 的配置文件，其中 X 是接口的编号，从零开始或 1 开始，具体取决于所使用的命名约定。配置文件是在首次创建接口时创建的。连接到存储网络的两个物理接口中的每个接口应已存在一个配置文件。连接到管理网络的两个物理接口中的每一个接口也应具有一个配置文件。接口配置文件位于 /etc/sysconfig/network-scripts 目录中。请参见<block ref="b5b6b9940fe57a4f30cd37c69c236a55" category="inline-link-rx"></block>。</block>
-  <block id="07a9458f507f83fb9035a3f817e6e01f" category="admonition">此处提供的示例包含 HPE 服务器的存储和管理接口名称。如果您使用的是 Dell 服务器，则接口名称会有所不同。Dell 服务器的存储接口名称是 em1 和 EM2 。Dell 服务器的管理接口名称为 p3p1 和 p3p2 。</block>
-  <block id="72787e9bb774e7b75cd77950c80cda34" category="list-text">安装 `NetworkManager-dispater-routing-rules` 软件包，并确保已配置相应的存储库。</block>
-  <block id="6a1a7ea032ce24c396fa4e63e0ea935e" category="list-text">使用交换机供应商的文档配置网络交换机。有关配置多机箱链路聚合组（ MLAG ）协议和链路聚合控制协议（ LACP ）的具体说明，请参见交换机供应商的文档。</block>
-  <block id="2fab50c78cce8436a65bc458004c35fb" category="admonition">建议您通过运行 `no lacp suspend-individual` 来配置 LACP 回退并禁用 LACP 单个端口暂停行为。这样，即使在配置不当的情况下不广播 LACP 数据包，访问点链路也会启动。</block>
-  <block id="edb31f527451375eeae6935f6df30697" category="list-text">使用以下示例编辑连接到存储网络的物理接口的两个配置文件。强烈建议在存储网络上设置巨型帧，但这并不是必需的。在以下示例中，存储接口名称是 ens2f0 ，存储团队名称是 team10G ：</block>
-  <block id="ebd5489d5287502cfe6d982511ca04f4" category="admonition">在此处列出的所有示例配置中，名称和设备使用相同的值。如果您选择使用不同的值，则可以使用不同的值。</block>
-  <block id="1f79499cb992cf350f3531e9c042b555" category="list-text">使用以下示例编辑连接到管理网络的接口的两个配置文件。在此示例中，管理接口名称为 eno5 ，管理团队名称为 team1G ：</block>
-  <block id="bfdf10fa8615dc205af4a21e69392290" category="list-text">使用以下示例为存储团队创建团队接口文件。在此示例中，该组称为 team10G 。它位于运行网络绑定 LACP 运行程序的存储网络上。</block>
-  <block id="be9cde8dfb4e0d644a479acbcd048951" category="inline-link">网络绑定 LACP 运行程序</block>
-  <block id="877b63f34a6138ce1612bcebc334d3e0" category="admonition">建议对存储接口使用主动 / 主动配置。此配置需要在交换机上配置额外的主动 / 主动多机箱链路聚合组（ MLAG ）协议和链路聚合控制协议（ LACP ）。此配置需要<block ref="d5df53383d08e46152293d00fa94293e" category="inline-link-rx"></block>。</block>
-  <block id="804017fc0ca9cbf505017402dcfc6c7e" category="list-text">使用以下示例为管理团队创建团队接口文件。在此示例中，该组称为 team1G 。它位于运行网络绑定操作备份运行程序的管理网络上。</block>
-  <block id="25f6ac9046dd03b6e219af6f67213bf0" category="inline-link">网络绑定操作备份运行程序</block>
-  <block id="1804f2f92ae718c82042ad2e053cb8d5" category="admonition">建议对管理接口使用主动 / 被动配置，但也可以使用主动 / 主动配置。这不需要对叶交换机进行额外配置。此配置使用<block ref="2c82085abeffe33a781b3a5a1198c94c" category="inline-link-rx"></block>。</block>
-  <block id="bc3247c9f5634f189e299a6fe2da7b88" category="list-text">使用以下示例编辑 ` /etc/iproute2/RT_Tables` 文件以启用新的路由表。此文件将映射定义为使用路由表名称而不是索引编号来引用特定表。在以下示例中，可以按索引（ 20 ）或名称（ team10G ）调用名为 team10G 的新存储路由表：</block>
-  <block id="d411e36df20562230dc22e00e42ca685" category="list-text">使用以下示例将路由添加到存储流量的路由表中。此路由表指向存储网络作为默认网关，并且必须用于 iSCSI 流量。在以下示例中，组队接口名称为 team10G 。</block>
-  <block id="1b7df6a1e0fb4e73c9f52da03dc2dd54" category="admonition">您应替换 ` $storage_network` ， ` $storage_if_name src` ， ` $SIP 表` ， ` $routing_table_name` ， ` $storage_default_gw dev` ， ` $storage_if_name src` ， ` $SIP 表` 和 ` $routing_table_name` 。</block>
-  <block id="dd7cd3750b33add503e756f30b37aa43" category="list-text">如果流量来自 SIP 或 SVIP ，请添加基于策略的路由以使用您创建的新路由表。使用以下示例并替换为您自己的值：</block>
-  <block id="a6f03e98f57d4d6ac715c8194867a72e" category="list-text">为要应用的所有更改重新启动网络连接。</block>
-  <block id="c889e3f8d86454c491880dd30a6aea31" category="list-text">要检查基于策略的路由规则，请运行 `ip rule show` 命令。</block>
-  <block id="1d5326226dbd7e78f22d4fff2e17b5c4" category="list-text">要检查路由表，请运行 `ip route show table` 命令。</block>
-  <block id="90d15b4754e7a8c87189c31d2962ee88" category="summary">可通过链接访问知识库文章，以帮助您对 SolidFire ESDS 系统进行故障排除。</block>
-  <block id="15d95b639f1581a953feca96e67cadac" category="inline-link">如何使集群中所有节点的接口名称相同（需要登录）</block>
-  <block id="f06763dae17559c4bae5d2f38301fe89" category="list-text"><block ref="f06763dae17559c4bae5d2f38301fe89" category="inline-link-rx"></block></block>
-  <block id="4135acc125f622f3d176bf9af30738ad" category="inline-link">如何更改 MTU 大小（需要登录）</block>
-  <block id="7b764e7d53b46068f21eda9b091189ce" category="list-text"><block ref="7b764e7d53b46068f21eda9b091189ce" category="inline-link-rx"></block></block>
-  <block id="1d40e4a3361e1e91f05f044f76d2b84a" category="inline-link">如何解决 Podman 容器崩溃问题（需要登录）</block>
-  <block id="da9cb650e06ad6e69f7117c7ae91c904" category="list-text"><block ref="da9cb650e06ad6e69f7117c7ae91c904" category="inline-link-rx"></block></block>
-  <block id="9d164281b4475328be432329e19ad212" category="inline-link">如何为 SolidFire ESDS 禁用 IPv6 （需要登录）</block>
-  <block id="b1923146f856380f5b3760ee3c594d2d" category="list-text"><block ref="b1923146f856380f5b3760ee3c594d2d" category="inline-link-rx"></block></block>
-  <block id="f79c1d01514e26a9bccc1fad46a1e97d" category="inline-link">如何在生产环境中更改 ESDS 集群上的绑定接口（需要登录）</block>
-  <block id="d3949706ebda9d502952cc5bf4bd58f5" category="list-text"><block ref="d3949706ebda9d502952cc5bf4bd58f5" category="inline-link-rx"></block></block>
-  <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link">知识库</block>
-  <block id="de0d5a9e0eaf321ca5abc502f4878065" category="paragraph">这不是一个全面的列表。您可以搜索<block ref="07e94f182e062d1aec9ab9b62a09e58c" category="inline-link-rx"></block> 查看更多文章。</block>
-  <block id="2c6f626aa53141940e041d794daa13ab" category="summary">每个节点都有一个 sf_sSD_config.yaml 文件，其中包含您指定要由 SolidFire ESDS 服务使用的硬件列表。更换驱动器后，您必须在此文件中为更换驱动器的节点添加替代驱动器信息。此文件存储在 /opt/sf/ 中。此文件包含有关节点中驱动器的所有信息。每次添加新驱动器时，必须在此文件中输入新驱动器的详细信息。</block>
-  <block id="ea216c541b17d0f5b18e7b68619b13a2" category="paragraph">每个节点都有一个 `sf_sSD_config.yaml` 文件，其中包括您指定要由 SolidFire ESDS 服务使用的硬件列表。更换驱动器后，您应在此文件中为更换驱动器的节点添加更换驱动器信息。此文件存储在 ` /opt/sf/` 中。此文件包含有关节点中驱动器的所有信息。每次添加新驱动器时，都应在此文件中输入新驱动器的详细信息。</block>
-  <block id="1e2562204971f2df534c7ce2418dd6c9" category="paragraph">以下是文件的 * 必填 * 内容：</block>
-  <block id="897356954c2cd3d41b221e3f24f99bba" category="cell">密钥</block>
-  <block id="fa9d531a05d53fef3a743928151ea0d0" category="paragraph">架构版本</block>
-  <block id="ea11b49459456e3014ecb820c4d8abea" category="paragraph">2.0</block>
-  <block id="27118326006d3829667a400ad23d5d98" category="paragraph">string</block>
-  <block id="751f77e624f3195cf229249db64edb1d" category="paragraph">文件的架构版本号。</block>
-  <block id="4ee29ca12c7d126654bd0e5275de6135" category="paragraph">列表</block>
-  <block id="5403da6e5138bb093824f0cce9e9ecc8" category="paragraph">允许的值： managementInterface ， storageInterface</block>
-  <block id="57e1def4c218b844432e77bf1f3a6348" category="paragraph">管理接口</block>
-  <block id="00e9b218387c6ed3e75a35183259af67" category="paragraph">"team0"</block>
-  <block id="1aae51250c8c2212edf0e9fa404af954" category="paragraph">用于管理和集群管理流量的预配置冗余主机操作系统网络接口的名称。</block>
-  <block id="6632c88170c2a8ecc2b38b2b6e740212" category="paragraph">存储接口</block>
-  <block id="c6fb092afe5cdde3c54a7095fec146a6" category="paragraph">"Team1"</block>
-  <block id="a64f954c3b3fddf7b11e27aad706810a" category="paragraph">用于存储网络流量（ iSCSI 流量）的预配置冗余主机操作系统网络接口的名称。</block>
-  <block id="1c22dea476c4a718ad41c6d78824c38a" category="paragraph">数据驱动器</block>
-  <block id="402e3102a33bd17616c238ffe5c57a1c" category="paragraph">SolidFire ESDS 正在使用的物理存储设备的主机操作系统路径列表。您可以将其指定为块或 NVMe 设备的完整路径。以下是受支持的完整路径示例： /dev/disk/by-id/ww-xxxx-xxxx-example ， /dev/disk/by-uid/nve-xxxx-xxxxx 示例和 /dev/sda1</block>
-  <block id="7cf0585e97cd5a0edc0d77daa1dedfe0" category="paragraph">缓存设备</block>
-  <block id="89409225a10c5f103f90205135b057ca" category="paragraph">SolidFire ESDS 用作缓存设备的物理设备的主机操作系统路径。您应将其指定为列表条目。以下是受支持的完整路径示例： /dev/disk/by-id/NVMe-NVMe.8086-XXXXX-XXXXX-XXXXXX-example</block>
-  <block id="7fa4eef3eb995a3187006e397e41e20d" category="summary">了解有关 SolidFire ESDS 容器以及从何处获取与其关联的日志的详细信息。此处提供的信息可帮助您开始收集日志以进行故障排除。最好联系 NetApp 支持部门，让精通日志分析的经过培训的工程师帮助解决问题。</block>
-  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">NetApp 支持</block>
-  <block id="9b5dd8fd22c718b5c6b43045736d2bc7" category="paragraph">了解有关 SolidFire ESDS 容器以及从何处获取与其关联的日志的详细信息。此处提供的信息可帮助您开始收集日志以进行故障排除。最好参与进来<block ref="116f7ad90a3c7441981f82d8f8fba4d5" category="inline-link-rx"></block>，经过培训且精通日志分析的工程师可以帮助解决问题。</block>
-  <block id="4b9ebae52972ac3497cbd1edf4c18ec4" category="paragraph">SolidFire ESDS 包括以下容器：</block>
-  <block id="8f0a428d8f15381fa0a00dc3905ef303" category="list-text">Element 容器（`Element` ）：将所有 Element 服务托管在一个容器中。</block>
-  <block id="b9163a4fcdd5234620764b3aae55ec33" category="list-text">Element auth 容器（`element_auth` ）：为管理 UI 提供多因素身份验证（ Multifactor Authentication ， MFA ）和会话身份验证令牌。</block>
-  <block id="26a4649f0b129a2bfa2e2d235a6bc8a4" category="list-text">网络 watchdog 容器（ `sfnetwd` ）：提供本地 Element 实例的检测信号监控以及虚拟 IP （ MVIP 和 SVIP ）的故障转移。</block>
-  <block id="f974b95c0b8e847e8f93d5a8ddcb811c" category="paragraph">要通过 SSH 访问 ESDS 节点上的容器，节点所有者应启用 SSH 并提供登录凭据。通过 SSH 访问主机系统后，您可以使用 `podman ps` 命令检查一个或多个容器的状态。请参见以下示例。</block>
-  <block id="e06554c76d104f37cde31284d7b8700e" category="admonition">如果其中一个容器未启动或运行，请勿使用 Podman 直接控制（停止或启动）容器。Element 软件通过 SolidFire systemd` 服务单元进行控制。此服务使用 `elementctl` 来编排在三个 Element 容器中运行的软件。在任何节点上启动和停止 Element 软件时，建议使用 `systemctl` 来控制主机上的 SolidFire 服务，并且此方法受支持；但是，只能在支持人员的指导下在实时集群上执行此操作。</block>
-  <block id="addb5fd4b9b316fe1f97f72af525f678" category="paragraph">与 SolidFire ESDS 相关的所有日志均可在主机上的 ` /var/log/solidfire/` 中找到，该日志会在各个容器实例中保留。此目录包含 Element 容器中的日志，并包含 `element_auth/` 和 `sfnetwd/` 子目录，这些子目录分别包含 `element_auth` 和 `sfnetwd` 容器中的日志。在容器内部，您可以通过 ` /var/log` 访问容器专用的日志。</block>
-  <block id="9e3125ae94a5e6cfb4f53514fc558ee8" category="section-title">使用 NetApp Hybrid Cloud Control UI 收集日志</block>
-  <block id="9550b5af83ebb99caf0569890defb6cd" category="paragraph">您可以收集日志并发送给 NetApp 支持部门，以帮助诊断 SolidFire ESDS 集群的问题。</block>
-  <block id="f87c4fc47e1a9b71054d097f2a6d4709" category="paragraph">收集日志时，请记住以下注意事项：</block>
-  <block id="5cd79f5ecf3281008f9950c643e48e63" category="list-text">请勿使用 Podman 命令收集日志。</block>
-  <block id="eee0db9a7df523d15f4bdffde63fa075" category="list-text">NetApp 支持使用一个收集来收集主机日志。为了获得最佳支持体验，您应安装一个 Collect 。</block>
   <block id="e41f733ab7b14b59356c114dc4bde28a" category="list-text">从信息板中，选择右上角的菜单。</block>
   <block id="e06ac0adef7c01a35f79bc08edb11555" category="list-text">选择 * 收集日志 * 。</block>
   <block id="832502905fff9a7d3a4748f703388704" category="list-text">在 * 日期范围 * 下拉菜单中选择一个日期范围，以指定日志应包含的日期。</block>
   <block id="3763abf29405df583f379b3a86e060aa" category="paragraph">如果指定自定义开始日期，则可以选择开始日期范围的日期。将收集从该日期到目前为止的日志。</block>
-  <block id="8b427928e79e2c302d7463974b0adf8e" category="list-text">在 * 日志收集 * 部分中，选择存储集群或特定存储节点。</block>
   <block id="fd598a8456fc81992dc26d8ef7be0912" category="list-text">选择 * 收集日志 * 以开始收集日志。</block>
   <block id="d60a3121b8c3d63f126913a755bc6c4a" category="paragraph">日志收集在后台运行，页面将显示进度。</block>
   <block id="18b5d3b57ac80cf7900c78bf8a5de1b9" category="admonition">根据您收集的日志，进度条可能会以特定百分比保留几分钟，或者在某些时刻进度非常慢。</block>
   <block id="57c89d05d7a0404c7479475a49af8793" category="list-text">选择 * 下载日志 * 以下载日志包。</block>
-  <block id="1e23f0ce49a8f014bc05289297cd4e9d" category="paragraph">日志包采用压缩的 UNIX ` .tgz` 文件格式。</block>
-  <block id="8a221a4f965f4cfc6edfd1e855cb0aaa" category="summary">在安装 SolidFire ESDS 之前，请确保执行必要的检查并验证您的环境是否满足配置， IP 地址和网络连接要求。</block>
-  <block id="88d5e6f116564d2c06f8abf0724efec5" category="doc">执行安装的前提条件任务</block>
-  <block id="72af4b89bf6c89e877a119046199a6b7" category="inline-link">NetApp 互操作性表（需要登录）</block>
-  <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">安装支持的服务器。请参见<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> 有关详细信息 ...</block>
-  <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">确保硬件配置是平衡的，并且所有通道均已填充。有关最大程度地提高带宽的详细信息，请参见<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （需要登录）。</block>
-  <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">配置网络时间协议（ NTP ）服务器，以便与网络中的所有主机结合使用。</block>
-  <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">选择安装目标时，选择单选按钮以手动配置文件系统分区。在 * 手动分区 * 页面上，使用 * + * 和 * - * 按钮删除任何现有分区，并根据此处列出的建议创建新分区并调整其大小。使用默认 LVM 分区方案，您可以在以后根据需要轻松调整大小。</block>
-  <block id="3349300356cb3141ea939dcbdf749789" category="cell">分区</block>
-  <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">Size</block>
-  <block id="a53bfb333437907a8d5bdc636d15c75d" category="paragraph">/boot</block>
-  <block id="208b4367cf771ded0e29ff6f9282442e" category="paragraph">1 GB</block>
-  <block id="68ab1268abb7e5f5688810968df97d6b" category="paragraph">/opt</block>
-  <block id="756801f257951e804ddda99ba1157357" category="paragraph">50 GB</block>
-  <block id="ca905eb4a00d34150573153a09e2e79b" category="paragraph">/var</block>
-  <block id="f0a1dfdc675b0a14a64099f7ac1cee83" category="paragraph">交换</block>
-  <block id="00670b1d97c6a389b23ec0c46c497322" category="paragraph">4 GB</block>
-  <block id="4858dab5b4ac16ad2b7d274698c2532a" category="paragraph">主页</block>
-  <block id="0be25e5b91d25f9db3b4d3dcaf2cfd1f" category="paragraph">5 GB</block>
-  <block id="6666cd76f96956469e7be39d750cc7d9" category="paragraph">/</block>
-  <block id="876bd0b5b542dbc543a61dd69f527ceb" category="admonition">任何进程均不使用 ` /dev/sdb` 磁盘。</block>
-  <block id="09942c4da908193c21f2c641c4c45cd7" category="list-text">为 /boot 禁用 RAID 。</block>
-  <block id="303f5963e3ea829928dcbe2a9317331c" category="list-text">首次启动后，执行以下操作：</block>
-  <block id="583f03cc8d89c265cfb974e74e052cc2" category="list-text">安装 Red Hat 订阅管理器并启用以下存储库：</block>
-  <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">在节点上启用 SSH 。</block>
-  <block id="f0a2de2efe6108942f8b79e50b1b6be5" category="inline-link">知识库文章（需要登录）</block>
-  <block id="57208611101414fe2f0426e46c1f0d65" category="list-text">如果要禁用 IPv6 ，请按照本节中详细介绍的步骤进行操作<block ref="2a5c78b7a0390cd7a5313c37d3eb2c52" category="inline-link-rx"></block>。</block>
-  <block id="30ec57363b9938495c0097cd8a0bcbbf" category="list-text">使用中列出的 SolidFire ESDS 配置<block ref="d73544449e4c516eccc06a758c5e6c47" category="inline-link-rx"></block> 作为参考。</block>
-  <block id="909806d31a8e12a761cf09c409cefaad" category="admonition">如果您就与 SolidFire ESDS 相关的问题联系 NetApp 支持部门寻求帮助，支持部门将首先验证您的平台是否符合 IMT 中列出的 SolidFire ESDS 的参考配置。如果支持部门确定您的底层平台不符合参考配置，支持部门将指导您将不合规的固件，软件和 / 或硬件组件与 IMT 中的正确版本对齐。</block>
-  <block id="6314b9fb7626759e31aeab5d959e5286" category="list-text">对 SolidFire ESDS 运行合规性检查。</block>
-  <block id="1b925521d9ab922c0b62ff7004c03a9a" category="list-text">运行 `Ansible galaxy install` 命令安装 `NAR_solidfire_SDS_Compliance` 角色。</block>
-  <block id="32838a112daec4b16e9587c6be566408" category="inline-link">NetApp GitHub 存储库</block>
-  <block id="6796090f4e897e41877130d051fe6569" category="paragraph">您也可以通过从中复制角色来手动安装该角色<block ref="1268c1a5c8687422762f7e5ea4f68102" category="inline-link-rx"></block> 并将角色放置在 `~ /.Ansible` 目录中。NetApp 提供了一个自述文件，其中包含有关如何运行角色的信息。</block>
-  <block id="f4457a623c03bffd47765f6e0dcbd5c2" category="admonition">确保您始终下载最新版本的角色。</block>
-  <block id="7753548e2ef6a16b4af120cec9f041de" category="list-text">将已下载的角色上移一个安装它们的目录。</block>
-  <block id="8d19ab8caadce7b51211de95be14e186" category="list-text">运行 `Ansible - galxy role list` 命令，以确保 Ansible 已配置为使用新角色。</block>
-  <block id="34838a3f0559a6f772b5758da69cbbfb" category="list-text">创建用于合规性检查的攻略手册。</block>
-  <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">运行合规性检查攻略手册，如以下示例所示：</block>
-  <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">即使您开始使用 SolidFire ESDS 系统，也应定期运行合规性检查，以确保您的系统符合要求。在某些情况下， NetApp 支持部门会要求您运行合规性检查，以帮助诊断和解决问题。</block>
-  <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">按照此处详细介绍的 IP 要求配置网络：</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">组件</block>
-  <block id="265df7cdddd316ce979aa017f0753e25" category="cell">存储网络 IP 地址</block>
-  <block id="8cf4bbd9c7217cee301892ceeb548f53" category="cell">管理网络 IP 地址</block>
-  <block id="6d25d1271fc6a92cf675fb67a0ad3cdc" category="cell">IP 地址总数</block>
-  <block id="fc20676b1954b68804600be04c860ba3" category="paragraph">每个节点 2 个</block>
-  <block id="98a4860f4192c5bd16f0661d9088fa73" category="paragraph">（可选） 1.</block>
-  <block id="04a3b7563a19e767f850d08a9f70c427" category="paragraph">存储网络上的每个集群 1 个 + 管理网络上的每个集群 1 个 + 管理节点的每个集群 1 个 FQDN</block>
-  <block id="66914f6c0ab6fb5d02ab80f066502651" category="paragraph">存储集群</block>
-  <block id="65991b19595490549addf2ebc74b53af" category="paragraph">1 个存储 IP （ SVIP ）</block>
-  <block id="8fa32fc783d79557c17af834f8b01e4f" category="paragraph">1 个管理 IP （ MVIP ）</block>
-  <block id="c453c47b1ba83924be84863b10f727c3" category="paragraph">每个存储集群 2 个</block>
-  <block id="b0d6f1fd6c27538a017901246c345aec" category="list-text">在 25GbE 以太网交换机上配置存储网络，在 10GbE 交换机上配置管理网络。请参见以下布线图：</block>
-  <block id="a18676a6941dfd6b3d4e743b56aef89c" category="image-alt">显示了 DL360 节点上的端口。</block>
-  <block id="3e75faf41fc417e4a808983466808a13" category="paragraph">存储网络的端口</block>
-  <block id="b38eb66ff48768350c3b2249fc526334" category="paragraph">IPMI 的端口</block>
-  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="paragraph">3.</block>
-  <block id="3954d0109fc9c791be6d11e39804cb50" category="paragraph">用于管理网络的端口</block>
-  <block id="ebff118a006e94651da911d800279c44" category="admonition">此处提供的图示仅用作示例。实际硬件可能因服务器而异。</block>
-  <block id="7300079506cb737ad309140b1f56eeda" category="list-text">将交换机端口 MTU 更改为 9216 字节。</block>
-  <block id="ab2f4d4dbd7fe86289026b4321e7e53d" category="paragraph">80 TCP/UDP</block>
-  <block id="f5fc4cfbf6f32dae142bd0f1c443bc13" category="paragraph">集群升级</block>
-  <block id="b0ee3a63a5791163e83df745e5b7b013" category="paragraph">442 TCP</block>
-  <block id="e272228cdd123cd65bc4e9089567f30f" category="paragraph">对存储节点的 HTTPS UI 访问</block>
-  <block id="dee6c27248d5cf767128a7c55bad800a" category="paragraph">443/TCP</block>
-  <block id="d7b841139e02cc91530bda8255b969a6" category="paragraph">按节点 UI 和 API 访问以创建集群</block>
-  <block id="86d0889de2b255e9ecf2fb67c28470f8" category="paragraph">2010 UDP</block>
-  <block id="d036c86abd0958e8d672d01d7b5892c1" category="paragraph">集群信标（用于发现要添加到集群的节点）</block>
-  <block id="319f29b64628e835f8355bf098da02ea" category="paragraph">3260 TCP</block>
-  <block id="7293909634c99b1e8f292f90cbdc3213" category="paragraph">存储集群 SIP</block>
-  <block id="58782d31ead4f221cc133cfed5b93ff2" category="paragraph">SOAP 服务器</block>
-  <block id="2731396213d50a036c836af615741f68" category="paragraph">7627 TCP</block>
-  <block id="b3bc4c66b5305ee09e050d20730163a1" category="paragraph">SOAP Web 服务</block>
-  <block id="4fdcb60e302e98d6d7d63b43cddfeac7" category="paragraph">8080 TCP</block>
-  <block id="dc1db2be0dd0b9bbcc314d40bd5007e3" category="paragraph">系统管理员通信</block>
-  <block id="2edc3e621f3ce9bdb4ec59ec65e4b169" category="paragraph">843/TCP</block>
-  <block id="f0f166a01d55488cbf1ae223ecbb6068" category="paragraph">vCenter 插件 QoSSIOC 服务</block>
-  <block id="b843120f7921517683f4de0687bf0a29" category="admonition">Element 分布式数据库需要使用端口 2181 ， 2182 和 2183 ，并且在安装 SolidFire ESDS 时，将从 Element 容器动态打开端口 2181 ， 2182 和 2183 。</block>
-  <block id="0cb585626379a70b87a0e3ee14309e3b" category="list-text">使用以下命令打开上述端口：</block>
-  <block id="78ff65afbf92a15cd30dea91aefc1e9b" category="inline-link-macro">最佳实践</block>
-  <block id="f433801b7b771eb645906990697cb40d" category="list-text">使用配置主机网络 <block ref="d5d50f06af9eb06fd5c8afba97ab5274" category="inline-link-macro-rx"></block> 已提供。</block>
-  <block id="9fe0e0876a07d2247ecb84a994e87a77" category="admonition">您应完成配置主机网络的步骤，以确保成功安装 SolidFire ESDS 。</block>
-  <block id="d5272d5ecd1fe99c7097dfcca90c8f7d" category="list-text">安装一个 Collect ， NetApp 支持部门将使用它收集主机日志。您可以从安装一个 Collect<block ref="d3b16539387c5c512d10064586f79c65" category="inline-link-rx"></block>。要访问下载内容，您需要一个 NetApp 帐户。您还可以在同一位置找到《 One Collect 安装指南》和《发行说明》。</block>
-  <block id="b4cac9f0dca24135289e8ff89afe6aa1" category="admonition">要获得最佳支持体验，您必须下载并安装一个 Collect 。</block>
-  <block id="6d1d7be211708c9b56d930f731aa306b" category="list-text">安装用于收集日志的管理节点，并启用 NetApp 支持访问以进行故障排除。有关管理节点和安装步骤的信息，请参见 <block ref="9915e3fe57455c0bc98ba7d4ab2016f9" category="inline-link-macro-rx"></block>。</block>
-  <block id="5bfddabfdcda821d7356388830c9cf96" category="summary">了解如何安装和使用 SolidFire 企业 SDS 。</block>
-  <block id="bbe79d41bca6e93a8bc7193f844d8acd" category="doc">安装和使用 SolidFire 企业 SDS</block>
-  <block id="5f5ad1dc8254b51819bc16643a824f9d" category="inline-xref-macro">开始使用 NetApp SolidFire Enterprise</block>
-  <block id="31f9484e9fa921054731b0ec179ca46d" category="list-text"><block ref="31f9484e9fa921054731b0ec179ca46d" category="inline-xref-macro-rx"></block></block>
-  <block id="7390be824fc7affa4eb1360a26f1141f" category="inline-xref-macro">执行安装的前提条件任务</block>
-  <block id="cac1d84c9b04d6a93deffa671238cf05" category="list-text"><block ref="cac1d84c9b04d6a93deffa671238cf05" category="inline-xref-macro-rx"></block></block>
-  <block id="5b7552d022640779a270c6d3e660c540" category="inline-xref-macro">安装 SolidFire ESDS</block>
-  <block id="6e46624aeebb9ee2b9885af870a756c5" category="list-text"><block ref="6e46624aeebb9ee2b9885af870a756c5" category="inline-xref-macro-rx"></block></block>
-  <block id="5d36c328fd35f68de822a447c0c106d0" category="list-text"><block ref="5d36c328fd35f68de822a447c0c106d0" category="inline-xref-macro-rx"></block></block>
-  <block id="107f93eee6e0a998c191d288bee17404" category="inline-xref-macro">升级集群</block>
-  <block id="43d09f1c8b100e233e6e0b6459310740" category="list-text"><block ref="43d09f1c8b100e233e6e0b6459310740" category="inline-xref-macro-rx"></block></block>
-  <block id="ee39e52418d299dc40581763388efcb6" category="inline-xref-macro">监控集群</block>
-  <block id="d5025ff19a05c2b50306830fabee958f" category="list-text"><block ref="d5025ff19a05c2b50306830fabee958f" category="inline-xref-macro-rx"></block></block>
-  <block id="ff5d4009972b5a994ecb6aa941dafe8d" category="inline-xref-macro">管理 SolidFire ESDS 存储</block>
-  <block id="577309ced1fa7e90376b82b9b2c1fa8d" category="list-text"><block ref="577309ced1fa7e90376b82b9b2c1fa8d" category="inline-xref-macro-rx"></block></block>
-  <block id="7ad282ed020b0f89e313435d83292946" category="inline-xref-macro">卸载 SolidFire ESDS</block>
-  <block id="f92c1c243cac0db373ec162874e9f988" category="list-text"><block ref="f92c1c243cac0db373ec162874e9f988" category="inline-xref-macro-rx"></block></block>
-  <block id="63f823c9b485228be3e013069f3c2866" category="list-text"><block ref="63f823c9b485228be3e013069f3c2866" category="inline-xref-macro-rx"></block></block>
-  <block id="e150fe9cfaa46766567b775592cd2bac" category="summary">您可以使用 Ansible 等自动化工具安装 SolidFire ESDS 。如果您非常熟悉 Ansible ，则可以创建一本 Ansible 攻略手册，该攻略手册将多项任务结合在一起，例如安装 SolidFire ESDS 和创建集群。</block>
-  <block id="c20408f72b9f66b97e25103d7dbcbeb7" category="doc">使用 Ansible 安装 SolidFire ESDS</block>
-  <block id="7ccae5ef7d8fa0f6a807b1507c6dd026" category="list-text">您已按照提供的说明在本地服务器上安装 Ansible<block ref="07ce77d77214380358f23b284008f080" category="inline-link-rx"></block>。</block>
-  <block id="2a35f9e77302cc1e2bbeaa910e7220c8" category="list-text">您已熟悉 Ansible 角色。请参见<block ref="cfd282dea90d06d4e1092aec53775372" category="inline-link-rx"></block>。</block>
-  <block id="715ed4b622b063c7c92d6890b620dbb2" category="list-text">您已执行列出的所有前提条件任务 <block ref="48fa52450c59f1e7f619eba3da57f30b" category="inline-link-macro-rx"></block>。</block>
-  <block id="504aeb3162de0b9494957fc6a83d932d" category="list-text">您已对 SolidFire ESDS 运行合规性检查。有关如何运行合规性检查的说明，请参见 <block ref="48fa52450c59f1e7f619eba3da57f30b" category="inline-link-macro-rx"></block>。</block>
-  <block id="f9ebc901d5556c12eaa1adb518bb5820" category="paragraph">使用 Ansible Vault 获取敏感信息，例如密码，而不是使用纯文本。有关详细信息，请参见以下链接：</block>
-  <block id="928d6bee3752156ef6a01aecc9d5b7fb" category="inline-link">使用 Ansible Vault</block>
-  <block id="6c218f32579caefda06d561f76da7515" category="list-text"><block ref="6c218f32579caefda06d561f76da7515" category="inline-link-rx"></block></block>
-  <block id="7e8709ace1d0ee92b6cfc9b3e2ccaeb3" category="inline-link">如何构建清单</block>
-  <block id="639931443798125c685884ee5299edcb" category="list-text"><block ref="639931443798125c685884ee5299edcb" category="inline-link-rx"></block></block>
-  <block id="74ca4b6d160710cd2fed854a596254e0" category="admonition">您应在清单文件中指定所有必需的变量，而不是在攻略手册中指定。</block>
-  <block id="115db45539465ea12027bfa1144992e2" category="list-text">运行 `Ansible galaxy install` 命令安装 `NAR_solidfire_SDS_install` 角色。</block>
-  <block id="8d8a55472883d8f240bc395e47129a7e" category="admonition">与角色关联的 README 文件包含一个列表，其中列出了您应定义的所有必需变量和可选变量，如下所示：</block>
-  <block id="ce8ab52a2e54a963ca0e35edaf6e9cd8" category="image-alt">显示了一个示例攻略手册。</block>
-  <block id="dc184b0d2c29f673005351a9b5e39089" category="paragraph">您应在清单文件中定义这些变量，此文件将在下一步中创建。</block>
-  <block id="aa88c6c28e9c4b3f19a19931429fc34e" category="list-text">在 Ansible 工作目录中创建清单文件。</block>
-  <block id="c8c272ef065a916e337970f07fa2cf4f" category="admonition">在清单文件中，您应包括要安装 SolidFire ESDS 的所有主机（节点）。通过清单文件，您可以通过攻略手册（您将在下一步创建此攻略手册）使用一个命令来管理多个主机。此外，还应定义变量，例如存储节点的用户名和密码，管理接口和存储接口的名称等。</block>
-  <block id="f7e01f3ae7b7d6ea74a145b5252b335f" category="paragraph">请确保对清单文件遵循以下准则： * 请对设备名称使用正确的拼写。* 在文件中使用正确的格式。确保只有一个 cachDevice 。* 使用列表指定 storage_devices 。</block>
-  <block id="8e7093e592f1bcbab44e60f32c72cee1" category="admonition">此处提供的示例包含 HPE 服务器的存储和管理接口名称。如果您使用的是 Dell 服务器，则缓存设备名称为 nvme1n1 。对于 Dell 服务器， mgmt_iface 为 team1G ， storage_iface 为 team10G 。</block>
-  <block id="0ee26baf115f43303c9e418d07197005" category="paragraph">下面显示了一个清单文件示例。它包括四个存储节点。在此示例中，将 * 存储节点 MIP* 替换为存储节点的 MIP 地址，并替换 "&amp;" 以及存储节点的用户名和密码。</block>
-  <block id="c971e615d17101f84370bf0ecdb5ccc5" category="list-text">对清单文件中定义的主机（节点）执行 Ping 操作，以验证 Ansible 是否可以与其通信。</block>
-  <block id="ac49ec99371587aa0cf244249d243a1a" category="list-text">将 Red Hat Package Manager （ RPM ）文件下载到本地 Web 服务器上的文件目录中，此服务器可从运行 Ansible 的服务器和存储节点访问。</block>
-  <block id="cf2b247953517aa714ffcfea16176bb8" category="list-text">创建 Ansible 攻略手册。如果您已经有攻略手册，可以对其进行修改。您可以使用 NetApp 提供的 README 文件中的示例。</block>
-  <block id="7b75fe371ec9f6bccffbbff57ccd95cd" category="list-text">运行上一步创建的攻略手册，安装 SolidFire ESDS ：</block>
-  <block id="1b2784b6bb4d82ff392245424db012d0" category="paragraph">将 * 样本 _playbook.yaml* 替换为攻略手册的名称，将 * 清单 .yaml* 替换为清单文件的名称。运行攻略手册会在清单文件中列出的每个节点上创建 `sf_sSD_config.yaml` 文件。它还会在每个存储节点上安装和启动 SolidFire 服务。有关 `sf_sSD_config.yaml` 的详细信息，请参见 <block ref="c676492d3836af1901e70520f3e41afc" category="inline-link-macro-rx"></block>。</block>
-  <block id="c36ade2a8956e853dc457e68e25ce9a2" category="list-text">检查控制台中的 Ansible 输出，以确保已在每个节点上启动 SolidFire 服务。</block>
-  <block id="9c75611c54a1490d7892d192c9aa1f24" category="paragraph">以下是输出示例：</block>
-  <block id="697f1902b372db279956f211f1472f8d" category="list-text">要验证 SolidFire 服务是否已正确启动，请运行 `systemctl status SolidFire` 命令，并在输出中检查 `Active ： active （ exted... ） ...` 。</block>
-  <block id="6fc37b544c0c7c6bad6a21c5e2aa379c" category="summary">如果您需要使某个存储节点脱机以进行维护，例如软件升级或主机修复，则可以通过为该节点启用维护模式来最大限度地减少对该存储集群其余部分的 I/O 影响。</block>
-  <block id="e69d07edaa334125aaef7f2094da77a8" category="admonition">如果要验证节点上维护模式的当前状态，请使用 <block ref="04e910fadadbb107f8995814b13ebed5" category="inline-link-macro-rx"></block> API 方法。节点对象包含 `maintenanceMode` 参数，该参数表示节点上维护模式的当前状态。</block>
-  <block id="cec1e459f131189983c83e13023b4c41" category="admonition">确保在启用维护模式后立即执行维护。请勿将节点置于任何必要的维护模式。</block>
-  <block id="b7ca43b9728873986f598048b8cf1944" category="paragraph">只有当存储节点运行状况良好（没有阻止的集群故障）且存储集群能够容忍单个节点故障时，才能将此存储节点过渡到维护模式。为运行状况良好且容错的节点启用维护模式后，该节点不会立即过渡；它会一直受到监控，直到满足以下条件为止：</block>
-  <block id="59ff4d072b8bcfabc8f633109f8358b8" category="list-text">此节点上托管的所有卷均已进行故障转移，并且此节点不再作为任何卷的主节点托管。</block>
-  <block id="84a62d0ff621133193ae93b17da3bd9e" category="list-text">系统会为要进行故障转移的每个卷分配一个临时备用节点。</block>
-  <block id="619efe5c302b6aaa6cea90fb0b87d2fe" category="paragraph">满足这些条件后，节点将过渡到维护模式。如果在五分钟内未满足这些条件，则节点将不会进入维护模式。</block>
-  <block id="c3a4d2b3098ae67e069380ae4ce9e09d" category="paragraph">禁用存储节点的维护模式时，系统会一直监控此节点，直到满足以下条件为止：</block>
-  <block id="3782f8e6d336a53a323768bb3a00c5c0" category="list-text">所有数据都会完全复制到节点。</block>
-  <block id="06c5165c16ca08077232179b5d2d75cc" category="list-text">已解决所有阻止的集群故障。</block>
-  <block id="a271c6033422dcbc5f976139fc79fb79" category="list-text">此节点上托管的卷的所有临时备用节点分配均已取消激活。</block>
-  <block id="4725545efbc14434075e69984646a9a1" category="paragraph">满足这些条件后，节点将过渡到维护模式之外。如果在一小时内未满足这些条件，则节点将无法过渡到维护模式之外。</block>
-  <block id="2f8468b286f91aefd0cc14b1dd541a2c" category="section-title">使用维护模式时的可能情形</block>
-  <block id="ccbc0fd6b30fe1026dbffec675720354" category="list-text">如果节点处于维护模式，但尚未重新启动且 / 或尚未进行维护，或者已进行维护且已备份且运行状况良好，但您尚未禁用维护模式， 另一个节点关闭后，第一个节点上的维护模式将自动禁用。</block>
-  <block id="5ff479096e1f0b62859139e82f8d5436" category="list-text">如果其中一个节点处于维护模式，而另一个节点同时关闭，则会发生中断。您必须等待处于维护模式的节点恢复联机。</block>
-  <block id="634cea083b073af8504e5095187b89c0" category="list-text">如果您将某个属于某个集合的节点长时间置于维护模式，则系统会自动将其从该集合中删除，前提是可以添加其他节点。</block>
   <block id="fa9cad4db511fd46f4fab74e820f5223" category="section-title">启用维护模式</block>
-  <block id="981e3fad0ae5711242383785c665d243" category="paragraph">您可以使用 `EnableMaintenanceMode` API 方法启用维护模式。此方法具有以下输入参数：</block>
-  <block id="fad2a23fe4c60477bbffa27828210fce" category="paragraph">`forceWithUnresolvedFaults`</block>
-  <block id="af987aa5f3aa0dadabe996980e5386ab" category="paragraph">`perMinutePrimarySwapLimit`</block>
-  <block id="69b6346951ac4c9198ea39dd05708a3f" category="paragraph">`超时`</block>
-  <block id="e1078f02f269282b12e913fab1b68ad4" category="paragraph">`asyncHandle`</block>
-  <block id="6a6a6e8be1ec64a5c6c054e7efc6c557" category="paragraph">您可以使用 `GetAsyncResult` 方法检索此 asyncHandle 并确定维护模式过渡完成的时间。</block>
-  <block id="5136fc8ff779bc17653e7a67c82a3d3a" category="paragraph">`当前模式`</block>
-  <block id="d66394c6b531bd5d52be277976382c9d" category="paragraph">`re队列模式`</block>
-  <block id="093586b1f3ef758c1cea8d476b072359" category="section-title">禁用维护模式</block>
-  <block id="2d427871936045a1c3fb6290f3d18e4d" category="paragraph">您可以使用 `DisableMaintenanceMode` API 方法禁用维护模式。此方法具有以下输入参数：</block>
-  <block id="4f5eda8b31b89aac76dc691c26a36ead" category="summary">您可以使用 Ansible 在 SolidFire ESDS 集群上执行无中断滚动升级。使用 NetApp 提供的 `NAR_solidfire_SDS_upgrade` 角色， Ansible 一次执行一个节点的滚动升级，同时保持所有卷的数据可用性。</block>
-  <block id="7690f92e4b41258b29e482a9cb8f7828" category="paragraph">在升级之前，请确保满足以下条件：</block>
-  <block id="c523263b93550ca954f1af7e44c5e2b1" category="list-text">Element UI 中没有集群故障。</block>
-  <block id="886e65261ae3233af661038bfe79457a" category="list-text">此清单文件是最新的，包含当前 RPM 文件构建信息以及有关集群成员节点的详细信息。</block>
-  <block id="75f9713bb692aa8ddc0222c9c911d7d0" category="list-text">主机在清单文件中使用 IP 地址（而不是完全限定域名称 FQDN ）进行定义。</block>
-  <block id="fcda1cd3801e210bb4c9ec3370b460bb" category="admonition">如果使用 FQDN 定义主机，则升级将失败。</block>
-  <block id="3d7584fcbe5b23ba79048f98c53e013b" category="list-text">主机在清单文件中使用以下示例中的格式进行定义：</block>
-  <block id="aaa26184b54be85386974e3afb677403" category="list-text">清单文件中的节点数与要升级的集群中的节点数相同。如果数字不匹配，则升级操作步骤将失败，并显示类似于以下示例的错误： ` "Cluster 10.194.79.151 包含的节点数超过为升级指定的节点数！ "`</block>
-  <block id="be75fa6a1f2602104281d006c7eb344b" category="list-text">清单文件指定了以下变量： sf_mgmt_virt_IP （ MVIP ）， sf_cluster_admin_username ， sf_cluster_admin_passwd 和 solidfire_element_rpm （新 RPM 文件的路径）。</block>
-  <block id="afabb88bb0563118dace5bf222db1c39" category="paragraph">下面简要介绍了升级过程中会发生的情况：</block>
-  <block id="8ee48912a7450d5cf02ff0dda5c76a65" category="list-text">系统将验证您在清单文件中输入的信息。</block>
-  <block id="fbe3081d9043e52d5d82bee4d3bc6f7e" category="list-text">收集节点信息。</block>
-  <block id="442b631ac2eb75162f2ef9acee9d5bbc" category="list-text">rpm 会并行安装在清单文件中包含的所有节点上。</block>
-  <block id="0fa2ed65b468ee68eeacc854ea25dacc" category="list-text">在每个节点上安装 RPM 后，每个 SolidFire ESDS 节点一次升级一个。每个节点都会自动置于维护模式。如果您正在运行升级攻略手册，则无需手动启用维护模式。</block>
-  <block id="dc86509257dd9d5f1ade92437774dfe4" category="list-text">将第一个节点置于维护模式后，该 SolidFire ESDS 节点上托管的卷将故障转移到集群中的其余 SolidFire ESDS 节点。</block>
-  <block id="5cdc9f25c2edd4ffe741d0b9e7affcba" category="list-text">SolidFire 服务将重新启动以获取最新版本的应用程序。</block>
-  <block id="b32191680a578895a11d4f878951da6e" category="list-text">节点的维护模式已停用，集群将等待节点恢复。</block>
-  <block id="ef6ce04108bc5ed1d5e2530cdf64d905" category="list-text">节点恢复联机后，集群将保持平衡。</block>
-  <block id="97aeff02e72c12ce472ffaa20ea76eba" category="list-text">对集群中的所有节点重复执行相同的过程。</block>
-  <block id="0d4b259cf33df0bb5395a85c7b3fd3a2" category="list-text">升级完所有节点后，集群将显示最新版本。</block>
-  <block id="7b627da88caa5615a1a604e3e1b48362" category="admonition">如果升级期间发生错误或集群发生故障，升级不会停止。此过程会不断进行，并显示已成功升级且未成功升级的所有节点的列表。修复任何错误后，您可以重新运行攻略手册或拒绝该文件以完成升级过程。</block>
-  <block id="297c119b2455bb5de4f561863c91aafa" category="admonition">如果升级因故障而失败，则应予以解决并恢复升级。集群将保持升级状态，直到升级完成。如果在集群处于升级状态时 Element 未清除故障，您应联系 NetApp 支持部门。根据故障的性质以及是否安全，支持部门可能会指示您添加 `yes_I_want _to_ignore_cluster_faults` 变量，并在升级攻略手册中将其设置为 true 并重新运行攻略手册。请在未咨询支持部门的情况下尝试执行此操作。</block>
-  <block id="897ef64d8177179ed395af9af8e51a10" category="list-text">运行 `Ansible galaxy install` 命令安装 `NAR_solidfire_SDS_upgrade` 角色。</block>
-  <block id="90ea39efb4988b3dbebac6c6723b4f47" category="list-text">运行 Ansible - galxy role list 命令，以确保 Ansible 已配置为使用新角色。</block>
-  <block id="496635717ba309b68cfd2216f3b52739" category="list-text">创建用于升级的攻略手册。如果您已有攻略手册并希望使用该攻略手册，请确保在此攻略手册中指定 `NAR_solidfire_SDS_upgrade` 角色。</block>
-  <block id="76624d119c6866e6e69443fde371d25f" category="list-text">运行攻略手册</block>
-  <block id="c316a25ddbd887a540e3a5383e7bff16" category="admonition">此处使用的攻略手册名称就是一个示例。您应将其替换为攻略手册的名称。</block>
-  <block id="ee64d37ed8cba368aefc1bd92ef6861d" category="paragraph">运行攻略手册将验证您在清单文件中输入的信息，并在清单中列出的所有节点上安装 RPM 。您可以检查 Ansible 输出以验证每个节点是否已升级。</block>
-  <block id="a096ab9c1572be6d30c5297a12165daf" category="list-text">升级完成后，使用 Element UI 或集群 API 验证每个节点以确保新版本正在运行。</block>
-  <block id="560d0945440f76a732a9fbcc35180010" category="summary">您可以通过删除安装了 SolidFire ESDS 的节点上的 SolidFire ESDS 来 " 重置 " 该节点。要在节点上恢复 SolidFire ESDS ，您应执行所有安装步骤。</block>
-  <block id="9016f524f2973678d7663aea53bb88b3" category="doc">在节点上卸载 SolidFire ESDS</block>
-  <block id="3b6744c82f649728c504907b57a1055e" category="paragraph">您可以通过删除 SolidFire ESDS 上的 SolidFire ESDS 来 * 重置 * 已安装 ESDS 的节点。要在节点上恢复 SolidFire ESDS ，您应执行所有安装步骤。</block>
-  <block id="68629b26007b6f0d31da5f710865d8c4" category="admonition">您可以使用 <block ref="e21e9b52142fa32fc9f2798e0357c93a" category="inline-link-macro-rx"></block> NetApp 为执行此操作而提供的 Ansible 角色。如果要手动删除节点上的 SolidFire ESDS ，请参见以下步骤。</block>
-  <block id="006a2c6366ad86bc1da05db85ff0ff30" category="list-text">使用 Element UI 或从集群中删除驱动器<block ref="af8bb9d27ccaccc91f1f8edbd1b2c6cd" category="inline-link-rx"></block> API 方法。</block>
-  <block id="215a2ff75aaa54f1e5a17125c706bca4" category="list-text">使用 Element UI 或从集群中删除节点<block ref="b93ddc7d3c2a507b426fba6e07c41251" category="inline-link-rx"></block> API 方法。</block>
-  <block id="3ef7f9e0aa1c6e4768c8761acab7b60c" category="list-text">按如下所示从节点中删除 SolidFire ESDS ：</block>
-  <block id="0ecd55f220d62ef9bacff1300064205c" category="list-text">按如下所示从目录中删除永久性数据：</block>
-  <block id="ccceacf55f671c6eb4926477c82ef398" category="list-text">记下驱动器的序列号。这将有助于您在节点的 IPMI 接口（此处为 HPE Integrated Lights-Out 或 ILO ）中找到相应的贝 ID 。</block>
-  <block id="70a9b14e828dfc85c81de7a5bbbd3ae9" category="list-text">登录到节点的 IPMI 接口（此处为 ILO ）。</block>
-  <block id="89410b8c6eba15e197c1ddf0ff3e026c" category="list-text">从左侧导航栏中选择 * 系统信息 * ，然后选择 * 存储 * 。</block>
-  <block id="2ff4ded8c31a994cadc5be1f12597c6b" category="list-text">将您在上一步中记下的序列号与屏幕上显示的序列号进行匹配。</block>
-  <block id="5a6a6f2a1320709cd2551ec4647db17c" category="list-text">根据序列号查找列出的插槽编号。这是必须从中删除驱动器的物理插槽。</block>
-  <block id="f5a60c34634196d94743b9d1288d0732" category="list-text">确定驱动器托架。</block>
-  <block id="c965420fc6fce474cdb1eaa24f269378" category="paragraph">下图显示了服务器的正面，图左侧显示了驱动器托架编号：</block>
-  <block id="7ff26870546d8c2efc77e02b866a70ec" category="image-alt">显示了 DL360 节点上的驱动器托架编号。</block>
-  <block id="20fb91a1b99d6e42a1cf77e3252e8e65" category="list-text">按要更换的驱动器上的电源按钮。LED 闪烁 5-10 秒并停止。</block>
-  <block id="9e41292ec9e58bc2339d3843d43918e6" category="list-text">在 LED 停止闪烁且驱动器已关闭后，按下红色按钮并拉动闩锁，将其从服务器中卸下。</block>
-  <block id="d4daa308194bc3e0ad482777d3911f0a" category="list-text">执行以下步骤以验证 ILO 中的新驱动器详细信息：</block>
-  <block id="e4f5071cd84fe16c250fe49c000b3e6c" category="list-text">登录到 ILO 。</block>
-  <block id="a118427c5857ff3e67578d1418ed7db2" category="list-text">选择 * 信息 * &gt; * 集成管理日志 * 。您将看到为添加的驱动器记录的事件。</block>
-  <block id="0efe6633c22049eaa8653dfa2da5cd37" category="list-text">滚动查看，直到找到有关更换驱动器的托架的信息。</block>
-  <block id="abc455932b72dc5ab5734dc30bcb4f6c" category="list-text">验证屏幕上的序列号是否与您更换的新驱动器的序列号匹配。</block>
-  <block id="666faa0653883b60b0583f0f53719a87" category="list-text">选择 * 信息 * &gt; * 集成管理日志 * 。此处列出了驱动器故障的原因（例如， SSDWearOut ）和位置。您还可以看到一个事件，指出驱动器的状态为已降级。</block>
-  <block id="908a0f5e2800538c318d3bec568bfc64" category="list-text">验证有关故障驱动器的可用信息。故障驱动器的状态将显示为 * 已降级 * 。</block>
-  <block id="df8a7d29af0e90037dfc1894b839bbae" category="list-text">在 ILO 中验证新驱动器详细信息：</block>
-  <block id="d3f040b2f327de829f98af8f5d662b07" category="list-text">选择 * 信息 * &gt; * 集成管理日志 * 。您会看到为添加的驱动器记录的事件。</block>
-  <block id="2f90abc1f20fcb89e0e17b807210a08d" category="list-text">刷新页面以查看为您添加的新驱动器记录的事件。</block>
-  <block id="aa4f7a52b570298f17840a6da60bfede" category="list-text">在 ILO 中验证存储系统的运行状况：</block>
-  <block id="7466686c3e570d4153bad119f7f07146" category="list-text">滚动查看，直到找到有关安装新驱动器的托架的信息为止。</block>
-  <block id="dc1df8b8fc797a32af0fdb82929c985e" category="list-text">记下序列号。</block>
-  <block id="6667e1a70a5fafd45796b030f9b2380c" category="admonition">缓存驱动器的容量小于存储驱动器。</block>
-  <block id="856d241f05e6eb826884d21d118231d1" category="list-text">查找列出的缓存驱动器插槽编号。这是必须从中删除驱动器的物理插槽。</block>
-  <block id="85ba4c0739410f548a9641451c11a28b" category="list-text">记下新缓存驱动器的 HPE 型号和 ISN （序列号）。</block>
-  <block id="7c93f431d56cf1e5f3ffeb19248de77c" category="list-text">验证屏幕上的序列号是否与您安装的新驱动器的序列号匹配。</block>
-  <block id="5198a95b13b349be9f5bd4ee511bf225" category="summary">NetApp SolidFire 企业 SDS （ ESDS ）可在您选择的符合 SolidFire ESDS 参考配置的硬件上提供 SolidFire 横向扩展技术和 NetApp Element 软件数据服务的优势。SolidFire ESDS 提供独立于底层硬件的 NetApp Element 软件。这样，您就可以在 NetApp 品牌设备或通用服务器上使用所有 Element 功能，这符合 NetApp 参考配置。</block>
-  <block id="c9a0bb9084eb14f7bc3d46fdcb2a744c" category="section-title">SolidFire ESDS 的主要功能</block>
-  <block id="d385a040eacb9a24b2c8725bd326c541" category="list-text">用于通过容器安装和运行 Element 软件。</block>
-  <block id="7e771ea6a54e69fca92a9c1071aeefdb" category="list-text">使用经过预先验证的商用服务器平台提供企业级存储功能和可靠性。在 SolidFire 规定的 x86 服务器平台和底层组件（ CPU ，内存， SSD 驱动器，缓存，网络连接， 固件），根据中发布的参考配置<block ref="eca68c8f3fec4e12a96f2565a54e6327" category="inline-link-rx"></block>。</block>
-  <block id="106f6ed04d8397b62cf62d0ca986bce0" category="list-text">提供空闲软件加密。通过软件空闲加密，可以对写入存储集群中 SSD 的所有数据进行加密。这样可以在 SolidFire ESDS 节点中提供一个主加密层，其中不包括自加密驱动器（ SED ）。</block>
-  <block id="dcbfced5e6889cc748c75f595d037090" category="list-text">使用服务质量（ QoS ）策略提供可预测的集群性能。</block>
-  <block id="4b824719e47e69aaa625104e9ed0e463" category="list-text">支持四节点到 40 节点集群。</block>
-  <block id="e598179402290c81c24144f983b01d56" category="list-text">使用术语容量许可证模式进行许可。</block>
-  <block id="e10455e5c63d2a12e4cdb93f45aaf089" category="list-text">使用与技术合作伙伴签订的支持协议提供支持的新模式。</block>
-  <block id="1a5a520ec44bf52ddf5e6ab742cb1764" category="paragraph">借助 SolidFire ESDS ， NetApp 为 Element 提供了容器，您可以在满足必要要求的商用硬件上运行这些容器。您可以使用已安装操作系统的自有服务器。您可以使用 Ansible 等自动化工具运行安装前合规性检查并安装 SolidFire ESDS 。在预安装设置任务中，您应安装管理节点以支持日志包收集以及其他服务，例如 SolidFire AIQ 。下面是一个架构概述，其中显示了 SolidFire ESDS 环境中的各种组件：</block>
-  <block id="702fb82a5f4a9fb7b40272de5bebbc21" category="image-alt">显示了 ESDS 环境的架构概述。</block>
-  <block id="5a62633e01f86ad44af33f14f5e10078" category="admonition">您负责配置，监控和管理平台的生命周期，以及配置网络接口和路由表。</block>
-  <block id="79c13b7d692f3da0e5da93808d79313f" category="paragraph">NetApp Element 软件的某些功能不适用于 SolidFire ESDS 。传统 SolidFire 存储节点的原生 Element 功能在 SolidFire ESDS 中处于禁用状态，例如硬件监控，固件更新，使用自加密驱动器的空闲加密（ Encryption as Rest ， EAR ）（ SED ））以及光纤通道。</block>
-  <block id="a4a3bf9a56c3fdb255c292688453b46a" category="list-text">外部密钥管理（ EKM ）</block>
-  <block id="d671d8a57b62ab491b00ae883bae397a" category="list-text">硬件加密</block>
-  <block id="064602a640cd3a5bfcc71abfabc3dff8" category="list-text">多驱动器分区服务（ MDSS ）</block>
-  <block id="e6199acbce698ff910f7347c6176c525" category="list-text">硬件监控，主机平台更新（例如：驱动程序，固件和操作系统软件包）和光纤通道</block>
-  <block id="d636fbed0997a658df2f90f0c7f627ec" category="section-title">快速入门信息</block>
-  <block id="11abc145c00bb57152ecb8f12906ca19" category="paragraph">您可以找到一组有关安装 SolidFire ESDS 的简要说明 <block ref="fabfc59ae0df200bf4ddfa79108f3a69" category="inline-link-macro-rx"></block>。</block>
-  <block id="df835c57b7c558e8561c0ce4ad297f5f" category="section-title">许可策略</block>
-  <block id="7909de05a3e18f6a118962fbd25f3e00" category="paragraph">SolidFire ESDS 受 NetApp 术语容量许可证模式的约束。</block>
-  <block id="047ac1196dc15bcab25af5ad7bc6edd0" category="paragraph">下面简要概述了此模型的策略：</block>
-  <block id="206972c15d5fbc9c77fb2a642841c82c" category="list-text">软件成本基于原始容量（驱动器大小乘以节点或集群中的驱动器数量），因此此模型的软件成本易于预测。</block>
-  <block id="e30e42ba99648c8d58fbc817f567e5d1" category="list-text">您不需要软件许可证密钥。您将在销售订单上收到软件的主序列号，该序列号包含在您订购后收到的文档套件中。您必须保留此主序列号，因为它将用于支持授权。</block>
-  <block id="89e0f32b919dc98890386d5f1ea62af3" category="inline-link">NetApp HCI 和 SolidFire 的购买模式</block>
-  <block id="9be00799a4595781c9cccd870907c42d" category="paragraph">有关详细信息，请参见<block ref="2cf74f25374b562dd39e66e2fb009e46" category="inline-link-rx"></block>。</block>
-  <block id="a55a304d5ed91fe33a8b23504164f85e" category="section-title">用于安装和使用 SolidFire ESDS 的接口</block>
-  <block id="d78f5f07f63499076445a980d1cb407b" category="paragraph">下面列出了用于安装，监控和管理 SolidFire ESDS 的工具和界面：</block>
-  <block id="be793515ee6e189ea5045b8cdfada03b" category="cell">工具 / 接口</block>
-  <block id="809d7d7ab3dd236f47ac0c1561502c51" category="cell">谁在使用它</block>
-  <block id="40bedffc2a00bb89047c72cda5eed132" category="paragraph">Ansible 合规性检查角色</block>
-  <block id="ce26601dac0dea138b7295f02b7620a7" category="paragraph">客户</block>
-  <block id="2687a104ff119b4c4c9784cc30a77083" category="inline-link">NetApp 互操作性表工具（需要登录）</block>
-  <block id="06c24a96393a01db72b0efcae40fdaff" category="paragraph">用于验证平台是否与中列出的参考配置匹配<block ref="21f4a2b98adaac9b658267d0736bb4c1" category="inline-link-rx"></block>。您应在安装 SolidFire ESDS 之前执行此操作。</block>
-  <block id="0b462bea4675ead8d5f2408e43a2b401" category="paragraph">Ansible 安装角色</block>
-  <block id="db0fb481869c3348937362a0cd7f90b4" category="paragraph">用于安装 SolidFire ESDS 。</block>
-  <block id="d8e840aec7b622b3285ef9cd018e166c" category="paragraph">用于日志捆绑包收集和管理服务，例如 AIQ 。</block>
-  <block id="b1c7c40cb6692d50d27c79750612e0d2" category="paragraph">客户， NetApp 支持</block>
-  <block id="6564563b17ab0cd9cc453a14b5385e4e" category="paragraph">用于创建集群和进行每节点管理，以及从管理节点收集日志。</block>
-  <block id="011bac2b806ad22dab2eba1ce04613d2" category="paragraph">Hewlett Packard Enterprise （ HPE ） Integrated Lights-Out （ ILO ）</block>
-  <block id="5b9dbda1c869d69f6644436352ae899c" category="paragraph">客户， HPE 支持</block>
-  <block id="fbbb9461a5e7d2993326af0ef93b08bc" category="paragraph">用于收集有关事件和状态的数据以进行根发生原因分析。</block>
-  <block id="50ffeb4db11be124ce009b4adc617eaa" category="paragraph">Dell Integrated Dell Remote Access Controller （ iDRAC ）</block>
-  <block id="5bb5b848a9a0c67adce4609deb21ed67" category="paragraph">客户， Dell 支持</block>
-  <block id="d95b42a8f9e0c1b6db0585aa313bf1f8" category="paragraph">NetApp Element 软件 UI</block>
-  <block id="1c647bb78e6fe69d30099dc48c2fec6e" category="paragraph">用于管理 SolidFire ESDS 存储集群。</block>
   <block id="b5fe3a41d32647f20f3b5ec96045d6d6" category="paragraph">Active IQ</block>
-  <block id="93c629dd60a2af625e8dbfcd84de4c97" category="paragraph">用于监控集群运行状况。</block>
-  <block id="ff331388ea55619596bcb6cf3a003112" category="paragraph">一个收集</block>
-  <block id="a13f54383ebd6b2827d53875ebc540c3" category="paragraph">用于收集补充日志。</block>
-  <block id="46921a75e8534ad7d1c379a9e3aec033" category="section-title">安装概述</block>
-  <block id="068817eddb6802e1d3071e7fe885650f" category="paragraph">您可以使用 Ansible 等自动化工具安装 SolidFire ESDS 。</block>
-  <block id="b97b11d80b0bcf547bcc133c20febcae" category="paragraph">下面是使用 Ansible 进行安装的简要概述：</block>
-  <block id="f87aae9cb20ea2d100efbe63ba40cfdd" category="image-alt">显示了安装工作流。</block>
-  <block id="245621b89b398274425d937aa6abf9fd" category="summary">您可以使用 SolidFire 混合云控制 UI 监控 ESDS 集群的性能并查看清单。您也可以使用 NetApp Hybrid Cloud Control UI 收集日志以进行故障排除。 "</block>
-  <block id="78454d8f2c03ced65f015c33ba638846" category="paragraph">您可以使用 SolidFire 混合云控制 UI 监控 ESDS 集群的性能并查看清单。您还可以使用 NetApp Hybrid Cloud Control UI 收集日志以进行故障排除。</block>
-  <block id="ba2a6751f94ecc83e1287220cb1dbd46" category="paragraph">以下是有关在 NetApp Hybrid Cloud Control UI 中监控集群的信息的链接：</block>
   <block id="1587f6667afe5b768dfe958cc33c0348" category="inline-link">在节点页面上查看清单</block>
   <block id="b1fdadb278bc33692729c07d84b4d900" category="inline-link">监控存储集群上的卷</block>
-  <block id="0eb9b9f84b979ff83ea24e744f09373c" category="summary">您应先获取 SolidFire ESDS 集群的许可证密钥信息，然后再联系 NetApp 支持部门以帮助解决问题。SolidFire ESDS 集群的许可证密钥由集群的订单号和序列号组成。</block>
-  <block id="833ff59058bc8c9d93ecc7cabf2547ba" category="paragraph">您应先获取 SolidFire ESDS 集群的许可证密钥信息，然后再联系 NetApp 支持部门以帮助解决问题。SolidFire ESDS 集群的许可证密钥由集群的订单号和序列号组成。</block>
-  <block id="41b5c7ac96acb3c1ef2799ee7df58ea3" category="paragraph">您可以使用 `GetLicenseKey` 方法获取 SolidFire ESDS 存储集群的许可证密钥信息。`GetLicenseKey` 方法没有输入参数。此方法具有以下返回值：</block>
-  <block id="e2bc8bd9846d9bd66081ca0e70cbe57d" category="list-text">运行 `GetLicenseKey` API 方法，如以下示例所示：</block>
-  <block id="b708fcb66d2fb4281601a54f0e59184f" category="paragraph">以下是指向各种存储管理任务内容的链接：</block>
-  <block id="0dafc18315b2055ca29f9f5395b46078" category="list-text"><block ref="0dafc18315b2055ca29f9f5395b46078" category="inline-link-macro-rx"></block></block>
-  <block id="7b3b3440fb0f7016b1525de95db91e45" category="paragraph">您还可以在此处找到有关将 QoS 策略应用于卷的信息。</block>
-  <block id="e5879288a130fbd8d0b8682cfc375c4f" category="inline-link-macro">使用快照</block>
-  <block id="2dac088d1b366882d185fe8aedb97392" category="inline-link-macro">在集群之间执行远程复制</block>
-  <block id="12f6af3a2ee487909bf552aa36903b29" category="inline-link-macro">使用 Element API 管理存储</block>
-  <block id="19c63df81b4a931980753ca5b4f349e8" category="inline-link">适用于 vCenter Server 的 NetApp Element 插件概述</block>
-  <block id="cf01dc47ed79267872b62a626969809c" category="paragraph">您可以从概述页面导航到特定任务。</block>
-  <block id="b6da6eab87d65c4c9297f872afd87022" category="section-title">在 SolidFire ESDS 集群上使用 Element API</block>
-  <block id="389945c09cdda9d478adbb3a47413d5c" category="list-text">`disableEncryptionAtRest`</block>
-  <block id="a3c5dec02de1b4c52f4ef9ce2d7e0b2a" category="list-text">`EnableEncryptionAtRest`</block>
-  <block id="9474d63d23a163955eb222057663ae5f" category="list-text">`GetSoftwareEncryptionAtRestInfo`</block>
-  <block id="c68a2d9b7e85236a7846e8479df5eb22" category="list-text">`RekeySoftwareEncryptionAtRestMasterKey`</block>
-  <block id="05e99937dbfca39a8e79ec1345dc0caf" category="list-text">`CreateVolume`</block>
-  <block id="71a673e3e44f3d66064abf107eecd41b" category="list-text">`m二卷`</block>
-  <block id="16668f69631e97f6454595916b95763c" category="list-text">`CreateSnapshot`</block>
-  <block id="66249135316522dc4dca533836d1653b" category="list-text">`CreateSchedule`</block>
-  <block id="5ba4c026b9f6fad2d789c83df1eb7334" category="list-text">`modfyGroupSnapshot`</block>
-  <block id="17527882eae9d5d0fe85324be1ab5b68" category="list-text">`m修改计划`</block>
-  <block id="971735603f1c15fa2aefaf1cdcffcf38" category="list-text">`modfySnapshot`</block>
-  <block id="b4d38d2cfe8361b4706ee65b48cd47e7" category="list-text">`CreateGroupSnapshot`</block>
-  <block id="b39b4f606b587cbb01f67a7e70186eea" category="list-text">* 在 Element 12.2 中引入和更新的 API 以支持 SolidFire ESDS* ： Element 12.2 中引入了几个新的 API ，您可以在 SolidFire ESDS 集群上使用这些 API 。</block>
-  <block id="463224af5ebc7979ed09e40e54613a35" category="paragraph">下面列出了 Element 12.2 中的新 API ：</block>
-  <block id="234e051281051671e79fd955b3cc36a1" category="list-text"><block ref="234e051281051671e79fd955b3cc36a1" category="inline-link-macro-rx"></block></block>
-  <block id="2107b28d0e666b2c94a8ae5ac00facf7" category="list-text"><block ref="2107b28d0e666b2c94a8ae5ac00facf7" category="inline-link-macro-rx"></block></block>
-  <block id="182314039c230eaf0b610ab5336bd944" category="list-text"><block ref="182314039c230eaf0b610ab5336bd944" category="inline-link-macro-rx"></block></block>
-  <block id="6c8f5d51f9d138086b55a6d2b68f0ba9" category="list-text"><block ref="6c8f5d51f9d138086b55a6d2b68f0ba9" category="inline-link-macro-rx"></block></block>
-  <block id="f72e130e78ae2a72c1d8ba0e803f0638" category="paragraph">已更新以下 12.2 API 以支持 SolidFire ESDS 集群：</block>
-  <block id="34850bd5fb3f2667bbb87db4cffca2ed" category="list-text"><block ref="34850bd5fb3f2667bbb87db4cffca2ed" category="inline-link-macro-rx"></block></block>
-  <block id="8404d841c616b784628d5ae406a01813" category="list-text"><block ref="8404d841c616b784628d5ae406a01813" category="inline-link-macro-rx"></block></block>
-  <block id="16a30437f029582ce534f35778eac3b5" category="admonition">在 Element 软件 12.2 中的 `CreateCluster` 方法中添加了新参数 `OrderNumber` ， `SerialNumber` 和 `enableSoftwareEncryptionAtRest` 。在安装 SolidFire ESDS 后使用此 API 方法创建集群时，应指定这些参数。</block>
-  <block id="0a7a4b14c705f380ba89c2618c5b83c0" category="list-text">* SolidFire ESDS 集群不支持 Element 12.2 API * ：下面列出了 SolidFire ESDS 集群不支持的 Element 12.2 API ：</block>
-  <block id="5f47a96aaf271e7633556c8b34ce38a8" category="list-text">`ListClusterInterfacePreferences`</block>
-  <block id="364714681cffe35e7c4d97fce98c8abf" category="list-text">`ListNodeStats`</block>
-  <block id="bd67a18e47632425547a0461fc37baa0" category="list-text">`disableSsh`</block>
-  <block id="ae16e764dea8260f21805f68cbb9e97a" category="list-text">`disableClusterSsh`</block>
-  <block id="1fa7c8a9010ff9140700517562866049" category="list-text">`EnableClusterSsh`</block>
-  <block id="b9a00099f71498b755c35000528f2c60" category="list-text">`EnableSsh`</block>
-  <block id="2c4a33e0be033f2ebda3673676f0251d" category="list-text">`GetIpmiConfig`</block>
-  <block id="8e95acc1dff4717e4b99a2541a5b1e39" category="list-text">`GetIpmiInfo`</block>
-  <block id="5847cf11418c2cba8e424fdce6745fd6" category="list-text">`GetSshInfo`</block>
-  <block id="ad23cc81b9042b00ec1c685f251a01fc" category="list-text">`ListNetworkInterfaces`</block>
-  <block id="199d61518705e194e9a9251b2603fc67" category="list-text">`ResetNode`</block>
-  <block id="2de835e6d6ae29984324a5c01d6b9425" category="list-text">`RestartNetworking`</block>
-  <block id="2308a3b64a61997844c21233b1a96f82" category="list-text">`ResetNetworkConfig`</block>
-  <block id="733a58ae90956d29186a30b229cb3de8" category="list-text">`setConfig`</block>
-  <block id="74ab8418b4c5fe68a1b0cb7f7dfb6790" category="list-text">`setNetworkConfig`</block>
-  <block id="ded1a41bebf29ce8c5735b5e1d899dc9" category="list-text">`disableBmcColdReset`</block>
-  <block id="c69eb237614bd66cb326d4765eb5bc7f" category="list-text">`EnableBmcColdReset`</block>
-  <block id="3ad9e59e32222683fc90e5047642d31a" category="list-text">`setNtpInfo`</block>
-  <block id="d8aa96c19f08fe6b40bad0d6abbfdc9b" category="list-text">`TestAddressAvailability`</block>
   <block id="37bf500e2e9e1010fbba8f9d57fc6653" category="summary">如果您未运行最新版本，可以参考先前版本的文档。</block>
   <block id="516f6af28c516e78fc33b4c052dabe39" category="doc">早期版本的 SolidFire 和 NetApp Element 软件文档</block>
   <block id="f20c99cda6c5c700e6ea170eaea46329" category="inline-link">Element 12.2 文档</block>
@@ -10983,14 +10279,10 @@
   <block id="e8c5257b3c2cf40eeb3f4b73fea08414" category="paragraph">在使用光纤通道节点和 SolidFire 存储节点创建新集群时， Element UI 中会提供这些节点的全球通用端口名称（ WWPN ）地址。您可以使用 WWPN 地址对光纤通道交换机进行分区。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="2e5993f9d970daebf225967bb1e45acc" category="inline-link-macro">存储固件包 2.99.2 注意事项</block>
   <block id="96d39df4d07a61aada740f0716155f51" category="list-text"><block ref="96d39df4d07a61aada740f0716155f51" category="inline-link-macro-rx"></block></block>
@@ -11003,9 +10295,6 @@
   <block id="bfd78ad06fdbded1393f2f3c6bce1cdb" category="sidebar">使用 Element 软件 UI</block>
   <block id="1d5eadee8dd359da135590100c405785" category="sidebar">使用 Element 软件 API</block>
   <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">使用适用于 vCenter Server 的 Element 插件</block>
-  <block id="6524c8f1318a728d1ea57670051f6c25" category="sidebar">SolidFire ESDS 概述</block>
-  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入门</block>
-  <block id="1ddc0d6107c5fab710d5b58be7f4cc59" category="sidebar">安装要求</block>
   <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">使用集成工具（需要登录）</block>
   <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">Element SDK （ Java ， .NET ， Python ）</block>
   <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">解决方案</block>
@@ -11030,7 +10319,6 @@
   <block id="4c46c9acea33f3a7201c692e8d84806b" category="sidebar">管理支持连接</block>
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">系统升级过程</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionatRestInfo</block>
-  <block id="7312c371e606c4ef84d0e890d014f53f" category="sidebar">开始使用 SolidFire ESDS</block>
   <block id="7199e7988a06a61dd6614783601855bd" category="inline-link">《 NetApp Element 软件 12.3.1 发行说明》</block>
   <block id="d4bb9f19fa4bd6faa9851112c1991e13" category="list-text">启动程序级别的 CHAP 身份验证：您可以为特定启动程序分配唯一的 CHAP 目标和密钥，而无需在单个帐户中绑定到单个 CHAP 。此启动程序级别的 CHAP 身份验证将取代帐户级别的凭据。</block>
   <block id="44667d134b93fff726fba8690e829f49" category="doc">自定义保护域</block>
@@ -11041,21 +10329,6 @@
   <block id="e453e93ae1af3155f2774b6b529f8ed9" category="list-text">故障恢复能力：存储集群具有足够的可用容量，可在其中一个自定义保护域发生故障后自行修复。修复过程完成后，如果其他域发生故障，集群将受到保护，不会丢失数据。</block>
   <block id="2d50fad3ab9a441a87882c17c13f0bae" category="paragraph">如果分配了多个自定义保护域，则每个子系统将为单独的自定义保护域分配重复项。如果无法做到这一点，则会还原为将重复项分配给不同的节点。每个子系统（例如箱，扇区，协议端点提供程序和集合）都独立执行此操作。</block>
   <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解决方法：</block>
-  <block id="0f7229b82509dba67fd326002f94b558" category="inline-link-macro">更换 HPE DL380 的驱动器</block>
-  <block id="be51a55dd3e1d87adc0cfa8354012eb4" category="list-text"><block ref="be51a55dd3e1d87adc0cfa8354012eb4" category="inline-link-macro-rx"></block></block>
-  <block id="a61ae55e02c127e2d3a16b74926a9eb8" category="list-text"><block ref="a61ae55e02c127e2d3a16b74926a9eb8" category="inline-link-macro-rx"></block></block>
-  <block id="9937305f8c7a84f2274ed00779cdfa8b" category="list-text">确定驱动器箱。</block>
-  <block id="777e8b41f08625ad1f679e2baee42a49" category="paragraph">下图显示了服务器的正面以及驱动器：</block>
-  <block id="a8fea49a94081b31d8e5c8fa5bb0a8de" category="image-alt">显示了 DL380 节点上的驱动器。</block>
-  <block id="650ed61904bc5dbb0c57bfd4f63194c8" category="list-text">确定机箱中的驱动器。</block>
-  <block id="17535771fae0ee390ce31ef42ebc5155" category="paragraph">如果您的 SATA 磁盘为 250 GB ，请按照下面建议的分区进行操作。如果 SATA 磁盘具有更多空间，则可以增加 /opt 和 /var 分区大小。</block>
-  <block id="544e08e2faefbb064c1083d52f2484a7" category="paragraph">最小 10 GB</block>
-  <block id="7d8fdfd7c15a233be456f2a7a7f5337a" category="paragraph">/usr</block>
-  <block id="654fdbae1d58bcbbc420ee34e66cbecb" category="list-text">安装 Ansible ， Git ， Podman 和 Python 3.0 。</block>
-  <block id="1afe87c53ae91c5600c70549611727ed" category="paragraph">SolidFire ESDS sfapp</block>
-  <block id="08a481e768a7e6b16029a890ff83c01c" category="list-text">使用 SSH 连接到从集群中删除的节点。</block>
-  <block id="97536cbfae1b231373bcd97b10deb15c" category="paragraph">目前在 ESDS 上支持的所有平台均支持动态节点评级： DL360 ， DL380 和 R640 。</block>
-  <block id="24bc1a938f18ccc15e42f585341c44d5" category="paragraph">对于第一版动态节点评级，任何节点的最大 IOPS 评级均为 10 万次 IOPS 。</block>
   <block id="c099da1e7198d2f1407d45eef0d02a48" category="inline-link">Element 演示节点</block>
   <block id="fae634e54f6a24eca87a92f1d78df928" category="paragraph"><block ref="e1baf480e2c2d0517c80b4748e50de89" category="inline-link-rx"></block> 是 Element 软件的 VMware 虚拟机（ VM ）版本，可轻松演示 NetApp HCI 和 SolidFire 产品的许多关键存储功能。开发人员可以通过演示节点根据 Element API 编写代码，而无需使用物理硬件。它会打包为 OVA 文件，以便于 VMware 部署。</block>
   <block id="baae0a76ecbb6b197350ee0618576960" category="inline-link">Element 演示节点下载页面（需要登录）</block>
@@ -11135,13 +10408,9 @@
   <block id="682faa8b9dab1247bb831425cb9ffc7e" category="paragraph">卷帐户在 NetApp Hybrid Cloud Control Volumes 表中进行管理。</block>
   <block id="65eec389aadc16bae85fa92b991e9f2b" category="inline-link-macro">使用 NetApp Hybrid Cloud Control 概述管理和监控存储</block>
   <block id="998b6d06ff9f69c71a1b5ac158e5ddf4" category="paragraph"><block ref="998b6d06ff9f69c71a1b5ac158e5ddf4" category="inline-link-macro-rx"></block></block>
-  <block id="e6f552ff8b981823a09e603dcf005093" category="list-text"><block ref="e6f552ff8b981823a09e603dcf005093" category="inline-link-macro-rx"></block></block>
-  <block id="9945963a24fd155d6f6f9b3f0f1ed826" category="list-text"><block ref="9945963a24fd155d6f6f9b3f0f1ed826" category="inline-link-macro-rx"></block></block>
-  <block id="935bf4b062c3ce99ec15122fe03bd5f8" category="list-text"><block ref="935bf4b062c3ce99ec15122fe03bd5f8" category="inline-link-macro-rx"></block></block>
   <block id="1905fad06cd2d678f65488599a009f2a" category="summary">您可以使用 Hybrid Cloud Control Nodes 页面查看系统中的存储资产。</block>
   <block id="4abf133407ea4fa2eda3059f56e2940f" category="paragraph">您可以查看系统中的存储资产并确定其 IP 地址，名称和软件版本。</block>
   <block id="f0a87811e8be55bf94672bdc19729182" category="inline-link-macro">自定义保护域</block>
-  <block id="9985a6faeb51ef9840d329f5a5454de1" category="paragraph">对于 SolidFire 企业 SDS 节点，您可以在 " 存储 " 选项卡上监控清单。</block>
   <block id="9914f7f20d19a7ce30054796ca280e28" category="list-text">通过提供 SolidFire 全闪存存储集群管理员凭据登录到 NetApp 混合云控制。</block>
   <block id="f7b8cd7786f2f0ba8b3271684ef8f6ff" category="list-text">在左侧导航栏中，选择 * 节点 * 。</block>
   <block id="8b5d2fc18afcde2525a65fcaae38a752" category="image-alt">混合云控制节点页面图</block>
@@ -11365,8 +10634,6 @@
   <block id="ea7fec525051b2aa8cb978a109280dcd" category="doc">使用 NetApp Hybrid Cloud Control 添加和管理存储集群</block>
   <block id="2ff93dd01b5c0e32265f7bcc1f192717" category="paragraph">您可以将存储集群添加到管理节点资产清单中，以便使用 NetApp Hybrid Cloud Control （ HCC ）对其进行管理。系统设置期间添加的第一个存储集群为默认集群 <block ref="e36a33ccafb1c4b38d6b9113c1dd0ba4" category="inline-link-macro-rx"></block>，但可以使用 HCC UI 添加其他集群。</block>
   <block id="1a5966f47c08b6f886bc5fa986067962" category="paragraph">添加存储集群后，您可以监控集群性能，更改受管资产的存储集群凭据或从管理节点资产清单中删除不再需要使用 HCC 进行管理的存储集群。</block>
-  <block id="3663bc32267b225ac55e52a4e99f2b3c" category="inline-link-macro">维护模式</block>
-  <block id="128736137ea3bf7bf1a6b7e3b6184b4a" category="paragraph">从 Element 12.2 开始，您可以使用 <block ref="0e61a13a0652eb503d2f936c42121e2b" category="inline-link-macro-rx"></block> 用于为存储集群节点启用和禁用维护模式的功能选项。</block>
   <block id="bb38f75f0e45f3119e7bd198f4c9ea7f" category="list-text">* 集群管理员权限 * ：您对具有管理员权限 <block ref="e36a33ccafb1c4b38d6b9113c1dd0ba4" category="inline-link-macro-rx"></block>。权威集群是在系统设置期间添加到管理节点清单中的第一个集群。</block>
   <block id="773e93c04ad566aabd322005936de6ef" category="list-text">* Element Software* ：您的存储集群版本运行的是 NetApp Element 软件 11.3 或更高版本。</block>
   <block id="08d74685e136a5f8424fd12850ccb10e" category="list-text">* 管理服务 * ：您已将管理服务包更新到 2.17 或更高版本。</block>
@@ -11386,7 +10653,6 @@
   <block id="3f62e92f4eb8c51e08e63cebe7aecb35" category="admonition">只能添加当前不受管理节点管理的远程存储集群。</block>
   <block id="9cd3f7354698337ccc6bd9e015343b20" category="list-text">存储集群用户名和密码</block>
   <block id="f366aa0e2a76691fb58eb909ea245782" category="admonition">添加存储集群后，集群清单可能需要长达 2 分钟才能刷新并显示新添加的内容。您可能需要刷新浏览器中的页面才能查看所做的更改。</block>
-  <block id="af4bf009c94401bfed8a3763cc825fd2" category="list-text">如果要添加 Element ESDS 集群，请输入或上传 SSH 专用密钥和 SSH 用户帐户。</block>
   <block id="d97fd2f723280f6f16c5d6a4d94da19e" category="section-title">确认存储集群状态</block>
   <block id="bc26a117f5efe663d7abd12878c68fbc" category="paragraph">您可以使用 NetApp Hybrid Cloud Control UI 监控存储集群资产的连接状态。</block>
   <block id="8740ce0f2ed67b985c9dae6e876d693b" category="list-text">查看清单中存储集群的状态。</block>
@@ -11405,8 +10671,6 @@
   <block id="8217c26f2fd68c8d2fe5a9c60cf359ff" category="inline-xref">启用</block>
   <block id="0aaa87422396fdd678498793b6d5250e" category="inline-xref">-disable</block>
   <block id="2d110e2bcef2092d175ef31684c9e0ee" category="paragraph">如果您需要使存储节点脱机进行维护，例如软件升级或主机修复，则可以通过最大限度地减少对存储集群其余部分的 I/O 影响 <block ref="eafaedbc3fb0a68f230418ca88746c3b" category="inline-xref-macro-rx"></block> 该节点的维护模式。当您 <block ref="82680f05155b11f982e10ac16fa60e77" category="inline-xref-macro-rx"></block> 维护模式下，系统会对节点进行监控，以确保在节点过渡到维护模式之前满足特定条件。</block>
-  <block id="1f21f496d26572d6b4f32e2c4e9eba99" category="inline-link-macro">使用维护模式时的可能情形</block>
-  <block id="85855f63d589650a3c733451b8395953" category="paragraph">有关信息，请参见 <block ref="0e61a13a0652eb503d2f936c42121e2b" category="inline-link-macro-rx"></block> 启用和禁用功能选项和 <block ref="caaa262e8632ce32140ce38121478a94" category="inline-link-macro-rx"></block>。</block>
   <block id="1f3bfd01e455c54b88c3b632aedf44db" category="list-text">* Element 软件 * ：您的存储集群版本运行的是 NetApp Element 软件 12.2 或更高版本。</block>
   <block id="ddc0cd321869cd169e3209c75bea01b5" category="list-text">* 管理节点 * ：您已部署运行 12.2 或更高版本的管理节点。</block>
   <block id="133da0bffa151ffd8a777f211c47db8a" category="list-text">* 管理服务 * ：您已将管理服务包更新到 2.19 或更高版本。</block>
@@ -11641,7 +10905,6 @@
   <block id="f821a90c9663cfba67e5463eaa9dd50b" category="paragraph">另一种类型的空闲加密，即软件空闲加密，可以对写入存储集群中 SSD 的所有数据进行加密。 <block ref="850adab22a7d3ffe35b638d0df9b6cf6" category="inline-link-macro-rx"></block>，它会对写入的所有数据进行加密，并对软件中自动读取的所有数据进行解密。空闲软件加密可镜像硬件中的自加密驱动器（ SED ）实施，以便在没有 SED 的情况下提供数据安全性。</block>
   <block id="5ddb1cb96e389bf43231140cde9934cd" category="admonition">对于 SolidFire 全闪存存储集群，必须在创建集群期间启用空闲软件加密，并且在创建集群后无法禁用该加密。</block>
   <block id="ea9540183556cd61c73cb60851b8401a" category="paragraph">默认情况下，在创建集群期间不会启用基于硬件的空闲加密，您可以从 Element UI 中启用和禁用此加密。</block>
-  <block id="65e41692ce81538235f31feb59da0df9" category="admonition">对于 SolidFire 全闪存存储集群，必须在创建集群期间启用空闲软件加密，并且在创建集群后无法禁用该加密。对于 SolidFire 企业 SDS （ ESDS ）集群，默认情况下会启用空闲软件加密。</block>
   <block id="c7f9a749a25add142f440b6abf05f6c6" category="section-title">检查空闲时加密状态</block>
   <block id="cafb235222dece370f504ef5d0d47b47" category="paragraph">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="b94a2f1f88f1b2af0f1632fc6ab0d549" category="inline-link-macro-rx"></block> 方法您可以使用 <block ref="599a2456b2fb227210a4ba9b77591706" category="inline-link-macro-rx"></block> 获取集群用于对空闲数据进行加密的信息的方法。</block>
   <block id="189f9cc5227158e41b6756a4618d70a5" category="admonition">`https://&lt;MVIP&gt;/` 上的 Element 软件 UI 信息板当前仅显示基于硬件的加密的空闲加密状态。</block>
@@ -11707,8 +10970,6 @@
   <block id="084f667a768181d2c907c53fa5eba8aa" category="list-text">本操作步骤介绍了 vSphere 6.7 版中提供的步骤。您的 vSphere 用户界面可能与所述略有不同，具体取决于安装的 vSphere 版本。有关其他帮助，请参见 VMware vCenter 文档。</block>
   <block id="0a20c90d5270bed19fcaf851778c663b" category="doc">下一步行动</block>
   <block id="a9cb6e2851847a4da1710748fa322b75" category="list-text">它支持 3000 IOPS 的持续集群限制。</block>
-  <block id="dcd50d347195658baa61d9ec50d87c54" category="list-text">应使用 MTU 至少为 1500 字节的网络接口卡进行配置。</block>
-  <block id="66eb697af36258704e589ddaa8b1f423" category="admonition">有关配置主机网络的示例和提示，请参见 <block ref="75f8e7b74dfe828e63d762ff8e0c66a1" category="inline-link-macro-rx"></block>。</block>
   <block id="0b012f0f130a45a29cb100381b8d8a18" category="inline-link">已下载存储固件包</block>
   <block id="2860f82003378d24e87a2b07d470efff" category="list-text">如果您的管理节点未连接到 Internet ，则表示您已连接到 Internet<block ref="91eecee6b4dd8708a7b3c9904156a5c7" category="inline-link-rx"></block>。</block>
   <block id="eeaa8c18b8187d8aa70fe2be2070cd8e" category="paragraph">您可以查看多节点系统的存储信息。条件 <block ref="7abc9b197257f801951edc3be4066a26" category="inline-link-macro-rx"></block> 对于已分配的，您可以查看哪些保护域已分配给特定节点。</block>
@@ -11796,23 +11057,11 @@
   <block id="bd1ea3213926ecdb3e25a30ccf5157d9" category="section-title">使用API在管理节点上禁用或启用SSH功能</block>
   <block id="526719701f51876f46433bfa55249a45" category="section-title">使用API确定管理节点上SSH功能的状态</block>
   <block id="be441559765f3e52d513b155b4b59981" category="list-text">此时将弹出EULA。向下滚动、选择*我接受当前更新和所有未来更新*、然后选择*保存*。</block>
-  <block id="06194f109ff7ed4270c1e5f89cbe9e74" category="admonition">如果您接受EULA、则会在所有未来更新中记录此EULA、并启用自动下载功能。您将收到有关NetApp软件更新和升级的更新、您可以在方便时自行决定安装这些更新。您可以通过禁用与NetApp联机软件存储库的网络连接来禁用自动下载功能。</block>
   <block id="f4926605dca5caffd5d52e790b9eb676" category="list-text">*管理服务*：您已更新到最新的管理服务包(2.10.27或更高版本)。</block>
   <block id="fb7a24d6912e863521bf9df7516e215b" category="list-text">*管理节点*：您正在运行管理节点11.3或更高版本。</block>
   <block id="cd87cb364b82cfd7ff555087f3e88e59" category="list-text">* Element Software*：您的集群版本运行的是NetApp Element 软件11.3或更高版本。</block>
   <block id="8eeabd6de4a231c731b82c27ee25bbdb" category="admonition">此插件与适用于VMware vCenter Server 4.6、4.7和4.8的VMware vCenter Server 6.5 for Element插件不兼容。</block>
   <block id="c7c27143d481078e23cd4144c0df2f10" category="inline-link">vCenter插件4.9发行说明</block>
-  <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp Hybrid Cloud Control Web UI和API可从NetApp联机软件存储库下载软件包。因此，根据内容交付网络，某些 URL 或 IP 地址可能会解析为其他 URL 或 IP 地址。如果可能，您应与网络工程师合作，使用以下常规步骤将这些 URL 或 IP 地址添加到防火墙规则中：</block>
-  <block id="468e2827e5dc0169c965a021b0f015d8" category="list-text">使用wget或cURL实用程序访问URL (例如support-sg-nawest.netapp.com)。</block>
-  <block id="887a9d2ae67bb61c76d5d0032a4b7b0f" category="list-text">检查连接、如以下示例所示：</block>
-  <block id="9b6b0ba6c58622cfc8a6178412a0e4bf" category="image-alt">检查端口连接</block>
-  <block id="17dc6266a36d140e3656a007ab0a9fce" category="list-text">无法访问此URL (与support-sg-nawest.netapp.com不同)。</block>
-  <block id="27639a1d6103dcea8efd114fa6c08ad8" category="paragraph">新版本通知：</block>
-  <block id="ab3ee28175c91fc275541983d197ab00" category="list-text">`https://support.netapp.com/aods/`</block>
-  <block id="202ff041fdb9a5ee3579e8cb7984ef6b" category="paragraph">软件下载：</block>
-  <block id="9fc75d41716cfd46199787dcf77473a1" category="list-text">`https://support-sg-emea.netapp.com`</block>
-  <block id="a1b1a9120bbc7238c7b6088d7223d194" category="list-text">`https://support-sg-naeast.netapp.com`</block>
-  <block id="219033cd316af31663b173765be6dd78" category="list-text">`https://support-sg-nawest.netapp.com`</block>
   <block id="778b8320a31f425d9021c72ba59dd8bd" category="cell">存储节点</block>
   <block id="c4303966c5d95835840cedbb4010f17d" category="cell">当前Element软件版本</block>
   <block id="0eb587cb5fd7c18c359cc306f978cd9d" category="cell">每个节点的大致软件和固件安装时间^1^</block>
@@ -11898,11 +11147,8 @@
   <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">从Element 12.3.1开始、系统会自动执行子步骤(a)到(e)。对于管理节点12.3.1或更高版本、请继续执行 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 以完成时间同步配置。</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
-  <block id="1cf342de8aa31250addb30092adae2c5" category="section-title">动态节点额定值</block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element软件12.5.</block>
   <block id="666d0726b52e2f2825f461badc8414a8" category="list-text"><block ref="666d0726b52e2f2825f461badc8414a8" category="inline-link-macro-rx"></block></block>
-  <block id="fe69a3287756ee47fc4650a84806448a" category="inline-link-macro">NetApp SolidFire 企业版SDS 12.5.</block>
-  <block id="a98228377241429f03c99eedec91c522" category="list-text"><block ref="a98228377241429f03c99eedec91c522" category="inline-link-macro-rx"></block></block>
   <block id="5b86bf0a1903cc9047cd68ef97be17fa" category="inline-link-macro">管理节点12.5.</block>
   <block id="3dcbe7b9be7ae83a929a25e122289702" category="list-text"><block ref="3dcbe7b9be7ae83a929a25e122289702" category="inline-link-macro-rx"></block></block>
   <block id="bb1c0a162d9f9097c1240465ee88a28f" category="inline-xref-macro">SignSshKeys</block>
@@ -11933,7 +11179,6 @@
   <block id="4379e56a99273d480a732e14cfe86d12" category="paragraph">在此示例中、系统将对公有 密钥进行签名并返回有效期(1-24小时)。</block>
   <block id="cf3e481a44141cabd4e9d46cfbb1f899" category="paragraph">12.5.</block>
   <block id="1cd7e1f52564ecd1b9b47bf17fe8d192" category="inline-link-macro">启用和禁用</block>
-  <block id="9be1c6c1a5e1d288c79545fe648fce2d" category="paragraph">如果要启用集群范围的 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block> 对于SolidFire 全闪存存储集群、您必须在创建集群期间执行此操作。从Element 12.5开始、您必须在创建集群期间在创建集群UI中启用空闲软件加密。对于Element 12.3.x及更早版本、必须使用创建集群 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> API方法并将enableSoftwareEncryptionAtRest参数更改为`true`。默认情况下， SolidFire ESDS 集群会启用空闲软件加密。对于SolidFire 全闪存存储集群和SolidFire ESDS集群、在集群上启用空闲软件加密后、无法将其禁用。您可以 <block ref="c4953cd715ac499bd17d25e3487e7fdb" category="inline-link-macro-rx"></block> 创建集群后的空闲时基于硬件的加密。</block>
   <block id="2ee9526aa61dc0808ea0ccf6ccfa2412" category="paragraph">升级存储集群上的 Element 软件不再需要升级管理节点操作系统。您只需将管理服务升级到最新版本、即可使用NetApp Hybrid Cloud Control执行Element升级。如果您希望出于安全修复等其他原因升级管理节点操作系统，请按照适用于您的方案的管理节点升级操作步骤进行操作。</block>
   <block id="cd5e8795f7da1b9c55223a753f0c64bd" category="inline-link">Element 12.3.x管理节点升级文档</block>
   <block id="33fea926c5e46b795ee89cd754264618" category="admonition">如果您需要有关升级管理节点12.2或更早版本的信息、请参见<block ref="7510c32e54d32b91989c1cd2810dc6d2" category="inline-link-rx"></block>。</block>
@@ -11944,7 +11189,6 @@
   <block id="356747bc1580f5d7e13f9055ae1f02df" category="paragraph">要升级NetApp Element 软件、您可以使用NetApp混合云控制UI或REST API。Element 软件升级期间会禁止某些操作，例如添加和删除节点，添加和删除驱动器以及与启动程序，卷访问组和虚拟网络等关联的命令。</block>
   <block id="abad8a22ec62bb4befaee820afb760ef" category="inline-link-macro">使用HealthTools升级到Element 12.3</block>
   <block id="649c8d7c132041751dab6da01f1fd9db" category="list-text">*已更新H610S存储节点的基板管理控制器(BMC)*：您已升级H610S节点的BMC版本。请参见 <block ref="c240390f1d50c698cb63f0c07c7d1edd" category="inline-link-macro-rx"></block>。</block>
-  <block id="02526a9433819b3363fdad9cdfc66a7d" category="list-text">如果您的管理节点未连接到 Internet ，则表示您已下载<block ref="0c09c6a7a60b11e622c5ccc20d3a7783" category="inline-link-rx"></block>。</block>
   <block id="a901d2b8512ddf5cf3b7654718ea92a4" category="admonition">有关使用NetApp Hybrid Cloud Control升级存储集群时的潜在问题及其解决方法、请参见此部分<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>。</block>
   <block id="981a393a1b5619c45c3545ca7373b5cf" category="list-text">选择 * 开始升级 * 。升级完成后、UI将提示您执行其他升级步骤。</block>
   <block id="02349aba09cccd8151274ed2d29018b1" category="list-text">完成中所需的其他步骤<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block>，并在用户界面中确认您已完成第 2 阶段。</block>
@@ -11978,7 +11222,6 @@
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
   <block id="ad6795e432521efb065caaec447cfa77" category="inline-link">存储固件包 2.146 发行说明</block>
-  <block id="357bc0086b99b12d4411a85cc4c0c8a2" category="admonition">默认情况下、所有SolidFire 企业SDS节点均启用空闲软件加密。空闲软件加密可在不包括自加密驱动器（ SED ）的 SolidFire 企业 SDS 节点中提供一个主软件数据安全加密层。</block>
   <block id="efe7c0d4ed04341756689674a3fb46c4" category="list-text">* BmcSelfTestFailed</block>
   <block id="e14ad5a8fd8d67543e771552b5287d65" category="paragraph">基板管理控制器(BMC)未通过自检。</block>
   <block id="f13985a4689ae985836f2d3e56cd1a5f" category="paragraph">请联系NetApp支持部门以获得帮助。</block>
@@ -12021,29 +11264,10 @@
   <block id="e9c9178d0dcc22e83ce4dafbccebece2" category="sidebar">配置自定义保护域</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">启动远程 NetApp 支持会话</block>
   <block id="6d76b07dcfce8c041eb64f1886c69449" category="paragraph">如果您需要 SolidFire 全闪存存储系统的技术支持， NetApp 支持部门可以远程连接到您的系统。要启动会话并获得远程访问， NetApp 支持部门可以与您的环境建立反向安全 Shell （ SSH ）连接。</block>
-  <block id="22e8c0119e5a615de3153bd0cf6157f1" category="list-text">*软件空闲加密增强功能*：Element 12.3引入了空闲软件加密功能增强功能、在创建SolidFire 企业SDS存储集群时、此功能默认处于启用状态。此功能会对存储节点中 SSD 上存储的所有数据进行加密，并且对客户端 IO 的性能影响非常小（~2% ）。以下是与空闲软件加密相关的 Element API 方法（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
-  <block id="a22ab525bece28b87773c244a6f1b3a0" category="list-text">*能够定义要保留的最大快照数*：Element 12.3增强了快照保留功能。为了支持此增强功能，已对以下 API 进行了修改（请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 有关每种方法的详细信息：</block>
-  <block id="763c55956ad9c66895ee6e099d610ff4" category="list-text">*获取有关Element软件修补程序的信息*：Element 12.3中引入的`GetPatchInfo`方法可用于获取有关存储节点上安装的Element软件修补程序的信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
-  <block id="7b6627460723fe1128ae2566dade0d76" category="list-text">*列出节点上每个网络接口的统计信息*：Element 12.3中引入的`ListNetworkInterfaceStats`方法可用于列出统计信息、例如、节点上每个网络接口的丢弃数据包数量以及各种类型的错误。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口的网络统计信息。请参见<block ref="b3f5ae500a470ff9050f3521cdc793c4" category="inline-link-rx"></block> 了解详细信息。</block>
-  <block id="d7fe934d3710b6c0fc8d7387b1330f7b" category="paragraph">Element 12.3.1中引入的动态节点评级功能使您可以在每个ESDS平台上利用24个受支持的CPU、而不是目前的每个平台使用一个CPU的模式。</block>
   <block id="49d020b60ff4477b61f1d75d5080ef57" category="inline-link-macro">启用远程 NetApp 支持连接</block>
   <block id="0e53d0eba97570e32d7916e47110c204" category="list-text"><block ref="0e53d0eba97570e32d7916e47110c204" category="inline-link-macro-rx"></block></block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP处理帐户</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。帐户包含访问分配给它的卷所需的质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)身份验证。创建卷时、卷会分配给特定帐户。</block>
-  <block id="f5c6f9835df083f9a7848584832ffe51" category="list-text">根据中列出的受支持版本安装Red Hat Package Manager<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
-  <block id="8297e8d8235ab4d403ff5275f7488f0e" category="admonition">默认情况下、Red Hat Package Manager会选择`xfs`作为您手动创建的分区的默认文件系统。您应将其更改为 `ext4` ，但 ` /boot` 和 `sWAP` 分区除外。您的 ` /boot` 分区应使用 `ext2` 。</block>
-  <block id="e39438a68fb3f711253e9a7370ff67d2" category="list-text">在选择要安装的特定软件包的软件选择屏幕上、根据您的Red Hat Package Manager版本选择*服务器*或*基础架构服务器*。</block>
-  <block id="94f57e8fc8a5e98d0aadd2f3fd717077" category="paragraph">对于Element 12.5、支持的Podman版本取决于您的Red Hat Package Manager版本：</block>
-  <block id="111f3cbd261a94954f796bd076317101" category="cell">Red Hat Package Manager版本</block>
-  <block id="89c0c976c84a0dc5ae614e09b4cc1c8e" category="cell">Podman版本</block>
-  <block id="b1db54564fe54a4c74a975b18a791532" category="cell">7.x</block>
-  <block id="029b1c7f4aeae9b0d7440388e1b6b30b" category="cell">1.6.4</block>
-  <block id="9b894f3cda522ff568508c500c301f16" category="cell">8.1、8.2、8.3和8.4</block>
-  <block id="f991179eef81959ca4ec71aa86a4df76" category="paragraph">3.1.x、3.2.x、3.3.x、3.4.1和3.4.2</block>
-  <block id="23e29da41b25c9d2df2b9c3e88b4f7e0" category="admonition">如果有、NetApp建议您接受适用于您的Podman版本的安全更新。</block>
-  <block id="cd9179614936afe6f50612f0cf8c5615" category="inline-link">Red Hat 文档</block>
-  <block id="f82fbefaef1108fe81a739d7c43f6e9f" category="list-text">熟悉如何在Red Hat Package Manager中配置和管理网络和网络接口。请参见<block ref="a661302e878d4f2065d4f48e5679440c" category="inline-link-rx"></block>。</block>
-  <block id="5cfb8e81e0263340cb87df666ea52280" category="list-text">如果在运行Red Hat Package Manager的存储节点上启用了`firewalld`、请确保以下端口处于打开状态、以便您可以远程管理系统、允许数据中心外部的客户端连接到资源、并确保内部服务可以正常运行：</block>
   <block id="da098b5086ce4e5936074c04efe5aa87" category="paragraph">您可以使用 Element UI <block ref="cbef8289b7bcb52ca0b9a41f4d962912" category="inline-link-macro-rx"></block>或者，您也可以使用以下 API 方法：</block>
   <block id="927feedbfb9bbc4a93e285ba9504ab0b" category="inline-link-macro">存储固件包 2.76 的注意事项</block>
   <block id="69b7535618573fd609dc8b4663c8b8c0" category="list-text"><block ref="69b7535618573fd609dc8b4663c8b8c0" category="inline-link-macro-rx"></block></block>
@@ -12061,16 +11285,6 @@
   <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
   <block id="482c5ad7089a563e0fe0fbc1a8647e77" category="list-text"><block ref="482c5ad7089a563e0fe0fbc1a8647e77" category="inline-xref-macro-rx"></block></block>
   <block id="ec0b9fb2fa43e46443eb0f7087291fb5" category="list-text"><block ref="ec0b9fb2fa43e46443eb0f7087291fb5" category="inline-link-macro-rx"></block></block>
-  <block id="11df4da923543977db2ff7d6c2b87b7c" category="list-text"><block ref="11df4da923543977db2ff7d6c2b87b7c" category="inline-link-macro-rx"></block></block>
-  <block id="2e437e291facb9c9920734e7632e62ad" category="list-text"><block ref="2e437e291facb9c9920734e7632e62ad" category="inline-link-macro-rx"></block></block>
-  <block id="d39f23e3f84c1bd1e144f6fed629b1e4" category="list-text"><block ref="d39f23e3f84c1bd1e144f6fed629b1e4" category="inline-link-macro-rx"></block></block>
-  <block id="b4d3d7a7f19bcfb9d4bcfeca430cfbef" category="list-text"><block ref="b4d3d7a7f19bcfb9d4bcfeca430cfbef" category="inline-link-macro-rx"></block></block>
-  <block id="fb8145a478a8837082d05d97d87dbde5" category="list-text"><block ref="b16f2946d1eb3dd465deb7a9462fd76d" category="inline-link-macro-rx"></block> _new ！ _</block>
-  <block id="1f5d8ae290c85b66ea7ecdfae46d7188" category="list-text"><block ref="8393824aba7fe138051cb03400ca7bb6" category="inline-link-macro-rx"></block> _new ！ _</block>
-  <block id="fac8ed8d82b59cb855583050cee9cd34" category="list-text"><block ref="fac8ed8d82b59cb855583050cee9cd34" category="inline-link-macro-rx"></block></block>
-  <block id="dcfa4d00c50a08c56e2319fa3f3d1288" category="list-text"><block ref="dcfa4d00c50a08c56e2319fa3f3d1288" category="inline-link-macro-rx"></block></block>
-  <block id="e12535c6360c5dad15589e14aca41e3a" category="list-text"><block ref="e12535c6360c5dad15589e14aca41e3a" category="inline-link-macro-rx"></block></block>
-  <block id="7661478d2706b156c56055536f2e93da" category="list-text"><block ref="7661478d2706b156c56055536f2e93da" category="inline-link-rx"></block></block>
   <block id="324fcb27182f60b1051fad39c080b193" category="doc">备份卷快照</block>
   <block id="cd7c96dd340046e8b1a1ed84b73227c0" category="summary">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。您还可以管理 SolidFire 存储系统的集群管理员帐户。</block>
   <block id="d69a8eaf0dfea73cf60506f2c945b71e" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。创建卷时、卷会分配给特定帐户。您还可以管理 SolidFire 存储系统的集群管理员帐户。</block>
@@ -12090,7 +11304,6 @@
   <block id="dbc5bb01b5e0b9429317021ba7f41a80" category="paragraph">检查MII链路状态是否存在链路故障的频率(以毫秒为单位)。</block>
   <block id="3580d7d6eae3196ebe1486dd612a7945" category="paragraph">检测到链路后、在启用从属服务器之前等待的时间(以毫秒为单位)。</block>
   <block id="8ea9e7d17b19a30384dbb2153a990250" category="list-text">每个卷访问组最多可以属于四个卷访问组。</block>
-  <block id="d146ce6679a899a76bda7f3830fd1336" category="summary">在存储集群上安装SolidFire ESDS后、您可以使用Element UI、Element API或适用于vCenter Server的NetApp Element 插件来管理存储集群。</block>
   <block id="89cf55eeb9f34a1a360f23ce53a22331" category="paragraph">上传软件包后、升级将自动开始。</block>
   <block id="726e3510e2c172eed6861f3e6d271360" category="paragraph">使用VMware vCenter Server 6.7U1升级到适用于vCenter Server 4.8或更高版本的NetApp Element 插件后、如果NetApp Element 配置的*集群*和* QoSSIOC设置*部分未列出存储集群或显示服务器错误、请参见 <block ref="c907b125bbc711015f83b735f4697e97" category="inline-link-macro-rx"></block> 有关对这些错误进行故障排除的文档。</block>
   <block id="91973e8fa965f2bdba61e9b8919b4ee5" category="inline-link-macro">管理服务2.20.69通知(适用于vCenter Server的NetApp Element 插件4.9.14)</block>
@@ -12109,8 +11322,6 @@
   <block id="92dc561e380fb7539e97d85167edf7ec" category="list-text"><block ref="92dc561e380fb7539e97d85167edf7ec" category="inline-link-macro-rx"></block></block>
   <block id="a945e669932fbbe48d4794d770411d05" category="inline-link-macro">管理服务声明2.13 (适用于vCenter Server 4.5.42的NetApp Element 插件)</block>
   <block id="7e8c4f0c53e3d640a1b7eb54d32bdb46" category="list-text"><block ref="7e8c4f0c53e3d640a1b7eb54d32bdb46" category="inline-link-macro-rx"></block></block>
-  <block id="a6e60f5446d407aa42b1293e56f2cb42" category="inline-link-macro">NetApp SolidFire 企业 SDS 通知</block>
-  <block id="15e743dee4446f378d3f2f15b9fce01a" category="list-text"><block ref="15e743dee4446f378d3f2f15b9fce01a" category="inline-link-macro-rx"></block></block>
   <block id="3ff4e97d8167819534c5090c9428dd6a" category="list-text"><block ref="3ff4e97d8167819534c5090c9428dd6a" category="inline-link-rx"></block></block>
   <block id="70659e4f9824d888c2aa77344aaa46c4" category="list-text"><block ref="70659e4f9824d888c2aa77344aaa46c4" category="inline-link-rx"></block></block>
   <block id="0ea391471e626f95079246bfd0ab48f9" category="paragraph">适用于vCenter Server SIOC的NetApp Element 插件密码也称为_QoSSIOC密码_。 </block>
@@ -12222,7 +11433,6 @@
   <block id="6fa691d2c07bea6ae78b7022c80e9d20" category="paragraph">身份验证</block>
   <block id="b7a8a9738e1b53aeef92d2d4490ed88c" category="paragraph">此iSCSI会话的身份验证信息。</block>
   <block id="2c2631f50f8a871f30b75888dfbcea96" category="inline-link-macro">管理服务2.21.61的通知(适用于VMware vCenter Server的NetApp Element 插件4.10.12)</block>
-  <block id="5a4d1edee05c62a7171ceb8c43afb590" category="list-text"><block ref="5a4d1edee05c62a7171ceb8c43afb590" category="inline-link-macro-rx"></block></block>
   <block id="5d8cb69408d9a6773459aa0a397a3003" category="list-text">在管理节点上打开REST API UI。</block>
   <block id="4eed3af07414f10fffdba8a7ff51ca36" category="list-text">从管理服务2.21.61开始：</block>
   <block id="880c70977a68b1ec897e498bb11c7021" category="list-text">对于管理服务2.20.69或更早版本：</block>
@@ -12238,7 +11448,6 @@
   <block id="ab23337415270010383937ce784cb519" category="list-text">从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">插槽 0 用于存放节点的元数据驱动器。如果要更换插槽 0 中的驱动器，则必须将装运箱中的标签贴在替代驱动器上，以便可以与其他驱动器分开识别。</block>
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">存储固件包2.164.0发行说明</block>
-  <block id="e95c3968984424b94d3bd781dd9e8819" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block> _new_</block>
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支持的固件和ESXi驱动程序版本</block>
   <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _new_</block>
@@ -12251,24 +11460,15 @@
   <block id="9db4acd10c15ec173e6516c347342e25" category="admonition">您应在vCenter中创建新的NetApp HCC角色以添加控制器子资产。这一新的 NetApp HCC 角色会将管理节点服务视图限制为纯 NetApp 资产。请参见 <block ref="8fe5279440ee3c239e840ed9b8e10ddd" category="inline-link-macro-rx"></block>。</block>
   <block id="836e51e0f6c3653b09c2a2a467e5d22e" category="paragraph">如果您运行的是Element 11.x、12.0或12.2、或者存储集群已位于Element 12.3或12.3.1且已启用VVol功能、则应升级到12.5。</block>
   <block id="6b777567daa827d5b0665b94c630539f" category="inline-link">vCenter插件5.0发行说明</block>
-  <block id="6e965491616fff846a7ae36b0c989a99" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block> _new_</block>
   <block id="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block></block>
   <block id="07800d7fa4e084c955b9006d30b6eed1" category="paragraph">远程插件</block>
   <block id="b8ffa41d4e492f0fad2f13e29e1762eb" category="paragraph">8333</block>
   <block id="5b3a5766ccd94c0ef0148e61340c831e" category="paragraph">远程vCenter插件服务</block>
-  <block id="1291d04b420cee74581d131dee5acf86" category="paragraph">您应升级到适用于vCenter Server 5.0的NetApp Element 插件、以便能够在VMware vCenter 7.0 Update 3中部署此插件、而无需应用临时解决策。</block>
   <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">使用适用于vCenter Server 4.x的Element插件升级到VMware vCenter Server 7.0 Update 3时、此插件无法部署。要使用Spring Framework 4解决此问题描述 、请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">对于已注册适用于VMware vCenter Server的NetApp Element 插件的现有vSphere环境、您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
-  <block id="56f4bca23bb3dd45148dc7171511b7e5" category="paragraph">此升级操作步骤 适用于以下升级情形。</block>
-  <block id="ec78c54d60054bc44ae2e26c00313bdb" category="admonition">管理服务2.22.7包括适用于VMware vCenter Server 5.0的NetApp Element 插件、该插件包含远程插件。如果您使用Element插件、则应升级到5.0版、以符合VMware指令、该指令会删除对本地插件的支持。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。如果不使用此插件、则可以选择进行此升级。</block>
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter插件5.0或更高版本</block>
-  <block id="493b4872884198c5773208e29a2d2ce6" category="paragraph">从适用于VMware vCenter Server 5.0的Element插件开始、此升级操作步骤 涵盖以下升级情形：</block>
-  <block id="ffccf7c96c162cb046e6087e5ff2c25c" category="list-text">您要升级到适用于vCenter Server 5.0的Element插件。</block>
-  <block id="b5bcaf2164ee5f3d1a22b016747f08e1" category="list-text">您要升级到8.0或7.0 HTML5 vSphere Web Client。</block>
   <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">适用于vCenter 5.0及更高版本的Element插件与vCenter Server 6.7和6.5不兼容。</block>
-  <block id="6243a047f7c7bcc2f2961e8a74f1b5c7" category="admonition">从适用于vCenter Server 4.x的Element插件升级到5.0时、由于无法将数据从vCenter实例复制到远程插件、因此已配置此插件的集群将丢失。您必须将集群重新添加到远程插件。这是从本地插件升级到远程插件时的一次性活动。</block>
   <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter插件4.10或更早版本</block>
-  <block id="523b0480434215d8d59b3dce41707a7e" category="paragraph">对于适用于vCenter Server 4.10或更早版本的Element插件、此升级操作步骤 适用于以下升级情形：</block>
   <block id="524f8acc9609df7272285a19757aefcb" category="list-text">您要升级到适用于vCenter Server 4.10、4.9、4.8、4.7、4.6的Element插件、 4.5或4.4。</block>
   <block id="c0e80cf197d1adf76fef790848a92f8f" category="list-text">此插件与适用于VMware vCenter Server 4.x的VMware vCenter Server 8.0 Element插件不兼容</block>
   <block id="a95f4f0d2a0a7e7a472e3b6c6d23d07c" category="list-text">* vCenter Server*：您的vCenter插件4.x或5.x版已注册到vCenter Server。从注册实用程序 <block ref="0e0152f7592ffa53464a10c6a48053e7" prefix="(" category="inline-code"></block>)、选择*注册状态*、填写必要字段、然后选择*检查状态*以验证vCenter插件是否已注册以及当前安装的版本号。</block>
@@ -12284,14 +11484,12 @@
   <block id="3c4718429a8a2991d56e6e719c1942df" category="image-alt">描述了成功升级或安装Element插件5.10或更高版本后的插件扩展点</block>
   <block id="85406fb94df2ff523b7477f229b1c9c8" category="image-alt">描述了成功升级或安装Element插件4.10或更早版本之后的插件扩展点</block>
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">管理服务2.22.7通知(适用于VMware vCenter Server 5.0.37的NetApp Element 插件)</block>
-  <block id="6bad10de0797378a77f16be896cb0776" category="list-text"><block ref="6bad10de0797378a77f16be896cb0776" category="inline-link-macro-rx"></block></block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">验证插件扩展点是否显示在vSphere Web Client的*快捷方式*选项卡和侧面板中。</block>
   <block id="78d33ed700a31bfed5ec712d766def44" category="paragraph">存储节点基板管理控制器(BMC)/智能平台管理接口(IPMI) H410和H600系列</block>
   <block id="59f1e3a87c5b329f2a5a951d9bf325f8" category="paragraph">对节点远程控制的HTTPS UI和API访问</block>
   <block id="1381491a5bb8087f95db0601150c5c28" category="paragraph">存储节点BMC/IPMI H410和H600系列</block>
   <block id="ad097a4f1c93214faa0a1ca354a82225" category="paragraph">623 UDP</block>
   <block id="483602128e75be96f5280855d8065878" category="paragraph">远程管理控制协议端口。这是管理启用了IPMI的系统所必需的。</block>
-  <block id="3ef00ef1af91bf9fe0b72f4052a67f59" category="list-text">适用于vCenter Server 5.0的Element插件的vCenter插件注册页面：</block>
   <block id="1875d143de1e9be70dc9e780b41377fe" category="list-text">适用于vCenter Server 4.10或更早版本的Element插件的vCenter插件注册页面：</block>
   <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">(对于内部服务器/非公开站点)根据适用于vCenter的Element插件版本、此插件JSON文件或插件ZIP的自定义URL：</block>
   <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">从适用于vCenter Server 5.0的Element插件开始、将显示NetApp Element 远程插件扩展点：</block>
@@ -12501,15 +11699,6 @@
   <block id="6a31058d1e6208d43e0d620fb4953c23" category="paragraph-title">存储集群资产管理选项</block>
   <block id="50f33d14f129e4548c1c270fd6725a78" category="paragraph-title">配置选项</block>
   <block id="63f488c7bb829c89f024839d6aa602f4" category="section-title">【自定义PD】自定义保护域</block>
-  <block id="fa5cc5e49b65ffd46ba8881097cf8310" category="list-title">*安装所需硬件*</block>
-  <block id="6b170e726e4567decff7daaed3e1a08b" category="list-title">*配置主机(节点)*</block>
-  <block id="c86064ac886a0aab9f8ecf92f19f98b3" category="list-title">*安装所需软件*</block>
-  <block id="fd9cdaf80c90bdd2d3af18c1c856b60f" category="list-title">*验证您的配置是否符合NetApp安装SolidFire ESDS*的要求</block>
-  <block id="9bfadf4c7ec72b1af0ecb9eaabaf58c8" category="list-title">*了解网络和IP地址要求*</block>
-  <block id="a113f5f001cbfcc5dc2a0dde65f4e2d9" category="list-title">*允许特定端口通过数据中心的防火墙*</block>
-  <block id="45f450486d575041c747125231750ffe" category="list-title">*配置主机网络*</block>
-  <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">*完成其他要求*</block>
-  <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">升级概述</block>
   <block id="29d5a1c31c94981fab1916121b43f763" category="cell">存储节点BMC/IPMI</block>
   <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP端口。这是管理启用了IPMI的系统所必需的。</block>
   <block id="8a6b3244aec72df7ad902477699fbf45" category="paragraph">NetApp 支持站点 上提供了先前版本的文档。</block>
@@ -12733,4 +11922,95 @@
   <block id="c192e3c2dbd374233d4685406db01520" category="paragraph">如果要在打开节点电源并在维护后验证其运行状况是否良好时留出更多时间、请联系技术支持以帮助延迟数据同步以防止不必要的箱同步。</block>
   <block id="eef615f9029df3b19885b836d67d03a3" category="inline-link">如何正常关闭和启动NetApp Solidfire/HCI存储集群</block>
   <block id="b8c22947a9d726cf79f399d361ecc7a2" category="paragraph"><block ref="b8c22947a9d726cf79f399d361ecc7a2" category="inline-link-rx"></block></block>
+  <block id="89291581fd8be1d9caf505e74fd0773e" category="list-text"><block ref="89291581fd8be1d9caf505e74fd0773e" category="inline-link-macro-rx"></block></block>
+  <block id="a339aaae279fb4166b4ea4a6575b8e54" category="list-text"><block ref="a339aaae279fb4166b4ea4a6575b8e54" category="inline-link-macro-rx"></block></block>
+  <block id="19facef57cccdb14f71deeb221363ad9" category="paragraph"><block ref="19facef57cccdb14f71deeb221363ad9" category="inline-link-rx"></block></block>
+  <block id="5a4b8b3924bb822fd8c6ae8c1c9b7030" category="paragraph">您可以向NetApp HCI 设备添加节点。</block>
+  <block id="1a6db061a54638a3fdcefd71c9bfd9ad" category="paragraph">添加节点的过程完成后、这些节点将显示在"Active nodes"列表中。在此之前，待定节点将显示在 "Pending Active" 列表中。</block>
+  <block id="4a65434b4e4d8c919262bffbcc775165" category="paragraph">将待定节点添加到集群时、SolidFire 会在这些节点上安装集群的Element软件版本。这可能需要几分钟时间。</block>
+  <block id="71d77d19e87db163a8fa4db90c83237d" category="inline-link-macro">GetSSLCertificate方法</block>
+  <block id="3e9585ef7d0edda1489dd7d9051efee2" category="paragraph">您可以使用 <block ref="785a154069def4382c407c46cd76511f" category="inline-link-macro-rx"></block> 检索有关当前安装的SSL证书的信息、包括所有证书详细信息。</block>
+  <block id="d071ee449f970ae83d3efc8c36fdd3db" category="inline-link-macro">SetSSLCertificate方法</block>
+  <block id="af9aeedb67a7383e9ed9027d9cae0347" category="paragraph">您可以使用 <block ref="77081d68df13899db5539e9bf47c2e76" category="inline-link-macro-rx"></block> 将集群和每节点SSL证书设置为您提供的证书和专用密钥。系统会验证证书和专用密钥，以防止应用无效证书。</block>
+  <block id="b3f80d8c01527878ecb6d9da0acbee6c" category="inline-link-macro">RemoveSSLCertificate方法</block>
+  <block id="a6c060b483d31ea611debe971d6648f2" category="paragraph">。 <block ref="0e7e722b98bf8cba65c74d44d6ffe2e6" category="inline-link-macro-rx"></block> 删除当前安装的SSL证书和专用密钥。然后，集群将生成新的自签名证书和专用密钥。</block>
+  <block id="00b6f5df795659d436d482ffd81033aa" category="inline-link-macro">更改管理节点的默认SSL证书</block>
+  <block id="b59339c29a0a5c439aaf31d01a32ea3a" category="list-text"><block ref="b59339c29a0a5c439aaf31d01a32ea3a" category="inline-link-macro-rx"></block></block>
+  <block id="f056eadecebc58790da8eb91b5211492" category="inline-link">在Element Software中设置自定义SSL证书有哪些要求？</block>
+  <block id="e3b4df69e2fe4e8545e5e0240eada6a2" category="list-text"><block ref="e3b4df69e2fe4e8545e5e0240eada6a2" category="inline-link-rx"></block></block>
+  <block id="bc392d110b36a51cd536073024a5f532" category="list-text">对于 H410S 和 H610S 节点， <block ref="1ed294287e7a2515c794c51e2936136d" category="inline-link-macro-rx"></block>。</block>
+  <block id="dcf69453f88a169ec3e3e6fae67d435e" category="list-text"><block ref="dcf69453f88a169ec3e3e6fae67d435e" category="inline-link-macro-rx"></block></block>
+  <block id="ecec8bb5649856a856a861a75e4daa84" category="paragraph"><block ref="ecec8bb5649856a856a861a75e4daa84" category="inline-link-macro-rx"></block></block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相关信息</block>
+  <block id="521e8e8587c418fa92f54811f8954007" category="list-text"><block ref="521e8e8587c418fa92f54811f8954007" category="inline-link-macro-rx"></block></block>
+  <block id="29e13a3bca7d11d4ebec7e6356a5b466" category="cell">*存储固件包2.175.0*</block>
+  <block id="022beb4c9e2bdbe9e3398445a4fad6b2" category="cell">2023年6月15日</block>
+  <block id="804066a6a5042090a2a0b25c55f38e72" category="cell">3.5.</block>
+  <block id="489901e715cade6fe0efc7e21e194576" category="cell">2.17.</block>
+  <block id="0b67b64b71fa04f23305e691b81ba252" category="cell">07.02.00</block>
+  <block id="4fff24ec2d2b11f3a503f7b0abacb1cb" category="list-text"><block ref="4fff24ec2d2b11f3a503f7b0abacb1cb" category="inline-link-macro-rx"></block></block>
+  <block id="96c37e9c5684e9f2a7ffd6a79512cde2" category="paragraph">您可以使用NetApp Element API更改管理节点的默认SSL证书和专用密钥。</block>
+  <block id="d311117e36e090462c70d49316078938" category="paragraph">配置管理节点时、它会创建一个唯一的自签名安全套接字层(SSL)证书和专用密钥、用于通过Element UI、每节点UI或API进行所有HTTPS通信。Element 软件支持自签名证书以及由可信证书颁发机构（ CA ）颁发和验证的证书。</block>
+  <block id="8fff04b1c0c323ac1aac0d43f5e6b4f8" category="list-text">* GetNodeSSLCertificer*</block>
+  <block id="a07612f154836b90b33c91e3d4becfe8" category="inline-link-macro">GetNodeSSLCertificate方法</block>
+  <block id="e33d1822bd6d1efb8885f0c9f078767e" category="paragraph">您可以使用 <block ref="fc5ae91d2a3def87eb640426dd21d6c3" category="inline-link-macro-rx"></block> 检索有关当前安装的SSL证书的信息、包括所有证书详细信息。</block>
+  <block id="58f6e4a954eca307131e675eba49accc" category="list-text">*设置NodeSSLCertificer*</block>
+  <block id="123b81eef3f2300f60e089e9078ee7c3" category="inline-link-macro">SetNodeSSLCertificate方法</block>
+  <block id="d229d7ad000aef94c4fc9c92a09ef2f9" category="paragraph">您可以使用 <block ref="a3f906e270f396b1e0abeb1e4b45aabc" category="inline-link-macro-rx"></block> 将集群和每节点SSL证书设置为您提供的证书和专用密钥。系统会验证证书和专用密钥，以防止应用无效证书。</block>
+  <block id="6f54d04f05c4e4a65ca53b1028d1207b" category="list-text">*删除NodeSSLCertificer*</block>
+  <block id="9b65a6a78c1794a21bc06b75e90962bb" category="inline-link-macro">RemoveNodeSSLCertificate方法</block>
+  <block id="54788257ab6665219d3b197c0c0ab2b3" category="paragraph">这 <block ref="7a6d88cb46fe8190180be6d3bbd02863" category="inline-link-macro-rx"></block> 删除当前安装的SSL证书和专用密钥。然后，集群将生成新的自签名证书和专用密钥。</block>
+  <block id="347d913828eec37c0c4915a8bd604f8a" category="list-text"><block ref="347d913828eec37c0c4915a8bd604f8a" category="inline-link-macro-rx"></block></block>
+  <block id="f3239c80004833605a44320f76f29a78" category="paragraph">更改默认SSL证书：</block>
+  <block id="fe6a80fba2305243dd21703b873b6d51" category="list-text"><block ref="fe6a80fba2305243dd21703b873b6d51" category="inline-link-macro-rx"></block></block>
+  <block id="08bedb070b17681cfbba927034b3d77e" category="paragraph">管理服务可为 SolidFire 全闪存存储提供集中式和扩展式管理功能。这些服务包括 <block ref="c33469c22ade8b91ea5a2e4b6de19fdf" category="inline-link-macro-rx"></block>， Active IQ 系统遥测，日志记录和服务更新以及适用于 vCenter 的 Element 插件的 QoSSIOC 服务。</block>
+  <block id="afb54c94a5e9aef322532eabe176c2d4" category="admonition">了解更多信息 <block ref="8a1a0a32384afdd6d93db2e7c4f512ad" category="inline-link-macro-rx"></block>。</block>
+  <block id="b87a13e71152d8db28c0e317617e683c" category="section-title">SolidFire 部署</block>
+  <block id="4195434d2c036cf973c32bdb4ac19828" category="paragraph">使用NetApp提供并与NetApp Element 软件集成的存储节点。</block>
+  <block id="54db42757b5d75d2f660dc70f35850cf" category="inline-link">《vCenter插件5.1发行说明》</block>
+  <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _new_</block>
+  <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
+  <block id="a35c2c2e602b46918d896beca9bdff98" category="inline-link">存储固件捆绑包2.175.0发行说明</block>
+  <block id="148d031a2764f3cbbb70b4cb00ae67a0" category="list-text"><block ref="386fd72128f804329f22ad31b9e25673" category="inline-link-rx"></block> _new_</block>
+  <block id="758831bd0271b3c8b1bf3b7bf6466060" category="list-text"><block ref="758831bd0271b3c8b1bf3b7bf6466060" category="inline-link-rx"></block></block>
+  <block id="24786d5c66286f468be80b26d8f4126b" category="list-text"><block ref="24786d5c66286f468be80b26d8f4126b" category="inline-link-rx"></block></block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="bddb591f0b60efba3de48f954b55f287" category="inline-link-macro">管理服务2.23.64通知(适用于VMware vCenter Server 5.1.2的NetApp Element 插件)</block>
+  <block id="2926dc5780f42141aca045c0001024a5" category="list-text"><block ref="2926dc5780f42141aca045c0001024a5" category="inline-link-macro-rx"></block></block>
+  <block id="08051f25eb15067f82271c19a19ded03" category="list-text"><block ref="08051f25eb15067f82271c19a19ded03" category="inline-link-macro-rx"></block></block>
+  <block id="abeecd47abec11fdd3daaa8a3239958a" category="list-text"><block ref="abeecd47abec11fdd3daaa8a3239958a" category="inline-link-macro-rx"></block></block>
+  <block id="165ffb421393136ac7930e23c971a009" category="inline-link-macro">存储固件包2.175.0的注意事项</block>
+  <block id="3196b7dfc407df76dfe72528882d792a" category="list-text"><block ref="3196b7dfc407df76dfe72528882d792a" category="inline-link-macro-rx"></block></block>
+  <block id="ea52eab386a36623963eee64d8468c76" category="admonition">管理服务2.22.7包括适用于vCenter Server 5.0的Element插件、该插件包含远程插件。如果您使用Element插件、则应升级到管理服务2.22.7或更高版本、以符合取消对本地插件支持的VMware指令。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。</block>
+  <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">此升级操作步骤包括以下升级情形：</block>
+  <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">您正在升级到适用于vCenter Server 5.1或5.0的Element插件。</block>
+  <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">您要升级到8.0或7.0 HTML5 vSphere Web Client。</block>
+  <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">从适用于vCenter Server 4.x的Element插件升级到5.x时、由于无法将数据从vCenter实例复制到远程插件、因此已配置此插件的集群将丢失。您必须将集群重新添加到远程插件。这是从本地插件升级到远程插件时的一次性活动。</block>
+  <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">适用于vCenter Server 5.x的Element插件的vCenter插件注册页面：</block>
+  <block id="0ac35a688d7a23e1caba58dbbf08c4d7" category="paragraph">* 存储 * 选项卡列出了安装过程中的存储集群。如果 NetApp Hybrid Cloud Control 无法访问某个集群，则该集群将不会显示在 * 升级 * 页面上。如果您的集群运行的是 Element 12.0 或更高版本，则会看到为这些集群列出的当前固件包版本。如果一个集群中的节点具有不同的固件版本，或者升级过程中，您将在 * 当前固件包版本 * 列中看到 * 多个 * 。您可以选择 * 多个 * 以导航到 * 节点 * 页面以比较固件版本。如果所有集群运行的 Element 版本均早于 12.0 ，则您将看不到有关固件包版本号的任何信息。</block>
+  <block id="df3b4418989705f2099ec054a495c6ff" category="paragraph">如果集群是最新的且 / 或没有可用的升级软件包，则不会显示 * 元素 * 和 * 仅固件 * 选项卡。在升级过程中，也不会显示这些选项卡。如果显示的是 * 元素 * 选项卡，而不是 * 仅固件 * 选项卡，则表示没有可用的固件包。</block>
+  <block id="c7f3047b6654f1cb88fcfe6e47c92593" category="cell">如果存储服务API返回的升级状态不在可能升级状态的枚举列表中、则会显示此状态。</block>
+  <block id="4af99aa6c1be006a7c064cb06b9464ac" category="cell">运行Element 11.8及更高版本的所有集群</block>
+  <block id="f77430f8b3c4f14f1dcd175dca1d54cf" category="paragraph">您应升级到适用于vCenter Server 5.0或更高版本的NetApp Element 插件、以便能够在VMware vCenter 7.0 Update 3中部署此插件、而无需应用临时解决策。</block>
+  <block id="be4d4eb0545e2f718ac561512f110152" category="paragraph">如果要启用集群范围的 <block ref="46beba8112888a31f3c57eea2d458bf9" category="inline-link-macro-rx"></block> 对于SolidFire 全闪存存储集群、您必须在创建集群期间执行此操作。从Element 12.5开始、您必须在创建集群期间在创建集群UI中启用空闲软件加密。对于Element 12.3.x及更早版本、必须使用创建集群 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> API方法、并将EnleSoftwarePedionAtRest参数更改为<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>。在集群上启用空闲软件加密后、将无法禁用它。您可以 <block ref="c4953cd715ac499bd17d25e3487e7fdb" category="inline-link-macro-rx"></block> 创建集群后的空闲时基于硬件的加密。</block>
+  <block id="a6d7169168a038dee7aae0a8f455c43a" category="list-text">如果正在执行分区同步、则将卷回滚到快照可能会失败。重试<block ref="c2e5bace81fd03914fa15aa027ee5f09" prefix=" " category="inline-code"></block> 同步完成后。</block>
+  <block id="9770637f58b684288e1d9d0f9f2be4f8" category="paragraph">启用此参数可使用基于软件的空闲加密。在所有集群上、默认为false。启用空闲软件加密后，无法在集群上禁用它。</block>
+  <block id="64d9e8809f33aaca7cda9d121b2b2e83" category="paragraph"><block ref="64d9e8809f33aaca7cda9d121b2b2e83" category="inline-link-macro-rx"></block></block>
+  <block id="19f47154ff3c9f0fcf8147cd2369d029" category="paragraph"><block ref="19f47154ff3c9f0fcf8147cd2369d029" category="inline-link-macro-rx"></block></block>
+  <block id="342c0e2d839abf3902ec2e2ba9a391e5" category="paragraph"><block ref="19f47154ff3c9f0fcf8147cd2369d029" category="inline-link-macro-rx"></block> 数组</block>
+  <block id="0e9706d9713372bb21a3b9f917953dbc" category="paragraph">JSON 列表 <block ref="5820461afa2bd9ee99130d755eddf7ff" category="inline-link-macro-rx"></block> 对象。</block>
+  <block id="bd74837c55aafce98fe5823bae9ee413" category="list-text">如果正在执行分区同步、则将卷回滚到组快照可能会失败。重试<block ref="05667fca9ff503d9b750747f0075d35a" prefix=" " category="inline-code"></block> 同步完成后。</block>
+  <block id="f1e1734ea4e6ef5a6bd73e15cffa128a" category="paragraph"><block ref="f2803c84f404a81af41a23542245cebc" category="inline-link-macro-rx"></block> 数组</block>
+  <block id="954e95e0241c7b3a74f9c6a194795355" category="admonition">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="51ab6f075e7b9b2d3276f61c0b11b186" category="inline-link-macro-rx"></block>。您可以使用<block ref="2132cae62c1d77dfa3dd7c3447c77cf5" prefix=" " category="inline-code"></block> <block ref="e5fb14b37e1fdc8a835f7ed4e33c1c63" category="inline-link-macro-rx"></block>。</block>
+  <block id="f2803c84f404a81af41a23542245cebc" category="paragraph"><block ref="f2803c84f404a81af41a23542245cebc" category="inline-link-macro-rx"></block></block>
+  <block id="2896bd9b7f534d42f996fc5910e2ad40" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block> 数组</block>
+  <block id="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block></block>
+  <block id="62bad8a6f2407b7cf1f98abe9ada3dae" category="admonition">使用API后、必须重新启动管理节点。</block>
+  <block id="1e924e133c06d37b8d10cb78b719f4ce" category="paragraph"><block ref="1e924e133c06d37b8d10cb78b719f4ce" category="inline-link-macro-rx"></block></block>
 </blocks>

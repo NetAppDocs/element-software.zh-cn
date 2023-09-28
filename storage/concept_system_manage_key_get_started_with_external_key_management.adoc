@@ -13,9 +13,6 @@ summary: 外部密钥管理（ EKM ）可与集群外外部密钥服务器（ EK
 [role="lead"]
 外部密钥管理（ External Key Management ， EKM ）可与集群外外部密钥服务器（ External Key Server ， EKS ）结合使用，提供安全身份验证密钥（ Authentication Key ， AK ）管理。在这种情况下，可以使用这些 AK 锁定和解锁自加密驱动器（ SED ） link:../concepts/concept_solidfire_concepts_security.html["空闲加密"] 已在集群上启用。EKS 可以安全地生成和存储 AK 。集群利用密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）（ OASIS 定义的标准协议）与 EKS 进行通信。
 
-
-NOTE: SolidFire 企业 SDS 集群只能使用空闲软件加密。
-
 * link:task_system_manage_key_set_up_external_key_management.html["设置外部管理"]
 * link:task_system_manage_rekey_software_ear_master_key.html["重新设置 REST 主密钥的软件加密密钥"]
 * link:concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys["恢复不可访问或无效的身份验证密钥"]

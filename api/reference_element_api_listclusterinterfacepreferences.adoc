@@ -14,9 +14,6 @@ summary: 通过 ListClusterInterfacePreference 方法，与运行 Element 软件
 使用 `ListClusterInterfacePreference` 方法，与运行 Element 软件的存储集群集成的系统可以列出存储在系统上的现有集群接口首选项。此方法供内部使用。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == Parameters
 

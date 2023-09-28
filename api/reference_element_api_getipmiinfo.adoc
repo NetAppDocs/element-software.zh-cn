@@ -14,9 +14,6 @@ summary: 您可以使用 GetIpmiInfo 方法显示系统监控的节点风扇，�
 您可以使用 `GetIpmiInfo` 方法显示系统监控的节点风扇，进气和排气温度以及电源的传感器（对象）的详细报告。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == Parameters
 

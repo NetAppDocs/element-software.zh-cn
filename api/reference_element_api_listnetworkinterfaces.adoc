@@ -14,9 +14,6 @@ summary: 您可以使用 ListNetworkInterfaces 方法列出有关节点上每个
 您可以使用 `ListNetworkInterfaces` 方法列出有关节点上每个网络接口的信息。此 API 方法适用于单个节点；访问单个节点需要用户 ID 和密码身份验证。但是，如果在方法调用中为参数 force 指定了值 true ，则可以在集群上使用此方法。如果在集群上使用此参数，则会列出所有接口。
 
 
-NOTE: SolidFire 企业 SDS 不支持此方法。如果在 SolidFire ESDS 系统上使用此方法，则此方法将返回错误。
-
-
 
 == 参数
 

@@ -1,16 +1,7 @@
----
-permalink: storage/reference_post_deploy_change_default_ssl_certificate.html 
-sidebar: sidebar 
-keywords: ssl certificate, SSL, private key, self-signed, cluster, nodes, user-defined certificate, API, change default certificate, certificate, Element API 
-summary: 您可以使用 NetApp Element API 更改集群中存储节点的默认 SSL 证书和专用密钥。 
----
-= 更改 Element 软件的默认 SSL 证书
+= 了解更多信息
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
-[role="lead"]
 您可以使用 NetApp Element API 更改集群中存储节点的默认 SSL 证书和专用密钥。
 
 创建 NetApp Element 软件集群时，集群会创建一个唯一的自签名安全套接字层（ SSL ）证书和专用密钥，用于通过 Element UI ，每节点 UI 或 API 进行所有 HTTPS 通信。Element 软件支持自签名证书以及由可信证书颁发机构（ CA ）颁发和验证的证书。

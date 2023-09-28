@@ -65,7 +65,7 @@ idpConfigInfo
  a| 
 有关第三方身份提供程序（ IdP ）配置的信息。
  a| 
-link:reference_element_api_idpconfiginfo.md#GUID-7DAF8B5D-7803-417F-822B-F5B1A4E3EA93["idpConfigInfo"]
+link:reference_element_api_idpconfiginfo.html["idpConfigInfo"]
 
 |===
 

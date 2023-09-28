@@ -39,6 +39,6 @@ IMPORTANT: 如果删除驱动器会导致存储空间不足，无法迁移数据
 * xref:task_troubleshoot_remove_mdss_drives.adoc[删除 MDSS 驱动器]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2844771["更换 SolidFire 存储节点的驱动器"]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2846859["更换 H600S 系列存储节点的驱动器"]
-* link:hardware/concept_h410s_h610s_info.html["H410S 和 H610S 硬件信息"]
-* link:hardware/concept_sfseries_info.html["SF 系列硬件信息"]
+* link:../hardware/concept_h410s_h610s_info.html["H410S 和 H610S 硬件信息"]
+* link:../hardware/concept_sfseries_info.html["SF 系列硬件信息"]
 

@@ -34,7 +34,7 @@ summary: 您可以使用 GetProtectionDomainLayout 方法返回集群的所有�
  a| 
 节点列表，每个节点及其关联的保护域。
  a| 
-JSON 列表 link:reference_element_api_nodeprotectiondomains.md#GUID-3750B3B8-6A66-402F-85F1-E828005084BB["nodeProtectionDomains"] 对象。
+JSON 列表 link:reference_element_api_nodeprotectiondomains.html["nodeProtectionDomains"] 对象。
 
 |===
 

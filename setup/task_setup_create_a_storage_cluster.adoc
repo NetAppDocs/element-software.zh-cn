@@ -23,7 +23,7 @@ summary: 您可以在配置完所有单个节点后创建存储集群。创建�
 
 [IMPORTANT]
 ====
-如果要启用集群范围的 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["空闲软件加密"] 对于SolidFire 全闪存存储集群、您必须在创建集群期间执行此操作。从Element 12.5开始、您必须在创建集群期间在创建集群UI中启用空闲软件加密。对于Element 12.3.x及更早版本、必须使用创建集群 link:../api/reference_element_api_createcluster.html["CreateCluster"] API方法并将enableSoftwareEncryptionAtRest参数更改为`true`。默认情况下， SolidFire ESDS 集群会启用空闲软件加密。对于SolidFire 全闪存存储集群和SolidFire ESDS集群、在集群上启用空闲软件加密后、无法将其禁用。您可以 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["启用和禁用"] 创建集群后的空闲时基于硬件的加密。
+如果要启用集群范围的 link:../concepts/concept_solidfire_concepts_security.html#encryption-at-rest-software["空闲软件加密"] 对于SolidFire 全闪存存储集群、您必须在创建集群期间执行此操作。从Element 12.5开始、您必须在创建集群期间在创建集群UI中启用空闲软件加密。对于Element 12.3.x及更早版本、必须使用创建集群 link:../api/reference_element_api_createcluster.html["CreateCluster"] API方法、并将EnleSoftwarePedionAtRest参数更改为 `true`。在集群上启用空闲软件加密后、将无法禁用它。您可以 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["启用和禁用"] 创建集群后的空闲时基于硬件的加密。
 
 ====
 [NOTE]

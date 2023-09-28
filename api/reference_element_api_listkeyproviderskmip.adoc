@@ -77,7 +77,7 @@ kmipKeyProviders
  a| 
 已创建的 KMIP 密钥提供程序的列表。
  a| 
-link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"] 数组
+link:reference_element_api_keyproviderkmip.html["KeyProviderKmip"] 数组
 
 |===
 

@@ -42,7 +42,7 @@ keywords: netapp, mnode api, management node api, rest api
 
 * link:task_mnode_edit_vcenter_assets.html["查看或编辑现有控制器资产"]
 * link:task_mnode_manage_storage_cluster_assets.html["创建和管理存储集群资产"]
-* link:hccstorage/task-hcc-collectlogs.html#use-the-rest-api-to-collect-netapp-hci-logs["使用 REST API 收集 Element 系统日志"]
+* link:../hccstorage/task-hcc-collectlogs.html#use-the-rest-api-to-collect-netapp-hci-logs["使用 REST API 收集 Element 系统日志"]
 * link:task_mnode_api_find_mgmt_svcs_version.html["验证管理节点操作系统和服务版本"]
 * link:task_mnode_logs.html["从管理服务获取日志"]
 

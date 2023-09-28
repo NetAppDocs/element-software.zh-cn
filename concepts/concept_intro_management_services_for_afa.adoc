@@ -13,7 +13,7 @@ summary: 管理服务可为 SolidFire 全闪存存储提供集中式和扩展式
 [role="lead"]
 从 Element 11.3 版开始， * 管理服务 * 托管在上 link:../concepts/concept_intro_management_node.html["管理节点"]，可以在主要版本之外更快地更新选定的软件服务。
 
-管理服务可为 SolidFire 全闪存存储提供集中式和扩展式管理功能。这些服务包括 link:..concepts/concept_intro_solidfire_software_interfaces.html#netapp-element-plug-in-for-vcenter-server["NetApp Hybrid Cloud Control"]， Active IQ 系统遥测，日志记录和服务更新以及适用于 vCenter 的 Element 插件的 QoSSIOC 服务。
+管理服务可为 SolidFire 全闪存存储提供集中式和扩展式管理功能。这些服务包括 link:../concepts/concept_intro_solidfire_software_interfaces.html#netapp-element-plug-in-for-vcenter-server["NetApp Hybrid Cloud Control"]， Active IQ 系统遥测，日志记录和服务更新以及适用于 vCenter 的 Element 插件的 QoSSIOC 服务。
 
 
-TIP: 了解更多信息 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服务版本"]。
+TIP: 了解更多信息 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服务版本"^]。

@@ -52,7 +52,7 @@ kmipKeyProvider
  a| 
 一个对象，其中包含有关新创建的密钥提供程序的详细信息。
  a| 
-link:reference_element_api_keyproviderkmip.md#["KeyProviderKmip"]
+link:reference_element_api_keyproviderkmip.html["KeyProviderKmip"]
 
 |===
 

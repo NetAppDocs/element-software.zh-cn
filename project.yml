@@ -6,7 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr
+  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: SolidFire 和Element软件12.5及更高版本文档
@@ -28,7 +28,6 @@ sidebar:
       url: "/storage/reference_prereq_network_port_requirements.html"
   - section: try
   - section: hardware
-  - section: esds
   - section: setup
   - section: storage
   - section: hccstorage
@@ -81,18 +80,6 @@ homepage:
       url: https://docs.netapp.com/us-en/solidfire-active-iq/
     - title: 使用管理节点
       url: "/mnode/task_mnode_work_overview.html"
-  - title: 安装和使用 SolidFire 企业 SDS
-    links:
-    - title: SolidFire ESDS 概述
-      url: "/esds/concept_get_started_esds.html"
-    - title: 快速入门
-      url: https://docs.netapp.com/us-en/element-software/media/SDS_Quick_Start_Guide.pdf
-    - title: 安装要求
-      url: "/esds/concept_esds_prerequisite_tasks.html"
-    - title: 管理存储
-      url: "/esds/reference_esds_element_links.html"
-    - title: 维护 SolidFire ESDS
-      url: "/esds/concept_esds_maintain.html"
   - title: 使用集成工具（需要登录）
     links:
     - title: Element 命令行界面

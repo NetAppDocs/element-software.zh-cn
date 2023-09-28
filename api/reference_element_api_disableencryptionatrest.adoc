@@ -14,7 +14,7 @@ summary: 您可以使用 DisableEncryptionAtRest 方法删除先前使用 Enable
 您可以使用 `DisableEncryptionAtRest` 方法删除先前使用 `EnableEncryptionAtRest` 方法应用于集群的加密。此禁用方法是异步的，会在禁用加密之前返回响应。您可以使用 `GetClusterInfo` 方法轮询系统以查看此过程何时完成。
 
 
-TIP: 要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 link:../api/reference_element_api_getclusterinfo["获取集群信息方法"^]。您可以使用 `GetSoftwareEncryptionAtRestInfo` link:../api/reference_element_api_getsoftwareencryptionatrestinfo["获取集群用于对空闲数据进行加密的信息的方法"^]。
+TIP: 要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 link:../api/reference_element_api_getclusterinfo.html["获取集群信息方法"^]。您可以使用 `GetSoftwareEncryptionAtRestInfo` link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["获取集群用于对空闲数据进行加密的信息的方法"^]。
 
 
 NOTE: 您不能使用此方法禁用空闲软件加密。要禁用空闲软件加密，您需要 link:reference_element_api_createcluster.html["创建新集群："] 禁用空闲软件加密。

@@ -102,5 +102,5 @@ Date
 == 了解更多信息
 
 * xref:reference_monitor_cluster_fault_codes.adoc[集群故障代码]
-* link:api/index.html["使用 Element API 管理存储"]
+* link:../api/index.html["使用 Element API 管理存储"]
 
