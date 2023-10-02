@@ -11379,7 +11379,6 @@
   <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5引入了改进的存储节点访问、增强的自定义保护域易管理性、新增和改进的集群故障和事件、增强的创建集群UI功能、增强的安全性以及使用Ansible的自动升级。</block>
   <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">SolidFire 存储节点支持的存储固件版本</block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">《NetApp Element 软件12.7发行说明》</block>
-  <block id="3e51721b09445e45502532be5e6096fc" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block> _new_</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter插件4.10发行说明</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
@@ -11481,8 +11480,6 @@
   <block id="1e35767408ad5bd29ecc61c301c556ef" category="list-text">从适用于vCenter Server 5.0的Element插件开始、此插件JSON文件的自定义URL。</block>
   <block id="b9d11c83e937a9ece9e8b7051bc68606" category="admonition">如果您使用的是HTTP或HTTPS服务器(非公开站点)或已修改JSON文件名或网络设置、则可以选择*自定义URL*自定义URL。有关自定义 URL 的其他配置步骤，请参见适用于 vCenter Server 的 Element 插件文档，了解有关修改内部（非公开站点） HTTP 服务器的 vCenter 属性的信息。</block>
   <block id="ba85baaa049f62983a89ac7da1647abd" category="list-text">对于适用于vCenter Server 4.10或更早版本的Element插件、此插件ZIP的自定义URL。</block>
-  <block id="3c4718429a8a2991d56e6e719c1942df" category="image-alt">描述了成功升级或安装Element插件5.10或更高版本后的插件扩展点</block>
-  <block id="85406fb94df2ff523b7477f229b1c9c8" category="image-alt">描述了成功升级或安装Element插件4.10或更早版本之后的插件扩展点</block>
   <block id="93c82fa50530ab1db18373f37f38e453" category="inline-link-macro">管理服务2.22.7通知(适用于VMware vCenter Server 5.0.37的NetApp Element 插件)</block>
   <block id="d471727ba1fb423986701d5307906d08" category="list-text">验证插件扩展点是否显示在vSphere Web Client的*快捷方式*选项卡和侧面板中。</block>
   <block id="78d33ed700a31bfed5ec712d766def44" category="paragraph">存储节点基板管理控制器(BMC)/智能平台管理接口(IPMI) H410和H600系列</block>
@@ -11968,7 +11965,6 @@
   <block id="b87a13e71152d8db28c0e317617e683c" category="section-title">SolidFire 部署</block>
   <block id="4195434d2c036cf973c32bdb4ac19828" category="paragraph">使用NetApp提供并与NetApp Element 软件集成的存储节点。</block>
   <block id="54db42757b5d75d2f660dc70f35850cf" category="inline-link">《vCenter插件5.1发行说明》</block>
-  <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _new_</block>
   <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
   <block id="a35c2c2e602b46918d896beca9bdff98" category="inline-link">存储固件捆绑包2.175.0发行说明</block>
   <block id="148d031a2764f3cbbb70b4cb00ae67a0" category="list-text"><block ref="386fd72128f804329f22ad31b9e25673" category="inline-link-rx"></block> _new_</block>
@@ -11989,7 +11985,6 @@
   <block id="3196b7dfc407df76dfe72528882d792a" category="list-text"><block ref="3196b7dfc407df76dfe72528882d792a" category="inline-link-macro-rx"></block></block>
   <block id="ea52eab386a36623963eee64d8468c76" category="admonition">管理服务2.22.7包括适用于vCenter Server 5.0的Element插件、该插件包含远程插件。如果您使用Element插件、则应升级到管理服务2.22.7或更高版本、以符合取消对本地插件支持的VMware指令。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">此升级操作步骤包括以下升级情形：</block>
-  <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">您正在升级到适用于vCenter Server 5.1或5.0的Element插件。</block>
   <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">您要升级到8.0或7.0 HTML5 vSphere Web Client。</block>
   <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">从适用于vCenter Server 4.x的Element插件升级到5.x时、由于无法将数据从vCenter实例复制到远程插件、因此已配置此插件的集群将丢失。您必须将集群重新添加到远程插件。这是从本地插件升级到远程插件时的一次性活动。</block>
   <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">适用于vCenter Server 5.x的Element插件的vCenter插件注册页面：</block>
@@ -12013,4 +12008,13 @@
   <block id="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block></block>
   <block id="62bad8a6f2407b7cf1f98abe9ada3dae" category="admonition">使用API后、必须重新启动管理节点。</block>
   <block id="1e924e133c06d37b8d10cb78b719f4ce" category="paragraph"><block ref="1e924e133c06d37b8d10cb78b719f4ce" category="inline-link-macro-rx"></block></block>
+  <block id="939f531b35412529043c2c302552fa24" category="list-text"><block ref="939f531b35412529043c2c302552fa24" category="inline-link-rx"></block></block>
+  <block id="ce397f79b5032c3e327db3efe5a6048a" category="inline-link">vCenter插件5.2发行说明</block>
+  <block id="4718467fa890cd0dcf159b3d461cedbe" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block> _new_</block>
+  <block id="410ecb079e286058eeb2bc6b56d9379c" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block></block>
+  <block id="faf6c38631911f7840c3498b4ec9f746" category="inline-link-macro">管理服务2.24.40通知(适用于VMware vCenter Server 5.2.12的NetApp Element插件)</block>
+  <block id="db3a980db6ffcc2055052c6c4a453020" category="list-text"><block ref="db3a980db6ffcc2055052c6c4a453020" category="inline-link-macro-rx"></block></block>
+  <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">您正在升级到适用于vCenter Server 5.2、5.1或5.0的Element插件。</block>
+  <block id="c9c6a2f6fa07c1f8c580586914c37e79" category="image-alt">描述了成功升级或安装Element插件5.1或更高版本后的插件扩展点</block>
+  <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">描述了成功升级或安装Element插件4.10或更早版本后的插件扩展点</block>
 </blocks>
