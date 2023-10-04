@@ -3941,7 +3941,6 @@
   <block id="d54ce9de9df77c579775a7b6b1a4bdc0" category="paragraph">3260</block>
   <block id="b714fec4d7287a9e6dfc31da8638ac8b" category="paragraph">客户端 iSCSI 通信</block>
   <block id="980b3703717b76269490b885f315bb88" category="paragraph">存储节点 SIP</block>
-  <block id="43638993383f845bcd8925bd4e266bc9" category="paragraph">sfsupport.solidfire.com</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="paragraph">22.</block>
   <block id="54ea06f86e263d9bc3ed3b50598bbf94" category="paragraph">反向 SSH 通道以访问支持</block>
   <block id="07823917bf5da074b0e463b5eb9a35b1" category="paragraph">存储节点 MIP</block>
@@ -3951,7 +3950,6 @@
   <block id="b20a6c801c401908aa3c96f370665e05" category="paragraph">DNS 查找</block>
   <block id="c203d8a151612acf12457e4d67635a95" category="paragraph">442</block>
   <block id="3576cff8b205debb58711ff360f51ffd" category="paragraph">通过 UI 和 API 访问存储节点和 Element 软件升级</block>
-  <block id="00a55ff76496c3c45ca20071f6151bfc" category="paragraph">monitoring.solidfire.com</block>
   <block id="6ac181854a8b48c5ac6018a305f6ae7c" category="paragraph">存储集群向 Active IQ 报告</block>
   <block id="0c29e1667ad297897573438219b3e1c6" category="paragraph">repo.netapp.com</block>
   <block id="43416d1cebc089588a77207470ee9f35" category="paragraph">可访问安装 / 更新内部部署所需的组件。</block>
@@ -7670,7 +7668,6 @@
   <block id="11e18bb72465b19d35f1a1fb2d9a5ccc" category="paragraph">自作业开始以来的秒数。</block>
   <block id="1ddcb92ade31c8fbd370001f9b29a7d9" category="paragraph">格式。</block>
   <block id="e553196c9c6aca88c9d5001211caacb9" category="paragraph">批量卷操作的格式。可能值：</block>
-  <block id="2b98a4ad988a18c42682f388901f2672" category="list-text">已压缩</block>
   <block id="8e5f3adee38c8fccc13c1f3be0143796" category="list-text">原生</block>
   <block id="7a5bc9d962882cb35fcea421f3f78bd9" category="paragraph">批量卷会话创建的唯一密钥。</block>
   <block id="4405decce4419ff5443fb20a6d7efbb6" category="paragraph">操作报告的已完成百分比。</block>
@@ -11466,7 +11463,6 @@
   <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">使用适用于vCenter Server 4.x的Element插件升级到VMware vCenter Server 7.0 Update 3时、此插件无法部署。要使用Spring Framework 4解决此问题描述 、请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">对于已注册适用于VMware vCenter Server的NetApp Element 插件的现有vSphere环境、您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter插件5.0或更高版本</block>
-  <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">适用于vCenter 5.0及更高版本的Element插件与vCenter Server 6.7和6.5不兼容。</block>
   <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter插件4.10或更早版本</block>
   <block id="524f8acc9609df7272285a19757aefcb" category="list-text">您要升级到适用于vCenter Server 4.10、4.9、4.8、4.7、4.6的Element插件、 4.5或4.4。</block>
   <block id="c0e80cf197d1adf76fef790848a92f8f" category="list-text">此插件与适用于VMware vCenter Server 4.x的VMware vCenter Server 8.0 Element插件不兼容</block>
@@ -12017,4 +12013,8 @@
   <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">您正在升级到适用于vCenter Server 5.2、5.1或5.0的Element插件。</block>
   <block id="c9c6a2f6fa07c1f8c580586914c37e79" category="image-alt">描述了成功升级或安装Element插件5.1或更高版本后的插件扩展点</block>
   <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">描述了成功升级或安装Element插件4.10或更早版本后的插件扩展点</block>
+  <block id="1583ff28675a9e24a50fa1079a5dd985" category="paragraph"><block ref="43638993383f845bcd8925bd4e266bc9" prefix="" category="inline-code"></block></block>
+  <block id="86eccd8202a873aee7f9acfbe920bb59" category="paragraph"><block ref="00a55ff76496c3c45ca20071f6151bfc" prefix="" category="inline-code"></block></block>
+  <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">适用于vCenter 5.0或更高版本的Element插件与vCenter Server 6.7和6.5不兼容。</block>
+  <block id="dfd25ff244b001be7beece9729517779" category="list-text">未压缩</block>
 </blocks>

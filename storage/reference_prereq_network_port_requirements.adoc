@@ -67,7 +67,7 @@ iSCSI 客户端
  a| 
 管理节点
  a| 
-sfsupport.solidfire.com
+`sfsupport.solidfire.com`
  a| 
 22.
  a| 
@@ -122,7 +122,7 @@ DNS 查找
  a| 
 管理节点
  a| 
-monitoring.solidfire.com
+`monitoring.solidfire.com`
  a| 
 443.
  a| 

@@ -31,7 +31,7 @@ NOTE: 管理服务2.22.7包括适用于vCenter Server 5.0的Element插件、该�
 * 您要升级到8.0或7.0 HTML5 vSphere Web Client。
 +
 
-IMPORTANT: 适用于vCenter 5.0及更高版本的Element插件与vCenter Server 6.7和6.5不兼容。
+IMPORTANT: 适用于vCenter 5.0或更高版本的Element插件与vCenter Server 6.7和6.5不兼容。
 
 
 
