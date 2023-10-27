@@ -3922,7 +3922,6 @@
   <block id="904ca5c0e43e80ef4466e5b37a5d4eb6" category="list-text">要将 iSCSI 启动程序添加到卷访问组，请在添加启动程序下，从 * 启动程序 * 列表中选择一个现有启动程序。</block>
   <block id="230516a4fe444ca1f997bb4f4e25375f" category="paragraph">可接受的启动程序 IQN 格式如下： iqn.yyyy-mm ，其中 y 和 m 是数字，后跟文本，文本必须仅包含数字，小写字母字符，句点（ . ），冒号（：）或短划线（ - ）。</block>
   <block id="cefa41a40ed4b981da4df6e3220b56f8" category="admonition">您可以在 * 管理 * &gt; * 卷 * 活动卷页面中找到每个卷的启动程序 IQN ，方法是单击操作图标，然后选择卷的 * 查看详细信息 * 。</block>
-  <block id="ff888c386cbf7561a41674237043ab02" category="summary">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="1f2681a91e9e795d6ebb1d5828cd1182" category="admonition">在管理节点，运行 Element 软件的节点和集群 MVIP 之间启用 ICMP 。</block>
   <block id="15a1051d03ca55ab79226f44fa683bbe" category="paragraph">下表使用了以下缩写词：</block>
   <block id="60175d30ed8f8459b2f835b923bb4ee5" category="list-text">mip ：管理 IP 地址，每节点地址</block>
@@ -12014,6 +12013,7 @@
   <block id="dfd25ff244b001be7beece9729517779" category="list-text">未压缩</block>
   <block id="54b283655ec8649a11478759bf661650" category="list-text">从Element 12.7开始提供。</block>
   <block id="909a1c829d29d09da00949e5c8b87a0e" category="sidebar">升级NetApp SolidFire全闪存存储系统</block>
-  <block id="2284948398c940fd233236412a959432" category="paragraph">您可能需要允许以下TCP和UDP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="331d6d490990c63b2cee0dc04fe2589b" category="paragraph">除非另有说明、否则所有端口均为TCP端口、并且所有TCP端口都必须支持NetApp支持服务器、管理节点和运行Element软件的节点之间的三次握手通信。例如、管理节点源上的主机通过TCP端口443与存储集群MVIP目标上的主机进行通信、而目标主机则通过任何端口与源主机进行通信。</block>
+  <block id="f814466eb9bcf561b354422b41f381f3" category="summary">您可能需要允许以下TCP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
+  <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">您可能需要允许以下TCP和UDP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
 </blocks>
