@@ -93,6 +93,6 @@ SolidFire 光纤通道节点可提供与光纤通道交换机的连接，您可�
 [discrete]
 == 了解更多信息
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 

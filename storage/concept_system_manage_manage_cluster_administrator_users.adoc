@@ -158,6 +158,6 @@ link:task_system_manage_enable_ldap_authentication.html["使用 Element 用户�
 
 * link:task_system_manage_enable_ldap_authentication.html["使用 Element 用户界面启用 LDAP 身份验证"]
 * link:concept_system_manage_manage_ldap.html["禁用 LDAP"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 

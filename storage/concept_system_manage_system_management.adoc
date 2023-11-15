@@ -23,6 +23,6 @@ summary: 您可以在 Element UI 中管理系统。其中包括启用多因素�
 
 == 有关详细信息 ...
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 

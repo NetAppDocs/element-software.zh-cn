@@ -84,5 +84,5 @@ keywords: netapp, element, cluster, volume, access
 * link:../concepts/concept_solidfire_concepts_volume_access_groups.html["了解卷访问组"]
 * link:task-hcc-manage-initiators.html#add-initiators-to-a-volume-access-group["将启动程序添加到卷访问组"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 

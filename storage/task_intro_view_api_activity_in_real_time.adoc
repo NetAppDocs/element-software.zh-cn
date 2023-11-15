@@ -38,6 +38,6 @@ Element 系统使用 NetApp Element API 作为其特性和功能的基础。使�
 == 了解更多信息
 
 * link:../api/index.html["使用 Element API 管理存储"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 

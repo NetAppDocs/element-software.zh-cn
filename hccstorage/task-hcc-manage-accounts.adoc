@@ -198,5 +198,5 @@ NOTE: 与管理服务关联的永久性卷会在安装或升级期间分配给�
 * link:../concepts/concept_solidfire_concepts_accounts_and_permissions.html["了解客户信息"]
 * link:../storage/task_data_manage_accounts_work_with_accounts_task.html["使用CHAP处理帐户"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 

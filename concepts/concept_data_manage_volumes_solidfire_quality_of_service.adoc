@@ -103,5 +103,5 @@ NOTE: 要使用 QoS 策略，选定集群必须为 Element 10.0 或更高版本�
 
 == 了解更多信息
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 

@@ -198,5 +198,5 @@ NOTE: 当节点处于维护模式时，它不接受新数据。因此，禁用�
 == 了解更多信息
 
 * link:../mnode/task_mnode_manage_storage_cluster_assets.html["创建和管理存储集群资产"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 

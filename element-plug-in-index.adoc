@@ -20,5 +20,5 @@ summary: '使用适用于vCenter Server的NetApp Element 插件(VMware vSphere�
 
 == 有关详细信息 ...
 
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 

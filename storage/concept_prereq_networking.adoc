@@ -19,6 +19,6 @@ SolidFire 系统的网络设置由交换机和端口要求组成。这些功能�
 
 * link:../storage/concept_prereq_switch_configuration_for_solidfire_clusters.html["运行 Element 软件的集群的交换机配置"]
 * link:../storage/reference_prereq_network_port_requirements.html["网络端口要求"]
-* https://www.netapp.com/data-storage/solidfire/documentation["SolidFire 和 Element 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 
