@@ -49,6 +49,6 @@ Element 存储集群中的多租户网络允许在不同逻辑网络上的多个
 * xref:reference_element_api_modifyvirtualnetwork.adoc[ModifyVirtualNetwork]
 * xref:reference_element_api_listvirtualnetworks.adoc[ListVirtualNetworks]
 * xref:reference_element_api_removevirtualnetwork.adoc[RemoveVirtualNetwork]
-* https://www.netapp.com/data-storage/solidfire/documentation/["NetApp SolidFire 资源页面"^]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
 

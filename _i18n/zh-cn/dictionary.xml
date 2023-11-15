@@ -98,8 +98,6 @@
   <block id="639250aa42b00f3259c7b54c6e791327" category="inline-link-macro">设置概述</block>
   <block id="596fbab33a290bc71265a19ce2f71069" category="list-text">在 "* 创建新集群 "* 窗口中输入所需信息。请参见 <block ref="5aab4a84ae29c50955c68eacf78e03bf" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="9c83e144e5481ac6766f4055e566594d" category="section-title">了解更多信息</block>
-  <block id="1c1519037df87ff4dd08fe6e757ff03f" category="inline-link">NetApp SolidFire 资源页面</block>
-  <block id="abc0c04174a58217258765895984ed4e" category="list-text"><block ref="abc0c04174a58217258765895984ed4e" category="inline-link-rx"></block></block>
   <block id="89e3bb4cf03209dcb9c85e2455cde9c3" category="inline-link">早期版本的 NetApp SolidFire 和 Element 产品的文档</block>
   <block id="461166164223a1234073a2c9d388d33a" category="list-text"><block ref="461166164223a1234073a2c9d388d33a" category="inline-link-rx"></block></block>
   <block id="fca4290295aaf1b9d0112b739644d884" category="summary">如果 CPU 出现故障， Radian 卡出现问题，出现其他主板问题或未打开电源，则应更换存储节点。这些说明适用于 H410S 存储节点。</block>
@@ -12016,4 +12014,6 @@
   <block id="331d6d490990c63b2cee0dc04fe2589b" category="paragraph">除非另有说明、否则所有端口均为TCP端口、并且所有TCP端口都必须支持NetApp支持服务器、管理节点和运行Element软件的节点之间的三次握手通信。例如、管理节点源上的主机通过TCP端口443与存储集群MVIP目标上的主机进行通信、而目标主机则通过任何端口与源主机进行通信。</block>
   <block id="f814466eb9bcf561b354422b41f381f3" category="summary">您可能需要允许以下TCP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">您可能需要允许以下TCP和UDP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
+  <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
+  <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>演示文稿]</block>
 </blocks>
