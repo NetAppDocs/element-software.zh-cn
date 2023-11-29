@@ -80,7 +80,7 @@ NetApp Bug Online工具中列出了已解决的问题和已知问题。您可以
 
 == 要素12.5.
 
-Element 12.5引入了改进的存储节点访问、增强的自定义保护域易管理性、新增和改进的集群故障和事件、增强的创建集群UI功能、增强的安全性以及使用Ansible的自动升级。
+Element 12.5改进了存储节点访问、增强了自定义保护域易管理性、新增并改进了集群故障和事件、增强了创建集群UI功能以及增强的安全性。
 
 
 
@@ -124,11 +124,6 @@ Element 12.5还包括120多个CVE安全漏洞修复。
 
 
 
-=== 使用Ansible自动升级
-
-在Element 12.5中、您可以使用Ansible对整个存储集群执行滚动升级、从而自动执行Element软件升级工作流。要开始使用，请导航到 https://github.com/NetApp-Automation["NetApp Ansible存储库"^] 在GitHub上下载`NAR_solidfire_SDS_upgrade`角色和文档。
-
-[discrete]
 == 了解更多信息
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["《 NetApp 混合云控制和管理服务发行说明》"^]

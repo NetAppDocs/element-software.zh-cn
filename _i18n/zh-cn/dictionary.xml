@@ -447,8 +447,6 @@
   <block id="8c62a8856619185a333cdec6cc116a79" category="list-text"><block ref="8c62a8856619185a333cdec6cc116a79" category="inline-link-rx"></block></block>
   <block id="a881a0468246e93ae6e2c5bccd78758e" category="inline-link">适用于 vCenter Server 的 NetApp Element 插件</block>
   <block id="7cf5cffc3745b8348cdcfb1c3d0d472f" category="list-text"><block ref="7cf5cffc3745b8348cdcfb1c3d0d472f" category="inline-link-rx"></block></block>
-  <block id="631923a687ff82d68973d99b95597b47" category="inline-link">SolidFire 和 Element 资源页面</block>
-  <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
   <block id="89313b3a84c80a382af0b25d8870fc39" category="inline-link">SolidFire 和 Element 软件文档</block>
   <block id="4a3ccd34d84d8d5dcf651bea4f92dde6" category="list-text"><block ref="4a3ccd34d84d8d5dcf651bea4f92dde6" category="inline-link-rx"></block></block>
   <block id="feaf808951dafefbf9943700efdb4315" category="inline-link">适用于先前版本的 SolidFire 和 Element 软件文档中心</block>
@@ -11205,9 +11203,6 @@
   <block id="58fd31fc4a0bf37df4c2efec74cb0f7e" category="paragraph">Element 12.5包括存储节点的固件更新。 <block ref="0f65f1a5cbc84d01ee508f9ae603c679" category="inline-link-macro-rx"></block>。</block>
   <block id="9ae00a023d80f22436817ac40b5dd0e7" category="section-title">增强的安全性</block>
   <block id="7d22dc13d9443150a483a9d1bcc19811" category="paragraph">Element 12.5还包括120多个CVE安全漏洞修复。</block>
-  <block id="0a4e6eb7e62cc9a7906b041a5daa8314" category="section-title">使用Ansible自动升级</block>
-  <block id="0f3c5d5fd99d58a3db49e358303b6aa1" category="inline-link">NetApp Ansible存储库</block>
-  <block id="05815c7d362a881d86d68bc8cfd44ab2" category="paragraph">在Element 12.5中、您可以使用Ansible对整个存储集群执行滚动升级、从而自动执行Element软件升级工作流。要开始使用，请导航到<block ref="6657f4ab7e7e02ccfa155e58f184d7f8" category="inline-link-rx"></block> 在GitHub上下载`NAR_solidfire_SDS_upgrade`角色和文档。</block>
   <block id="3e295da75c8e1147efb1d40b92bc67b1" category="section-title">NetApp Bug Online包含已解决的问题和已知问题</block>
   <block id="dacb18e4909785f6226e9cc6bcd62371" category="paragraph">NetApp Bug Online工具中列出了已解决的问题和已知问题。您可以在中浏览有关Element软件和其他产品的这些问题<block ref="6d0e40d4342f9a7ae6016dd8d3efbf3e" category="inline-link-rx"></block>。</block>
   <block id="875455659aea2dfd3f63e40de150b31c" category="inline-link">《NetApp Element 软件12.5发行说明》</block>
@@ -11368,7 +11363,6 @@
   <block id="3fc5b3acd1d3708d5cfa3ba7d0a8162e" category="admonition">Element 12.7版本中没有新的固件更新。但是、根据存储节点上运行的当前固件包、在升级到Element 12.7时会安装累积更新。</block>
   <block id="5c74c03fbdeea06c0e7eb5afe2d9f9bb" category="paragraph">在SolidFire Active IQ UI中、您现在可以导航到"QoS管理"页面以查看集群的建议和节点限制信息。此外、集群信息板现在还会显示总快照计数。其他近期增强功能包括为节点上的主卷添加主节点和二级节点信息以及过去30分钟的平均吞吐量、IOPS和平均延迟。</block>
   <block id="ab55ac9ce7363800677511aee7a9ab12" category="paragraph">现在、您可以从Element软件文档访问SolidFire Active IQ 文档。 <block ref="cf42182e91c5e79a875ebd341c48eb99" category="inline-link-macro-rx"></block>。</block>
-  <block id="4dae8e1e6549980e8397eec97af1ecaf" category="paragraph">Element 12.5引入了改进的存储节点访问、增强的自定义保护域易管理性、新增和改进的集群故障和事件、增强的创建集群UI功能、增强的安全性以及使用Ansible的自动升级。</block>
   <block id="b1eb510dd705c0d83386b5f196686d5a" category="inline-link">SolidFire 存储节点支持的存储固件版本</block>
   <block id="1dea56720635d200a6c7b3a71efca6ab" category="inline-link">《NetApp Element 软件12.7发行说明》</block>
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
@@ -12016,4 +12010,5 @@
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">您可能需要允许以下TCP和UDP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
   <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>演示文稿]</block>
+  <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5改进了存储节点访问、增强了自定义保护域易管理性、新增并改进了集群故障和事件、增强了创建集群UI功能以及增强的安全性。</block>
 </blocks>
