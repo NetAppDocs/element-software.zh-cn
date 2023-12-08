@@ -12011,4 +12011,6 @@
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
   <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>演示文稿]</block>
   <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5改进了存储节点访问、增强了自定义保护域易管理性、新增并改进了集群故障和事件、增强了创建集群UI功能以及增强的安全性。</block>
+  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由于升级软件包上传错误、SolidFire和HCI升级无法启动</block>
+  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
 </blocks>
