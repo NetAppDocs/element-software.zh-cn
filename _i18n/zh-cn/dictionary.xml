@@ -7414,7 +7414,6 @@
   <block id="aa99a21f3b7c684faec35b0864a483a0" category="doc">GetRawStats</block>
   <block id="a73bc9a5a0fae468432503496b62e312" category="paragraph">NetApp 工程人员使用 `GetRawStats` API 方法测试新功能。从 `GetRawStats` 返回的数据不会进行记录，并且会频繁更改，并且无法保证其准确性。您不应使用 `GetRawStats` 来收集性能数据或与运行 Element 软件的存储集群进行任何其他管理集成。</block>
   <block id="bfef1931306d50981d842714565c9b06" category="summary">您可以使用 RemoveDrives 方法主动删除集群中的驱动器。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。在将驱动器从集群中删除之前，驱动器上的所有数据都会被删除并迁移到集群中的其他驱动器。</block>
-  <block id="33630e5c702ad56f9ed10ea465cbabf6" category="paragraph">您可以使用 `RemoveDrives` 方法主动删除集群中的驱动器。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。在将驱动器从集群中删除之前，驱动器上的所有数据都会被删除并迁移到集群中的其他驱动器。</block>
   <block id="745626a72e187a7dc7eed9e7290f03a6" category="paragraph">`RemoveDrives` 是一种异步方法。根据要删除的驱动器的总容量，迁移所有数据可能需要几分钟的时间。</block>
   <block id="49b469905f5d598fc884c7182e9cc230" category="paragraph">删除多个驱动器时，请使用一个 `RemoveDrives` 方法调用，而不是使用多个单独的方法，每个方法使用一个驱动器。这样可以减少为均匀稳定集群上的存储负载而必须进行的数据平衡量。</block>
   <block id="9984e92da1025580d4728a15b5cb89d8" category="paragraph">您也可以使用 `RemoveDrives` 删除状态为 "Failed" 的驱动器。删除状态为 " 故障 " 的驱动器时，该驱动器不会返回到 " 可用 " 或 "`活动` " 状态。此驱动器不可在集群中使用。</block>
@@ -12013,4 +12012,5 @@
   <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5改进了存储节点访问、增强了自定义保护域易管理性、新增并改进了集群故障和事件、增强了创建集群UI功能以及增强的安全性。</block>
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由于升级软件包上传错误、SolidFire和HCI升级无法启动</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
+  <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主动删除集群中的驱动器的方法。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在集群中的其他节点上创建块数据的第三个副本、并等待同步完成、然后再将驱动器移至"可用"列表。"Available (可用)"列表中的驱动器将从系统中完全删除、并且没有正在运行的服务或活动数据。</block>
 </blocks>
