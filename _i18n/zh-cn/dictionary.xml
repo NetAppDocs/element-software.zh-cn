@@ -10278,23 +10278,6 @@
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">早期版本</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
-  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">安装维护硬件</block>
-  <block id="f54101aa6702c025c4f74ec5ada7bae3" category="sidebar">管理存储</block>
-  <block id="bfd78ad06fdbded1393f2f3c6bce1cdb" category="sidebar">使用 Element 软件 UI</block>
-  <block id="1d5eadee8dd359da135590100c405785" category="sidebar">使用 Element 软件 API</block>
-  <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">使用适用于 vCenter Server 的 Element 插件</block>
-  <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">使用集成工具（需要登录）</block>
-  <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">Element SDK （ Java ， .NET ， Python ）</block>
-  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">解决方案</block>
-  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">NetApp 解决方案</block>
-  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">演示教程</block>
-  <block id="a3306879b2c1b46c3e6e86a4c65d51bc" category="sidebar">NetApp 大学 SolidFire 培训（需要登录）</block>
-  <block id="ab1cf947f75ab4705fc3fcf084c10a01" category="sidebar">如何安装和扩展 NetApp SolidFire 集群（视频）</block>
-  <block id="483b680d14606131d42c44dbca0bb4f2" category="sidebar">NetApp SolidFire 安装（视频）</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
-  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp 社区</block>
-  <block id="213686afc3803be7caa09348765467fe" category="sidebar">如何获取帮助</block>
   <block id="f3ef8562bc46b3fd5d64fc8a88bab6f9" category="sidebar">安装 H410S 和 H610S 节点</block>
   <block id="9282ad3aef7e124a3b2b9c7eab52b33d" category="sidebar">架构和组件</block>
   <block id="53b2a4dd7325c2d7325f310860b0b55f" category="sidebar">用于多因素身份验证的追加信息</block>
@@ -10886,7 +10869,6 @@
   <block id="7a3f74a4a439a353dac2b787f53f28d8" category="list-text">要进行进一步分析，请使用适用于 vCenter Server 的 NetApp Element 插件查看存储性能。</block>
   <block id="b126b8c3ea62d4e05e486584c3e429e7" category="inline-link">适用于 vCenter Server 的 NetApp Element 插件中显示的性能</block>
   <block id="7dcce07eba67a810f05f6b72a7bc76ce" category="paragraph"><block ref="997f70b8f13e5cba5fd5507c9ab58179" category="inline-link-rx"></block>。</block>
-  <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">使用 NetApp Hybrid Cloud Control</block>
   <block id="2e531c00d20727b760f0fefbb4c65c82" category="sidebar">在 NetApp Hybrid Cloud Control 的 Nodes 页面上查看您的清单</block>
   <block id="767682e703a28fefdc1067e1fcf04243" category="sidebar">使用 NetApp Hybrid Cloud Control 监控存储集群上的卷</block>
   <block id="527b815afb2a497e0a4e73961b0b2530" category="paragraph"><block ref="4887d593881fb1b00f6709ff486d4e82" category="inline-link-macro-rx"></block> 不会影响集群的性能或效率。如果使用 Element API 或 Element UI 从集群配置中删除启用了加密的驱动器或节点，则这些驱动器将禁用空闲加密。删除驱动器后，可以使用 `SecureEraseDrives` API 方法安全擦除驱动器。如果强制删除物理驱动器或节点，则数据仍受集群范围密码和驱动器的各个加密密钥的保护。</block>
@@ -11327,14 +11309,12 @@
   <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：</block>
   <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">使用SolidFire Active IQ 监控存储</block>
   <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">使用NetApp SolidFire Active IQ 监控存储</block>
-  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ</block>
   <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">使用适用于vCenter Server的NetApp Element 插件(VMware vSphere界面的插件)管理和监控运行NetApp Element 软件的存储集群。</block>
   <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">适用于vCenter Server的NetApp Element 插件为VMware vSphere界面提供了一个插件、可用于管理和监控运行NetApp Element 软件的存储集群。</block>
   <block id="da3eb0bd8c882a21931739ac39ce915a" category="inline-link">适用于 vCenter Server 的 NetApp Element 插件文档</block>
   <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">要了解适用于vCenter Server的Element插件、请参见<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
   <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。</block>
   <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">使用适用于vCenter Server的Element插件管理存储</block>
-  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列存储节点支持的固件版本</block>
   <block id="376acf421ab362eb5e198d9dbe0ef1f4" category="summary">从Element 12.5开始、您可以在管理节点上启用sfreadonly用户帐户、以便在没有NetApp支持帮助的情况下对系统组件进行故障排除。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。</block>
   <block id="03977ca9014ed49925d2fb260f5a2b6f" category="paragraph">根据您的Element软件版本、不支持以下SF系列存储节点：</block>
   <block id="b1ac6637f319a778daa4b7822c1798b5" category="paragraph">在升级到Element 12.5或更高版本期间、如果节点先前存在故障BMC、或者在升级期间节点的BMC出现故障、则不会生成`BmcSelfTestFailed`故障。如果在升级期间自检失败的BMC会在整个集群完成升级后出现问题描述 A `BmcSelfTestFailed`警告故障。</block>
@@ -11701,7 +11681,6 @@
   <block id="a869730ec0116e46159bbff419d5cc17" category="list-text"><block ref="2a166fd6597dedff39b139e3ce76f82b" category="inline-link-rx"></block></block>
   <block id="bec35bb5875234837858b1ccdd637fca" category="inline-link">Element 11.1文档和更早版本</block>
   <block id="724428733630050ab3140356839e2af1" category="list-text"><block ref="724428733630050ab3140356839e2af1" category="inline-link-rx"></block></block>
-  <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2及更早版本的文档</block>
   <block id="cf459a4467554220e1dd70f653a8cf43" category="list-text">对于管理服务 2.18 及更高版本，默认情况下，管理节点上的远程访问功能处于禁用状态。要启用远程访问功能，请参见<block ref="9a48ac510c43b73ee86c7be400c5025f" category="inline-link-rx"></block>。</block>
   <block id="c9621c561bd7ae37e9a7ee7358f4f792" category="list-text">（可选）禁用<block ref="2ec0ebe378e4a0f1bbb70e72c3942887" category="inline-link-rx"></block> 再次重申。</block>
   <block id="c046b7ab02983ed5bb8f1b18c0c2c477" category="summary">从NetApp 支持站点 下载特定于您的Element软件版本的RTFI ISO映像、并使用可启动且可安装的介质进行部署。</block>
@@ -12013,4 +11992,5 @@
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由于升级软件包上传错误、SolidFire和HCI升级无法启动</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主动删除集群中的驱动器的方法。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在集群中的其他节点上创建块数据的第三个副本、并等待同步完成、然后再将驱动器移至"可用"列表。"Available (可用)"列表中的驱动器将从系统中完全删除、并且没有正在运行的服务或活动数据。</block>
+  <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">存储节点支持的固件版本</block>
 </blocks>
