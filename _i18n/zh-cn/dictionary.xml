@@ -863,21 +863,6 @@
   <block id="01ef303b25d3281cb33cd13014af3226" category="paragraph">VASA 提供程序在 Element 软件中作为集群主节点的一部分运行。集群主节点是一种高可用性服务，可根据需要故障转移到集群中的任何节点。如果集群主节点进行故障转移， VASA 提供程序将随之移动，以确保 VASA 提供程序的高可用性。所有配置和存储管理任务都使用 VASA 提供程序，该提供程序可处理 Element 集群上所需的任何更改。</block>
   <block id="583fdc81420816faa41efaba6c508421" category="inline-link-macro">NetApp 软件下载</block>
   <block id="5709d7946cfaf2f2c04b03412834dd73" category="admonition">如果您已在 vCenter 中注册 VASA Provider ，则最多可通过 VASA 升级修补程序为 10 个 vCenter 提供 VASA 支持。要安装，请按照 VASA39 清单中的说明进行操作，然后从下载 .tar.gz 文件 <block ref="4efcd63a00c3a5e6a73880f24942f8e7" category="inline-link-macro-rx"></block> 站点NetApp Element VASA 提供程序使用 NetApp 证书。使用此修补程序时， vCenter 会未经修改地使用此证书来支持多个 vCenter 以供 VASA 和 VVol 使用。请勿修改证书。VASA 不支持自定义 SSL 证书。</block>
-  <block id="a824a1096e208a26b70c360a0da8b545" category="summary">您可以在 NetApp SolidFire 文档中心以及 NetApp SolidFire 资源页面上提供的资源中了解有关 SolidFire 存储系统相关任务的更多信息。</block>
-  <block id="4bb047f8c530785002e490ef17fa725e" category="doc">从何处查找追加信息</block>
-  <block id="34515669e219305dec5f0b81dbef8b1e" category="paragraph">在文档中心中，您还可以找到有关硬件安装和维护，其他可用内容资源，已知问题和已解决问题的链接以及最新发行说明的信息。</block>
-  <block id="662a5ad8c6ae651da9220e35d3f16a18" category="list-text">* NetApp SolidFire 资源页面 *</block>
-  <block id="c39c68328651c80dceb0f36d050a7109" category="paragraph">提供有关 Element 软件的资源，包括视频内容和技术报告的链接。</block>
-  <block id="4b3e0d4570a278a1af3fe11601c01d47" category="inline-link">SolidFire 全闪存存储资源</block>
-  <block id="c16fe39e6b501b8347fb1dd55ba312c6" category="paragraph"><block ref="c16fe39e6b501b8347fb1dd55ba312c6" category="inline-link-rx"></block></block>
-  <block id="4a9c1435e759b5c6dd543fceea09ea44" category="list-text">* NetApp SolidFire 文档中心 *</block>
-  <block id="028b8f4057634cf2f3954305a74dc779" category="paragraph">提供有关硬件安装和维护的信息，可用的其他内容资源，指向已知问题和已解决问题的链接以及最新发行说明。</block>
-  <block id="99876372740307113d18bf0a8023fbbf" category="inline-link">SolidFire 和 Element 11.3 文档中心</block>
-  <block id="248dd8632f43e9f4128a672b09c790eb" category="paragraph"><block ref="248dd8632f43e9f4128a672b09c790eb" category="inline-link-rx"></block></block>
-  <block id="3bb4917b4da580a3845e4291809fe942" category="list-text">* https://kb.netapp.com/app/answers/answer_view/a_id/1000941/loc/en_US[NetApp SolidFire Element 已知问题 ]*</block>
-  <block id="e4245eba0095196ee103a1119cfa1d87" category="paragraph">提供当前版本和早期版本 Element 软件中的已知问题列表。</block>
-  <block id="454d39955c29112d76b1bd6072c2dcdf" category="list-text">* https://kb.netapp.com/app/answers/answer_view/a_id/1000933[NetApp SolidFire Element 已解决问题 ]*</block>
-  <block id="e864e5177c5d98d5b8250b49810e1194" category="paragraph">提供当前版本和早期版本 Element 软件中已解决问题的列表。</block>
   <block id="e3431cec49d508e83a805ec32337258e" category="summary">SolidFire 全闪存存储系统由分散的硬件组件（驱动器和节点）组成，这些组件组合成一个存储资源池。此统一集群可作为一个存储系统提供给外部客户端使用，并使用 NetApp Element 软件进行管理。</block>
   <block id="085f7e689b8e475dec027b3304d79e3b" category="paragraph">SolidFire 全闪存存储系统由分散的硬件组件（驱动器和节点）组成，这些组件组合到一个存储资源池中。此统一集群可作为一个存储系统提供给外部客户端使用，并使用 NetApp Element 软件进行管理。</block>
   <block id="cc9f01b8135bb47e45039b7bd9f446f5" category="paragraph">您可以使用 Element 接口， API 或其他管理工具监控 SolidFire 集群存储容量和性能，并管理多租户基础架构中的存储活动。</block>
@@ -2863,23 +2848,6 @@
   <block id="8857f9727dda96e7b5e43e56c678ffed" category="paragraph">存储系统会报告每个固态驱动器（ SSD ）上可用于写入和擦除数据的近似耗损量。如果某个驱动器消耗了 5% 的设计写入和擦除周期，则会报告剩余耗损率为 95% 。系统不会自动刷新驱动器损耗信息；您可以刷新或关闭并重新加载此页面以刷新此信息。</block>
   <block id="509a3e7c96f28c8cf61138c9b6171802" category="paragraph">驱动器的类型。类型可以是块或元数据。</block>
   <block id="19bb9f2d83ebc22f2e8931ebc34f6110" category="paragraph">您已在 Element UI 中为集群启用 VVol 功能。</block>
-  <block id="501b98bdb184166086d9ae33cf2360ff" category="summary">您可以从这两种产品的文档中心和资源页面中提供的资源了解有关使用和管理 NetApp HCI 和 SolidFire 全闪存存储的更多信息。</block>
-  <block id="7431f7a183aa9cfe2910bb761205485d" category="doc">从何处查找产品文档和其他信息</block>
-  <block id="1c276549c628a78c4d4d38a454a53866" category="paragraph">在文档中心中，您还可以找到有关硬件安装和维护的信息，其他可用内容资源，已知问题和已解决问题的链接以及最新发行说明。在资源页面上，您可以找到指向数据表，技术报告，白皮书和视频的链接。</block>
-  <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">NetApp HCI 文档</block>
-  <block id="69407a8ea5033d98b78f2bec8e414753" category="list-text"><block ref="69407a8ea5033d98b78f2bec8e414753" category="inline-link-rx"></block></block>
-  <block id="630892b254754255bd524cb995b1de04" category="inline-link">SolidFire 和 Element 12.2 文档中心</block>
-  <block id="b96d5059df63546231a635bb7440dbd4" category="list-text"><block ref="b96d5059df63546231a635bb7440dbd4" category="inline-link-rx"></block></block>
-  <block id="2a967aa6bf55d76db9823f4232586589" category="inline-link">SolidFire 和 Element 12.0 文档中心</block>
-  <block id="a19510c49f28b61467b9471fae60229b" category="list-text"><block ref="a19510c49f28b61467b9471fae60229b" category="inline-link-rx"></block></block>
-  <block id="69695b2e4c70193011d7b658125e9906" category="inline-link">SolidFire 和 Element 11.8 文档中心</block>
-  <block id="6eda8130d86d6c395a1615f6ff53c74a" category="list-text"><block ref="6eda8130d86d6c395a1615f6ff53c74a" category="inline-link-rx"></block></block>
-  <block id="cad93526483d33b276e378bc7f3deaea" category="inline-link">SolidFire 和 Element 11.7 文档中心</block>
-  <block id="a4cba27ccc43d00c0bd0c00a74974b97" category="list-text"><block ref="a4cba27ccc43d00c0bd0c00a74974b97" category="inline-link-rx"></block></block>
-  <block id="275b3db58911d0480b2a907dde87b422" category="inline-link">SolidFire 和 Element 11.5 文档中心</block>
-  <block id="319d00f06f0a5e8e99d071d51fe10259" category="list-text"><block ref="319d00f06f0a5e8e99d071d51fe10259" category="inline-link-rx"></block></block>
-  <block id="de71a625454de99f599dff258c53dbb8" category="inline-link">SolidFire 资源页面</block>
-  <block id="b81ee69dc01cdd048b45d27758827feb" category="list-text"><block ref="b81ee69dc01cdd048b45d27758827feb" category="inline-link-rx"></block></block>
   <block id="6b00f4ea873dda14e0bc6f9fdd1ae714" category="summary">您可以按照以下步骤操作，并使用列出的 Element API 方法设置外部密钥管理功能。</block>
   <block id="7ab27d3dd83b6b8225315ec0073d2ab7" category="doc">设置外部密钥管理</block>
   <block id="cc2834c4066fdeff02f1c068769a0fba" category="list-text">如果要将外部密钥管理与空闲软件加密结合使用，则已使用启用空闲软件加密 <block ref="3302765abfbbe930557ebd20cdd8d8e8" category="inline-link-macro-rx"></block> 方法。</block>
@@ -8180,7 +8148,6 @@
   <block id="5ffce89810db963197914e99fa41565d" category="paragraph">可执行脚本的名称。如果未指定脚本名称，则需要使用密钥和 URL 来访问 Element 存储节点。脚本将在主节点上运行，并且密钥和 URL 将返回到脚本中，以便可以联系本地 Web 服务器。</block>
   <block id="9b479e5e1be54276f914b4a04af63458" category="paragraph">脚本参数</block>
   <block id="2101debca20755a4bf2792764750c8ad" category="paragraph">要传递到脚本的 JSON 参数。</block>
-  <block id="42c56c6f739ec986c961aefb154dcc6b" category="paragraph">批量卷作业的 JSON 属性。</block>
   <block id="b8e143ae62ce68a06396ba6b5fc3f89a" category="paragraph">要检查其完成情况的异步进程的 ID 。</block>
   <block id="1cf67e15c0f74187a6558d9af0d0b5c3" category="paragraph">唯一标识会话的不透明密钥。</block>
   <block id="e543376d12681b92fd3f5e3641b94d3c" category="paragraph">用于访问节点 Web 服务器的 URL 。</block>
@@ -11993,4 +11960,5 @@
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主动删除集群中的驱动器的方法。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在集群中的其他节点上创建块数据的第三个副本、并等待同步完成、然后再将驱动器移至"可用"列表。"Available (可用)"列表中的驱动器将从系统中完全删除、并且没有正在运行的服务或活动数据。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">存储节点支持的固件版本</block>
+  <block id="3f42de2af50c4c43d7f7e9e5b724d437" category="paragraph">名称 - 值对列表，采用 JSON 对象格式。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
 </blocks>
