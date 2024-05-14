@@ -84,7 +84,7 @@ JSON 对象
  a| 
 属性
  a| 
-名称 - 值对列表，采用 JSON 对象格式。 link:reference_element_api_attributes.html["了解更多信息。"]。
+名称-值对列表、采用JSON对象格式。 link:reference_element_api_attributes.html["了解更多信息。"]。
  a| 
 JSON 对象
  a| 

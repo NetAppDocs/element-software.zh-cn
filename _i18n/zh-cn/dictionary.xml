@@ -11960,5 +11960,9 @@
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主动删除集群中的驱动器的方法。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在集群中的其他节点上创建块数据的第三个副本、并等待同步完成、然后再将驱动器移至"可用"列表。"Available (可用)"列表中的驱动器将从系统中完全删除、并且没有正在运行的服务或活动数据。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">存储节点支持的固件版本</block>
-  <block id="3f42de2af50c4c43d7f7e9e5b724d437" category="paragraph">名称 - 值对列表，采用 JSON 对象格式。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
+  <block id="13917e4f5287cba6dc668dc1de806783" category="paragraph">名称-值对列表、采用JSON对象格式。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
+  <block id="327364f278eb177dcf0494e22c2aa941" category="paragraph">块升级</block>
+  <block id="33e725144c3cab7870356fc4239ecbe1" category="paragraph">此故障会阻止升级。可能值：</block>
+  <block id="590996f1f1dee9768eb0e638aefabed3" category="list-text">true：故障阻止升级。</block>
+  <block id="79acae02e5f768f11852bf8bab56f648" category="list-text">false：故障不会阻止升级。</block>
 </blocks>

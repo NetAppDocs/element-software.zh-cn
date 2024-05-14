@@ -24,6 +24,19 @@ fault 对象包含有关在集群中检测到的故障的信息。`ListClusterFa
 
 
  a| 
+块升级
+ a| 
+此故障会阻止升级。可能值：
+
+* true：故障阻止升级。
+* false：故障不会阻止升级。
+
+ a| 
+boolean
+
+
+
+ a| 
 clusterFaultID
  a| 
 与每个集群故障关联的唯一 ID 。
