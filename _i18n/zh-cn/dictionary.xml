@@ -11968,4 +11968,26 @@
   <block id="bfb37ae14420b32b4119e40e73553257" category="paragraph">插件ZIP的自定义URL。</block>
   <block id="8e0d59cc781c5557d1fdc81fdff04d8f" category="paragraph">此时将显示NetApp Element远程插件扩展点：</block>
   <block id="5770384eddfc0ac7f73f0f6242a52b50" category="paragraph">此时将显示NetApp Element配置和管理扩展点：</block>
+  <block id="518a4b6a1346e1ad096698dafab107cf" category="sidebar">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp Element软件管理这些存储资源集群。此站点包含Element软件12.5和12.7的文档。</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
+  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">安装和维护硬件</block>
+  <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列存储节点支持的固件版本</block>
+  <block id="f54101aa6702c025c4f74ec5ada7bae3" category="sidebar">管理存储</block>
+  <block id="bfd78ad06fdbded1393f2f3c6bce1cdb" category="sidebar">使用 Element 软件 UI</block>
+  <block id="ed4186f75217d239b68544e14bbe38c9" category="sidebar">使用 NetApp Hybrid Cloud Control</block>
+  <block id="1d5eadee8dd359da135590100c405785" category="sidebar">使用Element软件API</block>
+  <block id="b16427ba775ee26e7f5fa22679a4a605" category="sidebar">使用适用于 vCenter Server 的 Element 插件</block>
+  <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ</block>
+  <block id="6216a3b9e8c46cd0635bc8d3f9c8cf4f" category="sidebar">使用集成工具（需要登录）</block>
+  <block id="52e27f272b7f3c0cd5623309ba926677" category="sidebar">Element SDK （ Java ， .NET ， Python ）</block>
+  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">解决方案</block>
+  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">NetApp 解决方案</block>
+  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">演示和教程</block>
+  <block id="a3306879b2c1b46c3e6e86a4c65d51bc" category="sidebar">NetApp 大学 SolidFire 培训（需要登录）</block>
+  <block id="ab1cf947f75ab4705fc3fcf084c10a01" category="sidebar">如何安装和扩展 NetApp SolidFire 集群（视频）</block>
+  <block id="483b680d14606131d42c44dbca0bb4f2" category="sidebar">NetApp SolidFire 安装（视频）</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
+  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp 社区</block>
+  <block id="213686afc3803be7caa09348765467fe" category="sidebar">如何获取帮助</block>
+  <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2及更早版本的文档</block>
 </blocks>
