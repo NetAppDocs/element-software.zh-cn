@@ -19,12 +19,12 @@ https://www.youtube.com/embed/kerGI1ZtnZQ?rel=0["NetApp 视频：适用于 NetAp
 
 运行 NetApp Element 软件的系统支持使用 SnapMirror 功能在 NetApp ONTAP 系统中复制和还原 Snapshot 副本。使用此技术的主要原因是将 NetApp HCI 灾难恢复到 ONTAP 。端点包括 ONTAP ， ONTAP Select 和 Cloud Volumes ONTAP 。请参见 TR-4641 NetApp HCI 数据保护。
 
-http://www.netapp.com/us/media/tr-4641.pdf["NetApp 技术报告 4641 ：《 NetApp HCI 数据保护》"^]
+https://www.netapp.com/pdf.html?item=/media/17048-tr4641pdf.pdf["NetApp 技术报告 4641 ：《 NetApp HCI 数据保护》"^]
 
 
 
 == 了解更多信息
 
-* https://www.netapp.com/us/media/tr-4748.pdf["使用 NetApp HCI ， ONTAP 和融合基础架构构建 Data Fabric"^]
+* https://www.netapp.com/pdf.html?item=/media/16991-tr4748pdf.pdf["使用 NetApp HCI ， ONTAP 和融合基础架构构建 Data Fabric"^]
 * http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-sdbak/home.html["在 NetApp Element 软件和 ONTAP 之间进行复制"^]
 
