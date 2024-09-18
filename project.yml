@@ -14,7 +14,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: SolidFire 和 Element 软件文档
+  - title: SolidFire和Element软件文档12.5和12.7
     url: "/index.html"
   - title: 发行说明
     url: "/concepts/concept_rn_relatedrn_element.html"
