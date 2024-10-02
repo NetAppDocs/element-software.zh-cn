@@ -14,6 +14,7 @@ summary: 如果您未运行最新版本，可以参考先前版本的文档。
 [role="lead"]
 NetApp 支持站点 上提供了先前版本的文档。
 
+* https://docs.netapp.com/us-en/element-software-125/index.html["Element 12.5文档"^]
 * https://docs.netapp.com/us-en/element-software-123/index.html["Element 12.3.x文档"^]
 * https://mysupport.netapp.com/documentation/docweb/index.html?productID=63945&language=en-US["Element 12.2.1文档"^]
 * https://mysupport.netapp.com/documentation/docweb/index.html?productID=63593&language=en-US["Element 12.2 文档"^]

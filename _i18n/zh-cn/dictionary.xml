@@ -11964,7 +11964,6 @@
   <block id="bfb37ae14420b32b4119e40e73553257" category="paragraph">插件ZIP的自定义URL。</block>
   <block id="8e0d59cc781c5557d1fdc81fdff04d8f" category="paragraph">此时将显示NetApp Element远程插件扩展点：</block>
   <block id="5770384eddfc0ac7f73f0f6242a52b50" category="paragraph">此时将显示NetApp Element配置和管理扩展点：</block>
-  <block id="518a4b6a1346e1ad096698dafab107cf" category="sidebar">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp Element软件管理这些存储资源集群。此站点包含Element软件12.5和12.7的文档。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
   <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">安装和维护硬件</block>
   <block id="111c5671bddfca211130815e5d97e7bc" category="sidebar">NetApp H系列存储节点支持的固件版本</block>
@@ -11990,5 +11989,9 @@
   <block id="3d08f19c985682eb2a632e36184cedd2" category="paragraph"><block ref="3d08f19c985682eb2a632e36184cedd2" category="inline-link-rx"></block></block>
   <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
-  <block id="da48b15f3631c91c5b2ce7d522d3a734" category="sidebar">SolidFire和Element软件文档12.5和12.7</block>
+  <block id="30486cdfdde2444e4151845599ac5bf5" category="inline-link">Element 12.5文档</block>
+  <block id="7923ddc778825f970802562c563718d7" category="list-text"><block ref="7923ddc778825f970802562c563718d7" category="inline-link-rx"></block></block>
+  <block id="cafb4d76dc2f8321d0134957e0bf3f5d" category="sidebar">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp Element软件管理这些存储资源集群。此站点包含Element软件的文档。</block>
+  <block id="ab8cbf6e7f3310f1970fbef383696645" category="sidebar">SolidFire 和Element软件12.7文档</block>
+  <block id="f46f40c99ef0e96fdc79a2f007e1939a" category="sidebar">SolidFire和Element软件文档12.7</block>
 </blocks>

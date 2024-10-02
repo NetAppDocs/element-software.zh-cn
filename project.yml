@@ -7,14 +7,16 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: 12.5 and 12.7
+  - version-number: '12.7'
     url: "/element-software"
+  - version-number: '12.5'
+    url: "/element-software-125"
   - version-number: '12.3'
     url: "/element-software-123"
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: SolidFire和Element软件文档12.5和12.7
+  - title: SolidFire和Element软件文档12.7
     url: "/index.html"
   - title: 发行说明
     url: "/concepts/concept_rn_relatedrn_element.html"
