@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_create_snapmirror_relationship.html 
 sidebar: sidebar 
-keywords: relationships, create, snapmirror, ui 
+keywords: element, relationships, create, snapmirror, ui 
 summary: 您必须在NetApp Element UI中创建SnapMirror关系。 
 ---
 = 创建 SnapMirror 关系

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replication, snapmirror, data protection 
 summary: 您可以从NetApp Element UI中的数据保护选项卡创建SnapMirror关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。 
 ---
-= 在 Element 和 ONTAP 集群之间使用 SnapMirror 复制
+= 在Element和ONTAP集群之间使用SnapMirror复制(Element UI)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -26,5 +26,5 @@ https://www.netapp.com/pdf.html?item=/media/17048-tr4641pdf.pdf["NetApp 技术�
 == 了解更多信息
 
 * https://www.netapp.com/pdf.html?item=/media/16991-tr4748pdf.pdf["使用 NetApp HCI ， ONTAP 和融合基础架构构建 Data Fabric"^]
-* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-sdbak/home.html["在 NetApp Element 软件和 ONTAP 之间进行复制"^]
+* link:element-replication-index.html["NetApp Element软件和ONTAP之间的复制(ONTAP命令行界面)"]
 

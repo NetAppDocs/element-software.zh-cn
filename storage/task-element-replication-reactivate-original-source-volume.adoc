@@ -1,0 +1,163 @@
+---
+permalink: storage/task-element-replication-reactivate-original-source-volume.html 
+sidebar: sidebar 
+keywords: ontap,cli, reactivate, original, source, volume 
+summary: 当您不再需要从目标提供数据时，可以在源卷和目标卷之间重新建立初始数据保护关系。 
+---
+= 重新激活原始源卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当您不再需要从目标提供数据时，可以在源卷和目标卷之间重新建立初始数据保护关系。
+
+.关于此任务
+以下操作步骤假定原始源卷中的基线完好无损。如果基线不完好，则必须在执行操作步骤之前创建并初始化提供数据的卷与原始源卷之间的关系。
+
+您必须以的形式指定Element源路径 `<hostip:>/lun/<name>`，其中“`LUN`”是实际字符串“`LUN`”，是Element卷的名称。 `name`
+
+从ONTAP 9。4开始、重新激活Element源后、系统会自动复制在从ONTAP目标提供数据时创建的LUN的Snapshot副本。
+
+复制规则如下：
+
+* 仅支持 iSCSI LUN 。
+* 不能将多个 LUN 从 ONTAP 卷复制到 Element 卷。
+* 您不能将 LUN 从 ONTAP 卷复制到多个 Element 卷。
+
+
+.步骤
+. 删除原始数据保护关系：
++
+`snapmirror delete -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+以下示例将删除IP地址10.0.0.11处的初始源卷与上提供数据的卷 `volA_dst`之间的 `svm_backup`关系 `0005`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror delete -source-path 10.0.0.11:/lun/0005 -policy MirrorLatest -destination-path svm_backup:volA_dst
+----
+. 反转原始数据保护关系：
++
+`snapmirror resync -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+虽然重新同步不需要基线传输，但它可能非常耗时。您可能希望在非高峰时段运行重新同步。
+
++
+以下示例将反转IP地址10.0.0.11处的初始源卷与上提供数据的卷 `volA_dst`之间的 `svm_backup`关系 `0005`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror resync -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005 -policy MirrorLatest
+----
+. 更新已反转的关系：
++
+`snapmirror update -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+[NOTE]
+====
+如果源和目标上不存在通用Snapshot副本、则命令将失败。使用 `snapmirror initialize` 重新初始化此关系。
+
+====
++
+以下示例将更新上提供数据的卷与IP地址10.0.0.11处的 `svm_backup`初始源卷 `0005`之间的关系 `volA_dst`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror update -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 停止已反转关系的计划传输：
++
+`snapmirror quiesce -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+以下示例将停止上提供数据的卷与IP地址10.0.0.11处的 `svm_backup`初始源卷 `0005`之间的计划传输 `volA_dst`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror quiesce -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 停止已反转关系的正在进行的传输：
++
+`snapmirror abort -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+以下示例将停止上提供数据的卷与IP地址10.0.0.11处的 `svm_backup`初始源卷 `0005`之间正在进行的传输 `volA_dst`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror abort -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 中断已反转的关系：
++
+`snapmirror break -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name>`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+以下示例将中断上 `svm_backup`提供数据的卷与IP地址10.0.0.11处的初始源卷 `0005`之间的关系 `volA_dst`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror break -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005
+----
+. 删除已反转的数据保护关系：
++
+`snapmirror delete -source-path <SVM:volume>|<cluster://SVM/volume> -destination-path <hostip:>/lun/<name> -policy <policy>`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+以下示例将删除IP地址10.0.0.11处的初始源卷与上提供数据的卷 `volA_dst`之间的 `svm_backup`已反转关系 `0005`：
+
++
+[listing]
+----
+cluster_src::> snapmirror delete -source-path svm_backup:volA_dst -destination-path 10.0.0.11:/lun/0005 -policy MirrorLatest
+----
+. 重新建立原始数据保护关系：
++
+`snapmirror resync -source-path <hostip:>/lun/<name> -destination-path <SVM:volume>|<cluster://SVM/volume>`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+以下示例将在IP地址10.0.0.11处的初始源卷和上的 `svm_backup`初始目标卷 `volA_dst`之间重新建立关系 `0005`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror resync -source-path 10.0.0.11:/lun/0005 -destination-path svm_backup:volA_dst
+----
+
+
+.完成后
+使用 `snapmirror show`命令验证是否已创建SnapMirror关系。有关完整的命令语法，请参见手册页。

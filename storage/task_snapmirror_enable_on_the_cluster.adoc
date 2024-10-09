@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_enable_on_the_cluster.html 
 sidebar: sidebar 
-keywords: snapmirror, enable, cluster, ui, manually enable 
+keywords: element, snapmirror, enable, cluster, ui, manually enable 
 summary: 您必须通过NetApp Element UI在集群级别手动启用SnapMirror功能。默认情况下，系统随附的 SnapMirror 功能处于禁用状态，并且在新安装或升级过程中不会自动启用此功能。启用 SnapMirror 功能是一次性配置任务。 
 ---
 = 在集群上启用 SnapMirror

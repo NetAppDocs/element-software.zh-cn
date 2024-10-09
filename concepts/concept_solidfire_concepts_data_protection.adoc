@@ -105,7 +105,7 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 从 Element 10.3 和 ONTAP 9.4 系统开始，您可以在功能有限的特定使用情形下将源自 ONTAP 的卷复制到 Element 卷。
 
-有关详细信息，请参见 ONTAP 文档。
+有关详细信息，请参见 link:../storage/element-replication-index.html["NetApp Element软件和ONTAP之间的复制(ONTAP命令行界面)"]。
 
 
 

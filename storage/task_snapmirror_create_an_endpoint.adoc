@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_create_an_endpoint.html 
 sidebar: sidebar 
-keywords: endpoints, create, snapmirror, ui 
+keywords: element, endpoints, create, snapmirror, ui 
 summary: 您必须先在NetApp Element UI中创建SnapMirror端点、然后才能创建关系。 
 ---
 = 创建 SnapMirror 端点

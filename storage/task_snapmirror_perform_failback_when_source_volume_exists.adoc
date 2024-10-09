@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_perform_failback_when_source_volume_exists.html 
 sidebar: sidebar 
-keywords: failback, perform, source volume, snapmirror, ui 
+keywords: element, ui, failback, perform, source volume, snapmirror 
 summary: 您可以使用NetApp Element UI重新同步原始源卷并执行故障恢复。此操作步骤适用场景情形下，原始源卷仍存在。 
 ---
 = 如果源卷仍存在，请执行故障恢复

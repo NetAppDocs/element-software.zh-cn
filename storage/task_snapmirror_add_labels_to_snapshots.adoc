@@ -1,7 +1,7 @@
 ---
 permalink: storage/task_snapmirror_add_labels_to_snapshots.html 
 sidebar: sidebar 
-keywords: snapmirror labels, add labels to snapshots, specify retention policies, group snapshots 
+keywords: element, ui, snapmirror, labels, retention, policies, group, snapshots 
 summary: SnapMirror 标签用于指定 SnapMirror 端点上的快照保留策略。您可以为快照和组快照添加标签。 
 ---
 = 向快照添加 SnapMirror 标签

@@ -1,0 +1,108 @@
+---
+permalink: storage/task-element-replication-define-rule-policy.html 
+sidebar: sidebar 
+keywords: ontap, cli, define, rule, policy 
+summary: '对于策略类型为"镜像 存储"的自定义策略、必须至少定义一个规则来确定初始化和更新期间传输的Snapshot副本。您还可以为默认策略定义 " 镜像 - 存储 " 策略类型的规则。' 
+---
+= 为策略定义规则
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于`策略类型为"`mirrirr-vault"的自定义策略、您必须至少定义一个规则来确定初始化和更新期间传输的Snapshot副本。您还可以为 `mirror-vault` 策略类型的默认策略定义规则。
+
+.关于此任务
+策略类型为`mirrirr-vor`的每个策略都必须具有一条规则、用于指定要复制的Snapshot副本。例如、规则"`bi-monthlyn`"指示只应复制分配了SnapMirror标签"`bi-monthlyn`"的Snapshot副本。您可以在配置Element Snapshot副本时分配SnapMirror标签。
+
+每个策略类型都与一个或多个系统定义的规则相关联。指定策略类型时，系统会自动为策略分配这些规则。下表显示了系统定义的规则。
+
+|===
+
+
+| 系统定义的规则 | 用于策略类型 | 结果 
+
+
+ a| 
+sm_created
+ a| 
+异步镜像，镜像存储
+ a| 
+SnapMirror创建的Snapshot副本会在初始化和更新时传输。
+
+
+
+ a| 
+每天
+ a| 
+镜像存储
+ a| 
+初始化和更新时会传输源上SnapMirror标签为`daily`的新Snapshot副本。
+
+
+
+ a| 
+每周
+ a| 
+镜像存储
+ a| 
+初始化和更新时会传输源上SnapMirror标签为"`Weekly`"的新Snapshot副本。
+
+
+
+ a| 
+每月
+ a| 
+镜像存储
+ a| 
+初始化和更新时会传输源上SnapMirror标签为`m` onh 的新Snapshot副本。
+
+|===
+您可以根据需要为默认策略或自定义策略指定其他规则。例如：
+
+* 对于默认 `MirrorAndVault`策略、您可以创建一个名为"`bi-monthly"`的规则、以匹配源上具有"`bi-monthly"` SnapMirror标签的Snapshot副本。
+* 对于策略类型为`mirrirr-vor`的自定义策略、您可以创建一个名为"`bi-Weekly`"的规则、以匹配源上具有"`bi-Weekly`" SnapMirror标签的Snapshot副本。
+
+
+.步骤
+. 为策略定义规则：
++
+`snapmirror policy add-rule -vserver _SVM_ -policy _policy_for_rule_ -snapmirror-label _snapmirror-label_ -keep _retention_count_`
+
++
+有关完整的命令语法，请参见手册页。
+
++
+以下示例将一个带有SnapMirror标签的规则添加 `bi-monthly`到默认策略中 `MirrorAndVault`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy MirrorAndVault -snapmirror-label bi-monthly -keep 6
+----
++
+以下示例将一个带有SnapMirror标签的规则添加 `bi-weekly`到自定义策略中 `my_snapvault`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy my_snapvault -snapmirror-label bi-weekly -keep 26
+----
++
+以下示例将一个带有SnapMirror标签的规则添加 `app_consistent`到自定义策略中 `Sync`：
+
++
+[listing]
+----
+cluster_dst::> snapmirror policy add-rule -vserver svm1 -policy Sync -snapmirror-label app_consistent -keep 1
+----
++
+然后、您可以从源集群复制与此SnapMirror标签匹配的Snapshot副本：
+
++
+[listing]
+----
+cluster_src::> snapshot create -vserver vs1 -volume vol1 -snapshot snapshot1 -snapmirror-label app_consistent
+----
+

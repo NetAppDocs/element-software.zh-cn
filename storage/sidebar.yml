@@ -318,7 +318,7 @@ entries:
           url: "/storage/reference_replication_volume_pairing_messages.html"
         - title: 卷配对警告
           url: "/storage/reference_replication_volume_pairing_warnings.html"
-  - title: 在 Element 和 ONTAP 集群之间使用 SnapMirror 复制
+  - title: 在Element和ONTAP集群之间使用SnapMirror复制(Element UI)
     url: "/storage/task_snapmirror_use_replication_between_element_and_ontap_clusters.html"
     entries:
     - title: SnapMirror 概述
@@ -356,6 +356,50 @@ entries:
           url: "/storage/task_snapmirror_performing_failback_when_source_volume_no_longer_exists.html"
       - title: 执行从 ONTAP 到 Element 的传输或一次性迁移
         url: "/storage/task_snapmirror_transfer_or_one_time_migration_from_ontap_to_element.html"
+  - title: NetApp Element软件和ONTAP之间的复制(ONTAP命令行界面)
+    entries:
+    - title: 概述
+      url: "/storage/element-replication-index.html"
+    - title: 工作流
+      url: "/storage/concept-element-replication-workflow.html"
+    - title: 在 Element 软件中启用 SnapMirror
+      entries:
+      - title: 在 Element 集群上启用 SnapMirror
+        url: "/storage/task-element-replication-enable-snapmirror-cluster.html"
+      - title: 在 Element 源卷上启用 SnapMirror
+        url: "/storage/task-element-replication-enable-snapmirror-source-volume.html"
+      - title: 创建 SnapMirror 端点
+        url: "/storage/task-element-replication-create-snapmirror-endpoint.html"
+    - title: 配置复制关系
+      entries:
+      - title: 创建复制作业计划
+        url: "/storage/task-element-replication-create-replication-job-schedule.html"
+      - title: 自定义复制策略
+        entries:
+        - title: 创建自定义复制策略
+          url: "/storage/concept-element-replication-create-custom-replication-policy.html"
+        - title: 为策略定义规则
+          url: "/storage/task-element-replication-define-rule-policy.html"
+      - title: 创建复制关系
+        entries:
+        - title: 创建从 Element 源到 ONTAP 目标的关系
+          url: "/storage/task-element-replication-create-replication-relationship.html"
+        - title: 创建从 ONTAP 源到 Element 目标的关系
+          url: "/storage/task-element-replication-create-relationship-element-destination.html"
+      - title: 初始化复制关系
+        url: "/storage/task-element-replication-initialize-replication-relationship.html"
+    - title: 从 SnapMirror 灾难恢复目标卷提供数据
+      entries:
+      - title: 使目标卷可写
+        url: "/storage/task-element-replication-make-destination-volume-writeable.html"
+      - title: 配置用于数据访问的目标卷
+        url: "/storage/concept-element-replication-configure-destination-volume-data-access.html"
+      - title: 重新激活原始源卷
+        url: "/storage/task-element-replication-reactivate-original-source-volume.html"
+    - title: 手动更新复制关系
+      url: "/storage/task-element-replication-update-replication-relationship-manually.html"
+    - title: 重新同步复制关系
+      url: "/storage/task-element-replication-resynchronize-data-protection-relationship.html"
   - title: 备份和还原卷
     url: "/storage/task_data_protection_back_up_and_restore_volumes.html"
     entries:
