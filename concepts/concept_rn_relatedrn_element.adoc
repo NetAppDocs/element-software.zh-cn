@@ -66,7 +66,8 @@ NOTE: 系统将提示您使用 NetApp 支持凭据登录。
 
 == 存储固件
 
-* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.175.0.html["存储固件捆绑包2.175.0发行说明"^] _new_
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.182.0.html["存储固件捆绑包2.182.0发行说明"^]_new_
+* https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.175.0.html["存储固件捆绑包2.175.0发行说明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.164.0.html["存储固件包2.164.0发行说明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.150.html["存储固件包2.150发行说明"^]
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.146.html["存储固件包 2.146 发行说明"^]
