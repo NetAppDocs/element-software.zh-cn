@@ -251,6 +251,8 @@ entries:
     url: "/api/reference_element_api_createclusterinterfacepreference.html"
   - title: DeleteClusterInterfacePreference
     url: "/api/reference_element_api_deleteclusterinterfacepreference.html"
+  - title: DisableFeature
+    url: "/api/reference_element_api_disablefeature.html"
   - title: EnableFeature
     url: "/api/reference_element_api_enablefeature.html"
   - title: GetClusterCapacity

@@ -133,6 +133,4 @@ Element 演示节点以尽力服务为基础提供。要获得支持，请将您
 
 == 了解更多信息
 
-* https://www.netapp.com/data-storage/solidfire/documentation/["SolidFire 全闪存存储资源页面"^]
-* https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element 演示节点下载页面（需要登录）"^]
-
+https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element 演示节点下载页面（需要登录）"^]

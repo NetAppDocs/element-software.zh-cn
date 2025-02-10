@@ -18,7 +18,7 @@ keywords: netapp, element, management node, mnode, storage, install
 
 此手动过程适用于未使用 NetApp 部署引擎安装管理节点的 SolidFire 全闪存存储管理员。
 
-.您需要的内容
+.开始之前
 * 您的集群版本运行的是 NetApp Element 软件 11.3 或更高版本。
 * 您的安装使用 IPv4 。管理节点 11.3 不支持 IPv6 。
 +
@@ -53,21 +53,15 @@ NOTE: 如果需要 IPv6 支持，可以使用管理节点 11.1 。
 .关于此任务
 Element 12.2 管理节点是一种可选升级。现有部署不需要此功能。
 
-在遵循此操作步骤之前，您应了解 link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["永久性卷"] 以及是否要使用它们。永久性卷是可选的，但建议在虚拟机（ VM ）丢失时用于管理节点配置数据恢复。
-
-.步骤
-. <<下载 ISO 或 OVA 并部署虚拟机>>
-. <<create_mnode_admin,创建管理节点管理员并配置网络>>
-. <<配置时间同步>>
-. <<设置管理节点>>
-. <<配置控制器资产>>
+在执行此过程之前、您应了解link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["永久性卷"]以及是否要使用它们。永久性卷是可选的，但建议在虚拟机（ VM ）丢失时用于管理节点配置数据恢复。
 
 
 
+== 第1步：下载ISO或OVA并部署虚拟机
 
-== 下载 ISO 或 OVA 并部署虚拟机
+从NetApp支持站点下载相应的ISO或OVA并安装虚拟机。
 
-. 从下载适用于您的安装的 OVA 或 ISO link:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element 软件"^] 页面。
+. 从NetApp支持站点上的页面下载适用于您的安装的OVA或ISOlink:https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element 软件"^]。新的OVA包含更新后的SSL证书。
 +
 .. 选择 * 下载最新版本 * 并接受 EULA 。
 .. 选择要下载的管理节点映像。
@@ -111,8 +105,11 @@ NOTE: 使用映像安装管理节点可能会导致在显示启动屏幕之前�
 
 
 
-== 创建管理节点管理员并配置网络
+== 第2步：创建管理节点管理员并配置网络
 
+虚拟机安装完成后、创建管理节点管理员用户并配置管理节点网络。
+
+.步骤
 . 使用终端用户界面（ TUI ）创建管理节点管理员用户。
 +
 
@@ -139,13 +136,16 @@ NOTE: 如果需要使用额外的 NIC 来隔离存储流量，请参见有关配
 
 
 
-== 配置时间同步
+== 第3步：配置时间同步
 
-. 确保使用 NTP 在管理节点和存储集群之间同步时间：
+在设置管理节点之前、请同步管理节点和存储集群之间的时间。
+
+.步骤
+. 使用NTP验证管理节点和存储集群之间的时间是否同步：
 
 
 
-NOTE: 从 Element 12.3.1 开始，系统会自动执行子步骤（ a ）到（ e ）。对于管理节点 12.3.1 ，请继续执行 <<substep_f_install_config_time_sync,子步骤（ f ）>> 以完成时间同步配置。
+NOTE: 从Element 12.3.1开始、系统会自动执行子步骤(a)到(e)。对于管理节点12.3.1、请继续执行<<substep_f_install_config_time_sync,子步骤（ f ）>>以完成时间同步配置。
 
 . 使用 SSH 或虚拟机管理程序提供的控制台登录到管理节点。
 . 停止 NTPD ：
@@ -216,8 +216,11 @@ NOTE: 完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时
 
 
 
-== 设置管理节点
+== 第4步：设置管理节点
 
+使用命令配置管理节点 `setup-mnode`。
+
+.步骤
 . 配置并运行管理节点设置命令：
 +
 
@@ -279,8 +282,11 @@ NOTE: 为永久性卷使用与集群上任何现有帐户名称不同的唯一�
 
 
 
-== 配置控制器资产
+== 第5步：配置控制器资产
 
+找到安装ID并添加vCenter控制器资产。
+
+.步骤
 . 找到安装 ID ：
 +
 .. 从浏览器登录到管理节点 REST API UI ：
@@ -336,7 +342,8 @@ NOTE: 您应在vCenter中创建新的NetApp HCC角色以添加控制器子资产
 
 
 
-[discrete]
+
+
 == 了解更多信息
 
 * link:../concepts/concept_solidfire_concepts_volumes.html#persistent-volumes["永久性卷"]

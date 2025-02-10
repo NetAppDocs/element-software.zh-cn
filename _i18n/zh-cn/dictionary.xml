@@ -451,8 +451,6 @@
   <block id="4a3ccd34d84d8d5dcf651bea4f92dde6" category="list-text"><block ref="4a3ccd34d84d8d5dcf651bea4f92dde6" category="inline-link-rx"></block></block>
   <block id="feaf808951dafefbf9943700efdb4315" category="inline-link">适用于先前版本的 SolidFire 和 Element 软件文档中心</block>
   <block id="049adc1802f0210729234e1fe80d95e6" category="list-text"><block ref="049adc1802f0210729234e1fe80d95e6" category="inline-link-rx"></block></block>
-  <block id="c93817bbfc3fab71f5f7ca740a11c847" category="inline-link">NetApp HCI 资源页面</block>
-  <block id="bc218e71c18c2f809dffb10d3bc2a6e8" category="list-text"><block ref="bc218e71c18c2f809dffb10d3bc2a6e8" category="inline-link-rx"></block></block>
   <block id="148da2fc8997120fa9c4ae723fb03eb1" category="summary">Active IQ 是一款基于 Web 的工具，可提供持续更新的集群范围数据历史视图。您可以为特定事件，阈值或指标设置警报。通过 Active IQ ，您可以监控系统性能和容量，并随时了解集群运行状况。</block>
   <block id="c9618f4b15d53501dee68300c1517890" category="doc">SolidFire Active IQ</block>
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> 是一种基于 Web 的工具，可提供持续更新的集群范围数据历史视图。您可以为特定事件，阈值或指标设置警报。通过 SolidFire Active IQ ，您可以监控系统性能和容量，并随时了解集群运行状况。</block>
@@ -2247,7 +2245,6 @@
   <block id="026348f9f6e3dc829e365625c33c007a" category="list-text">查看节点详细信息：</block>
   <block id="8511241aabf0b5b22a6ec0f33205020a" category="list-text">* 节点 ID* ：系统为节点生成的 ID 。</block>
   <block id="11340b9f0ba088ec3cf2083a21132d99" category="list-text">* 节点名称 * ：节点的主机名。</block>
-  <block id="0ee99b520b4502ffd981cfc386b7a410" category="list-text">* 可用 4K IOPS* ：为节点配置的 IOPS 。</block>
   <block id="2e08da9f1b8a2b955bb7528232c66123" category="list-text">* 节点角色 * ：节点在集群中的角色。可能值：</block>
   <block id="5b677361708b3a9e7ae889385ded1639" category="list-text">Cluster Master ：执行集群范围管理任务并包含 MVIP 和 SVIP 的节点。</block>
   <block id="e6897c8bbde08136163ed91dd0933239" category="list-text">集合节点：加入集群的节点。根据集群大小，有 3 个或 5 个集合节点。</block>
@@ -4341,7 +4338,6 @@
   <block id="72e1f4df2e744d26601b11dcae2de156" category="inline-link-macro">配置存储网络接口控制器（ NIC ）</block>
   <block id="585629174bd7d07bea958ff023cef12f" category="admonition">如果需要使用额外的 NIC 来隔离存储流量，请参见有关配置另一个 NIC 的说明： <block ref="3a94a0bfa09a6011bad07afa39abc05f" category="inline-link-macro-rx"></block>。</block>
   <block id="2f81f1b5bf706c50ec3a59d0de214061" category="section-title">配置时间同步</block>
-  <block id="dfa921e1a8d1ecc5798d976447ec498d" category="list-text">确保使用 NTP 在管理节点和存储集群之间同步时间：</block>
   <block id="95f677ec3d6290caa67730d5209b4cc2" category="list-text">使用 SSH 或虚拟机管理程序提供的控制台登录到管理节点。</block>
   <block id="5c64c907c80a4eaf523f296d26d13989" category="list-text">停止 NTPD ：</block>
   <block id="5c6c4538d95e26d538800e50027bee98" category="list-text">编辑 NTP 配置文件 ` /etc/ntp.conf` ：</block>
@@ -4544,14 +4540,9 @@
   <block id="7e6093e52119f18464fc862a969c9f6a" category="admonition">如果需要 IPv6 支持，可以使用管理节点 11.1 。</block>
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">（使用代理服务器的管理节点 12.0 及更高版本）在配置代理服务器之前，您已将 NetApp Hybrid Cloud Control 更新为管理服务版本 2.16 。</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Element 12.2 管理节点是一种可选升级。现有部署不需要此功能。</block>
-  <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
-  <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
   <block id="12b8893b065179b6b80fdc2d448862df" category="inline-link-macro">Element 软件</block>
-  <block id="e43f2538484fde027e53efbedb634fce" category="list-text">从下载适用于您的安装的 OVA 或 ISO <block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="d8f671f04a7ff090ddfc9b80caaf4c67" category="list-text">（可选）一个可通过管理网络访问存储集群的虚拟网络接口。如果存储集群与管理节点（ eth0 ）位于不同的子网中，并且您希望使用永久性卷，请向存储子网（ eth1 ）上的虚拟机添加另一个网络接口控制器（ Network Interface Controller ， NIC ），或者确保管理网络可以路由到存储网络。</block>
-  <block id="f894cbc944582e1f10fec4bf2a0639f0" category="section-title">创建管理节点管理员并配置网络</block>
   <block id="148f57c4f729acea3c3d95b35553a056" category="list-text">为要添加的每个默认时间服务器添加一个新行。默认时间服务器必须与要在中使用的存储集群上使用的 NTP 服务器相同 <block ref="1d132a4516f2aafec8e6c256f33f26a5" category="inline-link-macro-rx"></block>。</block>
-  <block id="627bbdc5a7179606b85a5d6ccb6f65e1" category="section-title">设置管理节点</block>
   <block id="5a808c62f4f9557c4df556d6a230ba7c" category="list-text">配置并运行管理节点设置命令：</block>
   <block id="fea104dd45bc0e75d821ddd5af2b02d0" category="admonition">命令名称的缩写形式为圆括号（），可替换为全名。</block>
   <block id="3f124867257c579e7ba689baed3d4f45" category="list-text">*-mnode_admin_user （ -mu ） [username]* ：管理节点管理员帐户的用户名。这可能是您用于登录到管理节点的用户帐户的用户名。</block>
@@ -4575,7 +4566,6 @@
   <block id="aabee241823de4ff993b60d0a196a387" category="list-text">（可选）如果需要有关每个参数的追加信息，请使用参数 help ：</block>
   <block id="f89c180fd45cb0275c5ee18e59d2b43d" category="list-text">*-help （ -h ） * ：返回有关每个参数的信息。根据初始部署，参数定义为必需或可选。升级和重新部署参数要求可能有所不同。</block>
   <block id="79032d0c879c3afbbb570dd870eb09e1" category="list-text">运行 `setup-mnode` 命令。</block>
-  <block id="7ea2768c656768f853cd68b9066eba0f" category="section-title">配置控制器资产</block>
   <block id="4240350efa82cb4b2d0dcd00f64f496b" category="list-text">找到安装 ID ：</block>
   <block id="81b4d8ce3b6d3d31bcc065c5589192ab" category="list-text">从浏览器登录到管理节点 REST API UI ：</block>
   <block id="ed4faf2b135a0f2d74eef06f6fd8899e" category="list-text">转至存储 MVIP 并登录。此操作将接受此证书以执行下一步。</block>
@@ -5011,8 +5001,6 @@
   <block id="d96582c3f212610cf7055d8271768eca" category="section-title">如何获取支持</block>
   <block id="fafbd33c2f1cdd1118f85f84cad94af8" category="inline-link">Element 演示节点论坛</block>
   <block id="c6516efb376ed4862c892de563e8a139" category="paragraph">Element 演示节点以尽力服务为基础提供。要获得支持，请将您的问题发布到<block ref="6e0224cc6824a2d452acedae452da9b1" category="inline-link-rx"></block>。</block>
-  <block id="b0cda36836b6d8e27c36c8d9d6b48f3a" category="inline-link">SolidFire 全闪存存储资源页面</block>
-  <block id="a980426853b5ccc1de52aeb0b0ae0463" category="list-text"><block ref="a980426853b5ccc1de52aeb0b0ae0463" category="inline-link-rx"></block></block>
   <block id="e44e873b1562276992051bf0eec8c7e2" category="summary">了解有助于您开始使用 Element 软件的资源和工具。</block>
   <block id="62bdbe048d174b559cb770f9ebaf0895" category="doc">试用</block>
   <block id="6f5f86920704a5057edeb4c22758bd87" category="inline-link">Lab on Demand 借助 Element 实现私有云存储灵活性（需要登录）</block>
@@ -8509,10 +8497,6 @@
   <block id="d5ca0cd6f152369af358915f6c3a2a53" category="doc">GetFeatureStatus</block>
   <block id="5fe0920c9761a6b3a87a1bbfa4bb9caa" category="paragraph">您可以使用 `GetFeatureStatus` 方法检索集群功能的状态。</block>
   <block id="1a11a5dbdb3a36b6daa4510ffff8ca04" category="paragraph">集群功能的状态。如果未提供任何值，则系统将返回所有功能的状态。可能值：</block>
-  <block id="fd92c1c5cef8e392199a662567e717aa" category="list-text">vVol ：检索 VVol 集群功能的状态。</block>
-  <block id="5e345bcbaddcc57a5f3ac0fed5034dec" category="list-text">SnapMirror ：检索 SnapMirror 复制集群功能的状态。</block>
-  <block id="dda284e7bd1ad4ea16811e634581811f" category="list-text">FIPS ：检索用于 HTTPS 通信的 FIPS 140-2 加密功能的状态。</block>
-  <block id="26ec8711a6e8d05f3d325ea4fa66c869" category="list-text">fipsDrives ：检索 FIPS 140-2 驱动器加密功能的状态。</block>
   <block id="9f034b63948763d489f944319c2eb3de" category="paragraph">features</block>
   <block id="215ee6aa91837f28e7d05a1a6faafac5" category="paragraph">指示功能名称及其状态的功能对象数组。对象成员：</block>
   <block id="fcc7ebdd91e5bb840d6f95a4e3b0fc28" category="list-text">feature ：（字符串）功能的名称。</block>
@@ -9489,8 +9473,6 @@
   <block id="6b194904c32ac4b3629f472ddb325eff" category="paragraph">如果需要增加要复制的卷的大小，请按以下顺序执行此操作，以防止出现复制错误：</block>
   <block id="7fd604d5a16d58c4f2811b923ad7877f" category="paragraph">允许对卷进行访问。可能值：</block>
   <block id="00b1983df56a7fa830315720c415311e" category="paragraph">将卷重新分配到的帐户 ID 。如果未指定任何帐户，则会使用先前的帐户名称。</block>
-  <block id="3c1a8d9bd4749cfbde8131745b6b686a" category="list-text">true ：将卷与在 QoSPolicyID 参数中指定的 QoS 策略相关联。</block>
-  <block id="668b0f5def0f280a60f397b286c359d0" category="list-text">false ：不要将卷与在 QoSPolicyID 参数中指定的 QoS 策略相关联。如果为 false ，则无论是否在 QoSPolicy 参数中指定 QoS 策略，都会删除任何现有策略关联。</block>
   <block id="b8449546ce80375e233d72eb2aadd3c3" category="paragraph">卷的新服务质量设置。如果未指定，则不会更改 QoS 设置。可能值：</block>
   <block id="6d7a4b5dd6075716aa9f5f029e137fe9" category="paragraph">卷的新大小（以字节为单位）。1000000000 等于 1 GB 。大小将向上取整为最接近的兆字节大小。此参数只能用于增加卷的大小。</block>
   <block id="db0bd6d885921bd5ff8fa3a1cedbd136" category="paragraph">要修改的卷的卷 ID 列表。</block>
@@ -10266,7 +10248,6 @@
   <block id="51aa09599efde7b5f904971077e61890" category="list-text">[substed_f_recovery_config_time_sync]] 通过虚拟机管理程序禁用与主机的时间同步（以下是 VMware 示例）：</block>
   <block id="2402451989cd172cbc3b634b598a7bf7" category="inline-xref">重新部署命令</block>
   <block id="f495ed37a1bc23c35eb85ae7536b34f8" category="admonition">完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时影响 NTP <block ref="09beec75f3bf74c9ec51917f2b1066ff" category="inline-xref-macro-rx"></block> 在管理节点上。</block>
-  <block id="26e6608a1d4408ec1913111c30b06508" category="admonition">从 Element 12.3.1 开始，系统会自动执行子步骤（ a ）到（ e ）。对于管理节点 12.3.1 ，请继续执行 <block ref="745b7d927b75ef73b131f4d1b2da0731" category="inline-xref-macro-rx"></block> 以完成时间同步配置。</block>
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">【 substed_f_install_config_time_sync]] 通过虚拟机管理程序禁用与主机的时间同步（以下是 VMware 示例）：</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">设置命令</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时影响 NTP <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> 在管理节点上。</block>
@@ -10952,8 +10933,6 @@
   <block id="a4f0b4cd8ed43da899bf23d0cc006ec8" category="inline-link-macro">存储固件包 2.146 的注意事项</block>
   <block id="7a0a6b8351b186d782f2b5b12a09f9d1" category="list-text"><block ref="7a0a6b8351b186d782f2b5b12a09f9d1" category="inline-link-macro-rx"></block></block>
   <block id="fde51f20c5d4f2642518536389dc9ca9" category="list-text"><block ref="fde51f20c5d4f2642518536389dc9ca9" category="inline-link-macro-rx"></block></block>
-  <block id="3ab5d74afdff3156333304ac18ad1977" category="paragraph">在遵循此操作步骤之前，您应了解 <block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block> 以及是否要使用它们。永久性卷是可选的，但建议在虚拟机（ VM ）丢失时用于管理节点配置数据恢复。</block>
-  <block id="2ef294393b47ae9f1c9dee1f319efb0d" category="list-text"><block ref="bf7a9c417954187cdc8487e05cd6fa32" category="inline-xref-macro-rx"></block></block>
   <block id="bb79fe0e6bf117510635c505cc16e74d" category="list-text">使用以下配置从虚拟机管理程序创建新的 64 位 VM ：</block>
   <block id="4aec8fb7a6a9c5631ebb25a7b86d9ac5" category="admonition">请勿在此操作步骤 中指示稍后启动此虚拟机的步骤之前启动此虚拟机。</block>
   <block id="1632315c8463eb1e9d1b980297d68c37" category="list-text">将 ISO 连接到虚拟机并启动到 .iso 安装映像。</block>
@@ -11071,8 +11050,6 @@
   <block id="88935f8e32d3f781d70b8758aacc2e03" category="paragraph">您可以对尚未添加到集群中的节点执行基本故障排除。您可以使用sfreadonly系统帐户来实现此目的、无论是否获得NetApp支持。如果已设置管理节点、则可以将其用于SSH并运行为此任务提供的脚本。</block>
   <block id="39d7e3e1db072701b357f9d1235c66dc" category="list-text">在安装了SSH客户端的Windows、Linux或Mac计算机上、运行NetApp支持部门为您的系统提供的相应脚本。</block>
   <block id="326d0c521ea9c5fcd0fc04bacc22d618" category="list-text">通过SSH连接到节点IP：</block>
-  <block id="a83404b3b2ca8b3c39459b719d7844d7" category="inline-link">NetApp HCI 资源页面</block>
-  <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="b727b29e2e84d57f6040d22db60d4f2e" category="admonition">从Element 12.3.1开始、系统会自动执行子步骤(a)到(e)。对于管理节点12.3.1或更高版本、请继续执行 <block ref="e7aead760c231b389589c93842d555c1" category="inline-xref-macro-rx"></block> 以完成时间同步配置。</block>
   <block id="dce49007d1d10ccadf332bd86146cba7" category="list-text"><block ref="dce49007d1d10ccadf332bd86146cba7" category="inline-link-macro-rx"></block></block>
   <block id="d15380f01867fb0f66a13165a708bf5c" category="inline-link-macro">Element软件12.5.</block>
@@ -11279,11 +11256,7 @@
   <block id="139691973eba994346784166c2abe4d8" category="cell">具有最新固件^3^的所有SolidFire 和NetApp H系列节点</block>
   <block id="f8d237cd828d649cb8579bc85ca63755" category="inline-link">SolidFire 存储节点支持的存储固件版本</block>
   <block id="05b5a3d236fa2bfaecf9efbeb480af88" category="paragraph">从Element 12.5开始、`sfreadonly`是一个新的系统帐户、可用于对节点进行基本故障排除。此API可在集群中的所有节点上使用`sfreadonly` system帐户启用SSH访问。</block>
-  <block id="482c14e23170c54f9df57d397733d7af" category="doc">Element软件12.5及更高版本中的新增功能</block>
-  <block id="5267888908e1548e1d5846f51c92bac9" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.7是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。</block>
-  <block id="31433f4c595cf82b6f9b0654fe86c038" category="admonition">根据存储集群上运行的当前Element版本、在Element 12.7升级过程中会安装累积软件和固件更新。例如、如果集群当前运行的是Element 12.3.x、则可以直接升级到Element 12.7、以便从Element 12.5和12.7获取累积更新。有关支持的升级路径、请参见此部分<block ref="5d2488aae82cc199977a2b418e4bfb0b" category="inline-link-rx"></block></block>
   <block id="7a5d44771145d6289118d595153e9a0f" category="section-title">要素12.7.</block>
-  <block id="c5955a73b2634f54a283c2c1c11a5f00" category="paragraph">详细了解Element 12.7中的新增功能。</block>
   <block id="e1aa603edc6a21750a2c4f3ad4c5c6fe" category="section-title">安全CHAP算法</block>
   <block id="7d8047866d4cd4b945792113fe0aef7e" category="paragraph">Element 12.7支持符合FIPS的安全质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)算法SHA1、SHA-256和SHA3-256。 <block ref="b6cad66d2ee175f758d394e0154cb07f" category="inline-link-macro-rx"></block>。</block>
   <block id="3dd61b40b979f11e2f99dcbda82fabe4" category="section-title">动态块(BIN)同步速率</block>
@@ -11331,8 +11304,6 @@
   <block id="80736a9fd1a5cd3a0f3c3ef7e8c627c1" category="cell">Element 12.0</block>
   <block id="3d6ac36552702d0a682fac26d1841715" category="summary">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到节点上的卷。帐户包含访问分配给它的卷所需的 CHAP 身份验证。创建卷时、卷会分配给特定帐户。</block>
   <block id="adf63029757917f4aff07fe55725e5d9" category="section-title">CHAP算法</block>
-  <block id="3b2569fbd052a233a8a46886c97fc207" category="paragraph">从Element 12.7开始、支持符合FIPS的安全CHAP算法SHA1、SHA-256和SHA3-256。对于Element 12.7、当主机iSCSI启动程序创建与Element iSCSI目标的iSCSI会话时、它会请求一个要使用的CHAP算法列表。Element iSCSI目标会从主机iSCSI启动程序请求的列表中选择它支持的第一个算法。要确认Element iSCSI目标选择的是最安全的算法、您必须将主机iSCSI启动程序配置为发送从最安全位置(例如SHA3-256)到最不安全位置(例如 SHA1或MD5。如果主机iSCSI启动程序未请求SHA算法、则Element iSCSI目标会选择MD5、前提是主机中的建议算法列表包含MD5。您可能需要更新主机iSCSI启动程序配置、以支持安全算法。</block>
-  <block id="b8bb97697b35e86a4877aef90f591533" category="paragraph">在Element 12.7升级期间、如果您已更新主机iSCSI启动程序配置、以便在存储节点重新启动时发送包含SHA算法列表的会话请求、 此时将激活新的安全算法、并使用最安全的协议建立新的或重新连接的iSCSI会话。在升级期间、所有现有iSCSI会话都会从MD5过渡到SHA。如果不更新主机iSCSI启动程序配置以请求SHA、则现有iSCSI会话将继续使用MD5。稍后、在更新主机iSCSI启动程序CHAP算法后、iSCSI会话应根据导致iSCSI会话重新连接的维护活动逐渐从MD5过渡到SHA。</block>
   <block id="db6cb10180fa1523938da319a188d13d" category="paragraph">例如、Red Hat Enterprise Linux (RHEL) 8.3中的默认主机iSCSI启动程序的`node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5`设置已注释、这会导致iSCSI启动程序仅使用MD5。在主机上取消此设置的注释并重新启动iSCSI启动程序会触发来自该主机的iSCSI会话、以便开始使用SHA3-256。</block>
   <block id="55fc627721522ae45305c9f988153a20" category="paragraph">如果需要、您可以使用<block ref="06aa6b6b67e008146e7c8d6417794b62" category="inline-link-rx"></block> API方法、用于查看每个会话所使用的CHAP算法。</block>
   <block id="197daf7bc8c465056c36b92f2d586989" category="paragraph">根据您的Element软件版本、不支持以下节点：</block>
@@ -11361,9 +11332,6 @@
   <block id="54c78d15a850ddddfc9da22742280908" category="list-text">*最终用户许可协议(EULA)*：从管理服务2.20.69开始、您必须先接受并保存此EULA、然后才能使用NetApp混合云控制UI或API运行Element存储运行状况检查：</block>
   <block id="62449609bcf95f48fbdbae6dddedcc19" category="list-text">*最终用户许可协议(EULA)*：从管理服务2.20.69开始、您必须先接受并保存此EULA、然后才能使用NetApp Hybrid Cloud Control UI或API升级Element软件：</block>
   <block id="d6802e127914e53f73aa2f2db8cb5e44" category="paragraph">从管理服务2.20.69开始、您必须先接受并保存最终用户许可协议(EULA)、然后才能使用NetApp Hybrid Cloud Control UI或API升级管理服务：</block>
-  <block id="33d4cce2372c2f81af75e357ed402fe5" category="paragraph">^3^从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
-  <block id="eb354756273b461b7f8b4d3abc6ac150" category="paragraph">如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误、指出Element 12.x不支持此节点</block>
-  <block id="ab23337415270010383937ce784cb519" category="list-text">从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。</block>
   <block id="b2466e723f3725978ed96accd95013ae" category="paragraph">插槽 0 用于存放节点的元数据驱动器。如果要更换插槽 0 中的驱动器，则必须将装运箱中的标签贴在替代驱动器上，以便可以与其他驱动器分开识别。</block>
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">存储固件包2.164.0发行说明</block>
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
@@ -11934,10 +11902,6 @@
   <block id="f814466eb9bcf561b354422b41f381f3" category="summary">您可能需要允许以下TCP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">您可能需要允许以下TCP和UDP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="5858de35bb153f56bdb4f3fbd003b515" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block></block>
-  <block id="591c130bf36c26fe5946fac7eeba4c11" category="list-text"><block ref="5858de35bb153f56bdb4f3fbd003b515" category="inline-link-rx"></block>演示文稿]</block>
-  <block id="710206b65e21ddd5a34f739582fb411f" category="paragraph">Element 12.5改进了存储节点访问、增强了自定义保护域易管理性、新增并改进了集群故障和事件、增强了创建集群UI功能以及增强的安全性。</block>
-  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由于升级软件包上传错误、SolidFire和HCI升级无法启动</block>
-  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主动删除集群中的驱动器的方法。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在集群中的其他节点上创建块数据的第三个副本、并等待同步完成、然后再将驱动器移至"可用"列表。"Available (可用)"列表中的驱动器将从系统中完全删除、并且没有正在运行的服务或活动数据。</block>
   <block id="f9beecbb3d1ea8584ca694bab8a73de7" category="sidebar">存储节点支持的固件版本</block>
   <block id="13917e4f5287cba6dc668dc1de806783" category="paragraph">名称-值对列表、采用JSON对象格式。 <block ref="65c96e1c78eaa97668865607183bf923" category="inline-link-macro-rx"></block>。</block>
@@ -11982,9 +11946,6 @@
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
   <block id="30486cdfdde2444e4151845599ac5bf5" category="inline-link">Element 12.5文档</block>
   <block id="7923ddc778825f970802562c563718d7" category="list-text"><block ref="7923ddc778825f970802562c563718d7" category="inline-link-rx"></block></block>
-  <block id="cafb4d76dc2f8321d0134957e0bf3f5d" category="sidebar">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp Element软件管理这些存储资源集群。此站点包含Element软件的文档。</block>
-  <block id="ab8cbf6e7f3310f1970fbef383696645" category="sidebar">SolidFire 和Element软件12.7文档</block>
-  <block id="f46f40c99ef0e96fdc79a2f007e1939a" category="sidebar">SolidFire和Element软件文档12.7</block>
   <block id="6580584049ef8cc78e6be1833466e606" category="inline-link-macro">NetApp Element软件和ONTAP之间的复制(ONTAP命令行界面)</block>
   <block id="9051badc24841b5e2521cd8790e8f7d8" category="paragraph">有关详细信息，请参见 <block ref="5aaa67c40a6461657bd1345524045131" category="inline-link-macro-rx"></block>。</block>
   <block id="39f2369f3b77569b78b2438bb261689c" category="summary">在使目标卷可写后，您必须为该卷配置数据访问。在重新激活源卷之前， SAN 主机可以从目标卷访问数据。</block>
@@ -12277,11 +12238,135 @@
   <block id="878e10f3ecb83396704ecc4b39ad7aa2" category="inline-link-macro">存储固件包2.182.0的注意事项</block>
   <block id="d087896b0989dfd81184775fcc160ca1" category="list-text"><block ref="d087896b0989dfd81184775fcc160ca1" category="inline-link-macro-rx"></block></block>
   <block id="c4891769f65182d5fc5a37494844c496" category="inline-link">vCenter插件5.4发行说明</block>
-  <block id="230e88f97688d3fb971fe1a76f5b2a13" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block>_new_</block>
   <block id="ce90fd614158a5c7e0a42a5908fa1cd7" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block></block>
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">管理服务2.26.30通知(适用于VMware vCenter Server 5.4.1的NetApp Element插件)</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
   <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">您正在升级到适用于vCenter Server 5.4、5.3、5.2、5.1或5.0的Element插件。</block>
   <block id="ec584e493ebc5976220074c48288215d" category="summary">您必须先创建 SnapMirror 端点，然后才能创建复制关系。您只能在Element软件Web UI中或使用API方法执行此任务。</block>
   <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">您必须先在 Element 集群上启用 SnapMirror ，然后才能创建复制关系。您只能在Element软件Web UI中或使用API方法执行此任务。</block>
+  <block id="5f974f5b5837f6beacdf509a09ac0df9" category="paragraph">^3^不支持以下节点。如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误消息、指出Element 12.x不支持此节点：</block>
+  <block id="5d58ca5bc208ae8a2b2dccd548e30ae3" category="list-text">从Element 128、SF4805、SF9605、SF19210和SF38410存储节点开始。</block>
+  <block id="69da7b5a3b37b70e629a477452983e5d" category="summary">您可以使用DisableFeature方法禁用卷LoadBalanceOn实际IOPS。</block>
+  <block id="e0d42ad7a0a546483523eee990c4c722" category="doc">DisableFeature</block>
+  <block id="8672fdc0f030d7ad0aaee99cc9cfdd76" category="paragraph">您可以使用<block ref="e0d42ad7a0a546483523eee990c4c722" prefix=" " category="inline-code"></block>方法禁用此<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>功能。<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>默认情况下处于禁用状态。</block>
+  <block id="ef3cc95d5005ad47e31876972451919d" category="paragraph">如果您尝试禁用其他功能(例如、卷)、则会显示以下错误消息：</block>
+  <block id="ca5bd77a41b5024709aa0c976742b627" category="paragraph">禁用集群功能。可能值：</block>
+  <block id="b1e9ed0268988420a784ad80c03e59d5" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：对实际IOPS而不是最小IOPS禁用分区平衡。</block>
+  <block id="e76af95319f03251bdf6c3771f39afbe" category="paragraph">12.8</block>
+  <block id="20b0ad010903f7b2d428d021e0c7d07f" category="list-text"><block ref="20b0ad010903f7b2d428d021e0c7d07f" category="inline-xref-macro-rx"></block></block>
+  <block id="e2d508b5a306e7983664021f6348fbff" category="paragraph">卷LoadBalanceOn实际IopsState</block>
+  <block id="2f422ae686124762f34b256f66599041" category="paragraph">基于实际IOPS而非最小IOPS功能的分区平衡状态。从Element 12.8开始提供。</block>
+  <block id="505be3e758aee452e5c40a4250623ef3" category="cell"><block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix="" category="inline-code"></block></block>
+  <block id="02d9b6b9cb591592d0f848c16ce0627a" category="inline-link-macro">卷LoadBalanceOn实际IOPS</block>
+  <block id="23c40fdcbdf2c33e4c5cb256f37b65d0" category="paragraph">使用实际IOPS进行负载平衡时、防止卷移动。从Element 12.8开始、此设置可用、并且仅在启用时生效<block ref="636ea693b7b2510b539677d0148e4233" category="inline-link-macro-rx"></block>。可能值：</block>
+  <block id="c29abafd53b30e2b89cd07dbab20364e" category="list-text"><block ref="b326b5062b2f0e69046810717534cb09" prefix="" category="inline-code"></block>：卷不会根据实际IOPS进行负载平衡。</block>
+  <block id="5d7a3b5e704aa7e7bf62279cc3278f01" category="list-text"><block ref="68934a3e9455fa72420237eb05902327" prefix="" category="inline-code"></block>：卷会根据实际IOPS进行负载平衡。</block>
+  <block id="12d73ef73ec07c1c3f13c03403458ac4" category="paragraph">*注意*：为实现高可用性(节点故障)而进行的平衡优先于<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>和<block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix=" " category="inline-code"></block>。</block>
+  <block id="70477f1cbb1f9b0ee1ed984e95d175c9" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：根据实际IOPS (而不是最小IOPS)启用分区平衡。从Element 12.8开始提供。</block>
+  <block id="51f05aff487f481c11bffc15bbc6e4b2" category="list-text"><block ref="6a4d46deeb21ef2b80060c11f49187e4" prefix="" category="inline-code"></block>：检索VVol集群功能的状态。</block>
+  <block id="553a63549898987796cafd553180c07b" category="list-text"><block ref="794cb725c5631ad99b5b7c000307f0df" prefix="" category="inline-code"></block>：检索SnapMirror复制集群功能的状态。</block>
+  <block id="ec81003d6bad23cab3a28018beda6730" category="list-text"><block ref="db70af2af82d2621886d13d37995e481" prefix="" category="inline-code"></block>：检索用于HTTPS通信的FIPS 140-2加密功能的状态。</block>
+  <block id="cd9f39d245dd7eda6cce60f0322f58d0" category="list-text"><block ref="4223a206268b7c5a804c6b4d52900ea5" prefix="" category="inline-code"></block>：检索FIPS 140-2驱动器加密功能的状态。</block>
+  <block id="490aeb503dc1e4b03161fcccf4cdffc2" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：检索分区平衡的实际IOPS状态，而不是“最小IOPS”功能。从Element 12.8开始提供。</block>
+  <block id="16611c4971284ff4b42c5d19de7c4fc6" category="paragraph">DontMoveforIops重新平衡</block>
+  <block id="4b568da388833daf83ea72e69801ba34" category="paragraph">nodeHeat</block>
+  <block id="b5c845afcfb7df2d9d7fbef7714c09a9" category="paragraph">节点利用率信息。从Element 12.8开始提供。成员：</block>
+  <block id="ca4488466d23621c06230504c824fb83" category="list-text">primaryTotalHeat：节点主IOPS总数/节点配置的IOPS在24小时内的平均值</block>
+  <block id="9ebe3bf85a15ba77ec5b2cc4408f55d0" category="list-text">recentPrimaryTotalHeat：节点主IOPS总数/节点配置的IOPS在一小时内的平均值</block>
+  <block id="1d6d531f7e976462553ff19c1ec745af" category="list-text">recentTotalHeat：节点总IOS/节点配置IOPS在一小时内的平均值</block>
+  <block id="545f1469911d2f62c6bceead8a0c2cc8" category="list-text">totalHeat：节点总IOS/节点配置IOPS在24小时内的平均值</block>
+  <block id="cd10546771cf4d9146236c94201b070f" category="paragraph">sliteIopsStats</block>
+  <block id="e690e448c74acc89f30fd24eaf5cd5d5" category="paragraph">卷的I/O使用情况统计信息。从Element 12.8开始提供。sliteIopsStats的可能值：</block>
+  <block id="c43b8cf1e5e1112e458b0a8aebe23131" category="list-text">large统计 信息：卷在较长时间段(通常为过去24小时)内的I/O统计信息。</block>
+  <block id="1b11f84facc1daeaa9620b3c31f3c6d0" category="list-text">small统计 信息：在较短时间内测量的卷的I/O统计信息、通常是最后一小时。</block>
+  <block id="9c976e58e6bcd2d0658085166cadade3" category="paragraph">large统计 信息和small统计 信息的可能值：</block>
+  <block id="18cb448ab99d0b204d2b0056e16c6797" category="list-text">averageReadIops：卷的平均读取IOPS。</block>
+  <block id="82b21b548a27fb7c5ccc9f32dd738465" category="list-text">averageTotalIOPS：卷的平均总(读取+写入) IOPS。</block>
+  <block id="ea7f8d6913391d8b988f31fb9efec9bc" category="list-text">averageWriteIops：卷的平均写入IOPS。</block>
+  <block id="eaa3a19818b7f5619e46432a531d1f6a" category="list-text">nSamles：统计计算中包括的样本数。</block>
+  <block id="7fdf87eada1272182b73c768f9f29592" category="list-text">PeakReadIops：统计信息间隔内观察到的最大读取IOPS。</block>
+  <block id="ea1542c36a1086ca0fcd1be36c6f32c6" category="list-text">peakTotalIOPS：统计信息间隔内观察到的最大总IOPS。</block>
+  <block id="f96ed95b5509cb599aadb504ec5aa0d5" category="list-text">PeakWriteIops：统计信息间隔内观察到的最大写入IOPS。</block>
+  <block id="041f17de41a9f1db9829ff79ad3ef600" category="list-text">SliceID：卷ID或分区ID</block>
+  <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">《NetApp Element 软件12.8发行说明》</block>
+  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block>_new_</block>
+  <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
+  <block id="de1923eab698e40e118f826163735ce9" category="doc">Element软件中的新增功能</block>
+  <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.8是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。</block>
+  <block id="54c87de7f5250ba9aa116c671d66513b" category="inline-link">运行NetApp Element软件的存储集群的升级表是什么</block>
+  <block id="cbc21275b31252cb0d62b8238bf2f7f4" category="admonition">根据存储集群上运行的当前Element版本、在Element 12.8升级过程中会安装累积软件和固件更新。例如、如果集群当前运行的是Element 12.5、则可以直接升级到Element 12.7、以获取Element 12.7和12.7的累积更新。有关支持的升级路径，请参见知识库文章<block ref="c5b23fd17ac7c12a5a03bb47eaffc085" category="inline-link-rx"></block>。</block>
+  <block id="b96f7bb136ed4e13e527257ff99d9aa8" category="section-title">Element 12.8</block>
+  <block id="5f3e8fa2bb7cacdfa568d72b6619b9f7" category="paragraph">详细了解Element 12.8.</block>
+  <block id="de8b5a628a603f8c3af1b2f5792e68de" category="section-title">卷负载平衡</block>
+  <block id="9a015d8a2733454aff7d7b5bed746662" category="paragraph">Element 12.8.引入了卷负载平衡功能。您可以使用此功能根据每个卷的实际IOPS级别(而不是QoS策略中配置的最小IOPS)在节点之间平衡卷。您只能使用卷负载平衡功能来平衡卷。您不能使用它来平衡虚拟卷。默认情况下、卷负载平衡功能处于禁用状态。您可以通过将API参数与和API方法或<block ref="0e280c25b1846637cc005ef57df39d27" category="inline-link-macro-rx"></block>Element UI中的选项结合<block ref="1028004a3d63b00e7896fde204286489" category="inline-link-macro-rx"></block>使用来启用和<block ref="ca543ea41b9fe86f5db5c46f8401b9de" category="inline-link-macro-rx"></block>禁用此<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>功能。</block>
+  <block id="380221f3a88d939f31cd4269828e2920" category="section-title">查看节点利用率信息</block>
+  <block id="cf1de2ea971a9d03b59178af9472d4b0" category="paragraph">在Element 128中、您可以使用<block ref="f26fbe9dd2d7f06608bbf6327141caa9" prefix=" " category="inline-code"></block>和<block ref="84b7393e47ffdee1d6a06f5067a7270c" prefix=" " category="inline-code"></block>API方法查看节点利用率信息<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>。此<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>对象是此对象的成员<block ref="d9bfbffd38f5f9686a85ef17e8138b5c" prefix=" " category="inline-code"></block>、它会根据一段时间内主总IOPS或总IOPS与配置的平均IOPS之比显示节点利用率信息。</block>
+  <block id="75a2cb34cbc05ac90dcef2f4d04c6588" category="paragraph">此外、您还可以在Element UI中的View Details显示中查看某个节点的节点利用率(以百分比表示<block ref="3e970dc4a731d994269545ba0dc518ab" prefix=" " category="inline-code"></block>)。</block>
+  <block id="df9435e47754394c09f05283809f164d" category="section-title">查看卷的I/O统计信息</block>
+  <block id="3fb4d6085a8835e3addca4a9c0fbbf66" category="paragraph">在Element 128中、您可以使用<block ref="d0d8364463968eb91608c292d6fe317a" prefix=" " category="inline-code"></block>和<block ref="27e97d4871384c3d242cfa858abc544a" prefix=" " category="inline-code"></block>API方法查看卷的I/O使用情况统计信息<block ref="cd10546771cf4d9146236c94201b070f" prefix=" " category="inline-code"></block>。I/O统计信息是使用卷的读取和写入IOPS信息计算得出的、并在过去24小时和过去1小时这两个时间段内进行测量。<block ref="e0c529df1577dac200ea6d61065ab487" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="dfa7d479451fc6bd725c9494a87f3a6a" category="section-title">iSCSI会话的CHAP算法</block>
+  <block id="b7ff4d8cc30e1648a2610b037b9c5b97" category="paragraph">主机iSCSI启动程序会请求一系列质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)算法、以便在创建与Element iSCSI目标的iSCSI会话时使用。从Element 128开始、您可以查看Element iSCSI目标选择用于iSCSI会话的受支持CHAP算法。</block>
+  <block id="3c72afcfca67f187b816a55135a243dd" category="section-title">升级VM硬件版本</block>
+  <block id="7dba8a3f7eba09c328d90efc88b182cd" category="paragraph">如果要将现有管理节点原位升级到Element 128、则在升级之前、必须确保管理节点上的VM硬件版本与ESXi 6.7 (VM硬件版本14)或更高版本兼容、具体取决于您的环境。<block ref="f415360b3de270935343c57ae74254e8" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="9c5d76276e21d49836999553da451b64" category="paragraph">详细了解Element 12.7中的新增功能。</block>
+  <block id="c709a2d01de03a4c29036ff9f37c0dff" category="paragraph">详细了解Element 12.5中的新增功能。</block>
+  <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">NetApp HCI 文档</block>
+  <block id="bf667c8802395357e4f080e2fcd819e4" category="list-text"><block ref="bf667c8802395357e4f080e2fcd819e4" category="inline-link-rx"></block></block>
+  <block id="f512bd2c4d2b9ed8c936fc1a75c3581e" category="paragraph">根据您的Element软件版本、不支持以下节点：</block>
+  <block id="c31b8aa345140496ac5200d0d80fa702" category="list-text">从Element 12.7、SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点开始。</block>
+  <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Element软件12.8.</block>
+  <block id="2d0be4b4ba388979c4f454ae05179965" category="list-text"><block ref="2d0be4b4ba388979c4f454ae05179965" category="inline-link-macro-rx"></block></block>
+  <block id="906ea05443e4b488a42f3f06305353ee" category="paragraph">在执行此过程之前、您应了解<block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block>以及是否要使用它们。永久性卷是可选的，但建议在虚拟机（ VM ）丢失时用于管理节点配置数据恢复。</block>
+  <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">第1步：下载ISO或OVA并部署虚拟机</block>
+  <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">从NetApp支持站点下载相应的ISO或OVA并安装虚拟机。</block>
+  <block id="4aee9657f267c579c49541b5f19ca32c" category="list-text">从NetApp支持站点上的页面下载适用于您的安装的OVA或ISO<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>。新的OVA包含更新后的SSL证书。</block>
+  <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">第2步：创建管理节点管理员并配置网络</block>
+  <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">虚拟机安装完成后、创建管理节点管理员用户并配置管理节点网络。</block>
+  <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">第3步：配置时间同步</block>
+  <block id="6646ab3d83d88b5b34e61e3a58b244e8" category="paragraph">在设置管理节点之前、请同步管理节点和存储集群之间的时间。</block>
+  <block id="e2a752315a25d69098c34f13da4b8c94" category="list-text">使用NTP验证管理节点和存储集群之间的时间是否同步：</block>
+  <block id="60ba6327b0772f4d0beb24ef192dcf80" category="admonition">从Element 12.3.1开始、系统会自动执行子步骤(a)到(e)。对于管理节点12.3.1、请继续执行<block ref="745b7d927b75ef73b131f4d1b2da0731" category="inline-xref-macro-rx"></block>以完成时间同步配置。</block>
+  <block id="ef246c91c687e7d720eb49c5e2a4cd47" category="section-title">第4步：设置管理节点</block>
+  <block id="9f150d20e38589485a1bb878b18c51e2" category="paragraph">使用命令配置管理节点<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block>。</block>
+  <block id="2cec258fd66ace0725a9af6922c80f3e" category="section-title">第5步：配置控制器资产</block>
+  <block id="b5d27a207b01cd3ca9fef9594d50836f" category="paragraph">找到安装ID并添加vCenter控制器资产。</block>
+  <block id="e667096facd9382b6410238147c6bd7d" category="inline-xref-macro">启用和禁用卷负载平衡</block>
+  <block id="11bdcf58ce21896925e2cbc1f2174d99" category="list-text"><block ref="11bdcf58ce21896925e2cbc1f2174d99" category="inline-xref-macro-rx"></block></block>
+  <block id="6c7b496a2d02d11880156e116d65fdae" category="paragraph">如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误消息、指出Element 12.x不支持此节点</block>
+  <block id="b8857076c45a770e167d021272059208" category="list-text">*CHAP*</block>
+  <block id="9cfc902e020fbc18dd2aff7989d4d45f" category="paragraph">iSCSI会话的CHAP算法。如果未使用CHAP算法，则会显示一个短划线(-)。从Element 12.8开始提供。</block>
+  <block id="4072b99d321d18f605cb9f09366d1668" category="paragraph">从Element 12.7开始、支持符合FIPS的安全CHAP算法SHA1、SHA-256和SHA3-256。当主机iSCSI启动程序创建与Element iSCSI目标的iSCSI会话时、它会请求要使用的CHAP算法列表。Element iSCSI目标会从主机iSCSI启动程序请求的列表中选择它支持的第一个算法。要确认Element iSCSI目标选择的是最安全的算法、您必须将主机iSCSI启动程序配置为发送从最安全位置(例如SHA3-256)到最不安全位置(例如 SHA1或MD5。如果主机iSCSI启动程序未请求SHA算法、则Element iSCSI目标会选择MD5、前提是主机中的建议算法列表包含MD5。您可能需要更新主机iSCSI启动程序配置、以支持安全算法。</block>
+  <block id="b0d6e61e8313606c921c3d2b2ae7e76d" category="paragraph">在Element 12.7或更高版本升级期间、如果已更新主机iSCSI启动程序配置以发送包含SHA算法列表的会话请求、则在存储节点重新启动时、新的安全算法将激活、并使用最安全的协议建立新的或重新连接的iSCSI会话。在升级期间、所有现有iSCSI会话都会从MD5过渡到SHA。如果不更新主机iSCSI启动程序配置以请求SHA、则现有iSCSI会话将继续使用MD5。稍后、在更新主机iSCSI启动程序CHAP算法后、iSCSI会话应根据导致iSCSI会话重新连接的维护活动逐渐从MD5过渡到SHA。</block>
+  <block id="aaee41e33731b48ea709a8d86f92665f" category="summary">从Element 128开始、您可以启用卷负载平衡、以便根据每个卷的实际IOPS (而不是QoS策略中配置的最小IOPS)在节点之间平衡卷。</block>
+  <block id="3ef41e0639b21f006f7d5de45b6ee839" category="paragraph">从Element 128开始、您可以使用卷负载平衡根据每个卷的实际IOPS (而不是QoS策略中配置的最小IOPS)在节点之间平衡卷。您可以使用Element UI或API启用和禁用卷负载平衡、此功能默认处于禁用状态。</block>
+  <block id="bcdaa8bc7cb207354c87d8e1232ab12f" category="list-text">选择*集群*&gt;*设置*。</block>
+  <block id="0f4c8c48f2ee6af3905e369c115e564d" category="list-text">在集群专用部分中、更改卷负载平衡的状态：</block>
+  <block id="3ad3b40ee22c1193fd89bfbd535ff89c" category="open-title">启用卷负载平衡</block>
+  <block id="fc974f059cad1de90d3d0a8283162c27" category="paragraph">选择*启用实际IOPs*上的负载平衡，然后确认您的选择。</block>
+  <block id="f2b86d8559c9ce4d77248b1cb9564340" category="open-title">禁用卷负载平衡：</block>
+  <block id="3216ad57a8f2305cd9a59ab5917e54e4" category="paragraph">选择*禁用实际IOPs*上的负载平衡，然后确认您的选择。</block>
+  <block id="66b402adbbe6b9f984ecdcd5248bfec0" category="list-text">(可选)选择*Reporting"(报告)&gt;*Overview*以确认实际IOPS平衡状态更改。您可能需要向下滚动集群运行状况信息才能查看状态。</block>
+  <block id="4e5a27f88db1734e1af540886a80a4e9" category="inline-link-macro">使用API启用卷负载平衡</block>
+  <block id="3b23faa50d0cdbc4e395b29066b18b08" category="list-text"><block ref="3b23faa50d0cdbc4e395b29066b18b08" category="inline-link-macro-rx"></block></block>
+  <block id="e94e13cb2fcae56ae542775b50cc0b10" category="inline-link">使用API禁用卷负载平衡</block>
+  <block id="9ffe0c15921805682448240c94ddc614" category="list-text"><block ref="9ffe0c15921805682448240c94ddc614" category="inline-link-rx"></block></block>
+  <block id="a7f635a546cbb7490b31779618511dd1" category="list-text"><block ref="a7f635a546cbb7490b31779618511dd1" category="inline-link-macro-rx"></block></block>
+  <block id="e52172b27eb39053f2941029ca952216" category="list-text">*节点利用率*：基于节点利用率的节点利用率百分比。显示的值以百分比形式显示为recentMaryTotalHeat。从Element 12.8开始提供。</block>
+  <block id="5e8ecd2e12df03135f7d9ea0fc9f1e5e" category="list-text">*自定义保护域*：分配给节点的自定义保护域。</block>
+  <block id="c5c29b3089afd57677f0c6e16b8f6bc1" category="inline-link-macro">对管理节点执行原位升级</block>
+  <block id="870c21ddabb9d392de6b8260f26cb2bd" category="list-text">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。在使用NetApp混合云控制或REST API升级管理服务、Element软件和存储固件之前、您可以通过到版本12.8解决此问题<block ref="3f48e72cfa47aa3f4c9b8d036d27a113" category="inline-link-macro-rx"></block>。</block>
+  <block id="155ca98fbc1ded22cd8604d6760bbd99" category="paragraph">如果您要部署版本为128的新管理节点，则可以使用NetApp混合云控制或REST API按中列出的顺序执行组件升级<block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1806b0c9501c3b2013932e456db5038b" category="list-text">不支持以下节点。如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误消息、指出Element 12.x不支持此节点：</block>
+  <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">第1步：升级管理节点上的VM硬件版本</block>
+  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">如果要将现有管理节点原位升级到Element 128、则在升级之前、必须确保管理节点上的VM硬件版本与ESXi 6.7 (VM硬件版本14)或更高版本兼容、具体取决于您的环境。</block>
+  <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">以 vCenter 管理员身份登录到 vSphere Web Client 。</block>
+  <block id="7936b082e6a3d2167a2478cee0772514" category="list-text">从vSphere Client菜单中、选择*虚拟机*&gt;*模板*。</block>
+  <block id="ad4062bf296d686c04c351f026e2400d" category="list-text">右键单击虚拟机，然后选择*兼容性*&gt;*升级虚拟机兼容性*。</block>
+  <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">根据vSphere环境的版本、选择ESXi 6.7或更高版本。</block>
+  <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">选择*OK*。</block>
+  <block id="43c3c8c2f75e6064714e6ec942f1e916" category="list-text">升级完成后、选择* vSphere客户端刷新*并验证虚拟机兼容性是否为所需版本。</block>
+  <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">第2步：将管理节点升级到Element 12.5或更高版本</block>
+  <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">选择以下升级选项之一：</block>
+  <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp Element软件管理这些存储资源集群。此站点包含Element软件12.8.</block>
+  <block id="83214fe0ca2841bff645ee69075302da" category="sidebar">SolidFire和Element软件文档12.8</block>
 </blocks>

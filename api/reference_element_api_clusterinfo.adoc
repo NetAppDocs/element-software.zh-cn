@@ -198,11 +198,20 @@ UUID
  a| 
 UUID
 
+
+
+ a| 
+卷LoadBalanceOn实际IopsState
+ a| 
+基于实际IOPS而非最小IOPS功能的分区平衡状态。从Element 12.8开始提供。
+ a| 
+string
+
 |===
 [discrete]
 == 了解更多信息
 
 * link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo"]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]演示文稿]
+* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"^]
 * https://docs.netapp.com/sfe-122/topic/com.netapp.ndc.sfe-vers/GUID-B1944B0E-B335-4E0B-B9F1-E960BF32AE56.html["早期版本的 NetApp SolidFire 和 Element 产品的文档"^]
 

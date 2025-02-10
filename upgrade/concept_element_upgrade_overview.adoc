@@ -20,8 +20,16 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 [NOTE]
 ====
-* 从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述 https://kb.netapp.com/onprem/solidfire/Element_OS/SolidFire_and_HCI_upgrades_unable_to_start_due_to_upgrade_package_upload_error["由于升级软件包上传错误、SolidFire和HCI升级无法启动"^]。
-* 从Element 12.7开始、不支持SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。如果您尝试将其中一个节点升级到Element 12.7、则会看到一条错误、指出Element 12.7不支持此节点。
+* 从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。在使用NetApp混合云控制或REST API升级管理服务、Element软件和存储固件之前、您可以通过到版本12.8解决此问题link:task_hcc_upgrade_management_node.html["对管理节点执行原位升级"]。
++
+如果您要部署版本为128的新管理节点，则可以使用NetApp混合云控制或REST API按中列出的顺序执行组件升级<<sys_upgrade,系统升级顺序>>。
+
+* 不支持以下节点。如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误消息、指出Element 12.x不支持此节点：
++
+** 从Element 128、SF4805、SF9605、SF19210和SF38410存储节点开始。
+** 从Element 12.7开始、SF2405和SF9608存储节点以及FC0025和SF-FCN-01 FC节点。
+
+
 * 从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 https://docs.netapp.com/us-en/element-software-123/upgrade/task_hcc_upgrade_element_software.html#upgrade-element-software-at-connected-sites-using-healthtools["使用HealthTools升级到Element 12.3"^] 然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。
 
 
@@ -30,7 +38,7 @@ keywords: netapp, solidfire upgrade, vcp upgrade, element upgrade, vsphere upgra
 
 。 link:task_sf_upgrade_all_vsphere.html["vSphere 升级顺序"] 包括适用于 vCenter Server 的 Element 插件内容介绍了重新安装适用于 vCenter Server 的 Element 插件所需的其他升级前和升级后步骤。
 
-.您需要的内容
+.开始之前
 * 您正在运行管理节点 11.3 或更高版本。较新版本的管理节点采用模块化架构，可提供单个服务。
 +
 

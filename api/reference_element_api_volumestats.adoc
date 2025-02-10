@@ -27,6 +27,7 @@ volumeStats 对象包含单个卷的统计数据。
 
 此对象包含以下成员：
 
+[cols="20,50,15,15"]
 |===
 | Name | Description | 计算 | Type 
 
@@ -231,6 +232,33 @@ samplePeriodMSec
 不适用
  a| 
 整型
+
+
+
+ a| 
+sliteIopsStats
+ a| 
+卷的I/O使用情况统计信息。从Element 12.8开始提供。sliteIopsStats的可能值：
+
+* large统计 信息：卷在较长时间段(通常为过去24小时)内的I/O统计信息。
+* small统计 信息：在较短时间内测量的卷的I/O统计信息、通常是最后一小时。
+
+
+large统计 信息和small统计 信息的可能值：
+
+* averageReadIops：卷的平均读取IOPS。
+* averageTotalIOPS：卷的平均总(读取+写入) IOPS。
+* averageWriteIops：卷的平均写入IOPS。
+* nSamles：统计计算中包括的样本数。
+* PeakReadIops：统计信息间隔内观察到的最大读取IOPS。
+* peakTotalIOPS：统计信息间隔内观察到的最大总IOPS。
+* PeakWriteIops：统计信息间隔内观察到的最大写入IOPS。
+* SliceID：卷ID或分区ID
+
+ a| 
+时间点
+ a| 
+JSON 对象
 
 
 

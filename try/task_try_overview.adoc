@@ -16,10 +16,3 @@ summary: 了解有助于您开始使用 Element 软件的资源和工具。
 * https://handsonlabs.netapp.com/lab/elementsw["Lab on Demand 借助 Element 实现私有云存储灵活性（需要登录）"^]：本实验室介绍了适用于运行 Element 软件的存储系统的无限制横向扩展，有保障的工作负载性能以及存储基础架构自动化等概念。
 * link:task_use_demonode.html["使用 Element 演示节点试用存储功能"^]： Element 演示节点是一个 VMware 虚拟机版本的 Element 软件，可轻松演示 NetApp HCI 和 SolidFire 产品的许多关键存储功能。
 
-
-
-
-== 了解更多信息
-
-* https://www.netapp.com/data-storage/solidfire/documentation/["SolidFire 全闪存存储资源页面"^]
-

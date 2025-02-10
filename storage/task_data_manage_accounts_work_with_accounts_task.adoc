@@ -19,9 +19,9 @@ summary: 在SolidFire 存储系统中、租户可以使用帐户使客户端能�
 
 == CHAP算法
 
-从Element 12.7开始、支持符合FIPS的安全CHAP算法SHA1、SHA-256和SHA3-256。对于Element 12.7、当主机iSCSI启动程序创建与Element iSCSI目标的iSCSI会话时、它会请求一个要使用的CHAP算法列表。Element iSCSI目标会从主机iSCSI启动程序请求的列表中选择它支持的第一个算法。要确认Element iSCSI目标选择的是最安全的算法、您必须将主机iSCSI启动程序配置为发送从最安全位置(例如SHA3-256)到最不安全位置(例如 SHA1或MD5。如果主机iSCSI启动程序未请求SHA算法、则Element iSCSI目标会选择MD5、前提是主机中的建议算法列表包含MD5。您可能需要更新主机iSCSI启动程序配置、以支持安全算法。
+从Element 12.7开始、支持符合FIPS的安全CHAP算法SHA1、SHA-256和SHA3-256。当主机iSCSI启动程序创建与Element iSCSI目标的iSCSI会话时、它会请求要使用的CHAP算法列表。Element iSCSI目标会从主机iSCSI启动程序请求的列表中选择它支持的第一个算法。要确认Element iSCSI目标选择的是最安全的算法、您必须将主机iSCSI启动程序配置为发送从最安全位置(例如SHA3-256)到最不安全位置(例如 SHA1或MD5。如果主机iSCSI启动程序未请求SHA算法、则Element iSCSI目标会选择MD5、前提是主机中的建议算法列表包含MD5。您可能需要更新主机iSCSI启动程序配置、以支持安全算法。
 
-在Element 12.7升级期间、如果您已更新主机iSCSI启动程序配置、以便在存储节点重新启动时发送包含SHA算法列表的会话请求、 此时将激活新的安全算法、并使用最安全的协议建立新的或重新连接的iSCSI会话。在升级期间、所有现有iSCSI会话都会从MD5过渡到SHA。如果不更新主机iSCSI启动程序配置以请求SHA、则现有iSCSI会话将继续使用MD5。稍后、在更新主机iSCSI启动程序CHAP算法后、iSCSI会话应根据导致iSCSI会话重新连接的维护活动逐渐从MD5过渡到SHA。
+在Element 12.7或更高版本升级期间、如果已更新主机iSCSI启动程序配置以发送包含SHA算法列表的会话请求、则在存储节点重新启动时、新的安全算法将激活、并使用最安全的协议建立新的或重新连接的iSCSI会话。在升级期间、所有现有iSCSI会话都会从MD5过渡到SHA。如果不更新主机iSCSI启动程序配置以请求SHA、则现有iSCSI会话将继续使用MD5。稍后、在更新主机iSCSI启动程序CHAP算法后、iSCSI会话应根据导致iSCSI会话重新连接的维护活动逐渐从MD5过渡到SHA。
 
 例如、Red Hat Enterprise Linux (RHEL) 8.3中的默认主机iSCSI启动程序的`node.session.auth.chap_algs = SHA3-256、SHA256、SHA1、MD5`设置已注释、这会导致iSCSI启动程序仅使用MD5。在主机上取消此设置的注释并重新启动iSCSI启动程序会触发来自该主机的iSCSI会话、以便开始使用SHA3-256。
 

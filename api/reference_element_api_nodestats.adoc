@@ -123,6 +123,21 @@ networkUtilizationCluster
 
 
  a| 
+nodeHeat
+ a| 
+节点利用率信息。从Element 12.8开始提供。成员：
+
+* primaryTotalHeat：节点主IOPS总数/节点配置的IOPS在24小时内的平均值
+* recentPrimaryTotalHeat：节点主IOPS总数/节点配置的IOPS在一小时内的平均值
+* recentTotalHeat：节点总IOS/节点配置IOPS在一小时内的平均值
+* totalHeat：节点总IOS/节点配置IOPS在24小时内的平均值
+
+ a| 
+JSON 对象
+
+
+
+ a| 
 readLatencyUSecTotal
  a| 
 对节点执行读取操作所用总时间的单调递增值。

@@ -19,6 +19,7 @@ summary: 您可以通过 Element 软件集群 API 方法管理存储集群以及
 * xref:reference_element_api_clearclusterfaults.adoc[ClearClusterFaults]
 * xref:reference_element_api_createclusterinterfacepreference.adoc[CreateClusterInterfacePreference]
 * xref:reference_element_api_deleteclusterinterfacepreference.adoc[DeleteClusterInterfacePreference]
+* xref:reference_element_api_disablefeature.adoc[DisableFeature]
 * xref:reference_element_api_enablefeature.adoc[EnableFeature]
 * xref:reference_element_api_getclustercapacity.adoc[GetClusterCapacity]
 * xref:reference_element_api_getclusterfullthreshold.adoc[GetClusterFullThreshold]

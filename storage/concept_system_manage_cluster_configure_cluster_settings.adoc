@@ -19,6 +19,7 @@ summary: 您可以从 Element UI 的 Cluster 选项卡查看和更改集群范�
 * xref:concept_data_manage_vvol_work_virtual_volumes.adoc[使用虚拟卷]
 * xref:task_snapmirror_use_replication_between_element_and_ontap_clusters.adoc[在 Element 和 ONTAP 集群之间使用 SnapMirror 复制]
 * xref:task_system_manage_cluster_set_the_cluster_full_threshold.adoc[设置集群全满阈值]
+* xref:task_system_manage_cluster_volume_load_balancing.adoc[启用和禁用卷负载平衡]
 * xref:task_system_manage_cluster_enable_and_disable_support_access.adoc[启用和禁用支持访问]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_are_the_blockSpace_thresholds_calculated_for_Element["如何计算 Element 的块空间阈值"]
 * xref:task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.adoc[为集群启用和禁用加密]
@@ -27,8 +28,8 @@ summary: 您可以从 Element UI 的 Cluster 选项卡查看和更改集群范�
 * xref:concept_system_manage_snmp_manage_snmp.adoc[管理 SNMP]
 * xref:concept_system_manage_drives_managing_drives.adoc[管理驱动器]
 * xref:concept_system_manage_nodes_manage_nodes.adoc[管理节点]
-* xref:concept_system_manage_virtual_manage_virtual_networks.adoc[管理虚拟网络]
 * xref:task_system_manage_fc_view_fibre_channel_ports_details.adoc[查看光纤通道端口详细信息]
+* xref:concept_system_manage_virtual_manage_virtual_networks.adoc[管理虚拟网络]
 
 
 

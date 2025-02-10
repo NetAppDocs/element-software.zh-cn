@@ -19,6 +19,7 @@ summary: 您可以使用 GetFeatureStatus 方法检索集群功能的状态。
 
 此方法具有以下输入参数：
 
+[cols="1a,3a,1a,1a,1a"]
 |===
 | Name | Description | Type | 默认值 | Required 
 
@@ -28,10 +29,11 @@ feature
  a| 
 集群功能的状态。如果未提供任何值，则系统将返回所有功能的状态。可能值：
 
-* vVol ：检索 VVol 集群功能的状态。
-* SnapMirror ：检索 SnapMirror 复制集群功能的状态。
-* FIPS ：检索用于 HTTPS 通信的 FIPS 140-2 加密功能的状态。
-* fipsDrives ：检索 FIPS 140-2 驱动器加密功能的状态。
+* `Vvols`：检索VVol集群功能的状态。
+* `SnapMirror`：检索SnapMirror复制集群功能的状态。
+* `Fips`：检索用于HTTPS通信的FIPS 140-2加密功能的状态。
+* `FipsDrives`：检索FIPS 140-2驱动器加密功能的状态。
+* `VolumeLoadBalanceOnActualIOPS`：检索分区平衡的实际IOPS状态，而不是“最小IOPS”功能。从Element 12.8开始提供。
 
  a| 
 string
@@ -105,6 +107,10 @@ JSON 对象数组
             {
                 "enabled": true,
                 "feature": "FipsDrives"
+            },
+            {
+                "enabled": true,
+                "feature": "VolumeLoadBalanceOnActualIOPS"
             }
         ]
     }

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: netapp, solidfire, element, storage, solidfire enterprise sds 
 summary: NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。 
 ---
-= Element软件12.5及更高版本中的新增功能
+= Element软件中的新增功能
 :allow-uri-read: 
 :url-peak: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/Element_Software_-_Apache_Log4j_Vulnerability_-_Workaround
 :icons: font
@@ -12,10 +12,48 @@ summary: NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新�
 
 
 [role="lead"]
-NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.7是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。
+NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.8是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。
 
 
-NOTE: 根据存储集群上运行的当前Element版本、在Element 12.7升级过程中会安装累积软件和固件更新。例如、如果集群当前运行的是Element 12.3.x、则可以直接升级到Element 12.7、以便从Element 12.5和12.7获取累积更新。有关支持的升级路径、请参见此部分 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["知识库文章"^]
+NOTE: 根据存储集群上运行的当前Element版本、在Element 12.8升级过程中会安装累积软件和固件更新。例如、如果集群当前运行的是Element 12.5、则可以直接升级到Element 12.7、以获取Element 12.7和12.7的累积更新。有关支持的升级路径，请参见知识库文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["运行NetApp Element软件的存储集群的升级表是什么"^]。
+
+
+
+== Element 12.8
+
+详细了解Element 12.8.
+
+
+
+=== 卷负载平衡
+
+Element 12.8.引入了卷负载平衡功能。您可以使用此功能根据每个卷的实际IOPS级别(而不是QoS策略中配置的最小IOPS)在节点之间平衡卷。您只能使用卷负载平衡功能来平衡卷。您不能使用它来平衡虚拟卷。默认情况下、卷负载平衡功能处于禁用状态。您可以通过将API参数与和API方法或link:../storage/task_system_manage_cluster_volume_load_balancing.html["卷负载平衡"]Element UI中的选项结合link:../api/reference_element_api_enablefeature.html["EnableFeature"]使用来启用和link:../api/reference_element_api_disablefeature.html["DisableFeature"]禁用此 `VolumeLoadBalanceOnActualIOPS`功能。
+
+
+
+=== 查看节点利用率信息
+
+在Element 128中、您可以使用 `GetNodeStats`和 `ListNodeStats`API方法查看节点利用率信息 `nodeHeat`。此 `nodeHeat`对象是此对象的成员 `nodeStats`、它会根据一段时间内主总IOPS或总IOPS与配置的平均IOPS之比显示节点利用率信息。
+
+此外、您还可以在Element UI中的View Details显示中查看某个节点的节点利用率(以百分比表示 `recentPrimaryTotalHeat`)。
+
+
+
+=== 查看卷的I/O统计信息
+
+在Element 128中、您可以使用 `GetVolumeStats`和 `ListVolumeStatsByVolume`API方法查看卷的I/O使用情况统计信息 `sliceIopsStats`。I/O统计信息是使用卷的读取和写入IOPS信息计算得出的、并在过去24小时和过去1小时这两个时间段内进行测量。link:../api/reference_element_api_volumestats.html#object-members["了解更多信息。"](英文)
+
+
+
+=== iSCSI会话的CHAP算法
+
+主机iSCSI启动程序会请求一系列质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)算法、以便在创建与Element iSCSI目标的iSCSI会话时使用。从Element 128开始、您可以查看Element iSCSI目标选择用于iSCSI会话的受支持CHAP算法。
+
+
+
+=== 升级VM硬件版本
+
+如果要将现有管理节点原位升级到Element 128、则在升级之前、必须确保管理节点上的VM硬件版本与ESXi 6.7 (VM硬件版本14)或更高版本兼容、具体取决于您的环境。link:../upgrade/task_hcc_upgrade_management_node.html#step-1-upgrade-vm-hardware-version-on-a-management-node["了解更多信息。"](英文)
 
 
 
@@ -80,7 +118,7 @@ NetApp Bug Online工具中列出了已解决的问题和已知问题。您可以
 
 == 要素12.5.
 
-Element 12.5改进了存储节点访问、增强了自定义保护域易管理性、新增并改进了集群故障和事件、增强了创建集群UI功能以及增强的安全性。
+详细了解Element 12.5中的新增功能。
 
 
 
@@ -128,9 +166,7 @@ Element 12.5还包括120多个CVE安全漏洞修复。
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["《 NetApp 混合云控制和管理服务发行说明》"^]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"^]
 * http://docs.netapp.com/sfe-122/index.jsp["适用于先前版本的 SolidFire 和 Element 软件文档中心"^]
-* https://www.netapp.com/us/documentation/hci.aspx["NetApp HCI 资源页面"^]
+* https://docs.netapp.com/us-en/hci/index.html["NetApp HCI 文档"^]
 * link:../hardware/fw_storage_nodes.html["SolidFire 存储节点支持的存储固件版本"]
 

@@ -33,8 +33,6 @@ NOTE: 如果将访问状态更改为 locked 或 replicationTarget ，则所有�
 此方法具有以下输入参数：
 
 |===
-
-
 | Name | Description | Type | 默认值 | Required 
 
 
@@ -75,8 +73,8 @@ associateWithQoSPolicy
  a| 
 将卷与指定的 QoS 策略相关联。可能值：
 
-* true ：将卷与在 QoSPolicyID 参数中指定的 QoS 策略相关联。
-* false ：不要将卷与在 QoSPolicyID 参数中指定的 QoS 策略相关联。如果为 false ，则无论是否在 QoSPolicy 参数中指定 QoS 策略，都会删除任何现有策略关联。
+* `true` ：将卷与 QoSPolicyID 参数中指定的 QoS 策略关联。
+* `false` ：不要将卷与 QoSPolicyID 参数中指定的 QoS 策略相关联。如果为 false ，则无论是否在 QoSPolicy 参数中指定 QoS 策略，都会删除任何现有策略关联。
 
  a| 
 boolean
@@ -111,6 +109,19 @@ ISO 8601 字符串
  a| 
 否
 
+
+
+ a| 
+DontMoveforIops重新平衡
+ a| 
+使用实际IOPS进行负载平衡时、防止卷移动。从Element 12.8开始、此设置可用、并且仅在启用时生效link:reference_element_api_enablefeature.html["卷LoadBalanceOn实际IOPS"]。可能值：
+
+* `true`：卷不会根据实际IOPS进行负载平衡。
+* `false`：卷会根据实际IOPS进行负载平衡。
+
+
+*注意*：为实现高可用性(节点故障)而进行的平衡优先于 `VolumeLoadBalanceOnActualIOPS`和 `dontMoveforIopsRebalance`。
+| boolean | false | 否 
 
 
  a| 
@@ -229,8 +240,6 @@ volumeIds
 此方法具有以下返回值：
 
 |===
-
-
 | Name | Description | Type 
 
 
@@ -253,21 +262,10 @@ xref:reference_element_api_volume.adoc[volume] 数组
 {
   "method": "ModifyVolumes",
   "params": {
-    "volumeIDs": [2,3],
-    "attributes": {
-      "name1": "value1",
-      "name2": "value2",
-      "name3": "value3"
-    },
-    "qos": {
-      "minIOPS": 50,
-      "maxIOPS": 100,
-      "burstIOPS": 150,
-      "burstTime": 60
-    },
-    "access" : "replicationTarget"
+    "volumeIDs": [319,22],
+    "access": "readWrite",
+    "dontMoveForIopsRebalance": false
   },
-  "totalSize": 80000000000,
   "id": 1
 }
 ----
@@ -282,92 +280,58 @@ xref:reference_element_api_volume.adoc[volume] 数组
 {
   "id": 1,
   "result": {
-    "volumes": [
+    "volumes":
       {
-        "access": "replicationTarget",
-        "accountID": 1,
-        "attributes": {
-          "name1": "value1",
-          "name2": "value2",
-          "name3": "value3"
-        },
+        "access":  "readWrite,
+        "accountID": 22,
+        "attributes": {},
         "blockSize": 4096,
-        "createTime": "2016-04-06T17:25:13Z",
+        "createTime": "2024-04-01T19:39:40Z",
+        "currentProtectionScheme": "doubleHelix",
         "deleteTime": "",
+        "dontMoveForIopsRebalance": false,
         "enable512e": false,
-        "iqn": "iqn.2010-01.com.solidfire:jo73.2",
-        "name": "doctest1",
+        "enableSnapMirrorReplication": false,
+        "fifoSize": 24,
+        "iqn": "iqn.2010-01.com.solidfire:3eeu.suite40.319",
+        "lastAccessTime": "2024-04-02T12:41:34Z",
+        "lastAccessTimeIO": "2024-04-01T20:41:19Z",
+        "minFifoSize": 0,
+        "name": "suite40",
+        "previousProtectionScheme": null,
         "purgeTime": "",
         "qos": {
-          "burstIOPS": 150,
+          "burstIOPS": 27000,
           "burstTime": 60,
           "curve": {
-            "4096": 100,
-            "8192": 160,
-            "16384": 270,
-            "32768": 500,
-            "65536": 1000,
+            "1048576": 15000,
             "131072": 1950,
+            "16384": 270,
             "262144": 3900,
+            "32768": 500,
+            "4096": 100,
             "524288": 7600,
-            "1048576": 15000
+            "65536": 1000,
+            "8192": 160
           },
-          "maxIOPS": 100,
-          "minIOPS": 50
+          "maxIOPS": 27000,
+          "minIOPS": 500
         },
-        "scsiEUIDeviceID": "6a6f373300000002f47acc0100000000",
-        "scsiNAADeviceID": "6f47acc1000000006a6f373300000002",
+        "qosPolicyID": null,
+        "scsiEUIDeviceID": "336565750000013ff47acc0100000000",
+        "scsiNAADeviceID": "6f47acc100000000336565750000013f",
         "sliceCount": 1,
         "status": "active",
-        "totalSize": 1000341504,
+        "totalSize": 1000000716800,
         "virtualVolumeID": null,
-        "volumeAccessGroups": [],
-        "volumeID": 2,
-        "volumePairs": []
-      },
-      {
-        "access": "replicationTarget",
-        "accountID": 1,
-        "attributes": {
-          "name1": "value1",
-          "name2": "value2",
-          "name3": "value3"
-        },
-        "blockSize": 4096,
-        "createTime": "2016-04-06T17:26:31Z",
-        "deleteTime": "",
-        "enable512e": false,
-        "iqn": "iqn.2010-01.com.solidfire:jo73.3",
-        "name": "doctest2",
-        "purgeTime": "",
-        "qos": {
-          "burstIOPS": 150,
-          "burstTime": 60,
-          "curve": {
-            "4096": 100,
-            "8192": 160,
-            "16384": 270,
-            "32768": 500,
-            "65536": 1000,
-            "131072": 1950,
-            "262144": 3900,
-            "524288": 7600,
-            "1048576": 15000
-          },
-          "maxIOPS": 100,
-          "minIOPS": 50
-        },
-        "scsiEUIDeviceID": "6a6f373300000003f47acc0100000000",
-        "scsiNAADeviceID": "6f47acc1000000006a6f373300000003",
-        "sliceCount": 1,
-        "status": "active",
-        "totalSize": 1000341504,
-        "virtualVolumeID": null,
-        "volumeAccessGroups": [],
-        "volumeID": 3,
-        "volumePairs": []
+        "volumeAccessGroups": [
+        22
+        ],
+        "volumeConsistencyGroupUUID": "3003109e-6e75-444c-8cee-470d641a09c3",
+        "volumeID": 319,
+        "volumePairs": [],
+        "
       }
-    ]
   }
 }
 ----
