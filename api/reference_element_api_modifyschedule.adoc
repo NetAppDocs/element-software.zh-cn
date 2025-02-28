@@ -182,13 +182,17 @@ string
  a| 
 为计划指定的唯一名称，创建的快照的保留期限以及从中创建快照的卷的卷 ID 。有效值：
 
+* `enableRemoteReplication` ：指示是否应将快照包括在远程复制中。boolean
+* `ensureSerialCreation`：指定在上一个快照复制正在进行中时是否应允许创建新快照。boolean
+* `name` ：要使用的快照名称。string
+* `retention`：快照的保留时间。根据时间、它会以以下格式之一显示：
++
+** FIFO：快照保留在先进先出(FIFO)的基础上。如果为空，则快照将永久保留。string
+** HH：mm：ss
+
+
 * `volumeID` ：要包括在快照中的卷的 ID 。整型
 * `volumes` ：要包含在组快照中的卷 ID 列表。（整型数组）
-* `name` ：要使用的快照名称。string
-* `enableRemoteReplication` ：指示是否应将快照包括在远程复制中。boolean
-* `retention` ：快照的保留时间，以 HH ： mm ： ss 表示如果为空，则快照将永久保留。string
-* `ifo` ：快照按先出（ FIFO ）原则保留。string
-* `ensureSerialCreation` ：指定在执行先前的快照复制时是否应允许创建新的快照。boolean
 
  a| 
 link:reference_element_api_schedule.html["schedule"^]

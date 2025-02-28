@@ -51,6 +51,15 @@ failedDieCount
 
 
  a| 
+iosInProge.
+ a| 
+此驱动器正在进行的I/O数。
+ a| 
+整型
+
+
+
+ a| 
 正在删除生命
  a| 
 驱动器介质损耗指示器。
@@ -87,9 +96,36 @@ PowerOnHours
 
 
  a| 
+读取
+ a| 
+每秒对此驱动器调用的read()数。
+ a| 
+整型
+
+
+
+ a| 
 读取字节
  a| 
 由于客户端操作而从驱动器读取的总字节数。
+ a| 
+整型
+
+
+
+ a| 
+读取组合
+ a| 
+可合并为较大读取的相邻扇区的read()调用数量。
+ a| 
+整型
+
+
+
+ a| 
+readMsec
+ a| 
+读取所用的毫秒数。
  a| 
 整型
 
@@ -168,9 +204,36 @@ usedCapacity
 
 
  a| 
+写入
+ a| 
+每秒对此驱动器的write()调用数。
+ a| 
+整型
+
+
+
+ a| 
 writeBytes
  a| 
 由于客户端活动而写入驱动器的总字节数。
+ a| 
+整型
+
+
+
+ a| 
+写入组合
+ a| 
+可合并为较大写入的对相邻扇区的write()调用数。
+ a| 
+整型
+
+
+
+ a| 
+writeMsec
+ a| 
+写入所用的毫秒数。
  a| 
 整型
 
@@ -189,3 +252,5 @@ writeOps
 == 了解更多信息
 
 xref:reference_element_api_getdrivestats.adoc[GetDriveStats]
+
+ // 2025 FEB 27, DOC-4778
