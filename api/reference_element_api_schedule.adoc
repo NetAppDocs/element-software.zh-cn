@@ -157,7 +157,7 @@ scheduleInfo
 * `name` ：要使用的快照名称。string
 * `retention`：快照的保留时间。根据时间、它会以以下格式之一显示：
 +
-** FIFO：快照保留在先进先出(FIFO)的基础上。如果为空，则快照将永久保留。string
+** `fifo`：快照将按先进先出(FIFO)原则保留。如果为空，则快照将永久保留。string
 ** HH：mm：ss
 
 
