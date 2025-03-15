@@ -27,7 +27,7 @@ NOTE: 根据存储集群上运行的当前Element版本、在Element 12.8升级�
 
 === 卷负载平衡
 
-Element 12.8.引入了卷负载平衡功能。您可以使用此功能根据每个卷的实际IOPS级别(而不是QoS策略中配置的最小IOPS)在节点之间平衡卷。您只能使用卷负载平衡功能来平衡卷。您不能使用它来平衡虚拟卷。默认情况下、卷负载平衡功能处于禁用状态。您可以通过将API参数与和API方法或link:../storage/task_system_manage_cluster_volume_load_balancing.html["卷负载平衡"]Element UI中的选项结合link:../api/reference_element_api_enablefeature.html["EnableFeature"]使用来启用和link:../api/reference_element_api_disablefeature.html["DisableFeature"]禁用此 `VolumeLoadBalanceOnActualIOPS`功能。
+Element 12.8.引入了卷负载平衡功能。您可以使用此功能根据每个卷的实际IOPS级别(而不是QoS策略中配置的最小IOPS)在节点之间平衡卷。您只能使用卷负载平衡功能来平衡卷。您不能使用它来平衡虚拟卷。默认情况下、卷负载平衡功能处于禁用状态。您可以通过将API参数与和link:../api/reference_element_api_disablefeature.html["DisableFeature"]API方法结合link:../api/reference_element_api_enablefeature.html["EnableFeature"]使用或使用link:../storage/task_system_manage_cluster_volume_load_balancing.html["卷负载平衡"]Element UI中的选项来启用和禁用此 `VolumeLoadBalanceOnActualIOPS`功能。
 
 
 
