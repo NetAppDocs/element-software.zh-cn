@@ -14,6 +14,9 @@ summary: 根据您设置的访问类型，可用的 Element API 方法会有所�
 根据您设置的访问类型，可用的 Element API 方法会有所不同。
 
 
+NOTE: 通过API提供的某些访问类型在Element UI中不可用。
+
+
 
 == —帐户
 
@@ -1108,3 +1111,5 @@ GetAsyncResult
 RemoveDrives
 
 |===
+.相关信息
+link:../storage/concept_system_manage_manage_cluster_administrator_users.html#view-cluster-admin-details["了解Element UI中提供的访问类型"]

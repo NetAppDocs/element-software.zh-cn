@@ -61,9 +61,13 @@ NOTE: 要通过每节点 UI 访问集群中的活动节点，需要使用本地�
 
 
 +
+[NOTE]
+====
+所有权限均可用于管理员访问类型。
 
-NOTE: 所有权限均可用于管理员访问类型。
+通过API提供的某些访问类型在Element UI中不可用。
 
+====
 +
 ** * 类型 * ：集群管理员的类型。可能值：
 +
@@ -152,12 +156,9 @@ link:task_system_manage_enable_ldap_authentication.html["使用 Element 用户�
 . 单击 * 保存更改 * 。
 
 
-
-
-== 了解更多信息
-
+.相关信息
+* link:../api/reference_element_api_app_b_access_control.html["了解可用于Element API的访问类型"]
 * link:task_system_manage_enable_ldap_authentication.html["使用 Element 用户界面启用 LDAP 身份验证"]
 * link:concept_system_manage_manage_ldap.html["禁用 LDAP"]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 

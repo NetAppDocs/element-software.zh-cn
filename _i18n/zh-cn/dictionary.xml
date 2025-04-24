@@ -12388,4 +12388,9 @@
   <block id="65dc2083558f47cd1151751a12c24549" category="paragraph">浮点或整数、具体取决于同步操作的类型</block>
   <block id="ec6874eecaec538abf3d408bf6b6b411" category="list-text"><block ref="cf54937a2330ac17aa523bf7130911a3" prefix="" category="inline-code"></block>：快照将按先进先出(FIFO)原则保留。如果为空，则快照将永久保留。string</block>
   <block id="995938d68f1857072e8bf08ab00f47df" category="paragraph">Element 12.8.引入了卷负载平衡功能。您可以使用此功能根据每个卷的实际IOPS级别(而不是QoS策略中配置的最小IOPS)在节点之间平衡卷。您只能使用卷负载平衡功能来平衡卷。您不能使用它来平衡虚拟卷。默认情况下、卷负载平衡功能处于禁用状态。您可以通过将API参数与和<block ref="ca543ea41b9fe86f5db5c46f8401b9de" category="inline-link-macro-rx"></block>API方法结合<block ref="1028004a3d63b00e7896fde204286489" category="inline-link-macro-rx"></block>使用或使用<block ref="0e280c25b1846637cc005ef57df39d27" category="inline-link-macro-rx"></block>Element UI中的选项来启用和禁用此<block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix=" " category="inline-code"></block>功能。</block>
+  <block id="cedd3b982f345250c95c539d68542a1c" category="admonition">通过API提供的某些访问类型在Element UI中不可用。</block>
+  <block id="66ae9524f9c214ce3d4ddc510dc6384a" category="inline-link-macro">了解Element UI中提供的访问类型</block>
+  <block id="e3ae42684db77c59ef80c04aae526de5" category="paragraph"><block ref="e3ae42684db77c59ef80c04aae526de5" category="inline-link-macro-rx"></block></block>
+  <block id="f72c81a1158d9efb9bad238e3c497a6c" category="inline-link-macro">了解可用于Element API的访问类型</block>
+  <block id="c858f3d30df8c552799df529153c0e44" category="list-text"><block ref="c858f3d30df8c552799df529153c0e44" category="inline-link-macro-rx"></block></block>
 </blocks>
