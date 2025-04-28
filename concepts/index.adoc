@@ -23,11 +23,3 @@ summary: 了解与 Element 软件相关的基本概念。
 * xref:concept_solidfire_concepts_data_protection.adoc[数据保护]
 * xref:concept_data_manage_volumes_solidfire_quality_of_service.adoc[性能和服务质量]
 
-
-
-
-== 了解更多信息
-
-* https://www.netapp.com/data-storage/solidfire/["SolidFire 全闪存存储概述"^]
-* https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
-

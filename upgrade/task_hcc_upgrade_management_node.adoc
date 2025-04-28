@@ -29,12 +29,17 @@ NOTE: 如果您需要有关升级管理节点12.2或更早版本的信息、请�
 
 .步骤
 . 以 vCenter 管理员身份登录到 vSphere Web Client 。
-. 从vSphere Client菜单中、选择*虚拟机*>*模板*。
-. 右键单击虚拟机，然后选择*兼容性*>*升级虚拟机兼容性*。
+. 从vSphere Client菜单中选择*虚拟机和模板*。
+. 右键单击虚拟机(VM)，然后选择*Power*>*关闭子操作系统*。
++
+请等待虚拟机关闭。
+
+. 右键单击该虚拟机，然后选择*兼容性*>*升级虚拟机兼容性*。
 . 选择 * 是 * 。
 . 根据vSphere环境的版本、选择ESXi 6.7或更高版本。
 . 选择*OK*。
-. 升级完成后、选择* vSphere客户端刷新*并验证虚拟机兼容性是否为所需版本。
+. 升级完成后，右键单击该虚拟机，然后选择*Power*>*Power On*。
+. 选择*vSphere客户端刷新*并验证虚拟机兼容性是否为所需版本。
 
 
 
@@ -57,7 +62,7 @@ NOTE: 如果您未依次更新管理服务和 Element 存储，则无法使用�
 
 === 将管理节点从12.3.x或更高版本升级到版本12.5或更高版本
 
-您可以将管理节点从12.3.x或更高版本原位升级到版本12.5或更高版本、而无需配置新的管理节点虚拟机。
+您可以将管理节点从12.3.x或更高版本原位升级到12.5或更高版本、而无需配置新的管理节点VM。
 
 
 NOTE: Element 12.5或更高版本的管理节点是可选的升级。现有部署不需要此功能。
@@ -80,8 +85,8 @@ NOTE: 如果 eth0 无法路由到 SVIP ，则永久性卷可能需要额外的�
 
 
 .步骤
-. 使用 SSH 或控制台访问登录到管理节点虚拟机。
-. 下载 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理节点 ISO"^] 从 NetApp 支持站点到管理节点虚拟机的 Element 软件。
+. 使用SSH或控制台访问登录到管理节点VM。
+. 将适用于Element的软件从NetApp支持站点下载 https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["管理节点 ISO"^]到管理节点虚拟机。
 +
 
 NOTE: 此 ISO 的名称类似于 `solidfire-fdva-<element release>-px-XX.X.x.XXXX.iso`

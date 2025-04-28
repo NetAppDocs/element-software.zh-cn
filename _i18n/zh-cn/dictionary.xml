@@ -651,8 +651,6 @@
   <block id="ddaa5fe2d426a2a7c85d0912d4c4150d" category="list-text"><block ref="ddaa5fe2d426a2a7c85d0912d4c4150d" category="inline-xref-macro-rx"></block></block>
   <block id="35beb39012d21be6ba566219e99021b9" category="inline-xref-macro">性能和服务质量</block>
   <block id="18c3954973025e7d4855c26a9bff4989" category="list-text"><block ref="18c3954973025e7d4855c26a9bff4989" category="inline-xref-macro-rx"></block></block>
-  <block id="e2291d0b9bc2d41bc343cf77cf0a1a87" category="inline-link">SolidFire 全闪存存储概述</block>
-  <block id="e2c85d417b263e570fcb0b7027cad0ba" category="list-text"><block ref="e2c85d417b263e570fcb0b7027cad0ba" category="inline-link-rx"></block></block>
   <block id="a34166d7b2a72e36c4faae9587f3fe85" category="summary">要管理和提供对系统上存储资源的访问，您需要为系统资源设置帐户。</block>
   <block id="8fc879c589cd3a9ef46cd4e14a9daf37" category="paragraph">要管理和提供对系统上存储资源的访问，您需要为系统资源设置帐户。</block>
   <block id="448bea1033c688e6ef44e764985bdf53" category="paragraph">使用 Element 存储，您可以创建和管理以下类型的帐户：</block>
@@ -4896,7 +4894,6 @@
   <block id="580c35d1b4dc1d63073ae537ce0f28ab" category="inline-link-macro">配置其他存储 NIC</block>
   <block id="4733d6f93dbca188e79e25900eaeacb7" category="list-text">您已按照中的说明配置了一个额外的网络适配器（如果需要） <block ref="1f5ebd4d6fe6b214007c2692b1a22cfb" category="inline-link-macro-rx"></block>。</block>
   <block id="97badad042e3a18dd496d204994f3a2f" category="admonition">如果 eth0 无法路由到 SVIP ，则永久性卷可能需要额外的网络适配器。在 iSCSI 存储网络上配置一个新的网络适配器，以便配置永久性卷。</block>
-  <block id="1a6ffd97834fd7495156f52f3058e50b" category="list-text">使用 SSH 或控制台访问登录到管理节点虚拟机。</block>
   <block id="e097e26564fa470c938b5aa9cb375497" category="admonition">此 ISO 的名称类似于 `solidfire-fdva-&lt;element release&gt;-px-XX.X.x.XXXX.iso`</block>
   <block id="7af3e8bcf74bc743e6d42428a1ef8e84" category="list-text">对下载的文件运行 md5sum 以检查下载的完整性，并将输出与 NetApp 支持站点上提供的 Element 软件进行比较，如以下示例所示：</block>
   <block id="4e82f8cfbdbaab82d0c8c7e65d59b756" category="paragraph">`sudo md5sum -b &lt;path to ISO&gt;/solidfire-fdva-&lt;element release&gt;-supx-XX.X.XXXX.iso`</block>
@@ -10917,7 +10914,6 @@
   <block id="592247e1218ecdf894b0dc3bf1e2b0c6" category="paragraph">转至 Element 软件<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 并下载最新的存储节点映像。</block>
   <block id="37a42081cc0d0c72d69723b5792a6c73" category="list-text">您已使用 NetApp Hybrid Cloud Control 将管理服务捆绑包更新为最新版本。您可以从以下 IP 地址访问 NetApp Hybrid Cloud Control ： ` https://&lt;ManagementNodeIP&gt;`</block>
   <block id="303c7d52b5c18e714947ecd4996594a2" category="inline-link">管理节点 ISO</block>
-  <block id="bc6733dc102d98376848617102ed0352" category="list-text">下载<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block> 从 NetApp 支持站点到管理节点虚拟机的 Element 软件。</block>
   <block id="9ec21c21d51558c2c4720284cc8e9f10" category="summary">您可以通过升级所有 SolidFire 存储组件，在部署后使 NetApp Element 存储系统保持最新。</block>
   <block id="59a003ce49b82fe00de09fe03510553f" category="doc">升级顺序概述</block>
   <block id="d38f48e8e196e92a833076faf76e21bc" category="inline-xref">系统升级顺序</block>
@@ -11284,7 +11280,6 @@
   <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">您可以将管理节点从12.3.x或更高版本升级到管理节点12.5或更高版本。</block>
   <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
   <block id="2a67edcd39483da3b7c2244d1a853ca7" category="section-title">将管理节点从12.3.x或更高版本升级到版本12.5或更高版本</block>
-  <block id="00986f242d79556b370e046857ac478c" category="paragraph">您可以将管理节点从12.3.x或更高版本原位升级到版本12.5或更高版本、而无需配置新的管理节点虚拟机。</block>
   <block id="162101c4a12e19388bdcdc0495ccc2ae" category="admonition">Element 12.5或更高版本的管理节点是可选的升级。现有部署不需要此功能。</block>
   <block id="cd847f70c9955e37a7a701eee9f2cd67" category="list-text">您要升级的管理节点为 12.0 版，并使用 IPv4 网络。管理节点版本12.5或更高版本不支持IPv6。</block>
   <block id="94f146a196ada89ebff337e86bd67dd8" category="list-text">如果要将管理节点更新到版本12.5或更高版本、则需要使用管理服务2.21.61或更高版本继续操作。</block>
@@ -12357,11 +12352,8 @@
   <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">第1步：升级管理节点上的VM硬件版本</block>
   <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">如果要将现有管理节点原位升级到Element 128、则在升级之前、必须确保管理节点上的VM硬件版本与ESXi 6.7 (VM硬件版本14)或更高版本兼容、具体取决于您的环境。</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">以 vCenter 管理员身份登录到 vSphere Web Client 。</block>
-  <block id="7936b082e6a3d2167a2478cee0772514" category="list-text">从vSphere Client菜单中、选择*虚拟机*&gt;*模板*。</block>
-  <block id="ad4062bf296d686c04c351f026e2400d" category="list-text">右键单击虚拟机，然后选择*兼容性*&gt;*升级虚拟机兼容性*。</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">根据vSphere环境的版本、选择ESXi 6.7或更高版本。</block>
   <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">选择*OK*。</block>
-  <block id="43c3c8c2f75e6064714e6ec942f1e916" category="list-text">升级完成后、选择* vSphere客户端刷新*并验证虚拟机兼容性是否为所需版本。</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">第2步：将管理节点升级到Element 12.5或更高版本</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">选择以下升级选项之一：</block>
   <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp Element软件管理这些存储资源集群。此站点包含Element软件12.8.</block>
@@ -12393,4 +12385,13 @@
   <block id="e3ae42684db77c59ef80c04aae526de5" category="paragraph"><block ref="e3ae42684db77c59ef80c04aae526de5" category="inline-link-macro-rx"></block></block>
   <block id="f72c81a1158d9efb9bad238e3c497a6c" category="inline-link-macro">了解可用于Element API的访问类型</block>
   <block id="c858f3d30df8c552799df529153c0e44" category="list-text"><block ref="c858f3d30df8c552799df529153c0e44" category="inline-link-macro-rx"></block></block>
+  <block id="6e93fbac14e98fd4eee5f4f560e1d580" category="list-text">从vSphere Client菜单中选择*虚拟机和模板*。</block>
+  <block id="be19667c20f2f3c6b932b48a9c488774" category="list-text">右键单击虚拟机(VM)，然后选择*Power*&gt;*关闭子操作系统*。</block>
+  <block id="6f5f678ae471ecc070cea185b3d40ed4" category="paragraph">请等待虚拟机关闭。</block>
+  <block id="b58c4fe6ac8a2dffa0fb94c9d1de7556" category="list-text">右键单击该虚拟机，然后选择*兼容性*&gt;*升级虚拟机兼容性*。</block>
+  <block id="eeb196c0a77fbb85f8908ae3cca16bfc" category="list-text">升级完成后，右键单击该虚拟机，然后选择*Power*&gt;*Power On*。</block>
+  <block id="917268d8045dd1bb18e5f8cc7caf9359" category="list-text">选择*vSphere客户端刷新*并验证虚拟机兼容性是否为所需版本。</block>
+  <block id="a879c8e657832d392ef358d2440c3faf" category="paragraph">您可以将管理节点从12.3.x或更高版本原位升级到12.5或更高版本、而无需配置新的管理节点VM。</block>
+  <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">使用SSH或控制台访问登录到管理节点VM。</block>
+  <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">将适用于Element的软件从NetApp支持站点下载<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>到管理节点虚拟机。</block>
 </blocks>
