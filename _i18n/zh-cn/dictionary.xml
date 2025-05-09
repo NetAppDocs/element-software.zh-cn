@@ -12311,7 +12311,6 @@
   <block id="906ea05443e4b488a42f3f06305353ee" category="paragraph">在执行此过程之前、您应了解<block ref="6cc910c0977361227d631be0efac7242" category="inline-link-macro-rx"></block>以及是否要使用它们。永久性卷是可选的，但建议在虚拟机（ VM ）丢失时用于管理节点配置数据恢复。</block>
   <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">第1步：下载ISO或OVA并部署虚拟机</block>
   <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">从NetApp支持站点下载相应的ISO或OVA并安装虚拟机。</block>
-  <block id="4aee9657f267c579c49541b5f19ca32c" category="list-text">从NetApp支持站点上的页面下载适用于您的安装的OVA或ISO<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>。新的OVA包含更新后的SSL证书。</block>
   <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">第2步：创建管理节点管理员并配置网络</block>
   <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">虚拟机安装完成后、创建管理节点管理员用户并配置管理节点网络。</block>
   <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">第3步：配置时间同步</block>
@@ -12394,4 +12393,5 @@
   <block id="a879c8e657832d392ef358d2440c3faf" category="paragraph">您可以将管理节点从12.3.x或更高版本原位升级到12.5或更高版本、而无需配置新的管理节点VM。</block>
   <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">使用SSH或控制台访问登录到管理节点VM。</block>
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">将适用于Element的软件从NetApp支持站点下载<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>到管理节点虚拟机。</block>
+  <block id="e43f2538484fde027e53efbedb634fce" category="list-text">从NetApp支持站点上的页面下载适用于您的安装的OVA或ISO<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>。</block>
 </blocks>
