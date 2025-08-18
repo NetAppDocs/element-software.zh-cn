@@ -3924,7 +3924,6 @@
   <block id="2f00805e044ca70467775f06c1872f89" category="paragraph">LDAP 服务器</block>
   <block id="5483ab43104d3514dfdd7917f5a51b09" category="paragraph">389 TCP/UDP</block>
   <block id="19a0425f816e3267d5a9f5ee03f4fc4f" category="paragraph">（可选） LDAP 查找</block>
-  <block id="6ca93b96b4cd5e33a779ecc83fde0268" category="paragraph">Element 存储固件升级</block>
   <block id="5ee0194e49d16c87d081efc156fb0d74" category="paragraph">远程存储集群 MVIP</block>
   <block id="75a4d5a956df2844befb13a89867e179" category="paragraph">远程复制集群配对通信</block>
   <block id="e902ca26db3b32a7d466ef307db87d60" category="paragraph">远程存储节点 MIP</block>
@@ -12394,4 +12393,5 @@
   <block id="6a309ddf9d0a46d94d5772dacb71dbc0" category="list-text">使用SSH或控制台访问登录到管理节点VM。</block>
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">将适用于Element的软件从NetApp支持站点下载<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>到管理节点虚拟机。</block>
   <block id="e43f2538484fde027e53efbedb634fce" category="list-text">从NetApp支持站点上的页面下载适用于您的安装的OVA或ISO<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="bd000e3a7a010d55765a9684adc1c25f" category="paragraph">元素存储升级</block>
 </blocks>
