@@ -4847,9 +4847,6 @@
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">您已确保所有节点上的系统时间均已同步，并且已为存储集群和节点正确配置 NTP 。必须在每个节点 Web UI （`https://[IP address] ： 442` ）中为每个节点配置一个 DNS 命名服务器，并且不会出现与时间偏差相关的未解决集群故障。</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">从 Hybrid Cloud Control 更新管理服务</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>。</block>
-  <block id="9cd44430d13c7f6664a4e628ee6d90e4" category="admonition">如果要将管理服务更新到版本 2.16 或更高版本，并且运行的是管理节点 11.3 到 11.8 ，则在更新管理服务之前，需要增加管理节点 VM 的 RAM 。</block>
-  <block id="17a2ec8576298e274b3b59e46ff67ea2" category="admonition">在升级 Element 软件之前，您必须更新到最新的管理服务包。</block>
-  <block id="109d7dba2c92c9420fece3ae278874f4" category="list-text"><block ref="bdcf6db43efb3c82b174a0c4c0a65c66" category="inline-link-macro-rx"></block>。</block>
   <block id="77f5518534e304c43787d59aa8f3ed00" category="inline-link-macro">升级 Element 软件和存储固件</block>
   <block id="35e9c48aa9c5ae2adc6b713d2399dba2" category="list-text"><block ref="1e896f189b3768a955ddd6464b4ba1e2" category="inline-link-macro-rx"></block>。</block>
   <block id="1aa4a50ace326eb5b8adfa204053822a" category="inline-link-macro">（可选）仅升级 Element 存储固件</block>
@@ -4883,7 +4880,6 @@
   <block id="f523905d48a1db956815565365a5a6ad" category="admonition">此操作将创建一个新数据库并在 vSphere Web Client 中完成安装。</block>
   <block id="9b572df8237d34b7c32142ac15f1325f" category="list-text">在 vSphere Web Client 中，请在任务监控器中查找以下已完成的任务，以确保安装已完成： `download plug-in` 和 `DeDeploy plug-in` 。</block>
   <block id="b9e50e6a339819ad9d12906b29e978ca" category="list-text">在插件的 * NetApp Element Configuration* 扩展点中的 * 关于 * 选项卡中验证版本更改。</block>
-  <block id="a2b39afbde860c9c0fc759f3772e2dd2" category="paragraph">您应看到以下版本详细信息或较新版本的详细信息：</block>
   <block id="4715e0cc20eb79c52c1f181ce0f6afb0" category="admonition">vCenter 插件包含联机帮助内容。要确保帮助包含最新内容，请在升级插件后清除浏览器缓存。</block>
   <block id="d7cc77e1654b4ecc5878545e7bf4f78d" category="summary">在 NetApp SolidFire 存储系统升级过程中，您需要升级管理节点。</block>
   <block id="1761ea607c3f8d002099290408801187" category="doc">升级管理节点</block>
@@ -11274,7 +11270,6 @@
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">您可以按以下顺序升级适用于Element 12.5或更高版本的NetApp SolidFire 全闪存存储系统。</block>
   <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">使用HealthTools升级到Element 12.3.x</block>
   <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。</block>
-  <block id="7ef561ec74f917ecad309d4001bff056" category="admonition">在将Element软件升级到版本12.5或更高版本之前、您必须升级到最新的管理服务包。如果要将Element软件更新到版本12.5或更高版本、则需要使用管理服务2.21.61或更高版本才能继续。</block>
   <block id="25c6e7b86999549e989728f739c4fc89" category="admonition">如果您要将H610S系列节点升级到Element 12.5或更高版本、并且此节点运行的Element版本早于11.8、则需要执行此中的其他升级步骤<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block> 用于每个存储节点。如果您运行的是Element 11.8或更高版本、则不需要执行其他升级步骤。</block>
   <block id="29bba7cbe3dac4ea58cab61272150fe8" category="paragraph">您可以将管理节点从12.3.x或更高版本升级到管理节点12.5或更高版本。</block>
   <block id="4ff70a8151851ab1e82db6f0eed42808" category="list-text"><block ref="810c9a492c31390e08f0e76e7c298785" category="inline-xref-macro-rx"></block></block>
@@ -12233,7 +12228,6 @@
   <block id="ce90fd614158a5c7e0a42a5908fa1cd7" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block></block>
   <block id="6f00c58e2f26b2ef4542eb663cdb651d" category="inline-link-macro">管理服务2.26.30通知(适用于VMware vCenter Server 5.4.1的NetApp Element插件)</block>
   <block id="ea3b1d5907ee8e4303c54ecc7765f0f2" category="list-text"><block ref="ea3b1d5907ee8e4303c54ecc7765f0f2" category="inline-link-macro-rx"></block></block>
-  <block id="fdbd44871ecf32ab0e37e9d3c077e28a" category="list-text">您正在升级到适用于vCenter Server 5.4、5.3、5.2、5.1或5.0的Element插件。</block>
   <block id="ec584e493ebc5976220074c48288215d" category="summary">您必须先创建 SnapMirror 端点，然后才能创建复制关系。您只能在Element软件Web UI中或使用API方法执行此任务。</block>
   <block id="a1d54a55e83901cd25e5b3724d5ca5e5" category="summary">您必须先在 Element 集群上启用 SnapMirror ，然后才能创建复制关系。您只能在Element软件Web UI中或使用API方法执行此任务。</block>
   <block id="5f974f5b5837f6beacdf509a09ac0df9" category="paragraph">^3^不支持以下节点。如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误消息、指出Element 12.x不支持此节点：</block>
@@ -12281,7 +12275,6 @@
   <block id="f96ed95b5509cb599aadb504ec5aa0d5" category="list-text">PeakWriteIops：统计信息间隔内观察到的最大写入IOPS。</block>
   <block id="041f17de41a9f1db9829ff79ad3ef600" category="list-text">SliceID：卷ID或分区ID</block>
   <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">《NetApp Element 软件12.8发行说明》</block>
-  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block>_new_</block>
   <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
   <block id="de1923eab698e40e118f826163735ce9" category="doc">Element软件中的新增功能</block>
   <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.8是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。</block>
@@ -12394,4 +12387,17 @@
   <block id="7258351fe62749f68f4b75a51c56912b" category="list-text">将适用于Element的软件从NetApp支持站点下载<block ref="ef86b20d3f4c031a449af5dec98fb6d8" category="inline-link-rx"></block>到管理节点虚拟机。</block>
   <block id="e43f2538484fde027e53efbedb634fce" category="list-text">从NetApp支持站点上的页面下载适用于您的安装的OVA或ISO<block ref="00b11b6abe7f0003872aa657422c59ae" category="inline-link-macro-rx"></block>。</block>
   <block id="bd000e3a7a010d55765a9684adc1c25f" category="paragraph">元素存储升级</block>
+  <block id="53e04163346326834efd61306c0800b5" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block></block>
+  <block id="7373675a8dd923fb7362a663e0cb6e1f" category="inline-link">vCenter 插件 5.5 发行说明</block>
+  <block id="1bb29b9b64a805e59f4873c404e002c4" category="list-text"><block ref="19934d197d6821fc66160fdecbaaf499" category="inline-link-rx"></block>_新的_</block>
+  <block id="9addfb2ff8ac3a9826d26736c6697320" category="inline-link-macro">管理服务 2.27.40 版通知（适用于 VMware vCenter Server 5.5.16 的NetApp Element插件）</block>
+  <block id="5f97199338e05d8d021611cc709fe28f" category="list-text"><block ref="5f97199338e05d8d021611cc709fe28f" category="inline-link-macro-rx"></block></block>
+  <block id="111e46cd39158a394cd8236185cf08df" category="inline-link-macro">在升级存储之前运行 Element 存储健康检查</block>
+  <block id="15c2fc4333a0aada89bc8cf9f0ebbdac" category="list-text"><block ref="76b28290238ca686b8113b7395511f66" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c759706a0ac25a6b9701339b7c7959d4" category="list-text">管理服务 2.27 捆绑包包含适用于 vCenter Server 5.5 的 Element Plug-in，该插件仅与管理节点 12.8 兼容。当您更新到管理服务 2.27 时，您必须更改升级顺序并在升级到 Element 12.8 之后更新管理服务包，以使管理节点和管理服务之间兼容。</block>
+  <block id="aebb2147cc4f1c96830ec15bbe8bbaaa" category="list-text">如果您要更新到管理服务 2.21.61 到 2.26.40，则必须在升级到 Element 12.8 之前更新管理服务包。</block>
+  <block id="a364164cb135a0ea8d140eae7c98e606" category="admonition">如果您要将管理服务更新到版本 2.16 或更高版本，并且正在运行管理节点 11.3 到 11.8，则需要在更新管理服务之前增加管理节点 VM 的 RAM。</block>
+  <block id="e4ccb22f69b8be133f5125883186655e" category="paragraph">管理服务 2.22.7 捆绑包包含适用于 vCenter Server 5.0 的 Element 插件，其中包含远程插件。如果您使用 Element 插件，则应升级到管理服务 2.22.7 或更高版本，以符合 VMware 取消本地插件支持的指令。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block> 。</block>
+  <block id="f09175d59684197ed7788662b7cd5fe4" category="list-text">您正在升级到适用于 vCenter Server 5.5、5.4、5.3、5.2、5.1 或 5.0 的 Element 插件。</block>
+  <block id="6eb41496b0f7ef5be359156d440fc5ea" category="paragraph">您应该会看到以下版本详细信息：</block>
 </blocks>

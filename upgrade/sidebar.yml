@@ -6,12 +6,12 @@ entries:
   url: "/upgrade/concept_element_upgrade_overview.html"
 - title: 系统升级过程
   entries:
-  - title: 更新管理服务
-    url: "/upgrade/task_hcc_update_management_services.html"
   - title: 在升级存储之前，请运行 Element 存储运行状况检查
     url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
   - title: 升级 Element 软件
     url: "/upgrade/task_hcc_upgrade_element_software.html"
+  - title: 更新管理服务
+    url: "/upgrade/task_hcc_update_management_services.html"
   - title: 升级存储固件
     url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
   - title: 升级管理节点

@@ -53,6 +53,7 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 * link:./media/mNode_12.7.pdf["管理节点12.7.通知"^]
 * link:./media/Element_Software_12.5.pdf["Element软件12.5."^]
 * link:./media/mNode_12.5.pdf["管理节点12.5."^]
+* link:./media/mgmt_svcs_2.27_notice.pdf["管理服务 2.27.40 版通知（适用于 VMware vCenter Server 5.5.16 的NetApp Element插件）"^]
 * link:./media/mgmt_svcs_2.26_notice.pdf["管理服务2.26.30通知(适用于VMware vCenter Server 5.4.1的NetApp Element插件)"^]
 * link:./media/mgmt_svcs_2.25_notice.pdf["管理服务2.25.42通知(适用于VMware vCenter Server 5.3.9的NetApp Element插件)"^]
 * link:./media/mgmt_svcs_2.24_notice.pdf["管理服务2.24.40通知(适用于VMware vCenter Server 5.2.12的NetApp Element插件)"^]

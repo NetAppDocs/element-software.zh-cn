@@ -59,17 +59,21 @@ TIP: 要检查版本，请登录到管理节点并在登录横幅中查看 Eleme
 您可以按以下顺序升级适用于Element 12.5或更高版本的NetApp SolidFire 全闪存存储系统。
 
 .步骤
+. link:task_hcc_upgrade_element_prechecks.html["在升级存储之前运行 Element 存储健康检查"] 。
+. link:task_hcc_upgrade_element_software.html["升级 Element 软件和存储固件"]。
 . link:task_hcc_update_management_services.html["从 Hybrid Cloud Control 更新管理服务"]。
 +
+[IMPORTANT]
+====
+** 管理服务 2.27 捆绑包包含适用于 vCenter Server 5.5 的 Element Plug-in，该插件仅与管理节点 12.8 兼容。当您更新到管理服务 2.27 时，您必须更改升级顺序并在升级到 Element 12.8 之后更新管理服务包，以使管理节点和管理服务之间兼容。
+** 如果您要更新到管理服务 2.21.61 到 2.26.40，则必须在升级到 Element 12.8 之前更新管理服务包。
 
-IMPORTANT: 如果要将管理服务更新到版本 2.16 或更高版本，并且运行的是管理节点 11.3 到 11.8 ，则在更新管理服务之前，需要增加管理节点 VM 的 RAM 。
 
+====
 +
 
-IMPORTANT: 在升级 Element 软件之前，您必须更新到最新的管理服务包。
+IMPORTANT: 如果您要将管理服务更新到版本 2.16 或更高版本，并且正在运行管理节点 11.3 到 11.8，则需要在更新管理服务之前增加管理节点 VM 的 RAM。
 
-. link:task_hcc_upgrade_element_prechecks.html["在升级存储之前，请运行 Element 存储运行状况检查"]。
-. link:task_hcc_upgrade_element_software.html["升级 Element 软件和存储固件"]。
 . link:task_hcc_upgrade_storage_firmware.html["（可选）仅升级 Element 存储固件"]。
 +
 

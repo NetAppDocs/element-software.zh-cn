@@ -19,8 +19,9 @@ keywords: netapp, solidfire, cluster, management services, hcc, update managemen
 从 Element 11.3 管理节点版本开始，管理节点设计已根据提供单个服务的新模块化架构进行了更改。这些模块化服务可为 SolidFire 全闪存存储系统提供集中式和扩展式管理功能。管理服务包括系统遥测，日志记录和更新服务，适用于 vCenter Server 的 Element 插件的 QoSSIOC 服务， NetApp Hybrid Cloud Control 等。
 
 .关于此任务
-* 在升级 Element 软件之前，您必须升级到最新的管理服务包。
+管理服务 2.27 捆绑包包含适用于 vCenter Server 5.5 的 Element Plug-in，该插件仅与管理节点 12.8 兼容。当您更新到管理服务 2.27 时，您必须更改升级顺序并在升级到 Element 12.8 之后更新管理服务包，以使管理节点和管理服务之间兼容。
 
+如果您要更新到管理服务 2.21.61 到 2.26.40，则必须在升级到 Element 12.8 之前更新管理服务包。
 
 [NOTE]
 ====
