@@ -8,14 +8,14 @@ entries:
   entries:
   - title: 在升级存储之前，请运行 Element 存储运行状况检查
     url: "/upgrade/task_hcc_upgrade_element_prechecks.html"
-  - title: 升级 Element 软件
-    url: "/upgrade/task_hcc_upgrade_element_software.html"
-  - title: 更新管理服务
-    url: "/upgrade/task_hcc_update_management_services.html"
-  - title: 升级存储固件
-    url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
   - title: 升级管理节点
     url: "/upgrade/task_hcc_upgrade_management_node.html"
+  - title: 更新管理服务
+    url: "/upgrade/task_hcc_update_management_services.html"
+  - title: 升级 Element 软件
+    url: "/upgrade/task_hcc_upgrade_element_software.html"
+  - title: 升级存储固件
+    url: "/upgrade/task_hcc_upgrade_storage_firmware.html"
   - title: 升级适用于 vCenter Server 的 Element 插件
     url: "/upgrade/task_vcp_upgrade_plugin.html"
 - title: 使用适用于 vCenter Server 的 Element 插件升级适用于 NetApp SolidFire 存储系统的 vSphere 组件

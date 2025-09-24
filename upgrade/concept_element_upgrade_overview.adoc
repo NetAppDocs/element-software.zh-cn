@@ -60,7 +60,11 @@ TIP: 要检查版本，请登录到管理节点并在登录横幅中查看 Eleme
 
 .步骤
 . link:task_hcc_upgrade_element_prechecks.html["在升级存储之前运行 Element 存储健康检查"] 。
-. link:task_hcc_upgrade_element_software.html["升级 Element 软件和存储固件"]。
+. link:task_hcc_upgrade_management_node.html["（可选）升级管理节点"]。
++
+
+NOTE: 升级存储集群上的 Element 软件不再需要升级管理节点操作系统。如果管理节点为 11.3 或更高版本，您只需将管理服务升级到最新版本，即可使用 NetApp Hybrid Cloud Control 执行 Element 升级。如果您希望出于安全修复等其他原因升级管理节点操作系统，请按照适用于您的方案的管理节点升级操作步骤进行操作。
+
 . link:task_hcc_update_management_services.html["从 Hybrid Cloud Control 更新管理服务"]。
 +
 [IMPORTANT]
@@ -74,15 +78,11 @@ TIP: 要检查版本，请登录到管理节点并在登录横幅中查看 Eleme
 
 IMPORTANT: 如果您要将管理服务更新到版本 2.16 或更高版本，并且正在运行管理节点 11.3 到 11.8，则需要在更新管理服务之前增加管理节点 VM 的 RAM。
 
+. link:task_hcc_upgrade_element_software.html["升级 Element 软件和存储固件"]。
 . link:task_hcc_upgrade_storage_firmware.html["（可选）仅升级 Element 存储固件"]。
 +
 
 NOTE: 如果在主要版本之外可以进行新的存储固件升级，则可以执行此任务。
-
-. link:task_hcc_upgrade_management_node.html["（可选）升级管理节点"]。
-+
-
-NOTE: 升级存储集群上的 Element 软件不再需要升级管理节点操作系统。如果管理节点为 11.3 或更高版本，您只需将管理服务升级到最新版本，即可使用 NetApp Hybrid Cloud Control 执行 Element 升级。如果您希望出于安全修复等其他原因升级管理节点操作系统，请按照适用于您的方案的管理节点升级操作步骤进行操作。
 
 . link:task_vcp_upgrade_plugin.html["升级适用于 vCenter Server 的 Element 插件"]。
 
