@@ -226,6 +226,9 @@ echo '{"trident": true, "mvip": "[mvip IP address]", "account_name": "[persisten
 
 
 
+
+
+[[step_6_recover_mnode_redeploy]]
 . 配置并运行管理节点重新部署命令以连接到集群上托管的永久性卷，并使用先前的管理节点配置数据启动服务：
 +
 

@@ -1,7 +1,6 @@
 ---
 section: hccstorage
 title: 使用 NetApp Hybrid Cloud Control 管理和监控存储
-url: "/hccstorage/index.html"
 entries:
 - title: 使用 NetApp Hybrid Cloud Control 添加和管理存储集群
   url: "/hccstorage/task-hcc-manage-storage-clusters.html"

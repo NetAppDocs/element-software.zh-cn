@@ -11,7 +11,7 @@ summary: 您必须先创建 SnapMirror 端点，然后才能创建复制关系�
 
 
 [role="lead"]
-您必须先创建 SnapMirror 端点，然后才能创建复制关系。您只能在Element软件Web UI中或使用执行此任务link:../api/concept_element_api_snapmirror_api_methods.html["SnapMirror API 方法"]。
+必须先创建SnapMirror端点，然后才能创建复制关系。您只能在 Element 软件的 Web 用户界面中或使用以下方式执行此任务： link:../api/reference_element_api_abortsnapmirrorrelationship.html["SnapMirror API 方法"]。
 
 .开始之前
 您必须已在 Element 集群上启用 SnapMirror 。

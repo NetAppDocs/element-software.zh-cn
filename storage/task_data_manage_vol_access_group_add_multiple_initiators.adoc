@@ -22,7 +22,7 @@ TIP: 您可以通过单击操作图标并单击活动卷列表中卷的 * 查看
 
 您可以使用 API 调用来分配基于启动程序的 CHAP 属性。要为每个启动程序添加 CHAP 帐户名称和凭据，必须使用 ModifyInitiator API 调用删除和添加 CHAP 访问和属性。
 
-有关详细信息，请参见 link:../api/index.html["使用 Element API 管理存储"]。
+有关详细信息，请参阅link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]。
 
 .步骤
 . 单击 * 管理 * > * 启动程序 * 。

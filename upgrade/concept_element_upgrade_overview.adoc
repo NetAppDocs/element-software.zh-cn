@@ -63,7 +63,7 @@ TIP: 要检查版本，请登录到管理节点并在登录横幅中查看 Eleme
 . link:task_hcc_upgrade_management_node.html["（可选）升级管理节点"]。
 +
 
-NOTE: 升级存储集群上的 Element 软件不再需要升级管理节点操作系统。如果管理节点为 11.3 或更高版本，您只需将管理服务升级到最新版本，即可使用 NetApp Hybrid Cloud Control 执行 Element 升级。如果您希望出于安全修复等其他原因升级管理节点操作系统，请按照适用于您的方案的管理节点升级操作步骤进行操作。
+NOTE: 您不再需要升级管理节点操作系统即可升级存储集群上的 Element 软件。如果管理节点版本为 11.3 或更高版本，则只需将管理服务升级到最新版本，即可使用NetApp Hybrid Cloud Control 执行 Element 升级。如果出于其他原因（例如安全修复）需要升级管理节点操作系统，请按照适用于您场景的管理节点升级程序进行操作。
 
 . link:task_hcc_update_management_services.html["从 Hybrid Cloud Control 更新管理服务"]。
 +

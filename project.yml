@@ -21,13 +21,13 @@ sidebar:
   - title: SolidFire和Element软件文档12.8
     url: "/index.html"
   - title: 发行说明
-    url: "/concepts/concept_rn_relatedrn_element.html"
     entries:
+    - title: 当前和以前的版本说明
+      url: "/concepts/concept_rn_relatedrn_element.html"
     - title: 新增功能
       url: "/concepts/concept_rn_whats_new_element.html"
   - section: concepts
   - title: 要求
-    url: "/setup/concept_requirements_overview.html"
     entries:
     - title: 网络要求
       url: "/storage/concept_prereq_networking.html"

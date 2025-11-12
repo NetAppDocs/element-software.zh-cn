@@ -21,7 +21,7 @@ summary: 您必须监控系统以进行诊断，并获取有关各种系统操�
 * link:task_monitor_iscsi_sessions.html["查看 iSCSI 会话"]
 * link:task_monitor_fibre_channel_sessions.html["查看光纤通道会话"]
 * link:concept_troubleshoot_drives.html["对驱动器进行故障排除"]
-* link:concept_troubleshoot_nodes.html["对节点进行故障排除"]
+* link:concept_remove_nodes_from_cluster.html["对节点进行故障排除"]
 * link:concept_per_node_work_with_utilities.html["使用存储节点的每节点实用程序"]
 * link:concept_mnode_work_with_the_management_node.html["使用管理节点"]
 * link:concept_monitor_understand_cluster_fullness_levels.html["了解集群填充度级别"]

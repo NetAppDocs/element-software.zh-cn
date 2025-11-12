@@ -34,6 +34,9 @@ keywords: netapp, solidfire, cluster, element, H610S upgrade, hcc, upgrade role
 * * 管理节点 * ：对于 NetApp Hybrid Cloud Control UI 和 API ，您环境中的管理节点运行的是 11.3 版。
 * * 集群运行状况 * ：您已验证集群是否已做好升级准备。请参见 link:task_hcc_upgrade_element_prechecks.html["在升级存储之前，请运行 Element 存储运行状况检查"]。
 * *已更新H610S存储节点的基板管理控制器(BMC)*：您已升级H610S节点的BMC版本。请参见 link:https://docs.netapp.com/us-en/hci/docs/rn_H610S_BMC_3.84.07.html["发行说明和升级说明"^]。
+
+
+[[element-upgrade-tim]]
 * *升级过程时间*：您已计划足够的时间执行升级。升级到Element软件12.5或更高版本时、升级过程时间会因您当前的Element软件版本和固件更新而异。
 +
 [cols="20,20,20,20,20"]

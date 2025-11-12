@@ -36,7 +36,7 @@ link:../storage/index.html["使用 Element 软件管理存储"]
 
 用于使用一组对象，方法和例程来管理 Element 存储。Element API 基于 HTTPS 上的 JSON-RPC 协议。您可以通过启用 API 日志来监控 Element UI 中的 API 操作；这样，您可以查看向系统发出的方法。您可以同时启用请求和响应，以查看系统如何对发出的方法做出响应。
 
-link:../api/index.html["使用 Element API 管理存储"]
+link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]
 
 
 
@@ -52,7 +52,7 @@ https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetAp
 
 用于使用 NetApp Hybrid Cloud Control 界面升级 Element 存储和管理服务以及管理存储资产。
 
-link:../hccstorage/index.html["使用 NetApp Hybrid Cloud Control 概述管理和监控存储"]
+link:../hccstorage/task-hcc-manage-storage-clusters.html["使用 NetApp Hybrid Cloud Control 管理和监控存储"]
 
 
 

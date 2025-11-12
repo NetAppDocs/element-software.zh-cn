@@ -15,7 +15,7 @@ summary: 您可以创建 iSCSI 或光纤通道启动程序，也可以为其分�
 
 此外，您还可以使用 API 调用来分配基于启动程序的 CHAP 属性。要为每个启动程序添加 CHAP 帐户名称和凭据，必须使用 `CreateInitiator` API 调用删除和添加 CHAP 访问和属性。通过 `CreateInitiators` 和 `ModfyInitiators` API 调用指定一个或多个 virtualNetworkID ，可以将启动程序访问限制为一个或多个 VLAN 。如果未指定虚拟网络，则启动程序可以访问所有网络。
 
-有关详细信息，请参见 API 参考信息。link:../api/index.html["使用 Element API 管理存储"]
+详情请参阅 API 参考信息。 link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]
 
 .步骤
 . 单击 * 管理 * > * 启动程序 * 。

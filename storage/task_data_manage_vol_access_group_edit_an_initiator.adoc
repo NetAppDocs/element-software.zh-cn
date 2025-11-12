@@ -15,7 +15,7 @@ summary: 您可以更改现有启动程序的别名，也可以添加别名（�
 
 要为每个启动程序添加 CHAP 帐户名称和凭据，您必须使用 `ModfyInitiator` API 调用来删除和添加 CHAP 访问和属性。
 
-请参见 link:../api/index.html["使用 Element API 管理存储"]。
+看link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]。
 
 .步骤
 . 单击 * 管理 * > * 启动程序 * 。

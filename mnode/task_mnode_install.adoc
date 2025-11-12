@@ -158,7 +158,7 @@ sudo service ntpd stop
 . 编辑 NTP 配置文件 ` /etc/ntp.conf` ：
 +
 .. 通过在每个服务器前面添加一个 ` #` 来注释掉默认服务器（ `s服务器 0.gentoo.pool.ntp.org` ）。
-.. 为要添加的每个默认时间服务器添加一个新行。默认时间服务器必须与要在中使用的存储集群上使用的 NTP 服务器相同 link:task_mnode_install.html#set-up-the-management-node["后续步骤"]。
+.. 为每个要添加的默认时间服务器添加新行。默认时间服务器必须与存储集群上使用的 NTP 服务器相同。 <<set-up-the-management-node,后续步骤>>。
 +
 [listing]
 ----
@@ -213,7 +213,7 @@ NOTE: 如果您将来对虚拟机进行更改，请勿启用此选项。
 
 
 
-NOTE: 完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时影响 NTP link:task_mnode_install.html#set-up-the-management-node["设置命令"] 在管理节点上。
+NOTE: 完成时间同步配置后，请勿编辑 NTP 设置，因为这会影响您运行以下命令时的 NTP 设置。 <<set-up-the-management-node,设置命令>> 在管理节点上。
 
 
 
@@ -240,7 +240,7 @@ NOTE: 命令名称的缩写形式为圆括号（），可替换为全名。
 
 +
 *** *-mnode_admin_user （ -mu ） [username]* ：管理节点管理员帐户的用户名。这可能是您用于登录到管理节点的用户帐户的用户名。
-*** *-storage_mvip （ -SM ） [MVIP address]* ：运行 Element 软件的存储集群的管理虚拟 IP 地址（ MVIP ）。使用与期间相同的存储集群配置管理节点 link:task_mnode_install.html#configure-time-sync["NTP 服务器配置"]。
+*** *--storage_mvip (-sm) [MVIP 地址]*: 运行 Element 软件的存储集群的管理虚拟 IP 地址 (MVIP)。配置管理节点时，请使用与您在配置过程中使用的相同的存储集群。 <<configure-time-sync,NTP 服务器配置>>。
 *** * — storage_username （ -su ） ` username* ：由` — -storage_mvip 参数指定的集群的存储集群管理员用户名。
 *** * — -metry_active （ -t ） [true]* ：保留值 true ，以便通过 Active IQ 收集数据以进行分析。
 

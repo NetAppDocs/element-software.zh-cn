@@ -69,7 +69,7 @@ NOTE: 用户名和密码可以使用大写和小写字母，特殊字符和数�
 
 == 有关详细信息 ...
 
-* link:../api/index.html["使用 Element API 管理存储"]
+* link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 

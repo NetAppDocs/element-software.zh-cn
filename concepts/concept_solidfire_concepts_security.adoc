@@ -57,7 +57,7 @@ Element 可以使用以下密钥管理服务：
 
 您可以将多因素身份验证与通用 SAML 2.0 兼容身份提供程序（ IdP ）配对，例如 Microsoft Active Directory 联合身份验证服务（ Active Directory Federation Services ， ADFS ）和 Shibboleth 。
 
-要配置 MFA ，请参见 link:../storage/concept_system_manage_mfa_enable_multi_factor_authentication.html["启用多因素身份验证"] 文档。
+要配置 MFA，请参阅 link:../storage/task_system_manage_mfa_set_up_multi_factor_authentication.html["启用多因素身份验证"] 文档。
 
 
 

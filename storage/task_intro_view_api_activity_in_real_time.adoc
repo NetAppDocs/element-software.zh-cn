@@ -15,7 +15,7 @@ Element 系统使用 NetApp Element API 作为其特性和功能的基础。使�
 
 您可以使用 API 日志确定用于某些任务的 API 方法，并了解如何使用 API 方法和对象构建自定义应用程序。
 
-有关每种方法的信息，请参见 link:../api/index.html["Element 软件 API 参考"]。
+有关每种方法的详细信息，请参见 link:../api/concept_element_api_about_the_api.html["Element 软件 API 参考"]。
 
 . 在 Element UI 导航栏中，单击 * API Log* 。
 . 要修改 API 日志窗口中显示的 API 活动类型，请执行以下步骤：
@@ -37,7 +37,7 @@ Element 系统使用 NetApp Element API 作为其特性和功能的基础。使�
 
 == 了解更多信息
 
-* link:../api/index.html["使用 Element API 管理存储"]
+* link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 

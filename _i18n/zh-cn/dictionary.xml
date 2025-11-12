@@ -338,19 +338,9 @@
   <block id="30e90840ac6f6d2e5ca8ff9d0b030cd0" category="admonition">如果交换机无法识别缆线，请参见交换机供应商的文档。</block>
   <block id="4c3549801952dfbbac7a8729ddb71778" category="list-text">按正面的电源按钮打开机箱电源。节点启动大约需要 5 分 30 秒。</block>
   <block id="7fcdd8ade61a6eaaf6d114269e40d93b" category="list-text">执行配置步骤。</block>
-  <block id="56822c07f2c2a6cfbe83be4833226335" category="summary">您可以找到有关安装和维护 H 系列存储节点的信息。</block>
   <block id="4ca5671d2f966d4171da24a705d584cf" category="doc">H410S 和 H610S 硬件信息</block>
-  <block id="3e3c2a691cbef24ca28616a7ca366f00" category="paragraph">以下是指向安装和维护内容的链接：</block>
-  <block id="c424d0baadf799ba9339b3843e219a9e" category="list-text"><block ref="c424d0baadf799ba9339b3843e219a9e" category="inline-link-macro-rx"></block></block>
-  <block id="b51785a235550748a41a58c078969a24" category="list-text"><block ref="b51785a235550748a41a58c078969a24" category="inline-link-macro-rx"></block></block>
-  <block id="83ac84612a0021f62baf39feb4ecc072" category="list-text"><block ref="83ac84612a0021f62baf39feb4ecc072" category="inline-link-macro-rx"></block></block>
-  <block id="410191c227da3ba933a52828218dad16" category="list-text"><block ref="410191c227da3ba933a52828218dad16" category="inline-link-macro-rx"></block></block>
-  <block id="44daf0b08a49877f2a9bfaeda475af34" category="list-text"><block ref="44daf0b08a49877f2a9bfaeda475af34" category="inline-link-macro-rx"></block></block>
-  <block id="e638574c836f286a8e28602fa9c76750" category="summary">了解如何安装和维护 H 系列和 SF 系列硬件。</block>
   <block id="9a5c24e49275e19df4aa5c32fa6d9134" category="doc">安装和维护硬件</block>
-  <block id="e653867b1efcb694cf296862061ab598" category="list-text"><block ref="e653867b1efcb694cf296862061ab598" category="inline-xref-macro-rx"></block></block>
   <block id="6dfd3b2bcec1f3e7fda0b3505e773fa3" category="inline-xref-macro">SF 系列硬件信息</block>
-  <block id="b3ccd356090e319b27d27ff74f951dda" category="list-text"><block ref="b3ccd356090e319b27d27ff74f951dda" category="inline-xref-macro-rx"></block></block>
   <block id="7150869726bf070238ecf651d0591908" category="summary">每个机箱都包含两个电源设备，用于实现电源冗余。如果某个电源设备出现故障，您应尽快更换它，以确保机箱具有冗余电源。</block>
   <block id="cd01e794de26d894d71a7a701899aeb4" category="list-text">您已确定电源设备出现故障。</block>
   <block id="0603494b29dbcbf5eab828d1b0e35fbf" category="paragraph">替代操作步骤适用场景节点型号如下：</block>
@@ -415,16 +405,6 @@
   <block id="4fa0a2e875e7fca941eff9157dd9ba5e" category="paragraph">您可以联系 NetApp 支持部门以获得帮助。</block>
   <block id="476b4412c8c4a89e51fc3fe0fa8aaf1e" category="list-text">使用集群 TUI 将新节点添加到集群中。</block>
   <block id="6f71c9d4df028e5f457fb215ccc716db" category="list-text">打包并退回发生故障的机箱。</block>
-  <block id="455e04e890a917dabd740787d10d37e7" category="summary">您可以找到有关安装和维护 SF 系列存储节点的信息。</block>
-  <block id="3c59e467187d08cbdc1b648a98c8f182" category="inline-link-macro">安装和设置 SolidFire C 系列节点</block>
-  <block id="97821600fb6996afb4f784b5d06ccb69" category="list-text"><block ref="97821600fb6996afb4f784b5d06ccb69" category="inline-link-macro-rx"></block></block>
-  <block id="4923bf4ad3ae10307ec4022f0b258f97" category="inline-link-macro">安装和设置光纤通道节点</block>
-  <block id="7cd5a48c08bae103af2ab94d2292f744" category="list-text"><block ref="7cd5a48c08bae103af2ab94d2292f744" category="inline-link-macro-rx"></block></block>
-  <block id="782a5c99e05265d9db0ad0dd02e2bdb1" category="inline-link-macro">安装和设置 SF 系列存储节点</block>
-  <block id="df1b0cc70ad00b32d66134f8f63d5ea9" category="list-text"><block ref="df1b0cc70ad00b32d66134f8f63d5ea9" category="inline-link-macro-rx"></block></block>
-  <block id="d22f3d210c044753ef422e59a35632fc" category="list-text"><block ref="d22f3d210c044753ef422e59a35632fc" category="inline-link-macro-rx"></block></block>
-  <block id="299374653e8935fcb082b9b5d88e8347" category="list-text"><block ref="299374653e8935fcb082b9b5d88e8347" category="inline-link-macro-rx"></block></block>
-  <block id="6908246c62018d977556b618780042f4" category="list-text"><block ref="6908246c62018d977556b618780042f4" category="inline-link-macro-rx"></block></block>
   <block id="242169bc3cfede608a33f18d694f8ac7" category="summary">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。</block>
   <block id="69893000f4da30e1e42922cbcf8dac0e" category="inline-link">NetApp Bug Online</block>
   <block id="19b9aebc333a4f2fd40dbdb629489716" category="list-text">CreateGroupSnapshot</block>
@@ -587,7 +567,6 @@
   <block id="14f80a3127882d325445f00ad8260203" category="paragraph">通过多因素身份验证（ Multi-Factor Authentication ， MFA ），您可以要求用户在登录时提供多种类型的证据，以便通过 NetApp Element Web UI 或存储节点 UI 进行身份验证。您可以将 Element 配置为仅接受与现有用户管理系统和身份提供程序集成的登录的多因素身份验证。您可以将 Element 配置为与现有 SAML 2.0 身份提供程序集成，此身份提供程序可强制实施多种身份验证方案，例如密码和文本消息，密码和电子邮件消息或其他方法。</block>
   <block id="0f9b01423fb128ce00d5a6fae664b566" category="paragraph">您可以将多因素身份验证与通用 SAML 2.0 兼容身份提供程序（ IdP ）配对，例如 Microsoft Active Directory 联合身份验证服务（ Active Directory Federation Services ， ADFS ）和 Shibboleth 。</block>
   <block id="c32081de1c9dcfe46c5dbf7a9eb30156" category="inline-link-macro">启用多因素身份验证</block>
-  <block id="5f2aa45c13464d5bcb8283eb9d7b6c71" category="paragraph">要配置 MFA ，请参见 <block ref="4afcce9ef01a5e001d74bead2aed8e10" category="inline-link-macro-rx"></block> 文档。</block>
   <block id="4d4b6f242adb4fc4e84fe33ca56f9f5c" category="section-title">用于 HTTPS 和空闲数据加密的 FIPS 140-2</block>
   <block id="51e1fd352e4bb1e01f83dde66971d860" category="paragraph">NetApp SolidFire 存储集群支持符合联邦信息处理标准（ FIPS ） 140-2 加密模块要求的加密。您可以在 SolidFire 集群上为 HTTPS 通信和驱动器加密启用 FIPS 140-2 合规性。</block>
   <block id="7f89ab7caf46679f148781ae0236ae02" category="paragraph">在集群上启用 FIPS 140-2 操作模式后，集群将激活 NetApp 加密安全模块（ NetApp Cryptographic Security Module ， NCSM ），并利用 FIPS 140-2 1 级认证加密通过 HTTPS 与 NetApp Element UI 和 API 进行所有通信。您可以将 `EnableFeature` Element API 与 `FIPS` 参数结合使用，以启用 FIPS 140-2 HTTPS 加密。在具有 FIPS 兼容硬件的存储集群上，您还可以使用 `EnableFeature` Element API 和 `FipsDrives` 参数为空闲数据启用 FIPS 驱动器加密。</block>
@@ -807,7 +786,6 @@
   <block id="ca1eddbd8a5087427e87ea6054bae2ac" category="section-title">NetApp Element 软件 API</block>
   <block id="663e2fb1d2da13a70936107ae2358b1f" category="paragraph">用于使用一组对象，方法和例程来管理 Element 存储。Element API 基于 HTTPS 上的 JSON-RPC 协议。您可以通过启用 API 日志来监控 Element UI 中的 API 操作；这样，您可以查看向系统发出的方法。您可以同时启用请求和响应，以查看系统如何对发出的方法做出响应。</block>
   <block id="afc48abd77915d4342bb6d52750ca477" category="inline-link-macro">使用 Element API 管理存储</block>
-  <block id="d8ac4fdc9abb74552f869693e6472bb3" category="paragraph"><block ref="d8ac4fdc9abb74552f869693e6472bb3" category="inline-link-macro-rx"></block></block>
   <block id="f90ae56c2176eeabe04447830a02ed90" category="paragraph">用于在 VMware vSphere 中使用 Element UI 的备用界面配置和管理运行 Element 软件的存储集群。</block>
   <block id="942aa97d02365106026f9b517428bb74" category="paragraph">用于使用 NetApp Hybrid Cloud Control 界面升级 Element 存储和管理服务以及管理存储资产。</block>
   <block id="e5c09ae98ad7a6293c57c48ffda701a3" category="section-title">管理节点 UI</block>
@@ -1281,7 +1259,6 @@
   <block id="1e022b9ed0afb421ad5cb475bd23e7c5" category="paragraph">Element 系统使用 NetApp Element API 作为其特性和功能的基础。使用 Element UI ，您可以在使用界面时查看系统上各种类型的实时 API 活动。通过 API 日志，您可以查看用户发起的后台系统 API 活动，以及在当前查看的页面上进行的 API 调用。</block>
   <block id="3c7b529bb5fc2bcf9519f64a68e3cf4e" category="paragraph">您可以使用 API 日志确定用于某些任务的 API 方法，并了解如何使用 API 方法和对象构建自定义应用程序。</block>
   <block id="680951056bdde0e1b96bf280f96ebc5a" category="inline-link-macro">Element 软件 API 参考</block>
-  <block id="7bfa7b7e26580ea51b3f60a3622cbf1c" category="paragraph">有关每种方法的信息，请参见 <block ref="5c8440837fa67e98a67fcd5301e82062" category="inline-link-macro-rx"></block>。</block>
   <block id="ff6bba41ced712b3520d069d9c0bcac7" category="list-text">在 Element UI 导航栏中，单击 * API Log* 。</block>
   <block id="b16eaeb56dc5cd6ae140d996a0dc6e4f" category="list-text">要修改 API 日志窗口中显示的 API 活动类型，请执行以下步骤：</block>
   <block id="7b95c750908144623f01f00abd9e6214" category="list-text">选择 * 请求 * 以显示 API 请求流量。</block>
@@ -1291,7 +1268,6 @@
   <block id="6b600c763e214f07f741f452b7c318fb" category="list-text">* 后台轮询 * ：后台系统活动生成的 API 流量。</block>
   <block id="1d05f32a9d85240ec77497445fc80e84" category="list-text">* 当前页面 * ：当前正在查看的页面上的任务生成的 API 流量。</block>
   <block id="6c425340ce6d9442700525214c95861a" category="inline-link-macro">使用 Element API 管理存储</block>
-  <block id="527aac34e9520e9acb53ece7229a5a63" category="list-text"><block ref="527aac34e9520e9acb53ece7229a5a63" category="inline-link-macro-rx"></block></block>
   <block id="ec3163192b2113a62cdec36994bef081" category="summary">您可以在需要更多存储时或在创建集群后向集群添加节点。首次打开电源时，节点需要进行初始配置。配置节点后，它将显示在待定节点列表中，您可以将其添加到集群中。</block>
   <block id="a5a9bafda58164600b8e0f1c84c3f224" category="paragraph">集群中每个节点上的软件版本必须兼容。将节点添加到集群时，集群会根据需要在新节点上安装集群版本的 NetApp Element 软件。</block>
   <block id="d804bc95982bb82c21ba99bf3e7a1a09" category="paragraph">您可以向现有集群添加容量较小或较大的节点。您可以向集群添加更大的节点容量，以支持容量增长。必须成对向节点较小的集群添加较大的节点。这样，如果一个较大的节点发生故障，双 Helix 就可以有足够的空间来移动数据。您可以将较小的节点容量添加到较大的节点集群以提高性能。</block>
@@ -1397,24 +1373,15 @@
   <block id="c4d272e4e3851e12ed3dc8fd40519ff8" category="list-text">IQN 或 WWPN 只能属于一个访问组。</block>
   <block id="122516800657b782a18227f192eaec4b" category="list-text">一个卷最多可属于四个访问组。</block>
   <block id="f1fad054ba97523f026c42474f7b76c7" category="inline-xref-macro">创建卷访问组</block>
-  <block id="90da9809db57ad6f6232bcde0535540e" category="list-text"><block ref="90da9809db57ad6f6232bcde0535540e" category="inline-xref-macro-rx"></block></block>
   <block id="0e63f64b7d2bea39fd316b9c2d4f9504" category="list-text"><block ref="0e63f64b7d2bea39fd316b9c2d4f9504" category="inline-xref-macro-rx"></block></block>
   <block id="6aacf053d8d8c5d01b64bb692287dca2" category="inline-xref-macro">从访问组中删除卷</block>
-  <block id="7b98d00ddd74ade5946528d7ccb0518f" category="list-text"><block ref="7b98d00ddd74ade5946528d7ccb0518f" category="inline-xref-macro-rx"></block></block>
   <block id="78da8cd66e59805423faa705062bb6f3" category="inline-xref-macro">创建启动程序</block>
-  <block id="a1834e324be98fe806422515c700cd9e" category="list-text"><block ref="a1834e324be98fe806422515c700cd9e" category="inline-xref-macro-rx"></block></block>
   <block id="66c291261b6036e48a6e9f2f645cf5e1" category="inline-xref-macro">编辑启动程序</block>
-  <block id="f2aa7116b738b06dff7af09e56a4ff83" category="list-text"><block ref="f2aa7116b738b06dff7af09e56a4ff83" category="inline-xref-macro-rx"></block></block>
   <block id="9d1f5fddbda40bdd5ac66ea0c2a7e1e7" category="inline-xref-macro">将单个启动程序添加到卷访问组</block>
-  <block id="4c223c085cd3a73e78aac53dce701eb7" category="list-text"><block ref="4c223c085cd3a73e78aac53dce701eb7" category="inline-xref-macro-rx"></block></block>
   <block id="9d2be86433f7b7d0a36664a343367ef0" category="inline-xref-macro">将多个启动程序添加到卷访问组</block>
-  <block id="e0c09cc87b72c9b4c227aa745aa36e67" category="list-text"><block ref="e0c09cc87b72c9b4c227aa745aa36e67" category="inline-xref-macro-rx"></block></block>
   <block id="98bfa5d4ec51e3a90e762d51f843d71f" category="inline-xref-macro">从访问组中删除启动程序</block>
-  <block id="a7a1184ab18972a6defa1163056989c6" category="list-text"><block ref="a7a1184ab18972a6defa1163056989c6" category="inline-xref-macro-rx"></block></block>
   <block id="89313961723b25e99b64b95147ff335f" category="inline-xref-macro">删除访问组</block>
-  <block id="c3552d2cbb545a2e9a4f6d05c6716ffb" category="list-text"><block ref="c3552d2cbb545a2e9a4f6d05c6716ffb" category="inline-xref-macro-rx"></block></block>
   <block id="f41611a9b12f0507822bf0d04facc1ab" category="inline-xref-macro">删除启动程序</block>
-  <block id="89ba54780f31a3012daf111fce557ee4" category="list-text"><block ref="89ba54780f31a3012daf111fce557ee4" category="inline-xref-macro-rx"></block></block>
   <block id="3ece7ae5b90b1695490e88f39ae15192" category="summary">您可以复制计划并维护其当前属性。</block>
   <block id="e8225163a9436670e987686eeef978ab" category="doc">复制快照计划</block>
   <block id="c6db8fd23177479dbea85fdca2ff1e12" category="list-text">单击要复制的计划对应的 "Actions" 图标。</block>
@@ -1425,25 +1392,14 @@
   <block id="91b6184edb1ccf8d49afb9ca4be341d7" category="summary">SolidFire 系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。从 "Management" 选项卡上的 "Volumes" 页面中，您可以在节点上创建，修改，克隆和删除卷。您还可以查看有关卷带宽和 I/O 使用情况的统计信息。</block>
   <block id="feabbbf9b5afb31194daf0d8e3ff75dc" category="doc">使用卷</block>
   <block id="3fa1292778fa3f290ac0b52db1c235ed" category="inline-link-macro">管理服务质量策略</block>
-  <block id="829ad05690428e516793633863f1f0c5" category="list-text"><block ref="829ad05690428e516793633863f1f0c5" category="inline-link-macro-rx"></block></block>
   <block id="dc88dce8ec264777b2f90ec0af744f43" category="inline-link-macro">创建卷</block>
-  <block id="f77a7c7baf7239b4102804d64e346377" category="list-text"><block ref="f77a7c7baf7239b4102804d64e346377" category="inline-link-macro-rx"></block></block>
-  <block id="4467bc2ce5dc1aed6efaa4e65125e0f5" category="inline-link-macro">查看单个卷的性能详细信息</block>
-  <block id="784410ba1de8352499ab0c5f122bd101" category="list-text"><block ref="784410ba1de8352499ab0c5f122bd101" category="inline-link-macro-rx"></block></block>
   <block id="2d48360ee701543cd760457a094d9685" category="inline-link-macro">编辑活动卷</block>
-  <block id="429890f47526e4ae9a7ca7d69278c2e5" category="list-text"><block ref="429890f47526e4ae9a7ca7d69278c2e5" category="inline-link-macro-rx"></block></block>
   <block id="8e9a64bda9d21f945b6489df2e7946e1" category="inline-link-macro">删除卷</block>
-  <block id="16685122e27ca84cdb605fc1cd164d45" category="list-text"><block ref="16685122e27ca84cdb605fc1cd164d45" category="inline-link-macro-rx"></block></block>
   <block id="05462b063ca0b7d4857ba4e2f1895ed4" category="inline-link-macro">还原已删除的卷</block>
-  <block id="01d5f5cc8ab552965fa2cdb8b00e71f8" category="list-text"><block ref="01d5f5cc8ab552965fa2cdb8b00e71f8" category="inline-link-macro-rx"></block></block>
   <block id="9c55345ab375a7d36415559c3101174d" category="inline-link-macro">清除卷</block>
-  <block id="fee2ab0fa699194effbc94bb373804bb" category="list-text"><block ref="fee2ab0fa699194effbc94bb373804bb" category="inline-link-macro-rx"></block></block>
   <block id="d50044469c0bf9ab38eff9cf7243fb25" category="inline-link-macro">克隆卷</block>
-  <block id="6f09f0d5e365c184d179759ab7289d83" category="list-text"><block ref="6f09f0d5e365c184d179759ab7289d83" category="inline-link-macro-rx"></block></block>
   <block id="f621d5155247a213740e3edb282c1b11" category="inline-link-macro">将 LUN 分配给光纤通道卷</block>
-  <block id="01bf66174ec8d8709c78caf9ef310bf0" category="list-text"><block ref="01bf66174ec8d8709c78caf9ef310bf0" category="inline-link-macro-rx"></block></block>
   <block id="9df16bb47197a5ba93c93ed47a44b984" category="inline-link-macro">将 QoS 策略应用于卷</block>
-  <block id="9682d4b356f710add13f8f3c075b0f3a" category="list-text"><block ref="9682d4b356f710add13f8f3c075b0f3a" category="inline-link-macro-rx"></block></block>
   <block id="9528d7b036a3fbf5f68366fee6b69102" category="list-text"><block ref="9528d7b036a3fbf5f68366fee6b69102" category="inline-link-macro-rx"></block></block>
   <block id="2461437b9df1cc70108539575e2b6907" category="summary">"Data Protection" 选项卡上的 "Volume Pairs" 页面提供了有关已配对或正在配对的卷的信息。系统会在卷状态列中显示配对和进度消息。</block>
   <block id="956e9ea44256eece7b618efc03c05b35" category="doc">卷对详细信息</block>
@@ -1534,7 +1490,6 @@
   <block id="a7af017ee3e98361c9a9cdb19d1bf9ed" category="list-text"><block ref="a7af017ee3e98361c9a9cdb19d1bf9ed" category="inline-link-macro-rx"></block></block>
   <block id="1c06f11ce676964d689fcbdbf224584f" category="inline-link-macro">对驱动器进行故障排除</block>
   <block id="e1831ef9d56be9d66e476fe041eaeb92" category="list-text"><block ref="e1831ef9d56be9d66e476fe041eaeb92" category="inline-link-macro-rx"></block></block>
-  <block id="9f7e5f1abd9a364afe77c1383d12ae24" category="list-text"><block ref="9f7e5f1abd9a364afe77c1383d12ae24" category="inline-link-macro-rx"></block></block>
   <block id="f7d5fa6c40e227aafd8e42872799504d" category="inline-link-macro">使用存储节点的每节点实用程序</block>
   <block id="6d2ec8c9ca2c983503b7c7e8f537da9e" category="list-text"><block ref="6d2ec8c9ca2c983503b7c7e8f537da9e" category="inline-link-macro-rx"></block></block>
   <block id="a5d162f9a408ffcb4e87962bbed43f7d" category="inline-link-macro">使用管理节点</block>
@@ -1557,9 +1512,6 @@
   <block id="2062fedb7b40edb831de2c57874f133c" category="list-text">单击 * 当前保留 * 旁边的 * 编辑 * 。</block>
   <block id="03c68839d6658e59ea0a88edb01f5ae0" category="list-text">为组快照选择一个保留选项：</block>
   <block id="e3a5996517060126b1802e74bf040498" category="list-text">单击 * 设置保留期限 * ，然后使用日期调整框选择系统保留快照的时间长度。</block>
-  <block id="bd6dca3f6f8d28ce081bb3957040368d" category="inline-link">创建和管理用户帐户</block>
-  <block id="7dbe0101a0bdae6a1bce082dbf9d19bc" category="inline-link">添加和管理存储集群</block>
-  <block id="e84ad4b7c9a88875c043f3cb7fb7b985" category="inline-link">创建和管理卷</block>
   <block id="43c95975fceac67e14abe3895f6650b5" category="inline-link">创建和管理卷访问组</block>
   <block id="067dc4be0fd4af30d6f12cb91408d3a6" category="inline-link">创建和管理启动程序</block>
   <block id="50ee1f895e7e284e9dd0f8f045bc11a2" category="inline-link">创建和管理卷 QoS 策略</block>
@@ -1607,15 +1559,12 @@
   <block id="9108151f41313d6822746d4e71ad68d2" category="list-text">* 可选： * 要在回滚到快照之前保存卷的当前状态，请执行以下操作：</block>
   <block id="1f12e64431a24b03052600bf6a8f5a09" category="list-text">在 * 回滚到 Snapshot* 对话框中，选择 * 将卷的当前状态另存为 Snapshot* 。</block>
   <block id="10eaa2ee0f5f020b804c90fe3ad8168a" category="list-text">单击 * 回滚 Snapshot* 。</block>
-  <block id="16ae51e0b9cc50019ac691d28af83a1e" category="summary">SnapMirror 灾难恢复功能在两种故障恢复情形中进行了说明。这些假设已对原始关系进行故障转移（已断开）。</block>
   <block id="dc559baf6e38902cfe8f57c0e6a60bfa" category="doc">SnapMirror 故障恢复场景</block>
   <block id="d050637f3806773597f038767af8969d" category="paragraph">SnapMirror 灾难恢复功能在两种故障恢复情形中进行了说明。假定原始关系已进行故障转移（已中断）。</block>
   <block id="d14acb50d506af71b359d6d4451e2903" category="paragraph">添加了相应过程中的步骤以供参考。</block>
   <block id="ecc96d148623e8c6e7618ef2eba3d5ab" category="admonition">在此处的示例中， R1 表示原始关系，其中运行 NetApp Element 软件的集群是原始源卷（ Element ），而 ONTAP 是原始目标卷（ ONTAP ）。R2 和 R3 表示通过反向重新同步操作创建的反向关系。</block>
   <block id="b351be3211a52db88861d085d8e0939c" category="paragraph">下图显示了源卷仍存在时的故障恢复场景：</block>
-  <block id="1aa11961dd90555765925c606aeb28e8" category="image-alt">SnapMirror Element 故障回退 1</block>
   <block id="d7eaa483974b5f748e1894dbaf75edcc" category="paragraph">下图显示了源卷不再存在时的故障恢复场景：</block>
-  <block id="b0a6418a9c880725484eff27f5ac5d23" category="image-alt">SnapMirror Element 故障回退 2.</block>
   <block id="70f26877db1785068e8daf0aa7de7175" category="inline-xref-macro">如果源卷仍存在，请执行故障恢复</block>
   <block id="3993a96735b8bfff84740c877dcb8f7d" category="list-text"><block ref="3993a96735b8bfff84740c877dcb8f7d" category="inline-xref-macro-rx"></block></block>
   <block id="eeeaa1b412a6ca7d2f439dfd70f27a5d" category="inline-xref-macro">源卷不再存在时执行故障恢复</block>
@@ -1818,9 +1767,7 @@
   <block id="4a8e097fa8c4ccf7bee06834895a4d7f" category="summary">您可以在 Element UI 中管理系统。其中包括启用多因素身份验证，管理集群设置，支持联邦信息处理标准（ FIPS ）以及使用外部密钥管理。</block>
   <block id="734272fbe72b7eacb11bd1d45ed8d64d" category="doc">管理您的系统</block>
   <block id="637cb85078093dc0eac11d78013e5ea6" category="inline-link-macro">启用多因素身份验证</block>
-  <block id="849a2bd2b7885ce77b6b9fce8b50ae9b" category="list-text"><block ref="849a2bd2b7885ce77b6b9fce8b50ae9b" category="inline-link-macro-rx"></block></block>
   <block id="512f4c525ba1f80b2e9dd6ba67b45db6" category="inline-link-macro">配置集群设置</block>
-  <block id="5091adc70352de177f0a9c005150c38e" category="list-text"><block ref="5091adc70352de177f0a9c005150c38e" category="inline-link-macro-rx"></block></block>
   <block id="e59a83a3dbb8a739d0db176265a9edd9" category="list-text"><block ref="e59a83a3dbb8a739d0db176265a9edd9" category="inline-link-macro-rx"></block></block>
   <block id="0c7383db5ca3f34e6352575ba2cbe22c" category="inline-link-macro">开始使用外部密钥管理</block>
   <block id="d06bdfc7d9751cd0940cadd4362b4173" category="list-text"><block ref="d06bdfc7d9751cd0940cadd4362b4173" category="inline-link-macro-rx"></block></block>
@@ -1944,7 +1891,6 @@
   <block id="d9983d9f2ebf53c1142a87fc48a7956a" category="list-text">ListKeyProvidersKmip</block>
   <block id="15511624b789bdf31e38f97755dd6fe2" category="list-text">TestKeyProviderKmip</block>
   <block id="43d30245468a1ac3a0e76fb7722c7e17" category="inline-link-macro">API 参考信息</block>
-  <block id="ae8b382bd5524cebdda8c02c60491369" category="paragraph">有关 API 方法的信息，请参见 <block ref="1a4a7db3ce46085e66e7371a3d480d1b" category="inline-link-macro-rx"></block>。</block>
   <block id="5bf503425f0aaa48807516de3f4921f3" category="summary">复制过程涉及两个端点：源卷和目标卷。创建目标卷时，卷会自动设置为读 / 写模式，以便在复制期间接受数据。</block>
   <block id="0eda2ac7e8c25c619dc1e1b5bb0801fa" category="list-text">单击 * 创建卷 * 。</block>
   <block id="913cde42dc5dc15b8832c918455c5117" category="list-text">在创建新卷对话框中，输入卷名称。</block>
@@ -1960,7 +1906,6 @@
   <block id="039371f150492f2948458ffc81d4812f" category="inline-xref-macro">删除快照计划</block>
   <block id="13355f979ebe98928d05559eabff014a" category="list-text"><block ref="13355f979ebe98928d05559eabff014a" category="inline-xref-macro-rx"></block></block>
   <block id="d7390e19a0851e4a13f51f8356983e06" category="list-text"><block ref="d7390e19a0851e4a13f51f8356983e06" category="inline-xref-macro-rx"></block></block>
-  <block id="e9f56eb126455869bdb213c6b8827217" category="doc">版权，商标和机器翻译</block>
   <block id="a9c4a0a11f0fdb576f9433b697bf1ca9" category="summary">在初始配对过程中，您可以从 "Data Protection" 选项卡下的 "Volume Pairs" 页面查看卷配对消息。在复制卷列表视图中，此对的源端和目标端都可以显示这些消息。</block>
   <block id="797b887e580241a11ed149d5fa6c9f6c" category="list-text">* 已禁用已断开连接 *</block>
   <block id="9da31200494c380959eac1a111904ea4" category="paragraph">源复制或同步 RPC 超时。与远程集群的连接已断开。检查与集群的网络连接。</block>
@@ -2084,14 +2029,12 @@
   <block id="33706289dc430f5f8dcfb4ee1e3469b6" category="paragraph">例如，要添加自定义端口号，请输入 &lt; 主机名或 IP 地址 &gt; ： &lt; 端口号 &gt;</block>
   <block id="b812ff5308dac7b94c0b55440ae0db52" category="list-text">* 可选： * 选择 * 使用 LDAPS 协议 * 。</block>
   <block id="0109479a48c58beb89b4d5a4c29dff84" category="list-text">在 * 常规设置 * 中输入所需信息。</block>
-  <block id="bed845a597b9ed08661e81c136055289" category="image-alt">添加新的 LDAP 服务器</block>
   <block id="70c1b3b43f6be512d1e0cda4ee22368b" category="list-text">单击 * 启用 LDAP* 。</block>
   <block id="f2709d92c4d623482a540a58d6e65b35" category="list-text">如果要测试用户的服务器访问权限，请单击 * 测试用户身份验证 * 。</block>
   <block id="bd49f6ead61c277dfda17d702406d822" category="list-text">复制显示的可分辨名称和用户组信息，以供日后创建集群管理员时使用。</block>
   <block id="59f7c613f7fdc5ebd3e390eee26fe778" category="list-text">单击 * 保存更改 * 以保存任何新设置。</block>
   <block id="eb5f74d6555feb13144281a13b514ece" category="list-text">要在此组中创建用户以便任何人都可以登录，请完成以下操作：</block>
   <block id="60150d34962004cdea6c7d596cb8b74b" category="list-text">单击 * 用户 * &gt; * 查看 * 。</block>
-  <block id="dc3d8fdb87bae9b2d5004869cf2cbdf4" category="image-alt">Element 新集群管理员</block>
   <block id="9e575ba1c88124bc5d7761f1069c3579" category="list-text">对于新用户，单击 "User Type" （用户类型）中的 "* ldap* " ，然后将您复制的组粘贴到 "Distinguished Name" （可分辨名称）字段中。</block>
   <block id="84a1c9d5de500dabb6ba54cac17224aa" category="list-text">选择权限，通常为所有权限。</block>
   <block id="99a4fac2cf1cc06226d25f6716664c35" category="list-text">向下滚动到最终用户许可协议，然后单击 * 我接受 * 。</block>
@@ -2234,7 +2177,6 @@
   <block id="77d44088dccb13c031b2fe952ae62047" category="list-text">使用 Element API 输入： `GetHardwareList`</block>
   <block id="2b57ea5e5615678454ff5e6717581b98" category="list-text">请注意 * 驱动器加密容量类型 * 的值。如果为 FIPS ，则硬件可以支持 FIPS 驱动器功能。</block>
   <block id="8e3e32f4b3e22ee2339bc37dacebce0c" category="inline-link-macro">Element API 参考</block>
-  <block id="548d5f481afded2f44d596043acc1e06" category="paragraph">请参见中有关 `GetFipsReport` 或 `ListDriveHardware` 的详细信息 <block ref="c9d614c7cd4efd8daab5302738f269c2" category="inline-link-macro-rx"></block>。</block>
   <block id="d67ebd1883ec0ef6f33ea4b6610b17c2" category="list-text">如果驱动器不支持 FIPS 驱动器功能，请将硬件更换为 FIPS 硬件（节点或驱动器）。</block>
   <block id="feefcf86003dab4e5e06ed41b42a67c5" category="summary">您可以查看单个节点的详细信息，例如服务标签，驱动器详细信息以及利用率图形和驱动器统计信息。"Cluster" 选项卡的 "Nodes" 页面提供了 "Version" 列，您可以在此列中查看每个节点的软件版本。</block>
   <block id="1fb26e285018102a44117c4997b0d9d6" category="doc">查看节点详细信息</block>
@@ -2313,32 +2255,19 @@
   <block id="6351fff1a7185391ce5827ed1a4bc1dd" category="paragraph">正在对源卷发出 SCSI XCOPY 命令。必须先完成命令，然后才能恢复复制。此消息仅显示在对的源端。</block>
   <block id="4b3301364a2091ba2d601468fd67407c" category="list-text">* StoppedMisconfigure*</block>
   <block id="1760eda593dbc41002b3d0bb32b11c47" category="paragraph">检测到永久配置错误。远程卷已清除或取消配对。无法执行更正操作；必须建立新的配对。</block>
-  <block id="0d92b619c6ae287651568b59f33580fe" category="summary">您可以从 Element UI 的 Cluster 选项卡查看和更改集群范围的设置并执行集群专用任务。</block>
-  <block id="264d9780742e7ab6e8bed1023f7a7b2e" category="paragraph">您可以配置集群填充度阈值，支持访问，空闲加密，虚拟卷， SnapMirror ， 和 NTP 广播客户端。</block>
   <block id="661a6e0397d4dd97cf4921386753f84c" category="inline-xref-macro">使用虚拟卷</block>
-  <block id="db560c09b3448d8afc8c2946499e4ac5" category="list-text"><block ref="db560c09b3448d8afc8c2946499e4ac5" category="inline-xref-macro-rx"></block></block>
   <block id="1850b680cd92212594194c87da7f359c" category="inline-xref-macro">在 Element 和 ONTAP 集群之间使用 SnapMirror 复制</block>
   <block id="9e7eb285afa69d60d93810aaa9e6e569" category="list-text"><block ref="9e7eb285afa69d60d93810aaa9e6e569" category="inline-xref-macro-rx"></block></block>
   <block id="3b2641e256b7f45e755998235766c9f1" category="inline-xref-macro">设置集群全满阈值</block>
-  <block id="6cc89c76b4caa61c0b909d8caeb8240f" category="list-text"><block ref="6cc89c76b4caa61c0b909d8caeb8240f" category="inline-xref-macro-rx"></block></block>
   <block id="d0c268507d15af2a40f86aeb94e95db9" category="inline-xref-macro">启用和禁用支持访问</block>
-  <block id="647f54c15b6751edcb084e22674cfcb0" category="list-text"><block ref="647f54c15b6751edcb084e22674cfcb0" category="inline-xref-macro-rx"></block></block>
   <block id="0393c12a897f966f795c76c9ee896369" category="inline-link">如何计算 Element 的块空间阈值</block>
-  <block id="c916a3f046cbb9518cbbbaf7a673268d" category="list-text"><block ref="c916a3f046cbb9518cbbbaf7a673268d" category="inline-link-rx"></block></block>
   <block id="900b0feed7d32181a22e9a4ec5b7825e" category="inline-xref-macro">为集群启用和禁用加密</block>
   <block id="4906d0e7d9f29bbdd34a312fa5eb80c0" category="list-text"><block ref="4906d0e7d9f29bbdd34a312fa5eb80c0" category="inline-xref-macro-rx"></block></block>
   <block id="1e23468347916b19da11f9d028a1be00" category="inline-xref-macro">管理使用条款横幅</block>
-  <block id="ec03ab07c2996ff015daf63047912b38" category="list-text"><block ref="ec03ab07c2996ff015daf63047912b38" category="inline-xref-macro-rx"></block></block>
   <block id="aff377d6eadf479537f23a7b92c5d271" category="inline-xref-macro">配置要查询的集群的网络时间协议服务器</block>
-  <block id="0c2e3cdfbfe657acaa8230f873d7dac2" category="list-text"><block ref="0c2e3cdfbfe657acaa8230f873d7dac2" category="inline-xref-macro-rx"></block></block>
   <block id="dad46d71557a09083fc53a25d697d07a" category="inline-xref-macro">管理 SNMP</block>
-  <block id="47a1a8db51b8b8b91ec61e3b24864191" category="list-text"><block ref="47a1a8db51b8b8b91ec61e3b24864191" category="inline-xref-macro-rx"></block></block>
   <block id="8bd00e89826dbd3fcf80ca108d7a008d" category="inline-xref-macro">管理驱动器</block>
-  <block id="434020769f68307a8849b66f97726ce7" category="list-text"><block ref="434020769f68307a8849b66f97726ce7" category="inline-xref-macro-rx"></block></block>
-  <block id="c1846878d453582b2473040b2c63a610" category="list-text"><block ref="c1846878d453582b2473040b2c63a610" category="inline-xref-macro-rx"></block></block>
-  <block id="68586db13c51877b5cf261dbb7fde3d8" category="list-text"><block ref="68586db13c51877b5cf261dbb7fde3d8" category="inline-xref-macro-rx"></block></block>
   <block id="a1f045b951e591283e0ecc4a932652a8" category="inline-xref-macro">查看光纤通道端口详细信息</block>
-  <block id="81000cd5ca752cd8c30de5f7f57d2dbc" category="list-text"><block ref="81000cd5ca752cd8c30de5f7f57d2dbc" category="inline-xref-macro-rx"></block></block>
   <block id="5581e159484219e546bda79fb1bed405" category="summary">您可以使用管理节点 \ （ mNode\ ）升级系统服务，管理集群资产和设置，运行系统测试和实用程序，配置 Active IQ 以进行系统监控以及启用 NetApp 支持访问以进行故障排除。</block>
   <block id="6eb7198af2822417f6bf41b648c2c2bf" category="paragraph">您可以使用管理节点（ mNode ）升级系统服务，管理集群资产和设置，运行系统测试和实用程序，配置 Active IQ 以进行系统监控以及启用 NetApp 支持访问以进行故障排除。</block>
   <block id="25601a496956eb8ebb57f6da56786262" category="inline-link-macro">管理节点文档</block>
@@ -2365,16 +2294,9 @@
   <block id="58396a0a8e512d74152e38d8f40a1287" category="paragraph">您可以为集群管理员帐户授予有限的管理访问权限，以便在集群中执行特定任务。分配给每个集群管理员帐户的凭据用于对存储系统中的 API 和 Element UI 请求进行身份验证。</block>
   <block id="98128692dce5004da3f6f33bba8b5620" category="summary">在许多客户环境中部署解决方案时，安全性变得越来越重要。联邦信息处理标准（ FIPS ）是计算机安全性和互操作性的标准。经 FIPS 140-2 认证的空闲数据加密是整体安全解决方案的一个组成部分。</block>
   <block id="494befef86d7545d2a18c164ed2dd337" category="paragraph">在许多客户环境中部署解决方案时，安全性变得越来越重要。联邦信息处理标准（ FIPS ）是计算机安全和互操作性的标准。经 FIPS 140-2 认证的空闲数据加密是整体安全解决方案的一个组成部分。</block>
-  <block id="31cd75861f1ef46283b6fad5dc133f2d" category="inline-link-macro">避免为 FIPS 驱动器混用节点</block>
-  <block id="05bf583c059040f5a601c09462378305" category="list-text"><block ref="05bf583c059040f5a601c09462378305" category="inline-link-macro-rx"></block></block>
   <block id="9ff8b52789fcf4cd8906204529630027" category="inline-link-macro">启用空闲加密</block>
-  <block id="9775ebff49c9c41a12e6c29e1bd70869" category="list-text"><block ref="9775ebff49c9c41a12e6c29e1bd70869" category="inline-link-macro-rx"></block></block>
-  <block id="3befc506042904f1158e03c3b06326c9" category="list-text"><block ref="3befc506042904f1158e03c3b06326c9" category="inline-link-macro-rx"></block></block>
-  <block id="fa237f4a9021b3c873d56e11cd75c3c0" category="list-text"><block ref="fa237f4a9021b3c873d56e11cd75c3c0" category="inline-link-macro-rx"></block></block>
   <block id="151803d02e5529f6fb08ae394d1eec91" category="inline-link-macro">检查 FIPS 驱动器状态</block>
-  <block id="e89087b4ddd023d83abba85fc6c56531" category="list-text"><block ref="e89087b4ddd023d83abba85fc6c56531" category="inline-link-macro-rx"></block></block>
   <block id="51583c6662a4696f300cf6e612dc8473" category="inline-link-macro">对 FIPS 驱动器功能进行故障排除</block>
-  <block id="7eb2f48f876157c4d3d83b53793193bc" category="list-text"><block ref="7eb2f48f876157c4d3d83b53793193bc" category="inline-link-macro-rx"></block></block>
   <block id="91033904541ad7b7af111fc872e34144" category="summary">您可以使用以下步骤更改系统生成块集群填充度警告的级别。此外，您还可以使用 ModifyClusterFullThreshold API 方法更改系统生成块或元数据警告的级别。</block>
   <block id="61d8f42966e800ec9cad1f122cfa27c0" category="paragraph">您必须具有集群管理员权限。</block>
   <block id="99b58fff7a423dae781b22e9d5324841" category="list-text">单击 * 集群 * &gt; * 设置 * 。</block>
@@ -2554,7 +2476,6 @@
   <block id="55e4aabe02dc53cfcb640180c32e47ec" category="list-text">确保已启用使用条款功能。</block>
   <block id="cec857908542efcebbbb737da14b7e0e" category="list-text">在 * 使用条款 * 对话框中，编辑要显示的文本。</block>
   <block id="f8897b2738a77bb4ad7124b58abcfb15" category="summary">您可以更改存储节点网络设置，为节点提供一组新的网络属性。</block>
-  <block id="d4e5cc0a91691a4f74fb328bf7e5b929" category="paragraph">登录到存储节点时，您可以在 * 网络设置 * 页面上查看该节点的网络设置 <block ref="5ef220bc3aead68899688e4686910df0" category="inline-link-rx"></block> IP&gt; ： 442/HCC/ 节点 / 网络设置）。您可以选择 * 绑定 1G* （管理）或 * 绑定 10G* （存储）设置。以下列表介绍了在存储节点处于可用，待定或活动状态时可以修改的设置：</block>
   <block id="28ed9b5b5df5d633073f9cca1d10bee9" category="list-text">* 方法 *</block>
   <block id="e06af92a28c93f969ec10a00fe62f1a0" category="paragraph">用于配置接口的方法。可能的方法：</block>
   <block id="69752e68db7d200cb20de80d1eca1afd" category="list-text">loopback ：用于定义 IPv4 环回接口。</block>
@@ -2632,9 +2553,7 @@
   <block id="e184b6353db6b97eb8014ea10f962324" category="paragraph">为对中的每个集群指定的唯一 ID 。</block>
   <block id="6e9575b9d78c74ecac3c7ffb6cc01291" category="summary">您可以删除快照计划。删除此计划后，它将不会运行任何将来计划的快照。计划创建的所有快照都将保留在存储系统上。</block>
   <block id="b5a47ab00ee38fd24f7e8b0828ad2a73" category="list-text">单击要删除的计划对应的 * 操作 * 图标。</block>
-  <block id="0b627a9e309e95034aa647662c6850ba" category="summary">可以通过以下两种方式之一设置网络时间协议（ NTP ）：指示集群中的每个节点侦听广播，或指示每个节点查询 NTP 服务器以获取更新。</block>
   <block id="aee40dc887e7ee1a678b3c4f23851b92" category="doc">设置网络时间协议</block>
-  <block id="e4fb8fa88e0f62a27817b1b76b7fb1f6" category="paragraph">可以通过以下两种方式之一设置网络时间协议（ NTP ）：指示集群中的每个节点侦听广播，或者指示每个节点查询 NTP 服务器以获取更新。</block>
   <block id="fc428e2e9245a085f2b34ce5c6a2ff3c" category="paragraph">NTP 用于通过网络同步时钟。在初始集群设置过程中，应连接到内部或外部 NTP 服务器。</block>
   <block id="5333107ce01dd4c2f0611ff975c33c6a" category="summary">您可以管理 SolidFire 存储系统的集群管理员帐户。可用的集群管理员管理功能包括创建，删除和编辑集群管理员帐户，更改集群管理员密码以及配置 LDAP 设置以管理用户的系统访问。</block>
   <block id="d71b1ecdf0776be0675958067594eb38" category="doc">管理集群管理员用户帐户</block>
@@ -2660,11 +2579,9 @@
   <block id="7e0f41544543b2756f88a938f8c3a298" category="list-text">ldap</block>
   <block id="aa753cf2df06fad2ab939b7f424f7700" category="list-text">* 属性 * ：如果集群管理员帐户是使用 Element API 创建的，则此列将显示使用该方法设置的任何名称 - 值对。</block>
   <block id="cddbead568984bbddd14181e555c89ec" category="inline-link-macro">《 NetApp Element 软件 API 参考》</block>
-  <block id="e42336b2c96876a525aa3d38642a3149" category="paragraph">请参见 <block ref="27df1ddfd415d14d906f38bd54bde22c" category="inline-link-macro-rx"></block>。</block>
   <block id="3c524ca678d565a8dc0fadfb24ddda45" category="section-title">创建集群管理员帐户</block>
   <block id="f739fa972a19647ab56e88bdc74a61ba" category="paragraph">您可以创建具有允许或限制对存储系统特定区域的访问权限的新集群管理员帐户。设置集群管理员帐户权限时，系统会为您未分配给集群管理员的任何权限授予只读权限。</block>
   <block id="3bc154f848ee9088186a8a76caeaf366" category="paragraph">如果要创建 LDAP 集群管理员帐户，请确保在开始之前已在集群上配置 LDAP 。</block>
-  <block id="cdc8750c2956e63e19a66db128f738d8" category="paragraph"><block ref="cdc8750c2956e63e19a66db128f738d8" category="inline-link-macro-rx"></block></block>
   <block id="5a20f12676723a7c9978890d6e25c61a" category="paragraph">您可以稍后更改报告，节点，驱动器，卷，帐户的集群管理员帐户权限。 和集群级别访问。启用某个权限后，系统会为此级别分配写入访问权限。系统会为管理员用户授予对您未选择的级别的只读访问权限。</block>
   <block id="33acb63424dbecce80b9aac173807d96" category="paragraph">您也可以稍后删除系统管理员创建的任何集群管理员用户帐户。您不能删除在创建集群时创建的主集群管理员帐户。</block>
   <block id="307f74305ed8f917ada44b1805b73048" category="list-text">选择 * 集群 * 用户类型。</block>
@@ -2783,7 +2700,6 @@
   <block id="47f8bb61ca87b0a38661fa7bfdece7b4" category="paragraph">SnapMirror 端点是指用作运行 Element 软件的集群的复制目标的 ONTAP 集群。在创建 SnapMirror 关系之前，请先创建 SnapMirror 端点。</block>
   <block id="4720a2d6ded47a6e3a7c30b7a024eb83" category="paragraph">您最多可以在运行 Element 软件的存储集群上创建和管理四个 SnapMirror 端点。</block>
   <block id="647e15f1642777b70b3b820e774e2b9a" category="admonition">如果现有端点最初是使用 API 创建的，但未保存凭据，则可以在 Element UI 中查看此端点并验证其是否存在，但无法使用 Element UI 对其进行管理。然后，只能使用 Element API 管理此端点。</block>
-  <block id="b1398deafff176837915dd30dc29191f" category="paragraph">有关 API 方法的详细信息，请参见 <block ref="d8ac4fdc9abb74552f869693e6472bb3" category="inline-link-macro-rx"></block>。</block>
   <block id="e243c01a1d8f01d129200275d31bde03" category="list-text">您应已在 Element UI 中为存储集群启用 SnapMirror 。</block>
   <block id="0fdec470cf89c577542085c73bd2f111" category="list-text">您知道端点的 ONTAP 凭据。</block>
   <block id="1c405d01246cf1ce44f3d2aca78d23b1" category="list-text">单击 * 数据保护 * &gt; * SnapMirror 端点 * 。</block>
@@ -2858,7 +2774,6 @@
   <block id="585cf2790b6e73c40bba2a1ff2b5b762" category="inline-link-macro">空闲软件加密</block>
   <block id="66a480ad43396514d68c8810d0443915" category="list-text">（用于空闲软件加密） <block ref="1077adfa38705b9c781a640854572efd" category="inline-link-macro-rx"></block> 要使用新创建的密钥提供程序，请将密钥提供程序 ID 传递到 <block ref="71bf76f9da57514010aebe92a99f02ba" category="inline-link-macro-rx"></block> API 方法。</block>
   <block id="e3fcd5b9f1838c6259907c2720671509" category="list-text"><block ref="e3fcd5b9f1838c6259907c2720671509" category="inline-link-macro-rx"></block></block>
-  <block id="09d5bc46016434e6c890ce268987d863" category="summary">您可以在集群中配置简单网络管理协议（ SNMP\ ）。</block>
   <block id="57395b3c9248ab84559622f823ecc114" category="paragraph">您可以在集群中配置简单网络管理协议（ Simple Network Management Protocol ， SNMP ）。</block>
   <block id="49b4a0f65be47dd47e75f0acd3e29ed9" category="paragraph">您可以选择 SNMP 请求程序，选择要使用的 SNMP 版本，确定 SNMP 基于用户的安全模型（ User-Based Security Model ， USM ）用户并配置陷阱以监控 SolidFire 集群。您还可以查看和访问管理信息库文件。</block>
   <block id="32f17a88e7f6eea5b1cae9de5c464583" category="summary">" 数据保护 " 选项卡上的 " 组快照 " 页面提供了有关组快照的信息。</block>
@@ -2937,9 +2852,6 @@
   <block id="9f55046726143f42c3435b75d6d6e9ec" category="list-text"><block ref="12bf117fc8a2e05aeff49d214e0a0486" category="inline-link-rx"></block></block>
   <block id="2a54b1fe05b67dcef296c3bdd8e39835" category="summary">您可以从 Element UI 中的 Management 选项卡管理运行 Element 软件的集群中的数据。可用的集群管理功能包括创建和管理数据卷，用户帐户，卷访问组，启动程序和服务质量（ QoS ）策略。</block>
   <block id="8140ae92d4209974e9b4de9d8e98e9e5" category="paragraph">您可以从 Element UI 中的 Management 选项卡管理运行 Element 软件的集群中的数据。可用的集群管理功能包括创建和管理数据卷，卷访问组，启动程序和服务质量（ QoS ）策略。</block>
-  <block id="4c6d3e3764abdf884ac27b544807b462" category="list-text"><block ref="4c6d3e3764abdf884ac27b544807b462" category="inline-link-macro-rx"></block></block>
-  <block id="a23438883980061cc38978425678efc8" category="list-text"><block ref="a23438883980061cc38978425678efc8" category="inline-link-macro-rx"></block></block>
-  <block id="e52c7a1284ef3ce79fe8904329f24d64" category="list-text"><block ref="e52c7a1284ef3ce79fe8904329f24d64" category="inline-link-macro-rx"></block></block>
   <block id="51c8e632c00bbf5b0de7576375f46b83" category="summary">系统会通过生成故障代码来报告可能需要关注的错误或状态，此故障代码会列在 "Alerts" 页面上。这些代码可帮助您确定系统中哪个组件出现警报以及生成警报的原因。</block>
   <block id="52bb46335f93d5df00ac0104f654fe62" category="paragraph">以下列表概述了不同类型的代码：</block>
   <block id="b329e1366594104100e84e0fe2d3e122" category="list-text">* 身份验证服务故障 *</block>
@@ -3230,7 +3142,6 @@
   <block id="f18e735235d5a307ceb3e60d3161fa15" category="list-text">* 卷脱机 *</block>
   <block id="bd0e78ee6b3a04179ae19c5baa7233f3" category="paragraph">存储集群中的一个或多个卷已脱机。此外，还将出现 * 卷已降级 * 故障。</block>
   <block id="2b773bb888781be173d8dd39c5e237d0" category="summary">您可以在配置集群后验证存储节点的集群设置，并修改节点主机名。</block>
-  <block id="bc3e02ccdda0b3384515c0ef0809be58" category="paragraph">以下列表介绍了每节点 UI 的 * 集群设置 * 页面中指示的存储节点的集群设置 <block ref="5ef220bc3aead68899688e4686910df0" category="inline-link-rx"></block> IP&gt; ： 442/HCC/ 节点 / 集群设置）。</block>
   <block id="cf917d8457fcc174b9b969143eda5613" category="list-text">* 角色 *</block>
   <block id="744d63d7af7ba0de353a21b5b62eb44b" category="paragraph">节点在集群中的角色。可能值：</block>
   <block id="054701def1715c8c027a55935bcfef3b" category="list-text">存储：存储或光纤通道节点。</block>
@@ -3262,7 +3173,6 @@
   <block id="278bf69a10eb29713ec113c263b21f40" category="admonition">您可以通过单击操作图标并单击活动卷列表中卷的 * 查看详细信息 * 来查找每个卷的启动程序。</block>
   <block id="1e568004d546c2e3a9d32371a3e19a82" category="paragraph">您可以将多个启动程序添加到现有卷访问组中，以便能够访问卷，并为该卷访问组中的每个启动程序分配唯一的 CHAP 凭据。这样，您就可以将此选项应用于已存在的卷访问组。</block>
   <block id="7a8b07f520583b2359bbcc78d678e8c8" category="paragraph">您可以使用 API 调用来分配基于启动程序的 CHAP 属性。要为每个启动程序添加 CHAP 帐户名称和凭据，必须使用 ModifyInitiator API 调用删除和添加 CHAP 访问和属性。</block>
-  <block id="4637af5d4f1a259b499ff57333b1f597" category="paragraph">有关详细信息，请参见 <block ref="d8ac4fdc9abb74552f869693e6472bb3" category="inline-link-macro-rx"></block>。</block>
   <block id="fe86f667d6bbe532f9cabac1928ea492" category="list-text">单击 * 管理 * &gt; * 启动程序 * 。</block>
   <block id="7ae11ad68c2f9af3e037f288a75171aa" category="list-text">选择要添加到访问组的启动程序。</block>
   <block id="32cc4e28e734756cf8835459444477ce" category="list-text">单击 * 批量操作 * 按钮。</block>
@@ -3401,13 +3311,6 @@
   <block id="9e82c73d2e8a733dd6bf507d7ffcb220" category="paragraph">删除帐户之前，请删除并清除与帐户关联的所有卷。</block>
   <block id="662df6517322cb960d5b7a5b3fc89dea" category="list-text">单击要删除的帐户对应的 "Actions" 图标。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="doc">版权</block>
-  <block id="e10b5b38785c3a24ec75723ab75b4360" category="paragraph">版权所有 © 2021 NetApp ， Inc. 。保留所有权利。Printed in the U.S.</block>
-  <block id="2275e007ee598cef266c877f9c52ee25" category="paragraph">版权所涵盖的本文档的任何部分不得以任何形式或任何方式复制，包括图像，电子或机械，包括影印，录制， 在未经版权所有者事先书面许可的情况下，在电子检索系统中粘贴或存储。</block>
-  <block id="ce4ad2236c56cc11a838f29c8c261bf7" category="paragraph">Software derived from copyrighted NetApp material is subject to the following license and disclaimer:</block>
-  <block id="b110bc9db113b3149cb9e2ed905d4c6c" category="paragraph">THIS SOFTWARE IS PROVIDED BY NETAPP "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, WHICH ARE HEREBY DISCLAIMED.IN NO EVENT SHALL NETAPP BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</block>
-  <block id="4fc9b260d15698bbd988f76ca839c5b6" category="paragraph">NetApp reserves the right to change any products described herein at any time, and without notice.NetApp assumes no responsibility or liability arising from the use of products described herein, except as expressly agreed to in writing by NetApp.The use or purchase of this product does not convey a license under any patent rights, trademark rights, or any other intellectual property rights of NetApp.</block>
-  <block id="87bfcb691f34a9e3fdda83480f0acf78" category="paragraph">The product described in this manual may be protected by one or more U.S.patents, foreign patents, or pending applications.</block>
-  <block id="464821ce353b86f770de0d09b5f5aabe" category="paragraph">本文所含数据与商用项目（定义见 FAR 2.101 ）相关，属于 NetApp ， Inc. 的专有信息政府拥有非独占，不可转让，不可再许可，全球有限且不可撤销的许可，仅可在与美国相关并为美国提供支持时使用此数据交付数据所依据的政府合同。除非本协议另有规定，否则不得使用，披露，复制，修改，执行， 或在未经 NetApp ， Inc. 事先书面批准的情况下显示。美国国防部的政府许可权利仅限于 DFARS 第 252.227-7015 （ b ）条中确定的权利。</block>
   <block id="7d61c151abcb568cd3199caebdcf5ea3" category="summary">SSL 密码是主机用来建立安全通信的加密算法。Element 软件支持标准密码，而启用 FIPS 140-2 模式时则支持非标准密码。</block>
   <block id="f40d5e4e012db786ef7aa80f2470dd02" category="doc">SSL 密码</block>
   <block id="a406e6b8894e0e47d9c8299d0110ace8" category="paragraph">以下列表提供了 Element 软件支持的标准安全套接字层（ SSL ）密码以及启用 FIPS 140-2 模式时支持的 SSL 密码：</block>
@@ -3446,8 +3349,6 @@
   <block id="cc978dfba7c204227b498235faecbb71" category="summary">您可以编辑卷对属性以更改卷对关系的复制模式。</block>
   <block id="7979675c59609ebce8e5563def06fe1d" category="list-text">在 * 编辑卷对 * 窗格中，选择新的复制模式：</block>
   <block id="278b57bad13f8c1a15188e0504efd31b" category="list-text">* 仅限 Snapshot * ：仅复制在源集群上创建的快照。不会复制源卷中的活动写入。* 注意： * 更改复制模式会立即更改此模式。请确保您已在两个站点协调这些更改。</block>
-  <block id="4a0a4752a851bfbcb612292d19d020e2" category="list-text">选择 * 使用 LDAPS 协议 * 。</block>
-  <block id="4e8b9c52e60070f73bcaa6e5e5ba4121" category="inline-link-macro">LDAP 详细信息</block>
   <block id="ad4f994f46b2918f9140ecbc2a4806e4" category="summary">您可以将 SolidFire 快照备份到与 OpenStack Swift 兼容的二级对象存储。</block>
   <block id="eea58b3659596532522a08f03fb583b8" category="doc">将卷快照备份到 OpenStack Swift 对象存储</block>
   <block id="393a50df83ef054f405e26e99368e8b4" category="list-text">在 * 集成备份 * 对话框的 * 备份到 * 下，选择 * Swift* 。</block>
@@ -3459,9 +3360,7 @@
   <block id="acf18d5fb4380ea22d0a65b24cb7970a" category="summary">通过永久性卷，可以将管理节点配置数据存储在指定的存储集群上，而不是本地 VM 上，以便在管理节点丢失或删除时可以保留这些数据。永久性卷是一种可选的管理节点配置，但建议使用此配置。</block>
   <block id="ffdacd6c2fa0cc41b20f4135b3c82577" category="paragraph">部署新管理节点时，安装和升级脚本中包含一个启用永久性卷的选项。永久性卷是指基于 Element 软件的存储集群上的卷，其中包含主机管理节点虚拟机的管理节点配置信息，这些信息会在虚拟机生命周期结束后持续存在。如果管理节点丢失，替代管理节点 VM 可以重新连接到丢失的 VM 并恢复其配置数据。</block>
   <block id="6f5983880dad4e85e696acaacf3a185b" category="paragraph">如果在安装或升级期间启用了永久性卷功能，则会自动创建多个卷，并在分配的集群上预先指定 NetApp-HCI-名称 。与任何基于 Element 软件的卷一样，这些卷可以使用 Element 软件 Web UI ，适用于 vCenter Server 的 NetApp Element 插件或 API 进行查看，具体取决于您的首选项和安装。永久性卷必须已启动且正在运行，并与管理节点建立 iSCSI 连接，以维护可用于恢复的当前配置数据。</block>
-  <block id="2fffa7f8ecc14b82a139dca0764ff6ce" category="summary">多因素身份验证 \ （ MFA\ ）通过安全断言标记语言 \ （ SAML \ ）使用第三方身份提供程序 \ （ IdP ）来管理用户会话。通过 MFA ，管理员可以根据需要配置其他身份验证因素，例如密码和文本消息以及密码和电子邮件消息。</block>
   <block id="3c7932b9d073a0e6fb52679db5222c4b" category="paragraph">多因素身份验证（ MFA ）通过安全断言标记语言（ Security Assertion Markup Language ， SAML ）使用第三方身份提供程序（ IdP ）来管理用户会话。通过 MFA ，管理员可以根据需要配置其他身份验证因素，例如密码和文本消息以及密码和电子邮件消息。</block>
-  <block id="b4de17ead867a3cf0b9d11e57e562672" category="doc">机器翻译</block>
   <block id="a25585714577ecf53e74bf6ba927939b" category="summary">您可以在 Element UI 中查看集群上所有活动虚拟卷的虚拟卷信息。您还可以查看每个虚拟卷的性能活动，包括输入，输出，吞吐量，延迟， 队列深度和卷信息。</block>
   <block id="e3e1470ab67f2d0e2e71394fd8dd40ef" category="doc">查看虚拟卷详细信息</block>
   <block id="bb0b3ec1fbf17c782efc2b196ad33dd2" category="list-text">您应已在 Element UI 中为集群启用 VVol 功能。</block>
@@ -3626,11 +3525,6 @@
   <block id="448cc4739f329334f40d61143f136ce6" category="admonition">初始化可能非常耗时。您可能希望在非高峰时段运行此操作。初始化会执行基线传输；它会创建源卷的快照副本，然后将该副本及其引用的所有数据块传输到目标卷。您可以手动初始化，也可以使用计划根据计划启动初始化过程（以及后续更新）。</block>
   <block id="2b6a712d06e30cfbb0d2afb437ddb0cd" category="list-text">单击 * 创建关系 * 。</block>
   <block id="bdd02071b3b7714291c6eaccc619c448" category="list-text">单击 * 数据保护 * &gt; * SnapMirror 关系 * 以查看此新的 SnapMirror 关系。</block>
-  <block id="a78ca521bc02d642fa1eba17d54293df" category="summary">配对过程涉及使用卷 ID 或配对密钥对两个卷配对。</block>
-  <block id="47acfd5a1493903b58cde79d620e1fd7" category="list-text">通过选择以下方法之一对卷配对：</block>
-  <block id="41b6c945f3a415f4065810b20503be60" category="list-text">使用卷 ID ：如果您对要配对的卷所在的两个集群都拥有集群管理员访问权限，请使用此方法。此方法使用远程集群上卷的卷 ID 启动连接。</block>
-  <block id="6933d0d034821d80017cac2110530eb6" category="list-text">使用配对密钥：如果您只对源集群拥有集群管理员访问权限，请使用此方法。此方法将生成一个配对密钥，可在远程集群上使用此密钥完成卷对。</block>
-  <block id="1b0e390638b58d6d58b0c789007e3415" category="admonition">卷配对密钥包含经过加密的卷信息，并且可能包含敏感信息。请仅以安全的方式共享此密钥。</block>
   <block id="0cbe09b62205ee5344b1446ba2af59a6" category="summary">您可以通过图形格式查看单个访问组的详细信息，例如连接的卷和启动程序。</block>
   <block id="d6b0f59da0c207e064bff45d1ce9be87" category="doc">查看单个访问组详细信息</block>
   <block id="b9e9a0c38a11075a51eb8269f978ebfb" category="list-text">单击访问组对应的 "Actions" 图标。</block>
@@ -3775,7 +3669,6 @@
   <block id="b47b83d6802263014655a14ac59f1ec6" category="list-text"><block ref="b47b83d6802263014655a14ac59f1ec6" category="inline-xref-macro-rx"></block></block>
   <block id="430995b0d963e797ef911ae1ad1da747" category="summary">您可以更改现有启动程序的别名，也可以添加别名（如果尚不存在）。</block>
   <block id="dbc82a99d88246a423f87eb1fc1c0456" category="paragraph">要为每个启动程序添加 CHAP 帐户名称和凭据，您必须使用 `ModfyInitiator` API 调用来删除和添加 CHAP 访问和属性。</block>
-  <block id="81aa6539abe2e54911c5b08db867343e" category="paragraph">请参见 <block ref="d8ac4fdc9abb74552f869693e6472bb3" category="inline-link-macro-rx"></block>。</block>
   <block id="67e57271b30715269496f264d273ce01" category="list-text">单击要编辑的启动程序对应的 "Actions" 图标。</block>
   <block id="fdcc3fc7db3be9175950ee11035397d8" category="list-text">在 * 别名 * 字段中输入启动程序的新别名。</block>
   <block id="369db52ac562c4dd3bedd1d7252f816a" category="summary">您可以使用 Element API 重新设置现有密钥的密钥。此过程将为外部密钥管理服务器创建一个新的替换主密钥。</block>
@@ -3817,7 +3710,6 @@
   <block id="514dcd06c26738227a76d927243bfb03" category="list-text">单击 * 是 * 确认 SnapMirror 配置更改。</block>
   <block id="3c872abb1451c67d458bd29c506dbbd6" category="summary">您可以创建 iSCSI 或光纤通道启动程序，也可以为其分配别名。</block>
   <block id="b303743ace55a2fde0c238c71dbf1c9b" category="paragraph">此外，您还可以使用 API 调用来分配基于启动程序的 CHAP 属性。要为每个启动程序添加 CHAP 帐户名称和凭据，必须使用 `CreateInitiator` API 调用删除和添加 CHAP 访问和属性。通过 `CreateInitiators` 和 `ModfyInitiators` API 调用指定一个或多个 virtualNetworkID ，可以将启动程序访问限制为一个或多个 VLAN 。如果未指定虚拟网络，则启动程序可以访问所有网络。</block>
-  <block id="302b577738bd02fc142ea5c6a75f98b2" category="paragraph">有关详细信息，请参见 API 参考信息。<block ref="d8ac4fdc9abb74552f869693e6472bb3" category="inline-link-macro-rx"></block></block>
   <block id="a93dada048352dd27b65b416c7d54fbd" category="list-text">单击 * 创建启动程序 * 。</block>
   <block id="eb2a1962774cb09a1c614d9b7b5c20ce" category="list-text">执行以下步骤以创建一个或多个启动程序：</block>
   <block id="adf0b630c9d964b6516f51f1b5c9f9fe" category="paragraph">创建一个启动程序</block>
@@ -3978,7 +3870,6 @@
   <block id="451f0e39a6ad3d46a383c02ea5860a89" category="summary">您可以通过 Element API 使用这些基本步骤来设置集群以使用多因素身份验证。有关每个 API 方法的详细信息，请参见 Element API 参考文档。</block>
   <block id="9c48347021924ff7e8450204dad3069e" category="doc">设置多因素身份验证</block>
   <block id="d4f3775e2bff41a57405effb2e7249b6" category="paragraph">您可以通过 Element API 使用这些基本步骤来设置集群以使用多因素身份验证。</block>
-  <block id="a8d74e35fafff7a5f37815f2dcc89753" category="paragraph">有关每个 API 方法的详细信息，请参见 <block ref="c9d614c7cd4efd8daab5302738f269c2" category="inline-link-macro-rx"></block>。</block>
   <block id="88b1e425f6a8d373d7b16e1b016c6de1" category="list-text">通过调用以下 API 方法并以 JSON 格式传递 IdP 元数据，为集群创建新的第三方身份提供程序（ IdP ）配置： `CreateIdpConfiguration`</block>
   <block id="168af22e9c6015f03678011bffdead13" category="paragraph">从第三方 IdP 检索纯文本格式的 IdP 元数据。需要验证此元数据，以确保其在 JSON 中格式正确。您可以使用多种 JSON 格式化程序应用程序，例如： https://freeformatter.com/json-escape.html 。</block>
   <block id="65b69ef14e13e541a93abafc7baa59a1" category="list-text">通过 spMetadataUrl 检索集群元数据，通过调用以下 API 方法复制到第三方 IdP ： `ListIdpConfigurations`</block>
@@ -4031,15 +3922,6 @@
   <block id="3f0a239e4593681532e35668434b88c0" category="paragraph">启用 VVol 功能后，用户界面中将显示 VVol 选项卡，其中提供了与 VVol 相关的监控和有限管理选项。此外，一个称为 VASA Provider 的存储端软件组件可充当 vSphere 的存储感知服务。大多数 VVOL 命令（例如 VVOL 创建，克隆和编辑）都由 vCenter Server 或 ESXi 主机启动，并由 VASA Provider 转换为 Element 软件存储系统的 Element API 。可以使用 Element UI 启动用于创建，删除和管理存储容器以及删除虚拟卷的命令。</block>
   <block id="2ef626e8518f3a0f480ed7e89a8f1574" category="paragraph">在 Element 软件存储系统中使用虚拟卷功能所需的大多数配置均在 vSphere 中进行。要在 vCenter 中注册 VASA Provider ，创建和管理 VVOL 数据存储库以及根据策略管理存储，请参见 _VMware vSphere 适用于 SolidFire 存储的虚拟卷配置指南。</block>
   <block id="51d8d3b6c9131752107470163b10f17b" category="admonition">如果您已在 vCenter 中注册了 VASA Provider ，则可通过升级修补程序为多个 vCenter 提供 VASA 支持。要安装，请从下载 VASA39 .tar.gz 文件<block ref="a5762658b720f071580221aff2666e02" category="inline-link-rx"></block> 并按照清单中的说明进行操作。NetApp Element VASA 提供程序使用 NetApp 证书。使用此修补程序时， vCenter 会未经修改地使用此证书来支持多个 vCenter 以供 VASA 和 VVol 使用。请勿修改证书。VASA 不支持自定义 SSL 证书。</block>
-  <block id="007c02658ef8b07a1001bafe776df27b" category="list-text"><block ref="007c02658ef8b07a1001bafe776df27b" category="inline-xref-macro-rx"></block></block>
-  <block id="12693d918bf7f19db7436d69ed7e758f" category="list-text"><block ref="12693d918bf7f19db7436d69ed7e758f" category="inline-xref-macro-rx"></block></block>
-  <block id="491782440f996cd321f9629157c54059" category="list-text"><block ref="491782440f996cd321f9629157c54059" category="inline-xref-macro-rx"></block></block>
-  <block id="11bbceafbe9d437c1543e5111996116c" category="list-text"><block ref="11bbceafbe9d437c1543e5111996116c" category="inline-xref-macro-rx"></block></block>
-  <block id="3cf0f0472577a5d6fa3577ab346e59a8" category="list-text"><block ref="3cf0f0472577a5d6fa3577ab346e59a8" category="inline-xref-macro-rx"></block></block>
-  <block id="662e1e177b659084104ca17240db00a4" category="list-text"><block ref="662e1e177b659084104ca17240db00a4" category="inline-xref-macro-rx"></block></block>
-  <block id="6294dfc41f5eb630ab88b8d1e270537d" category="list-text"><block ref="6294dfc41f5eb630ab88b8d1e270537d" category="inline-xref-macro-rx"></block></block>
-  <block id="f07e365c8ad17fb7c97373763cb77abb" category="list-text"><block ref="f07e365c8ad17fb7c97373763cb77abb" category="inline-xref-macro-rx"></block></block>
-  <block id="cb232afde152278826cde1bf62edb34b" category="list-text"><block ref="cb232afde152278826cde1bf62edb34b" category="inline-xref-macro-rx"></block></block>
   <block id="31662cdb79d0742ecd62d7d8a2e8c046" category="summary">您可以通过 NetApp Element 软件 Web 用户界面（ Element UI\ ）监控 SolidFire 系统并在其上执行常见任务。</block>
   <block id="6dfef2ba40e9556b98ae9272f7591a43" category="paragraph">您可以通过 NetApp Element 软件 Web 用户界面（ Element UI ）监控 SolidFire 系统并在其上执行常见任务。</block>
   <block id="55d97abcee28a2815b65d2c9f2d336ea" category="paragraph">基本选项包括查看由 UI 活动激活的 API 命令以及提供反馈。</block>
@@ -4539,11 +4421,9 @@
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">Element 12.2 管理节点是一种可选升级。现有部署不需要此功能。</block>
   <block id="12b8893b065179b6b80fdc2d448862df" category="inline-link-macro">Element 软件</block>
   <block id="d8f671f04a7ff090ddfc9b80caaf4c67" category="list-text">（可选）一个可通过管理网络访问存储集群的虚拟网络接口。如果存储集群与管理节点（ eth0 ）位于不同的子网中，并且您希望使用永久性卷，请向存储子网（ eth1 ）上的虚拟机添加另一个网络接口控制器（ Network Interface Controller ， NIC ），或者确保管理网络可以路由到存储网络。</block>
-  <block id="148f57c4f729acea3c3d95b35553a056" category="list-text">为要添加的每个默认时间服务器添加一个新行。默认时间服务器必须与要在中使用的存储集群上使用的 NTP 服务器相同 <block ref="1d132a4516f2aafec8e6c256f33f26a5" category="inline-link-macro-rx"></block>。</block>
   <block id="5a808c62f4f9557c4df556d6a230ba7c" category="list-text">配置并运行管理节点设置命令：</block>
   <block id="fea104dd45bc0e75d821ddd5af2b02d0" category="admonition">命令名称的缩写形式为圆括号（），可替换为全名。</block>
   <block id="3f124867257c579e7ba689baed3d4f45" category="list-text">*-mnode_admin_user （ -mu ） [username]* ：管理节点管理员帐户的用户名。这可能是您用于登录到管理节点的用户帐户的用户名。</block>
-  <block id="26857b6da47c6d418e7795fa65480fb4" category="list-text">*-storage_mvip （ -SM ） [MVIP address]* ：运行 Element 软件的存储集群的管理虚拟 IP 地址（ MVIP ）。使用与期间相同的存储集群配置管理节点 <block ref="5d58d27cc80ea9072f2b9ee8ac714542" category="inline-link-macro-rx"></block>。</block>
   <block id="4e1df484ad6625a5245817997c822b47" category="list-text">* — storage_username （ -su ） ` username* ：由` — -storage_mvip 参数指定的集群的存储集群管理员用户名。</block>
   <block id="d71eed1c64f0531e1c1642b076495af1" category="list-text">* — -metry_active （ -t ） [true]* ：保留值 true ，以便通过 Active IQ 收集数据以进行分析。</block>
   <block id="e4d37c44acea4cf6b1f090b66eb5cdb4" category="list-text">（可选）：将 Active IQ 端点参数添加到命令中：</block>
@@ -4824,7 +4704,6 @@
   <block id="c512caf817d81cdc178fb65c97607344" category="list-text">监控更新状态： `get /services/update/status`</block>
   <block id="c9ce4a5a8a9d1a8092a6ff7b76b8bc89" category="summary">您可以升级 SolidFire 存储系统的 VMware 组件，并执行其他步骤重新安装 vCenter 插件。</block>
   <block id="ae39d371b28f32c0d2467b06b77ffdc4" category="doc">使用适用于 vCenter Server 的 Element 插件升级适用于 NetApp SolidFire 存储系统的 vSphere 组件</block>
-  <block id="9960455891f61a3653ec820987bcbc47" category="paragraph">在升级 SolidFire Element 存储安装中的 VMware vSphere 组件时，对于安装了适用于 vCenter Server 的 Element 插件的系统，还需要执行一些其他步骤。</block>
   <block id="01bc6f8efa4202821e95f4fdf6298b30" category="inline-link">清除</block>
   <block id="c96f381a4bf7df116280b892203ff943" category="list-text">对于 vCSA 升级，<block ref="76d98c4ad0070f6b4530ebc29b6513e1" category="inline-link-rx"></block> 此插件中的 QoSSIOC 设置（ * NetApp Element 配置 &gt; QoSSIOC 设置 * ）。此过程完成后， * QoSSIOC Status* 字段将显示 `Not Configured` 。</block>
   <block id="8e9a3ba87453eb870e97d5a72d5d9aac" category="inline-link">取消注册</block>
@@ -4854,7 +4733,6 @@
   <block id="ceffe5f1938c4ed6911e85fce51ab36d" category="admonition">如果在主要版本之外可以进行新的存储固件升级，则可以执行此任务。</block>
   <block id="f9bc826a5b07dc1827fc02dee684c077" category="inline-link-macro">（可选）升级管理节点</block>
   <block id="8dcd4f85b38ad4a7a877b6e9a74aa195" category="list-text"><block ref="8b581d88525a9abe2159d2e27e0e7473" category="inline-link-macro-rx"></block>。</block>
-  <block id="5b12e33b072ce8270dc251fa4b789d1a" category="admonition">升级存储集群上的 Element 软件不再需要升级管理节点操作系统。如果管理节点为 11.3 或更高版本，您只需将管理服务升级到最新版本，即可使用 NetApp Hybrid Cloud Control 执行 Element 升级。如果您希望出于安全修复等其他原因升级管理节点操作系统，请按照适用于您的方案的管理节点升级操作步骤进行操作。</block>
   <block id="81999ae9ebe275d2bd17f27aaeb3e84f" category="inline-link-macro">升级适用于 vCenter Server 的 Element 插件</block>
   <block id="7ff15da747c65fae9ff8d2305dcad840" category="list-text"><block ref="b3f8a37655088cb54887dc5db5010f33" category="inline-link-macro-rx"></block>。</block>
   <block id="2e78b6f70db7c1550da68540c472fe32" category="summary">在 NetApp SolidFire 存储系统升级过程中，您可以升级适用于 vCenter Server 的 Element 插件。</block>
@@ -5086,17 +4964,13 @@
   <block id="dfd187d4ef184e0cb0e4d5851c6f39fe" category="inline-xref-macro">添加驱动器</block>
   <block id="d72f422d12a063839f663d0fb29c23a5" category="list-text"><block ref="d72f422d12a063839f663d0fb29c23a5" category="inline-xref-macro-rx"></block></block>
   <block id="e74c3f432c28fc5585535a1fe78abc79" category="inline-xref-macro">GetDriveHardwareInfo</block>
-  <block id="73751df1e79eb83bd4a34e790d8784e7" category="list-text"><block ref="73751df1e79eb83bd4a34e790d8784e7" category="inline-xref-macro-rx"></block></block>
   <block id="1c4036bbd6eae14fd0531c231c15367e" category="inline-xref-macro">GetDriveStats</block>
   <block id="59f09ba7829f9d8fa0b344a34d6f39f9" category="list-text"><block ref="59f09ba7829f9d8fa0b344a34d6f39f9" category="inline-xref-macro-rx"></block></block>
   <block id="6e0a0526af1d6e34454841ba382d094e" category="inline-xref-macro">ListDrives</block>
   <block id="15a9310e3e2bba091564231d3e195b19" category="list-text"><block ref="15a9310e3e2bba091564231d3e195b19" category="inline-xref-macro-rx"></block></block>
   <block id="9792067f4a78719c21c66bece5edb1e9" category="inline-xref-macro">ListDriveStats</block>
-  <block id="e516bea034067d8052ad9593d9d643e8" category="list-text"><block ref="e516bea034067d8052ad9593d9d643e8" category="inline-xref-macro-rx"></block></block>
   <block id="e7d385ef5ac889916654bf5f865952f1" category="inline-xref-macro">RemoveDrives</block>
-  <block id="173e9ed2a0fa2f45b0f4247b73d20aa8" category="list-text"><block ref="173e9ed2a0fa2f45b0f4247b73d20aa8" category="inline-xref-macro-rx"></block></block>
   <block id="028cf1adbdc5ab09645473086804baf2" category="inline-xref-macro">SecureEraseDrives</block>
-  <block id="ada418964a847bad8e8141aa72ad0e1d" category="list-text"><block ref="ada418964a847bad8e8141aa72ad0e1d" category="inline-xref-macro-rx"></block></block>
   <block id="d2d30cca8cabd117f31daf5e3e094c20" category="summary">您可以使用 ModifyClusterAdmin 方法更改集群管理员， LDAP 集群管理员或第三方身份提供程序 \ （ IdP ）集群管理员的设置。您不能更改管理员集群管理员帐户的访问权限。</block>
   <block id="38e3e49972876b1f303730d603ffbae8" category="doc">ModifyClusterAdmin</block>
   <block id="c6b7a2efd3e70ec292f98bfe2c6c8ee6" category="paragraph">您可以使用 `ModfyClusterAdmin` 方法更改集群管理员， LDAP 集群管理员或第三方身份提供程序（ IdP ）集群管理员的设置。您不能更改管理员集群管理员帐户的访问权限。</block>
@@ -5365,7 +5239,6 @@
   <block id="f706c2c9f764a1928af56503f593ce7c" category="inline-link-macro">创建新集群：</block>
   <block id="03c723d3c658548008f592aa302e8409" category="admonition">您不能使用此方法禁用空闲软件加密。要禁用空闲软件加密，您需要 <block ref="dd0348ec8bd8a2d5cdfad96177d0413b" category="inline-link-macro-rx"></block> 禁用空闲软件加密。</block>
   <block id="8edcd7780c99fc7a69b6f53d8748b0af" category="inline-link-macro">GetClusterInfo</block>
-  <block id="ed098de7c85d42c63667264da460dda3" category="list-text"><block ref="ed098de7c85d42c63667264da460dda3" category="inline-link-macro-rx"></block></block>
   <block id="60936eeb05e14959038387fdf0090998" category="summary">您可以使用 SetLoginSessionInfo 方法设置会话登录身份验证的有效期。在登录期限过后，系统上没有任何活动，身份验证将过期。登录期限过后，要继续访问集群，需要新的登录凭据。</block>
   <block id="f27af64bb32c058c815e5a6546bdb08e" category="doc">SetLoginSessionInfo</block>
   <block id="ddac393c2729490f9c43d3a7342f01f9" category="paragraph">您可以使用 `SetLoginSessionInfo` 方法设置会话登录身份验证的有效期。在登录期限过后，系统上没有任何活动，身份验证将过期。登录期限过后，要继续访问集群，需要新的登录凭据。</block>
@@ -5884,62 +5757,39 @@
   <block id="0675989717444257ee49193cfedf79aa" category="summary">您可以通过系统配置 API 方法获取和设置应用于集群中所有节点的配置值。</block>
   <block id="7e2a8e5dd5f0b4898c61eb4d967138c9" category="doc">系统配置 API 方法</block>
   <block id="b46b21dad2b8c07a0ceccf690ffbe27c" category="inline-xref-macro">DisableBmcColdReset</block>
-  <block id="e30f526212dfefd4da786ddbc93368bc" category="list-text"><block ref="e30f526212dfefd4da786ddbc93368bc" category="inline-xref-macro-rx"></block></block>
-  <block id="2515b9a687152df481d4580e47045092" category="list-text"><block ref="2515b9a687152df481d4580e47045092" category="inline-xref-macro-rx"></block></block>
   <block id="0a21ce4b142d835e981ac7d704e5811f" category="inline-xref-macro">DisableSnmp</block>
-  <block id="28c59df3d8e06bd0f058b32ba38f6f74" category="list-text"><block ref="28c59df3d8e06bd0f058b32ba38f6f74" category="inline-xref-macro-rx"></block></block>
   <block id="f7a61721afe66c5226c03d15273c48be" category="inline-xref-macro">EnableBmcColdReset</block>
-  <block id="0c8384eccddc5ae952ea6566a05c87a1" category="list-text"><block ref="0c8384eccddc5ae952ea6566a05c87a1" category="inline-xref-macro-rx"></block></block>
   <block id="fd10dc37286422fd1428fbd199333206" category="inline-xref-macro">EnableClusterSsh</block>
-  <block id="74d685f6289274256fdb4bc1b46b9f65" category="list-text"><block ref="74d685f6289274256fdb4bc1b46b9f65" category="inline-xref-macro-rx"></block></block>
-  <block id="487a7659cd48beb5cd934c55cbb6a7d4" category="list-text"><block ref="487a7659cd48beb5cd934c55cbb6a7d4" category="inline-xref-macro-rx"></block></block>
   <block id="110b439baab47381e38a8c24152ff111" category="inline-xref-macro">GetBinAssignmentProperties</block>
-  <block id="ad84dcb7e6f12efb77f50d803c6d3a9f" category="list-text"><block ref="ad84dcb7e6f12efb77f50d803c6d3a9f" category="inline-xref-macro-rx"></block></block>
   <block id="74a50c92e604a31dae9f3ffa5538af91" category="inline-xref-macro">GetClusterSshInfo</block>
-  <block id="b1bb27716cf5b135835c5496cffdcecd" category="list-text"><block ref="b1bb27716cf5b135835c5496cffdcecd" category="inline-xref-macro-rx"></block></block>
   <block id="7af49eee33d758a87a393060c00d114b" category="inline-xref-macro">GetClusterStructure</block>
   <block id="24b4a3fc33f19acde5977e4be44844c8" category="list-text"><block ref="24b4a3fc33f19acde5977e4be44844c8" category="inline-xref-macro-rx"></block></block>
   <block id="60a290a67d9dba5ca1d1753e33590011" category="inline-xref-macro">GetFipsReport</block>
-  <block id="491ef1ba0bf9b638bdd6374db75ebfec" category="list-text"><block ref="491ef1ba0bf9b638bdd6374db75ebfec" category="inline-xref-macro-rx"></block></block>
   <block id="bf28260a9de577bfe685f146dfd88a6b" category="inline-xref-macro">GetLldpConfig</block>
-  <block id="b9d5aeb1246d9ab147a2860289450d03" category="list-text"><block ref="b9d5aeb1246d9ab147a2860289450d03" category="inline-xref-macro-rx"></block></block>
   <block id="f61e9636e293369f10b1ec103f8fee93" category="inline-xref-macro">GetLldpInfo</block>
-  <block id="086febacc15b636e3a60d1b37daa6282" category="list-text"><block ref="086febacc15b636e3a60d1b37daa6282" category="inline-xref-macro-rx"></block></block>
   <block id="e4dfbeb73cec3dae15bbd54d9bab5371" category="inline-xref-macro">GetNodeFipsDrivesReport</block>
   <block id="45412dfdcfac19674f8390f537bdaaa8" category="inline-xref-macro">GetNtpInfo</block>
   <block id="a62467a99f0a13c7d78641ecb62f072c" category="list-text"><block ref="a62467a99f0a13c7d78641ecb62f072c" category="inline-xref-macro-rx"></block></block>
   <block id="d736a9b022857922ef24a52f89db18eb" category="inline-xref-macro">GetNvramInfo</block>
-  <block id="68843835e14c0c26c53a7473463ee091" category="list-text"><block ref="68843835e14c0c26c53a7473463ee091" category="inline-xref-macro-rx"></block></block>
   <block id="10763b97bd843488da2bf7ea3d301a99" category="inline-xref-macro">GetProtectionDomainLayout</block>
-  <block id="1fff4ee7f2c311190228d44a00c1087b" category="list-text"><block ref="1fff4ee7f2c311190228d44a00c1087b" category="inline-xref-macro-rx"></block></block>
   <block id="8a0a6fa5053e047edbf44e6a00a611ab" category="inline-xref-macro">GetRemoteLoggingHosts</block>
   <block id="8f996bad118406c01db710c52b78f89b" category="list-text"><block ref="8f996bad118406c01db710c52b78f89b" category="inline-xref-macro-rx"></block></block>
   <block id="e8c6673c8f96c59d7b3f3fbbe1b8af7a" category="inline-xref-macro">GetSnmpACL</block>
-  <block id="77d981d932812635ad63460359704ca0" category="list-text"><block ref="77d981d932812635ad63460359704ca0" category="inline-xref-macro-rx"></block></block>
   <block id="8168b96b63c53b8d5750e9bc696348e3" category="inline-xref-macro">GetSnmpInfo</block>
   <block id="20d40c339facedf19e6304b037d91df9" category="list-text"><block ref="20d40c339facedf19e6304b037d91df9" category="inline-xref-macro-rx"></block></block>
   <block id="a925dcbb6a02e46a5d6a2e8ce71429de" category="inline-xref-macro">GetSnmpState</block>
   <block id="0cecdaa51e9ea3fd4f7f07a7d8c8b134" category="list-text"><block ref="0cecdaa51e9ea3fd4f7f07a7d8c8b134" category="inline-xref-macro-rx"></block></block>
   <block id="26fe91ec95b2de610b5dd30f1e917131" category="inline-xref-macro">GetSnmpTrapInfo</block>
-  <block id="7bb6b1e3d269e771d149c22eb62c7f6a" category="list-text"><block ref="7bb6b1e3d269e771d149c22eb62c7f6a" category="inline-xref-macro-rx"></block></block>
   <block id="690bc1a3f6390f9426d8197ee36e2ce2" category="inline-xref-macro">GetSSLCertificate</block>
-  <block id="a7003342975c4d38a3b3268c25b3c743" category="list-text"><block ref="a7003342975c4d38a3b3268c25b3c743" category="inline-xref-macro-rx"></block></block>
   <block id="7589670fb1e468c38aadc9828cfba62b" category="inline-xref-macro">ListProtectionDomainLevels</block>
-  <block id="33e4459afba6904093a83f18eb44bc8e" category="list-text"><block ref="33e4459afba6904093a83f18eb44bc8e" category="inline-xref-macro-rx"></block></block>
   <block id="758c64d1648786e4f70aef7111a15695" category="inline-xref-macro">RemoveSSLCertificate</block>
-  <block id="4cd51beb9e60022fa98c3f608320f75a" category="list-text"><block ref="4cd51beb9e60022fa98c3f608320f75a" category="inline-xref-macro-rx"></block></block>
   <block id="8b3011f2882fa40b4be480d909170fb1" category="inline-xref-macro">ResetNetworkConfig</block>
-  <block id="f4e3bf930e89a19d76252d4f8b5a2467" category="list-text"><block ref="f4e3bf930e89a19d76252d4f8b5a2467" category="inline-xref-macro-rx"></block></block>
   <block id="a475d56a367f667a379f4da4949bf601" category="inline-xref-macro">ResetSupplementalTlsCiphers</block>
-  <block id="561131db1757cc7f8e27a9e8efc302a1" category="list-text"><block ref="561131db1757cc7f8e27a9e8efc302a1" category="inline-xref-macro-rx"></block></block>
   <block id="6a6e0c4a22cd600060f458b0cf968654" category="inline-xref-macro">SetClusterStructure</block>
   <block id="7ddc76298ec51d36905e6ab8ff41d84e" category="list-text"><block ref="7ddc76298ec51d36905e6ab8ff41d84e" category="inline-xref-macro-rx"></block></block>
   <block id="592e706f2f76bfb826e26b87ae34f21c" category="inline-xref-macro">SetLldpConfig</block>
-  <block id="3e821c0a8d2bfc5c2b0bfa7ed2537323" category="list-text"><block ref="3e821c0a8d2bfc5c2b0bfa7ed2537323" category="inline-xref-macro-rx"></block></block>
   <block id="1dac797dd50b5f7bd7b1f5d99e251d20" category="inline-xref-macro">SetNtpInfo</block>
-  <block id="4b147ec5404811844c0ac0a5e493ec63" category="list-text"><block ref="4b147ec5404811844c0ac0a5e493ec63" category="inline-xref-macro-rx"></block></block>
   <block id="76e41f0c5158a7d3c39e70b930570854" category="inline-xref-macro">SetProtectionDomainLayout</block>
-  <block id="5ca119306d104c37a1097f645cfd39ba" category="list-text"><block ref="5ca119306d104c37a1097f645cfd39ba" category="inline-xref-macro-rx"></block></block>
   <block id="7ec501e5c4a5552f16c73746995c46e7" category="inline-xref-macro">SetRemoteLoggingHosts</block>
   <block id="5c5a74fc03e6276cfc87e8ed4edc8fb5" category="list-text"><block ref="5c5a74fc03e6276cfc87e8ed4edc8fb5" category="inline-xref-macro-rx"></block></block>
   <block id="428f323f6f31418a3aa2b4977b425da6" category="inline-xref-macro">SetSnmpACL</block>
@@ -5947,13 +5797,9 @@
   <block id="404fdf938ec6d6563d2f622f3db02352" category="inline-xref-macro">SetSnmpInfo</block>
   <block id="76f4bc74d99f4787485a15efb133bfd9" category="list-text"><block ref="76f4bc74d99f4787485a15efb133bfd9" category="inline-xref-macro-rx"></block></block>
   <block id="3a70c9f69d69eeb52d149fb9774d623b" category="inline-xref-macro">SetSnmpTrapInfo</block>
-  <block id="57ad5ab6c861f043a35bc6ecfc193f66" category="list-text"><block ref="57ad5ab6c861f043a35bc6ecfc193f66" category="inline-xref-macro-rx"></block></block>
   <block id="a4533ccc898e355532a080c3ac5f113b" category="inline-xref-macro">SetSSLCertificate</block>
-  <block id="f55e1d21d08a2b9666346943a5b17636" category="list-text"><block ref="f55e1d21d08a2b9666346943a5b17636" category="inline-xref-macro-rx"></block></block>
   <block id="de88d8c32e59e69145f4bc32f4e60bf0" category="inline-xref-macro">SnmpSendTestTraps</block>
-  <block id="b9315cd0f87b164c7099f6713077d213" category="list-text"><block ref="b9315cd0f87b164c7099f6713077d213" category="inline-xref-macro-rx"></block></block>
   <block id="74f0c0b4f9db788942fc0a005e59f061" category="inline-xref-macro">TestAddressAvailability</block>
-  <block id="0d537d220da30beaff39ea4ce56095ef" category="list-text"><block ref="0d537d220da30beaff39ea4ce56095ef" category="inline-xref-macro-rx"></block></block>
   <block id="56864101de752c041d639c76dd8a6484" category="summary">您可以使用 ListPendingNodes 方法列出系统中的待定存储节点。待定节点是指正在运行并配置为加入存储集群但尚未使用 Addnodes API 方法添加的存储节点。</block>
   <block id="be8ef164e7a7d82431ef6c477d6c0e8d" category="doc">ListPendingNodes</block>
   <block id="a3d4c560d4c865ebfc1e5c61348a1c06" category="paragraph">您可以使用 `ListPendingNodes` 方法列出系统中的待定存储节点。待定节点是指正在运行并配置为加入存储集群但尚未使用 Addnodes API 方法添加的存储节点。</block>
@@ -6018,16 +5864,12 @@
   <block id="b6038555281d22f31fbee5caea0e7b9c" category="inline-xref-macro">AddVolumesToVolumeAccessGroup</block>
   <block id="36f24934b880f930a39f30abda4036a0" category="list-text"><block ref="36f24934b880f930a39f30abda4036a0" category="inline-xref-macro-rx"></block></block>
   <block id="819fb77200dcbdc166de263b04f59cc2" category="inline-xref-macro">CreateVolumeAccessGroup</block>
-  <block id="cbd3236cfe96a4629c0ea6f689b0670b" category="list-text"><block ref="cbd3236cfe96a4629c0ea6f689b0670b" category="inline-xref-macro-rx"></block></block>
   <block id="a82ca2b7485d4ef9013acd8b041852ea" category="inline-xref-macro">DeleteVolumeAccessGroup</block>
-  <block id="3ddd86cf6da2ed12fdb6771aa91410fd" category="list-text"><block ref="3ddd86cf6da2ed12fdb6771aa91410fd" category="inline-xref-macro-rx"></block></block>
   <block id="f9580565c7e847fca9ce75a9b46f2784" category="inline-xref-macro">RemoveVolumeVolumesFromVolumeAccessGroup</block>
   <block id="8fe0d90643213ef44ddc05c72f7b5f56" category="list-text"><block ref="8fe0d90643213ef44ddc05c72f7b5f56" category="inline-xref-macro-rx"></block></block>
   <block id="cd3230206964596edff61e7ff0de8897" category="list-text"><block ref="cd3230206964596edff61e7ff0de8897" category="inline-xref-macro-rx"></block></block>
   <block id="2dd483484d209ab2c3c35436eff8e110" category="inline-xref-macro">ModifyVolumeAccessGroup</block>
-  <block id="4faaf0ae45a41ec62ed3522b8a817efd" category="list-text"><block ref="4faaf0ae45a41ec62ed3522b8a817efd" category="inline-xref-macro-rx"></block></block>
   <block id="0bcdcdf427f3cd5a6d3b86f755e15ebe" category="inline-xref-macro">GetVolumeAccessGroupEfficiency</block>
-  <block id="d3aadabd505957d4e186bde1a1a51f6b" category="list-text"><block ref="d3aadabd505957d4e186bde1a1a51f6b" category="inline-xref-macro-rx"></block></block>
   <block id="6feb9a100fc9cc6c8c1521175efae8ad" category="summary">您可以使用 CreateVolumeAccessGroup 创建新的卷访问组。创建卷访问组时，需要为其指定一个名称，您也可以输入启动程序和卷。</block>
   <block id="c20037c2ab7323ae4f9bec6fae41372e" category="paragraph">您可以使用 `CreateVolumeAccessGroup` 创建新的卷访问组。创建卷访问组时，需要为其指定一个名称，您也可以输入启动程序和卷。</block>
   <block id="36763a2e38cbfefe67dbc7a5f26d1bb7" category="paragraph">添加到卷访问组中的任何启动程序 IQN 均可访问组中的任何卷，而无需 CHAP 身份验证。</block>
@@ -6046,11 +5888,8 @@
   <block id="724132d8e8e155294a72d2269620596d" category="summary">使用帐户方法可以添加，删除，查看和修改帐户和安全信息。</block>
   <block id="bf502c7c736110dc39bb5b955e260712" category="doc">帐户 API 方法</block>
   <block id="cde8e56916d28ba11c6229a88df4ff96" category="inline-xref-macro">GetAccountEfficiency</block>
-  <block id="11d2f77f52b06373fc24bf06873e5100" category="list-text"><block ref="11d2f77f52b06373fc24bf06873e5100" category="inline-xref-macro-rx"></block></block>
   <block id="2cc61b24aea4bfd22503834903aff64f" category="inline-xref-macro">ModifyAccount</block>
-  <block id="2236d53d9958f1f148916a88195e390c" category="list-text"><block ref="2236d53d9958f1f148916a88195e390c" category="inline-xref-macro-rx"></block></block>
   <block id="14cf06e2c7c0c15869c23d0783598bb6" category="inline-xref-macro">RemoveAccount</block>
-  <block id="f5731b6fbb234706e71bae8448027d3a" category="list-text"><block ref="f5731b6fbb234706e71bae8448027d3a" category="inline-xref-macro-rx"></block></block>
   <block id="a0aaee3345cc2230d4b14d48e6d6e9a0" category="summary">您可以使用 GetBinAssignmentProperties 方法检索数据库中的托箱分配属性。</block>
   <block id="c468bc64b916a45be2ecd81aa14b8bd1" category="paragraph">您可以使用 `GetBinAssignmentProperties` 方法检索数据库中的托箱分配属性。</block>
   <block id="c02c1eaada945237018f916bc8da84ad" category="paragraph">此方法没有输入参数。</block>
@@ -6325,26 +6164,15 @@
   <block id="7abf6a19941f46ca834f24cff6fadada" category="summary">您可以通过 Element 软件卷快照 API 方法管理卷快照。您可以使用卷快照 API 方法创建，修改，克隆和删除卷快照。</block>
   <block id="fdb7bd2a0495a7fba4646a0544891a36" category="doc">卷快照 API 方法</block>
   <block id="bb4db1d940ba3861734fd6e971f7bb5f" category="inline-xref-macro">Snapshot 概述</block>
-  <block id="960767b1529c55478192bcec595afe2f" category="list-text"><block ref="960767b1529c55478192bcec595afe2f" category="inline-xref-macro-rx"></block></block>
-  <block id="94abe1a49673f2c34a04fd65a770c5b6" category="list-text"><block ref="94abe1a49673f2c34a04fd65a770c5b6" category="inline-xref-macro-rx"></block></block>
-  <block id="564adf58234c0fca450a3f4c099a7fdd" category="list-text"><block ref="564adf58234c0fca450a3f4c099a7fdd" category="inline-xref-macro-rx"></block></block>
-  <block id="3e48f75ed5b21e60ac462e19b97bb297" category="list-text"><block ref="3e48f75ed5b21e60ac462e19b97bb297" category="inline-xref-macro-rx"></block></block>
   <block id="f82e8280be7188791d16bd19b205218f" category="inline-xref-macro">DeleteGroupSnapshot</block>
-  <block id="4e3bde069afe9d4d1be3857874d82e42" category="list-text"><block ref="4e3bde069afe9d4d1be3857874d82e42" category="inline-xref-macro-rx"></block></block>
   <block id="4c7dd4b0f1074705d27d812563c98768" category="inline-xref-macro">DeleteSnapshot</block>
-  <block id="44d35c3b6e4f799c05a3bec479de7eef" category="list-text"><block ref="44d35c3b6e4f799c05a3bec479de7eef" category="inline-xref-macro-rx"></block></block>
-  <block id="e773c8e0c2d65e0377e2dab0efeb46c0" category="list-text"><block ref="e773c8e0c2d65e0377e2dab0efeb46c0" category="inline-xref-macro-rx"></block></block>
   <block id="f6436bd55ffbe4c9bdaec209a8ed257b" category="inline-xref-macro">ListGroupSnapshots</block>
   <block id="fcd86fc0f3a4177a09cc909a3d0a9f7f" category="list-text"><block ref="fcd86fc0f3a4177a09cc909a3d0a9f7f" category="inline-xref-macro-rx"></block></block>
   <block id="f253283209d723fd77f475bf40bacc16" category="inline-xref-macro">ListSchedules</block>
   <block id="de9b7f6f50c2eef53a0155f599afc423" category="list-text"><block ref="de9b7f6f50c2eef53a0155f599afc423" category="inline-xref-macro-rx"></block></block>
   <block id="b4dfa9524f461a609ad4726f69b847e9" category="inline-xref-macro">列表快照</block>
   <block id="f865565f63d33711a9b74e0466f17e84" category="list-text"><block ref="f865565f63d33711a9b74e0466f17e84" category="inline-xref-macro-rx"></block></block>
-  <block id="a2adeac067eeaa3542d5dce230d251a2" category="list-text"><block ref="a2adeac067eeaa3542d5dce230d251a2" category="inline-xref-macro-rx"></block></block>
-  <block id="44ab78ad980172e0a476c97124be6724" category="list-text"><block ref="44ab78ad980172e0a476c97124be6724" category="inline-xref-macro-rx"></block></block>
-  <block id="a19e911e53d19024ca98a3a704364eac" category="list-text"><block ref="a19e911e53d19024ca98a3a704364eac" category="inline-xref-macro-rx"></block></block>
   <block id="05667fca9ff503d9b750747f0075d35a" category="inline-xref-macro">RollbackToGroupSnapshot</block>
-  <block id="7b60942544d1e58c7bb5f47fcff0fa4d" category="list-text"><block ref="7b60942544d1e58c7bb5f47fcff0fa4d" category="inline-xref-macro-rx"></block></block>
   <block id="c2e5bace81fd03914fa15aa027ee5f09" category="inline-xref-macro">RollbackToSnapshot</block>
   <block id="17ff831e4fb645e256f2f7540e433622" category="list-text"><block ref="17ff831e4fb645e256f2f7540e433622" category="inline-xref-macro-rx"></block></block>
   <block id="ee09614e0746941f9c85f9382a700f60" category="summary">您可以使用 GetSnmpState 方法获取 SNMP 功能的当前状态。</block>
@@ -6488,15 +6316,11 @@
   <block id="1f611c730fe3c0a4bb9ce94362fe8955" category="cell">传输端的 FIFO 溢出错误数。</block>
   <block id="e68fe7817aee0ab2e8fe969d1d244a2e" category="cell">TtxPackets</block>
   <block id="4ae03f77f5b46c4a34a526094cbc3ea9" category="cell">传输的数据包总数。</block>
-  <block id="8ae6f0847c5676955066f8a8fc2ed4db" category="summary">通过复制 API 方法，您可以连接两个集群以实现持续数据保护 \ （ CDPS\ ）。连接两个集群时，可以将集群中的活动卷持续复制到另一个集群，以提供数据恢复。通过将卷配对以进行复制，您可以保护数据免受可能导致其无法访问的事件的影响。</block>
   <block id="2bbdec662461a29198c30102d097d908" category="doc">复制 API 方法</block>
   <block id="31e4fd98b2e61e1ae008fad45fbdb812" category="paragraph">通过复制 API 方法，您可以连接两个集群以实现持续数据保护（ Continuous Data Protection ， CDP ）。连接两个集群时，可以将集群中的活动卷持续复制到另一个集群，以提供数据恢复。通过将卷配对以进行复制，您可以保护数据免受可能导致其无法访问的事件的影响。</block>
   <block id="91b783c3dbe5966e3eab7369cf414770" category="inline-xref-macro">集群配对操作顺序</block>
-  <block id="35816c4e55c2073f5d74951d25bc20d7" category="list-text"><block ref="35816c4e55c2073f5d74951d25bc20d7" category="inline-xref-macro-rx"></block></block>
   <block id="937bdeaa2256951966e774ac32db88e4" category="inline-xref-macro">卷配对操作顺序</block>
-  <block id="874d9ac9b0fdfa51b9cadab9bc9134ad" category="list-text"><block ref="874d9ac9b0fdfa51b9cadab9bc9134ad" category="inline-xref-macro-rx"></block></block>
   <block id="282093dd0d40281b4ad26123430db65d" category="inline-xref-macro">配对集群支持的复制模式</block>
-  <block id="429a76224ebc2b874b316888b159412c" category="list-text"><block ref="429a76224ebc2b874b316888b159412c" category="inline-xref-macro-rx"></block></block>
   <block id="e4498b43f23384235a46e0f00bbf2a2e" category="inline-xref-macro">CompleteClusterPairing</block>
   <block id="7d2b230297150b74636062dbd6ada73f" category="list-text"><block ref="7d2b230297150b74636062dbd6ada73f" category="inline-xref-macro-rx"></block></block>
   <block id="043d45b44dfd23c415a4c6a2cc62a4f6" category="inline-xref-macro">CompleteVolumePairing</block>
@@ -6508,9 +6332,7 @@
   <block id="dd9cda66914b78dc697a0927c3cb1e66" category="inline-xref-macro">ModifyVolumePair</block>
   <block id="66262ef3e0eaa7a902e115b1e740529e" category="list-text"><block ref="66262ef3e0eaa7a902e115b1e740529e" category="inline-xref-macro-rx"></block></block>
   <block id="76d54b756109a91e6caa4765aa4acb35" category="inline-xref-macro">RemoveClusterPair</block>
-  <block id="dd821b6bdfa8b7d114d495015bf5a317" category="list-text"><block ref="dd821b6bdfa8b7d114d495015bf5a317" category="inline-xref-macro-rx"></block></block>
   <block id="abd861806d44b09f7dee1bd6d6be1e78" category="inline-xref-macro">RemoveVolumePair</block>
-  <block id="19a81504ccce8fc7bc46722cb83471f6" category="list-text"><block ref="19a81504ccce8fc7bc46722cb83471f6" category="inline-xref-macro-rx"></block></block>
   <block id="e743edcd0df13ed74ae2409e4b676627" category="inline-xref-macro">启动集群配对</block>
   <block id="df8ff7d4e99460962993a64a8a6e8e73" category="list-text"><block ref="df8ff7d4e99460962993a64a8a6e8e73" category="inline-xref-macro-rx"></block></block>
   <block id="cbee5b38d6fd206910654104f3c808a3" category="inline-xref-macro">StartVolumePairing</block>
@@ -7084,14 +6906,12 @@
   <block id="aef5fe6b527d7718cd275e0cad19e1f3" category="paragraph">用于将请求与响应匹配的标识符，如请求中所提供。</block>
   <block id="37d026a7b2952035dd71172fa6351c1c" category="paragraph">未使用的参数</block>
   <block id="215c945fbc521f522ac427f4728a1b93" category="paragraph">一条警告消息，指出至少有一个不正确的参数已传递到 API 方法，并且尚未使用。</block>
-  <block id="87f2ed55ffd9ca37dc5bf18ac976f9ca" category="summary">此处提供了完整的响应示例。</block>
   <block id="3249072ea58f4ba53c918d552684c2d0" category="list-text"><block ref="3249072ea58f4ba53c918d552684c2d0" category="inline-xref-macro-rx"></block></block>
   <block id="81cc27b421efa1178c28e64ebe7fc4ac" category="list-text"><block ref="81cc27b421efa1178c28e64ebe7fc4ac" category="inline-xref-macro-rx"></block></block>
   <block id="f7b04ce9061bf87c93d00f376f652856" category="list-text"><block ref="f7b04ce9061bf87c93d00f376f652856" category="inline-xref-macro-rx"></block></block>
   <block id="36d8e45d601991cc6a85ea7161f818bd" category="list-text"><block ref="36d8e45d601991cc6a85ea7161f818bd" category="inline-xref-macro-rx"></block></block>
   <block id="bc3098d46dd0bd0a6e0cf13d254a2e16" category="inline-xref-macro">GetNodeHardwareInfo （光纤通道节点的输出）</block>
   <block id="a296fb20a8e2242f49e46e5f1f07d49e" category="list-text"><block ref="a296fb20a8e2242f49e46e5f1f07d49e" category="inline-xref-macro-rx"></block></block>
-  <block id="6c747663fac56ee68b54bef2df8aa535" category="list-text"><block ref="6c747663fac56ee68b54bef2df8aa535" category="inline-xref-macro-rx"></block></block>
   <block id="12630e1acefef8b031ce34d2dc1c549d" category="summary">您可以使用 CancelGroupClone 方法停止一组卷上正在进行的克隆过程。取消组克隆操作后，系统将完成并删除该操作的关联 asyncHandle 。</block>
   <block id="ce481bb60969de8d73a69076240f8f2c" category="doc">正在取消 GroupClone</block>
   <block id="0e893cf67dbf74f2f8dec053f5a95927" category="paragraph">您可以使用 `CancelGroupClone` 方法停止一组卷上正在进行的克隆过程。取消组克隆操作后，系统将完成并删除该操作的关联 asyncHandle 。</block>
@@ -7226,27 +7046,14 @@
   <block id="f3856ff581517deae4c9045682768677" category="paragraph">检索特定 IdP 名称的 IdP 配置信息。</block>
   <block id="cbf736cf2cf084245cf2ef853366ba11" category="paragraph">idpConfigInfo</block>
   <block id="c54f92fa106774d26ba461cc1c497aae" category="paragraph">有关第三方 IdP 配置的信息。</block>
-  <block id="d75770a94c059a1d35360e5ac1f6153f" category="summary">您可以使用多因素身份验证 \ （ MFA\ ）通过安全断言标记语言 \ （ SAML \ ）使用第三方身份提供程序 \ （ IdP ）管理用户会话。</block>
   <block id="3fa52bb1f27e457bba53cd67eb49d081" category="doc">多因素身份验证 API 方法</block>
   <block id="9fba87d16629109ef300e4ed7ad24d7f" category="paragraph">您可以使用多因素身份验证（ Multi-Factor Authentication ， MFA ）通过安全断言标记语言（ Security Assertion Markup Language ， SAML ）使用第三方身份提供程序（ IdP ）管理用户会话。</block>
-  <block id="993977e3f068bdc36dab7b26598cb224" category="list-text"><block ref="993977e3f068bdc36dab7b26598cb224" category="inline-xref-macro-rx"></block></block>
   <block id="9c795e21fce602a372254d5a09ba96ad" category="inline-xref-macro">CreateIdpConfiguration</block>
-  <block id="ece1ac7a4693c6f44b461ca878baa787" category="list-text"><block ref="ece1ac7a4693c6f44b461ca878baa787" category="inline-xref-macro-rx"></block></block>
-  <block id="6c997a5afda0850b449d31a1540072f1" category="list-text"><block ref="6c997a5afda0850b449d31a1540072f1" category="inline-xref-macro-rx"></block></block>
-  <block id="a82096c50824a68b444da5b7be8fef45" category="list-text"><block ref="a82096c50824a68b444da5b7be8fef45" category="inline-xref-macro-rx"></block></block>
   <block id="b2480633aaef483b9d8f64405100311c" category="inline-xref-macro">DeleteAuthSessionsByUsername</block>
-  <block id="e1204dcaf2af94d1f8ad3713439cf877" category="list-text"><block ref="e1204dcaf2af94d1f8ad3713439cf877" category="inline-xref-macro-rx"></block></block>
-  <block id="54944cd7d35e78fa9f2413815816ae98" category="list-text"><block ref="54944cd7d35e78fa9f2413815816ae98" category="inline-xref-macro-rx"></block></block>
   <block id="19212cd9e0ef02383305a27bb4236251" category="inline-xref-macro">DisableIdpAuthentication</block>
-  <block id="c7257f98e8e097896146928fe7b67951" category="list-text"><block ref="c7257f98e8e097896146928fe7b67951" category="inline-xref-macro-rx"></block></block>
   <block id="de0955f39a7bc3ca511cf8ec15240d60" category="inline-xref-macro">EnableIdpAuthentication</block>
-  <block id="ae5d70ae97e8ee3fe5b0d217bca00489" category="list-text"><block ref="ae5d70ae97e8ee3fe5b0d217bca00489" category="inline-xref-macro-rx"></block></block>
   <block id="66be757af0fe7d24cff8d9edd3a267a2" category="inline-xref-macro">GetIdpAuthenticationState</block>
-  <block id="7dda3200db68d72dfa3dd4e3e23e11fc" category="list-text"><block ref="7dda3200db68d72dfa3dd4e3e23e11fc" category="inline-xref-macro-rx"></block></block>
   <block id="9d872668b6c199768bb39a9408994ed2" category="inline-xref-macro">ListActiveAuthSessions</block>
-  <block id="bbe0b9d2b9e3d354dab82e11d82b92f4" category="list-text"><block ref="bbe0b9d2b9e3d354dab82e11d82b92f4" category="inline-xref-macro-rx"></block></block>
-  <block id="7b53735ab8e7fda0777d5726fbf5f9e2" category="list-text"><block ref="7b53735ab8e7fda0777d5726fbf5f9e2" category="inline-xref-macro-rx"></block></block>
-  <block id="c62dafd2ad3acbcb7fa79bb53d2e630a" category="list-text"><block ref="c62dafd2ad3acbcb7fa79bb53d2e630a" category="inline-xref-macro-rx"></block></block>
   <block id="3b439f841d6ff228022fc455a8de568b" category="summary">您可以使用 GetClusterStats 方法检索集群的高级别活动测量结果。返回的值是创建集群后累积的值。</block>
   <block id="d9488f0b56b0a55d01fb632c49323b5b" category="paragraph">您可以使用 `GetClusterStats` 方法检索集群的高级别活动测量结果。返回的值是创建集群后累积的值。</block>
   <block id="a3b6c5d4a30d4775f52d74f9d062c9a4" category="paragraph">clusterStats</block>
@@ -7357,7 +7164,6 @@
   <block id="f18a363cae6c32447581a91ea3ef26e5" category="paragraph">要从集群中删除的驱动器 ID 列表。</block>
   <block id="e263e78ffa1c3f196bc63ccbf820e73d" category="summary">通过启动程序方法，您可以添加，删除，查看和修改 iSCSI 启动程序对象，这些对象用于处理存储系统与外部存储客户端之间的通信。</block>
   <block id="c9d58feaf51055d82053c182d3657edc" category="doc">启动程序 API 方法</block>
-  <block id="54f18e15b5e555be09c3d91737f23a91" category="list-text"><block ref="54f18e15b5e555be09c3d91737f23a91" category="inline-xref-macro-rx"></block></block>
   <block id="4fe59a5a1791add3c4406f3066a556bc" category="summary">您可以使用 EnableBmcColdReset 方法启用后台任务，以便定期为集群中的所有节点重置基板管理控制器（ Baseboard Management Controller ， BMC\ ）。</block>
   <block id="aeebaf5c9db9a35e66b4d82bffa8b89e" category="paragraph">您可以使用 `EnableBmcColdReset` 方法启用后台任务，以便定期为集群中的所有节点重置基板管理控制器（ Baseboard Management Controller ， BMC ）。</block>
   <block id="72b4907e3338df6f6e2fac188bf75ac3" category="paragraph">BMC 重置操作之间的时间，以分钟为单位。</block>
@@ -7827,12 +7633,9 @@
   <block id="6d66e0c34edc572d998d084de2917089" category="list-text">节点重新启动时， VLAN IP 地址会在每个节点上保留。</block>
   <block id="f395fe09dcfad82a4d22930114f6e6cb" category="list-text">分配虚拟网络接口和 VLAN 地址后，您可以将客户端网络流量分配给虚拟 SVIP 。</block>
   <block id="fdf649581a801289ad170edb77eec03a" category="inline-xref-macro">虚拟网络命名约定</block>
-  <block id="e1ed5e791d4ca34ba02ed3223bacf34b" category="list-text"><block ref="e1ed5e791d4ca34ba02ed3223bacf34b" category="inline-xref-macro-rx"></block></block>
   <block id="06027d997ce710224869da924055ce89" category="inline-xref-macro">添加虚拟网络</block>
-  <block id="a8efb4bad81a4295485279db31b78e8c" category="list-text"><block ref="a8efb4bad81a4295485279db31b78e8c" category="inline-xref-macro-rx"></block></block>
   <block id="b617bbf0c9511192ae716775f59714e5" category="inline-xref-macro">ModifyVirtualNetwork</block>
   <block id="944087b22afc6278de7ee0bbfe8254e3" category="list-text"><block ref="944087b22afc6278de7ee0bbfe8254e3" category="inline-xref-macro-rx"></block></block>
-  <block id="0b1c0bcb278ef9babaa2fa40f1187526" category="list-text"><block ref="0b1c0bcb278ef9babaa2fa40f1187526" category="inline-xref-macro-rx"></block></block>
   <block id="43ced1e36af258754e47d4a89096d81d" category="summary">Element Web UI 使用 GetOntapVersionInfo 从 SnapMirror 关系中的 ONTAP 集群获取有关 API 版本支持的信息。</block>
   <block id="29ab7bcd8fd4ab63de2186aedbbcda30" category="doc">GetOntapVersionInfo</block>
   <block id="23ce78505b2d4fc251ae9f1d57c93cab" category="paragraph">Element Web UI 使用 `GetOntapVersionInfo` 从 SnapMirror 关系中的 ONTAP 集群获取有关 API 版本支持的信息。</block>
@@ -7841,57 +7644,22 @@
   <block id="e6a561adb5b77ac8dd4f4e5f404a3cbc" category="paragraph"><block ref="478bcb324f806ce9816f0910b6293056" category="inline-xref-macro-rx"></block> 数组</block>
   <block id="4a732ee4c5d251aaa3f40ef023e08fd8" category="summary">ListActiveNodes 方法返回类似于以下示例的响应。</block>
   <block id="166d3ef7c904262d9725a3a5d5eb16c7" category="paragraph">`ListActiveNodes` 方法返回类似于以下示例的响应。</block>
-  <block id="226267d18d792348f1f488065f509ed8" category="summary">了解如何使用 Element API 管理 NetApp Element 存储集群。</block>
   <block id="11b9ba55abf2342c4c18aeca3eee9703" category="doc">使用 Element API 管理存储</block>
-  <block id="0c17fe7ab4a473fe5cbd30c7e930f815" category="paragraph">您可以使用 Element 软件 API 管理 Element 存储集群。</block>
-  <block id="56e2b568efa2693975542b6476dddd9f" category="paragraph">Element API 基于 HTTPS 上的 JSON-RPC 协议。JSON-RPC 是一种基于轻型 JSON 数据交换格式的基于文本的简单 RPC 协议。客户端库可用于所有主要编程语言。</block>
-  <block id="0de15f549691c7836b4d872e4170d679" category="inline-xref-macro">关于 Element 软件 API</block>
-  <block id="4376c78e959325b1e2776f9672b8bc5d" category="list-text"><block ref="4376c78e959325b1e2776f9672b8bc5d" category="inline-xref-macro-rx"></block></block>
   <block id="eac32e45b99ebc03c7c4866e535b9b0c" category="inline-xref-macro">通用对象</block>
-  <block id="e2dee5be30b0b4057306998405900375" category="list-text"><block ref="e2dee5be30b0b4057306998405900375" category="inline-xref-macro-rx"></block></block>
   <block id="de9a5d081c42297df16b1bf16b22627a" category="inline-xref-macro">通用方法</block>
-  <block id="1beeef8d6bccef2da7ba1f7d091e4942" category="list-text"><block ref="1beeef8d6bccef2da7ba1f7d091e4942" category="inline-xref-macro-rx"></block></block>
-  <block id="adde295f93b20be07888ad21eb7150b8" category="list-text"><block ref="adde295f93b20be07888ad21eb7150b8" category="inline-xref-macro-rx"></block></block>
   <block id="8d6801b4597fe96af15b6d14863ffb26" category="inline-xref-macro">管理员 API 方法</block>
-  <block id="d2b0a27f46e79a8383058b5e46cadcb7" category="list-text"><block ref="d2b0a27f46e79a8383058b5e46cadcb7" category="inline-xref-macro-rx"></block></block>
   <block id="6942b194f6d82ddd5da19b1ad0dbda4b" category="inline-xref-macro">集群 API 方法</block>
-  <block id="809bf1d9bd2d454f47bdd6467c352c94" category="list-text"><block ref="809bf1d9bd2d454f47bdd6467c352c94" category="inline-xref-macro-rx"></block></block>
-  <block id="a0ccd69fa0bf592109e0896c3f9257e9" category="inline-xref-macro">集群创建 API 方法</block>
-  <block id="aeb26ec7bbb04059965c0aaaf0df1918" category="list-text"><block ref="aeb26ec7bbb04059965c0aaaf0df1918" category="inline-xref-macro-rx"></block></block>
-  <block id="54e56891175ef738aaa5720cef817fa3" category="list-text"><block ref="54e56891175ef738aaa5720cef817fa3" category="inline-xref-macro-rx"></block></block>
   <block id="8b29951dec6237208e84f3fa4aa04e70" category="inline-xref-macro">光纤通道 API 方法</block>
-  <block id="14d75f794890cce6e62a9ef045b60ee7" category="list-text"><block ref="14d75f794890cce6e62a9ef045b60ee7" category="inline-xref-macro-rx"></block></block>
-  <block id="c5ab92d6186f8d251554f212dc5900be" category="list-text"><block ref="c5ab92d6186f8d251554f212dc5900be" category="inline-xref-macro-rx"></block></block>
   <block id="14dacb5ce8e379a79cce4d0bef708361" category="inline-xref-macro">LDAP API 方法</block>
-  <block id="b307c16851fd33e4ac72f949c9609463" category="list-text"><block ref="b307c16851fd33e4ac72f949c9609463" category="inline-xref-macro-rx"></block></block>
-  <block id="f9ff0ec26d4e93590379cc61b9cd4f0a" category="list-text"><block ref="f9ff0ec26d4e93590379cc61b9cd4f0a" category="inline-xref-macro-rx"></block></block>
   <block id="34c098b5836bfa9c61cca09d36ae1bb7" category="inline-xref-macro">会话身份验证 API 方法</block>
-  <block id="25eb0b74a76f6a40b14c73d8334b4f7f" category="list-text"><block ref="25eb0b74a76f6a40b14c73d8334b4f7f" category="inline-xref-macro-rx"></block></block>
   <block id="1d8c504d0c15759240b60688a1864698" category="inline-xref-macro">节点 API 方法</block>
-  <block id="8c93a6d634b6cc10a47505937734bdb5" category="list-text"><block ref="8c93a6d634b6cc10a47505937734bdb5" category="inline-xref-macro-rx"></block></block>
-  <block id="a6d6c47be4aa7e25d3d81fc7e822041f" category="list-text"><block ref="a6d6c47be4aa7e25d3d81fc7e822041f" category="inline-xref-macro-rx"></block></block>
   <block id="bc5e65eb76b4d37307c8dae7d2b26f40" category="inline-xref-macro">安全 API 方法</block>
-  <block id="7d1df050e120424c29a1460994be63d7" category="list-text"><block ref="7d1df050e120424c29a1460994be63d7" category="inline-xref-macro-rx"></block></block>
   <block id="678438ea685ae6fdb974b85553eebfd0" category="inline-xref-macro">SnapMirror API 方法</block>
-  <block id="2b3f439c88dfa192a04ce2d35fbd86ad" category="list-text"><block ref="2b3f439c88dfa192a04ce2d35fbd86ad" category="inline-xref-macro-rx"></block></block>
-  <block id="41664399ac49d6e42b6e9357d7b97d38" category="list-text"><block ref="41664399ac49d6e42b6e9357d7b97d38" category="inline-xref-macro-rx"></block></block>
-  <block id="ac185d6159abc2a8f4782ae3798b10e7" category="list-text"><block ref="ac185d6159abc2a8f4782ae3798b10e7" category="inline-xref-macro-rx"></block></block>
   <block id="7c60e02067e6e2174f66d6f9888d2b0a" category="inline-xref-macro">卷 API 方法</block>
-  <block id="9e18beba45c7f23f058d7b550d06cc50" category="list-text"><block ref="9e18beba45c7f23f058d7b550d06cc50" category="inline-xref-macro-rx"></block></block>
-  <block id="8a1a8457b6b7cf340336c6d76fb47c73" category="list-text"><block ref="8a1a8457b6b7cf340336c6d76fb47c73" category="inline-xref-macro-rx"></block></block>
-  <block id="4fbc5714103f362c0027c23531490878" category="list-text"><block ref="4fbc5714103f362c0027c23531490878" category="inline-xref-macro-rx"></block></block>
   <block id="1f672b350f55585bae57be0c7fce0657" category="inline-xref-macro">虚拟卷 API 方法</block>
-  <block id="a1ecf7be27d0987baa26a8bff8653ff6" category="list-text"><block ref="a1ecf7be27d0987baa26a8bff8653ff6" category="inline-xref-macro-rx"></block></block>
-  <block id="c2c075d7ecfea2a1a630498ac1110e78" category="list-text"><block ref="c2c075d7ecfea2a1a630498ac1110e78" category="inline-xref-macro-rx"></block></block>
-  <block id="d25459b3c5acd2943fae1e5fda4cfa22" category="inline-link">SolidFire 和 Element 软件文档中心</block>
-  <block id="024c22e90f2315636ed8d61b006ad1b5" category="list-text"><block ref="024c22e90f2315636ed8d61b006ad1b5" category="inline-link-rx"></block></block>
   <block id="77c3af52dc9aa497a1b8d4fade20ff28" category="summary">您可以使用基于会话的身份验证来管理用户会话。</block>
-  <block id="67d35d0b1764bed669ea9f2af78fa0eb" category="list-text"><block ref="67d35d0b1764bed669ea9f2af78fa0eb" category="inline-xref-macro-rx"></block></block>
   <block id="cceefa36f15e18697f92cb494c1bbaed" category="inline-xref-macro">ListAuthSessionsByUsername</block>
-  <block id="8962c41cf12dbe12d2671185473155a6" category="list-text"><block ref="8962c41cf12dbe12d2671185473155a6" category="inline-xref-macro-rx"></block></block>
   <block id="df40a0d48604ceb446509f54dd53d965" category="summary">您可以使用这些 API 方法创建存储集群。需要对单个节点上的 API 端点使用所有这些方法。</block>
-  <block id="1ddea662ffa8895abb8105b8a84aa99f" category="list-text"><block ref="1ddea662ffa8895abb8105b8a84aa99f" category="inline-xref-macro-rx"></block></block>
-  <block id="628a1d41c093ca5fa452be8fd7ae2aa7" category="list-text"><block ref="628a1d41c093ca5fa452be8fd7ae2aa7" category="inline-xref-macro-rx"></block></block>
   <block id="67b1ff619ef657f7222df082928f24d3" category="summary">volumeStats 对象包含单个卷的统计数据。</block>
   <block id="d4153ed102061ce63df7f5b1c4f78b81" category="paragraph">您可以使用以下方法获取部分或所有卷的 volumeStats 对象：</block>
   <block id="2723fd9cc49ed955c3f9a906baef7221" category="list-text"><block ref="2723fd9cc49ed955c3f9a906baef7221" category="inline-xref-macro-rx"></block></block>
@@ -8239,15 +8007,10 @@
   <block id="ffcd54a17e24c92b7de1fdd503c77b68" category="inline-xref-macro">网络接口</block>
   <block id="e4b9f1b674d0d1857df3c31d9b3c1412" category="list-text">结果<block ref="9450cdcfebe5112e26e0b35839905336" category="inline-xref-macro-rx"></block>）此存储节点的接口配置信息。</block>
   <block id="7fea500fa04674b266afa0d4ec61f581" category="summary">您可以使用管理员 API 方法创建，修改，查看和删除存储集群管理员，并为有权访问存储集群的管理员分配访问级别和特权。</block>
-  <block id="bcd19ef1824856208eb2db5254b73156" category="list-text"><block ref="bcd19ef1824856208eb2db5254b73156" category="inline-xref-macro-rx"></block></block>
   <block id="0d14cf05d3c3b8201afb0c6554717749" category="list-text"><block ref="0d14cf05d3c3b8201afb0c6554717749" category="inline-xref-macro-rx"></block></block>
   <block id="0a53f4220df22b11eb492d476d1a5d8f" category="inline-xref-macro">GetLoginBanner</block>
-  <block id="521bfadcac6faccc15296115fc8b21d6" category="list-text"><block ref="521bfadcac6faccc15296115fc8b21d6" category="inline-xref-macro-rx"></block></block>
   <block id="fc28244b1b2629d9984e9c99850b788b" category="list-text"><block ref="fc28244b1b2629d9984e9c99850b788b" category="inline-xref-macro-rx"></block></block>
-  <block id="45dc7e389545bcc1175762f49b9ee26a" category="list-text"><block ref="45dc7e389545bcc1175762f49b9ee26a" category="inline-xref-macro-rx"></block></block>
   <block id="8541a0777dbedd146240c1cd1c9921ca" category="inline-xref-macro">RemoveClusterAdmin</block>
-  <block id="3fc709066e52df789d1843f4e5bf6021" category="list-text"><block ref="3fc709066e52df789d1843f4e5bf6021" category="inline-xref-macro-rx"></block></block>
-  <block id="7b715457d97b0096a894c9a81b36b7a8" category="list-text"><block ref="7b715457d97b0096a894c9a81b36b7a8" category="inline-xref-macro-rx"></block></block>
   <block id="115e130f89683a13a78402727c05d577" category="summary">您可以使用 SetProtectionDomainLayout 方法将节点分配给自定义保护域。</block>
   <block id="9164479cc6382f1d39bed7d528e2a449" category="paragraph">您可以使用 `SetProtectionDomainLayout` 方法将节点分配给自定义保护域。</block>
   <block id="e95a9a67899b708206371e84577ef684" category="paragraph">必须为集群中的所有活动节点提供信息，并且不能为非活动节点提供任何信息。必须将给定机箱中的所有节点分配到同一个自定义保护域。必须为所有节点提供相同的 protectionDomainType 。不应包括节点和机箱等非自定义的 protectionDomainTypes 。如果提供了其中任一项，则会忽略自定义保护域，并返回相应的错误。</block>
@@ -8308,11 +8071,9 @@
   <block id="8919df1a75693786c622808374e37e27" category="summary">您可以使用光纤通道 API 方法添加，修改或删除存储集群的光纤通道节点成员。</block>
   <block id="d0396b2696d422f8088c2c3de96848ba" category="inline-xref-macro">GetVolumeAccessGroupLunAssignments</block>
   <block id="73b399557a33f61339c77d7d4be07706" category="list-text"><block ref="73b399557a33f61339c77d7d4be07706" category="inline-xref-macro-rx"></block></block>
-  <block id="7150c401c622295bf1a71a38251dc864" category="list-text"><block ref="7150c401c622295bf1a71a38251dc864" category="inline-xref-macro-rx"></block></block>
   <block id="af2c418d5ab0c2ccf0d77600cccff684" category="list-text"><block ref="af2c418d5ab0c2ccf0d77600cccff684" category="inline-xref-macro-rx"></block></block>
   <block id="a02a3791df949a6b18554cec999e9a77" category="list-text"><block ref="a02a3791df949a6b18554cec999e9a77" category="inline-xref-macro-rx"></block></block>
   <block id="33d4f5bd3b91e9cf2fbc13b74e6f120e" category="inline-xref-macro">ModifyVolumeAccessGroupLunAssignments</block>
-  <block id="79977a1e3f03ad6cd6db60900809cad0" category="list-text"><block ref="79977a1e3f03ad6cd6db60900809cad0" category="inline-xref-macro-rx"></block></block>
   <block id="f273b7448f5ff74e1f0f0108d8ab2cde" category="summary">您可以使用 ListKeyServersKmip 方法列出已创建的所有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。您可以通过指定其他参数来筛选结果。</block>
   <block id="09562f948883da0586d37e07595e6dbb" category="paragraph">您可以使用 `ListKeyServersKmip` 方法列出已创建的所有密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器。您可以通过指定其他参数来筛选结果。</block>
   <block id="63d1342cfd03eadb4b860e700cb98101" category="paragraph">指定后，方法仅返回分配给指定 KMIP 密钥提供程序的 KMIP 密钥服务器。如果省略此参数，则不会根据是否已将返回的 KMIP 密钥服务器分配给指定的 KMIP 密钥提供程序对其进行筛选。</block>
@@ -8399,43 +8160,17 @@
   <block id="ae6458dd661ed45d8d5540c11eaafff9" category="paragraph">要修改的卷的卷 ID 列表。</block>
   <block id="e823a67b950cec68eb387dcbc3ddf4f0" category="summary">通过 Element 软件卷 API 方法，您可以管理驻留在存储节点上的卷。您可以使用以下方法创建，修改，克隆和删除卷。您还可以使用卷 API 方法收集和显示卷的数据测量结果。</block>
   <block id="8863765f0ecf9b3004e8051a28251d6a" category="inline-xref-macro">正在取消克隆</block>
-  <block id="a823c559615ca59f6d086da0589fb3ca" category="list-text"><block ref="a823c559615ca59f6d086da0589fb3ca" category="inline-xref-macro-rx"></block></block>
-  <block id="0190be2dddc6bd9133a6b23f34664574" category="list-text"><block ref="0190be2dddc6bd9133a6b23f34664574" category="inline-xref-macro-rx"></block></block>
   <block id="e4f4afc38e947e5099860da0bfe26c68" category="inline-xref-macro">CloneMultipleVolumes</block>
-  <block id="4f6ff3550c2102eb5b7cd514d58f3f95" category="list-text"><block ref="4f6ff3550c2102eb5b7cd514d58f3f95" category="inline-xref-macro-rx"></block></block>
   <block id="c76dd551d0df4615489f4840c234db4e" category="inline-xref-macro">克隆卷</block>
-  <block id="27488db8042d45fbddd209e46728b2cb" category="list-text"><block ref="27488db8042d45fbddd209e46728b2cb" category="inline-xref-macro-rx"></block></block>
   <block id="d806911971b0fec353aad1a6795ec0c3" category="inline-xref-macro">CopyVolume</block>
-  <block id="6de7012a67e20f6e5e9bf7d1345ed16e" category="list-text"><block ref="6de7012a67e20f6e5e9bf7d1345ed16e" category="inline-xref-macro-rx"></block></block>
-  <block id="c709f3932ecff73f98cbfae1e15bd013" category="list-text"><block ref="c709f3932ecff73f98cbfae1e15bd013" category="inline-xref-macro-rx"></block></block>
-  <block id="b01edcb0e658b7052eaa8836b007a359" category="list-text"><block ref="b01edcb0e658b7052eaa8836b007a359" category="inline-xref-macro-rx"></block></block>
   <block id="c4b64250b05ad5fce3c50e8082faa4a1" category="inline-xref-macro">CreateBackupTarget</block>
-  <block id="cec30acc6eed8ab9ba390dfc85dba839" category="list-text"><block ref="cec30acc6eed8ab9ba390dfc85dba839" category="inline-xref-macro-rx"></block></block>
   <block id="960a4d524228fb2225aff2be28f5e828" category="inline-xref-macro">DeleteQoSPolicy</block>
-  <block id="ab84e99e320a7a61164b1df4c4aee5ba" category="list-text"><block ref="ab84e99e320a7a61164b1df4c4aee5ba" category="inline-xref-macro-rx"></block></block>
-  <block id="4205743376acf796ffd833e04b4697a2" category="list-text"><block ref="4205743376acf796ffd833e04b4697a2" category="inline-xref-macro-rx"></block></block>
-  <block id="67d84d7396eacb721280118181182500" category="list-text"><block ref="67d84d7396eacb721280118181182500" category="inline-xref-macro-rx"></block></block>
   <block id="5c282c16b8a9fec3391e05adff1eea6b" category="inline-xref-macro">GetVolumeEfficiency</block>
-  <block id="1e87cfef453ca3015c2c3234a7bf2c53" category="list-text"><block ref="1e87cfef453ca3015c2c3234a7bf2c53" category="inline-xref-macro-rx"></block></block>
-  <block id="72ce83fe101e855c5314ffbe07fe5b55" category="list-text"><block ref="72ce83fe101e855c5314ffbe07fe5b55" category="inline-xref-macro-rx"></block></block>
-  <block id="11a8aae4d592ef7d2f2070556229829c" category="list-text"><block ref="11a8aae4d592ef7d2f2070556229829c" category="inline-xref-macro-rx"></block></block>
   <block id="b247897827692623df3386b199ef7d11" category="inline-xref-macro">ListQoSPolicies</block>
   <block id="ca950f6a13517d0359740710c4f662fb" category="list-text"><block ref="ca950f6a13517d0359740710c4f662fb" category="inline-xref-macro-rx"></block></block>
-  <block id="ee9a9ed6d01930f6729dbf0c879b9da2" category="list-text"><block ref="ee9a9ed6d01930f6729dbf0c879b9da2" category="inline-xref-macro-rx"></block></block>
   <block id="1d30eeb726ea7b1dace80cd174b8b8bd" category="inline-xref-macro">ListVolumeStats</block>
-  <block id="c70da47dea61e97b12aff5bc7fedca6c" category="list-text"><block ref="c70da47dea61e97b12aff5bc7fedca6c" category="inline-xref-macro-rx"></block></block>
-  <block id="78e999e92142b7956caf0cf3ec04e419" category="list-text"><block ref="78e999e92142b7956caf0cf3ec04e419" category="inline-xref-macro-rx"></block></block>
-  <block id="7070cbda30b7b8ced977ed8f17320edf" category="list-text"><block ref="7070cbda30b7b8ced977ed8f17320edf" category="inline-xref-macro-rx"></block></block>
-  <block id="d32e51d40312a17cca8380e85ccc8ed2" category="list-text"><block ref="d32e51d40312a17cca8380e85ccc8ed2" category="inline-xref-macro-rx"></block></block>
-  <block id="a19ddbb0d037319ddc005cc1de07da92" category="list-text"><block ref="a19ddbb0d037319ddc005cc1de07da92" category="inline-xref-macro-rx"></block></block>
-  <block id="689840be5c7d9ebe235806062312b98e" category="list-text"><block ref="689840be5c7d9ebe235806062312b98e" category="inline-xref-macro-rx"></block></block>
-  <block id="3d1a7c7018376a526b499877d62f11bc" category="list-text"><block ref="3d1a7c7018376a526b499877d62f11bc" category="inline-xref-macro-rx"></block></block>
-  <block id="d88d8d1273d1a1ddf3005f1bbc7b4d57" category="list-text"><block ref="d88d8d1273d1a1ddf3005f1bbc7b4d57" category="inline-xref-macro-rx"></block></block>
   <block id="39f77256b26dc5426cc0428a89f87c3f" category="inline-xref-macro">RestoreDeletedVolume</block>
-  <block id="dc09adc8108261a9ef93517975b4fb4f" category="list-text"><block ref="dc09adc8108261a9ef93517975b4fb4f" category="inline-xref-macro-rx"></block></block>
   <block id="1a9ea0c184aafda91bc7973c5de28814" category="inline-xref-macro">设置 DefaultQoS</block>
-  <block id="cf3122ee510b22111753e6a97bdd317d" category="list-text"><block ref="cf3122ee510b22111753e6a97bdd317d" category="inline-xref-macro-rx"></block></block>
-  <block id="195be14a5bd63cb9400507e360cb9ae6" category="list-text"><block ref="195be14a5bd63cb9400507e360cb9ae6" category="inline-xref-macro-rx"></block></block>
   <block id="5f744060b5292123ae963a1b098f79db" category="summary">您可以使用 SetSnmpTrapInfo 方法启用和禁用集群 SNMP 通知（陷阱）的生成，并指定一组接收通知的主机。在每次 SetSnmpTrapInfo 方法调用中传递的值将替换先前调用中设置的所有值。</block>
   <block id="665211081083448bd429857ca4a95b81" category="paragraph">您可以使用 `SetSnmpTrapInfo` 方法启用和禁用集群 SNMP 通知（陷阱）的生成，并指定一组接收通知的主机。每次调用 `SetSnmpTrapInfo` 方法时传递的值将替换先前调用中设置的所有值。</block>
   <block id="034dca566e6d8d18450716c9e467b5bd" category="paragraph">陷阱 Recipients</block>
@@ -8582,43 +8317,17 @@
   <block id="4cf37cf39f282e15372adc8f11be3a4f" category="paragraph">要创建快照的星期几。一周中的某一天从星期日开始，其值为 0 ，偏移量为 1 。</block>
   <block id="b6b02dbbbf70123bb6aa0bde74606b78" category="paragraph">包含已修改计划属性的对象。</block>
   <block id="97249a4a35de39dc69351801b57ea263" category="summary">Element Web UI 使用 SnapMirror API 方法管理通过远程 ONTAP 系统镜像的快照。这些方法仅供 Element Web UI 使用。如果需要通过 API 访问 SnapMirror 功能，请使用 ONTAP API 。不提供 SnapMirror API 方法的请求和返回示例。</block>
-  <block id="9b870bd3a6da7d605222bfce40dbfc21" category="list-text"><block ref="9b870bd3a6da7d605222bfce40dbfc21" category="inline-xref-macro-rx"></block></block>
   <block id="ce96e96c7321cd6d714dd19c2d2e74b4" category="list-text"><block ref="ce96e96c7321cd6d714dd19c2d2e74b4" category="inline-xref-macro-rx"></block></block>
   <block id="b25a9f66cb520996c646a6ac44f7e6bd" category="inline-xref-macro">CreateSnapMirrorEndpoint</block>
-  <block id="d218ba093f88aa869ba1f4603357daea" category="list-text"><block ref="d218ba093f88aa869ba1f4603357daea" category="inline-xref-macro-rx"></block></block>
-  <block id="43a48d4202f5f7464d8245b6abaa04f7" category="list-text"><block ref="43a48d4202f5f7464d8245b6abaa04f7" category="inline-xref-macro-rx"></block></block>
-  <block id="624cee27cdbc1c3b8a866d4cf326eea3" category="list-text"><block ref="624cee27cdbc1c3b8a866d4cf326eea3" category="inline-xref-macro-rx"></block></block>
-  <block id="74ed87bdb6602b53d4a7b145d73d7398" category="list-text"><block ref="74ed87bdb6602b53d4a7b145d73d7398" category="inline-xref-macro-rx"></block></block>
   <block id="9907b6be78e261ba2533cbf88c57763c" category="inline-xref-macro">DeleteSnapMirrorEndpoints</block>
-  <block id="1ed8c9c6a3e564a1612923455112d575" category="list-text"><block ref="1ed8c9c6a3e564a1612923455112d575" category="inline-xref-macro-rx"></block></block>
   <block id="759fe93c2526565dc230cf0a3cc937e0" category="inline-xref-macro">DeleteSnapMirrorRelationships</block>
-  <block id="883438cff5ba3dc39076a0c0b4c92d7e" category="list-text"><block ref="883438cff5ba3dc39076a0c0b4c92d7e" category="inline-xref-macro-rx"></block></block>
-  <block id="eae74b1550d612d2d2fd51bc94f094e1" category="list-text"><block ref="eae74b1550d612d2d2fd51bc94f094e1" category="inline-xref-macro-rx"></block></block>
-  <block id="65a8c455bf2642b97d211d1dfac20ec5" category="list-text"><block ref="65a8c455bf2642b97d211d1dfac20ec5" category="inline-xref-macro-rx"></block></block>
   <block id="13481f292d5629e58323c4c10755fdd1" category="inline-xref-macro">InitializeSnapMirrorRelationship</block>
-  <block id="f3dc333221e4c955c0ab3d569d413e41" category="list-text"><block ref="f3dc333221e4c955c0ab3d569d413e41" category="inline-xref-macro-rx"></block></block>
-  <block id="c52aa667aa700d5dc726a3692d0525b6" category="list-text"><block ref="c52aa667aa700d5dc726a3692d0525b6" category="inline-xref-macro-rx"></block></block>
   <block id="65f130d69da27e6f69c1f5f6927aaf3f" category="inline-xref-macro">ListSnapMirrorEndpoints</block>
   <block id="00304837913a63fa020c2623f612c55f" category="list-text"><block ref="00304837913a63fa020c2623f612c55f" category="inline-xref-macro-rx"></block></block>
-  <block id="ec0e7ddced630fc2b7668fbc7763c832" category="list-text"><block ref="ec0e7ddced630fc2b7668fbc7763c832" category="inline-xref-macro-rx"></block></block>
-  <block id="c8929cd3043d1a9e45276d502f1c57dd" category="list-text"><block ref="c8929cd3043d1a9e45276d502f1c57dd" category="inline-xref-macro-rx"></block></block>
   <block id="02642dff00762dd64044ca28e1fdf26e" category="inline-xref-macro">ListSnapMirrorNodes</block>
-  <block id="625b096c94a46e16f301e54bef7c1925" category="list-text"><block ref="625b096c94a46e16f301e54bef7c1925" category="inline-xref-macro-rx"></block></block>
-  <block id="d23d51b29f6fea37d61dc92a77ef3b1f" category="list-text"><block ref="d23d51b29f6fea37d61dc92a77ef3b1f" category="inline-xref-macro-rx"></block></block>
-  <block id="8b82c68e930e8ae938b8351719967323" category="list-text"><block ref="8b82c68e930e8ae938b8351719967323" category="inline-xref-macro-rx"></block></block>
   <block id="8b03d40a3828726649aeb635bab52eab" category="inline-xref-macro">ListSnapMirrorRelationships</block>
-  <block id="6963205e9ef353e66f0efea2e70deb45" category="list-text"><block ref="6963205e9ef353e66f0efea2e70deb45" category="inline-xref-macro-rx"></block></block>
-  <block id="7d93242a4950544c68d5475fa4d9f541" category="list-text"><block ref="7d93242a4950544c68d5475fa4d9f541" category="inline-xref-macro-rx"></block></block>
-  <block id="217f3db0c82135646fe1b5997cb933bb" category="list-text"><block ref="217f3db0c82135646fe1b5997cb933bb" category="inline-xref-macro-rx"></block></block>
-  <block id="e44315b54dc9e915df286ad586153fa3" category="list-text"><block ref="e44315b54dc9e915df286ad586153fa3" category="inline-xref-macro-rx"></block></block>
-  <block id="6585485b18d1edd9ea1acc3c02524ae9" category="list-text"><block ref="6585485b18d1edd9ea1acc3c02524ae9" category="inline-xref-macro-rx"></block></block>
   <block id="4d0d8f3b9f751aa4fa6049bd6076d25a" category="inline-xref-macro">ModifySnapMirrorRelationship</block>
-  <block id="4492d31a31a8b826f9b77eeb907b9cc6" category="list-text"><block ref="4492d31a31a8b826f9b77eeb907b9cc6" category="inline-xref-macro-rx"></block></block>
-  <block id="3d6f04ed9ce3b5c764fa2205bf2dfe68" category="list-text"><block ref="3d6f04ed9ce3b5c764fa2205bf2dfe68" category="inline-xref-macro-rx"></block></block>
-  <block id="ccff2ca7e5a6f32325cf3ca1ecafa753" category="list-text"><block ref="ccff2ca7e5a6f32325cf3ca1ecafa753" category="inline-xref-macro-rx"></block></block>
   <block id="a9a2e7d3a4545a8d51c7c0aa082cc1a7" category="inline-xref-macro">ResumeSnapMirrorRelationship</block>
-  <block id="6ab62d383908172ba1559c687cc9e79d" category="list-text"><block ref="6ab62d383908172ba1559c687cc9e79d" category="inline-xref-macro-rx"></block></block>
-  <block id="141218207edca3157cfd1fdfb14ea44d" category="list-text"><block ref="141218207edca3157cfd1fdfb14ea44d" category="inline-xref-macro-rx"></block></block>
   <block id="b5e4d22f1eb73f03cd4f58dc9899cf5a" category="summary">可以使用 RemoveAccount 方法删除现有帐户。您必须先使用 DeleteVolume 删除并清除与帐户关联的所有卷，然后才能删除帐户。如果帐户上的卷仍处于待删除状态，则不能使用 RemoveAccount 删除帐户。</block>
   <block id="5d6005d3ed57d70538f3ddf20909ec18" category="paragraph">您可以使用 `RemoveAccount` 方法删除现有帐户。您必须先使用 `DDeleteVolume` 删除并清除与帐户关联的所有卷，然后才能删除帐户。如果帐户上的卷仍处于待删除状态，则不能使用 `RemoveAccount` 删除帐户。</block>
   <block id="a03be99f56ff5cb75416b4aad7ff1551" category="paragraph">要删除的帐户的 ID 。</block>
@@ -8671,31 +8380,15 @@
   <block id="9b43e9220eea1239f728b19f53048d06" category="paragraph">有关存储集群 LLDP 配置的信息。</block>
   <block id="58869a5721df5b7b20b314b6085b09bb" category="summary">您可以通过 Element 软件集群 API 方法管理存储集群以及属于存储集群的节点的配置和拓扑。</block>
   <block id="b9931a7be805dbd33e564735cf0d00cd" category="paragraph">某些集群 API 方法可在属于集群一部分或已配置为加入集群的节点上运行。您可以向新集群或现有集群添加节点。已准备好添加到集群的节点处于 " 待定 " 状态，这意味着它们已配置，但尚未添加到集群。</block>
-  <block id="3d7bacb1a5235881bb19a3d166a063d3" category="list-text"><block ref="3d7bacb1a5235881bb19a3d166a063d3" category="inline-xref-macro-rx"></block></block>
-  <block id="5128563ddf86b60b691ed1694c3aaa86" category="list-text"><block ref="5128563ddf86b60b691ed1694c3aaa86" category="inline-xref-macro-rx"></block></block>
-  <block id="13e4eb7de638f83194553780f8e11606" category="list-text"><block ref="13e4eb7de638f83194553780f8e11606" category="inline-xref-macro-rx"></block></block>
-  <block id="ab61ad6ecf99f1f7bcd4c61b4d512379" category="list-text"><block ref="ab61ad6ecf99f1f7bcd4c61b4d512379" category="inline-xref-macro-rx"></block></block>
-  <block id="98fb68a1c1271b21982955cf65234815" category="list-text"><block ref="98fb68a1c1271b21982955cf65234815" category="inline-xref-macro-rx"></block></block>
-  <block id="38fb1e2af7dafc88bdfb0e4f5f61c948" category="list-text"><block ref="38fb1e2af7dafc88bdfb0e4f5f61c948" category="inline-xref-macro-rx"></block></block>
   <block id="c37b4d4b45b2c748c012963dc613beb3" category="list-text"><block ref="c37b4d4b45b2c748c012963dc613beb3" category="inline-xref-macro-rx"></block></block>
-  <block id="d75d3c84fb4faa7aff686d4334c49b7b" category="list-text"><block ref="d75d3c84fb4faa7aff686d4334c49b7b" category="inline-xref-macro-rx"></block></block>
-  <block id="96c7eee9c15cb59a1aefe06226d2ce36" category="list-text"><block ref="96c7eee9c15cb59a1aefe06226d2ce36" category="inline-xref-macro-rx"></block></block>
   <block id="85fd9c08ed2c88b0af983ded05c3fa02" category="inline-xref-macro">GetClusterVersionInfo</block>
-  <block id="22520e0f79b161fd138e3a37475e46c1" category="list-text"><block ref="22520e0f79b161fd138e3a37475e46c1" category="inline-xref-macro-rx"></block></block>
   <block id="b72fcf071e83f34adf2ed5bda5f53811" category="list-text"><block ref="b72fcf071e83f34adf2ed5bda5f53811" category="inline-xref-macro-rx"></block></block>
   <block id="e8b1ccca9ceb1c8d49110ffd517331f6" category="inline-xref-macro">GetLoginSessionInfo</block>
-  <block id="244e4d68551ba33ed755875796b7715a" category="list-text"><block ref="244e4d68551ba33ed755875796b7715a" category="inline-xref-macro-rx"></block></block>
   <block id="ac668465c0a230aea6ea37d2c05ae4ba" category="inline-xref-macro">GetNodeHardwareInfo</block>
-  <block id="b5f6a0abdfc064b79742e4056da8db95" category="list-text"><block ref="b5f6a0abdfc064b79742e4056da8db95" category="inline-xref-macro-rx"></block></block>
-  <block id="f0e635dc83b2af969f6a41e6575bea6b" category="list-text"><block ref="f0e635dc83b2af969f6a41e6575bea6b" category="inline-xref-macro-rx"></block></block>
   <block id="d80637662e16d4fbf899e98c105e0701" category="inline-xref-macro">ListISCSISessions</block>
   <block id="07b3124159c8fecbdc4bc98df6eeb3cf" category="list-text"><block ref="07b3124159c8fecbdc4bc98df6eeb3cf" category="inline-xref-macro-rx"></block></block>
   <block id="c033efa991792915fba6b55fa6a437c6" category="inline-xref-macro">ListServices</block>
-  <block id="d93f389cd02106050ad96abf16cf9c4a" category="list-text"><block ref="d93f389cd02106050ad96abf16cf9c4a" category="inline-xref-macro-rx"></block></block>
   <block id="468632abb1bac64827f7f0860b5a969b" category="list-text"><block ref="468632abb1bac64827f7f0860b5a969b" category="inline-xref-macro-rx"></block></block>
-  <block id="d1e9f118cc2896332499433f051860ad" category="list-text"><block ref="d1e9f118cc2896332499433f051860ad" category="inline-xref-macro-rx"></block></block>
-  <block id="99af96643360f14d8491e1a3db76670b" category="list-text"><block ref="99af96643360f14d8491e1a3db76670b" category="inline-xref-macro-rx"></block></block>
-  <block id="bb691212fb55b0514079cc2d0ea324cb" category="list-text"><block ref="bb691212fb55b0514079cc2d0ea324cb" category="inline-xref-macro-rx"></block></block>
   <block id="3339cf3860b4354d2b18ca86148968b1" category="summary">您可以使用 ListVirtualVolumeHosts 方法获取集群已知的所有虚拟卷主机的列表。虚拟卷主机是指已启动与 VASA API 提供程序会话的 VMware ESX 主机。</block>
   <block id="729d062de92cee3965129088677b543d" category="paragraph">您可以使用 `ListVirtualVolumeHosts` 方法获取集群已知的所有虚拟卷主机的列表。虚拟卷主机是指已启动与 VASA API 提供程序会话的 VMware ESX 主机。</block>
   <block id="cb5ccddc259adc416bb5082ac4f0d691" category="paragraph">virtualVolumeHostID</block>
@@ -8994,22 +8687,6 @@
   <block id="8a542dc70040059a8c5410c97fa08373" category="paragraph">以下方法可用于写入访问类型：</block>
   <block id="4a3f50147c005db3b3cd043c697d79dc" category="paragraph">AddVolumeToVolumeAccessGroup</block>
   <block id="8fe78ce50fc97c11ddebb0e341ed1463" category="summary">您可以将 Element 软件与外部安全相关服务集成，例如外部密钥管理服务器。通过这些与安全相关的方法，您可以为空闲加密配置外部密钥管理等要素安全功能。</block>
-  <block id="376315f3d1d005547749c7706e793418" category="list-text"><block ref="376315f3d1d005547749c7706e793418" category="inline-xref-macro-rx"></block></block>
-  <block id="9018604d1c22eff28ef2088891fd30a4" category="list-text"><block ref="9018604d1c22eff28ef2088891fd30a4" category="inline-xref-macro-rx"></block></block>
-  <block id="6487c572c5f324dc7d3fcb1c740ad446" category="list-text"><block ref="6487c572c5f324dc7d3fcb1c740ad446" category="inline-xref-macro-rx"></block></block>
-  <block id="02ace0b6b196d1d89380169c376012c1" category="list-text"><block ref="02ace0b6b196d1d89380169c376012c1" category="inline-xref-macro-rx"></block></block>
-  <block id="e0f6aaf903d47ff05652ec3246fdfcae" category="list-text"><block ref="e0f6aaf903d47ff05652ec3246fdfcae" category="inline-xref-macro-rx"></block></block>
-  <block id="a8c7e7d868cbd91f7862ffd6107e13c3" category="list-text"><block ref="a8c7e7d868cbd91f7862ffd6107e13c3" category="inline-xref-macro-rx"></block></block>
-  <block id="752251f4150f110ca8902caf88ec4781" category="list-text"><block ref="752251f4150f110ca8902caf88ec4781" category="inline-xref-macro-rx"></block></block>
-  <block id="0b08169f1076587ba7c28b7cff54662a" category="list-text"><block ref="0b08169f1076587ba7c28b7cff54662a" category="inline-xref-macro-rx"></block></block>
-  <block id="60a38dfbee82a7e185e83f3ff49d941d" category="list-text"><block ref="60a38dfbee82a7e185e83f3ff49d941d" category="inline-xref-macro-rx"></block></block>
-  <block id="6f0b8c63a715fa97289a45dc2a4076d5" category="list-text"><block ref="6f0b8c63a715fa97289a45dc2a4076d5" category="inline-xref-macro-rx"></block></block>
-  <block id="00e89eade2d45510795736b1e6d0e561" category="list-text"><block ref="00e89eade2d45510795736b1e6d0e561" category="inline-xref-macro-rx"></block></block>
-  <block id="05a538d8aaef5516788d4a180c7ac578" category="list-text"><block ref="05a538d8aaef5516788d4a180c7ac578" category="inline-xref-macro-rx"></block></block>
-  <block id="bde410836896be56ea784769aec19f51" category="list-text"><block ref="bde410836896be56ea784769aec19f51" category="inline-xref-macro-rx"></block></block>
-  <block id="ff011261e6b5fd22e2f61dac2fa31af8" category="list-text"><block ref="ff011261e6b5fd22e2f61dac2fa31af8" category="inline-xref-macro-rx"></block></block>
-  <block id="aaf9386b590a8a7bcdb3786861502757" category="list-text"><block ref="aaf9386b590a8a7bcdb3786861502757" category="inline-xref-macro-rx"></block></block>
-  <block id="5074fb8a03b4a814dabb47aed084c4c3" category="list-text"><block ref="5074fb8a03b4a814dabb47aed084c4c3" category="inline-xref-macro-rx"></block></block>
   <block id="cd0de7242b4bb498033e4c0fd9aaa059" category="summary">您可以使用 RemoveClusterPair 方法关闭两个配对集群之间打开的连接。</block>
   <block id="36b798b761d596ac571983d74d34f394" category="paragraph">您可以使用 `RemoveClusterPair` 方法关闭两个配对集群之间打开的连接。</block>
   <block id="a94616c7bd5d143147155334f4cc085d" category="admonition">在删除集群对之前，必须先使用 RemoveVolumePair API 方法删除与集群的所有卷配对。</block>
@@ -9053,12 +8730,7 @@
   <block id="de9c6688552617ed8ea506903bb46c88" category="admonition">出于安全原因，不应通过电子邮件将配对密钥发送给其他用户。此密钥包含用户名和密码。</block>
   <block id="86b86fb0ada6b520cab2bc59281c4805" category="list-text"><block ref="7d2b230297150b74636062dbd6ada73f" category="inline-xref-macro-rx"></block>：</block>
   <block id="5490e29df184d454b053be62c1fc403f" category="paragraph">此方法使用通过创建的配对密钥 <block ref="df8ff7d4e99460962993a64a8a6e8e73" category="inline-xref-macro-rx"></block> 用于创建集群对的 API 方法。问题描述 <block ref="7d2b230297150b74636062dbd6ada73f" category="inline-xref-macro-rx"></block> 具有 clusterPairingKey 参数的 API 方法。源集群是创建密钥的集群。</block>
-  <block id="b4e3a8b6cc51d85a58b9d8abc08798b1" category="summary">您可以使用轻型目录访问协议 \ （ ldap\ ）对 Element 存储的访问进行身份验证。使用本节所述的 LDAP API 方法，您可以配置对存储集群的 LDAP 访问。</block>
   <block id="54d59f6172d146753e629cf55be65d33" category="paragraph">您可以使用轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ）对 Element 存储的访问进行身份验证。使用本节所述的 LDAP API 方法，您可以配置对存储集群的 LDAP 访问。</block>
-  <block id="f21368b7d80b21da34d2d6a7e70e06e5" category="list-text"><block ref="f21368b7d80b21da34d2d6a7e70e06e5" category="inline-xref-macro-rx"></block></block>
-  <block id="14bc25ada67de8e2eca129f05c7c1928" category="list-text"><block ref="14bc25ada67de8e2eca129f05c7c1928" category="inline-xref-macro-rx"></block></block>
-  <block id="7f6fe330fa64aee4ddabed6b4c084057" category="list-text"><block ref="7f6fe330fa64aee4ddabed6b4c084057" category="inline-xref-macro-rx"></block></block>
-  <block id="1adbcdef30d23b01351911194cb99b1b" category="list-text"><block ref="1adbcdef30d23b01351911194cb99b1b" category="inline-xref-macro-rx"></block></block>
   <block id="21d46989434cb7c6f3ede5aeff46d0b4" category="summary">您可以使用 CreateGroupSnapshot 为一组卷创建时间点副本。</block>
   <block id="372a26dc29245b0b809ec2d06ff1f855" category="paragraph">您可以使用 `CreateGroupSnapshot` 创建一组卷的时间点副本。</block>
   <block id="3c99129d5e137813543f4656eb4c9f87" category="paragraph">您可以稍后将此快照用作备份或回滚，以确保卷组上的数据在创建快照的时间点保持一致。</block>
@@ -9082,12 +8754,6 @@
   <block id="1027cf09582edb008f4420ecbbff04d0" category="admonition">Element Web UI 会使用本文档中所述的 API 方法。您可以通过启用 API 日志来监控 UI 中的 API 操作；这样，您可以查看向系统发出的方法。您可以同时启用请求和响应，以查看系统如何对发出的方法做出响应。</block>
   <block id="3e32cdc98262f7d997aef432b778df80" category="paragraph">除非另有说明，否则 API 响应中的所有日期字符串均采用 UTC+0 格式。</block>
   <block id="cd27bfbf4f94a45c55f29e7d041c0cf9" category="admonition">如果存储集群负载过重，或者您连续提交多个 API 请求而没有中间延迟，则某个方法可能会失败并返回错误 "xDBVersionMismatch" 。如果发生这种情况，请重试方法调用。</block>
-  <block id="f0b3cb19eca406b56edd64c0b70de4fd" category="list-text"><block ref="f0b3cb19eca406b56edd64c0b70de4fd" category="inline-xref-macro-rx"></block></block>
-  <block id="19f26767e3be3cfcb6d56d5bde3d8e3b" category="list-text"><block ref="19f26767e3be3cfcb6d56d5bde3d8e3b" category="inline-xref-macro-rx"></block></block>
-  <block id="c92a1424d2e470b3855b75e39f7472b5" category="list-text"><block ref="c92a1424d2e470b3855b75e39f7472b5" category="inline-xref-macro-rx"></block></block>
-  <block id="bc9d9d0f0c5c13da4b697bf6ba0294f6" category="list-text"><block ref="bc9d9d0f0c5c13da4b697bf6ba0294f6" category="inline-xref-macro-rx"></block></block>
-  <block id="98018830a9e6c986f0a557ea382f174c" category="list-text"><block ref="98018830a9e6c986f0a557ea382f174c" category="inline-xref-macro-rx"></block></block>
-  <block id="879cc962fde4604fc590c4b92603e528" category="list-text"><block ref="879cc962fde4604fc590c4b92603e528" category="inline-xref-macro-rx"></block></block>
   <block id="7a7df13e63ce64cca7ccd62eef4d02be" category="summary">hardwareInfo 对象包含有关集群中每个节点的硬件和状态的详细信息。您可以使用 GetHardwareInfo API 方法检索此信息。</block>
   <block id="23a96205a15effec220ae048165759e1" category="paragraph">hardwareInfo 对象包含有关集群中每个节点的硬件和状态的详细信息。您可以使用 `GetHardwareInfo` API 方法检索此信息。</block>
   <block id="c85a5f6e8700cb790ec0ebf6528d1a98" category="paragraph">板串行</block>
@@ -9255,13 +8921,7 @@
   <block id="cf0ed6b48af6632310baca234e81c539" category="paragraph">可用容量</block>
   <block id="f2391cb886081e73f260ab31c8f8f309" category="paragraph">驱动器的可用容量，以字节为单位。</block>
   <block id="32c01c6dcadebb6ae114f66eb1fe5a50" category="summary">常用方法是用于检索有关存储集群， API 本身或正在进行的 API 操作的信息的方法。</block>
-  <block id="16904e2df9f145c3065d3bddbbd820ef" category="list-text"><block ref="16904e2df9f145c3065d3bddbbd820ef" category="inline-xref-macro-rx"></block></block>
-  <block id="7dd45e19af958c7b1e44c5f35461991f" category="list-text"><block ref="7dd45e19af958c7b1e44c5f35461991f" category="inline-xref-macro-rx"></block></block>
-  <block id="19f129bb4bf3fd2906bdb5e2506a72a0" category="list-text"><block ref="19f129bb4bf3fd2906bdb5e2506a72a0" category="inline-xref-macro-rx"></block></block>
-  <block id="522efe4d99388e3c2f251562c7906868" category="list-text"><block ref="522efe4d99388e3c2f251562c7906868" category="inline-xref-macro-rx"></block></block>
-  <block id="12bb83253c4ddfab0171f938d1d9d5ea" category="list-text"><block ref="12bb83253c4ddfab0171f938d1d9d5ea" category="inline-xref-macro-rx"></block></block>
   <block id="79599c007d153c00a4f28faee2681cd5" category="inline-xref-macro">ListAsyncResults</block>
-  <block id="257f9eb591ae82db6a4d1114c50dae83" category="list-text"><block ref="257f9eb591ae82db6a4d1114c50dae83" category="inline-xref-macro-rx"></block></block>
   <block id="13e35f8a95635b393118833216945de5" category="summary">您可以使用 SetConfig 方法设置节点的网络和集群信息。此方法在一个 API 方法中包含与使用 SetClusterConfig 和 SetNetworkConfig 方法时相同的设置。此方法只需要包含要更改的字段。</block>
   <block id="40c0308f9923fd5a8726b54cc8ba3137" category="doc">SetConfig</block>
   <block id="098d043885f455aecc74ff3919d0b4c6" category="paragraph">您可以使用 `SetConfig` 方法设置节点的网络和集群信息。此方法在一个 API 方法中包含与使用 `SetClusterConfig` 和 `SetNetworkConfig` 方法相同的设置。此方法只需要包含要更改的字段。</block>
@@ -9318,15 +8978,9 @@
   <block id="0f084b20e82210babad650ae27381bb5" category="paragraph">用于构成完全限定用户 DN 的字符串。</block>
   <block id="0837048e6122cd2dda9a15b4a446dcfc" category="paragraph">用于开始搜索的树的基础 DN （将从此处执行子树搜索）。</block>
   <block id="695c49a51d05120d14928e3d1cf42f86" category="paragraph">使用的 LDAP 筛选器。</block>
-  <block id="1e3cafd2f43b5541dca707afcb074226" category="summary">您可以通过 Element 软件虚拟卷 API 方法管理虚拟卷（ VVols\ ）。您可以使用这些 API 方法查看现有 VVOL ，以及创建，修改和删除虚拟卷存储容器。虽然您无法使用这些方法对普通卷执行操作，但可以使用普通卷 API 方法列出有关 VVOL 的信息。</block>
   <block id="f8e84c7da2da153fb32ac0c85edce6c4" category="paragraph">您可以通过 Element 软件虚拟卷 API 方法管理虚拟卷（ VVOL ）。您可以使用这些 API 方法查看现有 VVOL ，以及创建，修改和删除虚拟卷存储容器。虽然您无法使用这些方法对普通卷执行操作，但可以使用普通卷 API 方法列出有关 VVOL 的信息。</block>
-  <block id="4145e6cb5258b48b76893090dc144915" category="list-text"><block ref="4145e6cb5258b48b76893090dc144915" category="inline-xref-macro-rx"></block></block>
-  <block id="48ee66ec0afffb52d0ee19eeea846f83" category="list-text"><block ref="48ee66ec0afffb52d0ee19eeea846f83" category="inline-xref-macro-rx"></block></block>
-  <block id="d1e8d905eea00a48057ea4722c4e85ce" category="list-text"><block ref="d1e8d905eea00a48057ea4722c4e85ce" category="inline-xref-macro-rx"></block></block>
   <block id="902887b0e15640dc86448f3a6ccb1ce3" category="inline-xref-macro">GetVirtualVolumeCount</block>
-  <block id="a5e68c3304a193c6081051dca9735f32" category="list-text"><block ref="a5e68c3304a193c6081051dca9735f32" category="inline-xref-macro-rx"></block></block>
   <block id="d7724fa418979f7a099180a6ac99f176" category="list-text"><block ref="d7724fa418979f7a099180a6ac99f176" category="inline-xref-macro-rx"></block></block>
-  <block id="0e92c02c0c2666e2bf4539b74442ec12" category="list-text"><block ref="0e92c02c0c2666e2bf4539b74442ec12" category="inline-xref-macro-rx"></block></block>
   <block id="caf27e88e7b1154207a1cf6b59352df2" category="summary">您可以使用 Listsnapshots 返回在卷上创建的每个快照的属性。</block>
   <block id="be85dd7a87cb342873153c1d350eebf5" category="paragraph">您可以使用 `listsnapshots` 返回在卷上创建的每个快照的属性。</block>
   <block id="8adfc43134393fa4a4c6fade29996743" category="paragraph">从源集群调用此方法时，有关驻留在目标集群上的快照的信息将显示在源集群上。</block>
@@ -9786,51 +9440,8 @@
   <block id="6c32c2f7860cb3c6bcbb23a24c82f8dc" category="paragraph">您可以使用 `ListNodeStats` 方法查看存储集群中所有存储节点的高级别活动测量结果。</block>
   <block id="acb53dd29c3d999c34e8930b9c7d3cfb" category="paragraph">存储节点活动信息。</block>
   <block id="e2edf1a780783b8d094099dbb95a024f" category="summary">您可以使用节点 API 方法配置单个节点。这些方法可在需要配置，已配置但尚未加入集群或正在积极加入集群的单个节点上运行。通过节点 API 方法，您可以查看和修改各个节点以及用于与节点通信的集群网络的设置。您必须对单个节点运行这些方法；不能对集群地址运行每个节点 API 方法。</block>
-  <block id="2a40b6f00f0ac2be1fc878c7142e2cb7" category="list-text"><block ref="2a40b6f00f0ac2be1fc878c7142e2cb7" category="inline-xref-macro-rx"></block></block>
-  <block id="1ed4ae030364d772841336ad6a69c5e8" category="list-text"><block ref="1ed4ae030364d772841336ad6a69c5e8" category="inline-xref-macro-rx"></block></block>
-  <block id="8239d9ffc64d3da427ae343449b41b87" category="list-text"><block ref="8239d9ffc64d3da427ae343449b41b87" category="inline-xref-macro-rx"></block></block>
-  <block id="e3a5a2a158a670b041ca39bbfdd31285" category="list-text"><block ref="e3a5a2a158a670b041ca39bbfdd31285" category="inline-xref-macro-rx"></block></block>
-  <block id="3a3aeca73d3f875a61866486e6f16051" category="list-text"><block ref="3a3aeca73d3f875a61866486e6f16051" category="inline-xref-macro-rx"></block></block>
   <block id="a23f6cc51378f92d84c3b6cbb049cb14" category="inline-xref-macro">禁用维护模式</block>
-  <block id="02e29a43e8dc690916e22087b4b12bb1" category="list-text"><block ref="02e29a43e8dc690916e22087b4b12bb1" category="inline-xref-macro-rx"></block></block>
-  <block id="859873d4da2af26ee69b396c828eb6f3" category="list-text"><block ref="859873d4da2af26ee69b396c828eb6f3" category="inline-xref-macro-rx"></block></block>
-  <block id="a0b62a2aff5ad1538315f127c3fbf94a" category="list-text"><block ref="a0b62a2aff5ad1538315f127c3fbf94a" category="inline-xref-macro-rx"></block></block>
-  <block id="633cf3a1b1547c6de50ffd294dd98f0f" category="list-text"><block ref="633cf3a1b1547c6de50ffd294dd98f0f" category="inline-xref-macro-rx"></block></block>
-  <block id="dccda3917c27f95a584682af0a4f97a2" category="list-text"><block ref="dccda3917c27f95a584682af0a4f97a2" category="inline-xref-macro-rx"></block></block>
-  <block id="ec040a996908be35b3b4dbbf824dab4a" category="list-text"><block ref="ec040a996908be35b3b4dbbf824dab4a" category="inline-xref-macro-rx"></block></block>
-  <block id="bae0a4ceb5588403a1e5f23ce96ad404" category="list-text"><block ref="bae0a4ceb5588403a1e5f23ce96ad404" category="inline-xref-macro-rx"></block></block>
-  <block id="d1cbd1033cd532ed9211ed06297fb029" category="list-text"><block ref="d1cbd1033cd532ed9211ed06297fb029" category="inline-xref-macro-rx"></block></block>
-  <block id="99004928a6d329d1ec3faed05fb10aa5" category="list-text"><block ref="99004928a6d329d1ec3faed05fb10aa5" category="inline-xref-macro-rx"></block></block>
-  <block id="c2126f3a9b17d5a8211c213e94697128" category="list-text"><block ref="c2126f3a9b17d5a8211c213e94697128" category="inline-xref-macro-rx"></block></block>
-  <block id="c94ac8cbe93bf449753f9e8ed6033da3" category="list-text"><block ref="c94ac8cbe93bf449753f9e8ed6033da3" category="inline-xref-macro-rx"></block></block>
-  <block id="1db0564047982a8703c9d6bcb0d8300d" category="list-text"><block ref="1db0564047982a8703c9d6bcb0d8300d" category="inline-xref-macro-rx"></block></block>
-  <block id="2212a50ddb7857b1320831f079a17a91" category="list-text"><block ref="2212a50ddb7857b1320831f079a17a91" category="inline-xref-macro-rx"></block></block>
-  <block id="a6f21aed0e7bbe15e424f1fb22434e86" category="list-text"><block ref="a6f21aed0e7bbe15e424f1fb22434e86" category="inline-xref-macro-rx"></block></block>
-  <block id="09c190121c65301955f5aeab39c42497" category="list-text"><block ref="09c190121c65301955f5aeab39c42497" category="inline-xref-macro-rx"></block></block>
-  <block id="0dc108c0f3d07244ced95cdf76b44745" category="list-text"><block ref="0dc108c0f3d07244ced95cdf76b44745" category="inline-xref-macro-rx"></block></block>
-  <block id="9a152de12d1bf85c55afbac956d6bb1d" category="list-text"><block ref="9a152de12d1bf85c55afbac956d6bb1d" category="inline-xref-macro-rx"></block></block>
-  <block id="e2fea7efd7278df5fefd70851763c1df" category="list-text"><block ref="e2fea7efd7278df5fefd70851763c1df" category="inline-xref-macro-rx"></block></block>
-  <block id="b9cd380da6eb44422af2d14e4bb886cb" category="list-text"><block ref="b9cd380da6eb44422af2d14e4bb886cb" category="inline-xref-macro-rx"></block></block>
-  <block id="914b10824f9cd75b8469cd550af44389" category="list-text"><block ref="914b10824f9cd75b8469cd550af44389" category="inline-xref-macro-rx"></block></block>
-  <block id="880ed33f3de3195f3ecd0de08dffce45" category="list-text"><block ref="880ed33f3de3195f3ecd0de08dffce45" category="inline-xref-macro-rx"></block></block>
-  <block id="f620db8e5bd235c74a47642cf3372730" category="list-text"><block ref="f620db8e5bd235c74a47642cf3372730" category="inline-xref-macro-rx"></block></block>
-  <block id="f5fe4e3d2f32221cc73dd4bc8e366589" category="list-text"><block ref="f5fe4e3d2f32221cc73dd4bc8e366589" category="inline-xref-macro-rx"></block></block>
-  <block id="bff3f7b7c491b7f132022e8ace01b79e" category="list-text"><block ref="bff3f7b7c491b7f132022e8ace01b79e" category="inline-xref-macro-rx"></block></block>
-  <block id="22e6a1dccd2a9480adbfa34d655ca1c6" category="list-text"><block ref="22e6a1dccd2a9480adbfa34d655ca1c6" category="inline-xref-macro-rx"></block></block>
-  <block id="a27cae0947ab33828940d9cefd716f97" category="list-text"><block ref="a27cae0947ab33828940d9cefd716f97" category="inline-xref-macro-rx"></block></block>
-  <block id="4d8d3e4b39aee46116bc1f8fc6f68f15" category="list-text"><block ref="4d8d3e4b39aee46116bc1f8fc6f68f15" category="inline-xref-macro-rx"></block></block>
-  <block id="b723139148af832a21c2ecfa3039411b" category="list-text"><block ref="b723139148af832a21c2ecfa3039411b" category="inline-xref-macro-rx"></block></block>
-  <block id="44e44aac4f85321b1624841afd7d632d" category="list-text"><block ref="44e44aac4f85321b1624841afd7d632d" category="inline-xref-macro-rx"></block></block>
-  <block id="df7184e3cad06aaa9240f43d8d0fdc81" category="list-text"><block ref="df7184e3cad06aaa9240f43d8d0fdc81" category="inline-xref-macro-rx"></block></block>
-  <block id="cecc0f322dae4b6afd03604ce6a40d55" category="list-text"><block ref="cecc0f322dae4b6afd03604ce6a40d55" category="inline-xref-macro-rx"></block></block>
-  <block id="6a318fa183d9f4f41613414f829a0ba0" category="list-text"><block ref="6a318fa183d9f4f41613414f829a0ba0" category="inline-xref-macro-rx"></block></block>
-  <block id="cf740b0c6172b97948ed29db8908e0a5" category="list-text"><block ref="cf740b0c6172b97948ed29db8908e0a5" category="inline-xref-macro-rx"></block></block>
-  <block id="6a63832f279452c794216aa8af0e41bd" category="list-text"><block ref="6a63832f279452c794216aa8af0e41bd" category="inline-xref-macro-rx"></block></block>
-  <block id="2ec3f243d8990c5f1a19cd1900342d67" category="list-text"><block ref="2ec3f243d8990c5f1a19cd1900342d67" category="inline-xref-macro-rx"></block></block>
-  <block id="61f8ae158f091a5a5f35f5754a0feb16" category="list-text"><block ref="61f8ae158f091a5a5f35f5754a0feb16" category="inline-xref-macro-rx"></block></block>
   <block id="2231c262b3ded6f933300e7d9d6642af" category="inline-xref-macro">TestPing</block>
-  <block id="7713b27f16de03d412d502c0c373c158" category="list-text"><block ref="7713b27f16de03d412d502c0c373c158" category="inline-xref-macro-rx"></block></block>
-  <block id="9711ed1c435e2da9977bc71d1bfe0d98" category="list-text"><block ref="9711ed1c435e2da9977bc71d1bfe0d98" category="inline-xref-macro-rx"></block></block>
   <block id="86a22ec38274977ccc815bc7cdcc278a" category="summary">Element Web UI 使用 DeleteSnapMirrorRelationships 方法删除源端点和目标端点之间的一个或多个 SnapMirror 关系。</block>
   <block id="571338807c7fc67a1505361260938283" category="paragraph">Element Web UI 使用 `DDeleteSnapMirrorRelationships` 方法删除源端点和目标端点之间的一个或多个 SnapMirror 关系。</block>
   <block id="3fec74cfd1a50172a35257c2a5e42e4a" category="paragraph">目标卷</block>
@@ -9899,50 +9510,6 @@
   <block id="8df495efe1d0aa4523788ff39a0dfd93" category="paragraph">您可以使用 `GetVirtualVolumeCount` 方法检索系统中当前虚拟卷的数量。</block>
   <block id="94f14b76e2339320e3b0de282915d7fa" category="paragraph">系统中当前虚拟卷的数量。</block>
   <block id="06ae1b56537ace3c3828381f86b944c8" category="summary">Element 软件 API 使用 JSON 对象来表示组织的数据概念。其中许多 API 方法都使用这些对象进行数据输入和输出。本节介绍了这些常用对象；仅在一种方法中使用的对象将使用该方法记录，而不是在本节中记录。</block>
-  <block id="572ac6b2de775df4f619c090092eed32" category="list-text"><block ref="572ac6b2de775df4f619c090092eed32" category="inline-xref-macro-rx"></block></block>
-  <block id="74f484502ca9f2e6bdda8615d2d18312" category="list-text"><block ref="74f484502ca9f2e6bdda8615d2d18312" category="inline-xref-macro-rx"></block></block>
-  <block id="49932d1a0cdd9e2b94ba7aa8706c0af9" category="list-text"><block ref="49932d1a0cdd9e2b94ba7aa8706c0af9" category="inline-xref-macro-rx"></block></block>
-  <block id="de8d8647fa7b4dd2423844837517f948" category="list-text"><block ref="de8d8647fa7b4dd2423844837517f948" category="inline-xref-macro-rx"></block></block>
-  <block id="4bc6f7c15d73d2c8596ef29ad90ae7df" category="list-text"><block ref="4bc6f7c15d73d2c8596ef29ad90ae7df" category="inline-xref-macro-rx"></block></block>
-  <block id="3f3fd6292a20dbf2f002f5a674a19980" category="list-text"><block ref="3f3fd6292a20dbf2f002f5a674a19980" category="inline-xref-macro-rx"></block></block>
-  <block id="e9c9fd698c3d237523ae928d55cddef1" category="list-text"><block ref="e9c9fd698c3d237523ae928d55cddef1" category="inline-xref-macro-rx"></block></block>
-  <block id="63bbb466b8b4316b774e1705ccd3bd26" category="list-text"><block ref="63bbb466b8b4316b774e1705ccd3bd26" category="inline-xref-macro-rx"></block></block>
-  <block id="3937fac2c8a2b1a3a713e702893bb68d" category="list-text"><block ref="3937fac2c8a2b1a3a713e702893bb68d" category="inline-xref-macro-rx"></block></block>
-  <block id="a0d7fa922f3029e51e15b2a6fb83bdca" category="list-text"><block ref="a0d7fa922f3029e51e15b2a6fb83bdca" category="inline-xref-macro-rx"></block></block>
-  <block id="232c4547f8577226f6604f40fed8c5a6" category="list-text"><block ref="232c4547f8577226f6604f40fed8c5a6" category="inline-xref-macro-rx"></block></block>
-  <block id="f80bd9a7292cf45e9992572a58d08b36" category="list-text"><block ref="f80bd9a7292cf45e9992572a58d08b36" category="inline-xref-macro-rx"></block></block>
-  <block id="e23a29780d8ea1befa7458c659e0aebe" category="list-text"><block ref="e23a29780d8ea1befa7458c659e0aebe" category="inline-xref-macro-rx"></block></block>
-  <block id="7f15c9aa147c16eb5795ca6f2b000c00" category="list-text"><block ref="7f15c9aa147c16eb5795ca6f2b000c00" category="inline-xref-macro-rx"></block></block>
-  <block id="7e1333b84a8c3c42cbd9ea1a6df89a37" category="list-text"><block ref="7e1333b84a8c3c42cbd9ea1a6df89a37" category="inline-xref-macro-rx"></block></block>
-  <block id="c9268fda0517ed95f366ac2c29db54b6" category="list-text"><block ref="c9268fda0517ed95f366ac2c29db54b6" category="inline-xref-macro-rx"></block></block>
-  <block id="dc435e9a57e6ef95abdeea42eed03b10" category="list-text"><block ref="dc435e9a57e6ef95abdeea42eed03b10" category="inline-xref-macro-rx"></block></block>
-  <block id="87738d158fb1e7f69e5717d81cca60f3" category="list-text"><block ref="87738d158fb1e7f69e5717d81cca60f3" category="inline-xref-macro-rx"></block></block>
-  <block id="9450cdcfebe5112e26e0b35839905336" category="list-text"><block ref="9450cdcfebe5112e26e0b35839905336" category="inline-xref-macro-rx"></block></block>
-  <block id="bfa482ffa518357266c5cc20c8c3a8bd" category="list-text"><block ref="bfa482ffa518357266c5cc20c8c3a8bd" category="inline-xref-macro-rx"></block></block>
-  <block id="478bcb324f806ce9816f0910b6293056" category="list-text"><block ref="478bcb324f806ce9816f0910b6293056" category="inline-xref-macro-rx"></block></block>
-  <block id="6146077a1b7b2dc47cc93c8a15146de8" category="list-text"><block ref="6146077a1b7b2dc47cc93c8a15146de8" category="inline-xref-macro-rx"></block></block>
-  <block id="6eee1cddd93f10105e338a892fad9ead" category="list-text"><block ref="6eee1cddd93f10105e338a892fad9ead" category="inline-xref-macro-rx"></block></block>
-  <block id="b93c90b84205809c1dc83c431f166b00" category="list-text"><block ref="b93c90b84205809c1dc83c431f166b00" category="inline-xref-macro-rx"></block></block>
-  <block id="21455ab6f1319928d7620cfbcf697d7b" category="list-text"><block ref="21455ab6f1319928d7620cfbcf697d7b" category="inline-xref-macro-rx"></block></block>
-  <block id="8460dc7fe4c99267b00972c4baa8aadf" category="list-text"><block ref="8460dc7fe4c99267b00972c4baa8aadf" category="inline-xref-macro-rx"></block></block>
-  <block id="ac9c52338430211d087030b90b827808" category="list-text"><block ref="ac9c52338430211d087030b90b827808" category="inline-xref-macro-rx"></block></block>
-  <block id="a449014c8f342d2c8a1761ec9a76508f" category="list-text"><block ref="a449014c8f342d2c8a1761ec9a76508f" category="inline-xref-macro-rx"></block></block>
-  <block id="7a84a7749ff3fe9323ade7a51821f90a" category="list-text"><block ref="7a84a7749ff3fe9323ade7a51821f90a" category="inline-xref-macro-rx"></block></block>
-  <block id="582bab48e147644d1bbe9db16e906c42" category="list-text"><block ref="582bab48e147644d1bbe9db16e906c42" category="inline-xref-macro-rx"></block></block>
-  <block id="d7cd61f32d7a13ba41ccbf5ca56ad3a3" category="list-text"><block ref="d7cd61f32d7a13ba41ccbf5ca56ad3a3" category="inline-xref-macro-rx"></block></block>
-  <block id="edcf0244314faa660f379414e280ac48" category="list-text"><block ref="edcf0244314faa660f379414e280ac48" category="inline-xref-macro-rx"></block></block>
-  <block id="1e5751b6a50b13aa3899cd413f4dfdd9" category="list-text"><block ref="1e5751b6a50b13aa3899cd413f4dfdd9" category="inline-xref-macro-rx"></block></block>
-  <block id="da0ca4edeb3d194fb367cd8e08df49d4" category="list-text"><block ref="da0ca4edeb3d194fb367cd8e08df49d4" category="inline-xref-macro-rx"></block></block>
-  <block id="6458d889e4c8d62d362462132045dd7f" category="list-text"><block ref="6458d889e4c8d62d362462132045dd7f" category="inline-xref-macro-rx"></block></block>
-  <block id="3d44a7bcb26593fc5d4432dee7fe4224" category="list-text"><block ref="3d44a7bcb26593fc5d4432dee7fe4224" category="inline-xref-macro-rx"></block></block>
-  <block id="499f1d7e84d405bede80a58f9d4f6b7e" category="list-text"><block ref="499f1d7e84d405bede80a58f9d4f6b7e" category="inline-xref-macro-rx"></block></block>
-  <block id="aa6f9d1b2a7cc3f27faf37b3df073b5e" category="list-text"><block ref="aa6f9d1b2a7cc3f27faf37b3df073b5e" category="inline-xref-macro-rx"></block></block>
-  <block id="bf74b0e6ed263f9133b08266194c446f" category="list-text"><block ref="bf74b0e6ed263f9133b08266194c446f" category="inline-xref-macro-rx"></block></block>
-  <block id="d7c69876bf5f14e8e06f2981cc84136a" category="list-text"><block ref="d7c69876bf5f14e8e06f2981cc84136a" category="inline-xref-macro-rx"></block></block>
-  <block id="0cd38f5732f92bc7ac2c9456cb2c9115" category="list-text"><block ref="0cd38f5732f92bc7ac2c9456cb2c9115" category="inline-xref-macro-rx"></block></block>
-  <block id="c97156f1fb516db6eec37d311c070c47" category="list-text"><block ref="c97156f1fb516db6eec37d311c070c47" category="inline-xref-macro-rx"></block></block>
-  <block id="64d50d7fa8a8fc466e3e5fdc9be113a7" category="list-text"><block ref="64d50d7fa8a8fc466e3e5fdc9be113a7" category="inline-xref-macro-rx"></block></block>
-  <block id="9fb2294808fa2c24cf20ade21e80b931" category="list-text"><block ref="9fb2294808fa2c24cf20ade21e80b931" category="inline-xref-macro-rx"></block></block>
   <block id="530577c73ba9fa8578bac57633fb26a8" category="summary">fipsReport 对象包含有关存储集群中所有节点的 FIPS 140-2 支持的信息。您可以使用 GetFipsReport 方法检索此信息。</block>
   <block id="a7e4e388f7ef2d92455aa5f2eaa3ff99" category="paragraph">fipsReport 对象包含有关存储集群中所有节点的 FIPS 140-2 支持的信息。您可以使用 `GetFipsReport` 方法检索此信息。</block>
   <block id="a7867e290776e582f123aeff46f821ce" category="paragraph">有关存储集群中每个节点的 FIPS 140-2 支持状态的报告。</block>
@@ -9978,7 +9545,6 @@
   <block id="abf5d3dc9c7d8125c6518718b2c6ff1a" category="paragraph">您必须先配置各个节点，然后才能将其添加到集群中。在机架单元中安装节点并为其布线并打开其电源后，您可以使用每节点 UI 或节点终端用户界面（ TUI ）配置节点网络设置。在继续操作之前，请确保您已获得节点的必要网络配置信息。</block>
   <block id="ca46fa5533a85c143adb3d3a69b5b89f" category="paragraph">配置存储节点有两个选项：</block>
   <block id="a3bb08e80643b9aba656a4543bf45bb7" category="inline-xref">每节点 UI</block>
-  <block id="a7d007b797a1f90c0296762fae0055f8" category="list-text"><block ref="fd0db6cc2593d84123873433182a6b26" category="inline-xref-macro-rx"></block>：使用每节点 UI <block ref="6d677dcad49e4b5e4d468198a0171038" category="inline-link-rx"></block> 配置节点网络设置。</block>
   <block id="7a986decd17c08272fa8e9ec93b1bb0a" category="inline-xref">TUI</block>
   <block id="cf2d4db8c9d22c7eb18ad0217b9adaff" category="list-text"><block ref="61801e47cf6e6f5e0b182e9fe9665e00" category="inline-xref-macro-rx"></block>：使用节点终端用户界面（ TUI ）配置节点。</block>
   <block id="56e8139f570441ac39c3de2a02c2384c" category="paragraph">您不能将使用 DHCP 分配的 IP 地址的节点添加到集群中。您可以使用 DHCP IP 地址在每节点 UI ， TUI 或 API 中对节点进行初始配置。在此初始配置期间，您可以添加静态 IP 地址信息，以便将节点添加到集群中。</block>
@@ -9990,7 +9556,6 @@
   <block id="a79cb3c0c41f2980c808abd31214f26a" category="list-text">要访问节点，需要使用 TUI 中显示的 DHCP 地址。您不能使用 DHCP 地址向集群添加节点。</block>
   <block id="c1c637b63838f91031e49aa3dd20939f" category="admonition">您应该为不同的子网配置管理（绑定 1G ）和存储（绑定 10G ）接口。通过绑定 1G 接口发送存储流量时，为同一子网发生原因路由问题配置了绑定 1G 和绑定 10G 接口。如果必须使用同一子网传输管理和存储流量，请手动配置管理流量以使用绑定 10G 接口。您可以使用每个节点 UI 的 * 集群设置 * 页面对每个节点执行此操作。</block>
   <block id="9a9bf61b133c1439f32f8de2ecf7f250" category="list-text">在浏览器窗口中，输入节点的 DHCP IP 地址。</block>
-  <block id="718388f7f39786bf6b8ca4edf8cd3017" category="paragraph">要访问此节点，必须添加扩展名 ` ： 442` ；例如，<block ref="64eb6fac063c2a648507a12b0411ac57" category="inline-link-rx"></block>。</block>
   <block id="0eabcd304191abe63eb43a2958ee36b2" category="paragraph">此时将打开 * 网络设置 * 选项卡，并显示 * 绑定 1G* 部分。</block>
   <block id="7875e585e67cbdd7085c34c30f00f523" category="list-text">输入 1G 管理网络设置。</block>
   <block id="686752ec008c4578ce224ca405d8d384" category="list-text">单击 * 应用更改 * 。</block>
@@ -10056,9 +9621,7 @@
   <block id="a75d22178bfdbfb47dae5d060487fe32" category="list-title">设置存储的步骤</block>
   <block id="36ddaebda56a8c215a8dfff5eb57566d" category="list-text">选择以下选项之一：</block>
   <block id="621e278b28fb409a88f587a11dd3fdbb" category="inline-link-macro">使用存储节点设置集群</block>
-  <block id="f613876cf23b74a2f91e8a0cbbac4040" category="list-text"><block ref="f613876cf23b74a2f91e8a0cbbac4040" category="inline-link-macro-rx"></block></block>
   <block id="dd4223dc3690b6f360e59c742ae1070e" category="inline-link-macro">设置具有光纤通道节点的集群</block>
-  <block id="27173c006a2b7d8bd3e0ee95f9f0b7ee" category="list-text"><block ref="27173c006a2b7d8bd3e0ee95f9f0b7ee" category="inline-link-macro-rx"></block></block>
   <block id="75b31a99ca1829e5d9d069b95769a7af" category="inline-link-macro">确定要安装的 SolidFire 组件</block>
   <block id="f17ee1ddbb7ca983ae1fd851a686d969" category="list-text"><block ref="f17ee1ddbb7ca983ae1fd851a686d969" category="inline-link-macro-rx"></block></block>
   <block id="1b85b8a3895b460e5f081dab072bd9d0" category="inline-link-macro">设置管理节点并启用 Active IQ 遥测</block>
@@ -10099,18 +9662,9 @@
   <block id="5ff55f5be317ea248761d19a0d6a51de" category="list-text">有关 NetApp 监控代理的信息，请参见此部分 <block ref="99a131dd8cfb8feafc4007552926e695" category="inline-link-macro-rx"></block>。</block>
   <block id="29d146c3ff84a325896236b39666ab2c" category="list-text">IPv6 ：输入 `https://[IPv6_MVIP_address]` 。例如：</block>
   <block id="76f60e94f8af46b3443342f281a2950d" category="list-text">IPv4 ：输入 `https://[IPv4 MVIP address]` 。例如：</block>
-  <block id="b96f3ed750531090eb42b6a9a14239fd" category="summary">了解使用存储节点设置集群的顺序。</block>
-  <block id="63784d9c9cd4b3d4005871ea8a264793" category="doc">设置具有光纤通道节点的集群</block>
-  <block id="a199acc01893b35ac358f49d3582e5ff" category="paragraph">在机架单元中安装节点并为其布线并打开电源后，您可以使用 Element 软件设置包含光纤通道节点的集群并对其进行管理。然后，您可以在存储系统中安装和配置其他组件。</block>
   <block id="b82ff87206d0dac27f19bfef3b69651b" category="inline-link-macro">配置光纤通道节点</block>
-  <block id="5d62c1f41e9177390c5ee9e7843d7b20" category="list-text"><block ref="5d62c1f41e9177390c5ee9e7843d7b20" category="inline-link-macro-rx"></block></block>
-  <block id="7d8c119ff23258e47ee2ad995865217e" category="list-text"><block ref="7d8c119ff23258e47ee2ad995865217e" category="inline-link-macro-rx"></block></block>
   <block id="689e8ffeea6fdaf4ee732d0a047652c1" category="inline-link-macro">向集群添加光纤通道节点</block>
-  <block id="69a4739d3289fc79bb753c1f6ec5a49e" category="list-text"><block ref="69a4739d3289fc79bb753c1f6ec5a49e" category="inline-link-macro-rx"></block></block>
-  <block id="7104459fa5b4db39259d907732012267" category="list-text"><block ref="7104459fa5b4db39259d907732012267" category="inline-link-macro-rx"></block></block>
-  <block id="2ca746f7f54476d8b7b4e27e491c18e2" category="list-text"><block ref="2ca746f7f54476d8b7b4e27e491c18e2" category="inline-link-macro-rx"></block></block>
   <block id="a2afe432d12965caf22f4ff7eb1b173e" category="inline-link-macro">设置管理节点</block>
-  <block id="e1926481080819f37851db40d84120c6" category="list-text"><block ref="e1926481080819f37851db40d84120c6" category="inline-link-macro-rx"></block></block>
   <block id="1d6434e72af827d0e2579d4135db7976" category="summary">您可以在需要更多存储时或在创建集群期间向集群添加光纤通道节点。首次启动光纤通道节点时，需要对其进行初始配置。配置节点后，它将显示在待定节点列表中，您可以将其添加到集群中。</block>
   <block id="ba27cf991d8ba0a2e1f9025c73487b29" category="paragraph">集群中每个光纤通道节点上的软件版本必须兼容。将光纤通道节点添加到集群时，集群会根据需要在新节点上安装集群版本的 Element 。</block>
   <block id="0ea901d7b93f28d47c82fed86571582f" category="admonition">如果要添加的节点的 Element 版本与集群上运行的版本不同，则集群会异步将此节点更新为集群主节点上运行的 Element 版本。更新节点后，它会自动将自己添加到集群中。在此异步过程中，节点将处于 pendingActive 状态。</block>
@@ -10157,27 +9711,14 @@
   <block id="0f5a20082c20009526d7d768b6279f05" category="list-text"><block ref="0f5a20082c20009526d7d768b6279f05" category="inline-xref-macro-rx"></block></block>
   <block id="1c45fd215e6dc295350e4f4f5e2e7e41" category="list-text"><block ref="1c45fd215e6dc295350e4f4f5e2e7e41" category="inline-xref-macro-rx"></block></block>
   <block id="a8d3424ca67e2754569ae54982c009df" category="list-text"><block ref="a8d3424ca67e2754569ae54982c009df" category="inline-xref-macro-rx"></block></block>
-  <block id="f17bdc3100242be6aa20374cb07b1e01" category="list-text"><block ref="f17bdc3100242be6aa20374cb07b1e01" category="inline-xref-macro-rx"></block></block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="inline-xref-macro">下一步是什么？</block>
   <block id="6b758c6baa8d819395041efcb30c549d" category="list-text"><block ref="6b758c6baa8d819395041efcb30c549d" category="inline-xref-macro-rx"></block></block>
-  <block id="cf96e05831f60485e4f0560344047617" category="doc">设置包含 Element 存储节点的集群</block>
   <block id="3d20b2b4be99e3161a1ffceb0a06f6bb" category="paragraph">在机架单元中安装节点并为其布线并打开电源后，您可以使用 Element 软件设置包含存储节点的集群并对其进行管理。然后，您可以在存储系统中安装和配置其他组件。</block>
-  <block id="93879ce118ea16418a6313b31a139758" category="list-text"><block ref="93879ce118ea16418a6313b31a139758" category="inline-link-macro-rx"></block></block>
-  <block id="f39a725a02304680301cb18220e39312" category="list-text"><block ref="f39a725a02304680301cb18220e39312" category="inline-link-macro-rx"></block></block>
-  <block id="6cdf8e29cbeba7517b4c1680cdd7eb6b" category="list-text"><block ref="6cdf8e29cbeba7517b4c1680cdd7eb6b" category="inline-link-macro-rx"></block></block>
-  <block id="9738ee176de57bd30fad400e77513ebf" category="list-text"><block ref="9738ee176de57bd30fad400e77513ebf" category="inline-link-macro-rx"></block></block>
-  <block id="2655566b8a75d4f0fab58d6811d73554" category="list-text"><block ref="2655566b8a75d4f0fab58d6811d73554" category="inline-link-macro-rx"></block></block>
-  <block id="3d18292283ccfb28019195f177ca1327" category="list-text"><block ref="3d18292283ccfb28019195f177ca1327" category="inline-link-macro-rx"></block></block>
   <block id="4e918d6a3b1bcdd5b4c5e580abae0d2f" category="summary">您可以安装 NetApp Element 软件管理节点 \ （ mNode\ ）以升级和提供系统服务，管理集群资产和设置，运行系统测试和实用程序，并启用 NetApp 支持访问以进行故障排除。</block>
   <block id="f865d301a6fd50d6c84b80609c81f582" category="paragraph">您可以安装 NetApp Element 软件管理节点（ mNode ）来升级和提供系统服务，管理集群资产和设置，运行系统测试和实用程序，以及启用 NetApp 支持访问以进行故障排除。</block>
   <block id="db18ba512afe885e8489d3d8b3aaa0d4" category="list-text">请参见 <block ref="69e4d07f7c9e6594925797cc7a86619f" category="inline-link-macro-rx"></block> 文档。</block>
-  <block id="8db92719c4d9f37b39025b1a2a231511" category="summary">开始之前，您应查看前提条件。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="doc">要求</block>
-  <block id="0d4f5f9dd0b25c466de7756fec34503e" category="paragraph">开始之前，您应查看部署 NetApp Element 软件的前提条件，包括网络连接和端口要求。</block>
   <block id="9251700e586dc1a410f2e755a8643751" category="inline-link-macro">网络要求</block>
-  <block id="bf2dd9ad607fe337e59fb7e3fcd35d42" category="list-text"><block ref="bf2dd9ad607fe337e59fb7e3fcd35d42" category="inline-link-macro-rx"></block></block>
-  <block id="17cec09f14c225b5f27dc73542e9077a" category="inline-link-macro">交换机配置</block>
-  <block id="1477a9592e56cad26e2c60ae41c5ed8f" category="list-text"><block ref="1477a9592e56cad26e2c60ae41c5ed8f" category="inline-link-macro-rx"></block></block>
   <block id="7fd4fa2be2606de8c235ee9dda5b4214" category="doc">向集群添加驱动器</block>
   <block id="67d0119c4fd08bedb9e0756fceb970b0" category="paragraph">存在以下情况时，驱动器不会显示在 "Available Drives" 列表中：</block>
   <block id="fb1e69ae7790a8d408d4c2b57c82ac8d" category="list-text">驱动器处于 "Active" ， "Removing" ， "Erasing" 或 "Failed" 状态。</block>
@@ -10240,7 +9781,6 @@
   <block id="f495ed37a1bc23c35eb85ae7536b34f8" category="admonition">完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时影响 NTP <block ref="09beec75f3bf74c9ec51917f2b1066ff" category="inline-xref-macro-rx"></block> 在管理节点上。</block>
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">【 substed_f_install_config_time_sync]] 通过虚拟机管理程序禁用与主机的时间同步（以下是 VMware 示例）：</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">设置命令</block>
-  <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时影响 NTP <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> 在管理节点上。</block>
   <block id="3b79e75f8bb7342984eec3a3fd95ccf6" category="list-text"><block ref="3b79e75f8bb7342984eec3a3fd95ccf6" category="inline-link-rx"></block></block>
   <block id="3b34803433d83528840d8e729af0e8bc" category="inline-link">vCenter 插件 4.8 发行说明</block>
   <block id="c561b7d92736e6c451a661a0a5da7586" category="list-text"><block ref="c561b7d92736e6c451a661a0a5da7586" category="inline-link-rx"></block></block>
@@ -10306,8 +9846,6 @@
   <block id="2b0fe7090c295442b520e1c431f5b990" category="section-title">卷帐户</block>
   <block id="d88a2e3b7b7d5ca1d7f837546cb3b31f" category="paragraph">特定于卷的帐户仅特定于创建它们的存储集群。通过这些帐户，您可以在网络中为特定卷设置权限，但在这些卷之外不起作用。</block>
   <block id="682faa8b9dab1247bb831425cb9ffc7e" category="paragraph">卷帐户在 NetApp Hybrid Cloud Control Volumes 表中进行管理。</block>
-  <block id="65eec389aadc16bae85fa92b991e9f2b" category="inline-link-macro">使用 NetApp Hybrid Cloud Control 概述管理和监控存储</block>
-  <block id="998b6d06ff9f69c71a1b5ac158e5ddf4" category="paragraph"><block ref="998b6d06ff9f69c71a1b5ac158e5ddf4" category="inline-link-macro-rx"></block></block>
   <block id="1905fad06cd2d678f65488599a009f2a" category="summary">您可以使用 Hybrid Cloud Control Nodes 页面查看系统中的存储资产。</block>
   <block id="4abf133407ea4fa2eda3059f56e2940f" category="paragraph">您可以查看系统中的存储资产并确定其 IP 地址，名称和软件版本。</block>
   <block id="f0a87811e8be55bf94672bdc19729182" category="inline-link-macro">自定义保护域</block>
@@ -10661,21 +10199,10 @@
   <block id="f748be22a637481aae225cff9280e791" category="list-text">* 启动程序 * ：您可以查看卷的 iSCSI 启动程序 IQN 或光纤通道 WWPN 。添加到访问组的每个 IQN 都可以访问组中的每个卷，而无需 CHAP 身份验证。添加到访问组的每个 WWPN 都可以通过光纤通道网络访问访问此访问组中的卷。</block>
   <block id="c2fb1f46e0a1dd8e660dc2cf928cf263" category="list-text">* QoS 策略 * ：您可以查看应用于卷的 QoS 策略。QoS 策略会将最小 IOPS ，最大 IOPS 和突发 IOPS 的标准化设置应用于多个卷。</block>
   <block id="a9664f2c069d2936e0d10e7ef1bdf822" category="inline-link-macro">性能和 QoS 策略</block>
-  <block id="720034173fbae9b2659c1996282d93d0" category="paragraph">请参见有关的信息 <block ref="e8d17d0920ed613a80faa8c0c8e7d57c" category="inline-link-macro-rx"></block>。</block>
   <block id="3500be2d6452b665360ea9b308c6c109" category="inline-link">SolidFire 和 Element 文档</block>
   <block id="06ace0d3bf47e1a95240223bce9b2125" category="list-text"><block ref="06ace0d3bf47e1a95240223bce9b2125" category="inline-link-rx"></block></block>
-  <block id="f227ec9d2608eaf21a09ac101a29c1d9" category="summary">借助 NetApp SolidFire 全闪存存储，您可以使用 NetApp 混合云控制来管理和监控存储资产。</block>
   <block id="510b8ff88dd968b79868e0d7830ee804" category="doc">使用 NetApp Hybrid Cloud Control 管理和监控存储</block>
-  <block id="1e27e6d7158fdadb8e9c69f36679c5b6" category="paragraph">借助 NetApp SolidFire 全闪存存储，您可以使用 NetApp 混合云控制管理和监控存储资产并配置存储系统中的组件。</block>
-  <block id="763e44d4353c0dfc7240c87539a492ce" category="list-text"><block ref="763e44d4353c0dfc7240c87539a492ce" category="inline-link-macro-rx"></block></block>
-  <block id="f3f991d32b98e3491432c83156ab3a06" category="list-text"><block ref="f3f991d32b98e3491432c83156ab3a06" category="inline-link-macro-rx"></block></block>
-  <block id="0fcbabaa4919b29359cbbd0de21ca1b4" category="list-text"><block ref="0fcbabaa4919b29359cbbd0de21ca1b4" category="inline-link-macro-rx"></block></block>
-  <block id="892b7117c40d6f0c6583345e0a11a8f7" category="list-text"><block ref="892b7117c40d6f0c6583345e0a11a8f7" category="inline-link-macro-rx"></block></block>
-  <block id="5963ea3a054f1370b764250450517468" category="list-text"><block ref="5963ea3a054f1370b764250450517468" category="inline-link-macro-rx"></block></block>
-  <block id="e009396e85dc3318f3571158e688b282" category="list-text"><block ref="e009396e85dc3318f3571158e688b282" category="inline-link-macro-rx"></block></block>
-  <block id="64d5c3fe686f53d16508dbc5873ae440" category="list-text"><block ref="64d5c3fe686f53d16508dbc5873ae440" category="inline-link-macro-rx"></block></block>
   <block id="f56ed020bfc0f00f0c0d9281657c6d3e" category="inline-link-macro">使用 NetApp 混合云控制监控您的 SolidFire 系统</block>
-  <block id="23e769d9ea0b7e8b4bd013218622a2c2" category="list-text"><block ref="23e769d9ea0b7e8b4bd013218622a2c2" category="inline-link-macro-rx"></block></block>
   <block id="c117dac0f1d9f0403b262ef3cb807da5" category="summary">了解如何创建用户帐户并将其与卷关联。</block>
   <block id="acc33e6579e22155669c1d10e26b08f6" category="doc">使用 NetApp Hybrid Cloud Control 创建和管理用户帐户</block>
   <block id="6121fae9c8fc40008ae9116037777b92" category="paragraph">在基于 Element 的存储系统中，可以创建权威集群用户，以便根据您要授予 " 管理员 " 或 " 只读 " 用户的权限，启用对 NetApp Hybrid Cloud Control 的登录访问。除了集群用户之外，还提供了卷帐户，客户端可以通过这些帐户连接到存储节点上的卷。 </block>
@@ -10814,7 +10341,6 @@
   <block id="72b711eab7bf0193b651fa7a07068ae1" category="list-text">在浏览器中输入管理节点的 IP 地址，包括用于注册的 TCP 端口： `https://&lt;ManagementNodeIP&gt;:9443` 注册实用程序 UI 将打开至该插件的 * 管理 QoSSIOC 服务凭据 * 页面。</block>
   <block id="b6da302462725db65b08725e21534c35" category="inline-link-macro">获取集群信息方法</block>
   <block id="df55ce8d5994202037ca7f6b8add22fc" category="inline-link-macro">获取集群用于对空闲数据进行加密的信息的方法</block>
-  <block id="8645b3842f2ebbd31ef1556eca13e734" category="admonition">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="266af3c6722606b03dffbc748cf8f335" category="inline-link-macro-rx"></block>。您可以使用 `GetSoftwareEncryptionAtRestInfo` <block ref="71cd4d0c7a8355e8bd1074b7039cdde9" category="inline-link-macro-rx"></block>。</block>
   <block id="54345a69ac071e42416d101550699426" category="admonition">此方法不会启用空闲软件加密。只能使用完成此操作 <block ref="156163f61ad8e976859b5234666eb7c2" category="inline-link-macro-rx"></block> 使用 `enableSoftwareEncryptionAtRest` 设置为 `true` 。</block>
   <block id="79c6818b5a784bd2a9784bba4752ebda" category="paragraph">启用空闲加密后，集群会自动在内部管理集群中每个节点上的驱动器的加密密钥。</block>
   <block id="489e484d3d1ef6568aa27e2d4d7b4bb2" category="admonition">此过程是异步的，在启用加密之前返回响应。您可以使用 `GetClusterInfo` 方法轮询系统以查看此过程何时完成。</block>
@@ -10978,8 +10504,6 @@
   <block id="9b2b1e8f398acbac5493461c590118f6" category="inline-link">完全关闭节点并断开电源</block>
   <block id="2233d6c0637a0dd985141fefd60451a0" category="cell">您还必须花费130到160分钟<block ref="b75cb1417453c96f34f9e695ad57b88f" category="inline-link-rx"></block> 对于每个H610S节点。</block>
   <block id="0fe84530e14d6cb77f51c3d2cc85aa18" category="paragraph">^2^如果将写入IOPS负载较重的集群与较长的固件更新时间结合使用、则数据同步时间将会增加。</block>
-  <block id="7275696d9abdd4848d9921861f886410" category="inline-link">Element 12.3.x文档</block>
-  <block id="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="list-text"><block ref="b3c5f594b6d2e3e6a1ff3b84dd766edf" category="inline-link-rx"></block></block>
   <block id="87c6849449248757341d19789f0ecb83" category="doc">使用SSH访问存储节点以进行基本故障排除</block>
   <block id="ed66fa0901c1a26113d52acbb6ee20dd" category="paragraph">从Element 12.5开始、您可以使用存储节点上的sfreadonly系统帐户进行基本故障排除。您还可以为NetApp支持启用并打开远程支持通道访问、以执行高级故障排除。</block>
   <block id="d1ac7db9c842ceaac83404d4d52e800f" category="paragraph">通过sfreadonly系统帐户、可以运行基本的Linux系统和网络故障排除命令、包括`ping`。</block>
@@ -11046,7 +10570,6 @@
   <block id="5b86bf0a1903cc9047cd68ef97be17fa" category="inline-link-macro">管理节点12.5.</block>
   <block id="3dcbe7b9be7ae83a929a25e122289702" category="list-text"><block ref="3dcbe7b9be7ae83a929a25e122289702" category="inline-link-macro-rx"></block></block>
   <block id="bb1c0a162d9f9097c1240465ee88a28f" category="inline-xref-macro">SignSshKeys</block>
-  <block id="c18a99f1dc2b3908dae3bf0a63b5a439" category="list-text"><block ref="c18a99f1dc2b3908dae3bf0a63b5a439" category="inline-xref-macro-rx"></block></block>
   <block id="3ae6493bf18ba6963b40d7f9821c1a52" category="summary">在节点或集群上启用ssh后、您可以使用SignSshKeys方法以sfadmin或sfreadonly身份访问节点上的shell。sfreadonly是Element 12.5中的一个新用户帐户、可用于对节点进行初始故障排除、但缺少执行提升命令的权限。</block>
   <block id="a7917a2f080408ce1e230f197d5433cd" category="inline-link-macro">EnableSSH方法</block>
   <block id="6dda290cb72d73d469f631c0dfd2e0f3" category="paragraph">使用在集群上启用SSH后 <block ref="7d9609f81e054cdd171756b31fbc7560" category="inline-link-macro-rx"></block>、您可以使用`SignSshKeys`方法访问节点上的Shell。</block>
@@ -11125,7 +10648,6 @@
   <block id="5c2dfac41e0fdae2b2af5a185bd13a44" category="list-text">*二级节点ID*：此卷的二级节点列表。在过渡状态期间可以是多个值、例如二级节点更改、但通常只有一个值。</block>
   <block id="92cbb89e687486d046f0af2031e1de69" category="list-text">* QoS限制*：确定卷是否因主存储节点上的高负载而受到限制。</block>
   <block id="16deeb1542b48d5c3cc48574bd812c77" category="list-text">支持管理员</block>
-  <block id="da55ae5c0f3e2b8fbec3529ced565e0a" category="paragraph"><block ref="da55ae5c0f3e2b8fbec3529ced565e0a" category="inline-link-macro-rx"></block></block>
   <block id="74fdf94991a3d3c1590a208535b101cc" category="list-text">【csum_event】* cSumEvent*</block>
   <block id="2c33c7444ec9022ae43511db98615b15" category="paragraph">与端到端校验和验证期间检测到校验和不匹配相关的事件。</block>
   <block id="a86825a9c36bcf223a89c3eaa4ee8ad8" category="paragraph">检测到校验和不匹配的服务会在生成此事件后自动停止且不重新启动。</block>
@@ -11171,10 +10693,6 @@
   <block id="24918f39116096f98dc92e1125b8a780" category="list-text"><block ref="24918f39116096f98dc92e1125b8a780" category="inline-link-macro-rx"></block></block>
   <block id="0de8022e52b232dc0912129174158b7b" category="list-text"><block ref="0de8022e52b232dc0912129174158b7b" category="inline-link-macro-rx"></block></block>
   <block id="93b99f5d3cef7af59adc0f899dddf1e1" category="list-text"><block ref="93b99f5d3cef7af59adc0f899dddf1e1" category="inline-link-macro-rx"></block></block>
-  <block id="7e33105c99e1040a1b09764052c96bf6" category="list-text"><block ref="7e33105c99e1040a1b09764052c96bf6" category="inline-xref-macro-rx"></block></block>
-  <block id="b9d025f755210db0c30935ae2494f820" category="list-text"><block ref="b9d025f755210db0c30935ae2494f820" category="inline-xref-macro-rx"></block></block>
-  <block id="9eecd7c0744f77d1f15658bd0a02f1b2" category="list-text"><block ref="9eecd7c0744f77d1f15658bd0a02f1b2" category="inline-xref-macro-rx"></block></block>
-  <block id="482c5ad7089a563e0fe0fbc1a8647e77" category="list-text"><block ref="482c5ad7089a563e0fe0fbc1a8647e77" category="inline-xref-macro-rx"></block></block>
   <block id="ec0b9fb2fa43e46443eb0f7087291fb5" category="list-text"><block ref="ec0b9fb2fa43e46443eb0f7087291fb5" category="inline-link-macro-rx"></block></block>
   <block id="324fcb27182f60b1051fad39c080b193" category="doc">备份卷快照</block>
   <block id="cd7c96dd340046e8b1a1ed84b73227c0" category="summary">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。您还可以管理 SolidFire 存储系统的集群管理员帐户。</block>
@@ -11337,7 +10855,6 @@
   <block id="07800d7fa4e084c955b9006d30b6eed1" category="paragraph">远程插件</block>
   <block id="b8ffa41d4e492f0fad2f13e29e1762eb" category="paragraph">8333</block>
   <block id="5b3a5766ccd94c0ef0148e61340c831e" category="paragraph">远程vCenter插件服务</block>
-  <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">使用适用于vCenter Server 4.x的Element插件升级到VMware vCenter Server 7.0 Update 3时、此插件无法部署。要使用Spring Framework 4解决此问题描述 、请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">对于已注册适用于VMware vCenter Server的NetApp Element 插件的现有vSphere环境、您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter插件5.0或更高版本</block>
   <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter插件4.10或更早版本</block>
@@ -11666,7 +11183,6 @@
   <block id="0ef08fdd0340f572cb03ddb8029b8c00" category="inline-link">Element软件设置存储文档</block>
   <block id="0fcfcb5f175964f2dab3656b95eb1133" category="paragraph">此时、节点便可启动并进行配置。请参见<block ref="4e28ca504cf133ef5899b8bf7fd569d6" category="inline-link-rx"></block> 配置存储节点。</block>
   <block id="5e91308d5923accb9d096d078492d886" category="inline-xref-macro">返回出厂映像信息</block>
-  <block id="42852fd7f6900d56a8835bef7add4b3a" category="list-text"><block ref="42852fd7f6900d56a8835bef7add4b3a" category="inline-xref-macro-rx"></block></block>
   <block id="828fd8dc16d0a2aa09370d21cb2adfe6" category="summary">NetApp SolidFire 存储系统使用RTFI过程将软件映像写入新节点或将节点还原到其原始出厂状态。</block>
   <block id="eb7ba68c068d694268bb66cba17505c4" category="doc">配置恢复出厂映像</block>
   <block id="794ea7c2fbea7a73f8dce13333c20292" category="paragraph">NetApp SolidFire 存储系统可使用恢复出厂映像(Return to Factory Image、RTFI)过程将软件映像写入新节点或将节点还原到其原始出厂状态。RTFI过程会安全擦除所有现有数据和配置(如果有)、并安装未配置的NetApp Element 软件映像。RTFI进程可用于所有SolidFire 节点。</block>
@@ -11785,8 +11301,6 @@
   <block id="c192e3c2dbd374233d4685406db01520" category="paragraph">如果要在打开节点电源并在维护后验证其运行状况是否良好时留出更多时间、请联系技术支持以帮助延迟数据同步以防止不必要的箱同步。</block>
   <block id="eef615f9029df3b19885b836d67d03a3" category="inline-link">如何正常关闭和启动NetApp Solidfire/HCI存储集群</block>
   <block id="b8c22947a9d726cf79f399d361ecc7a2" category="paragraph"><block ref="b8c22947a9d726cf79f399d361ecc7a2" category="inline-link-rx"></block></block>
-  <block id="89291581fd8be1d9caf505e74fd0773e" category="list-text"><block ref="89291581fd8be1d9caf505e74fd0773e" category="inline-link-macro-rx"></block></block>
-  <block id="a339aaae279fb4166b4ea4a6575b8e54" category="list-text"><block ref="a339aaae279fb4166b4ea4a6575b8e54" category="inline-link-macro-rx"></block></block>
   <block id="19facef57cccdb14f71deeb221363ad9" category="paragraph"><block ref="19facef57cccdb14f71deeb221363ad9" category="inline-link-rx"></block></block>
   <block id="5a4b8b3924bb822fd8c6ae8c1c9b7030" category="paragraph">您可以向NetApp HCI 设备添加节点。</block>
   <block id="1a6db061a54638a3fdcefd71c9bfd9ad" category="paragraph">添加节点的过程完成后、这些节点将显示在"Active nodes"列表中。在此之前，待定节点将显示在 "Pending Active" 列表中。</block>
@@ -11803,9 +11317,7 @@
   <block id="e3b4df69e2fe4e8545e5e0240eada6a2" category="list-text"><block ref="e3b4df69e2fe4e8545e5e0240eada6a2" category="inline-link-rx"></block></block>
   <block id="bc392d110b36a51cd536073024a5f532" category="list-text">对于 H410S 和 H610S 节点， <block ref="1ed294287e7a2515c794c51e2936136d" category="inline-link-macro-rx"></block>。</block>
   <block id="dcf69453f88a169ec3e3e6fae67d435e" category="list-text"><block ref="dcf69453f88a169ec3e3e6fae67d435e" category="inline-link-macro-rx"></block></block>
-  <block id="ecec8bb5649856a856a861a75e4daa84" category="paragraph"><block ref="ecec8bb5649856a856a861a75e4daa84" category="inline-link-macro-rx"></block></block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相关信息</block>
-  <block id="521e8e8587c418fa92f54811f8954007" category="list-text"><block ref="521e8e8587c418fa92f54811f8954007" category="inline-link-macro-rx"></block></block>
   <block id="29e13a3bca7d11d4ebec7e6356a5b466" category="cell">*存储固件包2.175.0*</block>
   <block id="022beb4c9e2bdbe9e3398445a4fad6b2" category="cell">2023年6月15日</block>
   <block id="804066a6a5042090a2a0b25c55f38e72" category="cell">3.5.</block>
@@ -11848,7 +11360,6 @@
   <block id="abeecd47abec11fdd3daaa8a3239958a" category="list-text"><block ref="abeecd47abec11fdd3daaa8a3239958a" category="inline-link-macro-rx"></block></block>
   <block id="165ffb421393136ac7930e23c971a009" category="inline-link-macro">存储固件包2.175.0的注意事项</block>
   <block id="3196b7dfc407df76dfe72528882d792a" category="list-text"><block ref="3196b7dfc407df76dfe72528882d792a" category="inline-link-macro-rx"></block></block>
-  <block id="ea52eab386a36623963eee64d8468c76" category="admonition">管理服务2.22.7包括适用于vCenter Server 5.0的Element插件、该插件包含远程插件。如果您使用Element插件、则应升级到管理服务2.22.7或更高版本、以符合取消对本地插件支持的VMware指令。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">此升级操作步骤包括以下升级情形：</block>
   <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">您要升级到8.0或7.0 HTML5 vSphere Web Client。</block>
   <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">从适用于vCenter Server 4.x的Element插件升级到5.x时、由于无法将数据从vCenter实例复制到远程插件、因此已配置此插件的集群将丢失。您必须将集群重新添加到远程插件。这是从本地插件升级到远程插件时的一次性活动。</block>
@@ -11866,7 +11377,6 @@
   <block id="0e9706d9713372bb21a3b9f917953dbc" category="paragraph">JSON 列表 <block ref="5820461afa2bd9ee99130d755eddf7ff" category="inline-link-macro-rx"></block> 对象。</block>
   <block id="bd74837c55aafce98fe5823bae9ee413" category="list-text">如果正在执行分区同步、则将卷回滚到组快照可能会失败。重试<block ref="05667fca9ff503d9b750747f0075d35a" prefix=" " category="inline-code"></block> 同步完成后。</block>
   <block id="f1e1734ea4e6ef5a6bd73e15cffa128a" category="paragraph"><block ref="f2803c84f404a81af41a23542245cebc" category="inline-link-macro-rx"></block> 数组</block>
-  <block id="954e95e0241c7b3a74f9c6a194795355" category="admonition">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="51ab6f075e7b9b2d3276f61c0b11b186" category="inline-link-macro-rx"></block>。您可以使用<block ref="2132cae62c1d77dfa3dd7c3447c77cf5" prefix=" " category="inline-code"></block> <block ref="e5fb14b37e1fdc8a835f7ed4e33c1c63" category="inline-link-macro-rx"></block>。</block>
   <block id="f2803c84f404a81af41a23542245cebc" category="paragraph"><block ref="f2803c84f404a81af41a23542245cebc" category="inline-link-macro-rx"></block></block>
   <block id="2896bd9b7f534d42f996fc5910e2ad40" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block> 数组</block>
   <block id="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block></block>
@@ -11931,8 +11441,6 @@
   <block id="3d08f19c985682eb2a632e36184cedd2" category="paragraph"><block ref="3d08f19c985682eb2a632e36184cedd2" category="inline-link-rx"></block></block>
   <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
-  <block id="30486cdfdde2444e4151845599ac5bf5" category="inline-link">Element 12.5文档</block>
-  <block id="7923ddc778825f970802562c563718d7" category="list-text"><block ref="7923ddc778825f970802562c563718d7" category="inline-link-rx"></block></block>
   <block id="6580584049ef8cc78e6be1833466e606" category="inline-link-macro">NetApp Element软件和ONTAP之间的复制(ONTAP命令行界面)</block>
   <block id="9051badc24841b5e2521cd8790e8f7d8" category="paragraph">有关详细信息，请参见 <block ref="5aaa67c40a6461657bd1345524045131" category="inline-link-macro-rx"></block>。</block>
   <block id="39f2369f3b77569b78b2438bb261689c" category="summary">在使目标卷可写后，您必须为该卷配置数据访问。在重新激活源卷之前， SAN 主机可以从目标卷访问数据。</block>
@@ -12090,7 +11598,6 @@
   <block id="df857cb0f08264825fefa55878d286ce" category="paragraph">以下示例将使用默认策略创建统一复制关系<block ref="37e459201e5691c90f616e05271f4ba3" prefix=" " category="inline-code"></block>：</block>
   <block id="97fedbfaebdbcfe68bdc2db0e517c79e" category="paragraph">以下示例将使用策略创建统一复制关系<block ref="4403b8bed8329a1a1ba838d590fec221" prefix=" " category="inline-code"></block>：</block>
   <block id="ea71844b20a2af889daba2027461836d" category="paragraph">以下示例将使用自定义策略创建统一复制关系<block ref="7d06ce743afb94fd7161f90acba5f66a" prefix=" " category="inline-code"></block>：</block>
-  <block id="dca879936ace6cbca538e4b03fc5f880" category="paragraph">您必须先创建 SnapMirror 端点，然后才能创建复制关系。您只能在Element软件Web UI中或使用执行此任务<block ref="9641b9cb3efec10f08ee0a17e27a64d6" category="inline-link-macro-rx"></block>。</block>
   <block id="410d41840bfe4c79d1cbcbad970381ce" category="paragraph">您必须已在 Element 集群上启用 SnapMirror 。</block>
   <block id="5759c23faeaf56d63eb3bea8d1a94825" category="list-text">在 * 创建新端点 * 对话框中，输入 ONTAP 集群管理 IP 地址。</block>
   <block id="d761d08865080249d5b15ce3eeea8150" category="list-text">输入 ONTAP 集群管理员的用户 ID 和密码。</block>
@@ -12204,7 +11711,6 @@
   <block id="6ee6e98dd3f706a9d56d48dbe0b25dcb" category="doc">在Element和ONTAP集群之间使用SnapMirror复制(Element UI)</block>
   <block id="15fdfbff97a006d7f8dd45be7301f5f3" category="list-text"><block ref="15fdfbff97a006d7f8dd45be7301f5f3" category="inline-link-macro-rx"></block></block>
   <block id="5a0614fc36540b946021f186f3ba6c85" category="sidebar">NetApp Element软件和ONTAP之间的复制(ONTAP命令行界面)</block>
-  <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">概述</block>
   <block id="24f47cdbe9ddba774a7cc53e51d9032e" category="sidebar">工作流</block>
   <block id="49bd24b89b4d379ec9d1baed92d0973e" category="sidebar">在 Element 软件中启用 SnapMirror</block>
   <block id="0dc35b344be5654356d1a015d4e8ceac" category="sidebar">配置复制关系</block>
@@ -12239,7 +11745,6 @@
   <block id="ca5bd77a41b5024709aa0c976742b627" category="paragraph">禁用集群功能。可能值：</block>
   <block id="b1e9ed0268988420a784ad80c03e59d5" category="list-text"><block ref="02d9b6b9cb591592d0f848c16ce0627a" prefix="" category="inline-code"></block>：对实际IOPS而不是最小IOPS禁用分区平衡。</block>
   <block id="e76af95319f03251bdf6c3771f39afbe" category="paragraph">12.8</block>
-  <block id="20b0ad010903f7b2d428d021e0c7d07f" category="list-text"><block ref="20b0ad010903f7b2d428d021e0c7d07f" category="inline-xref-macro-rx"></block></block>
   <block id="e2d508b5a306e7983664021f6348fbff" category="paragraph">卷LoadBalanceOn实际IopsState</block>
   <block id="2f422ae686124762f34b256f66599041" category="paragraph">基于实际IOPS而非最小IOPS功能的分区平衡状态。从Element 12.8开始提供。</block>
   <block id="505be3e758aee452e5c40a4250623ef3" category="cell"><block ref="16611c4971284ff4b42c5d19de7c4fc6" prefix="" category="inline-code"></block></block>
@@ -12314,7 +11819,6 @@
   <block id="2cec258fd66ace0725a9af6922c80f3e" category="section-title">第5步：配置控制器资产</block>
   <block id="b5d27a207b01cd3ca9fef9594d50836f" category="paragraph">找到安装ID并添加vCenter控制器资产。</block>
   <block id="e667096facd9382b6410238147c6bd7d" category="inline-xref-macro">启用和禁用卷负载平衡</block>
-  <block id="11bdcf58ce21896925e2cbc1f2174d99" category="list-text"><block ref="11bdcf58ce21896925e2cbc1f2174d99" category="inline-xref-macro-rx"></block></block>
   <block id="6c7b496a2d02d11880156e116d65fdae" category="paragraph">如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误消息、指出Element 12.x不支持此节点</block>
   <block id="b8857076c45a770e167d021272059208" category="list-text">*CHAP*</block>
   <block id="9cfc902e020fbc18dd2aff7989d4d45f" category="paragraph">iSCSI会话的CHAP算法。如果未使用CHAP算法，则会显示一个短划线(-)。从Element 12.8开始提供。</block>
@@ -12397,7 +11901,152 @@
   <block id="c759706a0ac25a6b9701339b7c7959d4" category="list-text">管理服务 2.27 捆绑包包含适用于 vCenter Server 5.5 的 Element Plug-in，该插件仅与管理节点 12.8 兼容。当您更新到管理服务 2.27 时，您必须更改升级顺序并在升级到 Element 12.8 之后更新管理服务包，以使管理节点和管理服务之间兼容。</block>
   <block id="aebb2147cc4f1c96830ec15bbe8bbaaa" category="list-text">如果您要更新到管理服务 2.21.61 到 2.26.40，则必须在升级到 Element 12.8 之前更新管理服务包。</block>
   <block id="a364164cb135a0ea8d140eae7c98e606" category="admonition">如果您要将管理服务更新到版本 2.16 或更高版本，并且正在运行管理节点 11.3 到 11.8，则需要在更新管理服务之前增加管理节点 VM 的 RAM。</block>
-  <block id="e4ccb22f69b8be133f5125883186655e" category="paragraph">管理服务 2.22.7 捆绑包包含适用于 vCenter Server 5.0 的 Element 插件，其中包含远程插件。如果您使用 Element 插件，则应升级到管理服务 2.22.7 或更高版本，以符合 VMware 取消本地插件支持的指令。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block> 。</block>
   <block id="f09175d59684197ed7788662b7cd5fe4" category="list-text">您正在升级到适用于 vCenter Server 5.5、5.4、5.3、5.2、5.1 或 5.0 的 Element 插件。</block>
   <block id="6eb41496b0f7ef5be359156d440fc5ea" category="paragraph">您应该会看到以下版本详细信息：</block>
+  <block id="38006815c2d6797731372271112d9373" category="doc">了解如何使用 Element API 管理存储</block>
+  <block id="40bd7949d1298291711b264be4b00d65" category="inline-link-macro">了解常见物品</block>
+  <block id="4578d5ac86bbb2cb7aebddbb7236c366" category="paragraph"><block ref="4578d5ac86bbb2cb7aebddbb7236c366" category="inline-link-macro-rx"></block></block>
+  <block id="3b92e94d757bc4b2d6ca5bb435a7b1eb" category="inline-link-macro">了解常用方法</block>
+  <block id="3cf8af83b19a9fba7e79293a9eb8d2eb" category="paragraph"><block ref="3cf8af83b19a9fba7e79293a9eb8d2eb" category="inline-link-macro-rx"></block></block>
+  <block id="5ea19f14dcef04ac6dd98e5768786e9f" category="inline-link-macro">了解帐户 API 方法</block>
+  <block id="c7c99a4a6f24a31bcf7dc68951835f05" category="paragraph"><block ref="c7c99a4a6f24a31bcf7dc68951835f05" category="inline-link-macro-rx"></block></block>
+  <block id="6d578781b5bee3e971baec447d06612c" category="inline-link-macro">了解管理员 API 方法</block>
+  <block id="cdb713e24fde7424306476425b677745" category="paragraph"><block ref="cdb713e24fde7424306476425b677745" category="inline-link-macro-rx"></block></block>
+  <block id="ded50427543eb87733d7ac6e68e79b24" category="inline-link-macro">了解集群 API 方法</block>
+  <block id="00ae1f75b0c9cec52e9827d766f2a9f0" category="paragraph"><block ref="00ae1f75b0c9cec52e9827d766f2a9f0" category="inline-link-macro-rx"></block></block>
+  <block id="57a0b277e5bc33fa133ed50fee2e39c7" category="section-title">集群创建 API 方法</block>
+  <block id="ed23ae983fdf44661032ebde203dc482" category="inline-link-macro">了解集群创建 API 方法</block>
+  <block id="124da988a52d4207ceb89c16326011cd" category="paragraph"><block ref="124da988a52d4207ceb89c16326011cd" category="inline-link-macro-rx"></block></block>
+  <block id="d9d1e170360eff3d6edce6bc5ac15a96" category="inline-link-macro">了解驱动 API 方法</block>
+  <block id="5e9433f622f3e361d08462d5a08f3d8e" category="paragraph"><block ref="5e9433f622f3e361d08462d5a08f3d8e" category="inline-link-macro-rx"></block></block>
+  <block id="62fa9ed31a0af15c97f780cd87f25381" category="inline-link-macro">了解光纤通道 API 方法</block>
+  <block id="4457a6a1ca92211921542868b85b5b46" category="paragraph"><block ref="4457a6a1ca92211921542868b85b5b46" category="inline-link-macro-rx"></block></block>
+  <block id="370d2ecef37b0cc5db14d83a803597ad" category="inline-link-macro">了解发起方 API 方法</block>
+  <block id="b1a767eb796bc11f97901079842a7509" category="paragraph"><block ref="b1a767eb796bc11f97901079842a7509" category="inline-link-macro-rx"></block></block>
+  <block id="7562d0217e1eccbfdc900679649ac9ca" category="inline-link-macro">了解 LDAP API 方法</block>
+  <block id="b34c7a3d77923230a75cf50a69eee807" category="paragraph"><block ref="b34c7a3d77923230a75cf50a69eee807" category="inline-link-macro-rx"></block></block>
+  <block id="1b548dd571e7b1c41e339abb76dc924e" category="inline-link-macro">了解多因素身份验证 API 方法</block>
+  <block id="2ac8a8736df86e8eb19f702b64ef7159" category="paragraph"><block ref="2ac8a8736df86e8eb19f702b64ef7159" category="inline-link-macro-rx"></block></block>
+  <block id="8172440761c661f1941d5d6c65069c9d" category="inline-link-macro">了解会话身份验证 API 方法</block>
+  <block id="4e9cc39691af16843ca7ad396617efb2" category="paragraph"><block ref="4e9cc39691af16843ca7ad396617efb2" category="inline-link-macro-rx"></block></block>
+  <block id="f819b8f6d221fd4aa50d74a412108025" category="inline-link-macro">了解节点 API 方法</block>
+  <block id="34af33ae2a99373f4511702b88847bf5" category="paragraph"><block ref="34af33ae2a99373f4511702b88847bf5" category="inline-link-macro-rx"></block></block>
+  <block id="9c03f6d80c84f803902b0ff79d98d9e1" category="inline-link-macro">了解复制 API 方法</block>
+  <block id="6d1632d14578c40d0d308a02cc89346c" category="paragraph"><block ref="6d1632d14578c40d0d308a02cc89346c" category="inline-link-macro-rx"></block></block>
+  <block id="b0b14e85a9b499927039df02a87a9fef" category="inline-link-macro">了解安全 API 方法</block>
+  <block id="68b536e8a6234c629689f138bf5c454d" category="paragraph"><block ref="68b536e8a6234c629689f138bf5c454d" category="inline-link-macro-rx"></block></block>
+  <block id="18ecccb5c7bc7faf2056f1d725392c7c" category="inline-link-macro">了解SnapMirror API 方法</block>
+  <block id="2c312fe128c03166a4c2ccff84807846" category="paragraph"><block ref="2c312fe128c03166a4c2ccff84807846" category="inline-link-macro-rx"></block></block>
+  <block id="514d5031baaa75100c7423f5e928c0c6" category="inline-link-macro">了解系统配置 API 方法</block>
+  <block id="de425d2f986fb86cbf425dd2ce1207c0" category="paragraph"><block ref="de425d2f986fb86cbf425dd2ce1207c0" category="inline-link-macro-rx"></block></block>
+  <block id="5050f648b467b878093533590c1d2765" category="inline-link-macro">了解多租户网络 API 方法</block>
+  <block id="060a5b6b1ecfe648bc7a89c614563d5c" category="paragraph"><block ref="060a5b6b1ecfe648bc7a89c614563d5c" category="inline-link-macro-rx"></block></block>
+  <block id="13156ce47edfd18ce4bdea4d2cbb50bc" category="inline-link-macro">了解卷 API 方法</block>
+  <block id="c03233eba0e66aa377799acc9f113599" category="paragraph"><block ref="c03233eba0e66aa377799acc9f113599" category="inline-link-macro-rx"></block></block>
+  <block id="970f0830b3b239629f93fdda06c7d209" category="inline-link-macro">了解卷访问组 API 方法</block>
+  <block id="cb0fc29223bffa19eae7789db6740fb9" category="paragraph"><block ref="cb0fc29223bffa19eae7789db6740fb9" category="inline-link-macro-rx"></block></block>
+  <block id="34e9b94d39e5f3ea3bf6ab54724c7c18" category="inline-link-macro">了解卷快照 API 方法</block>
+  <block id="a6eb3afcb89075623846a88d6767fd99" category="paragraph"><block ref="a6eb3afcb89075623846a88d6767fd99" category="inline-link-macro-rx"></block></block>
+  <block id="ebc74a024965f6f731a0d675fad114f8" category="inline-link-macro">了解虚拟卷 API 方法</block>
+  <block id="229bde9babe546b08a94c17fbef90984" category="paragraph"><block ref="229bde9babe546b08a94c17fbef90984" category="inline-link-macro-rx"></block></block>
+  <block id="e7d0e70ab185af3096a889f5850e7526" category="list-text">要查看集群上静态加密、静态软件加密或两者的当前状态，请使用以下方法： <block ref="d274ae55f8f22fd98ab9b057453f6128" category="inline-link-macro-rx"></block>。你可以使用<block ref="2132cae62c1d77dfa3dd7c3447c77cf5" prefix=" " category="inline-code"></block> <block ref="bd5bc3e1755ad5880958398f3551c67d" category="inline-link-macro-rx"></block>。</block>
+  <block id="98b9f5f5af5f030a19cfb5076d232144" category="paragraph"><block ref="98b9f5f5af5f030a19cfb5076d232144" category="inline-link-macro-rx"></block></block>
+  <block id="15b6b717f63a2a35cd6f1bc33197bf0e" category="paragraph">要配置 MFA，请参阅 <block ref="842ac77307f6063e4f92aa198e8d5609" category="inline-link-macro-rx"></block> 文档。</block>
+  <block id="f011780d7563c7b888cd40ed337fa3b9" category="doc">了解SolidFire架构</block>
+  <block id="0e0184683b928cb56ed6a57775048c23" category="paragraph">查看相关信息 <block ref="6846dbb5bc170871ce73e182ff73fbe8" category="inline-link-macro-rx"></block>。</block>
+  <block id="b2670dc806bd6104f3f14ade84d2dee2" category="list-text">为每个要添加的默认时间服务器添加新行。默认时间服务器必须与存储集群上使用的 NTP 服务器相同。 <block ref="7ae058b40dffa4b76fb639a1f356f82d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0c1b6638ad6560e93488d2459485b2ef" category="admonition">完成时间同步配置后，请勿编辑 NTP 设置，因为这会影响您运行以下命令时的 NTP 设置。 <block ref="6794964090dee776822d90a0f1bf00df" category="inline-xref-macro-rx"></block> 在管理节点上。</block>
+  <block id="30176c0725d64abea2ea8b440b94fe89" category="list-text">*--storage_mvip (-sm) [MVIP 地址]*: 运行 Element 软件的存储集群的管理虚拟 IP 地址 (MVIP)。配置管理节点时，请使用与您在配置过程中使用的相同的存储集群。 <block ref="004b6e1265f35d7375c2fee14c53629f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="75a496c62dd615cc8f50584ff1a8b88a" category="list-text"><block ref="fd0db6cc2593d84123873433182a6b26" category="inline-xref-macro-rx"></block>使用节点级用户界面 <block ref="7a7f42f611774e8107e0ed32d4b707f2" prefix="(" category="inline-code"></block>）配置节点网络设置。</block>
+  <block id="35d66fa995c54605e9a1f7f03a9bd42f" category="paragraph">您必须添加扩展名<block ref="65778ce6afafe9fc8742fe8dcf019b7c" prefix=" " category="inline-code"></block> 访问节点；例如，<block ref="8c45b71028036f0ed7af697b78382b45" prefix=" " category="inline-code"></block>。</block>
+  <block id="599311a9445889547a3aab6b9bdcb94f" category="doc">了解如何设置存储</block>
+  <block id="5ed393d19b0a119f39a27946a57298ef" category="list-text"><block ref="5ed393d19b0a119f39a27946a57298ef" category="inline-link-macro-rx"></block></block>
+  <block id="d1d8a420fd7cbc52e4180c12d202acb0" category="list-text"><block ref="d1d8a420fd7cbc52e4180c12d202acb0" category="inline-link-macro-rx"></block></block>
+  <block id="1a74b7b1292d70be634a98100c777f00" category="paragraph">在机架单元中安装并连接光纤通道节点并通电后，您可以使用 Element 软件设置一个包含光纤通道节点的集群并对其进行管理。然后，您可以安装和配置存储系统中的其他组件。</block>
+  <block id="b254c421d245be4ca380ce1a75b8ed59" category="list-text"><block ref="b254c421d245be4ca380ce1a75b8ed59" category="inline-xref-macro-rx"></block></block>
+  <block id="f7a68db12b81239dd5684ec3fe1abb16" category="list-text"><block ref="f7a68db12b81239dd5684ec3fe1abb16" category="inline-link-macro-rx"></block></block>
+  <block id="c2b6b50b3eac63e0d692778cfc814599" category="doc">了解如何管理卷和虚拟卷</block>
+  <block id="f8eceed812d22c011d3bf365a306264f" category="inline-link-macro">了解如何处理卷</block>
+  <block id="2e14a27da4cf552e7570abdf11da77b0" category="paragraph"><block ref="2e14a27da4cf552e7570abdf11da77b0" category="inline-link-macro-rx"></block></block>
+  <block id="f228d64f29f703f5d44206d4ddfc5085" category="inline-link-macro">了解如何使用虚拟卷</block>
+  <block id="30150e58b865a79a46e1d1e7fb9bcff9" category="paragraph"><block ref="30150e58b865a79a46e1d1e7fb9bcff9" category="inline-link-macro-rx"></block></block>
+  <block id="313ece5bad9e9b2eaf08033803781263" category="inline-link-macro">了解如何与批量访问组和发起者合作</block>
+  <block id="6f7c9920ada01bc0b64ef0669fff0a96" category="paragraph"><block ref="6f7c9920ada01bc0b64ef0669fff0a96" category="inline-link-macro-rx"></block></block>
+  <block id="447507941fd77282c9adc62ce271e9c4" category="doc">了解装订</block>
+  <block id="e1f6256b161a08e8d1144ef7cefee8e2" category="doc">了解协议端点</block>
+  <block id="dc0d7bbf3a702c9552a506e8d0de88bf" category="doc">从集群中移除节点</block>
+  <block id="2a48a39a247f3b84d5d85852f9220d53" category="paragraph">有关 API 方法的信息，请参阅 <block ref="2debd1d6ee6a4f0d9795fd6df49483be" category="inline-link-macro-rx"></block>。</block>
+  <block id="9c587a62a632d5226176cb45e41599c5" category="paragraph">看<block ref="a568d7f2b20ddba316a9784a52841581" category="inline-link-macro-rx"></block>。</block>
+  <block id="9e888a162d98e42cb5f91d3aa57cec21" category="paragraph"><block ref="9e888a162d98e42cb5f91d3aa57cec21" category="inline-link-macro-rx"></block></block>
+  <block id="bf1950c026d77553cd25c1f3ae714e0b" category="image-alt">常规设置信息的屏幕截图</block>
+  <block id="9f029d74c25415824936340cebe4e386" category="image-alt">创建新用户页面的屏幕截图</block>
+  <block id="3d0476d3827186e3e77b83c794250a8e" category="list-text"><block ref="3d0476d3827186e3e77b83c794250a8e" category="inline-link-macro-rx"></block></block>
+  <block id="f025b0637e0cf7a1d59afad4e35c5895" category="list-text"><block ref="f025b0637e0cf7a1d59afad4e35c5895" category="inline-link-macro-rx"></block></block>
+  <block id="3d5392b171e241c8fa3978de56f0915d" category="list-text"><block ref="3d5392b171e241c8fa3978de56f0915d" category="inline-link-macro-rx"></block></block>
+  <block id="deac96d81210e7ff46cc02bec10b7147" category="list-text"><block ref="deac96d81210e7ff46cc02bec10b7147" category="inline-link-macro-rx"></block></block>
+  <block id="a2c54db995cf07f4af873053bea3139b" category="list-text"><block ref="a2c54db995cf07f4af873053bea3139b" category="inline-link-macro-rx"></block></block>
+  <block id="5bf43404bbbe9032ab3d094a032781cc" category="paragraph">以下列表描述了从每个节点的 UI 的“集群设置”页面中指定的存储节点的集群设置。 <block ref="6f8baca9ec3b2fcd10de861546e76a1f" prefix="(" category="inline-code"></block>）。</block>
+  <block id="c3e06ecaac3ef0496e62150500a6c4ae" category="paragraph">登录到存储节点后，您可以在“网络设置”页面上查看该节点的网络设置。 <block ref="810fdac9ab07c9174370eb2988460461" prefix="(" category="inline-code"></block>）。您可以选择 *Bond1G*（管理）或 *Bond10G*（存储）设置。以下列表描述了存储节点处于可用、待处理或活动状态时可以修改的设置：</block>
+  <block id="3b9dc6fbcca66e943c9464c577b4fa41" category="doc">了解 SNMP</block>
+  <block id="5c22e5219d776233b4cda507a642876f" category="paragraph">必须先创建SnapMirror端点，然后才能创建复制关系。您只能在 Element 软件的 Web 用户界面中或使用以下方式执行此任务： <block ref="bea83124712472e3ad9189fd87d85348" category="inline-link-macro-rx"></block>。</block>
+  <block id="adae2232f193b52e2418f29e27e7192c" category="paragraph">有关详细信息，请参阅<block ref="7c9ccf67cbcd4d22f2860599986afe0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="6fe445023c53496beeb4f49492c48fb1" category="paragraph">详情请参阅 API 参考信息。 <block ref="7c9ccf67cbcd4d22f2860599986afe0e" category="inline-link-macro-rx"></block></block>
+  <block id="af31bc68318bbba6f1df9018c7945899" category="paragraph">看<block ref="7c9ccf67cbcd4d22f2860599986afe0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e2958bad4006112a768281dd93e1264" category="list-text"><block ref="7e2958bad4006112a768281dd93e1264" category="inline-link-macro-rx"></block></block>
+  <block id="2fff5b28e7bc955460ca23e8fa1037a1" category="paragraph">有关每种方法的详细信息，请参见 <block ref="3d024d2c6b5389838d105cec0d300460" category="inline-link-macro-rx"></block>。</block>
+  <block id="fa5539f93112dc870fbf08864fa60c59" category="list-text"><block ref="df3d432a0eb80e20e39f7a2c72672521" category="inline-link-macro-rx"></block>如果两个集群都有集群管理员访问权限，则使用此方法。该方法利用远程集群的 MVIP 来配对两个集群。</block>
+  <block id="23846c2d5ba468b864cae6d5b80a9b87" category="list-text"><block ref="7dbce30fa481a9684c129e9a98286763" category="inline-link-macro-rx"></block>如果集群管理员只能访问其中一个集群，则可以使用此方法。该方法生成一个配对密钥，该密钥可用于目标集群以完成集群配对。</block>
+  <block id="35afa4511e0f82d2b300f7a679349ecc" category="paragraph">如果您只有源集群的集群管理员权限（您没有远程集群的集群管理员凭据），则可以使用配对密钥将一个卷与远程集群上的另一个卷配对。</block>
+  <block id="7a2809fa0d3d2fc0e6ce3dd3a30afaa4" category="paragraph">如果您拥有对要配对的卷所在的两个集群的集群管理员访问权限，则可以将一个卷与远程集群上的另一个卷配对。此方法使用远程集群上卷的卷 ID 来发起连接。</block>
+  <block id="0a91d6ede2370f2a1e2a8c666c3f913d" category="paragraph">有关 API 方法的详细信息，请参阅 <block ref="7c9ccf67cbcd4d22f2860599986afe0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="89942584e16472f3d931fb9cbfcc7426" category="doc">了解如何执行故障恢复到 Element 模式</block>
+  <block id="6c979e94767a361ae3939222dda3cfca" category="image-alt">源卷仍然存在时的故障恢复场景示意图</block>
+  <block id="ed628e4bca636d8c474a53234a956c8c" category="image-alt">源卷不存在时的故障恢复场景示意图</block>
+  <block id="6acbd0a90791cbfdff51b766a205275d" category="list-text"><block ref="6acbd0a90791cbfdff51b766a205275d" category="inline-link-macro-rx"></block></block>
+  <block id="04dd66c0a554040b80f85e847b75eeca" category="list-text"><block ref="04dd66c0a554040b80f85e847b75eeca" category="inline-link-macro-rx"></block></block>
+  <block id="27d54a3d157fbff3a8d1ed3b72efee87" category="doc">为 FIPS 驱动器功能准备元素集群</block>
+  <block id="42ad3a24c86c1c56abf1f5f2eff4e3ed" category="paragraph">查看详情<block ref="60a290a67d9dba5ca1d1753e33590011" prefix=" " category="inline-code"></block> 或者<block ref="1c5f383f3ac9b911d08b3648b8f61336" prefix=" " category="inline-code"></block> 在 <block ref="bac2c438784204c96e26c8a5c11d4ae6" category="inline-link-macro-rx"></block>。</block>
+  <block id="e237980cf7af90e900ecc3206ccbcaea" category="paragraph">每个 API 方法的详细信息可以在以下位置找到： <block ref="bac2c438784204c96e26c8a5c11d4ae6" category="inline-link-macro-rx"></block>。</block>
+  <block id="bafff9bdad71fd3349008219d8a324dc" category="admonition">您不再需要升级管理节点操作系统即可升级存储集群上的 Element 软件。如果管理节点版本为 11.3 或更高版本，则只需将管理服务升级到最新版本，即可使用NetApp Hybrid Cloud Control 执行 Element 升级。如果出于其他原因（例如安全修复）需要升级管理节点操作系统，请按照适用于您场景的管理节点升级程序进行操作。</block>
+  <block id="1b9b11cf826dc77c5808e068785f0c55" category="list-text">管理服务 2.22.7 包含适用于 vCenter Server 5.0 的 Element 插件，其中包含远程插件。如果您使用 Element 插件，则应升级到管理服务 2.22.7 或更高版本，以符合 VMware 移除对本地插件支持的指令。<block ref="5719b733797bc4f88e78d9d8a60841ce" category="inline-link-rx"></block>。</block>
+  <block id="27c9875f863497e46637e84e6fb83fe2" category="paragraph">升级 VMware vSphere 组件时，需要完成一些额外的步骤。对于安装了 vCenter Server Element 插件的系统，这些步骤是必要的。</block>
+  <block id="ac8996c6060818866c4ef31c79e8ae16" category="paragraph">升级到 VMware vCenter Server 7.0 Update 3 时，vCenter Server 4.x 的 Element 插件无法部署。要使用 Spring Framework 4 解决此问题，请参阅<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
+  <block id="395a3c1740623b721c41f9b5d140661a" category="paragraph">管理服务 2.22.7 版本包含适用于 vCenter Server 5.0 的 Element 插件，其中包含远程插件。如果您使用 Element 插件，则应升级到管理服务 2.22.7 或更高版本，以符合 VMware 移除对本地插件支持的指令。<block ref="5719b733797bc4f88e78d9d8a60841ce" category="inline-link-rx"></block>。</block>
+  <block id="477fddf989b9e56aa1eb2d6e37256f91" category="sidebar">当前和以前的版本说明</block>
+  <block id="713dd85792332e076bd91bf2caf0ef73" category="sidebar">Element API 软件</block>
+  <block id="5a94bb4ffe539e23df4446b96da2a080" category="sidebar">了解 Element 软件 API</block>
+  <block id="7b5220ddcbd32552b25bfb7948dc9495" category="sidebar">了解如何管理存储</block>
+  <block id="43e4b41a999571c2bce3bcce36f60fae" category="sidebar">了解部署后的配置选项</block>
+  <block id="3c2c9f3e1a975c6cd3b9293f91937eb2" category="sidebar">了解如何使用基本选项</block>
+  <block id="2d68714f69284a5b12bf47246aeb64fe" category="sidebar">API活动</block>
+  <block id="6851cd82df80f859214d0cd783bb20e0" category="sidebar">了解如何管理账户</block>
+  <block id="251002546d9a44045935894140c3e168" category="sidebar">了解如何管理您的系统</block>
+  <block id="fe712c517ba22d6e08809625072e3e88" category="sidebar">了解如何管理节点</block>
+  <block id="b3a4d534a5cdab1f9e2c1d81748b8a37" category="sidebar">了解如何管理虚拟网络</block>
+  <block id="a473b6920695e777272eb4a26dd384f1" category="sidebar">准备集群</block>
+  <block id="47ee7b43ea9f45d0dca3336e4f7e750a" category="sidebar">建立安全通信</block>
+  <block id="754082d512a54dd33083673f35979939" category="sidebar">了解外部密钥管理</block>
+  <block id="babe499e3fc6c3ca682fb9c388c5f58f" category="sidebar">了解如何保护您的数据</block>
+  <block id="b84c6b34e60f26069ce3ae4160bb5a8a" category="sidebar">了解如何使用卷快照</block>
+  <block id="7f5987b7182c248ed073f321f527e2db" category="sidebar">了解如何使用单个卷快照</block>
+  <block id="1617d774a3d46b26729a21a644d5d110" category="sidebar">了解如何备份卷快照</block>
+  <block id="845273917ccde9b84676b63c44f6891d" category="sidebar">了解如何使用群组快照</block>
+  <block id="6b1da093656ca105bd161db85d694c02" category="sidebar">了解如何安排快照</block>
+  <block id="02b5ac3e1bd55ec7e83f3319d32beb2b" category="sidebar">了解如何执行远程复制</block>
+  <block id="8a81547abd7f47ba2832885795ae7b58" category="sidebar">了解配对簇</block>
+  <block id="f953b821060f0402e0e6220d580dcbc5" category="sidebar">了解配对量</block>
+  <block id="f1f2eada5a1c1b2dad92a476b7628e29" category="sidebar">体积对</block>
+  <block id="a23fba5f2b165b6ac5725176c1421a70" category="sidebar">了解如何使用SnapMirror复制</block>
+  <block id="7d078f5dcc204bd5d1ba2ffdc146e59a" category="sidebar">了解SnapMirror标签</block>
+  <block id="eaf44284a26e244de1ef71cc18d56bbb" category="sidebar">了解灾难恢复</block>
+  <block id="c3a4fe895a4a7acb05aa172631933558" category="sidebar">了解如何执行故障恢复</block>
+  <block id="1e76ba7370bf11d4445b0235bed63b47" category="sidebar">了解如何使用ONTAP CLI 进行复制</block>
+  <block id="9e62d64657a21f29495f57a62974a51e" category="sidebar">了解如何备份和恢复卷</block>
+  <block id="1218e94eb31d97b135a5cd31ce8c1ee5" category="sidebar">系统事件</block>
+  <block id="e512eef8aa4d4325f3679d5566fe776f" category="sidebar">系统警报</block>
+  <block id="5f94ad33854d41ae5c0bca732c492a6f" category="sidebar">销量表现</block>
+  <block id="401ea405ada422dc57c71ecc462575ab" category="sidebar">iSCSI 会话</block>
+  <block id="872f6cff86593f6dadbf113566b2518c" category="sidebar">光纤通道会议</block>
+  <block id="b41e191265a87133dd55dbef64fbdca8" category="sidebar">了解如何排除驱动器故障</block>
+  <block id="5a4bef238f8c68aedf2579a9018edb5a" category="sidebar">学习如何使用每个节点的实用程序</block>
 </blocks>

@@ -66,7 +66,7 @@ image::hcc_volumes_icons.png[HCC 卷页面图标]
 .. * 启动程序 * ：您可以查看卷的 iSCSI 启动程序 IQN 或光纤通道 WWPN 。添加到访问组的每个 IQN 都可以访问组中的每个卷，而无需 CHAP 身份验证。添加到访问组的每个 WWPN 都可以通过光纤通道网络访问访问此访问组中的卷。
 .. * QoS 策略 * ：您可以查看应用于卷的 QoS 策略。QoS 策略会将最小 IOPS ，最大 IOPS 和突发 IOPS 的标准化设置应用于多个卷。
 +
-请参见有关的信息 link:../concepts/concept_data_manage_volumes_solidfire_quality_of_service.html#qos-performance.html["性能和 QoS 策略"]。
+查看相关信息 link:../concepts/concept_data_manage_volumes_solidfire_quality_of_service.html#qos-performance["性能和 QoS 策略"]。
 
 
 

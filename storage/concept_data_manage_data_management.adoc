@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: virtual volumes, volumes, manage 
 summary: 您可以从 Element UI 中的 Management 选项卡管理运行 Element 软件的集群中的数据。可用的集群管理功能包括创建和管理数据卷，用户帐户，卷访问组，启动程序和服务质量（ QoS ）策略。 
 ---
-= 管理卷和虚拟卷
+= 了解如何管理卷和虚拟卷
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,10 +13,62 @@ summary: 您可以从 Element UI 中的 Management 选项卡管理运行 Element
 [role="lead"]
 您可以从 Element UI 中的 Management 选项卡管理运行 Element 软件的集群中的数据。可用的集群管理功能包括创建和管理数据卷，卷访问组，启动程序和服务质量（ QoS ）策略。
 
-* link:task_data_manage_volumes_work_with_volumes_task.html["使用卷"]
-* link:concept_data_manage_vvol_work_virtual_volumes.html["使用虚拟卷"]
-* link:concept_data_manage_vol_access_group_work_with_volume_access_groups_and_initiators.html["使用卷访问组和启动程序"]
 
+
+== 使用卷
+
+SolidFire 系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。从 "Management" 选项卡上的 "Volumes" 页面中，您可以在节点上创建，修改，克隆和删除卷。您还可以查看有关卷带宽和 I/O 使用情况的统计信息。
+
+link:../storage/concept_data_manage_volumes_quality_of_service_policies.html["了解如何处理卷"]
+
+
+
+== 使用虚拟卷
+
+您可以使用 Element UI 查看虚拟卷及其关联存储容器，协议端点，绑定和主机的信息并执行相关任务。
+
+NetApp Element 软件存储系统在出厂时已禁用虚拟卷（ VVol ）功能。您必须执行一次性任务，通过 Element UI 手动启用 vSphere VVol 功能。
+
+启用 VVol 功能后，用户界面中将显示 VVol 选项卡，其中提供了与 VVol 相关的监控和有限管理选项。此外，一个称为 VASA Provider 的存储端软件组件可充当 vSphere 的存储感知服务。大多数 VVOL 命令（例如 VVOL 创建，克隆和编辑）都由 vCenter Server 或 ESXi 主机启动，并由 VASA Provider 转换为 Element 软件存储系统的 Element API 。可以使用 Element UI 启动用于创建，删除和管理存储容器以及删除虚拟卷的命令。
+
+在 Element 软件存储系统中使用虚拟卷功能所需的大多数配置均在 vSphere 中进行。要在 vCenter 中注册 VASA Provider ，创建和管理 VVOL 数据存储库以及根据策略管理存储，请参见 _VMware vSphere 适用于 SolidFire 存储的虚拟卷配置指南。
+
+
+NOTE: 对于Element 12.5及更早版本、请勿将多个NetApp Element VASA Provider注册到一个vCenter实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。
+
+
+NOTE: 如果您已在 vCenter 中注册了 VASA Provider ，则可通过升级修补程序为多个 vCenter 提供 VASA 支持。要安装，请从下载 VASA39 .tar.gz 文件 https://mysupport.netapp.com/products/element_software/VASA39/index.html["NetApp 软件下载"] 并按照清单中的说明进行操作。NetApp Element VASA 提供程序使用 NetApp 证书。使用此修补程序时， vCenter 会未经修改地使用此证书来支持多个 vCenter 以供 VASA 和 VVol 使用。请勿修改证书。VASA 不支持自定义 SSL 证书。
+
+link:../storage/task_data_manage_vvol_enable_virtual_volumes.html["了解如何使用虚拟卷"]
+
+
+
+== 使用卷访问组和启动程序
+
+您可以使用 iSCSI 启动程序或光纤通道启动程序访问卷访问组中定义的卷。
+
+您可以通过在一组卷中映射 iSCSI 启动程序 IQN 或光纤通道 WWPN 来创建访问组。添加到访问组的每个 IQN 都可以访问组中的每个卷，而无需 CHAP 身份验证。
+
+CHAP 身份验证方法有两种：
+
+* 帐户级别的 CHAP 身份验证：您可以为帐户分配 CHAP 身份验证。
+* 启动程序级别的 CHAP 身份验证：您可以为特定启动程序分配唯一的 CHAP 目标和密钥，而无需在单个帐户中绑定到单个 CHAP 。此启动程序级别的 CHAP 身份验证将取代帐户级别的凭据。
+
+
+您也可以选择使用按启动程序 CHAP 强制执行启动程序授权和按启动程序 CHAP 身份验证。这些选项可以按启动程序定义，访问组可以包含具有不同选项的混合启动程序。
+
+添加到访问组的每个 WWPN 都允许通过光纤通道网络访问此访问组中的卷。
+
+
+NOTE: 卷访问组具有以下限制：
+
+* 一个访问组最多允许 64 个 IQN 或 WWPN 。
+* 一个访问组最多可由 2000 个卷组成。
+* IQN 或 WWPN 只能属于一个访问组。
+* 一个卷最多可属于四个访问组。
+
+
+link:../storage/task_data_manage_vol_access_group_create_a_volume_access_group.html["了解如何与批量访问组和发起者合作"]
 
 
 

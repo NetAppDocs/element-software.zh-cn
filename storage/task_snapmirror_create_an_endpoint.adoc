@@ -20,7 +20,7 @@ SnapMirror 端点是指用作运行 Element 软件的集群的复制目标的 ON
 
 NOTE: 如果现有端点最初是使用 API 创建的，但未保存凭据，则可以在 Element UI 中查看此端点并验证其是否存在，但无法使用 Element UI 对其进行管理。然后，只能使用 Element API 管理此端点。
 
-有关 API 方法的详细信息，请参见 link:../api/index.html["使用 Element API 管理存储"]。
+有关 API 方法的详细信息，请参阅 link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]。
 
 .您需要的内容
 * 您应已在 Element UI 中为存储集群启用 SnapMirror 。

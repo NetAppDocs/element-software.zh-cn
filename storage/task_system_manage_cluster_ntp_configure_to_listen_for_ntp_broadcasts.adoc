@@ -13,6 +13,8 @@ summary: 通过使用广播模式，您可以指示集群中的每个节点在�
 [role="lead"]
 通过使用广播模式，您可以指示集群中的每个节点在网络上侦听特定服务器发出的网络时间协议（ Network Time Protocol ， NTP ）广播消息。
 
+NTP 用于通过网络同步时钟。在初始集群设置过程中，应连接到内部或外部 NTP 服务器。
+
 .您需要的内容
 * 要配置此设置，您必须具有集群管理员权限。
 * 您必须将网络上的 NTP 服务器配置为广播服务器。
@@ -30,6 +32,7 @@ summary: 通过使用广播模式，您可以指示集群中的每个节点在�
 
 == 了解更多信息
 
+* link:../storage/task_system_manage_cluster_ntp_configure.html["配置要查询的集群的网络时间协议服务器"]
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]
 

@@ -4,13 +4,24 @@ sidebar: sidebar
 keywords: snmp, overview, reference, mib, settings, trap 
 summary: 在集群选项卡的 SNMP 页面上，您可以查看以下信息。 
 ---
-= SNMP 详细信息
+= 了解 SNMP
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
+您可以在集群中配置简单网络管理协议（ Simple Network Management Protocol ， SNMP ）。
+
+您可以选择 SNMP 请求程序，选择要使用的 SNMP 版本，确定 SNMP 基于用户的安全模型（ User-Based Security Model ， USM ）用户并配置陷阱以监控 SolidFire 集群。您还可以查看和访问管理信息库文件。
+
+
+NOTE: 您可以同时使用 IPv4 和 IPv6 地址。
+
+
+
+== SNMP 详细信息
+
 在集群选项卡的 SNMP 页面上，您可以查看以下信息。
 
 * * SNMP MIB *

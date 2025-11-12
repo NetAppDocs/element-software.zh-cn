@@ -61,7 +61,7 @@ TIP: 您可以通过在 * 管理 * > * 卷 * > * 活动 * 列表中选择卷的�
 
 修改启动程序时，可以将 requiredCHAP 属性切换为 True ，从而可以设置目标启动程序密钥。有关详细信息，请参见有关 ModifyInitiator API 方法的 API 信息。
 
-link:../api/index.html["使用 Element API 管理存储"]
+link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]
 
 |===
 . * 可选： * 根据需要添加更多启动程序。

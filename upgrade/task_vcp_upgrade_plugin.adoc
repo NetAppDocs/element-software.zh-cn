@@ -22,7 +22,7 @@ keywords: netapp, vcp, vCenter plug-in, upgrade, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 4
 ====
 管理服务 2.27 捆绑包包含适用于 vCenter Server 5.5 的 Element Plug-in，该插件仅与管理节点 12.8 兼容。当您更新到管理服务 2.27 时，您必须更改升级顺序并在升级到 Element 12.8 之后更新管理服务包，以使管理节点和管理服务之间兼容。
 
-管理服务 2.22.7 捆绑包包含适用于 vCenter Server 5.0 的 Element 插件，其中包含远程插件。如果您使用 Element 插件，则应升级到管理服务 2.22.7 或更高版本，以符合 VMware 取消本地插件支持的指令。 https://kb.vmware.com/s/article/87880["了解更多信息。"^] 。
+管理服务 2.22.7 版本包含适用于 vCenter Server 5.0 的 Element 插件，其中包含远程插件。如果您使用 Element 插件，则应升级到管理服务 2.22.7 或更高版本，以符合 VMware 移除对本地插件支持的指令。 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere-sdks-tools/8-0/developing-local-plug-ins-client-sdk/about-this-book-local/deprecation-of-local-plug-in-architecture.html["了解更多信息。"^]。
 
 ====
 [role="tabbed-block"]

@@ -14,7 +14,7 @@ keywords: netapp, solidfire, vsphere components, upgrade, vCenter, ESXi
 
 
 [role="lead"]
-在升级 SolidFire Element 存储安装中的 VMware vSphere 组件时，对于安装了适用于 vCenter Server 的 Element 插件的系统，还需要执行一些其他步骤。
+升级 VMware vSphere 组件时，需要完成一些额外的步骤。对于安装了 vCenter Server Element 插件的系统，这些步骤是必要的。
 
 .步骤
 . 对于 vCSA 升级， https://docs.netapp.com/us-en/vcp/vcp_task_qossioc.html#clear-qossioc-settings["清除"^] 此插件中的 QoSSIOC 设置（ * NetApp Element 配置 > QoSSIOC 设置 * ）。此过程完成后， * QoSSIOC Status* 字段将显示 `Not Configured` 。
@@ -25,7 +25,7 @@ keywords: netapp, solidfire, vsphere components, upgrade, vCenter, ESXi
 ====
 您应升级到适用于vCenter Server 5.0或更高版本的NetApp Element 插件、以便能够在VMware vCenter 7.0 Update 3中部署此插件、而无需应用临时解决策。
 
-使用适用于vCenter Server 4.x的Element插件升级到VMware vCenter Server 7.0 Update 3时、此插件无法部署。要使用Spring Framework 4解决此问题描述 、请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/vCenter_plug-in_deployment_fails_after_upgrading_vCenter_to_version_7.0_U3["此知识库文章"^]。
+升级到 VMware vCenter Server 7.0 Update 3 时，vCenter Server 4.x 的 Element 插件无法部署。要使用 Spring Framework 4 解决此问题，请参阅 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/vCenter_plug-in_deployment_fails_after_upgrading_vCenter_to_version_7.0_U3["此知识库文章"^]。
 
 ====
 . https://docs.netapp.com/us-en/vcp/vcp_task_getstarted.html#register-the-plug-in-with-vcenter["注册"^] 适用于 vCenter Server 的 Element 插件。

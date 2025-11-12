@@ -31,7 +31,7 @@ summary: 您应使用 NetApp Element 软件 GetFipsReport API 方法检查存储
 ** 使用 Element API 输入： `GetHardwareList`
 ** 请注意 * 驱动器加密容量类型 * 的值。如果为 FIPS ，则硬件可以支持 FIPS 驱动器功能。
 +
-请参见中有关 `GetFipsReport` 或 `ListDriveHardware` 的详细信息 link:../api/index.html["Element API 参考"]。
+查看详情 `GetFipsReport` 或者 `ListDriveHardware` 在 link:../api/concept_element_api_about_the_api.html["Element API 参考"]。
 
 
 

@@ -41,4 +41,4 @@ summary: 列出可用于管理和配置 EKM 的所有 API 。
 * TestKeyProviderKmip
 
 
-有关 API 方法的信息，请参见 link:../api/index.html["API 参考信息"]。
+有关 API 方法的信息，请参阅 link:../api/concept_element_api_about_the_api.html["API 参考信息"]。

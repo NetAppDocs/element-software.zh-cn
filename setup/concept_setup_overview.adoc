@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: element, solidfire, install, setup, node, cluster 
 summary: 开始之前，您可能希望了解安装和设置 NetApp Element 软件的顺序。 
 ---
-= 设置概述
+= 了解如何设置存储
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -20,8 +20,14 @@ image::../media/sf_and_element_workflow_for_setup_shorter_workflow.png[设置工
 .设置存储的步骤
 . 选择以下选项之一：
 +
-** link:../setup/task_setup_cluster_with_storage_nodes.html["使用存储节点设置集群"]
-** link:../setup/task_setup_cluster_with_fibre_channel_nodes.html["设置具有光纤通道节点的集群"]
+** link:../setup/concept_setup_configure_a_storage_node.html["使用存储节点设置集群"]
++
+在机架单元中安装节点并为其布线并打开电源后，您可以使用 Element 软件设置包含存储节点的集群并对其进行管理。然后，您可以在存储系统中安装和配置其他组件。
+
+** link:../setup/concept_setup_fc_configure_a_fibre_channel_node.html["设置具有光纤通道节点的集群"]
++
+在机架单元中安装并连接光纤通道节点并通电后，您可以使用 Element 软件设置一个包含光纤通道节点的集群并对其进行管理。然后，您可以安装和配置存储系统中的其他组件。
+
 
 
 . link:../setup/task_setup_determine_which_solidfire_components_to_install.html["确定要安装的 SolidFire 组件"]

@@ -28,6 +28,20 @@ NOTE: 集群配对要求管理网络上的节点之间具有完全连接。复�
 
 
 
+== 使用 MVIP 或配对密钥对集群配对
+
+如果对源集群和目标集群都具有集群管理员访问权限，则可以使用目标集群的 MVIP 对这两个集群进行配对。如果集群管理员只能访问集群对中的一个集群，则可以在目标集群上使用配对密钥来完成集群配对。
+
+. 选择以下方法之一对集群配对：
++
+** link:task_replication_pair_cluster_using_mvip.html["使用 MVIP 对集群配对"]如果两个集群都有集群管理员访问权限，则使用此方法。该方法利用远程集群的 MVIP 来配对两个集群。
+** link:task_replication_pair_cluster_using_pairing_key.html["使用配对密钥对集群配对"]如果集群管理员只能访问其中一个集群，则可以使用此方法。该方法生成一个配对密钥，该密钥可用于目标集群以完成集群配对。
+
+
+
+
+
+
 == 了解更多信息
 
 xref:reference_prereq_network_port_requirements.adoc[网络端口要求]
