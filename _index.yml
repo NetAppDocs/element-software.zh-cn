@@ -5,8 +5,8 @@ indexpage:
     NetApp Element 软件进行管理。
   keywords: solidfire, all-flash, storage, hardware, install, maintain, element software,
     esos, element cli
-  lead: SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp
-    Element软件管理这些存储资源集群。此站点包含Element软件12.8.
+  lead: SolidFire全闪存存储系统由驱动器和节点等硬件组件组成，这些组件组合成一个存储资源池。使用 Element 界面、API 或其他管理工具，您可以使用NetApp
+    Element软件管理这些存储资源集群。本网站包含 Element 软件 12.9 的文档。
   tiles:
   - title: 入门
     links:

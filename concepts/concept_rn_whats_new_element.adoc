@@ -12,16 +12,30 @@ summary: NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新�
 
 
 [role="lead"]
-NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.8是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。
+NetApp会定期更新SolidFire和 Element 软件，为您带来新功能、增强功能和错误修复。Element 12.9 是最新版本，包含安全性和系统组件更新、操作改进以及已解决的问题。
 
 
-NOTE: 根据存储集群上运行的当前Element版本、在Element 12.8升级过程中会安装累积软件和固件更新。例如、如果集群当前运行的是Element 12.5、则可以直接升级到Element 12.7、以获取Element 12.7和12.7的累积更新。有关支持的升级路径，请参见知识库文章 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["运行NetApp Element软件的存储集群的升级表是什么"^]。
+NOTE: 累积软件和固件更新是作为 Element 12.9 升级的一部分安装的，该升级基于存储集群上运行的当前 Element 版本。例如，如果集群当前正在运行 Element 12.5，您可以直接升级到 Element 12.9，以获取 Element 12.7、12.8 和 12.9 的累积更新。有关支持的升级路径，请参阅知识库文章。 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/What_is_the_upgrade_matrix_for_storage_clusters_running_NetApp_Element_software["运行NetApp Element软件的存储集群的升级表是什么"^] 。
+
+
+
+== 元素 12.9
+
+了解 Element 12.9 的新特性。
+
+
+
+=== “SetRemoteLoggingHosts”中对 FQDN 的支持
+
+从 Element 12.9 开始，您可以使用 `SetRemoteLoggingHosts`用于将完全限定域名 (FQDN) 或 IP 地址配置为存储集群的日志主机值的方法。您可以在响应中查看 FQDN 主机值。 `GetRemoteLoggingHosts`方法。对于 Element 12.8 及更早版本，您只能将 IP 地址配置为日志主机值。
+
+https://docs.netapp.com/us-en/element-software/api/reference_element_api_loggingserver.html["了解更多关于日志主机配置的信息"]
 
 
 
 == Element 12.8
 
-详细了解Element 12.8.
+了解 Element 12.8 的新特性。
 
 
 
@@ -59,7 +73,7 @@ Element 12.8.引入了卷负载平衡功能。您可以使用此功能根据每�
 
 == 要素12.7.
 
-详细了解Element 12.7中的新增功能。
+了解 Element 12.7 的新特性。
 
 
 
@@ -118,7 +132,7 @@ NetApp Bug Online工具中列出了已解决的问题和已知问题。您可以
 
 == 要素12.5.
 
-详细了解Element 12.5中的新增功能。
+了解 Element 12.5 的新特性。
 
 
 

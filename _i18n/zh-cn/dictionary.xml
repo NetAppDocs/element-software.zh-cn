@@ -6133,11 +6133,8 @@
   <block id="266e0cbbf7e3b2bf0f047a97564ee39c" category="paragraph"><block ref="266e0cbbf7e3b2bf0f047a97564ee39c" category="inline-link-rx"></block></block>
   <block id="4713b431d534390bd0eb29961139d8ff" category="summary">loggingServer 对象包含有关为存储集群配置的任何日志记录主机的信息。您可以使用 GetRemoteLoggingHosts 确定当前的日志记录主机，然后使用 SetRemoteLoggingHosts 设置所需的当前和新日志记录主机列表。</block>
   <block id="a2ee727480278b2294f0926aa0083922" category="doc">日志记录服务器</block>
-  <block id="e3ed345ba461675fda50cecf882a20a1" category="paragraph">loggingServer 对象包含有关为存储集群配置的任何日志记录主机的信息。您可以使用 `GetRemoteLoggingHosts` 确定当前日志记录主机的名称，然后使用 `SetRemoteLoggingHosts` 设置所需的当前和新日志记录主机列表。</block>
   <block id="67b3dba8bc6778101892eb77249db32e" category="paragraph">host</block>
-  <block id="a05ddf076e226ae1ba98fd6f060d8dde" category="paragraph">日志服务器的 IP 地址。</block>
   <block id="901555fb06e346cb065ceb9808dcfc25" category="paragraph">port</block>
-  <block id="03d7c89bdea03fc32c54c20e402ca22f" category="paragraph">用于与日志服务器通信的端口号。</block>
   <block id="de914c1d6a37132883b9491f20d57257" category="summary">您可以使用 TestConnectMvip 方法测试与存储集群的管理连接。此测试将对 MVIP 执行 ping 操作，并执行一种简单的 API 方法来验证连接。</block>
   <block id="91b20c0741eed5c527bff5bdce979363" category="doc">TestConnectMvip</block>
   <block id="c3cbe44cb7bf0b24de3351cf381621a0" category="paragraph">您可以使用 `TestConnectMvip` 方法测试与存储集群的管理连接。此测试将对 MVIP 执行 ping 操作，并执行一种简单的 API 方法来验证连接。</block>
@@ -6516,7 +6513,6 @@
   <block id="a799a612e3ebd76311859f74ffa523af" category="paragraph">主节点的 ID 。</block>
   <block id="d07ccd2d77f5001f167b3b44147d3a36" category="summary">您可以使用 GetRemoteLoggingHosts 方法获取日志服务器的当前列表。</block>
   <block id="d181f64248152c2f348f049cf48ef93e" category="paragraph">您可以使用 `GetRemoteLoggingHosts` 方法获取日志服务器的当前列表。</block>
-  <block id="7019ad99422f3f4f4e107c4c97d968c0" category="paragraph">有关配置为接收转发的日志记录信息的主机的 IP 地址和端口信息列表。</block>
   <block id="c45cb795474e9dd9fee4027ec7ba5365" category="summary">您可以使用 CompleteVolumePairing 完成对两个卷的配对。</block>
   <block id="8c7f9f2c1e6b4835d596ff86b60f56ba" category="paragraph">您可以使用 `CompleteVolumePairing` 完成两个卷的配对。</block>
   <block id="947ecdd9ed3686d65e278c85dd9a3781" category="paragraph">要完成卷对的卷的 ID 。</block>
@@ -10841,7 +10837,6 @@
   <block id="eb66a5e31d8328246fdb5497ed40a7a4" category="inline-link">存储固件包2.164.0发行说明</block>
   <block id="134e2a3d5f4b8b65c064815f605c76e6" category="list-text"><block ref="134e2a3d5f4b8b65c064815f605c76e6" category="inline-link-rx"></block></block>
   <block id="4b8861a11346d673205d074f862db70a" category="inline-link">支持的固件和ESXi驱动程序版本</block>
-  <block id="bb3b8b57aaaa2ec5e665324ff79ed132" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block> _new_</block>
   <block id="fd755336ba3702c8d419343da5efb6d6" category="list-text">*文件系统IsReadOnly *</block>
   <block id="ed734a928c08d6cb25fc1abe2d4e0c3a" category="paragraph">文件系统已移至只读模式。</block>
   <block id="9732e3757f397fc8e75412dea43c030e" category="list-text">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作<block ref="e9afc225a78965c54dbba9b335afd021" category="inline-link-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。</block>
@@ -11782,11 +11777,8 @@
   <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">《NetApp Element 软件12.8发行说明》</block>
   <block id="912995e99772bb097b2c7b32940725bb" category="list-text"><block ref="912995e99772bb097b2c7b32940725bb" category="inline-link-rx"></block></block>
   <block id="de1923eab698e40e118f826163735ce9" category="doc">Element软件中的新增功能</block>
-  <block id="95dc02f465fb1139e3e92c363bf6965b" category="paragraph">NetApp 会定期更新 SolidFire 和 Element 软件，为您提供新功能，增强功能和错误修复。Element 12.8是最新版本、其中包括安全和系统组件更新、操作改进以及已解决的问题。</block>
   <block id="54c87de7f5250ba9aa116c671d66513b" category="inline-link">运行NetApp Element软件的存储集群的升级表是什么</block>
-  <block id="cbc21275b31252cb0d62b8238bf2f7f4" category="admonition">根据存储集群上运行的当前Element版本、在Element 12.8升级过程中会安装累积软件和固件更新。例如、如果集群当前运行的是Element 12.5、则可以直接升级到Element 12.7、以获取Element 12.7和12.7的累积更新。有关支持的升级路径，请参见知识库文章<block ref="c5b23fd17ac7c12a5a03bb47eaffc085" category="inline-link-rx"></block>。</block>
   <block id="b96f7bb136ed4e13e527257ff99d9aa8" category="section-title">Element 12.8</block>
-  <block id="5f3e8fa2bb7cacdfa568d72b6619b9f7" category="paragraph">详细了解Element 12.8.</block>
   <block id="de8b5a628a603f8c3af1b2f5792e68de" category="section-title">卷负载平衡</block>
   <block id="380221f3a88d939f31cd4269828e2920" category="section-title">查看节点利用率信息</block>
   <block id="cf1de2ea971a9d03b59178af9472d4b0" category="paragraph">在Element 128中、您可以使用<block ref="f26fbe9dd2d7f06608bbf6327141caa9" prefix=" " category="inline-code"></block>和<block ref="84b7393e47ffdee1d6a06f5067a7270c" prefix=" " category="inline-code"></block>API方法查看节点利用率信息<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>。此<block ref="4b568da388833daf83ea72e69801ba34" prefix=" " category="inline-code"></block>对象是此对象的成员<block ref="d9bfbffd38f5f9686a85ef17e8138b5c" prefix=" " category="inline-code"></block>、它会根据一段时间内主总IOPS或总IOPS与配置的平均IOPS之比显示节点利用率信息。</block>
@@ -11797,8 +11789,6 @@
   <block id="b7ff4d8cc30e1648a2610b037b9c5b97" category="paragraph">主机iSCSI启动程序会请求一系列质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)算法、以便在创建与Element iSCSI目标的iSCSI会话时使用。从Element 128开始、您可以查看Element iSCSI目标选择用于iSCSI会话的受支持CHAP算法。</block>
   <block id="3c72afcfca67f187b816a55135a243dd" category="section-title">升级VM硬件版本</block>
   <block id="7dba8a3f7eba09c328d90efc88b182cd" category="paragraph">如果要将现有管理节点原位升级到Element 128、则在升级之前、必须确保管理节点上的VM硬件版本与ESXi 6.7 (VM硬件版本14)或更高版本兼容、具体取决于您的环境。<block ref="f415360b3de270935343c57ae74254e8" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="9c5d76276e21d49836999553da451b64" category="paragraph">详细了解Element 12.7中的新增功能。</block>
-  <block id="c709a2d01de03a4c29036ff9f37c0dff" category="paragraph">详细了解Element 12.5中的新增功能。</block>
   <block id="ad0a505756223d68dc11afeae3459351" category="inline-link">NetApp HCI 文档</block>
   <block id="bf667c8802395357e4f080e2fcd819e4" category="list-text"><block ref="bf667c8802395357e4f080e2fcd819e4" category="inline-link-rx"></block></block>
   <block id="f512bd2c4d2b9ed8c936fc1a75c3581e" category="paragraph">根据您的Element软件版本、不支持以下节点：</block>
@@ -11841,18 +11831,13 @@
   <block id="e52172b27eb39053f2941029ca952216" category="list-text">*节点利用率*：基于节点利用率的节点利用率百分比。显示的值以百分比形式显示为recentMaryTotalHeat。从Element 12.8开始提供。</block>
   <block id="5e8ecd2e12df03135f7d9ea0fc9f1e5e" category="list-text">*自定义保护域*：分配给节点的自定义保护域。</block>
   <block id="c5c29b3089afd57677f0c6e16b8f6bc1" category="inline-link-macro">对管理节点执行原位升级</block>
-  <block id="870c21ddabb9d392de6b8260f26cb2bd" category="list-text">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。在使用NetApp混合云控制或REST API升级管理服务、Element软件和存储固件之前、您可以通过到版本12.8解决此问题<block ref="3f48e72cfa47aa3f4c9b8d036d27a113" category="inline-link-macro-rx"></block>。</block>
-  <block id="155ca98fbc1ded22cd8604d6760bbd99" category="paragraph">如果您要部署版本为128的新管理节点，则可以使用NetApp混合云控制或REST API按中列出的顺序执行组件升级<block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block>。</block>
   <block id="1806b0c9501c3b2013932e456db5038b" category="list-text">不支持以下节点。如果您尝试将其中一个节点升级到不受支持的Element版本、则会看到一条错误消息、指出Element 12.x不支持此节点：</block>
   <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">第1步：升级管理节点上的VM硬件版本</block>
-  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">如果要将现有管理节点原位升级到Element 128、则在升级之前、必须确保管理节点上的VM硬件版本与ESXi 6.7 (VM硬件版本14)或更高版本兼容、具体取决于您的环境。</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">以 vCenter 管理员身份登录到 vSphere Web Client 。</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">根据vSphere环境的版本、选择ESXi 6.7或更高版本。</block>
   <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">选择*OK*。</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">第2步：将管理节点升级到Element 12.5或更高版本</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">选择以下升级选项之一：</block>
-  <block id="8c5a891df58bfda1762ec23302a952b6" category="sidebar">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp Element软件管理这些存储资源集群。此站点包含Element软件12.8.</block>
-  <block id="83214fe0ca2841bff645ee69075302da" category="sidebar">SolidFire和Element软件文档12.8</block>
   <block id="d9a22d7a8178d5b42a8750123cbfe5b1" category="list-text">完成</block>
   <block id="acbccd83186c34328efe61415e4f06c3" category="paragraph">iosInProge.</block>
   <block id="efadf566bdff7cd45611bcf2ea26634b" category="paragraph">此驱动器正在进行的I/O数。</block>
@@ -11893,13 +11878,10 @@
   <block id="bd000e3a7a010d55765a9684adc1c25f" category="paragraph">元素存储升级</block>
   <block id="53e04163346326834efd61306c0800b5" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block></block>
   <block id="7373675a8dd923fb7362a663e0cb6e1f" category="inline-link">vCenter 插件 5.5 发行说明</block>
-  <block id="1bb29b9b64a805e59f4873c404e002c4" category="list-text"><block ref="19934d197d6821fc66160fdecbaaf499" category="inline-link-rx"></block>_新的_</block>
   <block id="9addfb2ff8ac3a9826d26736c6697320" category="inline-link-macro">管理服务 2.27.40 版通知（适用于 VMware vCenter Server 5.5.16 的NetApp Element插件）</block>
   <block id="5f97199338e05d8d021611cc709fe28f" category="list-text"><block ref="5f97199338e05d8d021611cc709fe28f" category="inline-link-macro-rx"></block></block>
   <block id="111e46cd39158a394cd8236185cf08df" category="inline-link-macro">在升级存储之前运行 Element 存储健康检查</block>
   <block id="15c2fc4333a0aada89bc8cf9f0ebbdac" category="list-text"><block ref="76b28290238ca686b8113b7395511f66" category="inline-link-macro-rx"></block> 。</block>
-  <block id="c759706a0ac25a6b9701339b7c7959d4" category="list-text">管理服务 2.27 捆绑包包含适用于 vCenter Server 5.5 的 Element Plug-in，该插件仅与管理节点 12.8 兼容。当您更新到管理服务 2.27 时，您必须更改升级顺序并在升级到 Element 12.8 之后更新管理服务包，以使管理节点和管理服务之间兼容。</block>
-  <block id="aebb2147cc4f1c96830ec15bbe8bbaaa" category="list-text">如果您要更新到管理服务 2.21.61 到 2.26.40，则必须在升级到 Element 12.8 之前更新管理服务包。</block>
   <block id="a364164cb135a0ea8d140eae7c98e606" category="admonition">如果您要将管理服务更新到版本 2.16 或更高版本，并且正在运行管理节点 11.3 到 11.8，则需要在更新管理服务之前增加管理节点 VM 的 RAM。</block>
   <block id="f09175d59684197ed7788662b7cd5fe4" category="list-text">您正在升级到适用于 vCenter Server 5.5、5.4、5.3、5.2、5.1 或 5.0 的 Element 插件。</block>
   <block id="6eb41496b0f7ef5be359156d440fc5ea" category="paragraph">您应该会看到以下版本详细信息：</block>
@@ -12049,4 +12031,37 @@
   <block id="872f6cff86593f6dadbf113566b2518c" category="sidebar">光纤通道会议</block>
   <block id="b41e191265a87133dd55dbef64fbdca8" category="sidebar">了解如何排除驱动器故障</block>
   <block id="5a4bef238f8c68aedf2579a9018edb5a" category="sidebar">学习如何使用每个节点的实用程序</block>
+  <block id="60210a5d8b6171337fa1c587c1634bb4" category="paragraph">没有输入参数<block ref="8a0a6fa5053e047edbf44e6a00a611ab" prefix=" " category="inline-code"></block>。</block>
+  <block id="9829197f8e9aa49b0fda96130560499e" category="paragraph">这<block ref="8a0a6fa5053e047edbf44e6a00a611ab" prefix=" " category="inline-code"></block>该方法具有以下返回值：</block>
+  <block id="86776fdc076d835f05040f05494bdf4c" category="paragraph">列出已配置为接收转发日志信息的主机的 IP 地址、FQDN 和端口信息</block>
+  <block id="50315a0d519071f70616423e8c0354dc" category="paragraph">从ONTAP 9.6 版本开始可用。</block>
+  <block id="1ff08da76d2e8e320be0217ec1d5f67b" category="paragraph">loggingServer 对象存储有关为存储集群配置的日志主机的信息。使用<block ref="8a0a6fa5053e047edbf44e6a00a611ab" prefix=" " category="inline-code"></block>查看当前日志记录主机，然后使用<block ref="7ec501e5c4a5552f16c73746995c46e7" prefix=" " category="inline-code"></block>设置当前和新增日志主机的所需列表。</block>
+  <block id="f77af844fd9172704ddd5137f3048d3d" category="paragraph">日志服务器的 FQDN 或 IP 地址</block>
+  <block id="eccc2fb30066b6672be61ec0db876936" category="paragraph">用于与日志服务器通信的端口号</block>
+  <block id="3cfc0ac3a30a1f382a276d893e091631" category="list-text"><block ref="3cfc0ac3a30a1f382a276d893e091631" category="inline-link-macro-rx"></block></block>
+  <block id="23ffdb57fafb6f4ca3a258aad83820db" category="list-text"><block ref="23ffdb57fafb6f4ca3a258aad83820db" category="inline-link-macro-rx"></block></block>
+  <block id="f3910c16a2d3ccfefad3cf6a2990562f" category="inline-link">NetApp Element软件 12.9 发行说明</block>
+  <block id="0f0dd8ebb47c876fc4d83cd4c503304a" category="list-text"><block ref="65f476025a11aaf16dc58328cfd02319" category="inline-link-rx"></block>_新的_</block>
+  <block id="19934d197d6821fc66160fdecbaaf499" category="list-text"><block ref="19934d197d6821fc66160fdecbaaf499" category="inline-link-rx"></block></block>
+  <block id="16447f3faa9ba0e1db5b0d946a9dbeaf" category="list-text"><block ref="16447f3faa9ba0e1db5b0d946a9dbeaf" category="inline-link-rx"></block></block>
+  <block id="c79ac813d0c7f2dd315deb5f8e5f9c6c" category="paragraph">NetApp会定期更新SolidFire和 Element 软件，为您带来新功能、增强功能和错误修复。Element 12.9 是最新版本，包含安全性和系统组件更新、操作改进以及已解决的问题。</block>
+  <block id="a812546e32c191a0705a7a886149db96" category="admonition">累积软件和固件更新是作为 Element 12.9 升级的一部分安装的，该升级基于存储集群上运行的当前 Element 版本。例如，如果集群当前正在运行 Element 12.5，您可以直接升级到 Element 12.9，以获取 Element 12.7、12.8 和 12.9 的累积更新。有关支持的升级路径，请参阅知识库文章。<block ref="c5b23fd17ac7c12a5a03bb47eaffc085" category="inline-link-rx"></block> 。</block>
+  <block id="6e63dfea551985425e07f6425933484a" category="section-title">元素 12.9</block>
+  <block id="696efa96854e5c2d2cbe5f3e83073e41" category="paragraph">了解 Element 12.9 的新特性。</block>
+  <block id="4ae9a2118e67992355ab5780caa3d49e" category="section-title">“SetRemoteLoggingHosts”中对 FQDN 的支持</block>
+  <block id="c49f5d04f26c84b5395309d04ac1998d" category="paragraph">从 Element 12.9 开始，您可以使用<block ref="7ec501e5c4a5552f16c73746995c46e7" prefix=" " category="inline-code"></block>用于将完全限定域名 (FQDN) 或 IP 地址配置为存储集群的日志主机值的方法。您可以在响应中查看 FQDN 主机值。<block ref="8a0a6fa5053e047edbf44e6a00a611ab" prefix=" " category="inline-code"></block>方法。对于 Element 12.8 及更早版本，您只能将 IP 地址配置为日志主机值。</block>
+  <block id="90e71fac5dbce2c697f3e0a45bab7ed6" category="inline-link">了解更多关于日志主机配置的信息</block>
+  <block id="35b4745d5c9d019bd2e8b01a2a5786b9" category="paragraph"><block ref="35b4745d5c9d019bd2e8b01a2a5786b9" category="inline-link-rx"></block></block>
+  <block id="758c5e2948e12b97aecf7d88769cfd1a" category="paragraph">了解 Element 12.8 的新特性。</block>
+  <block id="be1da0c99f4abe78428e43b0eca9ac8d" category="paragraph">了解 Element 12.7 的新特性。</block>
+  <block id="129baaa25f6330e3a23929947c195f89" category="paragraph">了解 Element 12.5 的新特性。</block>
+  <block id="576a64066f01cba7e1d9e6cc332e1c1e" category="inline-link-macro">Element 软件 12.9 版通知</block>
+  <block id="0052f32dde4447765e38fcb8d2c7c0fb" category="list-text"><block ref="0052f32dde4447765e38fcb8d2c7c0fb" category="inline-link-macro-rx"></block></block>
+  <block id="fb68b6e8bd76e850e368bd0ae5040962" category="list-text">从 2023 年 11 月开始，您将无法使用NetApp Hybrid Cloud Control 或 REST API 启动组件升级，因为签名密钥证书（私钥和公钥）已于 2023 年 11 月 5 日过期。您可以通过以下方式解决此问题：<block ref="3f48e72cfa47aa3f4c9b8d036d27a113" category="inline-link-macro-rx"></block>在使用NetApp Hybrid Cloud Control 或 REST API 升级管理服务、Element 软件和存储固件之前，请升级到 12.8 或更高版本。</block>
+  <block id="7c1f07352f172bbf997cd277bb22f373" category="paragraph">如果您要部署版本为 12.8 或更高版本的新管理节点，则可以使用NetApp Hybrid Cloud Control 或 REST API，按照列表中列出的顺序执行组件升级。<block ref="c0f289a1ce14070fe1c9e60f6416d18d" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="8a3417feffea00ce52b83a4254396630" category="list-text">管理服务 2.27 包包含适用于 vCenter Server 5.5 的 Element 插件，该插件仅与管理节点 12.8 或更高版本兼容。当您更新到管理服务 2.27 时，您必须更改升级顺序并在升级到 Element 12.9 之后更新管理服务包，以使管理节点和管理服务之间兼容。</block>
+  <block id="be17882b01381c744c05bc87ef6f8f6b" category="list-text">如果您要更新到管理服务 2.21.61 到 2.26.40，则必须在升级到 Element 12.9 之前更新管理服务包。</block>
+  <block id="08338b1803089277b6a93f4d800189f8" category="paragraph">如果您要将现有管理节点就地升级到 Element 12.9，则在升级之前，必须确保管理节点上的 VM 硬件版本与您的环境兼容 ESXi 6.7（VM 硬件版本 14）或更高版本。</block>
+  <block id="cf5be9e5b7186b071d6f04d4b0377a82" category="sidebar">SolidFire全闪存存储系统由驱动器和节点等硬件组件组成，这些组件组合成一个存储资源池。使用 Element 界面、API 或其他管理工具，您可以使用NetApp Element软件管理这些存储资源集群。本网站包含 Element 软件 12.9 的文档。</block>
+  <block id="04d99e886b9a296f2c17ceac36c3b3f7" category="sidebar">SolidFire和 Element 软件文档 12.9</block>
 </blocks>

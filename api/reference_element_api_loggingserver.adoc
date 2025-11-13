@@ -11,7 +11,7 @@ summary: loggingServer 对象包含有关为存储集群配置的任何日志记
 
 
 [role="lead"]
-loggingServer 对象包含有关为存储集群配置的任何日志记录主机的信息。您可以使用 `GetRemoteLoggingHosts` 确定当前日志记录主机的名称，然后使用 `SetRemoteLoggingHosts` 设置所需的当前和新日志记录主机列表。
+loggingServer 对象存储有关为存储集群配置的日志主机的信息。使用 `GetRemoteLoggingHosts`查看当前日志记录主机，然后使用 `SetRemoteLoggingHosts`设置当前和新增日志主机的所需列表。
 
 
 
@@ -26,7 +26,7 @@ loggingServer 对象包含有关为存储集群配置的任何日志记录主机
  a| 
 host
  a| 
-日志服务器的 IP 地址。
+日志服务器的 FQDN 或 IP 地址
  a| 
 string
 
@@ -35,8 +35,12 @@ string
  a| 
 port
  a| 
-用于与日志服务器通信的端口号。
+用于与日志服务器通信的端口号
  a| 
 整型
 
 |===
+.相关信息
+* link:reference_element_api_getremotelogginghosts.html["GetRemoteLoggingHosts"]
+* link:reference_element_api_setremotelogginghosts.html["SetRemoteLoggingHosts"]
+

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: upgrade/task_hcc_upgrade_management_node.html 
 summary: 在 NetApp SolidFire 存储系统升级过程中，您需要升级管理节点。 
-keywords: netapp, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7, 12.8 
+keywords: netapp, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7, 12.8, 12.9 
 ---
 = 升级管理节点
 :hardbreaks:
@@ -25,7 +25,7 @@ NOTE: 如果您需要有关升级管理节点12.2或更早版本的信息、请�
 
 == 第1步：升级管理节点上的VM硬件版本
 
-如果要将现有管理节点原位升级到Element 128、则在升级之前、必须确保管理节点上的VM硬件版本与ESXi 6.7 (VM硬件版本14)或更高版本兼容、具体取决于您的环境。
+如果您要将现有管理节点就地升级到 Element 12.9，则在升级之前，必须确保管理节点上的 VM 硬件版本与您的环境兼容 ESXi 6.7（VM 硬件版本 14）或更高版本。
 
 .步骤
 . 以 vCenter 管理员身份登录到 vSphere Web Client 。

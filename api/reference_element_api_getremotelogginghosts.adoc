@@ -17,13 +17,13 @@ summary: 您可以使用 GetRemoteLoggingHosts 方法获取日志服务器的当
 
 == Parameters
 
-此方法没有输入参数。
+没有输入参数 `GetRemoteLoggingHosts`。
 
 
 
 == 返回值
 
-此方法具有以下返回值：
+这 `GetRemoteLoggingHosts`该方法具有以下返回值：
 
 |===
 | Name | Description | Type 
@@ -32,7 +32,7 @@ summary: 您可以使用 GetRemoteLoggingHosts 方法获取日志服务器的当
  a| 
 远程主机
  a| 
-有关配置为接收转发的日志记录信息的主机的 IP 地址和端口信息列表。
+列出已配置为接收转发日志信息的主机的 IP 地址、FQDN 和端口信息
  a| 
 xref:reference_element_api_loggingserver.adoc[日志记录服务器] 数组
 
@@ -69,6 +69,10 @@ xref:reference_element_api_loggingserver.adoc[日志记录服务器] 数组
          },
          {
            "host": "172.16.1.25"
+         },
+         {
+            "host": "syslogs.lab.company.net",
+            "port": 514
          }
       ]
    }
@@ -78,7 +82,7 @@ xref:reference_element_api_loggingserver.adoc[日志记录服务器] 数组
 
 == 自版本以来的新增功能
 
-9.6
+从ONTAP 9.6 版本开始可用。
 
 
 
