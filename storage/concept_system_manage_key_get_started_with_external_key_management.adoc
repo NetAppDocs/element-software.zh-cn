@@ -15,7 +15,7 @@ summary: 外部密钥管理（ EKM ）可与集群外外部密钥服务器（ EK
 
 * link:task_system_manage_key_set_up_external_key_management.html["设置外部管理"]
 * link:task_system_manage_rekey_software_ear_master_key.html["重新设置 REST 主密钥的软件加密密钥"]
-* link:concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys["恢复不可访问或无效的身份验证密钥"]
+* link:concept_system_manage_key_recover_inaccessible_or_invalid_authentication_keys.html["恢复不可访问或无效的身份验证密钥"]
 * link:concept_system_manage_key_external_key_management_api_commands.html["外部密钥管理 API 命令"]
 
 

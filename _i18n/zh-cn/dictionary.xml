@@ -511,7 +511,6 @@
   <block id="2e02ae79fb104d3c608baf3627930722" category="paragraph">主存储中的源卷与二级存储中的目标卷之间的关系称为数据保护关系。这些集群称为卷所在的端点，包含复制数据的卷必须建立对等关系。通过对等关系，集群和卷可以安全地交换数据。</block>
   <block id="e8eee300f648a33639310b4549ed1596" category="paragraph">SnapMirror 在 NetApp ONTAP 控制器上本机运行，并集成到 Element 中，而 Element 则在 NetApp HCI 和 SolidFire 集群上运行。控制 SnapMirror 的逻辑驻留在 ONTAP 软件中；因此，所有 SnapMirror 关系都必须至少涉及一个 ONTAP 系统才能执行协调工作。用户主要通过 Element UI 管理 Element 和 ONTAP 集群之间的关系；但是，某些管理任务位于 NetApp ONTAP System Manager 中。用户还可以通过命令行界面和 API 管理 SnapMirror ，这些 CLI 和 API 在 ONTAP 和 Element 中均可用。</block>
   <block id="d95bb83fde5706bb5398bb94c8106f7f" category="inline-link">TR-4651 ： NetApp SolidFire SnapMirror 架构和配置</block>
-  <block id="05f383efa661d49bdf542c9e9e281e05" category="paragraph">请参见<block ref="eea98aade109823686927fb53af38fab" category="inline-link-rx"></block> （需要登录）</block>
   <block id="52b5fba1a62806fe621dc72218549e9c" category="paragraph">您必须使用 Element 软件在集群级别手动启用 SnapMirror 功能。默认情况下， SnapMirror 功能处于禁用状态，并且在新安装或升级过程中不会自动启用此功能。</block>
   <block id="237207bac5b8584faf6c036500958cad" category="paragraph">启用 SnapMirror 后，您可以从 Element 软件中的数据保护选项卡创建 SnapMirror 关系。</block>
   <block id="5ce5a4c32220893139a79b7961ce29a5" category="paragraph">NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTAP 系统中复制和还原快照。</block>
@@ -2377,9 +2376,6 @@
   <block id="50fd90917d810d16f785a05b289d2090" category="list-text">在显示的菜单中，单击 * 还原 * 。</block>
   <block id="296dada05fb445c06aed59b8c9afdfa6" category="paragraph">此卷将放置在 * 活动 * 卷列表中，并恢复与此卷的 iSCSI 连接。</block>
   <block id="dc1cc8200d35d9ec64b7565d154fff16" category="paragraph">您可以为单个卷或多个卷创建克隆，以便为数据创建时间点副本。克隆卷时，系统会创建卷的快照，然后为该快照引用的数据创建一份副本。这是一个异步过程，此过程所需的时间量取决于要克隆的卷大小和当前集群负载。</block>
-  <block id="b8a1cad4a50c9260122967b830aa2f1e" category="inline-link">挂载 VMFS 数据存储库副本</block>
-  <block id="d79c3c87976b8fd24486c760b99214ec" category="inline-link">管理重复的 VMFS 数据存储库</block>
-  <block id="4a82b53219bfaabced3d1c81b475eff8" category="admonition">操作系统在处理克隆卷方面有所不同。VMware ESXi 会将克隆的卷视为卷副本或快照卷。此卷将成为可用于创建新数据存储库的设备。有关挂载克隆卷和处理快照 LUN 的详细信息，请参见上的 VMware 文档<block ref="e578a339e9493d9c63d57360db9fb8b0" category="inline-link-rx"></block> 和<block ref="6865dba41e05c4300a16bf14013377d9" category="inline-link-rx"></block>。</block>
   <block id="7df9bea854445d9f3836e4622d758b3b" category="admonition">在通过克隆到较小的大小截断克隆的卷之前，请确保准备好分区，使其适合较小的卷。</block>
   <block id="743554a1317a874d785bae30fdf78296" category="list-text">要克隆单个卷，请执行以下步骤：</block>
   <block id="0c45f82d13eb2f161b1469f4deca5df8" category="list-text">在 * 活动 * 页面上的卷列表中，单击要克隆的卷对应的 "Actions" 图标。</block>
@@ -2675,7 +2671,6 @@
   <block id="652b436094afd98b18ad951a7e4f0cf8" category="inline-link-macro">重新设置 REST 主密钥的软件加密密钥</block>
   <block id="ae4a16d89bc4c1fd130a91d5ecdfc931" category="list-text"><block ref="ae4a16d89bc4c1fd130a91d5ecdfc931" category="inline-link-macro-rx"></block></block>
   <block id="79d1229024e48c87f7159e2ee740ed37" category="inline-link-macro">恢复不可访问或无效的身份验证密钥</block>
-  <block id="f1f67a70bba55b3b1679804cb55ea1d1" category="list-text"><block ref="f1f67a70bba55b3b1679804cb55ea1d1" category="inline-link-macro-rx"></block></block>
   <block id="06d3db643866a2632d21e5d307008e72" category="list-text"><block ref="06d3db643866a2632d21e5d307008e72" category="inline-link-macro-rx"></block></block>
   <block id="62d29aedc6ec474773233dd69dabe7c4" category="inline-link-macro">CreateCluster API ，可用于启用空闲软件加密</block>
   <block id="06a6eb8faffa4fc7f7366b906cc31075" category="list-text"><block ref="06a6eb8faffa4fc7f7366b906cc31075" category="inline-link-macro-rx"></block></block>
@@ -3579,9 +3574,6 @@
   <block id="82dcb1ea44a19825adb5f55b7d89b9e8" category="paragraph">启用此操作模式后，所有 HTTPS 通信都将使用 FIPS 140-2 批准的密码。</block>
   <block id="5d43108a7f3f1bb62fb0046723092b8d" category="list-text"><block ref="5d43108a7f3f1bb62fb0046723092b8d" category="inline-xref-macro-rx"></block></block>
   <block id="c790184773e8ef26c5af49a38611a471" category="summary">您可以使用集成备份功能备份卷快照。您可以将快照从 SolidFire 集群备份到外部对象存储或另一个 SolidFire 集群。将快照备份到外部对象存储时，必须与允许读 / 写操作的对象存储建立连接。</block>
-  <block id="4e385daedad4a81e3776afbca9ea07a7" category="list-text"><block ref="4e385daedad4a81e3776afbca9ea07a7" category="inline-link-macro-rx"></block></block>
-  <block id="3a50ce5f4085bd0f74405eb1c25f6cc9" category="list-text"><block ref="3a50ce5f4085bd0f74405eb1c25f6cc9" category="inline-link-macro-rx"></block></block>
-  <block id="091f209abc9bb34dfb86fb2328780ca1" category="list-text"><block ref="091f209abc9bb34dfb86fb2328780ca1" category="inline-link-macro-rx"></block></block>
   <block id="a418de238af2e950367eb7c3bf83fe1f" category="summary">通常，在使用 SnapMirror 从运行 NetApp Element 软件的 SolidFire 存储集群到 ONTAP 软件进行灾难恢复时， Element 是源，而 ONTAP 是目标。但是，在某些情况下， ONTAP 存储系统可以用作源，而 Element 可以用作目标。</block>
   <block id="659c8d4c2c0fc3a73a824fc81bde1e80" category="doc">执行从 ONTAP 到 Element 的传输或一次性迁移</block>
   <block id="a955789d7e958f413c05678ed87e5055" category="list-text">存在两种情形：</block>
@@ -4709,7 +4701,6 @@
   <block id="8e9a3ba87453eb870e97d5a72d5d9aac" category="inline-link">取消注册</block>
   <block id="778212e26cda250d5f5f97f4685bf1e0" category="list-text">对于 vCSA 和 Windows 升级，<block ref="da392680dca74f52691137b810baae7b" category="inline-link-rx"></block> 使用注册实用程序与 vCenter Server 中的插件关联。</block>
   <block id="2aaad98bfcfbd95f21871cf486a3243c" category="inline-link">升级 vSphere ，包括 vCenter Server ， ESXi ， VM 和其他 VMware 组件</block>
-  <block id="f23d91ab86d1cf2e82bd86fd860c8585" category="list-text"><block ref="f0107c2e24795b3c47b3466dee69927b" category="inline-link-rx"></block>。</block>
   <block id="0ba7583639a274c434bbe6ef797115a4" category="inline-link">注册</block>
   <block id="81750b82d55f7148c9a0001ed71e7dd4" category="list-text"><block ref="670ccc28c8c6a3ae1c020a0fa12ec195" category="inline-link-rx"></block> 适用于 vCenter Server 的 Element 插件。</block>
   <block id="2984cab36bd51d5446963e671e808f5d" category="inline-link">添加集群</block>
@@ -10780,7 +10771,6 @@
   <block id="6a881248d046a90f573e41d5ebe1362e" category="list-text"><block ref="6a881248d046a90f573e41d5ebe1362e" category="inline-link-rx"></block></block>
   <block id="90e7c2277ee69a3d3ecf30fa1fe61ab1" category="inline-link">vCenter插件4.10发行说明</block>
   <block id="779aeeb0a67ee84cae70c2361654111d" category="list-text"><block ref="779aeeb0a67ee84cae70c2361654111d" category="inline-link-rx"></block></block>
-  <block id="4b1a9ce7f7fbe6c6a81ef1238b7e421a" category="list-text">您已为计划了足够的时间 <block ref="cff6d63ff47747e8e31df90baa037fdf" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升级。升级到Element软件12.5或更高版本时、升级过程时间因Element软件版本和固件更新而异。</block>
   <block id="11d9cbba51c832a014742a5da1938d41" category="paragraph">您可以按以下顺序升级适用于Element 12.5或更高版本的NetApp SolidFire 全闪存存储系统。</block>
   <block id="7df8805b6d2dda4d3fb6d3ac7bb98b27" category="inline-link-macro">使用HealthTools升级到Element 12.3.x</block>
   <block id="dc1b969077a38d3c5d1ddc04ce3b29c7" category="admonition">从Element 12.5开始、Element软件升级不再支持NetApp HealthTools。如果您运行的是Element 11.0或11.1、则必须先执行此操作 <block ref="b94815288b0622c054c235dd32c9c615" category="inline-link-macro-rx"></block> 然后使用NetApp Hybrid Cloud Control升级到Element 12.5或更高版本。</block>
@@ -11432,7 +11422,6 @@
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp 社区</block>
   <block id="213686afc3803be7caa09348765467fe" category="sidebar">如何获取帮助</block>
   <block id="b47307258c4d85ffb5f4141d7a660a9b" category="sidebar">Element 11.8.2及更早版本的文档</block>
-  <block id="47fd1428a184377839b3521d9b89b20c" category="paragraph">有关详细信息，请参见<block ref="5fe7d084aafda4fb5c53715a85948ffe" category="inline-link-rx"></block>。</block>
   <block id="3d08f19c985682eb2a632e36184cedd2" category="paragraph"><block ref="3d08f19c985682eb2a632e36184cedd2" category="inline-link-rx"></block></block>
   <block id="b456d131470ee117b6ff900f949b80c5" category="paragraph"><block ref="b456d131470ee117b6ff900f949b80c5" category="inline-link-rx"></block></block>
   <block id="1791fd435a83f3ee701165e29bb05b2f" category="list-text"><block ref="1791fd435a83f3ee701165e29bb05b2f" category="inline-link-rx"></block></block>
@@ -12064,4 +12053,14 @@
   <block id="08338b1803089277b6a93f4d800189f8" category="paragraph">如果您要将现有管理节点就地升级到 Element 12.9，则在升级之前，必须确保管理节点上的 VM 硬件版本与您的环境兼容 ESXi 6.7（VM 硬件版本 14）或更高版本。</block>
   <block id="cf5be9e5b7186b071d6f04d4b0377a82" category="sidebar">SolidFire全闪存存储系统由驱动器和节点等硬件组件组成，这些组件组合成一个存储资源池。使用 Element 界面、API 或其他管理工具，您可以使用NetApp Element软件管理这些存储资源集群。本网站包含 Element 软件 12.9 的文档。</block>
   <block id="04d99e886b9a296f2c17ceac36c3b3f7" category="sidebar">SolidFire和 Element 软件文档 12.9</block>
+  <block id="7ed2110dda4e725820c86037ab54d196" category="paragraph">有关详细信息，请参见<block ref="45dfeaa43e9f1dd00a21977e432c35a4" category="inline-link-rx"></block>。</block>
+  <block id="d2ef1335ae8e1d79c299379ac49e4b1b" category="paragraph">查看<block ref="30ea8dea45042e51ef9f45277c3dcfc3" category="inline-link-rx"></block></block>
+  <block id="806181f8afe63ab2176a9668a88c16e9" category="list-text"><block ref="806181f8afe63ab2176a9668a88c16e9" category="inline-link-macro-rx"></block></block>
+  <block id="d64340614e4fc20e1f47eeb584d094b6" category="list-text"><block ref="d64340614e4fc20e1f47eeb584d094b6" category="inline-link-macro-rx"></block></block>
+  <block id="a08e600a476d03b143ad4ffabcc3dc36" category="list-text"><block ref="a08e600a476d03b143ad4ffabcc3dc36" category="inline-link-macro-rx"></block></block>
+  <block id="522cf0a888d1be9011076f48d51639fb" category="list-text"><block ref="522cf0a888d1be9011076f48d51639fb" category="inline-link-macro-rx"></block></block>
+  <block id="70cd8bfb8fd7a4082087201414ab2fe4" category="inline-link-macro">VMware 文档</block>
+  <block id="132c11da2b1e7646c3d397a41e823c61" category="admonition">操作系统处理克隆卷的方式各不相同。VMware ESXi 会将克隆的卷视为卷副本或快照卷。卷将是可用于创建新数据存储区的设备。有关装载克隆卷和处理快照 LUN 的更多信息，请参见<block ref="3be1aef9521c6da181e637c000f32aa2" category="inline-link-macro-rx"></block>，了解有关装载 VMFS 数据存储区副本和管理重复 VMFS 数据存储区的信息。</block>
+  <block id="75b0b932212b6758e37fc8920da31e3e" category="list-text">您已经为 <block ref="da6d02632764bebb791a1a7b176b342b" category="inline-link-macro-rx"></block> 和 <block ref="64ca0a1c0466cb0bbd500939e8f353f3" category="inline-link-macro-rx"></block> 升级安排了足够的时间。升级到 Element 软件 12.5 或更高版本时，升级过程时间因 Element 软件版本和固件更新而异。</block>
+  <block id="fe3c28c386d2be6c3cbda4b2feb01c29" category="list-text"><block ref="e8348e5b207b91893f9322900bc614aa" category="inline-link-rx"></block>.</block>
 </blocks>
