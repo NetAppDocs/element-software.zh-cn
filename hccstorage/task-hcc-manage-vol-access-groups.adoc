@@ -24,6 +24,7 @@ keywords: netapp, element, cluster, volume, access
 
 
 
+[[add-a-volume-access-group]]
 == 添加卷访问组
 
 您可以使用 NetApp Hybrid Cloud Control 将卷访问组添加到存储集群。
@@ -45,6 +46,7 @@ keywords: netapp, element, cluster, volume, access
 
 
 
+[[edit-a-volume-access-group]]
 == 编辑卷访问组
 
 您可以使用 NetApp Hybrid Cloud Control 编辑现有卷访问组的属性。您可以更改访问组的名称，关联启动程序或关联卷。
@@ -63,6 +65,7 @@ keywords: netapp, element, cluster, volume, access
 
 
 
+[[delete-a-volume-access-group]]
 == 删除卷访问组
 
 您可以使用 NetApp Hybrid Cloud Control 删除卷访问组，同时从系统中删除与此访问组关联的启动程序。

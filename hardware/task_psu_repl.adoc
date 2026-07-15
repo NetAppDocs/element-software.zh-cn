@@ -109,6 +109,7 @@ image::psu-install.gif[显示了要安装在机箱中的电源设备。]
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

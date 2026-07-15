@@ -15,6 +15,7 @@ summary: 您可以使用 GetVolumeAccessGroupEfficiency 方法获取有关卷访
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -37,6 +38,7 @@ summary: 您可以使用 GetVolumeAccessGroupEfficiency 方法获取有关卷访
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -93,6 +95,7 @@ ISO 8601 数据字符串
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -109,6 +112,7 @@ ISO 8601 数据字符串
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -128,6 +132,7 @@ ISO 8601 数据字符串
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

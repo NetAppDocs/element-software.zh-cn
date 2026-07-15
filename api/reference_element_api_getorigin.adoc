@@ -15,6 +15,7 @@ summary: 您可以使用 GetOrigin 方法获取构建节点的源证书。
 
 
 
+[[parameters]]
 == Parameters
 
 
@@ -24,12 +25,14 @@ NOTE: 如果没有源证书，则此方法将返回 "null" 。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法将返回供应商原始认证信息。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -43,6 +46,7 @@ NOTE: 如果没有源证书，则此方法将返回 "null" 。
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -66,6 +70,7 @@ NOTE: 如果没有源证书，则此方法将返回 "null" 。
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

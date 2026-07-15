@@ -17,6 +17,7 @@ summary: 您可以使用 CreateInitiators 创建多个新启动程序 IQN 或全
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -50,6 +51,7 @@ JSON 对象数组
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -70,6 +72,7 @@ xref:reference_element_api_initiator.adoc[启动程序] 数组
 |===
 
 
+[[error]]
 == error
 
 此方法可能会返回以下错误：
@@ -88,6 +91,7 @@ xInitiatorExists
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -113,6 +117,7 @@ xInitiatorExists
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -143,12 +148,14 @@ xInitiatorExists
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_listinitiators.adoc[ListInitiators]

@@ -28,6 +28,7 @@ NOTE: 默认情况下，社区字符串为公有，网络为 localhost 。您可
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:task_system_manage_snmp_configure_snmp_traps.adoc[配置 SNMP 陷阱]

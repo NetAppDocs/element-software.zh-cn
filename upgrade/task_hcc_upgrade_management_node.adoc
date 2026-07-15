@@ -23,6 +23,7 @@ NOTE: 如果您需要有关升级管理节点12.2或更早版本的信息、请�
 
 
 
+[[step-1-upgrade-vm-hardware-version-on-a-management-node]]
 == 第1步：升级管理节点上的VM硬件版本
 
 如果您要将现有管理节点就地升级到 Element 12.9，则在升级之前，必须确保管理节点上的 VM 硬件版本与您的环境兼容 ESXi 6.7（VM 硬件版本 14）或更高版本。
@@ -44,6 +45,7 @@ NOTE: 如果您需要有关升级管理节点12.2或更早版本的信息、请�
 
 
 
+[[step-2-upgrade-a-management-node-to-element-12-5-or-later]]
 == 第2步：将管理节点升级到Element 12.5或更高版本
 
 选择以下升级选项之一：
@@ -60,6 +62,7 @@ NOTE: 如果您未依次更新管理服务和 Element 存储，则无法使用�
 
 
 
+[[upgrade-a-management-node-to-version-12-5-or-later-from-version-12-3-x-or-later]]
 === 将管理节点从12.3.x或更高版本升级到版本12.5或更高版本
 
 您可以将管理节点从12.3.x或更高版本原位升级到12.5或更高版本、而无需配置新的管理节点VM。
@@ -153,6 +156,7 @@ IMPORTANT: 如果先前已在管理节点上禁用 SSH 功能，则需要 link:.
 
 
 
+[[reconfigure-authentication-using-the-management-node-rest-api]]
 === 使用管理节点 REST API 重新配置身份验证
 
 如果已按顺序升级（ 1 ）个管理服务和（ 2 ）个 Element 存储，则可以保留现有管理节点。如果您遵循了其他升级顺序，请参见原位管理节点升级过程。
@@ -188,6 +192,7 @@ https://<ManagementNodeIP>/mnode
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

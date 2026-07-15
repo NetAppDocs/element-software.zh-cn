@@ -37,6 +37,7 @@ NOTE: 您可以同时使用 IPv4 和 IPv6 地址。
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * link:../storage/task_system_manage_cluster_ntp_configure_to_listen_for_ntp_broadcasts.html["配置集群以侦听 NTP 广播"]

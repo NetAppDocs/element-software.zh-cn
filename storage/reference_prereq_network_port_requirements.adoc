@@ -546,6 +546,7 @@ vCenter 插件注册。注册完成后，可以关闭此端口。
 |===
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

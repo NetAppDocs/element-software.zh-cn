@@ -29,6 +29,7 @@ summary: 必须先在两个相应集群之间创建一个集群对，然后才�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_element_api_startvolumepairing.adoc[StartVolumePairing]

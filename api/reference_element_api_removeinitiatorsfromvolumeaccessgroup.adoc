@@ -15,6 +15,7 @@ summary: 您可以使用 RemoveInitiatorsFromVolumeAccessGroup 方法从指定�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -67,6 +68,7 @@ false
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -85,6 +87,7 @@ xref:reference_element_api_volumeaccessgroup.adoc[卷访问组]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -102,6 +105,7 @@ xref:reference_element_api_volumeaccessgroup.adoc[卷访问组]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -129,6 +133,7 @@ xref:reference_element_api_volumeaccessgroup.adoc[卷访问组]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

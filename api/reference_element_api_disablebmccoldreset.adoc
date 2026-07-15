@@ -15,12 +15,14 @@ summary: 您可以使用 DisableBmcColdReset 方法禁用后台任务，此任�
 
 
 
+[[parameter]]
 == 参数
 
 此方法没有输入参数。
 
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -39,6 +41,7 @@ cBmcResetDurationMinutes
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -53,6 +56,7 @@ cBmcResetDurationMinutes
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -68,6 +72,7 @@ cBmcResetDurationMinutes
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 12.0

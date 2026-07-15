@@ -54,6 +54,7 @@ TIP: 要检查版本，请登录到管理节点并在登录横幅中查看 Eleme
 
 
 
+[[sysupgradesystem-upgrade-sequence]]
 == 【系统升级】系统升级顺序
 
 您可以按以下顺序升级适用于Element 12.5或更高版本的NetApp SolidFire 全闪存存储系统。

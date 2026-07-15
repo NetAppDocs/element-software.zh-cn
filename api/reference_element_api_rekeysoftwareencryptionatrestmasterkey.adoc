@@ -15,6 +15,7 @@ summary: 您可以使用 RekeySoftwareEncryptionAtRestMasterKey 方法重新设�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数。如果未指定 `keyManagementType` 参数，则使用现有密钥管理配置执行重新设置密钥操作。如果指定了 `keyManagementType` ，并且密钥提供程序是外部的，则还必须使用 `keyProviderID` 参数。
@@ -31,6 +32,7 @@ summary: 您可以使用 RekeySoftwareEncryptionAtRestMasterKey 方法重新设�
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -44,6 +46,7 @@ summary: 您可以使用 RekeySoftwareEncryptionAtRestMasterKey 方法重新设�
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -60,6 +63,7 @@ summary: 您可以使用 RekeySoftwareEncryptionAtRestMasterKey 方法重新设�
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -72,6 +76,7 @@ summary: 您可以使用 RekeySoftwareEncryptionAtRestMasterKey 方法重新设�
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 12.3

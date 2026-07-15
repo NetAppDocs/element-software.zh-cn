@@ -15,6 +15,7 @@ keyServerKmip 对象用于描述密钥管理互操作性协议（ Key Management
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

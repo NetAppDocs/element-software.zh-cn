@@ -26,18 +26,21 @@ TIP: 请参见 link:../media/hseries_isi.pdf["海报"^] 以可视化方式显示
 
 
 
+[[workflow-diagrams]]
 == 工作流图
 
 此处的工作流图简要概述了安装步骤。根据 H 系列型号的不同，步骤略有不同。
 
 
 
+[[h410s]]
 === H410s
 
 image::../media/h410s_isi_workflow.png[H410S 安装工作流]
 
 
 
+[[h610s]]
 === H610S
 
 
@@ -47,6 +50,7 @@ image::../media/h610s_isi_workflow.png[H610S 安装工作流]
 
 
 
+[[prepare-for-installation]]
 == 准备安装
 
 在准备安装时，请清点已发送给您的硬件，如果缺少任何物品，请联系 NetApp 支持部门。
@@ -80,6 +84,7 @@ CAUTION: 安装硬件时，请确保移除设备上的所有包装材料并进�
 
 
 
+[[install-the-rails]]
 == 安装导轨
 
 发货给您的硬件订单包括一组滑轨。您需要使用螺丝刀完成导轨安装。每个节点型号的安装步骤略有不同。
@@ -93,6 +98,7 @@ TIP: 从机架底部到顶部安装硬件，以防止设备发生翻倒。如果
 
 
 
+[[h410s]]
 === H410s
 
 H410S 节点安装在 2U 四节点 H 系列机箱中，该机箱随附两组适配器。如果要将机箱安装在带有圆孔的机架中，请使用适用于带有圆孔的机架的适配器。H410S 节点的导轨适用于深度介于 29 英寸到 33.5 英寸之间的机架。导轨完全收缩后，其长度为 28 英寸，导轨的前后部分仅通过一个螺钉固定在一起。
@@ -115,6 +121,7 @@ image::../media/h410s_rail.gif[2U 导轨安装]
 
 
 
+[[h610s]]
 === H610S
 
 以下是为 H610S 存储节点安装导轨的图示：
@@ -126,6 +133,7 @@ TIP: H610S 上有左右导轨。将螺钉孔朝底部放置，以便 H610S 翼�
 
 
 
+[[install-and-cable-the-nodes]]
 == 安装节点并为其布线
 
 将 H410S 存储节点安装在 2U 四节点机箱中。对于 H610S ，请将机箱 / 节点直接安装到机架中的导轨上。
@@ -139,6 +147,7 @@ CAUTION: 从设备上拆下所有包装材料和包装。这样可以防止节�
 
 
 
+[[h410s]]
 === H410s
 
 .步骤
@@ -181,6 +190,7 @@ image::../media/hci_poweron_isg.gif[此图显示了 2U 中节点上的电源按�
 
 
 
+[[h610s]]
 === H610S
 
 .步骤
@@ -219,6 +229,7 @@ image::../media/h600s_isi_nodefront.png[此图显示了 H610S 机箱的正面，
 
 
 
+[[configure-the-nodes]]
 == 配置节点
 
 将硬件装入机架并布线后，即可配置新的存储资源。
@@ -244,6 +255,7 @@ TIP: 请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Inf
 
 
 
+[[create-a-cluster]]
 == 创建集群
 
 将存储节点添加到安装中并配置新存储资源后，即可创建新的存储集群
@@ -255,6 +267,7 @@ TIP: 请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Inf
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

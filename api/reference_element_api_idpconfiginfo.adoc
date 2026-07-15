@@ -15,6 +15,7 @@ idpConfigInfo 对象包含有关第三方身份提供程序（ IdP ）的配置�
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

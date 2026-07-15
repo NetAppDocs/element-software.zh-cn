@@ -23,6 +23,7 @@ keywords: netapp, management node ui, mnode ui, network settings, test network, 
 
 
 
+[[update-management-node-network-settings]]
 == 更新管理节点网络设置
 
 在每节点管理节点 UI 的 Network Settings 选项卡上，您可以修改管理节点网络接口字段。
@@ -66,6 +67,7 @@ IMPORTANT: 11.3 或更高版本的管理节点不支持 IPv6 选项。
 
 
 
+[[update-management-node-cluster-settings]]
 == 更新管理节点集群设置
 
 在管理节点的每节点 UI 的 "Cluster Settings" 选项卡上，您可以在节点处于 "Available" ， "Pending" ， "PendingActive" 和 "Active" 状态时修改集群接口字段。
@@ -83,6 +85,7 @@ IMPORTANT: 11.3 或更高版本的管理节点不支持 IPv6 选项。
 
 
 
+[[test-the-management-node-settings]]
 == 测试管理节点设置
 
 更改管理节点的管理和网络设置并提交更改后，您可以运行测试以验证所做的更改。

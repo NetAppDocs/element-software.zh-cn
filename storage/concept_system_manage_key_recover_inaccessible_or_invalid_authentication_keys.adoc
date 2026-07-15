@@ -15,6 +15,7 @@ summary: 有时，可能会发生需要用户干预的错误。如果发生错�
 
 
 
+[[the-cluster-is-unable-to-unlock-the-drives-due-to-a-kmipserverfault-cluster-fault]]
 == 由于 KmipServerFault 集群故障，集群无法解锁驱动器。
 
 当集群首次启动，密钥服务器不可访问或所需密钥不可用时，可能会发生这种情况。
@@ -24,6 +25,7 @@ summary: 有时，可能会发生需要用户干预的错误。如果发生错�
 
 
 
+[[a-sliceserviceunhealthy-fault-might-be-set-because-the-metadata-drives-have-been-marked-as-failed-and-placed-into-the-available-state]]
 == 可能会设置 sliceServiceUnhealthy 故障，因为元数据驱动器已标记为 Failed 并置于 "available" 状态。
 
 清除步骤：

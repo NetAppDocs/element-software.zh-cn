@@ -29,6 +29,7 @@ summary: 您必须监控系统以进行诊断，并获取有关各种系统操�
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

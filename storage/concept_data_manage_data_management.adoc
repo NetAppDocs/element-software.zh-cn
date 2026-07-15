@@ -15,6 +15,7 @@ summary: 您可以从 Element UI 中的 Management 选项卡管理运行 Element
 
 
 
+[[work-with-volumes]]
 == 使用卷
 
 SolidFire 系统使用卷配置存储。卷是 iSCSI 或光纤通道客户端通过网络访问的块设备。从 "Management" 选项卡上的 "Volumes" 页面中，您可以在节点上创建，修改，克隆和删除卷。您还可以查看有关卷带宽和 I/O 使用情况的统计信息。
@@ -23,6 +24,7 @@ link:../storage/concept_data_manage_volumes_quality_of_service_policies.html["�
 
 
 
+[[work-with-virtual-volumes]]
 == 使用虚拟卷
 
 您可以使用 Element UI 查看虚拟卷及其关联存储容器，协议端点，绑定和主机的信息并执行相关任务。
@@ -43,6 +45,7 @@ link:../storage/task_data_manage_vvol_enable_virtual_volumes.html["了解如何�
 
 
 
+[[work-with-volume-access-groups-and-initiators]]
 == 使用卷访问组和启动程序
 
 您可以使用 iSCSI 启动程序或光纤通道启动程序访问卷访问组中定义的卷。
@@ -72,6 +75,7 @@ link:../storage/task_data_manage_vol_access_group_create_a_volume_access_group.h
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

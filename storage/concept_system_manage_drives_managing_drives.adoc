@@ -15,6 +15,7 @@ summary: 每个节点都包含一个或多个物理驱动器，用于存储集�
 
 
 
+[[drives-details]]
 == 驱动器详细信息
 
 "Cluster" 选项卡上的 "Drives" 页面提供了集群中活动驱动器的列表。您可以通过从 "Active" ， "Available" ， "Removing" ， "Erasing" 和 "Failed" 选项卡中选择来筛选页面。
@@ -62,6 +63,7 @@ summary: 每个节点都包含一个或多个物理驱动器，用于存储集�
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

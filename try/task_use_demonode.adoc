@@ -15,6 +15,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Ele
 
 
 
+[[supported-functionality]]
 == 支持的功能：
 
 Element 演示节点仅可用作演示和开发工具。在使用演示节点之前，请注意以下功能限制：
@@ -40,6 +41,7 @@ NOTE: 所有其他 Element 软件限制均适用。有关详细信息，请参�
 
 
 
+[[vm-requirements]]
 == VM 要求
 
 * 240 GB 总容量（无法更改虚拟机虚拟磁盘的大小和数量。子操作系统会忽略通过虚拟机管理程序提供的任何额外存储。）
@@ -53,6 +55,7 @@ NOTE: 所有其他 Element 软件限制均适用。有关详细信息，请参�
 
 
 
+[[host-requirements]]
 == 主机要求
 
 * 适用于 Element 演示节点 11.7 VM 的 ESXi 6.0 或 6.5
@@ -63,12 +66,14 @@ NOTE: 所有其他 Element 软件限制均适用。有关详细信息，请参�
 
 
 
+[[download-element-demo-node]]
 == 下载 Element 演示节点
 
 Element 演示节点软件是一组 VMware 文件，这些文件已打包在一个 .ova 文件中。
 
 
 
+[[install-element-demo-node-on-vmware-esxi]]
 == 在 VMware ESXi 上安装 Element 演示节点
 
 在 VMware ESXi 上安装 Element 演示节点涉及以下任务：
@@ -80,12 +85,14 @@ Element 演示节点软件是一组 VMware 文件，这些文件已打包在一�
 
 
 
+[[configure-network-interfaces]]
 === 配置网络接口
 
 Element 演示节点需要两个单独的虚拟机网络。一个用于存储流量，另一个用于管理流量。您应将存储网络配置为支持巨型帧。
 
 
 
+[[register-the-demo-node-on-an-esxi-server]]
 === 在 ESXi 服务器上注册演示节点
 
 要在 ESXi 服务器上注册 Element 演示节点，您应使用 vSphere Client 部署演示节点 .ova 文件。
@@ -111,6 +118,7 @@ NOTE: 完成演示节点部署可能需要几分钟时间。
 
 
 
+[[start-the-demo-node-on-an-esxi-server]]
 === 在 ESXi 服务器上启动演示节点
 
 您应启动演示节点 VM ，以便通过 VMware ESXi 控制台访问 Element 。
@@ -125,12 +133,14 @@ NOTE: 完成演示节点部署可能需要几分钟时间。
 
 
 
+[[how-to-get-support]]
 == 如何获取支持
 
 Element 演示节点以尽力服务为基础提供。要获得支持，请将您的问题发布到 https://community.netapp.com/t5/Simulator-Discussions/bd-p/simulator-discussions["Element 演示节点论坛"^]。
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 https://mysupport.netapp.com/site/tools/tool-eula/element-demonode/download["Element 演示节点下载页面（需要登录）"^]

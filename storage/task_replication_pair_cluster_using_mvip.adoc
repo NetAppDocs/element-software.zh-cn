@@ -29,6 +29,7 @@ summary: 您可以使用一个集群的 MVIP 与另一个集群建立连接，�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:task_replication_pair_cluster_using_pairing_key.adoc[使用配对密钥对集群配对]

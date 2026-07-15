@@ -15,6 +15,7 @@ summary: 您可以使用 SetSnmpInfo 方法在集群节点上配置 SNMP 版本 
 
 
 
+[[parameters]]
 == Parameters
 
 
@@ -79,12 +80,14 @@ xref:reference_element_api_usmuser.adoc[usmUser]
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example-with-snmp-v3-enabled]]
 == 启用 SNMP v3 的请求示例
 
 此方法的请求类似于以下示例：
@@ -111,6 +114,7 @@ xref:reference_element_api_usmuser.adoc[usmUser]
 ----
 
 
+[[request-example-with-snmp-v2-enabled]]
 == 启用 SNMP v2 的请求示例
 
 此方法的请求类似于以下示例：
@@ -135,6 +139,7 @@ xref:reference_element_api_usmuser.adoc[usmUser]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -149,6 +154,7 @@ xref:reference_element_api_usmuser.adoc[usmUser]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

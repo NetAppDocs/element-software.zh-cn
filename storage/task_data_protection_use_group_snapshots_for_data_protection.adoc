@@ -15,6 +15,7 @@ summary: 您可以为一组相关卷创建组快照，以便为每个卷保留�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:task_data_protection_create_a_group_snapshot.adoc[创建组快照]

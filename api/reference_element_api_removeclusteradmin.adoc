@@ -15,6 +15,7 @@ summary: '您可以使用 RemoveClusterAdmin 方法删除集群管理员， LDAP
 
 
 
+[[parameter]]
 == 参数
 
 删除已通过身份验证的会话与第三方身份提供程序 IdP 关联的 IdP 集群管理员后，这些会话将注销或可能会在其当前会话中丢失访问权限。访问权限的丢失取决于已删除的 IdP 集群管理员是否与给定用户 SAML 属性中的多个 IdP 集群管理员之一匹配。其余一组匹配的 IdP 集群管理员会减少一组聚合访问权限。删除集群管理员后，其他集群管理员用户类型也会注销。
@@ -39,12 +40,14 @@ clusterAdminID
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -61,6 +64,7 @@ clusterAdminID
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -74,6 +78,7 @@ clusterAdminID
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

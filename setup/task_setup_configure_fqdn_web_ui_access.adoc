@@ -34,6 +34,7 @@ summary: 了解如何配置系统 FQDN Web UI 访问并对其进行故障排除�
 
 
 
+[[configure-fqdn-web-ui-access-using-netapp-hybrid-cloud-control]]
 == 使用 NetApp Hybrid Cloud Control 配置 FQDN Web UI 访问
 
 .步骤
@@ -60,6 +61,7 @@ NOTE: 只有设置了 FQDN 的已连接存储集群才会在 * 完全限定域�
 
 
 
+[[configure-fqdn-web-ui-access-using-the-rest-api]]
 == 使用 REST API 配置 FQDN Web UI 访问
 
 .步骤
@@ -116,6 +118,7 @@ method=CreateClusterInterfacePreference&name=mvip_fqdn&value=storagecluster.my.o
 
 
 
+[[remove-fqdn-web-ui-access-using-netapp-hybrid-cloud-control]]
 == 使用 NetApp Hybrid Cloud Control 删除 FQDN Web UI 访问
 
 您可以使用此操作步骤删除管理节点和存储集群的 FQDN Web 访问。
@@ -131,6 +134,7 @@ method=CreateClusterInterfacePreference&name=mvip_fqdn&value=storagecluster.my.o
 
 
 
+[[remove-fqdn-web-ui-access-using-the-rest-api]]
 == 使用 REST API 删除 FQDN Web UI 访问
 
 .步骤
@@ -181,6 +185,7 @@ https://<management_node_IP>/mnode/2/
 
 
 
+[[troubleshooting]]
 == 故障排除
 
 如果 FQDN 配置不正确，则在访问管理节点，存储集群或同时访问这两者时可能会出现问题。请使用以下信息帮助对问题描述进行故障排除。
@@ -212,6 +217,7 @@ https://<management_node_IP>/mnode/2/
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

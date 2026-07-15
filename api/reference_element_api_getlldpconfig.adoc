@@ -15,12 +15,14 @@ summary: 您可以使用 GetLldpConfig 方法获取存储集群中每个节点�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -39,6 +41,7 @@ JSON 对象
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -52,6 +55,7 @@ JSON 对象
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：

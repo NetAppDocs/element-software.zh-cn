@@ -15,12 +15,14 @@ summary: 您可以使用 ListNodeStats 方法查看存储集群中所有存储�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -39,6 +41,7 @@ xref:reference_element_api_nodestats.adoc[NodeStats]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -53,6 +56,7 @@ xref:reference_element_api_nodestats.adoc[NodeStats]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -104,6 +108,7 @@ xref:reference_element_api_nodestats.adoc[NodeStats]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

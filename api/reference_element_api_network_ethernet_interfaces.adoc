@@ -15,6 +15,7 @@ network （ Ethernet interfaces ）对象包含各个以太网接口的配置信
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：
@@ -100,6 +101,7 @@ boolean
 |===
 
 
+[[member-modifiability-and-node-states]]
 == 成员可修改性和节点状态
 
 此表指示是否可以在每个可能的节点状态下修改对象参数。
@@ -188,6 +190,7 @@ status
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_element_api_getconfig.adoc[getconfig]

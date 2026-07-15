@@ -53,6 +53,7 @@ https://<ManagementNodeIP>
 
 
 
+[[update-management-services-using-hybrid-cloud-control]]
 == 使用 Hybrid Cloud Control 更新管理服务
 
 您可以使用 NetApp Hybrid Cloud Control 更新 NetApp 管理服务。
@@ -97,6 +98,7 @@ https://<ManagementNodeIP>
 
 
 
+[[update-management-services-using-the-management-node-api]]
 == 使用管理节点 API 更新管理服务
 
 理想情况下，用户应从 NetApp Hybrid Cloud Control 执行管理服务更新。但是，您可以使用 REST API 手动将管理服务的服务包更新上传到，提取并部署到管理节点。您可以从管理节点的 REST API UI 运行每个命令。

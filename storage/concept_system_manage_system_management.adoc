@@ -21,6 +21,7 @@ summary: 您可以在 Element UI 中管理系统。其中包括启用多因素�
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

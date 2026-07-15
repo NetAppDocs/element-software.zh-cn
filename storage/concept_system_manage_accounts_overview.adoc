@@ -19,6 +19,7 @@ summary: 在SolidFire 存储系统中、租户可以使用帐户使客户端能�
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

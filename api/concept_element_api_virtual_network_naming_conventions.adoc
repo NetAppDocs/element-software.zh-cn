@@ -19,6 +19,7 @@ NetApp Element 存储系统使用单调递增的数字作为系统中所有对�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

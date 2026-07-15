@@ -23,6 +23,7 @@ NetApp 工程人员使用 `GetRawStats` API 方法测试新功能。从 `GetRawS
 
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

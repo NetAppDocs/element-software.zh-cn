@@ -31,6 +31,7 @@ NOTE: 您可以同时使用 IPv4 和 IPv6 地址。
 
 
 
+[[complete-pre-configuration-steps-for-ldap-support]]
 == 完成 LDAP 支持的预配置步骤
 
 在 Element 中启用 LDAP 支持之前，您应先设置 Windows Active Directory 服务器并执行其他预配置任务。
@@ -44,6 +45,7 @@ NOTE: 您可以同时使用 IPv4 和 IPv6 地址。
 
 
 
+[[enable-ldap-authentication-with-the-element-user-interface]]
 == 使用 Element 用户界面启用 LDAP 身份验证
 
 您可以配置存储系统与现有 LDAP 服务器的集成。这样， LDAP 管理员就可以集中管理用户的存储系统访问权限。
@@ -94,6 +96,7 @@ image::../media/element_new_cluster_admin.jpg[创建新用户页面的屏幕截�
 
 
 
+[[enable-ldap-authentication-with-the-element-api]]
 == 使用 Element API 启用 LDAP 身份验证
 
 您可以配置存储系统与现有 LDAP 服务器的集成。这样， LDAP 管理员就可以集中管理用户的存储系统访问权限。
@@ -199,6 +202,8 @@ searchBindPassword
 
 
 
+[[view-ldap-details]]
+[[view_ldap_details]]
 == 查看 LDAP 详细信息
 
 在 "Cluster" 选项卡上的 "LDAP" 页面上查看 LDAP 信息。
@@ -237,6 +242,7 @@ NOTE: 要查看这些 LDAP 配置设置，必须启用 LDAP 。
 
 
 
+[[test-the-ldap-configuration]]
 == 测试 LDAP 配置
 
 配置 LDAP 后，您应使用 Element UI 或 Element API `TestLdapAuthentication` 方法对其进行测试。
@@ -331,6 +337,7 @@ LDAP 服务器 URI 不正确。
 
 
 
+[[disable-ldap]]
 == 禁用 LDAP
 
 您可以使用 Element UI 禁用 LDAP 集成。
@@ -345,6 +352,7 @@ LDAP 服务器 URI 不正确。
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

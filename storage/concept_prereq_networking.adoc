@@ -15,6 +15,7 @@ SolidFire 系统的网络设置由交换机和端口要求组成。这些功能�
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * link:../storage/concept_prereq_switch_configuration_for_solidfire_clusters.html["运行 Element 软件的集群的交换机配置"]

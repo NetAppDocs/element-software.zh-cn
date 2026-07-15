@@ -17,6 +17,7 @@ API 中的三个请求端点通过以下方式指定：
 
 
 
+[[cluster-api-methods]]
 == 集群 API 方法
 
 用于存储集群范围 API 请求的 HTTPS 端点为 ` +https://<mvip>/json-rpc/<api-version>+` ，其中：
@@ -27,6 +28,7 @@ API 中的三个请求端点通过以下方式指定：
 
 
 
+[[cluster-creation-and-bootstrap-api-methods]]
 == 集群创建和启动 API 方法
 
 用于创建存储集群和访问启动 API 请求的 HTTPS 端点为 ` +https://<nodeIP>/json-rpc/<api-version>+` ，其中：
@@ -37,6 +39,7 @@ API 中的三个请求端点通过以下方式指定：
 
 
 
+[[per-node-api-methods]]
 == 每节点 API 方法
 
 用于单个存储节点 API 请求的 HTTPS 端点为 ` +https://<nodeIP>:442/json-rpc/<api-version>+` ，其中：
@@ -47,6 +50,7 @@ API 中的三个请求端点通过以下方式指定：
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

@@ -27,6 +27,7 @@ summary: 如果驱动器出现故障或驱动器损耗级别降至阈值以下�
 
 
 
+[[best-practices-for-adding-and-removing-drives]]
 == 添加和删除驱动器的最佳实践
 
 * 添加所有块驱动器并确保块同步完成，然后再添加分区驱动器。
@@ -115,6 +116,7 @@ NOTE: 在现有节点中安装新驱动器时，该驱动器会自动在 Element
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

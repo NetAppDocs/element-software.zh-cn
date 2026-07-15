@@ -60,6 +60,7 @@ NOTE: 要设置 Active IQ ，请使用设置脚本中的 ` -metry_active` 参数
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

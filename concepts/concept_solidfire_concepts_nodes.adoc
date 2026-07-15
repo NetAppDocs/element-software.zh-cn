@@ -24,12 +24,14 @@ NetApp Element 软件为集群定义了各种节点角色。节点角色的类�
 
 
 
+[[management-node]]
 == 管理节点
 
 管理节点是一个虚拟机，用于升级和提供系统服务，包括监控和遥测，管理集群资产和设置，运行系统测试和实用程序以及启用 NetApp 支持访问以进行故障排除。link:../concepts/concept_intro_management_node.html["了解更多信息。"]
 
 
 
+[[storage-node]]
 == 存储节点
 
 SolidFire 存储节点是一个服务器，其中包含一组通过绑定 10G 网络接口相互通信的驱动器。节点中的驱动器包含用于数据存储和数据管理的块和元数据空间。每个节点都包含 NetApp Element 软件的出厂映像。
@@ -45,6 +47,7 @@ SolidFire 存储节点是一个服务器，其中包含一组通过绑定 10G �
 
 
 
+[[fibre-channel-node]]
 == 光纤通道节点
 
 SolidFire 光纤通道节点可提供与光纤通道交换机的连接，您可以将光纤通道交换机连接到光纤通道客户端。光纤通道节点充当光纤通道和 iSCSI 协议之间的协议转换器；这样，您就可以向任何新的或现有的 SolidFire 集群添加光纤通道连接。
@@ -59,6 +62,7 @@ SolidFire 光纤通道节点可提供与光纤通道交换机的连接，您可�
 
 
 
+[[node-states-of-operation]]
 == 节点运行状态
 
 根据配置级别的不同，节点可以处于多种状态之一。
@@ -91,6 +95,7 @@ SolidFire 光纤通道节点可提供与光纤通道交换机的连接，您可�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

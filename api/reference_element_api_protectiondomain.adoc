@@ -15,6 +15,7 @@ protectionDomain 对象包含保护域的名称和类型详细信息。
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

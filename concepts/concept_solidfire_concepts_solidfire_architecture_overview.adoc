@@ -42,6 +42,7 @@ image::../media/solidfire_concepts_guide_architecture_image.gif[Element 软件�
 
 
 
+[[common-urls]]
 == 通用 URL
 
 以下是您在 SolidFire 全闪存存储系统中使用的常见 URL ：
@@ -70,6 +71,7 @@ image::../media/solidfire_concepts_guide_architecture_image.gif[Element 软件�
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

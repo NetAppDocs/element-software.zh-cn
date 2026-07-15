@@ -36,6 +36,7 @@ NOTE: 在使用以下任一命令选项之前、请联系NetApp支持部门。
 |===
 
 
+[[upload-logs]]
 == 上传日志
 
 收集系统上的所有日志、并根据以下操作步骤 将其上传到指定的URL。
@@ -59,6 +60,7 @@ NOTE: 有关完整的语法选项、请参见 https://curl.se/docs/manpage.html[
 
 
 
+[[use-the-support-tunnel]]
 == 使用支持通道
 
 如果您需要NetApp HCI 系统或SolidFire 全闪存存储系统的技术支持、NetApp支持部门可以远程连接到您的系统。要启动会话并获得远程访问， NetApp 支持部门可以与您的环境建立反向安全 Shell （ SSH ）连接。
@@ -100,6 +102,7 @@ NOTE: 如果不禁用SSH、则它在管理节点上保持启用状态。启用�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

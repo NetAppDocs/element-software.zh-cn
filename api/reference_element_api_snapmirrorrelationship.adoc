@@ -15,6 +15,7 @@ snapMirrorRelationship 对象包含有关 Element 卷与 ONTAP 卷之间的 Snap
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

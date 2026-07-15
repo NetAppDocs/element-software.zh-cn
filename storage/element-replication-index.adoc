@@ -26,6 +26,7 @@ summary: 您可以使用SnapMirror将Element卷的Snapshot副本复制到ONTAP�
 
 
 
+[[about-replication-between-element-and-ontap]]
 == 关于 Element 和 ONTAP 之间的复制
 
 从ONTAP 9。3开始、您可以使用SnapMirror将Element卷的Snapshot副本复制到ONTAP目标。如果 Element 站点发生灾难，您可以从 ONTAP 系统向客户端提供数据，然后在服务还原后重新激活 Element 源卷。
@@ -34,6 +35,7 @@ summary: 您可以使用SnapMirror将Element卷的Snapshot副本复制到ONTAP�
 
 
 
+[[types-of-data-protection-relationship]]
 === 数据保护关系的类型
 
 SnapMirror 提供两种类型的数据保护关系。对于每种类型、SnapMirror都会在初始化或更新关系之前为Element源卷创建一个Snapshot副本：
@@ -44,6 +46,7 @@ SnapMirror 提供两种类型的数据保护关系。对于每种类型、SnapMi
 
 
 
+[[default-policies]]
 === 默认策略
 
 首次调用 SnapMirror 时，它会执行从源卷到目标卷的 _baseline transfer_ 。_snapmirror policy_ 用于定义基线内容以及任何更新。
@@ -92,12 +95,14 @@ Unified7year
 ====
 
 
+[[understanding-snapmirror-labels]]
 === 了解 SnapMirror 标签
 
 策略类型为`mirrirr-vor`的每个策略都必须具有一条规则、用于指定要复制的Snapshot副本。例如、规则"`daily`"指示只应复制分配了SnapMirror标签"`daily`"的Snapshot副本。您可以在配置Element Snapshot副本时分配SnapMirror标签。
 
 
 
+[[replication-from-an-element-source-cluster-to-an-ontap-destination-cluster]]
 === 从 Element 源集群复制到 ONTAP 目标集群
 
 您可以使用SnapMirror将Element卷的Snapshot副本复制到ONTAP目标系统。如果 Element 站点发生灾难，您可以从 ONTAP 系统向客户端提供数据，然后在服务还原后重新激活 Element 源卷。
@@ -112,6 +117,7 @@ Element 卷大致相当于 ONTAP LUN 。初始化 Element 软件和 ONTAP 之间
 
 
 
+[[replication-from-an-ontap-source-cluster-to-an-element-destination-cluster]]
 === 从 ONTAP 源集群复制到 Element 目标集群
 
 从ONTAP 9。4开始、您可以将在ONTAP系统上创建的LUN的Snapshot副本复制回Element卷：
@@ -133,6 +139,7 @@ Element 卷大致相当于 ONTAP LUN 。初始化 Element 软件和 ONTAP 之间
 
 
 
+[[prerequisites]]
 === 前提条件
 
 在 Element 和 ONTAP 之间配置数据保护关系之前，您必须已完成以下任务：
@@ -154,6 +161,7 @@ Element 卷大致相当于 ONTAP LUN 。初始化 Element 软件和 ONTAP 之间
 
 
 
+[[support-details]]
 === 支持详细信息
 
 下表显示了 Element 到 ONTAP 备份的支持详细信息。

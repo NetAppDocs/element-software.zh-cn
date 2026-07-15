@@ -26,6 +26,7 @@ Element 存储数据保护包括以下概念：
 
 
 
+[[remote-replication-types]]
 == 远程复制类型
 
 数据的远程复制可以采用以下形式：
@@ -39,6 +40,7 @@ Element 存储数据保护包括以下概念：
 
 
 
+[[synchronous-and-asynchronous-replication-between-clusters]]
 === 集群之间的同步和异步复制
 
 对于运行 NetApp Element 软件的集群，可以通过实时复制快速创建卷数据的远程副本。
@@ -73,6 +75,7 @@ Element 存储数据保护包括以下概念：
 
 
 
+[[snapshot-only-replication]]
 === 仅 Snapshot 复制
 
 仅快照数据保护功能可将特定时间点发生更改的数据复制到远程集群。仅复制在源集群上创建的快照。而源卷的活动写入则不是。
@@ -83,6 +86,7 @@ Snapshot 复制不会影响异步或同步复制。
 
 
 
+[[replication-between-element-and-ontap-clusters-using-snapmirror]]
 === 使用 SnapMirror 在 Element 和 ONTAP 集群之间进行复制
 
 借助 NetApp SnapMirror 技术，您可以将使用 NetApp Element 软件创建的快照复制到 ONTAP 以实现灾难恢复。在 SnapMirror 关系中， Element 是一个端点，而 ONTAP 是另一个端点。
@@ -109,6 +113,7 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 
 
+[[volume-snapshots-for-data-protection]]
 == 用于数据保护的卷快照
 
 卷快照是卷的时间点副本，您可以稍后使用它将卷还原到该特定时间。
@@ -123,6 +128,7 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 
 
+[[volume-clones]]
 == 卷克隆
 
 一个或多个卷的克隆是数据的时间点副本。克隆卷时，系统会创建卷的快照，然后为该快照引用的数据创建一份副本。
@@ -133,6 +139,7 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 
 
+[[backup-and-restore-process-overview-for-element-storage]]
 == Element 存储的备份和还原过程概述
 
 您可以将卷备份和还原到其他 SolidFire 存储以及与 Amazon S3 或 OpenStack Swift 兼容的二级对象存储。
@@ -148,6 +155,7 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 
 
+[[protection-domains]]
 == 保护域
 
 保护域是一个节点或一组分组在一起的节点，在保持数据可用性的同时，任何部分甚至所有节点都可能发生故障。通过保护域，存储集群可以在丢失机箱（机箱关联性）或整个域（机箱组）时自动进行修复。
@@ -171,6 +179,7 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 
 
+[[custompdcustom-protection-domains]]
 == 【自定义PD】自定义保护域
 
 您可以定义一个与您的特定机箱和节点布局匹配的自定义保护域布局，其中每个节点都与一个且仅与一个自定义保护域相关联。默认情况下，每个节点都分配到同一个默认的自定义保护域。
@@ -198,6 +207,7 @@ NetApp Element 软件 10.1 及更高版本支持使用 SnapMirror 功能在 ONTA
 
 
 
+[[double-helix-high-availability]]
 == 双 Helix 高可用性
 
 双 Helix 数据保护是一种复制方法，可在系统中的所有驱动器之间至少分布两个冗余数据副本。通过 " 无 RAID " 方法，系统可以在存储系统的所有级别承受多个并发故障并快速修复。

@@ -15,6 +15,7 @@ ontapVersionInfo 对象包含有关 SnapMirror 关系中 ONTAP 集群的 API 版
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

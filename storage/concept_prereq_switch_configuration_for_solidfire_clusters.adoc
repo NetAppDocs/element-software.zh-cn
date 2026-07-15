@@ -68,6 +68,7 @@ NetApp Element 需要满足以下要求：
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/hci/docs/hci_prereqs_network_switch.html["NetApp HCI 网络和交换机要求"^]

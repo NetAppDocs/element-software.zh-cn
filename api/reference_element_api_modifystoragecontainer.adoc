@@ -15,6 +15,7 @@ summary: 您可以使用 ModifyStorageContainer 方法更改现有虚拟卷存�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -65,6 +66,7 @@ string
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -85,6 +87,7 @@ xref:reference_element_api_storagecontainer.adoc[存储容器]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -102,6 +105,7 @@ xref:reference_element_api_storagecontainer.adoc[存储容器]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -125,6 +129,7 @@ xref:reference_element_api_storagecontainer.adoc[存储容器]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

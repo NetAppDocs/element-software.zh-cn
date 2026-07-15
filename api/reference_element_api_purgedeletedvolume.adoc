@@ -17,6 +17,7 @@ summary: 您可以使用 PurgeDeletedVolume 方法立即永久清除已删除的
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -29,12 +30,14 @@ summary: 您可以使用 PurgeDeletedVolume 方法立即永久清除已删除的
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -51,6 +54,7 @@ summary: 您可以使用 PurgeDeletedVolume 方法立即永久清除已删除的
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -64,12 +68,14 @@ summary: 您可以使用 PurgeDeletedVolume 方法立即永久清除已删除的
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_deletevolume.adoc[DeleteVolume]

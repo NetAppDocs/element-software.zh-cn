@@ -15,6 +15,7 @@ snapMirrorNetworkInterface 对象包含有关集群间逻辑接口（ LIF ）的
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

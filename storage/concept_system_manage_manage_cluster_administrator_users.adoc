@@ -15,6 +15,7 @@ summary: 您可以管理 SolidFire 存储系统的集群管理员帐户。可用
 
 
 
+[[storage-cluster-administrator-account-types]]
 == 存储集群管理员帐户类型
 
 运行 NetApp Element 软件的存储集群中可以存在两种类型的管理员帐户：主集群管理员帐户和集群管理员帐户。
@@ -34,6 +35,7 @@ NOTE: 要通过每节点 UI 访问集群中的活动节点，需要使用本地�
 
 
 
+[[view-cluster-admin-details]]
 == 查看集群管理员详细信息
 
 . 要创建集群范围（非 LDAP ）的集群管理员帐户，请执行以下操作：
@@ -85,6 +87,8 @@ NOTE: 要通过每节点 UI 访问集群中的活动节点，需要使用本地�
 
 
 
+[[create-a-cluster-administrator-account]]
+[[create_cluster_admin_account]]
 == 创建集群管理员帐户
 
 您可以创建具有允许或限制对存储系统特定区域的访问权限的新集群管理员帐户。设置集群管理员帐户权限时，系统会为您未分配给集群管理员的任何权限授予只读权限。
@@ -132,6 +136,7 @@ link:concept_system_manage_manage_ldap.html["使用 Element 用户界面启用 L
 
 
 
+[[edit-cluster-administrator-permissions]]
 == 编辑集群管理员权限
 
 您可以更改报告，节点，驱动器，卷，帐户的集群管理员帐户权限， 和集群级别访问。启用某个权限后，系统会为此级别分配写入访问权限。系统会为管理员用户授予对您未选择的级别的只读访问权限。
@@ -145,6 +150,7 @@ link:concept_system_manage_manage_ldap.html["使用 Element 用户界面启用 L
 
 
 
+[[change-passwords-for-cluster-administrator-accounts]]
 == 更改集群管理员帐户的密码
 
 您可以使用 Element UI 更改集群管理员密码。

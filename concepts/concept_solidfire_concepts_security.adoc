@@ -15,6 +15,7 @@ summary: 使用 NetApp Element 软件时，您的数据会受到行业标准安�
 
 
 
+[[encryption-at-rest-hardware]]
 == 空闲加密（硬件）
 
 存储节点中的所有驱动器均可在驱动器级别使用 AES 256 位加密进行加密。每个驱动器都有自己的加密密钥，该密钥是在首次初始化驱动器时创建的。启用加密功能后，系统将创建一个集群范围的密码，然后将该密码区块分发到集群中的所有节点。没有一个节点存储整个密码。然后，使用此密码对所有驱动器访问进行密码保护。解锁驱动器需要密码，因此，除非从驱动器中断电或驱动器锁定，否则不需要密码。
@@ -23,6 +24,7 @@ link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_c
 
 
 
+[[encryption-at-rest-software]]
 == 空闲加密（软件）
 
 另一种类型的空闲加密，即软件空闲加密，可以对写入存储集群中 SSD 的所有数据进行加密。 link:../storage/task_system_manage_cluster_enable_and_disable_encryption_for_a_cluster.html["启用时"^]，它会对写入的所有数据进行加密，并对软件中自动读取的所有数据进行解密。空闲软件加密可镜像硬件中的自加密驱动器（ SED ）实施，以便在没有 SED 的情况下提供数据安全性。
@@ -34,6 +36,7 @@ WARNING: 对于 SolidFire 全闪存存储集群，必须在创建集群期间启
 
 
 
+[[external-key-management]]
 == 外部密钥管理
 
 您可以将 Element 软件配置为使用符合 KMIP 的第三方密钥管理服务（ Key Management Service ， KMS ）来管理存储集群加密密钥。启用此功能后，存储集群的集群范围驱动器访问密码加密密钥将由您指定的 KMS 管理。
@@ -51,6 +54,7 @@ Element 可以使用以下密钥管理服务：
 
 
 
+[[multi-factor-authentication]]
 == 多因素身份验证
 
 通过多因素身份验证（ Multi-Factor Authentication ， MFA ），您可以要求用户在登录时提供多种类型的证据，以便通过 NetApp Element Web UI 或存储节点 UI 进行身份验证。您可以将 Element 配置为仅接受与现有用户管理系统和身份提供程序集成的登录的多因素身份验证。您可以将 Element 配置为与现有 SAML 2.0 身份提供程序集成，此身份提供程序可强制实施多种身份验证方案，例如密码和文本消息，密码和电子邮件消息或其他方法。
@@ -61,6 +65,7 @@ Element 可以使用以下密钥管理服务：
 
 
 
+[[fips-140-2-for-https-and-data-at-rest-encryption]]
 == 用于 HTTPS 和空闲数据加密的 FIPS 140-2
 
 NetApp SolidFire 存储集群支持符合联邦信息处理标准（ FIPS ） 140-2 加密模块要求的加密。您可以在 SolidFire 集群上为 HTTPS 通信和驱动器加密启用 FIPS 140-2 合规性。
@@ -73,6 +78,7 @@ NetApp SolidFire 存储集群支持符合联邦信息处理标准（ FIPS ） 14
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

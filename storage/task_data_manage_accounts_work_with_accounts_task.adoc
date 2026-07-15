@@ -17,6 +17,7 @@ summary: 在SolidFire 存储系统中、租户可以使用帐户使客户端能�
 
 
 
+[[chap-algorithms]]
 == CHAP算法
 
 从Element 12.7开始、支持符合FIPS的安全CHAP算法SHA1、SHA-256和SHA3-256。当主机iSCSI启动程序创建与Element iSCSI目标的iSCSI会话时、它会请求要使用的CHAP算法列表。Element iSCSI目标会从主机iSCSI启动程序请求的列表中选择它支持的第一个算法。要确认Element iSCSI目标选择的是最安全的算法、您必须将主机iSCSI启动程序配置为发送从最安全位置(例如SHA3-256)到最不安全位置(例如 SHA1或MD5。如果主机iSCSI启动程序未请求SHA算法、则Element iSCSI目标会选择MD5、前提是主机中的建议算法列表包含MD5。您可能需要更新主机iSCSI启动程序配置、以支持安全算法。
@@ -29,6 +30,7 @@ summary: 在SolidFire 存储系统中、租户可以使用帐户使客户端能�
 
 
 
+[[create-an-account]]
 == 创建帐户
 
 您可以创建帐户以允许访问卷。
@@ -53,6 +55,7 @@ NOTE: 将凭据字段留空可自动生成任一密码。
 
 
 
+[[view-account-details]]
 == 查看帐户详细信息
 
 您可以通过图形格式查看各个帐户的性能活动。
@@ -82,6 +85,7 @@ NOTE: 将凭据字段留空可自动生成任一密码。
 
 
 
+[[edit-an-account]]
 == 编辑帐户
 
 您可以编辑帐户以更改状态，更改 CHAP 密码或修改帐户名称。
@@ -110,6 +114,7 @@ NOTE: 如果不更改 * CHAP Settings* 凭据，它们将保持不变。如果�
 
 
 
+[[delete-an-account]]
 == 删除帐户
 
 您可以删除不再需要的帐户。
@@ -127,6 +132,7 @@ IMPORTANT: 与管理服务关联的永久性卷将分配给在安装或升级期
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

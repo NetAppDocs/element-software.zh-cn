@@ -35,6 +35,7 @@ Element 系统使用 NetApp Element API 作为其特性和功能的基础。使�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]

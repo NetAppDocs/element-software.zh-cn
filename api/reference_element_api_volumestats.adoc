@@ -15,6 +15,7 @@ volumeStats 对象包含单个卷的统计数据。
 
 
 
+[[object-members]]
 == 对象成员
 
 您可以使用以下方法获取部分或所有卷的 volumeStats 对象：

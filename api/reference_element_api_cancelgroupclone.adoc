@@ -15,6 +15,7 @@ summary: 您可以使用 CancelGroupClone 方法停止一组卷上正在进行�
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -37,12 +38,14 @@ groupCloneID
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -59,6 +62,7 @@ groupCloneID
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -72,6 +76,7 @@ groupCloneID
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

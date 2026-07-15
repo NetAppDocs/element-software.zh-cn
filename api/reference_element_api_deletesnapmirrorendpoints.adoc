@@ -15,6 +15,7 @@ Element Web UI 使用 `DDeleteSnapMirrorEndpoints` 从系统中删除一个或�
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -37,12 +38,14 @@ snapMirrorEndpointID
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 10.0

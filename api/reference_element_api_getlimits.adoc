@@ -18,18 +18,21 @@ NOTE: 无论用于传递此方法的 API 端点版本如何， `GetLimits` 方�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-values]]
 == 返回值
 
 此方法将返回一个 JSON 对象，其中包含名称 - 值对，这些名称 - 值对包含 API 限制。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -43,6 +46,7 @@ NOTE: 无论用于传递此方法的 API 端点版本如何， `GetLimits` 方�
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -118,6 +122,7 @@ NOTE: 无论用于传递此方法的 API 端点版本如何， `GetLimits` 方�
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

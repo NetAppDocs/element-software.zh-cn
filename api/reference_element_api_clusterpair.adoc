@@ -15,6 +15,7 @@ clusterPair 对象包含与本地集群配对的集群的相关信息。您可�
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：
@@ -102,6 +103,7 @@ string
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_listclusterpairs.adoc[ListClusterPairs]

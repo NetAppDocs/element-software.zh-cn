@@ -15,6 +15,7 @@ Element 软件 Web UI 使用 `ListSnapMirrorVservers` 方法列出远程 ONTAP �
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -69,6 +70,7 @@ string
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -89,6 +91,7 @@ xref:reference_element_api_snapmirrorvserver.adoc[snapMirrorVserver] 数组
 |===
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 10.1

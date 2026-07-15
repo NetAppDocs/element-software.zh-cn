@@ -20,6 +20,7 @@ NOTE: 克隆的卷不会从源卷继承卷访问组成员资格。
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -156,6 +157,7 @@ volumeId
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -212,6 +214,7 @@ volumeId
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -230,6 +233,7 @@ volumeId
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -285,12 +289,14 @@ volumeId
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_element_api_getasyncresult.adoc[GetAsyncResult]

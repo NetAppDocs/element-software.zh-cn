@@ -18,6 +18,7 @@ NOTE: 系统将提示您使用 NetApp 支持凭据登录。
 
 
 
+[[netapp-element-software]]
 == NetApp Element 软件
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3362264["NetApp Element软件 12.9 发行说明"^]_新的_
@@ -41,6 +42,7 @@ NOTE: 系统将提示您使用 NetApp 支持凭据登录。
 
 
 
+[[management-services]]
 == 管理服务
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["管理服务发行说明"^]
@@ -48,6 +50,7 @@ NOTE: 系统将提示您使用 NetApp 支持凭据登录。
 
 
 
+[[netapp-element-plug-in-for-vcenter-server]]
 == 适用于 vCenter Server 的 NetApp Element 插件
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP3344864["vCenter 插件 5.5 发行说明"^]
@@ -68,6 +71,7 @@ NOTE: 系统将提示您使用 NetApp 支持凭据登录。
 
 
 
+[[storage-firmware]]
 == 存储固件
 
 * https://docs.netapp.com/us-en/hci/docs/rn_storage_firmware_2.182.0.html["存储固件捆绑包2.182.0发行说明"^]_new_
@@ -84,6 +88,7 @@ NOTE: 系统将提示您使用 NetApp 支持凭据登录。
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]

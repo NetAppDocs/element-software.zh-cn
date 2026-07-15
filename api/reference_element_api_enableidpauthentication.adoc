@@ -15,6 +15,7 @@ summary: 您可以使用 EnableIdpAuthentication 方法为集群启用对使用�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -37,12 +38,14 @@ UUID
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -58,6 +61,7 @@ UUID
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -70,6 +74,7 @@ UUID
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 12.0

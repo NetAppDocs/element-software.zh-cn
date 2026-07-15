@@ -17,6 +17,7 @@ summary: 许多 API 请求和响应都使用对象以及简单类型。对象是
 
 
 
+[[object-member]]
 == 对象成员
 
 此对象包含以下成员：
@@ -35,6 +36,7 @@ JSON 对象
 |===
 
 
+[[request-example]]
 == 请求示例
 
 以下请求示例使用 AddClusterAdmin 方法：

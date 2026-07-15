@@ -15,6 +15,7 @@ summary: 您可以使用 CreatePublicPrivateKeyPair 方法创建公有和专用 
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -115,12 +116,14 @@ string
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。如果没有错误，则会认为创建密钥成功。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -139,6 +142,7 @@ string
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -153,6 +157,7 @@ string
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 11.7

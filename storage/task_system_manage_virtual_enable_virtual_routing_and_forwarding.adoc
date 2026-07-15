@@ -28,6 +28,7 @@ summary: 您可以启用虚拟路由和转发 \ （ VRF\ ），这样就可以�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:task_system_manage_virtual_add_a_virtual_network.adoc[添加虚拟网络]

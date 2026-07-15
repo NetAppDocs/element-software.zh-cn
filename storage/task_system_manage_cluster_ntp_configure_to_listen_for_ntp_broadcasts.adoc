@@ -30,6 +30,7 @@ NTP 用于通过网络同步时钟。在初始集群设置过程中，应连接�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * link:../storage/task_system_manage_cluster_ntp_configure.html["配置要查询的集群的网络时间协议服务器"]

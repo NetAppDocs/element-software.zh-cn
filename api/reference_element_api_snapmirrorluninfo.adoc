@@ -15,6 +15,7 @@ snapMirrorLunInfo 对象包含有关 ONTAP LUN 对象的信息。
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

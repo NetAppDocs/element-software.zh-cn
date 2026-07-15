@@ -15,6 +15,7 @@ fibreChannelPort 对象包含有关节点上各个端口或集群中整个节点
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：
@@ -136,6 +137,7 @@ string
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_listnodefibrechannelportinfo.adoc[ListNodeFibreChannelPortInfo]

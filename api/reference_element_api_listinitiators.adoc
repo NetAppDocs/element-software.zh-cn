@@ -15,6 +15,7 @@ summary: 您可以使用 ListInitiators 方法获取启动程序 IQN 或全球�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -63,6 +64,7 @@ limit
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -83,6 +85,7 @@ xref:reference_element_api_initiator.adoc[启动程序] 数组
 |===
 
 
+[[exceptions]]
 == 例外情况
 
 此方法可能存在以下异常：
@@ -101,6 +104,7 @@ xInvalidParameter
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -115,6 +119,7 @@ xInvalidParameter
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -140,6 +145,7 @@ xInvalidParameter
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

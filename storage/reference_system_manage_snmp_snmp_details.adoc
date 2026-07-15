@@ -20,6 +20,7 @@ NOTE: 您可以同时使用 IPv4 和 IPv6 地址。
 
 
 
+[[snmp-details]]
 == SNMP 详细信息
 
 在集群选项卡的 SNMP 页面上，您可以查看以下信息。

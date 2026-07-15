@@ -15,6 +15,7 @@ summary: 您可以使用 SetNtpInfo 方法在集群节点上配置 NTP 。使用
 
 
 
+[[parameters]]
 == Parameters
 
 
@@ -53,12 +54,14 @@ false
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -80,6 +83,7 @@ false
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -93,6 +97,7 @@ false
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

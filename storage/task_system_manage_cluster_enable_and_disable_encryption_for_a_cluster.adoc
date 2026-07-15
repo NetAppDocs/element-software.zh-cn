@@ -28,6 +28,7 @@ WARNING: 对于 SolidFire 全闪存存储集群，必须在创建集群期间启
 
 
 
+[[check-encryption-at-rest-status]]
 == 检查空闲时加密状态
 
 要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 link:../api/reference_element_api_getclusterinfo.html["GetClusterInfo"^] 方法您可以使用 link:../api/reference_element_api_getsoftwareencryptionatrestinfo.html["GetSoftwareEncryptionAtRestInfo"^] 获取集群用于对空闲数据进行加密的信息的方法。
@@ -43,6 +44,7 @@ NOTE: `https://<MVIP>/` 上的 Element 软件 UI 信息板当前仅显示基于�
 
 
 
+[[enable-hardware-based-encryption-at-rest]]
 == 启用基于硬件的空闲加密
 
 
@@ -54,6 +56,7 @@ NOTE: 要使用外部密钥管理配置启用空闲加密，必须通过启用�
 
 
 
+[[enable-software-based-encryption-at-rest]]
 == 启用基于软件的空闲加密
 
 
@@ -64,6 +67,7 @@ NOTE: 在集群上启用空闲软件加密后，无法禁用此功能。
 
 
 
+[[disable-hardware-based-encryption-at-rest]]
 == 禁用基于硬件的空闲加密
 
 . 从 Element UI 中，选择 * 集群 * > * 设置 * 。

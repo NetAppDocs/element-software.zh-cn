@@ -15,12 +15,14 @@ summary: 您可以使用 GetLoginBanner 方法获取用户在登录到 Element W
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -52,6 +54,7 @@ boolean
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -66,6 +69,7 @@ boolean
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -84,6 +88,7 @@ boolean
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 10.0

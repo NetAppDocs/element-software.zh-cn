@@ -48,6 +48,7 @@ WARNING: 除非NetApp支持部门建议、否则不支持对此系统进行任�
 
 
 
+[[troubleshoot-a-cluster-node]]
 == 对集群节点进行故障排除
 
 您可以使用sfreadonly系统帐户执行基本故障排除：
@@ -116,6 +117,7 @@ NOTE: 如果不禁用SSH、则它在管理节点上保持启用状态。启用�
 
 
 
+[[troubleshoot-a-cluster-node-with-netapp-support]]
 == 使用NetApp支持对集群节点进行故障排除
 
 NetApp支持部门可以使用系统帐户执行高级故障排除、从而使技术人员能够运行更深入的Element诊断。
@@ -213,6 +215,7 @@ NOTE: 如果不禁用SSH、则它在管理节点上保持启用状态。启用�
 
 
 
+[[troubleshoot-a-node-that-is-not-part-of-cluster]]
 == 对不属于集群的节点进行故障排除
 
 您可以对尚未添加到集群中的节点执行基本故障排除。您可以使用sfreadonly系统帐户来实现此目的、无论是否获得NetApp支持。如果已设置管理节点、则可以将其用于SSH并运行为此任务提供的脚本。

@@ -50,6 +50,7 @@ summary: 您可以向快照计划添加 SnapMirror 标签，以确保应用 Snap
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:task_data_protection_create_a_snapshot_schedule.adoc[创建快照计划]

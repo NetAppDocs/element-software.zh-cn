@@ -15,6 +15,7 @@ summary: 您可以使用 CreateSupportBundle 在节点的目录下创建支持�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -63,6 +64,7 @@ string
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -109,6 +111,7 @@ string
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -125,6 +128,7 @@ string
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -153,6 +157,7 @@ string
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

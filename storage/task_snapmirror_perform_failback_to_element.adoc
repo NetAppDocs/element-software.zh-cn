@@ -15,6 +15,7 @@ summary: 缓解主端的问题描述后，您必须重新同步原始源卷并�
 
 
 
+[[snapmirror-failback-scenarios]]
 == SnapMirror 故障恢复场景
 
 SnapMirror 灾难恢复功能在两种故障恢复情形中进行了说明。假定原始关系已进行故障转移（已中断）。
@@ -34,6 +35,7 @@ image::../media/snapmirror_element_failback2.png[源卷不存在时的故障恢�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:task_snapmirror_perform_failback_when_source_volume_exists.adoc[如果源卷仍存在，请执行故障恢复]

@@ -35,6 +35,7 @@ NOTE: 现在，可以挂载原始主卷，以便在原始主卷上恢复生产�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:concept_snapmirror_failback_scenarios.adoc[SnapMirror 故障恢复场景]

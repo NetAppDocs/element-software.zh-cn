@@ -48,6 +48,7 @@ IMPORTANT: 对于此配置，必须考虑以下条件：
 
 
 
+[[view-virtual-network-details]]
 == 查看虚拟网络详细信息
 
 .步骤

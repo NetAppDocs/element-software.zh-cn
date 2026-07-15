@@ -19,6 +19,7 @@ summary: 您可以使用 GetAsyncResult 检索异步方法调用的结果。某�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -54,6 +55,7 @@ false
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -132,6 +134,7 @@ ISO 8601 日期字符串
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -148,6 +151,7 @@ ISO 8601 日期字符串
 ----
 
 
+[[response-example-method-error]]
 == 响应示例：方法错误
 
 此方法返回类似于以下示例的响应：
@@ -167,6 +171,7 @@ ISO 8601 日期字符串
 
 
 
+[[response-example-asynchronous-task-error]]
 == 响应示例：异步任务错误
 
 此方法返回类似于以下示例的响应：
@@ -193,6 +198,7 @@ ISO 8601 日期字符串
 
 
 
+[[response-example-asynchronous-task-success]]
 == 响应示例：异步任务成功
 
 此方法返回类似于以下示例的响应：
@@ -218,6 +224,7 @@ ISO 8601 日期字符串
 
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

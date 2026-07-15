@@ -22,6 +22,7 @@ summary: 您可以通过 NetApp Element 软件 Web 用户界面（ Element UI\ �
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

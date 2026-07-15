@@ -15,6 +15,7 @@ loggingServer 对象存储有关为存储集群配置的日志主机的信息。
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

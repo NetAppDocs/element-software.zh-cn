@@ -24,6 +24,7 @@ NOTE: 如果您尝试取消卷与 QoS 策略的关联，则可以将该卷的 Qo
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:task_data_manage_volumes_remove_a_qos_policy_association_of_a_volume.adoc[删除卷的 QoS 策略关联]

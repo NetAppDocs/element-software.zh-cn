@@ -17,6 +17,7 @@ summary: 您可以使用 AddClusterAdmin 方法添加新的集群管理员帐户
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -91,6 +92,7 @@ string
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -111,6 +113,7 @@ clusterAdminID
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -131,6 +134,7 @@ clusterAdminID
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -146,12 +150,14 @@ clusterAdminID
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_app_b_access_control.adoc[访问控制]

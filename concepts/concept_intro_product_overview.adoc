@@ -17,6 +17,7 @@ SolidFire 全闪存存储系统由分散的硬件组件（驱动器和节点）�
 
 
 
+[[solidfire-features]]
 == SolidFire 功能
 
 SolidFire 系统可提供以下功能：
@@ -31,6 +32,7 @@ SolidFire 系统可提供以下功能：
 
 
 
+[[solidfire-deployment]]
 == SolidFire 部署
 
 使用NetApp提供并与NetApp Element 软件集成的存储节点。
@@ -39,6 +41,7 @@ link:../concepts/concept_solidfire_concepts_solidfire_architecture_overview.html
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/vcp/index.html["适用于 vCenter Server 的 NetApp Element 插件"^]

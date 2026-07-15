@@ -25,6 +25,7 @@ summary: 您可以通过选择自定义 QoS 设置从卷中删除 QoS 策略关�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:task_data_manage_volumes_deleting_a_qos_policy.adoc[删除 QoS 策略]

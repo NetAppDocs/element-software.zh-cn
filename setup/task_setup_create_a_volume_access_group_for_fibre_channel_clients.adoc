@@ -36,6 +36,7 @@ NOTE: 您可以稍后添加或删除启动程序。
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

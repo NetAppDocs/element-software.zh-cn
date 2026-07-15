@@ -18,6 +18,7 @@ NOTE: SolidFire Active IQ 提供了一个 QoS 建议页面，可提供有关最�
 
 
 
+[[quality-of-service-parameters]]
 == 服务质量参数
 
 IOPS 参数的定义方式如下：
@@ -53,6 +54,7 @@ IOPS 参数的定义方式如下：
 
 
 
+[[qos-value-limits]]
 == QoS 值限制
 
 下面列出了 QoS 的可能最小值和最大值。
@@ -74,6 +76,7 @@ IOPS 参数的定义方式如下：
 
 
 
+[[qos-performance]]
 == QoS 性能
 
 QoS 性能曲线显示了块大小与 IOPS 百分比之间的关系。
@@ -88,6 +91,7 @@ image::../media/solidfire_qos_performance_curve.png[介绍 QoS 中增加块大�
 
 
 
+[[qos-policies]]
 == QoS 策略
 
 通过 QoS 策略，您可以创建并保存可应用于多个卷的标准化服务质量设置。
@@ -101,6 +105,7 @@ NOTE: 要使用 QoS 策略，选定集群必须为 Element 10.0 或更高版本�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

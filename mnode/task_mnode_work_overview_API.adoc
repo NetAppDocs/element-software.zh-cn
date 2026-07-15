@@ -20,6 +20,7 @@ keywords: netapp, mnode api, management node api, rest api
 
 
 
+[[authorization]]
 == Authorization
 
 * link:task_mnode_api_get_authorizationtouse.html["获取使用 REST API 的授权"]
@@ -27,6 +28,7 @@ keywords: netapp, mnode api, management node api, rest api
 
 
 
+[[asset-configuration]]
 == 资产配置
 
 * link:task_mnode_enable_activeIQ.html["启用 Active IQ 和 NetApp 监控"]
@@ -38,6 +40,7 @@ keywords: netapp, mnode api, management node api, rest api
 
 
 
+[[asset-management]]
 == 资产管理
 
 * link:task_mnode_edit_vcenter_assets.html["查看或编辑现有控制器资产"]

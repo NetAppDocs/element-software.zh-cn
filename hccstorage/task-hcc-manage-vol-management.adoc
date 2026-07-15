@@ -32,6 +32,7 @@ keywords: netapp, element, cluster, element, volume
 
 
 
+[[create-a-volume]]
 == 创建卷
 
 您可以使用 NetApp Hybrid Cloud Control 创建存储卷。
@@ -74,6 +75,7 @@ NOTE: 如果帐户数超过 50 个，则不会显示此列表。开始键入，�
 
 
 
+[[apply-a-qos-policy-to-a-volume]]
 == 将 QoS 策略应用于卷
 
 您可以使用 NetApp Hybrid Cloud Control 将 QoS 策略应用于现有存储卷。如果需要为卷设置自定义 QoS 值，则可以 <<编辑卷>>。要创建新的 QoS 策略，请参见 link:task-hcc-qos-policies.html["创建和管理卷 QoS 策略"^]。
@@ -93,6 +95,7 @@ NOTE: 如果要在卷上使用 QoS 策略，则可以设置自定义 QoS 以删�
 
 
 
+[[edit-a-volume]]
 == 编辑卷
 
 使用 NetApp Hybrid Cloud Control ，您可以编辑卷属性，例如 QoS 值，卷大小以及用于计算字节值的度量单位。您还可以修改帐户访问权限以使用复制或限制对卷的访问。
@@ -162,6 +165,7 @@ TIP: 更改 IOPS 值时，应以十或百为单位递增。输入值需要有效
 
 
 
+[[clone-volumes]]
 == 克隆卷
 
 您可以创建单个存储卷的克隆或克隆一组卷，以便为数据创建时间点副本。克隆卷时，系统会创建卷的快照，然后为该快照引用的数据创建一份副本。
@@ -212,6 +216,7 @@ NOTE: 完成克隆操作所需的时间受卷大小和当前集群负载的影�
 
 
 
+[[add-volumes-to-a-volume-access-group]]
 == 将卷添加到卷访问组
 
 您可以将单个卷或一组卷添加到卷访问组。
@@ -228,6 +233,7 @@ NOTE: 完成克隆操作所需的时间受卷大小和当前集群负载的影�
 
 
 
+[[delete-a-volume]]
 == 删除卷
 
 您可以从 Element 存储集群中删除一个或多个卷。
@@ -251,6 +257,7 @@ IMPORTANT: 与管理服务关联的永久性卷会在安装或升级期间创建
 
 
 
+[[restore-a-deleted-volume]]
 == 还原已删除的卷
 
 删除存储卷后，如果在删除后八小时之前还原，您仍可还原该卷。
@@ -268,6 +275,7 @@ IMPORTANT: 与管理服务关联的永久性卷会在安装或升级期间创建
 
 
 
+[[purge-a-deleted-volume]]
 == 清除已删除的卷
 
 删除存储卷后，这些卷将保持可用状态大约八小时。八小时后，它们将自动清除，不再可用。如果您不想等待 8 小时，可以删除

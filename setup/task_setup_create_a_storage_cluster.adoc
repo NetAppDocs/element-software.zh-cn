@@ -67,6 +67,7 @@ NOTE: 用户名和密码可以使用大写和小写字母，特殊字符和数�
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * link:../api/concept_element_api_about_the_api.html["使用 Element API 管理存储"]

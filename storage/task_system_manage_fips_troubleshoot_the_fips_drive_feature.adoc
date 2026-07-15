@@ -25,6 +25,7 @@ summary: 使用 NetApp Element 软件 UI ，您可以查看有关系统中与 FI
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_monitor_cluster_fault_codes.adoc[集群故障代码]

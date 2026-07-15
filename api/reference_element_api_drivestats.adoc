@@ -15,6 +15,7 @@ driveStats 对象包含单个驱动器的高级别活动测量结果。您可以
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：
@@ -249,6 +250,7 @@ writeOps
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_getdrivestats.adoc[GetDriveStats]

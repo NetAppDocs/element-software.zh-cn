@@ -15,12 +15,14 @@ summary: 您可以使用 GetVirtualVolumeCount 方法检索系统中当前虚拟
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -39,6 +41,7 @@ count
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -54,6 +57,7 @@ count
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -69,6 +73,7 @@ count
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

@@ -15,6 +15,7 @@ node 对象包含有关集群中每个节点的信息。您可以使用 `ListAct
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：
@@ -225,6 +226,7 @@ xref:reference_element_api_virtualnetwork.adoc[VirtualNetwork] 数组
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_element_api_listactivenodes.adoc[ListActiveNodes]

@@ -15,6 +15,7 @@ volumePair 对象包含与其他集群上的另一个卷配对的卷的相关信
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：
@@ -92,6 +93,7 @@ string
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_element_api_listactivepairedvolumes.adoc[ListActivePairedVolumes]

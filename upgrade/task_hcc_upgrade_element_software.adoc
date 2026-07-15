@@ -93,6 +93,7 @@ IMPORTANT: 如果您要将H610S系列节点升级到Element 12.5或更高版本�
 
 
 
+[[use-netapp-hybrid-cloud-control-ui-to-upgrade-element-storage]]
 == 使用 NetApp Hybrid Cloud Control UI 升级 Element 存储
 
 您可以使用 NetApp Hybrid Cloud Control UI 升级存储集群。
@@ -159,6 +160,7 @@ NOTE: 在升级过程中，您可以退出此页面，稍后再返回此页面�
 
 
 
+[[upgrade-status-changes]]
 === 升级状态更改
 
 以下是用户界面中的 * 升级状态 * 列在升级过程之前，期间和之后显示的不同状态：
@@ -190,6 +192,7 @@ NOTE: 在升级过程中，您可以退出此页面，稍后再返回此页面�
 |===
 
 
+[[use-netapp-hybrid-cloud-control-api-to-upgrade-element-storage]]
 == 使用 NetApp Hybrid Cloud Control API 升级 Element 存储
 
 您可以使用 API 将集群中的存储节点升级到最新的 Element 软件版本。您可以使用自己选择的自动化工具来运行 API 。此处介绍的 API 工作流使用管理节点上提供的 REST API UI 作为示例。
@@ -428,6 +431,7 @@ https://<ManagementNodeIP>/storage/1/
 
 
 
+[[what-happens-if-an-upgrade-fails-using-netapp-hybrid-cloud-control]]
 == 使用 NetApp Hybrid Cloud Control 升级失败时会发生什么情况
 
 如果驱动器或节点在升级期间发生故障， Element UI 将显示集群故障。升级过程不会继续到下一个节点，而是等待集群故障解决。UI 中的进度条显示升级正在等待集群故障解决。在此阶段，在 UI 中选择 * 暂停 * 将不起作用，因为升级会等待集群运行正常。您需要联系 NetApp 支持部门以协助进行故障调查。

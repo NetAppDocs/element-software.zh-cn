@@ -15,12 +15,14 @@ summary: 您可以使用 GetDriveConfig 方法获取预期分区和块驱动器�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -39,6 +41,7 @@ xref:reference_element_api_drive.adoc[驱动器]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -53,6 +56,7 @@ xref:reference_element_api_drive.adoc[驱动器]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法的响应类似于以下示例。由于篇幅限制，此响应仅包含一个存储节点中一个驱动器的信息。

@@ -15,6 +15,7 @@ summary: 您可以使用 TestNetworkConfig 方法测试已配置的网络设置�
 
 
 
+[[parameters]]
 == Parameters
 
 在 UI 或 TUI 中使用 SetNetworkConfig 方法配置节点时，系统会验证并存储此配置。TestNetworkConfig API 测试使用存储的配置进行验证后逻辑。例如，如果发生断电或网络故障，您可以使用此 API 方法确保节点运行的网络配置为最新存储的网络配置。此操作将验证配置中没有错误，并且当前配置正在使用中。
@@ -25,6 +26,7 @@ summary: 您可以使用 TestNetworkConfig 方法测试已配置的网络设置�
 
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -43,6 +45,7 @@ JSON 对象
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -57,6 +60,7 @@ JSON 对象
 ----
 
 
+[[response-example-1]]
 == 响应示例 1
 
 如果未检测到错误，则不会返回任何响应。
@@ -76,6 +80,7 @@ JSON 对象
 ----
 
 
+[[response-example-2]]
 == 响应示例 2
 
 MTU 不匹配示例。
@@ -100,6 +105,7 @@ MTU 不匹配示例。
 ----
 
 
+[[response-example-3]]
 == 响应示例 3
 
 缺少静态路由的示例。
@@ -124,12 +130,14 @@ MTU 不匹配示例。
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_setnetworkconfig.adoc[SetNetworkConfig]

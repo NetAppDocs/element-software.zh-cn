@@ -15,12 +15,14 @@ summary: 您可以使用 StartClusterPairing 方法从用于与另一个集群�
 
 
 
+[[parameter]]
 == 参数
 
 此方法没有输入参数。
 
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -48,6 +50,7 @@ clusterPairID
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -63,6 +66,7 @@ clusterPairID
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -79,12 +83,14 @@ clusterPairID
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_completeclusterpairing.adoc[CompleteClusterPairing]

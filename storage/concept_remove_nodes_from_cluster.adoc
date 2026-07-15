@@ -37,6 +37,7 @@ summary: 您可以从集群中删除节点以进行维护或更换。您应先�
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2844772["更换发生故障的 SolidFire 机箱"]

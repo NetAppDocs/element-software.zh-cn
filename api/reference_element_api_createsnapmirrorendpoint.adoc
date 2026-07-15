@@ -15,6 +15,7 @@ Element Web UI 使用 `CreateSnapMirrorEndpoint` 方法创建与远程 SnapMirro
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -63,6 +64,7 @@ string
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -83,6 +85,7 @@ xref:reference_element_api_snapmirrorendpoint.adoc[snapMirrorEndpoint]
 |===
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 10.0

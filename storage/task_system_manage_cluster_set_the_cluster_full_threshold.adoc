@@ -24,6 +24,7 @@ summary: 您可以使用以下步骤更改系统生成块集群填充度警告�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Flash_Storage/SF_Series/How_are_the_blockSpace_thresholds_calculated_for_Element["如何计算 Element 的块空间阈值"^]

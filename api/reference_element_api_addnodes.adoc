@@ -26,6 +26,7 @@ NOTE: 添加新节点后，可能需要几秒钟的时间，才能启动并将�
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -61,6 +62,7 @@ boolean
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -90,6 +92,7 @@ JSON 对象数组
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -107,6 +110,7 @@ JSON 对象数组
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -140,12 +144,14 @@ JSON 对象数组
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_element_api_adddrives.adoc[添加驱动器]

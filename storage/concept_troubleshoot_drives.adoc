@@ -32,6 +32,7 @@ IMPORTANT: 如果删除驱动器会导致存储空间不足，无法迁移数据
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * xref:task_troubleshoot_remove_failed_drives.adoc[从集群中删除故障驱动器]

@@ -27,6 +27,7 @@ NOTE: 首次启动新的 NetApp Hybrid Cloud Control 会话时，如果管理节
 
 
 
+[[access-the-netapp-hcc-dashboard]]
 == 访问 NetApp HCC 信息板
 
 . 在Web浏览器中打开管理节点的IP地址。例如：
@@ -43,6 +44,7 @@ image::hcc_dashboard_all.PNG[HCC 信息板]
 
 
 
+[[monitor-storage-resources]]
 == 监控存储资源
 
 使用 * 存储 * 窗格查看您的整体存储环境。您可以监控存储集群，存储节点和卷总数。
@@ -59,6 +61,7 @@ TIP: 要查看最新的存储集群数据，请使用存储集群页面，其中
 
 
 
+[[monitor-storage-capacity]]
 == 监控存储容量
 
 监控环境的存储容量至关重要。使用存储容量窗格，您可以确定在启用或不启用数据压缩，重复数据删除和精简配置功能的情况下存储容量效率的提高。
@@ -97,6 +100,7 @@ NOTE: 总效率等于（ maxUsedSpace * 效率因子） /2 ，其中 efficiencyF
 
 
 
+[[monitor-storage-performance]]
 == 监控存储性能
 
 您可以使用存储性能窗格查看可以从集群中获得多少 IOPS 或吞吐量，而不会超过该资源的有用性能。存储性能是指在延迟变为问题描述之前获得最大利用率的时间点。

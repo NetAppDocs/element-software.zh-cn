@@ -15,6 +15,7 @@ protectionDomainResiliency 对象包含此存储集群的故障恢复能力状�
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

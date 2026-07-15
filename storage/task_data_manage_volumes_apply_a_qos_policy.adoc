@@ -25,6 +25,7 @@ summary: 您可以将现有 QoS 策略批量应用于一个或多个卷。
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:concept_data_manage_volumes_quality_of_service_policies.adoc[服务质量策略]

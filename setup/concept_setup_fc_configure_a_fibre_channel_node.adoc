@@ -31,6 +31,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_S
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:task_setup_fc_add_fibre_channel_nodes_to_a_cluster.adoc[向集群添加光纤通道节点]

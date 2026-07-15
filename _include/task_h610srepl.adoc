@@ -12,6 +12,7 @@ TIP: 对于 H610S ，即一个机架单元（ 1U ）机箱，术语 " 节点 " �
 
 
 
+[[best-practices-for-adding-and-removing-drives]]
 == 添加和删除驱动器的最佳实践
 
 在向集群添加驱动器时，应遵循以下最佳实践：
@@ -70,6 +71,7 @@ NOTE: 如果交换机无法识别缆线，请参见交换机供应商的文档�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

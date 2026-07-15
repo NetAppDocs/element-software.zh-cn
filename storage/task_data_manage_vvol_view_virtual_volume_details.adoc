@@ -31,6 +31,7 @@ summary: 您可以在 Element UI 中查看集群上所有活动虚拟卷的虚�
 
 
 
+[[details]]
 == 详细信息
 
 "VVols" 选项卡的 "Virtual Volumes" 页面提供了有关集群上每个活动虚拟卷的信息，例如卷 ID ，快照 ID ，父虚拟卷 ID 和虚拟卷 ID 。
@@ -55,6 +56,7 @@ summary: 您可以在 Element UI 中查看集群上所有活动虚拟卷的虚�
 
 
 
+[[individual-virtual-volume-details]]
 == 单个虚拟卷详细信息
 
 在选择单个虚拟卷并查看其详细信息时， "VVols" 选项卡上的 "Virtual Volumes" 页面将提供以下虚拟卷信息。

@@ -24,6 +24,7 @@ keywords: netapp, mnode, management node, api, Element
 
 
 
+[[access-the-management-node-per-node-ui]]
 == 访问管理节点的每节点 UI
 
 从每节点 UI 中，您可以访问网络和集群设置，并利用系统测试和实用程序。
@@ -43,6 +44,7 @@ image::mnode_per_node_442_ui.png[每个节点的管理节点 UI]
 
 
 
+[[access-the-management-node-rest-api-ui]]
 == 访问管理节点 REST API UI
 
 从 REST API UI 中，您可以访问与服务相关的 API 菜单，以控制管理节点上的管理服务。

@@ -24,6 +24,7 @@ keywords: netapp, element, cluster, element, account, user, volume, hybrid cloud
 
 
 
+[[enable-ldap]]
 == 启用 LDAP ：
 
 要对任何用户帐户使用 LDAP ，必须先启用 LDAP 。
@@ -40,12 +41,14 @@ keywords: netapp, element, cluster, element, account, user, volume, hybrid cloud
 
 
 
+[[manage-authoritative-cluster-accounts]]
 == 管理权威集群帐户
 
 link:../concepts/concept_solidfire_concepts_accounts_and_permissions.html#authoritative-cluster-user-accounts["权威用户帐户"] 可从 NetApp Hybrid Cloud Control 中右上角的 User Management 选项菜单进行管理。通过这些类型的帐户，您可以针对与节点和集群的 NetApp Hybrid Cloud Control 实例关联的任何存储资产进行身份验证。使用此帐户，您可以管理所有集群中的卷，帐户，访问组等。
 
 
 
+[[create-an-authoritative-cluster-account]]
 === 创建权威集群帐户
 
 您可以使用 NetApp Hybrid Cloud Control 创建帐户。
@@ -82,6 +85,7 @@ TIP: 要确保组的所有子级都继承权限，请在 LDAP 服务器中创建
 
 
 
+[[edit-an-authoritative-cluster-account]]
 === 编辑权威集群帐户
 
 您可以使用 NetApp Hybrid Cloud Control 更改用户帐户的权限或密码。
@@ -106,6 +110,7 @@ NOTE: NetApp Hybrid Cloud Control UI 可能需要长达 2 分钟的时间来刷�
 
 
 
+[[delete-an-authoritative-user-account]]
 === 删除权威用户帐户
 
 您可以删除不再需要的一个或多个帐户。您可以删除 LDAP 用户帐户。
@@ -121,6 +126,7 @@ NOTE: NetApp Hybrid Cloud Control UI 可能需要长达 2 分钟的时间来刷�
 
 
 
+[[manage-volume-accounts]]
 == 管理卷帐户
 
 link:../concepts/concept_solidfire_concepts_accounts_and_permissions.html#volume-accounts["卷帐户"] 在 NetApp Hybrid Cloud Control Volumes 表中进行管理。这些帐户仅特定于创建它们的存储集群。通过这些类型的帐户，您可以在网络中为卷设置权限，但在这些卷之外不起作用。
@@ -129,6 +135,7 @@ link:../concepts/concept_solidfire_concepts_accounts_and_permissions.html#volume
 
 
 
+[[create-a-volume-account]]
 === 创建卷帐户
 
 创建特定于此卷的帐户。
@@ -154,6 +161,7 @@ NOTE: 要自动生成任一密码，请将凭据字段留空。
 
 
 
+[[edit-a-volume-account]]
 === 编辑卷帐户
 
 您可以更改 CHAP 信息并更改帐户是处于活动状态还是已锁定。
@@ -172,6 +180,7 @@ IMPORTANT: 删除或锁定与管理节点关联的帐户会导致管理节点无
 
 
 
+[[delete-a-volume-account]]
 === 删除卷帐户
 
 删除不再需要的帐户。

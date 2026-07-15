@@ -31,6 +31,7 @@ NOTE: 出于安全原因，不应通过电子邮件将配对密钥发送给其�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_element_api_startclusterpairing.adoc[启动集群配对]

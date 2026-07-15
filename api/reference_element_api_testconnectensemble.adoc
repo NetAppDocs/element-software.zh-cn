@@ -15,6 +15,7 @@ summary: 您可以使用 TestConnectEnsemble 方法验证与指定数据库集�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -27,6 +28,7 @@ summary: 您可以使用 TestConnectEnsemble 方法验证与指定数据库集�
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -46,6 +48,7 @@ summary: 您可以使用 TestConnectEnsemble 方法验证与指定数据库集�
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -60,6 +63,7 @@ summary: 您可以使用 TestConnectEnsemble 方法验证与指定数据库集�
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -85,6 +89,7 @@ summary: 您可以使用 TestConnectEnsemble 方法验证与指定数据库集�
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

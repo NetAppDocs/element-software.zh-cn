@@ -31,6 +31,7 @@ keywords: netapp, element, management node, mnode, network, nic, storage nic
 
 
 
+[[configure-a-storage-network-interface-controller-nic-for-an-untagged-network-interface]]
 == 为未标记的网络接口配置存储网络接口控制器（ NIC ）
 
 .步骤
@@ -73,6 +74,7 @@ https://$mnode_IP:442/json-rpc/10.0 \
 
 
 
+[[configure-a-storage-network-interface-controller-nic-for-a-tagged-network-interface]]
 == 为带标记的网络接口配置存储网络接口控制器（ NIC ）
 
 .步骤

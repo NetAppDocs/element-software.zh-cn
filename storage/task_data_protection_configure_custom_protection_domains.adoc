@@ -56,6 +56,7 @@ CAUTION: 在应用更改之前，请确保了解您的节点和机箱布局，�
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * link:../concepts/concept_solidfire_concepts_data_protection.html#custom_pd["自定义保护域"^]

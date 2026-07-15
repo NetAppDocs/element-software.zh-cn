@@ -56,6 +56,7 @@ keywords: netapp, element, management node, mnode, disaster recovery, redeploy, 
 
 
 
+[[download-iso-or-ova-and-deploy-the-vm]]
 == 下载 ISO 或 OVA 并部署虚拟机
 
 . 从下载适用于您的安装的 OVA 或 ISO https://mysupport.netapp.com/site/products/all/details/element-software/downloads-tab["Element 软件"^] 页面。
@@ -97,6 +98,7 @@ NOTE: 使用映像安装管理节点可能会导致在显示启动屏幕之前�
 
 
 
+[[configure-the-network]]
 == 配置网络。
 
 . 使用终端用户界面（ TUI ）创建管理节点管理员用户。
@@ -113,6 +115,7 @@ NOTE: 如果需要使用额外的 NIC 来隔离存储流量，请参见有关配
 
 
 
+[[configure-time-sync]]
 == 配置时间同步
 
 . 使用NTP验证管理节点和存储集群之间的时间是否同步：
@@ -190,6 +193,7 @@ NOTE: 完成时间同步配置后，请勿编辑 NTP ，因为它会在运行时
 
 
 
+[[configure-the-management-node]]
 == 配置管理节点
 
 . 为管理服务包内容创建临时目标目录：

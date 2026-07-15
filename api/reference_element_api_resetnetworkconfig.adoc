@@ -15,18 +15,21 @@ summary: 您可以使用 ResetNetworkConfig 方法帮助解决单个节点的网
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -41,12 +44,14 @@ summary: 您可以使用 ResetNetworkConfig 方法帮助解决单个节点的网
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法不会返回响应。
 
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 11.0

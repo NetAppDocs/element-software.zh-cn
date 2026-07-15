@@ -15,6 +15,7 @@ summary: 您可以使用 GetClusterCapacity 返回整个存储集群的高级别
 
 
 
+[[efficiency-calculations]]
 == 效率计算
 
 使用以下公式计算精简配置，重复数据删除和数据压缩。这些公式适用于 Element 8.2 及更高版本。
@@ -26,6 +27,7 @@ summary: 您可以使用 GetClusterCapacity 返回整个存储集群的高级别
 
 
 
+[[overall-efficiency-rate-calculation]]
 == 整体效率比率计算
 
 使用以下等式通过精简配置，重复数据删除和数据压缩效率计算的结果计算整体集群效率。
@@ -35,12 +37,14 @@ summary: 您可以使用 GetClusterCapacity 返回整个存储集群的高级别
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -59,6 +63,7 @@ xref:reference_element_api_clustercapacity.adoc[集群容量]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -73,6 +78,7 @@ xref:reference_element_api_clustercapacity.adoc[集群容量]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -112,6 +118,7 @@ xref:reference_element_api_clustercapacity.adoc[集群容量]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

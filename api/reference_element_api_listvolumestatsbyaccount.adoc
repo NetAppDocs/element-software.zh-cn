@@ -15,6 +15,7 @@ summary: 您可以使用 ListVolumeStatsByAccount 方法列出每个帐户的卷
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -50,6 +51,7 @@ true
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -70,6 +72,7 @@ xref:reference_element_api_volumestats.adoc[volumeStats] 数组
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -84,6 +87,7 @@ xref:reference_element_api_volumestats.adoc[volumeStats] 数组
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -120,6 +124,7 @@ xref:reference_element_api_volumestats.adoc[volumeStats] 数组
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

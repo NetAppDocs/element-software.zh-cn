@@ -32,6 +32,7 @@ keywords: netapp, mnode, management node, rest api, Element, assets
 
 
 
+[[retrieve-the-installation-id-and-cluster-id-of-a-storage-cluster-asset]]
 == 检索存储集群资产的安装 ID 和集群 ID
 
 您可以使用 REST API 获取存储集群的安装 ID 和 ID 。要添加新的存储集群资产，您需要安装 ID ，而要修改或删除特定存储集群资产，则需要集群 ID 。
@@ -98,6 +99,7 @@ API 将返回此安装中所有已知存储集群的列表。
 
 
 
+[[add-a-new-storage-cluster-asset]]
 == 添加新的存储集群资产
 
 您可以使用 REST API 将一个或多个新的存储集群资产添加到管理节点清单中。添加新的存储集群资产时，该资产会自动注册到管理节点中。
@@ -163,6 +165,7 @@ API 将返回一个对象，其中包含有关新添加的存储集群资产的�
 
 
 
+[[edit-the-stored-credentials-for-a-storage-cluster-asset]]
 == 编辑存储集群资产的已存储凭据
 
 您可以编辑管理节点用于登录到存储集群的已存储凭据。您选择的用户必须具有集群管理员访问权限。
@@ -212,6 +215,7 @@ https://<ManagementNodeIP>/storage/1/
 
 
 
+[[delete-a-storage-cluster-asset]]
 == 删除存储集群资产
 
 如果存储集群不再使用，您可以删除该存储集群资产。删除存储集群资产后，该资产将自动从管理节点中取消注册。

@@ -15,12 +15,14 @@ summary: 您可以使用 GetCurrentClusterAdmin 方法返回当前主集群管�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -39,6 +41,7 @@ xref:reference_element_api_clusteradmin.adoc[clusterAdmin]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -52,6 +55,7 @@ xref:reference_element_api_clusteradmin.adoc[clusterAdmin]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -75,6 +79,7 @@ xref:reference_element_api_clusteradmin.adoc[clusterAdmin]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 10.0

@@ -15,6 +15,7 @@ summary: 您可以使用 ListDriveStats 方法列出集群中多个驱动器的�
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -37,6 +38,7 @@ summary: 您可以使用 ListDriveStats 方法列出集群中多个驱动器的�
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -66,6 +68,7 @@ JSON 对象数组
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -82,6 +85,7 @@ JSON 对象数组
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -125,12 +129,14 @@ JSON 对象数组
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_getdrivestats.adoc[GetDriveStats]

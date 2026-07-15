@@ -15,6 +15,7 @@ summary: 您可以使用 ListVolumesForAccount 方法列出帐户的活动卷和
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -50,6 +51,7 @@ accountId
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -70,6 +72,7 @@ xref:reference_element_api_volume.adoc[volume] 数组
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -86,6 +89,7 @@ xref:reference_element_api_volume.adoc[volume] 数组
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法的响应类似于以下示例：
@@ -140,6 +144,7 @@ xref:reference_element_api_volume.adoc[volume] 数组
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

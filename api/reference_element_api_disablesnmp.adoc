@@ -15,18 +15,21 @@ summary: 您可以使用 DisableSnmp 方法在集群节点上禁用 SNMP 。
 
 
 
+[[parameter]]
 == 参数
 
 此方法没有输入参数。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -41,6 +44,7 @@ summary: 您可以使用 DisableSnmp 方法在集群节点上禁用 SNMP 。
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -54,6 +58,7 @@ summary: 您可以使用 DisableSnmp 方法在集群节点上禁用 SNMP 。
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

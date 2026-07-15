@@ -30,6 +30,7 @@ NOTE: 有关使用的详细信息，请参见 SolidFire 全闪存存储概念内
 
 
 
+[[create-a-qos-policy]]
 == 创建 QoS 策略
 
 您可以创建 QoS 策略并将其应用于性能应相当的卷。
@@ -57,6 +58,7 @@ TIP: 使用描述性命名最佳实践。如果您的环境中使用了多个集
 
 
 
+[[apply-a-qos-policy-to-a-volume]]
 == 将 QoS 策略应用于卷
 
 您可以使用 NetApp Hybrid Cloud Control 为卷分配现有 QoS 策略。
@@ -83,6 +85,7 @@ NOTE: 分配 QoS 将覆盖先前应用的任何单个卷 QoS 值。
 
 
 
+[[change-the-qos-policy-assignment-of-a-volume]]
 == 更改卷的 QoS 策略分配
 
 您可以从卷中删除 QoS 策略的分配，也可以选择其他 QoS 策略或自定义 QoS 。
@@ -111,6 +114,7 @@ NOTE: 禁用 QoS 策略后，除非另有修改，否则卷将使用默认 QoS I
 
 
 
+[[edit-a-qos-policy]]
 == 编辑 QoS 策略
 
 您可以更改现有 QoS 策略的名称或编辑与该策略关联的值。更改 QoS 策略性能值会影响与此策略关联的所有卷的 QoS 。
@@ -139,6 +143,7 @@ TIP: 您可以在 * 活动卷 * 列的链接上选择某个策略，以显示已
 
 
 
+[[delete-a-qos-policy]]
 == 删除 QoS 策略
 
 您可以删除不再需要的 QoS 策略。删除 QoS 策略时，使用该策略分配的所有卷都会保留先前由该策略定义的 QoS 值，但会保留为单个卷 QoS 。系统将删除与已删除 QoS 策略的任何关联。

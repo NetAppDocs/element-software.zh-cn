@@ -25,6 +25,7 @@ https://activeiq.solidfire.com["SolidFire Active IQ"^] 是一种基于 Web 的�
 
 
 
+[[for-more-information]]
 == 有关详细信息 ...
 
 * https://docs.netapp.com/us-en/element-software/index.html["SolidFire 和 Element 软件文档"]

@@ -15,6 +15,7 @@ summary: '您可以使用 SetLoginBanner 方法配置用户在登录到 Element 
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -54,6 +55,7 @@ boolean
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -85,6 +87,7 @@ boolean
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -102,6 +105,7 @@ boolean
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -120,6 +124,7 @@ boolean
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 10.0

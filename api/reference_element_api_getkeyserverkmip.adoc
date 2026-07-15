@@ -15,6 +15,7 @@ summary: 您可以使用 GetKeyServerKmip 方法返回有关指定密钥管理�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -37,6 +38,7 @@ summary: 您可以使用 GetKeyServerKmip 方法返回有关指定密钥管理�
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -55,6 +57,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -71,6 +74,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -98,6 +102,7 @@ link:reference_element_api_keyserverkmip.html["KeyServerKmip"]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 11.7

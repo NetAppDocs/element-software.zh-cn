@@ -21,6 +21,7 @@ summary: 您可以删除虚拟网络对象。在删除虚拟网络之前，必�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:task_system_manage_virtual_edit_a_virtual_network.adoc[编辑虚拟网络]

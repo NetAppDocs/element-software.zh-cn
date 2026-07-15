@@ -23,6 +23,7 @@ summary: 如果对源集群和目标集群都具有集群管理员访问权限�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:task_replication_pair_cluster_using_mvip.adoc[使用 MVIP 对集群配对]

@@ -24,6 +24,7 @@ NOTE: 此方法需要使用 virtualNetworkID 或 virtualNetworkTag 作为参数�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -156,12 +157,14 @@ string
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -193,6 +196,7 @@ string
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -207,6 +211,7 @@ string
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

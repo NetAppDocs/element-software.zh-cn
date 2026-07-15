@@ -55,6 +55,7 @@ NOTE: 您可以在配对过程完成后分配复制源和目标。复制源或�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_replication_volume_pairing_messages.adoc[卷配对消息]

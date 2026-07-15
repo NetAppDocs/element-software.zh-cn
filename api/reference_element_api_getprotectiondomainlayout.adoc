@@ -15,12 +15,14 @@ summary: 您可以使用 GetProtectionDomainLayout 方法返回集群的所有�
 
 
 
+[[parameter]]
 == 参数
 
 此方法没有输入参数。
 
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -39,6 +41,7 @@ JSON 列表 link:reference_element_api_nodeprotectiondomains.html["nodeProtectio
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -53,6 +56,7 @@ JSON 列表 link:reference_element_api_nodeprotectiondomains.html["nodeProtectio
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -122,6 +126,7 @@ JSON 列表 link:reference_element_api_nodeprotectiondomains.html["nodeProtectio
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 12.0

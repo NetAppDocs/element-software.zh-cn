@@ -18,6 +18,7 @@ NOTE: 通过API提供的某些访问类型在Element UI中不可用。
 
 
 
+[[accounts]]
 == —帐户
 
 以下方法可用于帐户访问类型：
@@ -61,12 +62,14 @@ RemoveAccount
 |===
 
 
+[[administrator]]
 == 管理员
 
 所有方法均可用于管理员访问类型。
 
 
 
+[[clusteradmin]]
 == clusterAdmin
 
 以下方法可用于集群管理员访问类型：
@@ -464,6 +467,7 @@ GetVirtualNetwork
 |===
 
 
+[[drives]]
 == 驱动器
 
 以下方法可用于驱动器访问类型：
@@ -492,6 +496,7 @@ SecureEraseDrives
 |===
 
 
+[[nodes]]
 == nodes
 
 以下方法可用于节点访问类型：
@@ -520,6 +525,7 @@ RemoveNodes
 |===
 
 
+[[read]]
 == 读取
 
 以下方法可用于读取访问类型：
@@ -663,6 +669,7 @@ ListBackupTargets
 |===
 
 
+[[reporting]]
 == 报告
 
 以下方法可用于报告访问类型：
@@ -821,12 +828,14 @@ ListVolumeStatsByVolumeAccessGroup
 |===
 
 
+[[repositories]]
 == 存储库
 
 ListAllNodes 方法可用于存储库访问类型。
 
 
 
+[[volumes]]
 == volumes
 
 以下方法可用于卷访问类型：
@@ -1000,6 +1009,7 @@ UpdateBulkVolumeStatus
 |===
 
 
+[[write]]
 == 写入
 
 以下方法可用于写入访问类型：

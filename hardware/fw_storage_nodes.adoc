@@ -20,12 +20,14 @@ H系列和SolidFire 存储节点支持的固件版本。
 
 
 
+[[h610s]]
 == H610S
 
 *型号(系列部分)：* H610S *完整型号：* H610S-1、H610S-1-NE、H610S-2、H610S-2-NE、H610S-4、H610S-4-NE和H610S-2F
 
 
 
+[[component-firmware-managed-by-a-storage-firmware-bundle]]
 === 由存储固件包管理的组件固件
 
 在11.x时间范围内、NetApp Element 软件是发布固件的唯一方法。从Element 12.0开始、引入了*存储固件捆绑包*的概念、现在可以通过作为Element 12.x版本一部分提供的独立发布的存储固件捆绑包或存储固件捆绑包进行固件更新。
@@ -123,6 +125,7 @@ NOTE: 下表中的短划线(*-*)表示特定硬件组件在给定版本的车辆
 |===
 
 
+[[component-firmware-not-managed-by-a-storage-firmware-bundle]]
 === 组件固件不受存储固件包管理
 
 以下固件不受存储固件包管理：
@@ -139,12 +142,14 @@ NOTE: 下表中的短划线(*-*)表示特定硬件组件在给定版本的车辆
 |===
 
 
+[[h410s]]
 == H410s
 
 *型号(系列部分)：* H410S *完整型号：* H410S-0、H410S-1、H410S-1-NE和H410S-2
 
 
 
+[[component-firmware-managed-by-a-storage-firmware-bundle]]
 === 由存储固件包管理的组件固件
 
 由存储固件包管理的组件固件。
@@ -218,6 +223,7 @@ NOTE: 下表中的短划线(*-*)表示特定硬件组件在给定版本的车辆
 |===
 
 
+[[component-firmware-not-managed-by-a-storage-firmware-bundle]]
 === 组件固件不受存储固件包管理
 
 以下固件不受存储固件包管理：
@@ -249,12 +255,14 @@ NOTE: 下表中的短划线(*-*)表示特定硬件组件在给定版本的车辆
 |===
 
 
+[[sfnodessf38410-sf19210-sf9605-and-sf4805]]
 == 【SF节点】SF38410、SF19210、SF9605和SF4805
 
 *完整型号：* SF38410、SF19210、SF9605和SF4805
 
 
 
+[[component-firmware-managed-by-a-storage-firmware-bundle]]
 === 由存储固件包管理的组件固件
 
 在11.x时间范围内、NetApp Element 软件是发布固件的唯一方法。从Element 12.0开始、引入了*存储固件捆绑包*的概念、现在可以通过作为Element 12.x版本一部分提供的独立发布的存储固件捆绑包或存储固件捆绑包进行固件更新。
@@ -352,6 +360,7 @@ NOTE: 下表中的短划线(*-*)表示特定硬件组件在给定版本的车辆
 |===
 
 
+[[component-firmware-not-managed-by-a-storage-firmware-bundle]]
 === 组件固件不受存储固件包管理
 
 以下固件不受存储固件包管理：

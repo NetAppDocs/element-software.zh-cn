@@ -36,6 +36,7 @@ image::../media/sf_and_element_workflow_for_setup_shorter_workflow.png[设置工
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * link:../setup/concept_setup_whats_next.html["了解使用存储的后续步骤"]

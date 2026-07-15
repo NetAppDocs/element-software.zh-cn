@@ -15,6 +15,7 @@ summary: 您可以使用 ListClusterFaults 方法列出有关在集群上检测�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -59,6 +60,7 @@ string
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -79,6 +81,7 @@ xref:reference_element_api_fault.adoc[故障]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -96,6 +99,7 @@ xref:reference_element_api_fault.adoc[故障]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -147,6 +151,7 @@ xref:reference_element_api_fault.adoc[故障]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

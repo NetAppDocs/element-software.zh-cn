@@ -15,6 +15,7 @@ QoSPolicy 对象包含有关运行 Element 软件的存储集群上的 QoS 策�
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：
@@ -60,6 +61,7 @@ volumeIds
 |===
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:reference_element_api_getqospolicy.adoc[GetQoSPolicy]

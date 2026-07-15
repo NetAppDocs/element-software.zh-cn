@@ -28,6 +28,7 @@ keywords: netapp, Element, management node, management services, version, bundle
 
 
 
+[[api-commands]]
 == API 命令
 
 * 获取有关管理节点上运行的管理节点操作系统，管理服务包和管理节点 API （ mnode-API ）服务的版本信息：
@@ -50,6 +51,7 @@ NOTE: 您可以找到 API 命令使用的承载 ` $ ｛ token ｝` link:task_mno
 
 
 
+[[rest-api-ui-steps]]
 == REST API UI 步骤
 
 . 输入管理节点 IP 地址并后跟 ` /mnode/` 来访问此服务的 REST API UI ：

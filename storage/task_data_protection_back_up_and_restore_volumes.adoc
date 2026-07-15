@@ -17,6 +17,7 @@ summary: 您可以将卷备份和还原到其他 SolidFire 存储以及与 Amazo
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:task_data_protection_back_up_volume_to_amazon_s3.adoc[将卷备份到 Amazon S3 对象存储]

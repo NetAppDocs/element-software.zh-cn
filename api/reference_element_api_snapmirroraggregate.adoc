@@ -15,6 +15,7 @@ snapMirrorAggregate 对象包含有关可用 ONTAP 聚合的信息，这些聚�
 
 
 
+[[object-members]]
 == 对象成员
 
 此对象包含以下成员：

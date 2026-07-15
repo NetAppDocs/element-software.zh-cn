@@ -36,6 +36,7 @@ NOTE: 集群 SSL 证书会自动应用于添加到集群中的所有新节点。
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * link:../mnode/reference_change_mnode_default_ssl_certificate.html["更改管理节点的默认SSL证书"]

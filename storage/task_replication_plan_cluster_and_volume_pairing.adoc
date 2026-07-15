@@ -26,6 +26,7 @@ NOTE: WAN 加速器设备尚未获得 NetApp 认证，无法在复制数据时�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:task_replication_pair_clusters.adoc[对集群进行配对以进行复制]

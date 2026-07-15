@@ -15,6 +15,7 @@ summary: 您可以使用 GetAccountByName 获取有关特定帐户的详细信�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -37,6 +38,7 @@ string
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -55,6 +57,7 @@ xref:reference_element_api_account.adoc[account]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -71,6 +74,7 @@ xref:reference_element_api_account.adoc[account]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -93,6 +97,7 @@ xref:reference_element_api_account.adoc[account]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

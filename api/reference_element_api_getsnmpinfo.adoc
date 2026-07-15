@@ -15,6 +15,7 @@ summary: 您可以使用 GetSnmpInfo 方法获取当前简单网络管理协议�
 
 
 
+[[parameters]]
 == Parameters
 
 
@@ -24,6 +25,7 @@ NOTE: 对于 Element 8.0 以上的版本， GetSnmpInfo 已弃用。。 xref:ref
 
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -77,6 +79,7 @@ xref:reference_element_api_usmuser.adoc[usmUser]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -91,6 +94,7 @@ xref:reference_element_api_usmuser.adoc[usmUser]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -114,12 +118,14 @@ xref:reference_element_api_usmuser.adoc[usmUser]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:reference_element_api_getsnmpstate.adoc[GetSnmpState]

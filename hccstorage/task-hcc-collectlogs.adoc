@@ -30,6 +30,7 @@ keywords: netapp, element, logs, collection, troubleshooting, monitor
 
 
 
+[[use-netapp-hybrid-cloud-control-to-collect-logs]]
 == 使用 NetApp Hybrid Cloud Control 收集日志
 
 您可以从 NetApp Hybrid Cloud Control Dashboard 访问日志收集区域。
@@ -71,6 +72,8 @@ NOTE: 根据您收集的日志，进度条可能会以特定百分比保留几�
 
 
 
+[[use-the-rest-api-to-collect-logs]]
+[[use-the-rest-api-to-collect-netapp-hci-logs]]
 == 使用 REST API 收集日志
 
 您可以使用 REST API 收集 Element 日志。

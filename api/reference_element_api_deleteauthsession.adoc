@@ -15,6 +15,7 @@ summary: 您可以使用 DeleteAuthSession 方法删除单个身份验证会话�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -37,6 +38,7 @@ UUID
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -57,6 +59,7 @@ link:reference_element_api_authsessioninfo.html["authSessionInfo"]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -73,6 +76,7 @@ link:reference_element_api_authsessioninfo.html["authSessionInfo"]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -102,6 +106,7 @@ link:reference_element_api_authsessioninfo.html["authSessionInfo"]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 12.0

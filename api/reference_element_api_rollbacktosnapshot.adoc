@@ -26,6 +26,7 @@ summary: 您可以使用 RollbackToSnapshot 方法为活动卷映像创建现有
 ====
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -104,6 +105,7 @@ false
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -146,6 +148,7 @@ xref:reference_element_api_snapshot.adoc[Snapshot]
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -164,6 +167,7 @@ xref:reference_element_api_snapshot.adoc[Snapshot]
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -197,6 +201,7 @@ xref:reference_element_api_snapshot.adoc[Snapshot]
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

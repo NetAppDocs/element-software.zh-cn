@@ -15,18 +15,21 @@ summary: 您可以使用 DeleteAllSupportBundles 方法删除使用 CreateSuppor
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -42,6 +45,7 @@ summary: 您可以使用 DeleteAllSupportBundles 方法删除使用 CreateSuppor
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -56,6 +60,7 @@ summary: 您可以使用 DeleteAllSupportBundles 方法删除使用 CreateSuppor
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

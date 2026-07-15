@@ -15,12 +15,14 @@ summary: 您可以使用 GetPendingOperation 方法检测节点上当前正在�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法没有输入参数。
 
 
 
+[[return-values]]
 == 返回值
 
 此方法具有以下返回值：
@@ -55,6 +57,7 @@ string
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -69,6 +72,7 @@ string
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -87,6 +91,7 @@ string
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

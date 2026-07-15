@@ -15,6 +15,7 @@ Element 软件 Web UI 使用 `GetSnapMirrorClusterIdentity` 来获取有关 ONTA
 
 
 
+[[parameter]]
 == 参数
 
 此方法具有以下输入参数：
@@ -37,6 +38,7 @@ snapMirrorEndpointID
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -55,6 +57,7 @@ xref:reference_element_api_snapmirrorclusteridentity.adoc[snapMirrorClusterIdent
 |===
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 10.1

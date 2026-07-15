@@ -15,6 +15,7 @@ summary: 您可以使用 GetAccountEfficiency 获取有关卷帐户的效率统�
 
 
 
+[[parameters]]
 == Parameters
 
 此方法具有以下输入参数：
@@ -37,6 +38,7 @@ accountId
 |===
 
 
+[[return-value]]
 == 返回值
 
 此方法具有以下返回值：
@@ -91,6 +93,7 @@ ISO 8601 日期字符串
 |===
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -107,6 +110,7 @@ ISO 8601 日期字符串
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：
@@ -126,6 +130,7 @@ ISO 8601 日期字符串
 ----
 
 
+[[new-since-version]]
 == 自版本以来的新增功能
 
 9.6

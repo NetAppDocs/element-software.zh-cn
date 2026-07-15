@@ -18,6 +18,7 @@ NOTE: 使用API后、必须重新启动管理节点。
 
 
 
+[[parameters]]
 == Parameters
 
 
@@ -60,12 +61,14 @@ string
 |===
 
 
+[[return-values]]
 == 返回值
 
 此方法没有返回值。
 
 
 
+[[request-example]]
 == 请求示例
 
 此方法的请求类似于以下示例：
@@ -83,6 +86,7 @@ string
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此方法返回类似于以下示例的响应：

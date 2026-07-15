@@ -52,6 +52,7 @@ https://<ManagementNodeIP>
 
 
 
+[[use-netapp-hybrid-cloud-control-to-run-element-storage-health-checks-prior-to-upgrading-storage]]
 == 在升级存储之前，请使用 NetApp Hybrid Cloud Control 运行 Element 存储运行状况检查
 
 使用 NetApp Hybrid Cloud Control ，您可以验证存储集群是否已做好升级准备。
@@ -81,6 +82,7 @@ https://<ManagementNodeIP>
 
 
 
+[[use-api-to-run-element-storage-health-checks-prior-to-upgrading-storage]]
 == 在升级存储之前，请使用 API 运行 Element 存储运行状况检查
 
 您可以使用 REST API 验证存储集群是否已做好升级准备。运行状况检查可验证升级不存在任何障碍，例如待定节点，磁盘空间问题和集群故障。
@@ -212,6 +214,7 @@ https://<ManagementNodeIP>/storage/1/
 
 
 
+[[storage-health-checks-made-by-the-service]]
 == 服务执行的存储运行状况检查
 
 存储运行状况检查会对每个集群进行以下检查。

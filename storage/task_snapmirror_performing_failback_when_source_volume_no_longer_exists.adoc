@@ -43,6 +43,7 @@ NOTE: 反向重新同步操作将创建一个新关系，在此关系中，初�
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 xref:concept_snapmirror_failback_scenarios.adoc[SnapMirror 故障恢复场景]

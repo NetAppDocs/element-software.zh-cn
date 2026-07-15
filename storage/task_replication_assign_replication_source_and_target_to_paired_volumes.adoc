@@ -48,6 +48,7 @@ IMPORTANT: 如果您将现有卷分配为复制目标，则该卷上的数据将
 
 
 
+[[find-more-information]]
 == 了解更多信息
 
 * xref:task_replication_pair_volumes_using_a_volume_id.adoc[使用卷 ID 对卷配对]
